@@ -1,4 +1,5 @@
 using System.Net;
+using System.Text;
 using System.Text.Json;
 using System.Threading;
 using Godot;
@@ -50,43 +51,62 @@ public partial class MainFile : Node
 
         new Thread(() =>
         {
-            try
+            while (listener.IsListening)
             {
-                while (listener.IsListening)
+                HttpListenerContext ctx;
+                try { ctx = listener.GetContext(); }
+                catch (Exception ex)
                 {
-                    var ctx = listener.GetContext();
-                    var req = ctx.Request;
-                    var res = ctx.Response;
-                    Logger.Info($"SpireRestAPI request: {req.HttpMethod} {req.Url?.AbsolutePath}");
+                    Logger.Error($"SpireRestAPI: failed to get context: {ex.Message}");
+                    break;
+                }
 
-                    byte[] body;
-                    if (req.HttpMethod == "GET" && req.Url?.AbsolutePath == "/")
+                // Handle each request in its own try-catch so one bad request can't kill the thread.
+                try
+                {
+                    Handle(ctx);
+                }
+                catch (Exception ex)
+                {
+                    Logger.Error($"SpireRestAPI: unhandled error on {ctx.Request.HttpMethod} {ctx.Request.Url?.AbsolutePath}: {ex}");
+                    try
                     {
-                        body = System.Text.Encoding.UTF8.GetBytes(IndexHtml);
-                        res.ContentType = "text/html; charset=utf-8";
+                        ctx.Response.StatusCode = 500;
+                        ctx.Response.OutputStream.Close();
                     }
-                    else if (req.HttpMethod == "GET" && req.Url?.AbsolutePath == "/combat/state")
-                    {
-                        var data = CombatApi.GetCombatState();
-                        body = JsonSerializer.SerializeToUtf8Bytes(data, JsonOptions);
-                        res.ContentType = "application/json";
-                    }
-                    else
-                    {
-                        body = "Not Found"u8.ToArray();
-                        res.StatusCode = 404;
-                        res.ContentType = "text/plain";
-                    }
-
-                    res.ContentLength64 = body.Length;
-                    res.OutputStream.Write(body);
-                    res.OutputStream.Close();
+                    catch { /* best effort */ }
                 }
             }
-            catch (Exception ex)
-            {
-                Logger.Error($"SpireRestAPI listener error: {ex}");
-            }
         }) { IsBackground = true }.Start();
+    }
+
+    private static void Handle(HttpListenerContext ctx)
+    {
+        var req = ctx.Request;
+        var res = ctx.Response;
+        Logger.Info($"SpireRestAPI request: {req.HttpMethod} {req.Url?.AbsolutePath}");
+
+        byte[] body;
+        if (req.HttpMethod == "GET" && req.Url?.AbsolutePath == "/")
+        {
+            body = Encoding.UTF8.GetBytes(IndexHtml);
+            res.ContentType = "text/html; charset=utf-8";
+        }
+        else if (req.HttpMethod == "GET" && req.Url?.AbsolutePath == "/combat/state")
+        {
+            var data = CombatApi.GetCombatState();
+            body = JsonSerializer.SerializeToUtf8Bytes(data, JsonOptions);
+            res.ContentType = "application/json";
+        }
+        else
+        {
+            body = "Not Found"u8.ToArray();
+            res.StatusCode = 404;
+            res.ContentType = "text/plain";
+        }
+
+        res.ContentLength64 = body.Length;
+        res.OutputStream.Write(body);
+        res.OutputStream.Close();
     }
 }
