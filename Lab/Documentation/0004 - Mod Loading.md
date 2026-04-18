@@ -93,6 +93,25 @@ Once an assembly is loaded, the game tries two initialization paths in order:
 | `Disabled` | User disabled or consent not granted |
 | `AddedAtRuntime` | Steam Workshop mod installed during an active session |
 
+## Verifying Mods Are Loaded
+
+**Check the game log.** ModManager emits structured log lines throughout the load process:
+
+```
+Found mod manifest file .../mods/MyMod/manifest.json
+Loading assembly DLL .../MyMod.dll
+Finished mod initialization for 'My Mod' (my-mod).
+ --- RUNNING MODDED! --- Loaded 1 mods (1 total)
+```
+
+The `--- RUNNING MODDED! ---` banner confirms at least one mod loaded successfully. On macOS, Godot games write logs to `~/Library/Logs/<game>/` or `~/Library/Application Support/<game>/logs/`.
+
+**Check the in-game Mods screen.** The game has a dedicated mod management UI (`NModdingScreen`) accessible from main menu settings. It lists every discovered mod and its current load state.
+
+**Baseline with `--nomods`.** Run the game with `--nomods` to skip all mod loading. If your mod's effects disappear, it was being loaded before.
+
+**Log from your own mod.** Call `Log.Info("MyMod initialized!")` in your initializer method -- it will appear in the game log alongside the engine's own lines.
+
 ## User Consent
 
 The game requires the player to explicitly agree to mod loading (`ModSettings.PlayerAgreedToModLoading`) before any mods are initialized. This is surfaced via `NConfirmModLoadingPopup` in the modding screen UI.
