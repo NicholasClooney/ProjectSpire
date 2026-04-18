@@ -16,7 +16,6 @@ public partial class MainFile : Node
     public static void Initialize()
     {
         Harmony harmony = new(ModId);
-
         harmony.PatchAll();
     }
 }

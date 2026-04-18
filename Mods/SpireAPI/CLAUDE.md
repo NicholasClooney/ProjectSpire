@@ -2,6 +2,12 @@
 
 This file provides guidance to Claude Code when working in the SpireAPI mod directory.
 
+## Purpose
+
+SpireAPI is the game-state access layer. It exposes a clean C# API for reading (and eventually mutating) STS2 game state. It has no HTTP or transport concerns — those live in SpireRestAPI.
+
+Other mods can depend on SpireAPI to interact with the game without reimplementing state access.
+
 ## Local paths
 
 - **MegaDot executable**: `~/Applications/MegaDot.app/Contents/MacOS/Godot`
@@ -22,10 +28,23 @@ The build auto-copies output to the game's mods folder via `CopyToModsFolderOnBu
 
 ## Architecture
 
-The mod entry point is `SpireAPICode/MainFile.cs`. The `[ModInitializer(nameof(Initialize))]` attribute on the `Node` subclass tells `ModManager` to call `Initialize()` once at game startup. Harmony is available for patching game methods.
+Entry point is `SpireAPICode/MainFile.cs`. The `[ModInitializer(nameof(Initialize))]` attribute on the `Node` subclass tells `ModManager` to call `Initialize()` once at game startup. Harmony is available for patching game methods.
 
-Game API access points (from decompiled source in `Lab/`):
-- `RunManager.Instance` — run state, players, action queue
-- `CombatManager.Instance` — combat state, enemies, hand
-- Actions are enqueued via `RunManager.Instance.ActionQueueSynchronizer.RequestEnqueue(action)`
-- HTTP handlers run on background threads; game state mutations must use `CallDeferred` to dispatch to the Godot main thread
+### Game API access
+
+Key game singletons:
+- `CombatManager.Instance` — `IsInProgress`, `IsPlayPhase`, `DebugOnlyGetState()` returns `CombatState?`
+- `RunManager.Instance` — action queue via `ActionQueueSynchronizer.RequestEnqueue(action)`
+
+Key types:
+- `CombatState` — `Enemies`, `Players`, `RoundNumber`, `HittableEnemies`
+- `Player.PlayerCombatState` — `Hand`, `Energy`, `MaxEnergy` (null outside combat)
+- `CardEnergyCost.GetResolved()` — current effective energy cost including modifiers
+
+### Thread safety
+
+The HTTP server (in SpireRestAPI) runs on a background thread. Reading game state from that thread is generally safe. Mutations must be dispatched to the Godot main thread via `CallDeferred`.
+
+### API classes
+
+- `CombatApi` — reads current combat state and returns a serialization-friendly snapshot
