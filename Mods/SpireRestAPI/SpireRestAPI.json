@@ -1,0 +1,11 @@
+{
+  "id": "SpireRestAPI",
+  "name": "SpireRestAPI",
+  "author": "Nicholas Clooney",
+  "description": "Slay the Spire 2 mod for a RESTful API backend",
+  "version": "v0.0.0",
+  "has_pck": false,
+  "has_dll": true,
+  "dependencies": [],
+  "affects_gameplay": true
+}
