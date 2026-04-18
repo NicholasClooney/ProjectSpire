@@ -35,7 +35,7 @@ Entry point is `SpireRestAPICode/MainFile.cs`. On `Initialize()` it starts an `H
 | Method | Path | Description |
 |--------|------|-------------|
 | `GET` | `/` | HTML index listing all endpoints |
-| `GET` | `/combat/state` | Current combat state: hand, enemies, energy, round. Returns `isInProgress: false` with a `message` when not in combat. |
+| `GET` | `/combat/state` | Current combat state: hand (with card ids and names), enemies, energy, round. Returns `isInProgress: false` with a `message` when not in combat. |
 
 ### Dependency on SpireAPI
 

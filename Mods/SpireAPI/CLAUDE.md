@@ -43,7 +43,7 @@ Key types:
 
 ### Thread safety
 
-The HTTP server (in SpireRestAPI) runs on a background thread. Reading game state from that thread is generally safe. Mutations must be dispatched to the Godot main thread via `CallDeferred`.
+The HTTP server (in SpireRestAPI) runs on a background thread. Reading game state (e.g. `CombatApi.GetCombatState()`) is safe to call from background threads. Game mutations and state changes must run on the Godot main thread.
 
 ### API classes
 
