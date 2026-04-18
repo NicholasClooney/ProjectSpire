@@ -1,5 +1,7 @@
+using System.Collections.Concurrent;
 using Godot;
 using HarmonyLib;
+using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Modding;
 
 namespace SpireAPI.SpireAPICode;

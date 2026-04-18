@@ -1,13 +1,10 @@
-// This class is the future SpireAPI layer: pure game-state access, no HTTP concerns.
-// When SpireRESTAPI becomes a separate mod, this moves there as a dependency.
-
 using MegaCrit.Sts2.Core.Combat;
 
 namespace SpireAPI.SpireAPICode;
 
 public static class CombatApi
 {
-    public record CardInfo(string Id, int EnergyCost, string TargetType, bool CanPlay, bool IsUpgraded);
+    public record CardInfo(string Id, string Name, int EnergyCost, string TargetType, bool CanPlay, bool IsUpgraded);
     public record CreatureInfo(uint CombatId, string Name, int Hp, int MaxHp, int Block, bool IsAlive);
     public record CombatStateInfo(
         bool IsInProgress,
@@ -34,6 +31,7 @@ public static class CombatApi
         var hand = combatState?.Hand.Cards
             .Select(c => new CardInfo(
                 c.Id.Entry,
+                c.Title,
                 c.EnergyCost.GetResolved(),
                 c.TargetType.ToString(),
                 c.CanPlay(),
