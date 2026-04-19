@@ -1,6 +1,6 @@
 # 0003 - REST API Mod: Controlling Combat via HTTP
 
-> **Note:** This document was written against a previous game version. Logic may have changed.
+> Updated for the current ProjectSpire implementation on 2026-04-18. Decompiled references are still game-version-sensitive.
 
 This doc covers the concrete classes, access paths, and action patterns needed to build a REST API mod for STS2 that can read game state and execute player actions (play card, use potion, end turn).
 
@@ -159,6 +159,209 @@ CardModel? card = hand.Cards.FirstOrDefault(c => c.Id.Entry == "Strike");
 Creature? target = CombatManager.Instance.State!.HittableEnemies.FirstOrDefault();
 ```
 
+### Current ProjectSpire implementation
+
+The current REST implementation uses the game's normal manual-play path rather than `CardCmd.AutoPlay(...)`.
+
+- Hand cards are exposed with a per-combat `combatCardIndex` derived from `NetCombatCard.FromModel(card).CombatCardIndex`
+- `POST /combat/play-card` accepts:
+
+```json
+{
+  "combatCardIndex": 1,
+  "targetCombatId": 1
+}
+```
+
+- The endpoint dispatches back to the Godot main thread before calling `card.TryManualPlay(target)`
+- Validation currently rejects unsupported targeting modes rather than pretending to support the full player-choice system
+
+Supported target types in the first pass:
+
+- `None`
+- `Self`
+- `AnyEnemy`
+- `AllEnemies`
+- `AnyAlly`
+- `AllAllies`
+
+Not yet supported:
+
+- `RandomEnemy`
+- `AnyPlayer`
+- `TargetedNoCreature`
+- `Osty`
+- cards that immediately branch into deeper player-choice flows still need follow-up API work
+
+### Current endpoints
+
+| Method | Path | Description |
+|--------|------|-------------|
+| `GET` | `/` | HTML index |
+| `GET` | `/combat/state` | Current combat state including `hand[].combatCardIndex` and enemy `combatId`s |
+| `POST` | `/combat/play-card` | Queue a straightforward card play from hand |
+| `GET` | `/ui/state` | Describe the current active UI and supported selection details |
+| `POST` | `/combat/select-hand-card` | Submit a supported hand-selection choice by `combatCardIndex` |
+| `POST` | `/ui/select-card` | Submit a supported overlay or reward-card selection by `choiceIndex` |
+
+### curl examples
+
+Inspect the current combat state:
+
+```bash
+curl -s http://127.0.0.1:7777/combat/state | jq
+```
+
+Play a targeted card:
+
+```bash
+curl -s -X POST http://127.0.0.1:7777/combat/play-card \
+  -H 'Content-Type: application/json' \
+  -d '{"combatCardIndex":1,"targetCombatId":1}' | jq
+```
+
+Play a no-target card such as `Defend`:
+
+```bash
+curl -s -X POST http://127.0.0.1:7777/combat/play-card \
+  -H 'Content-Type: application/json' \
+  -d '{"combatCardIndex":0}' | jq
+```
+
+Use the state endpoint first, then substitute the ids you want:
+
+```bash
+state="$(curl -s http://127.0.0.1:7777/combat/state)"
+echo "$state" | jq '.hand, .enemies'
+```
+
+Inspect the current UI and supported selection details:
+
+```bash
+curl -s http://127.0.0.1:7777/ui/state | jq
+```
+
+Submit a hand upgrade selection, such as unupgraded `Armaments`:
+
+```bash
+curl -s -X POST http://127.0.0.1:7777/combat/select-hand-card \
+  -H 'Content-Type: application/json' \
+  -d '{"combatCardIndex":2}' | jq
+```
+
+Submit an overlay or card reward choice, such as `Discovery` or the post-combat card reward screen:
+
+```bash
+curl -s -X POST http://127.0.0.1:7777/ui/select-card \
+  -H 'Content-Type: application/json' \
+  -d '{"choiceIndex":0}' | jq
+```
+
+### Logging
+
+The current implementation logs the play-card flow in both mods with a shared request id:
+
+```text
+[INFO] [SpireRestAPI] [play-card req=7] request: POST /combat/play-card
+[INFO] [SpireRestAPI] [play-card req=7] received play-card body: {"combatCardIndex":1,"targetCombatId":1}
+[INFO] [SpireAPI] [play-card req=7] matched card STRIKE_IRONCLAD (Strike), targetType=AnyEnemy, energyCost=1, canPlay=True
+[INFO] [SpireAPI] [play-card req=7] successfully enqueued card STRIKE_IRONCLAD#1 targeting 1
+[INFO] [SpireRestAPI] [play-card req=7] responding with status=200 contentType=application/json bytes=...
+```
+
+The request label is currently reused outside `POST /combat/play-card` as well. For example, `GET /ui/state` and `POST /ui/select-card` still log with the same `play-card req=N` prefix. The id is still useful for correlation, but the label text is broader than the endpoint name.
+
+Tail the game log while testing:
+
+```bash
+tail -f ~/Library/Application\ Support/SlayTheSpire2/logs/godot.log
+```
+
+### Current UI selection families
+
+The current implementation supports three selection families:
+
+- `hand_card_selection` for supported in-combat hand selection flows such as hand upgrade
+- `overlay_card_selection` for `NChooseACardSelectionScreen`, such as `Discovery`
+- `reward_card_selection` for `NCardRewardSelectionScreen`, such as post-combat card rewards
+
+`GET /ui/state` reports which family is active and includes the corresponding `selectableCards[]`.
+
+For `selectableCards[]`:
+
+- `combatCardIndex` is only used for hand-card selection and is only meaningful for the current combat hand
+- `choiceIndex` is only used for overlay and reward selection and is only valid for the currently active screen instance
+- `choiceIndex` should be treated as ephemeral screen-local state, not a persistent card identifier
+
+Example `ui/state` payload for a hand selection screen such as unupgraded `Armaments`:
+
+```json
+{
+  "hasActiveUi": true,
+  "currentScreenClass": "NCombatRoom",
+  "currentScreenType": null,
+  "interactionKind": "hand_card_selection",
+  "prompt": "Choose a Card to Upgrade",
+  "handSelectionMode": "UpgradeSelect",
+  "selectableCards": [
+    {
+      "choiceIndex": 0,
+      "combatCardIndex": 2,
+      "id": "STRIKE_IRONCLAD",
+      "name": "Strike",
+      "isUpgraded": false
+    }
+  ],
+  "message": null
+}
+```
+
+Example `ui/state` payload for an overlay chooser such as `Discovery`:
+
+```json
+{
+  "hasActiveUi": true,
+  "currentScreenClass": "NChooseACardSelectionScreen",
+  "currentScreenType": "CardSelection",
+  "interactionKind": "overlay_card_selection",
+  "prompt": "Choose a Card",
+  "handSelectionMode": null,
+  "selectableCards": [
+    {
+      "choiceIndex": 0,
+      "combatCardIndex": null,
+      "id": "DISCOVERY_OPTION_A",
+      "name": "Option A",
+      "isUpgraded": false
+    }
+  ],
+  "message": null
+}
+```
+
+Example `ui/state` payload for the post-combat card reward screen:
+
+```json
+{
+  "hasActiveUi": true,
+  "currentScreenClass": "NCardRewardSelectionScreen",
+  "currentScreenType": "CardSelection",
+  "interactionKind": "reward_card_selection",
+  "prompt": "Choose a Reward",
+  "handSelectionMode": null,
+  "selectableCards": [
+    {
+      "choiceIndex": 0,
+      "combatCardIndex": null,
+      "id": "REWARD_CARD_A",
+      "name": "Reward Card A",
+      "isUpgraded": false
+    }
+  ],
+  "message": null
+}
+```
+
 ---
 
 ## Using a Potion
@@ -209,15 +412,13 @@ The `UndoEndPlayerTurnAction` exists with the same constructor signature if undo
 The HTTP server runs on a background thread. All game state mutations must happen on the Godot main thread. The safe pattern:
 
 ```csharp
-// From the HTTP handler thread:
-Godot.Engine.GetMainLoop().CallDeferred(
-    Godot.Node.MethodName._Process,
-    Godot.Callable.From(() =>
-    {
-        RunManager.Instance.ActionQueueSynchronizer.RequestEnqueue(action);
-    })
-);
+Callable.From(() =>
+{
+    RunManager.Instance.ActionQueueSynchronizer.RequestEnqueue(action);
+}).CallDeferred();
 ```
+
+ProjectSpire currently wraps this in a helper that schedules work onto the Godot main thread and blocks the HTTP thread until that work completes.
 
 Reading state (querying `Hand.Cards`, `CombatState`, etc.) is generally safe from a background thread as long as no mutation occurs concurrently, but enqueuing actions must go through `CallDeferred` or an equivalent main-thread dispatch.
 
