@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "DEVASTATE",
+  "class_name": "Devastate",
+  "name": "Devastate",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Devastate.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "DEVASTATE.title",
+    "description_key": "DEVASTATE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 30
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 10
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

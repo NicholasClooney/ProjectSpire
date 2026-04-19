@@ -1,0 +1,34 @@
+{
+  "parser_version": "0.1.0",
+  "id": "THE_SEALED_THRONE",
+  "class_name": "TheSealedThrone",
+  "name": "TheSealedThrone",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TheSealedThrone.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Ancient",
+  "target": "Self",
+  "localization": {
+    "title_key": "THE_SEALED_THRONE.title",
+    "description_key": "THE_SEALED_THRONE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Innate"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "TheSealedThrone",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "1m"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

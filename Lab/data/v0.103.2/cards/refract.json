@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "REFRACT",
+  "class_name": "Refract",
+  "name": "Refract",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Refract.cs",
+  "cost": 3,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "REFRACT.title",
+    "description_key": "REFRACT.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 9
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_orb",
+      "target": "GlassOrb",
+      "source": "HoverTipFactory.FromOrb"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

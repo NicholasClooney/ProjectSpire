@@ -1,0 +1,46 @@
+{
+  "parser_version": "0.1.0",
+  "id": "COUNTDOWN",
+  "class_name": "Countdown",
+  "name": "Countdown",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Countdown.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "COUNTDOWN.title",
+    "description_key": "COUNTDOWN.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "CountdownPower": 6,
+    "Countdown": 6
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "CountdownPower",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Countdown",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"CountdownPower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "DoomPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

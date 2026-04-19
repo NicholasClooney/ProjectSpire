@@ -1,0 +1,34 @@
+{
+  "parser_version": "0.1.0",
+  "id": "HELLO_WORLD",
+  "class_name": "HelloWorld",
+  "name": "HelloWorld",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HelloWorld.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Event",
+  "target": "Self",
+  "localization": {
+    "title_key": "HELLO_WORLD.title",
+    "description_key": "HELLO_WORLD.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Innate"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "HelloWorld",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "1m"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

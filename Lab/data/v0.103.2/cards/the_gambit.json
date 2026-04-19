@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "THE_GAMBIT",
+  "class_name": "TheGambit",
+  "name": "TheGambit",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TheGambit.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "THE_GAMBIT.title",
+    "description_key": "THE_GAMBIT.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 50
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 25
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "TheGambit",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "1m"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

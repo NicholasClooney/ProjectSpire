@@ -1,0 +1,44 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BOOST_AWAY",
+  "class_name": "BoostAway",
+  "name": "BoostAway",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BoostAway.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "localization": {
+    "title_key": "BOOST_AWAY.title",
+    "description_key": "BOOST_AWAY.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 6
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_card",
+      "target": "DAZED",
+      "source": "HoverTipFactory.FromCard"
+    },
+    {
+      "kind": "creates_card",
+      "target": "DAZED",
+      "source": "CreateCard"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

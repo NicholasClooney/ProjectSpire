@@ -1,0 +1,46 @@
+{
+  "parser_version": "0.1.0",
+  "id": "HAILSTORM",
+  "class_name": "Hailstorm",
+  "name": "Hailstorm",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Hailstorm.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "HAILSTORM.title",
+    "description_key": "HAILSTORM.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "HailstormPower": 6,
+    "Hailstorm": 6
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "HailstormPower",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Hailstorm",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"HailstormPower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_orb",
+      "target": "FrostOrb",
+      "source": "HoverTipFactory.FromOrb"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

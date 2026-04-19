@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "RIP_AND_TEAR",
+  "class_name": "RipAndTear",
+  "name": "RipAndTear",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/RipAndTear.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Event",
+  "target": "RandomEnemy",
+  "localization": {
+    "title_key": "RIP_AND_TEAR.title",
+    "description_key": "RIP_AND_TEAR.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 7
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "parser_version": "0.1.0",
+  "id": "HOTFIX",
+  "class_name": "Hotfix",
+  "name": "Hotfix",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Hotfix.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "localization": {
+    "title_key": "HOTFIX.title",
+    "description_key": "HOTFIX.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "FocusPower": 2,
+    "Focus": 2
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "Hotfix",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"FocusPower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "FocusPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

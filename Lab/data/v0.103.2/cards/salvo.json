@@ -1,0 +1,41 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SALVO",
+  "class_name": "Salvo",
+  "name": "Salvo",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Salvo.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "SALVO.title",
+    "description_key": "SALVO.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 12
+  },
+  "keywords": [
+    "Retain"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 4
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "RetainHand",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "1m"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

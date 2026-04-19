@@ -1,0 +1,34 @@
+{
+  "parser_version": "0.1.0",
+  "id": "IGNITION",
+  "class_name": "Ignition",
+  "name": "Ignition",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Ignition.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "AnyAlly",
+  "localization": {
+    "title_key": "IGNITION.title",
+    "description_key": "IGNITION.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_orb",
+      "target": "PlasmaOrb",
+      "source": "HoverTipFactory.FromOrb"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

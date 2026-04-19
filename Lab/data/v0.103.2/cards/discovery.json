@@ -1,0 +1,28 @@
+{
+  "parser_version": "0.1.0",
+  "id": "DISCOVERY",
+  "class_name": "Discovery",
+  "name": "Discovery",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Discovery.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "DISCOVERY.title",
+    "description_key": "DISCOVERY.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

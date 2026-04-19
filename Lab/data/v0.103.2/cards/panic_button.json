@@ -1,0 +1,42 @@
+{
+  "parser_version": "0.1.0",
+  "id": "PANIC_BUTTON",
+  "class_name": "PanicButton",
+  "name": "PanicButton",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PanicButton.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "PANIC_BUTTON.title",
+    "description_key": "PANIC_BUTTON.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 30,
+    "Turns": 2
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 10
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "NoBlock",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"Turns\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SHADOWMELD",
+  "class_name": "Shadowmeld",
+  "name": "Shadowmeld",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Shadowmeld.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "SHADOWMELD.title",
+    "description_key": "SHADOWMELD.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Power": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "Shadowmeld",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"Power\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

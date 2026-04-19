@@ -1,0 +1,47 @@
+{
+  "parser_version": "0.1.0",
+  "id": "MOLTEN_FIST",
+  "class_name": "MoltenFist",
+  "name": "MoltenFist",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MoltenFist.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "MOLTEN_FIST.title",
+    "description_key": "MOLTEN_FIST.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 10
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 4
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Vulnerable",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "num"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "VulnerablePower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

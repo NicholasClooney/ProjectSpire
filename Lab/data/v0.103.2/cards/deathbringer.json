@@ -1,0 +1,58 @@
+{
+  "parser_version": "0.1.0",
+  "id": "DEATHBRINGER",
+  "class_name": "Deathbringer",
+  "name": "Deathbringer",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Deathbringer.cs",
+  "cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "DEATHBRINGER.title",
+    "description_key": "DEATHBRINGER.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "DoomPower": 21,
+    "Doom": 21,
+    "WeakPower": 1,
+    "Weak": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Doom",
+      "delta": 5
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Doom",
+      "target_expr": "base.CombatState.HittableEnemies",
+      "amount_expr": "base.DynamicVars.Doom.BaseValue"
+    },
+    {
+      "power": "Weak",
+      "target_expr": "base.CombatState.HittableEnemies",
+      "amount_expr": "base.DynamicVars.Weak.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "DoomPower",
+      "source": "HoverTipFactory.FromPower"
+    },
+    {
+      "kind": "hover_tip_power",
+      "target": "WeakPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

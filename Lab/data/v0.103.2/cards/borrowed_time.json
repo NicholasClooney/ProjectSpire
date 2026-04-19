@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BORROWED_TIME",
+  "class_name": "BorrowedTime",
+  "name": "BorrowedTime",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BorrowedTime.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "BORROWED_TIME.title",
+    "description_key": "BORROWED_TIME.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Energy": 4
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Energy",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "BorrowedTime",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"ExtraCost\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

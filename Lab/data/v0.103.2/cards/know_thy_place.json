@@ -1,0 +1,55 @@
+{
+  "parser_version": "0.1.0",
+  "id": "KNOW_THY_PLACE",
+  "class_name": "KnowThyPlace",
+  "name": "KnowThyPlace",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/KnowThyPlace.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "KNOW_THY_PLACE.title",
+    "description_key": "KNOW_THY_PLACE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "WeakPower": 1,
+    "Weak": 1,
+    "VulnerablePower": 1,
+    "Vulnerable": 1
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "Weak",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars.Weak.BaseValue"
+    },
+    {
+      "power": "Vulnerable",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "WeakPower",
+      "source": "HoverTipFactory.FromPower"
+    },
+    {
+      "kind": "hover_tip_power",
+      "target": "VulnerablePower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

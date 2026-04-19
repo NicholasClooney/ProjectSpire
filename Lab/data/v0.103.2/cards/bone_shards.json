@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BONE_SHARDS",
+  "class_name": "BoneShards",
+  "name": "BoneShards",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BoneShards.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "BONE_SHARDS.title",
+    "description_key": "BONE_SHARDS.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 9
+  },
+  "keywords": [],
+  "tags": [
+    "OstyAttack"
+  ],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 3
+    },
+    {
+      "var": "OstyDamage",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

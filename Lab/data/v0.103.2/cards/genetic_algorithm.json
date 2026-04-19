@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "GENETIC_ALGORITHM",
+  "class_name": "GeneticAlgorithm",
+  "name": "GeneticAlgorithm",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GeneticAlgorithm.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "GENETIC_ALGORITHM.title",
+    "description_key": "GENETIC_ALGORITHM.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Increase",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SHATTER",
+  "class_name": "Shatter",
+  "name": "Shatter",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Shatter.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "SHATTER.title",
+    "description_key": "SHATTER.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 11
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 4
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

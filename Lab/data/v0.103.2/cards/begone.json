@@ -1,0 +1,37 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BEGONE",
+  "class_name": "Begone",
+  "name": "Begone",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Begone.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "localization": {
+    "title_key": "BEGONE.title",
+    "description_key": "BEGONE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_card",
+      "target": "MINION_STRIKE",
+      "source": "HoverTipFactory.FromCard"
+    },
+    {
+      "kind": "creates_card",
+      "target": "MINION_STRIKE",
+      "source": "CreateCard"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

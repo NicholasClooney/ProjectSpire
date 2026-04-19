@@ -1,0 +1,51 @@
+{
+  "parser_version": "0.1.0",
+  "id": "RESONANCE",
+  "class_name": "Resonance",
+  "name": "Resonance",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Resonance.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "RESONANCE.title",
+    "description_key": "RESONANCE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "StrengthPower": 1,
+    "Strength": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "StrengthPower",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Strength",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "intValue"
+    },
+    {
+      "power": "Strength",
+      "target_expr": "hittableEnemy",
+      "amount_expr": "-1m"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "StrengthPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

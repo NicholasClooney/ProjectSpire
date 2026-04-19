@@ -1,0 +1,44 @@
+{
+  "parser_version": "0.1.0",
+  "id": "GUNK_UP",
+  "class_name": "GunkUp",
+  "name": "GunkUp",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GunkUp.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "GUNK_UP.title",
+    "description_key": "GUNK_UP.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 4
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_card",
+      "target": "SLIMED",
+      "source": "HoverTipFactory.FromCard"
+    },
+    {
+      "kind": "creates_card",
+      "target": "SLIMED",
+      "source": "CreateCard"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

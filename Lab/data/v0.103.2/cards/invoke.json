@@ -1,0 +1,48 @@
+{
+  "parser_version": "0.1.0",
+  "id": "INVOKE",
+  "class_name": "Invoke",
+  "name": "Invoke",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Invoke.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "localization": {
+    "title_key": "INVOKE.title",
+    "description_key": "INVOKE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Energy": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Energy",
+      "delta": 1
+    },
+    {
+      "var": "Summon",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "SummonNextTurn",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Summon.IntValue"
+    },
+    {
+      "power": "EnergyNextTurn",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Energy.IntValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

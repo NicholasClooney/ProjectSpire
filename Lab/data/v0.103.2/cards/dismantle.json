@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "DISMANTLE",
+  "class_name": "Dismantle",
+  "name": "Dismantle",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Dismantle.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "DISMANTLE.title",
+    "description_key": "DISMANTLE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 8
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "VulnerablePower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BUNDLE_OF_JOY",
+  "class_name": "BundleOfJoy",
+  "name": "BundleOfJoy",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BundleOfJoy.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "BUNDLE_OF_JOY.title",
+    "description_key": "BUNDLE_OF_JOY.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 3
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Cards",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

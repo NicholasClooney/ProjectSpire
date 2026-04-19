@@ -1,0 +1,38 @@
+{
+  "parser_version": "0.1.0",
+  "id": "DASH",
+  "class_name": "Dash",
+  "name": "Dash",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Dash.cs",
+  "cost": 2,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "DASH.title",
+    "description_key": "DASH.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 10,
+    "Block": 10
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 3
+    },
+    {
+      "var": "Damage",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

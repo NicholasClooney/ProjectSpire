@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "FLATTEN",
+  "class_name": "Flatten",
+  "name": "Flatten",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Flatten.cs",
+  "cost": 2,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "FLATTEN.title",
+    "description_key": "FLATTEN.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [],
+  "tags": [
+    "OstyAttack"
+  ],
+  "upgrades": [
+    {
+      "var": "OstyDamage",
+      "delta": 4
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

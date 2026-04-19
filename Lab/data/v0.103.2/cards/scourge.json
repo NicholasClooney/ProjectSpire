@@ -1,0 +1,51 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SCOURGE",
+  "class_name": "Scourge",
+  "name": "Scourge",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Scourge.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "SCOURGE.title",
+    "description_key": "SCOURGE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 1,
+    "DoomPower": 13,
+    "Doom": 13
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Cards",
+      "delta": 1
+    },
+    {
+      "var": "Doom",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Doom",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars.Doom.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "DoomPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

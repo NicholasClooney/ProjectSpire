@@ -1,0 +1,44 @@
+{
+  "parser_version": "0.1.0",
+  "id": "OVERCLOCK",
+  "class_name": "Overclock",
+  "name": "Overclock",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Overclock.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "OVERCLOCK.title",
+    "description_key": "OVERCLOCK.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Cards",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_card",
+      "target": "BURN",
+      "source": "HoverTipFactory.FromCard"
+    },
+    {
+      "kind": "creates_card",
+      "target": "BURN",
+      "source": "CreateCard"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

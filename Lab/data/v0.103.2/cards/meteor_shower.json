@@ -1,0 +1,59 @@
+{
+  "parser_version": "0.1.0",
+  "id": "METEOR_SHOWER",
+  "class_name": "MeteorShower",
+  "name": "MeteorShower",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MeteorShower.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Ancient",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "METEOR_SHOWER.title",
+    "description_key": "METEOR_SHOWER.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 14,
+    "VulnerablePower": 2,
+    "Vulnerable": 2,
+    "WeakPower": 2,
+    "Weak": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 7
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Weak",
+      "target_expr": "base.CombatState.HittableEnemies",
+      "amount_expr": "base.DynamicVars.Weak.BaseValue"
+    },
+    {
+      "power": "Vulnerable",
+      "target_expr": "base.CombatState.HittableEnemies",
+      "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "WeakPower",
+      "source": "HoverTipFactory.FromPower"
+    },
+    {
+      "kind": "hover_tip_power",
+      "target": "VulnerablePower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

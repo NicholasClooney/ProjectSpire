@@ -1,0 +1,32 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BIG_BANG",
+  "class_name": "BigBang",
+  "name": "BigBang",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BigBang.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "BIG_BANG.title",
+    "description_key": "BIG_BANG.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 1,
+    "Energy": 1
+  },
+  "keywords": [
+    "Exhaust",
+    "Innate"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

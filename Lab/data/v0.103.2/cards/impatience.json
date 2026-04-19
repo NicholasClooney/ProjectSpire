@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "IMPATIENCE",
+  "class_name": "Impatience",
+  "name": "Impatience",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Impatience.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "IMPATIENCE.title",
+    "description_key": "IMPATIENCE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Cards",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

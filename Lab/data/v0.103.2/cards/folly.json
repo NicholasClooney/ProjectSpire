@@ -1,0 +1,31 @@
+{
+  "parser_version": "0.1.0",
+  "id": "FOLLY",
+  "class_name": "Folly",
+  "name": "Folly",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Folly.cs",
+  "cost": -1,
+  "type": "Curse",
+  "rarity": "Curse",
+  "target": "None",
+  "localization": {
+    "title_key": "FOLLY.title",
+    "description_key": "FOLLY.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Innate",
+    "Ethereal",
+    "Unplayable",
+    "Eternal"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

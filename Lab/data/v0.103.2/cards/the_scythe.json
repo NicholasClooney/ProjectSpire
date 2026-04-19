@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "THE_SCYTHE",
+  "class_name": "TheScythe",
+  "name": "TheScythe",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TheScythe.cs",
+  "cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "THE_SCYTHE.title",
+    "description_key": "THE_SCYTHE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Increase",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

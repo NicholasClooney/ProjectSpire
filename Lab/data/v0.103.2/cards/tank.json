@@ -1,0 +1,32 @@
+{
+  "parser_version": "0.1.0",
+  "id": "TANK",
+  "class_name": "Tank",
+  "name": "Tank",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Tank.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "TANK.title",
+    "description_key": "TANK.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "Tank",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "1m"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

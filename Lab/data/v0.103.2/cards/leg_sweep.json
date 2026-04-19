@@ -1,0 +1,51 @@
+{
+  "parser_version": "0.1.0",
+  "id": "LEG_SWEEP",
+  "class_name": "LegSweep",
+  "name": "LegSweep",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/LegSweep.cs",
+  "cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "LEG_SWEEP.title",
+    "description_key": "LEG_SWEEP.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 11,
+    "WeakPower": 2,
+    "Weak": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 3
+    },
+    {
+      "var": "Weak",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Weak",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars.Weak.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "WeakPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

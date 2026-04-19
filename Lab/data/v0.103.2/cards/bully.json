@@ -1,0 +1,37 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BULLY",
+  "class_name": "Bully",
+  "name": "Bully",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Bully.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "BULLY.title",
+    "description_key": "BULLY.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "ExtraDamage",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "VulnerablePower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

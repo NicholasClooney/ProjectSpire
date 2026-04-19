@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "POUNCE",
+  "class_name": "Pounce",
+  "name": "Pounce",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Pounce.cs",
+  "cost": 2,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "POUNCE.title",
+    "description_key": "POUNCE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 12
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 6
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "FreeSkill",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "1m"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

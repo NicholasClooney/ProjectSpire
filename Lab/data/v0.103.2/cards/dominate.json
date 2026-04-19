@@ -1,0 +1,59 @@
+{
+  "parser_version": "0.1.0",
+  "id": "DOMINATE",
+  "class_name": "Dominate",
+  "name": "Dominate",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Dominate.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "DOMINATE.title",
+    "description_key": "DOMINATE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "StrengthPerVulnerable": 1,
+    "VulnerablePower": 1,
+    "Vulnerable": 1
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "VulnerablePower",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Vulnerable",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars[\"VulnerablePower\"].BaseValue"
+    },
+    {
+      "power": "Strength",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "num"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "StrengthPower",
+      "source": "HoverTipFactory.FromPower"
+    },
+    {
+      "kind": "hover_tip_power",
+      "target": "VulnerablePower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

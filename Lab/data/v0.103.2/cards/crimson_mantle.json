@@ -1,0 +1,40 @@
+{
+  "parser_version": "0.1.0",
+  "id": "CRIMSON_MANTLE",
+  "class_name": "CrimsonMantle",
+  "name": "CrimsonMantle",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CrimsonMantle.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "CRIMSON_MANTLE.title",
+    "description_key": "CRIMSON_MANTLE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "CrimsonMantlePower": 8,
+    "CrimsonMantle": 8
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "CrimsonMantlePower",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "CrimsonMantle",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"CrimsonMantlePower\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

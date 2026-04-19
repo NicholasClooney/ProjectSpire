@@ -1,0 +1,45 @@
+{
+  "parser_version": "0.1.0",
+  "id": "STRANGLE",
+  "class_name": "Strangle",
+  "name": "Strangle",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Strangle.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "STRANGLE.title",
+    "description_key": "STRANGLE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 8,
+    "StranglePower": 2,
+    "Strangle": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 2
+    },
+    {
+      "var": "StranglePower",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Strangle",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars[\"StranglePower\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

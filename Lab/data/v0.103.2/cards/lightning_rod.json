@@ -1,0 +1,47 @@
+{
+  "parser_version": "0.1.0",
+  "id": "LIGHTNING_ROD",
+  "class_name": "LightningRod",
+  "name": "LightningRod",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/LightningRod.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "localization": {
+    "title_key": "LIGHTNING_ROD.title",
+    "description_key": "LIGHTNING_ROD.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 4,
+    "LightningRodPower": 2,
+    "LightningRod": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "LightningRod",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"LightningRodPower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_orb",
+      "target": "LightningOrb",
+      "source": "HoverTipFactory.FromOrb"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

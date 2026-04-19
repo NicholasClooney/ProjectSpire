@@ -1,0 +1,30 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BURN",
+  "class_name": "Burn",
+  "name": "Burn",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Burn.cs",
+  "cost": -1,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "None",
+  "localization": {
+    "title_key": "BURN.title",
+    "description_key": "BURN.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 2
+  },
+  "keywords": [
+    "Unplayable"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

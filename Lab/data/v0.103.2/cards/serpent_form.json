@@ -1,0 +1,40 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SERPENT_FORM",
+  "class_name": "SerpentForm",
+  "name": "SerpentForm",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SerpentForm.cs",
+  "cost": 3,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "SERPENT_FORM.title",
+    "description_key": "SERPENT_FORM.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "SerpentFormPower": 4,
+    "SerpentForm": 4
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "SerpentFormPower",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "SerpentForm",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"SerpentFormPower\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "REBOUND",
+  "class_name": "Rebound",
+  "name": "Rebound",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Rebound.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Event",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "REBOUND.title",
+    "description_key": "REBOUND.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 9
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Rebound",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "1m"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "parser_version": "0.1.0",
+  "id": "LEADING_STRIKE",
+  "class_name": "LeadingStrike",
+  "name": "LeadingStrike",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/LeadingStrike.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "LEADING_STRIKE.title",
+    "description_key": "LEADING_STRIKE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 3
+  },
+  "keywords": [],
+  "tags": [
+    "Strike"
+  ],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_card",
+      "target": "SHIV",
+      "source": "HoverTipFactory.FromCard"
+    },
+    {
+      "kind": "creates_card",
+      "target": "SHIV",
+      "source": "CreateInHand"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

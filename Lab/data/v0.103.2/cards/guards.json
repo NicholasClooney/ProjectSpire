@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "GUARDS",
+  "class_name": "Guards",
+  "name": "Guards",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Guards.cs",
+  "cost": 2,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "GUARDS.title",
+    "description_key": "GUARDS.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_card",
+      "target": "MINION_SACRIFICE",
+      "source": "HoverTipFactory.FromCard"
+    },
+    {
+      "kind": "creates_card",
+      "target": "MINION_SACRIFICE",
+      "source": "CreateCard"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

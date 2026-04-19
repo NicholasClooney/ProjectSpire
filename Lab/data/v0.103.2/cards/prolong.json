@@ -1,0 +1,34 @@
+{
+  "parser_version": "0.1.0",
+  "id": "PROLONG",
+  "class_name": "Prolong",
+  "name": "Prolong",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Prolong.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "PROLONG.title",
+    "description_key": "PROLONG.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "BlockNextTurn",
+      "target_expr": "creature",
+      "amount_expr": "creature.Block"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

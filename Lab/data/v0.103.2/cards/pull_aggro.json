@@ -1,0 +1,37 @@
+{
+  "parser_version": "0.1.0",
+  "id": "PULL_AGGRO",
+  "class_name": "PullAggro",
+  "name": "PullAggro",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PullAggro.cs",
+  "cost": 2,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "localization": {
+    "title_key": "PULL_AGGRO.title",
+    "description_key": "PULL_AGGRO.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 7
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 2
+    },
+    {
+      "var": "Summon",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

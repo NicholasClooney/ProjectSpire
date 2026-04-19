@@ -1,0 +1,56 @@
+{
+  "parser_version": "0.1.0",
+  "id": "UPPERCUT",
+  "class_name": "Uppercut",
+  "name": "Uppercut",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Uppercut.cs",
+  "cost": 2,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "UPPERCUT.title",
+    "description_key": "UPPERCUT.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 13,
+    "Power": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Power",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Weak",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "amount"
+    },
+    {
+      "power": "Vulnerable",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "amount"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "WeakPower",
+      "source": "HoverTipFactory.FromPower"
+    },
+    {
+      "kind": "hover_tip_power",
+      "target": "VulnerablePower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

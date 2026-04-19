@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "GATHER_LIGHT",
+  "class_name": "GatherLight",
+  "name": "GatherLight",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GatherLight.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "localization": {
+    "title_key": "GATHER_LIGHT.title",
+    "description_key": "GATHER_LIGHT.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 8
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

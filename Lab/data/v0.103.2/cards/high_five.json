@@ -1,0 +1,52 @@
+{
+  "parser_version": "0.1.0",
+  "id": "HIGH_FIVE",
+  "class_name": "HighFive",
+  "name": "HighFive",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HighFive.cs",
+  "cost": 2,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "HIGH_FIVE.title",
+    "description_key": "HIGH_FIVE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "VulnerablePower": 2,
+    "Vulnerable": 2
+  },
+  "keywords": [],
+  "tags": [
+    "OstyAttack"
+  ],
+  "upgrades": [
+    {
+      "var": "OstyDamage",
+      "delta": 2
+    },
+    {
+      "var": "Vulnerable",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Vulnerable",
+      "target_expr": "base.CombatState.HittableEnemies",
+      "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "VulnerablePower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

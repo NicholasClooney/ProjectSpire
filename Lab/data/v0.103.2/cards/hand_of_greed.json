@@ -1,0 +1,38 @@
+{
+  "parser_version": "0.1.0",
+  "id": "HAND_OF_GREED",
+  "class_name": "HandOfGreed",
+  "name": "HandOfGreed",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HandOfGreed.cs",
+  "cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "HAND_OF_GREED.title",
+    "description_key": "HAND_OF_GREED.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 20,
+    "Gold": 20
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 5
+    },
+    {
+      "var": "Gold",
+      "delta": 5
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

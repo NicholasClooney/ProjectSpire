@@ -1,0 +1,46 @@
+{
+  "parser_version": "0.1.0",
+  "id": "DEVOUR_LIFE",
+  "class_name": "DevourLife",
+  "name": "DevourLife",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DevourLife.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "DEVOUR_LIFE.title",
+    "description_key": "DEVOUR_LIFE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "DevourLifePower": 1,
+    "DevourLife": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "DevourLifePower",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "DevourLife",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"DevourLifePower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_card",
+      "target": "SOUL",
+      "source": "HoverTipFactory.FromCard"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

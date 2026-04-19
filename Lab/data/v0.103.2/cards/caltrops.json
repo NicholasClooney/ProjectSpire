@@ -1,0 +1,46 @@
+{
+  "parser_version": "0.1.0",
+  "id": "CALTROPS",
+  "class_name": "Caltrops",
+  "name": "Caltrops",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Caltrops.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Event",
+  "target": "Self",
+  "localization": {
+    "title_key": "CALTROPS.title",
+    "description_key": "CALTROPS.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "ThornsPower": 3,
+    "Thorns": 3
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "ThornsPower",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Thorns",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"ThornsPower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "ThornsPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

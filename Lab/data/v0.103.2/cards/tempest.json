@@ -1,0 +1,32 @@
+{
+  "parser_version": "0.1.0",
+  "id": "TEMPEST",
+  "class_name": "Tempest",
+  "name": "Tempest",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Tempest.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "TEMPEST.title",
+    "description_key": "TEMPEST.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_orb",
+      "target": "LightningOrb",
+      "source": "HoverTipFactory.FromOrb"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

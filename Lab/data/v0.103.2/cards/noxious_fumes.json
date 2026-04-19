@@ -1,0 +1,45 @@
+{
+  "parser_version": "0.1.0",
+  "id": "NOXIOUS_FUMES",
+  "class_name": "NoxiousFumes",
+  "name": "NoxiousFumes",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/NoxiousFumes.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "NOXIOUS_FUMES.title",
+    "description_key": "NOXIOUS_FUMES.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "PoisonPerTurn": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "PoisonPerTurn",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "NoxiousFumes",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"PoisonPerTurn\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "PoisonPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

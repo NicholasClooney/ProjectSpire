@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "OMNISLICE",
+  "class_name": "Omnislice",
+  "name": "Omnislice",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Omnislice.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "OMNISLICE.title",
+    "description_key": "OMNISLICE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 8
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

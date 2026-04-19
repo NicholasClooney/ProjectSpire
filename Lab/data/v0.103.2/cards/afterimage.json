@@ -1,0 +1,37 @@
+{
+  "parser_version": "0.1.0",
+  "id": "AFTERIMAGE",
+  "class_name": "Afterimage",
+  "name": "Afterimage",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Afterimage.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "AFTERIMAGE.title",
+    "description_key": "AFTERIMAGE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "AfterimagePower": 1,
+    "Afterimage": 1
+  },
+  "keywords": [
+    "Innate"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "Afterimage",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"AfterimagePower\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "parser_version": "0.1.0",
+  "id": "PACTS_END",
+  "class_name": "PactsEnd",
+  "name": "PactsEnd",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PactsEnd.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "PACTS_END.title",
+    "description_key": "PACTS_END.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 17,
+    "Cards": 3
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 6
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

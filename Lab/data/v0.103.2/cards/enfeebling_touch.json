@@ -1,0 +1,47 @@
+{
+  "parser_version": "0.1.0",
+  "id": "ENFEEBLING_TOUCH",
+  "class_name": "EnfeeblingTouch",
+  "name": "EnfeeblingTouch",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/EnfeeblingTouch.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "ENFEEBLING_TOUCH.title",
+    "description_key": "ENFEEBLING_TOUCH.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "StrengthLoss": 8
+  },
+  "keywords": [
+    "Ethereal"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "StrengthLoss",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "EnfeeblingTouch",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "StrengthPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

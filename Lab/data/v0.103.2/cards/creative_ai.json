@@ -1,0 +1,34 @@
+{
+  "parser_version": "0.1.0",
+  "id": "CREATIVE_AI",
+  "class_name": "CreativeAi",
+  "name": "CreativeAi",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CreativeAi.cs",
+  "cost": 3,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "CREATIVE_AI.title",
+    "description_key": "CREATIVE_AI.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "CreativeAi": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "CreativeAi",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"CreativeAi\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

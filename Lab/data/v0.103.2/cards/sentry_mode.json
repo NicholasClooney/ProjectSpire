@@ -1,0 +1,41 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SENTRY_MODE",
+  "class_name": "SentryMode",
+  "name": "SentryMode",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SentryMode.cs",
+  "cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "SENTRY_MODE.title",
+    "description_key": "SENTRY_MODE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "SentryModePower": 1,
+    "SentryMode": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "SentryMode",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"SentryModePower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_card",
+      "target": "SWEEPING_GAZE",
+      "source": "HoverTipFactory.FromCard"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

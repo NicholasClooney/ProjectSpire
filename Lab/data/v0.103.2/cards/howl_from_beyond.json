@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "HOWL_FROM_BEYOND",
+  "class_name": "HowlFromBeyond",
+  "name": "HowlFromBeyond",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HowlFromBeyond.cs",
+  "cost": 3,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "HOWL_FROM_BEYOND.title",
+    "description_key": "HOWL_FROM_BEYOND.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 16
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 5
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

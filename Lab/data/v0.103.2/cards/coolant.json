@@ -1,0 +1,40 @@
+{
+  "parser_version": "0.1.0",
+  "id": "COOLANT",
+  "class_name": "Coolant",
+  "name": "Coolant",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Coolant.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "COOLANT.title",
+    "description_key": "COOLANT.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "CoolantPower": 2,
+    "Coolant": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "CoolantPower",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Coolant",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"CoolantPower\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

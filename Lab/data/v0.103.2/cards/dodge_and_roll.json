@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "DODGE_AND_ROLL",
+  "class_name": "DodgeAndRoll",
+  "name": "DodgeAndRoll",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DodgeAndRoll.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "localization": {
+    "title_key": "DODGE_AND_ROLL.title",
+    "description_key": "DODGE_AND_ROLL.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 4
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "BlockNextTurn",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "amount"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

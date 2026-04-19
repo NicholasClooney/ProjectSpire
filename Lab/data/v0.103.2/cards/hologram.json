@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "HOLOGRAM",
+  "class_name": "Hologram",
+  "name": "Hologram",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Hologram.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "localization": {
+    "title_key": "HOLOGRAM.title",
+    "description_key": "HOLOGRAM.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 3
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

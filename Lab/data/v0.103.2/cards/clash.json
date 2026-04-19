@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "CLASH",
+  "class_name": "Clash",
+  "name": "Clash",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Clash.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Event",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "CLASH.title",
+    "description_key": "CLASH.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 14
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 4
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

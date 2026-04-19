@@ -1,0 +1,37 @@
+{
+  "parser_version": "0.1.0",
+  "id": "PRIMAL_FORCE",
+  "class_name": "PrimalForce",
+  "name": "PrimalForce",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PrimalForce.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "PRIMAL_FORCE.title",
+    "description_key": "PRIMAL_FORCE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_card",
+      "target": "GIANT_ROCK",
+      "source": "HoverTipFactory.FromCard"
+    },
+    {
+      "kind": "creates_card",
+      "target": "GIANT_ROCK",
+      "source": "CreateCard"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

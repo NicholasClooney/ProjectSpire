@@ -1,0 +1,41 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SWORD_SAGE",
+  "class_name": "SwordSage",
+  "name": "SwordSage",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SwordSage.cs",
+  "cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "SWORD_SAGE.title",
+    "description_key": "SWORD_SAGE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "SwordSagePower": 1,
+    "SwordSage": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "SwordSage",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"SwordSagePower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_card",
+      "target": "SOVEREIGN_BLADE",
+      "source": "HoverTipFactory.FromCard"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

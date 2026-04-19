@@ -1,0 +1,43 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SHIV",
+  "class_name": "Shiv",
+  "name": "Shiv",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Shiv.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Token",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "SHIV.title",
+    "description_key": "SHIV.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 4
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [
+    "Shiv"
+  ],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "creates_card",
+      "target": "SHIV",
+      "source": "CreateCard"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

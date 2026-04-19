@@ -1,0 +1,40 @@
+{
+  "parser_version": "0.1.0",
+  "id": "HIDDEN_DAGGERS",
+  "class_name": "HiddenDaggers",
+  "name": "HiddenDaggers",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HiddenDaggers.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "HIDDEN_DAGGERS.title",
+    "description_key": "HIDDEN_DAGGERS.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 2,
+    "Shivs": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_card",
+      "target": "SHIV",
+      "source": "HoverTipFactory.FromCard"
+    },
+    {
+      "kind": "creates_card",
+      "target": "SHIV",
+      "source": "CreateInHand"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

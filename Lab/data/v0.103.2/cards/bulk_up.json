@@ -1,0 +1,63 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BULK_UP",
+  "class_name": "BulkUp",
+  "name": "BulkUp",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BulkUp.cs",
+  "cost": 2,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "BULK_UP.title",
+    "description_key": "BULK_UP.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "OrbSlots": 1,
+    "StrengthPower": 2,
+    "Strength": 2,
+    "DexterityPower": 2,
+    "Dexterity": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Dexterity",
+      "delta": 1
+    },
+    {
+      "var": "Strength",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Strength",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Strength.BaseValue"
+    },
+    {
+      "power": "Dexterity",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Dexterity.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "StrengthPower",
+      "source": "HoverTipFactory.FromPower"
+    },
+    {
+      "kind": "hover_tip_power",
+      "target": "DexterityPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "parser_version": "0.1.0",
+  "id": "THUNDER",
+  "class_name": "Thunder",
+  "name": "Thunder",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Thunder.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "THUNDER.title",
+    "description_key": "THUNDER.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "ThunderPower": 6,
+    "Thunder": 6
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "ThunderPower",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Thunder",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"ThunderPower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_orb",
+      "target": "LightningOrb",
+      "source": "HoverTipFactory.FromOrb"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

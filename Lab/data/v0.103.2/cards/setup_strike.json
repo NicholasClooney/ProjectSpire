@@ -1,0 +1,53 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SETUP_STRIKE",
+  "class_name": "SetupStrike",
+  "name": "SetupStrike",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SetupStrike.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "SETUP_STRIKE.title",
+    "description_key": "SETUP_STRIKE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 7,
+    "StrengthPower": 2,
+    "Strength": 2
+  },
+  "keywords": [],
+  "tags": [
+    "Strike"
+  ],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 2
+    },
+    {
+      "var": "Strength",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "SetupStrike",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Strength.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "StrengthPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

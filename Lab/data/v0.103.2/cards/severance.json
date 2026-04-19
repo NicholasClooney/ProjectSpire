@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SEVERANCE",
+  "class_name": "Severance",
+  "name": "Severance",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Severance.cs",
+  "cost": 2,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "SEVERANCE.title",
+    "description_key": "SEVERANCE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 13
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 5
+    }
+  ],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_card",
+      "target": "SOUL",
+      "source": "HoverTipFactory.FromCard"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

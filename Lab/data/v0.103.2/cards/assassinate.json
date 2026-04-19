@@ -1,0 +1,54 @@
+{
+  "parser_version": "0.1.0",
+  "id": "ASSASSINATE",
+  "class_name": "Assassinate",
+  "name": "Assassinate",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Assassinate.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "ASSASSINATE.title",
+    "description_key": "ASSASSINATE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 10,
+    "VulnerablePower": 1,
+    "Vulnerable": 1
+  },
+  "keywords": [
+    "Exhaust",
+    "Innate"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 3
+    },
+    {
+      "var": "Vulnerable",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Vulnerable",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "VulnerablePower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

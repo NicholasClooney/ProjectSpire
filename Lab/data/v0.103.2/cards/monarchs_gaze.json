@@ -1,0 +1,40 @@
+{
+  "parser_version": "0.1.0",
+  "id": "MONARCHS_GAZE",
+  "class_name": "MonarchsGaze",
+  "name": "MonarchsGaze",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MonarchsGaze.cs",
+  "cost": 3,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "MONARCHS_GAZE.title",
+    "description_key": "MONARCHS_GAZE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "StrengthLoss": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "MonarchsGaze",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "StrengthPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

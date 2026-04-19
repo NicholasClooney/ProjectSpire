@@ -1,0 +1,38 @@
+{
+  "parser_version": "0.1.0",
+  "id": "ROCKET_PUNCH",
+  "class_name": "RocketPunch",
+  "name": "RocketPunch",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/RocketPunch.cs",
+  "cost": 2,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "ROCKET_PUNCH.title",
+    "description_key": "ROCKET_PUNCH.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 13,
+    "Cards": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Cards",
+      "delta": 1
+    },
+    {
+      "var": "Damage",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "parser_version": "0.1.0",
+  "id": "PUTREFY",
+  "class_name": "Putrefy",
+  "name": "Putrefy",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Putrefy.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "PUTREFY.title",
+    "description_key": "PUTREFY.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Power": 2
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Power",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Weak",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "amount"
+    },
+    {
+      "power": "Vulnerable",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "amount"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "WeakPower",
+      "source": "HoverTipFactory.FromPower"
+    },
+    {
+      "kind": "hover_tip_power",
+      "target": "VulnerablePower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

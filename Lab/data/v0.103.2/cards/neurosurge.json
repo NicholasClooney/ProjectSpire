@@ -1,0 +1,48 @@
+{
+  "parser_version": "0.1.0",
+  "id": "NEUROSURGE",
+  "class_name": "Neurosurge",
+  "name": "Neurosurge",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Neurosurge.cs",
+  "cost": 0,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "NEUROSURGE.title",
+    "description_key": "NEUROSURGE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 2,
+    "Energy": 3,
+    "NeurosurgePower": 3,
+    "Neurosurge": 3
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Energy",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Neurosurge",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"NeurosurgePower\"].IntValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "DoomPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

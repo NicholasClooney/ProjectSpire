@@ -1,0 +1,32 @@
+{
+  "parser_version": "0.1.0",
+  "id": "FRANTIC_ESCAPE",
+  "class_name": "FranticEscape",
+  "name": "FranticEscape",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FranticEscape.cs",
+  "cost": 1,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "Self",
+  "localization": {
+    "title_key": "FRANTIC_ESCAPE.title",
+    "description_key": "FRANTIC_ESCAPE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "SandpitPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "parser_version": "0.1.0",
+  "id": "APOTHEOSIS",
+  "class_name": "Apotheosis",
+  "name": "Apotheosis",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Apotheosis.cs",
+  "cost": 2,
+  "type": "Skill",
+  "rarity": "Ancient",
+  "target": "Self",
+  "localization": {
+    "title_key": "APOTHEOSIS.title",
+    "description_key": "APOTHEOSIS.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Exhaust",
+    "Innate"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "TRUE_GRIT",
+  "class_name": "TrueGrit",
+  "name": "TrueGrit",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TrueGrit.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "localization": {
+    "title_key": "TRUE_GRIT.title",
+    "description_key": "TRUE_GRIT.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 7
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

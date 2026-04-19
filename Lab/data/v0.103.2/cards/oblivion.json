@@ -1,0 +1,46 @@
+{
+  "parser_version": "0.1.0",
+  "id": "OBLIVION",
+  "class_name": "Oblivion",
+  "name": "Oblivion",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Oblivion.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "OBLIVION.title",
+    "description_key": "OBLIVION.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "DoomPower": 3,
+    "Doom": 3
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Doom",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Oblivion",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars.Doom.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "DoomPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

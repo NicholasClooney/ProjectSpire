@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SLICE",
+  "class_name": "Slice",
+  "name": "Slice",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Slice.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "SLICE.title",
+    "description_key": "SLICE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 6
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

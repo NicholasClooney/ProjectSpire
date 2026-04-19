@@ -1,0 +1,44 @@
+{
+  "parser_version": "0.1.0",
+  "id": "FLAME_BARRIER",
+  "class_name": "FlameBarrier",
+  "name": "FlameBarrier",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FlameBarrier.cs",
+  "cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "FLAME_BARRIER.title",
+    "description_key": "FLAME_BARRIER.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 12,
+    "DamageBack": 4
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 4
+    },
+    {
+      "var": "DamageBack",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "FlameBarrier",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"DamageBack\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

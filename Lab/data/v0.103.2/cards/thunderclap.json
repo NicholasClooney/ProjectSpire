@@ -1,0 +1,47 @@
+{
+  "parser_version": "0.1.0",
+  "id": "THUNDERCLAP",
+  "class_name": "Thunderclap",
+  "name": "Thunderclap",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Thunderclap.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "THUNDERCLAP.title",
+    "description_key": "THUNDERCLAP.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 4,
+    "VulnerablePower": 1,
+    "Vulnerable": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Vulnerable",
+      "target_expr": "base.CombatState.HittableEnemies",
+      "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "VulnerablePower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SPUR",
+  "class_name": "Spur",
+  "name": "Spur",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Spur.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "SPUR.title",
+    "description_key": "SPUR.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Retain"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Heal",
+      "delta": 2
+    },
+    {
+      "var": "Summon",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

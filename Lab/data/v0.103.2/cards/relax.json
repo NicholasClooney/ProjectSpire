@@ -1,0 +1,56 @@
+{
+  "parser_version": "0.1.0",
+  "id": "RELAX",
+  "class_name": "Relax",
+  "name": "Relax",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Relax.cs",
+  "cost": 3,
+  "type": "Skill",
+  "rarity": "Ancient",
+  "target": "Self",
+  "localization": {
+    "title_key": "RELAX.title",
+    "description_key": "RELAX.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 15,
+    "Cards": 2,
+    "Energy": 2
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 2
+    },
+    {
+      "var": "Cards",
+      "delta": 1
+    },
+    {
+      "var": "Energy",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "DrawCardsNextTurn",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Cards.BaseValue"
+    },
+    {
+      "power": "EnergyNextTurn",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Energy.BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

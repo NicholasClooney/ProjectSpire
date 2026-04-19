@@ -1,0 +1,30 @@
+{
+  "parser_version": "0.1.0",
+  "id": "THINKING_AHEAD",
+  "class_name": "ThinkingAhead",
+  "name": "ThinkingAhead",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ThinkingAhead.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "THINKING_AHEAD.title",
+    "description_key": "THINKING_AHEAD.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 2
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

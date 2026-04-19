@@ -1,0 +1,46 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BOUNCING_FLASK",
+  "class_name": "BouncingFlask",
+  "name": "BouncingFlask",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BouncingFlask.cs",
+  "cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "RandomEnemy",
+  "localization": {
+    "title_key": "BOUNCING_FLASK.title",
+    "description_key": "BOUNCING_FLASK.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "PoisonPower": 3,
+    "Poison": 3
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Repeat",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Poison",
+      "target_expr": "enemy",
+      "amount_expr": "base.DynamicVars.Poison.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "PoisonPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

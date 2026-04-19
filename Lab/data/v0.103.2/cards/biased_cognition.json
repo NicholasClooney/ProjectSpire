@@ -1,0 +1,53 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BIASED_COGNITION",
+  "class_name": "BiasedCognition",
+  "name": "BiasedCognition",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BiasedCognition.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Ancient",
+  "target": "Self",
+  "localization": {
+    "title_key": "BIASED_COGNITION.title",
+    "description_key": "BIASED_COGNITION.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "FocusPower": 4,
+    "Focus": 4,
+    "BiasedCognitionPower": 1,
+    "BiasedCognition": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "FocusPower",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Focus",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"FocusPower\"].BaseValue"
+    },
+    {
+      "power": "BiasedCognition",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"BiasedCognitionPower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "FocusPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

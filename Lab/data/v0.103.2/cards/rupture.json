@@ -1,0 +1,46 @@
+{
+  "parser_version": "0.1.0",
+  "id": "RUPTURE",
+  "class_name": "Rupture",
+  "name": "Rupture",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Rupture.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "RUPTURE.title",
+    "description_key": "RUPTURE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "StrengthPower": 1,
+    "Strength": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Strength",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Rupture",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Strength.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "StrengthPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

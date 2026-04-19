@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "HUDDLE_UP",
+  "class_name": "HuddleUp",
+  "name": "HuddleUp",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HuddleUp.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AllAllies",
+  "localization": {
+    "title_key": "HUDDLE_UP.title",
+    "description_key": "HUDDLE_UP.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 2
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Cards",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

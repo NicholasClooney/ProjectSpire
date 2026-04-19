@@ -1,0 +1,29 @@
+{
+  "parser_version": "0.1.0",
+  "id": "CALCULATED_GAMBLE",
+  "class_name": "CalculatedGamble",
+  "name": "CalculatedGamble",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CalculatedGamble.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "CALCULATED_GAMBLE.title",
+    "description_key": "CALCULATED_GAMBLE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Exhaust",
+    "Retain"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

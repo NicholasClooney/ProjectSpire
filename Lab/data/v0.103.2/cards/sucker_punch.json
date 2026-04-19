@@ -1,0 +1,51 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SUCKER_PUNCH",
+  "class_name": "SuckerPunch",
+  "name": "SuckerPunch",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SuckerPunch.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "SUCKER_PUNCH.title",
+    "description_key": "SUCKER_PUNCH.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 8,
+    "WeakPower": 1,
+    "Weak": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 2
+    },
+    {
+      "var": "Weak",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Weak",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars.Weak.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "WeakPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

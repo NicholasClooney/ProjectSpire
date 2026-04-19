@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "COLD_SNAP",
+  "class_name": "ColdSnap",
+  "name": "ColdSnap",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ColdSnap.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "COLD_SNAP.title",
+    "description_key": "COLD_SNAP.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 6
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_orb",
+      "target": "FrostOrb",
+      "source": "HoverTipFactory.FromOrb"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

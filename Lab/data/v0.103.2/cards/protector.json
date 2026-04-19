@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "PROTECTOR",
+  "class_name": "Protector",
+  "name": "Protector",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Protector.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Ancient",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "PROTECTOR.title",
+    "description_key": "PROTECTOR.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [],
+  "tags": [
+    "OstyAttack"
+  ],
+  "upgrades": [
+    {
+      "var": "CalculationBase",
+      "delta": 5
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

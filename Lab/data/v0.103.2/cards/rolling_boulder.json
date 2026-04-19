@@ -1,0 +1,41 @@
+{
+  "parser_version": "0.1.0",
+  "id": "ROLLING_BOULDER",
+  "class_name": "RollingBoulder",
+  "name": "RollingBoulder",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/RollingBoulder.cs",
+  "cost": 3,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "ROLLING_BOULDER.title",
+    "description_key": "ROLLING_BOULDER.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "IncrementAmount": 5,
+    "RollingBoulderPower": 5,
+    "RollingBoulder": 5
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "RollingBoulderPower",
+      "delta": 5
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "RollingBoulder",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"RollingBoulderPower\"].IntValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

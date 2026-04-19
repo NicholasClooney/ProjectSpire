@@ -1,0 +1,46 @@
+{
+  "parser_version": "0.1.0",
+  "id": "COORDINATE",
+  "class_name": "Coordinate",
+  "name": "Coordinate",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Coordinate.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AnyAlly",
+  "localization": {
+    "title_key": "COORDINATE.title",
+    "description_key": "COORDINATE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "StrengthPower": 5,
+    "Strength": 5
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Strength",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Coordinate",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "baseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "StrengthPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

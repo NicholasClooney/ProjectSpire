@@ -1,0 +1,40 @@
+{
+  "parser_version": "0.1.0",
+  "id": "REAVE",
+  "class_name": "Reave",
+  "name": "Reave",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Reave.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "REAVE.title",
+    "description_key": "REAVE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 9,
+    "Cards": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_card",
+      "target": "SOUL",
+      "source": "HoverTipFactory.FromCard"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

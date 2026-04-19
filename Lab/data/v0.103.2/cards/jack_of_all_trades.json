@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "JACK_OF_ALL_TRADES",
+  "class_name": "JackOfAllTrades",
+  "name": "JackOfAllTrades",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/JackOfAllTrades.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "JACK_OF_ALL_TRADES.title",
+    "description_key": "JACK_OF_ALL_TRADES.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 1
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Cards",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

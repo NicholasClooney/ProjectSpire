@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "RADIATE",
+  "class_name": "Radiate",
+  "name": "Radiate",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Radiate.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "RADIATE.title",
+    "description_key": "RADIATE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 3
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

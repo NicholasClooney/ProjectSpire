@@ -1,0 +1,29 @@
+{
+  "parser_version": "0.1.0",
+  "id": "WRITHE",
+  "class_name": "Writhe",
+  "name": "Writhe",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Writhe.cs",
+  "cost": -1,
+  "type": "Curse",
+  "rarity": "Curse",
+  "target": "None",
+  "localization": {
+    "title_key": "WRITHE.title",
+    "description_key": "WRITHE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Innate",
+    "Unplayable"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

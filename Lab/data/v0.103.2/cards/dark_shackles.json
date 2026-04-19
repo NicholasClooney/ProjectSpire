@@ -1,0 +1,47 @@
+{
+  "parser_version": "0.1.0",
+  "id": "DARK_SHACKLES",
+  "class_name": "DarkShackles",
+  "name": "DarkShackles",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DarkShackles.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "DARK_SHACKLES.title",
+    "description_key": "DARK_SHACKLES.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "StrengthLoss": 9
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "StrengthLoss",
+      "delta": 6
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "DarkShackles",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "StrengthPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

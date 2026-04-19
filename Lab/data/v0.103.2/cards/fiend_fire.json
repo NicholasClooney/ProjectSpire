@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "FIEND_FIRE",
+  "class_name": "FiendFire",
+  "name": "FiendFire",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FiendFire.cs",
+  "cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "FIEND_FIRE.title",
+    "description_key": "FIEND_FIRE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 7
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

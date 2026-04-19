@@ -1,0 +1,40 @@
+{
+  "parser_version": "0.1.0",
+  "id": "RESTLESSNESS",
+  "class_name": "Restlessness",
+  "name": "Restlessness",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Restlessness.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "RESTLESSNESS.title",
+    "description_key": "RESTLESSNESS.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 2,
+    "Energy": 2
+  },
+  "keywords": [
+    "Retain"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Cards",
+      "delta": 1
+    },
+    {
+      "var": "Energy",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

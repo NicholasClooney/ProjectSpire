@@ -1,0 +1,42 @@
+{
+  "parser_version": "0.1.0",
+  "id": "MONOLOGUE",
+  "class_name": "Monologue",
+  "name": "Monologue",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Monologue.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "MONOLOGUE.title",
+    "description_key": "MONOLOGUE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Power": 1
+  },
+  "keywords": [
+    "Retain"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "Monologue",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "1m"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "StrengthPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

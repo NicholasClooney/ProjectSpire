@@ -1,0 +1,38 @@
+{
+  "parser_version": "0.1.0",
+  "id": "IRON_WAVE",
+  "class_name": "IronWave",
+  "name": "IronWave",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/IronWave.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "IRON_WAVE.title",
+    "description_key": "IRON_WAVE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 5,
+    "Block": 5
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 2
+    },
+    {
+      "var": "Damage",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

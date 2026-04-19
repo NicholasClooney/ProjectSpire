@@ -1,0 +1,50 @@
+{
+  "parser_version": "0.1.0",
+  "id": "CRUSH_UNDER",
+  "class_name": "CrushUnder",
+  "name": "CrushUnder",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CrushUnder.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "CRUSH_UNDER.title",
+    "description_key": "CRUSH_UNDER.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 7,
+    "StrengthLoss": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 1
+    },
+    {
+      "var": "StrengthLoss",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "CrushUnder",
+      "target_expr": "enemies",
+      "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "StrengthPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

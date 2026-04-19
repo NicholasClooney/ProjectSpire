@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "STRIKE_IRONCLAD",
+  "class_name": "StrikeIronclad",
+  "name": "StrikeIronclad",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/StrikeIronclad.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Basic",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "STRIKE_IRONCLAD.title",
+    "description_key": "STRIKE_IRONCLAD.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 6
+  },
+  "keywords": [],
+  "tags": [
+    "Strike"
+  ],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

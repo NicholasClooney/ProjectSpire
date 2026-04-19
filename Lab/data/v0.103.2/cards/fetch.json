@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "FETCH",
+  "class_name": "Fetch",
+  "name": "Fetch",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Fetch.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "FETCH.title",
+    "description_key": "FETCH.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 1
+  },
+  "keywords": [],
+  "tags": [
+    "OstyAttack"
+  ],
+  "upgrades": [
+    {
+      "var": "OstyDamage",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BREAKTHROUGH",
+  "class_name": "Breakthrough",
+  "name": "Breakthrough",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Breakthrough.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "BREAKTHROUGH.title",
+    "description_key": "BREAKTHROUGH.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 9,
+    "HpLoss": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 4
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "parser_version": "0.1.0",
+  "id": "TURBO",
+  "class_name": "Turbo",
+  "name": "Turbo",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Turbo.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "localization": {
+    "title_key": "TURBO.title",
+    "description_key": "TURBO.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Energy": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Energy",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_card",
+      "target": "VOID",
+      "source": "HoverTipFactory.FromCard"
+    },
+    {
+      "kind": "creates_card",
+      "target": "VOID",
+      "source": "CreateCard"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "LOOP",
+  "class_name": "Loop",
+  "name": "Loop",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Loop.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "LOOP.title",
+    "description_key": "LOOP.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Loop": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Loop",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Loop",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"Loop\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

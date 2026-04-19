@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "INTERCEPT",
+  "class_name": "Intercept",
+  "name": "Intercept",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Intercept.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AnyAlly",
+  "localization": {
+    "title_key": "INTERCEPT.title",
+    "description_key": "INTERCEPT.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 9
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 4
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Covered",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "1m"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

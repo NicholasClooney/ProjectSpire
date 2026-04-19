@@ -1,0 +1,52 @@
+{
+  "parser_version": "0.1.0",
+  "id": "DYING_STAR",
+  "class_name": "DyingStar",
+  "name": "DyingStar",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DyingStar.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "DYING_STAR.title",
+    "description_key": "DYING_STAR.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 9,
+    "StrengthLoss": 9
+  },
+  "keywords": [
+    "Ethereal"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 2
+    },
+    {
+      "var": "StrengthLoss",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "DyingStar",
+      "target_expr": "enemy",
+      "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "StrengthPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

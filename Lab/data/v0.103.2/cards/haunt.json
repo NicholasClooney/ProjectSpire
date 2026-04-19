@@ -1,0 +1,45 @@
+{
+  "parser_version": "0.1.0",
+  "id": "HAUNT",
+  "class_name": "Haunt",
+  "name": "Haunt",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Haunt.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "HAUNT.title",
+    "description_key": "HAUNT.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "HpLoss": 6
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "HpLoss",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Haunt",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.HpLoss.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_card",
+      "target": "SOUL",
+      "source": "HoverTipFactory.FromCard"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "parser_version": "0.1.0",
+  "id": "PREP_TIME",
+  "class_name": "PrepTime",
+  "name": "PrepTime",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PrepTime.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "PREP_TIME.title",
+    "description_key": "PREP_TIME.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "PrepTimePower": 4,
+    "PrepTime": 4
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "PrepTimePower",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "PrepTime",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"PrepTimePower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "VigorPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

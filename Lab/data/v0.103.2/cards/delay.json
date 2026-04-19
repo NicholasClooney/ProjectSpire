@@ -1,0 +1,44 @@
+{
+  "parser_version": "0.1.0",
+  "id": "DELAY",
+  "class_name": "Delay",
+  "name": "Delay",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Delay.cs",
+  "cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "DELAY.title",
+    "description_key": "DELAY.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 11,
+    "Energy": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 2
+    },
+    {
+      "var": "Energy",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "EnergyNextTurn",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Energy.IntValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

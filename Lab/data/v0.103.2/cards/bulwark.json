@@ -1,0 +1,37 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BULWARK",
+  "class_name": "Bulwark",
+  "name": "Bulwark",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Bulwark.cs",
+  "cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "BULWARK.title",
+    "description_key": "BULWARK.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 13
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 3
+    },
+    {
+      "var": "Forge",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BULLET_TIME",
+  "class_name": "BulletTime",
+  "name": "BulletTime",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BulletTime.cs",
+  "cost": 3,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "BULLET_TIME.title",
+    "description_key": "BULLET_TIME.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "NoDraw",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "1m"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

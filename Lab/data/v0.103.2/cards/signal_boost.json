@@ -1,0 +1,37 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SIGNAL_BOOST",
+  "class_name": "SignalBoost",
+  "name": "SignalBoost",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SignalBoost.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "SIGNAL_BOOST.title",
+    "description_key": "SIGNAL_BOOST.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "SignalBoostPower": 1,
+    "SignalBoost": 1
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "SignalBoost",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"SignalBoostPower\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

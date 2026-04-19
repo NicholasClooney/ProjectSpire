@@ -1,0 +1,41 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SPINNER",
+  "class_name": "Spinner",
+  "name": "Spinner",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Spinner.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "SPINNER.title",
+    "description_key": "SPINNER.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "SpinnerPower": 1,
+    "Spinner": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "Spinner",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"SpinnerPower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_orb",
+      "target": "GlassOrb",
+      "source": "HoverTipFactory.FromOrb"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

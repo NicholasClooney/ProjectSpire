@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "ACROBATICS",
+  "class_name": "Acrobatics",
+  "name": "Acrobatics",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Acrobatics.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "ACROBATICS.title",
+    "description_key": "ACROBATICS.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 3
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Cards",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

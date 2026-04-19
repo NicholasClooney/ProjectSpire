@@ -1,0 +1,41 @@
+{
+  "parser_version": "0.1.0",
+  "id": "WELL_LAID_PLANS",
+  "class_name": "WellLaidPlans",
+  "name": "WellLaidPlans",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/WellLaidPlans.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "WELL_LAID_PLANS.title",
+    "description_key": "WELL_LAID_PLANS.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "RetainAmount": 1
+  },
+  "keywords": [
+    "Retain"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "RetainAmount",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "WellLaidPlans",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"RetainAmount\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

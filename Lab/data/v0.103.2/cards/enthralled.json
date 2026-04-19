@@ -1,0 +1,28 @@
+{
+  "parser_version": "0.1.0",
+  "id": "ENTHRALLED",
+  "class_name": "Enthralled",
+  "name": "Enthralled",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Enthralled.cs",
+  "cost": 2,
+  "type": "Curse",
+  "rarity": "Curse",
+  "target": "None",
+  "localization": {
+    "title_key": "ENTHRALLED.title",
+    "description_key": "ENTHRALLED.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Eternal"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

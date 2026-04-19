@@ -1,0 +1,37 @@
+{
+  "parser_version": "0.1.0",
+  "id": "OFFERING",
+  "class_name": "Offering",
+  "name": "Offering",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Offering.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "OFFERING.title",
+    "description_key": "OFFERING.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 3,
+    "Energy": 2,
+    "HpLoss": 6
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Cards",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

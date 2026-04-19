@@ -1,0 +1,40 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BLACK_HOLE",
+  "class_name": "BlackHole",
+  "name": "BlackHole",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BlackHole.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "BLACK_HOLE.title",
+    "description_key": "BLACK_HOLE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "BlackHolePower": 3,
+    "BlackHole": 3
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "BlackHolePower",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "BlackHole",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"BlackHolePower\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

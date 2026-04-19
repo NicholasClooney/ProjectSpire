@@ -1,0 +1,34 @@
+{
+  "parser_version": "0.1.0",
+  "id": "HEAVENLY_DRILL",
+  "class_name": "HeavenlyDrill",
+  "name": "HeavenlyDrill",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HeavenlyDrill.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "HEAVENLY_DRILL.title",
+    "description_key": "HEAVENLY_DRILL.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 8,
+    "Energy": 4
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

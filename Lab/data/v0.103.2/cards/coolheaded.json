@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "COOLHEADED",
+  "class_name": "Coolheaded",
+  "name": "Coolheaded",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Coolheaded.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "localization": {
+    "title_key": "COOLHEADED.title",
+    "description_key": "COOLHEADED.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Cards",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_orb",
+      "target": "FrostOrb",
+      "source": "HoverTipFactory.FromOrb"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

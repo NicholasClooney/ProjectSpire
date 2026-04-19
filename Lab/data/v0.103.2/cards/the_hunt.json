@@ -1,0 +1,41 @@
+{
+  "parser_version": "0.1.0",
+  "id": "THE_HUNT",
+  "class_name": "TheHunt",
+  "name": "TheHunt",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TheHunt.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "THE_HUNT.title",
+    "description_key": "THE_HUNT.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 10
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 5
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "TheHunt",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "1m"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

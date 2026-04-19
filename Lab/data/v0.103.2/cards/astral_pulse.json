@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "ASTRAL_PULSE",
+  "class_name": "AstralPulse",
+  "name": "AstralPulse",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/AstralPulse.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "ASTRAL_PULSE.title",
+    "description_key": "ASTRAL_PULSE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 14
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 4
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

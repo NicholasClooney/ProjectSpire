@@ -1,0 +1,38 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SCRAPE",
+  "class_name": "Scrape",
+  "name": "Scrape",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Scrape.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "SCRAPE.title",
+    "description_key": "SCRAPE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 7,
+    "Cards": 4
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Cards",
+      "delta": 1
+    },
+    {
+      "var": "Damage",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

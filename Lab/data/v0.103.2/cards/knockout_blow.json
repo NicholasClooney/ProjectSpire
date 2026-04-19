@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "KNOCKOUT_BLOW",
+  "class_name": "KnockoutBlow",
+  "name": "KnockoutBlow",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/KnockoutBlow.cs",
+  "cost": 3,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "KNOCKOUT_BLOW.title",
+    "description_key": "KNOCKOUT_BLOW.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 30
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 8
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

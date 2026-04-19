@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "ONE_TWO_PUNCH",
+  "class_name": "OneTwoPunch",
+  "name": "OneTwoPunch",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/OneTwoPunch.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "ONE_TWO_PUNCH.title",
+    "description_key": "ONE_TWO_PUNCH.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Attacks": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Attacks",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "OneTwoPunch",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"Attacks\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

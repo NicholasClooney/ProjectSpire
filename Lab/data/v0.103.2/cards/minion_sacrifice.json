@@ -1,0 +1,37 @@
+{
+  "parser_version": "0.1.0",
+  "id": "MINION_SACRIFICE",
+  "class_name": "MinionSacrifice",
+  "name": "MinionSacrifice",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MinionSacrifice.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Token",
+  "target": "Self",
+  "localization": {
+    "title_key": "MINION_SACRIFICE.title",
+    "description_key": "MINION_SACRIFICE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 9
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [
+    "Minion"
+  ],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "CHILD_OF_THE_STARS",
+  "class_name": "ChildOfTheStars",
+  "name": "ChildOfTheStars",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ChildOfTheStars.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "CHILD_OF_THE_STARS.title",
+    "description_key": "CHILD_OF_THE_STARS.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "BlockForStars": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "BlockForStars",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "ChildOfTheStars",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"BlockForStars\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

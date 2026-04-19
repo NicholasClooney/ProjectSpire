@@ -1,0 +1,34 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SWEEPING_BEAM",
+  "class_name": "SweepingBeam",
+  "name": "SweepingBeam",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SweepingBeam.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "SWEEPING_BEAM.title",
+    "description_key": "SWEEPING_BEAM.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 6,
+    "Cards": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

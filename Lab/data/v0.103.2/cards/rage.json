@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "RAGE",
+  "class_name": "Rage",
+  "name": "Rage",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Rage.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "RAGE.title",
+    "description_key": "RAGE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Power": 3
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Power",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Rage",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"Power\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

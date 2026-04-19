@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SUPERCRITICAL",
+  "class_name": "Supercritical",
+  "name": "Supercritical",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Supercritical.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "SUPERCRITICAL.title",
+    "description_key": "SUPERCRITICAL.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Energy": 4
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Energy",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

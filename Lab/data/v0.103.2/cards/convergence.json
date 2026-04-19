@@ -1,0 +1,51 @@
+{
+  "parser_version": "0.1.0",
+  "id": "CONVERGENCE",
+  "class_name": "Convergence",
+  "name": "Convergence",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Convergence.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "CONVERGENCE.title",
+    "description_key": "CONVERGENCE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Energy": 1
+  },
+  "keywords": [
+    "Retain"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Stars",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "RetainHand",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "1m"
+    },
+    {
+      "power": "EnergyNextTurn",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Energy.BaseValue"
+    },
+    {
+      "power": "StarNextTurn",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Stars.BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

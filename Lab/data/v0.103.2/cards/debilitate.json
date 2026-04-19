@@ -1,0 +1,56 @@
+{
+  "parser_version": "0.1.0",
+  "id": "DEBILITATE",
+  "class_name": "Debilitate",
+  "name": "Debilitate",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Debilitate.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "DEBILITATE.title",
+    "description_key": "DEBILITATE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 10,
+    "DebilitatePower": 3,
+    "Debilitate": 3
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 2
+    },
+    {
+      "var": "DebilitatePower",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Debilitate",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars[\"DebilitatePower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "VulnerablePower",
+      "source": "HoverTipFactory.FromPower"
+    },
+    {
+      "kind": "hover_tip_power",
+      "target": "WeakPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

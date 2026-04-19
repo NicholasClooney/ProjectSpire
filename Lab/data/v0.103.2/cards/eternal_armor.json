@@ -1,0 +1,46 @@
+{
+  "parser_version": "0.1.0",
+  "id": "ETERNAL_ARMOR",
+  "class_name": "EternalArmor",
+  "name": "EternalArmor",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/EternalArmor.cs",
+  "cost": 3,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "ETERNAL_ARMOR.title",
+    "description_key": "ETERNAL_ARMOR.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "PlatingPower": 9,
+    "Plating": 9
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "PlatingPower",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Plating",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"PlatingPower\"].IntValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "PlatingPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

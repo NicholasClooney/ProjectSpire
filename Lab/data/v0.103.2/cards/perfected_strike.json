@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "PERFECTED_STRIKE",
+  "class_name": "PerfectedStrike",
+  "name": "PerfectedStrike",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PerfectedStrike.cs",
+  "cost": 2,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "PERFECTED_STRIKE.title",
+    "description_key": "PERFECTED_STRIKE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [],
+  "tags": [
+    "Strike"
+  ],
+  "upgrades": [
+    {
+      "var": "ExtraDamage",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

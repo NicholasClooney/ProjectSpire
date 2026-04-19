@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "DEFILE",
+  "class_name": "Defile",
+  "name": "Defile",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Defile.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "DEFILE.title",
+    "description_key": "DEFILE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 13
+  },
+  "keywords": [
+    "Ethereal"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 4
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

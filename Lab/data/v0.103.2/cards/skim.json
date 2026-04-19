@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SKIM",
+  "class_name": "Skim",
+  "name": "Skim",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Skim.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "SKIM.title",
+    "description_key": "SKIM.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 3
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Cards",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

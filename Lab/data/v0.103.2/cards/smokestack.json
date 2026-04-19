@@ -1,0 +1,40 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SMOKESTACK",
+  "class_name": "Smokestack",
+  "name": "Smokestack",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Smokestack.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "SMOKESTACK.title",
+    "description_key": "SMOKESTACK.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "SmokestackPower": 5,
+    "Smokestack": 5
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "SmokestackPower",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Smokestack",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"SmokestackPower\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

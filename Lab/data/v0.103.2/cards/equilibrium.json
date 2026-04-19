@@ -1,0 +1,42 @@
+{
+  "parser_version": "0.1.0",
+  "id": "EQUILIBRIUM",
+  "class_name": "Equilibrium",
+  "name": "Equilibrium",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Equilibrium.cs",
+  "cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "EQUILIBRIUM.title",
+    "description_key": "EQUILIBRIUM.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 13,
+    "Equilibrium": 1
+  },
+  "keywords": [
+    "Retain"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "RetainHand",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"Equilibrium\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

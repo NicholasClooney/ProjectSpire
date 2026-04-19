@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SPOILS_OF_BATTLE",
+  "class_name": "SpoilsOfBattle",
+  "name": "SpoilsOfBattle",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SpoilsOfBattle.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "localization": {
+    "title_key": "SPOILS_OF_BATTLE.title",
+    "description_key": "SPOILS_OF_BATTLE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Forge",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

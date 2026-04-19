@@ -1,0 +1,44 @@
+{
+  "parser_version": "0.1.0",
+  "id": "COLLISION_COURSE",
+  "class_name": "CollisionCourse",
+  "name": "CollisionCourse",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CollisionCourse.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "COLLISION_COURSE.title",
+    "description_key": "COLLISION_COURSE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 11
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 4
+    }
+  ],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_card",
+      "target": "DEBRIS",
+      "source": "HoverTipFactory.FromCard"
+    },
+    {
+      "kind": "creates_card",
+      "target": "DEBRIS",
+      "source": "CreateCard"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

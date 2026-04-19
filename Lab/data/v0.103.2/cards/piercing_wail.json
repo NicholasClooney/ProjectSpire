@@ -1,0 +1,47 @@
+{
+  "parser_version": "0.1.0",
+  "id": "PIERCING_WAIL",
+  "class_name": "PiercingWail",
+  "name": "PiercingWail",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PiercingWail.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "PIERCING_WAIL.title",
+    "description_key": "PIERCING_WAIL.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "StrengthLoss": 6
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "StrengthLoss",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "PiercingWail",
+      "target_expr": "hittableEnemy",
+      "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "StrengthPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

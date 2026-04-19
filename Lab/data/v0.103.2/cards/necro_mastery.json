@@ -1,0 +1,37 @@
+{
+  "parser_version": "0.1.0",
+  "id": "NECRO_MASTERY",
+  "class_name": "NecroMastery",
+  "name": "NecroMastery",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/NecroMastery.cs",
+  "cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "NECRO_MASTERY.title",
+    "description_key": "NECRO_MASTERY.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Summon",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "NecroMastery",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "1m"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

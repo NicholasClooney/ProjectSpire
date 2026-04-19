@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "LEGION_OF_BONE",
+  "class_name": "LegionOfBone",
+  "name": "LegionOfBone",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/LegionOfBone.cs",
+  "cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AllAllies",
+  "localization": {
+    "title_key": "LEGION_OF_BONE.title",
+    "description_key": "LEGION_OF_BONE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Summon",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

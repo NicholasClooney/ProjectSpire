@@ -1,0 +1,46 @@
+{
+  "parser_version": "0.1.0",
+  "id": "CRUELTY",
+  "class_name": "Cruelty",
+  "name": "Cruelty",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Cruelty.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "CRUELTY.title",
+    "description_key": "CRUELTY.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "CrueltyPower": 25,
+    "Cruelty": 25
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "CrueltyPower",
+      "delta": 25
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Cruelty",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"CrueltyPower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "VulnerablePower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

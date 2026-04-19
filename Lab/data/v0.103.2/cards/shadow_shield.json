@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SHADOW_SHIELD",
+  "class_name": "ShadowShield",
+  "name": "ShadowShield",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ShadowShield.cs",
+  "cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "SHADOW_SHIELD.title",
+    "description_key": "SHADOW_SHIELD.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 11
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 4
+    }
+  ],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_orb",
+      "target": "DarkOrb",
+      "source": "HoverTipFactory.FromOrb"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

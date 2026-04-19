@@ -1,0 +1,50 @@
+{
+  "parser_version": "0.1.0",
+  "id": "MANGLE",
+  "class_name": "Mangle",
+  "name": "Mangle",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Mangle.cs",
+  "cost": 3,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "MANGLE.title",
+    "description_key": "MANGLE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 15,
+    "StrengthLoss": 10
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 5
+    },
+    {
+      "var": "StrengthLoss",
+      "delta": 5
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Mangle",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "StrengthPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

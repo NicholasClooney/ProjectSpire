@@ -1,0 +1,40 @@
+{
+  "parser_version": "0.1.0",
+  "id": "THE_BOMB",
+  "class_name": "TheBomb",
+  "name": "TheBomb",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TheBomb.cs",
+  "cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "THE_BOMB.title",
+    "description_key": "THE_BOMB.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Turns": 3,
+    "BombDamage": 40
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "BombDamage",
+      "delta": 10
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "TheBomb",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"Turns\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

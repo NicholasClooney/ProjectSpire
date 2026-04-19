@@ -1,0 +1,59 @@
+{
+  "parser_version": "0.1.0",
+  "id": "FALLING_STAR",
+  "class_name": "FallingStar",
+  "name": "FallingStar",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FallingStar.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Basic",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "FALLING_STAR.title",
+    "description_key": "FALLING_STAR.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 8,
+    "VulnerablePower": 1,
+    "Vulnerable": 1,
+    "WeakPower": 1,
+    "Weak": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 4
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Weak",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars.Weak.BaseValue"
+    },
+    {
+      "power": "Vulnerable",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "WeakPower",
+      "source": "HoverTipFactory.FromPower"
+    },
+    {
+      "kind": "hover_tip_power",
+      "target": "VulnerablePower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

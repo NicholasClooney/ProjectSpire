@@ -1,0 +1,36 @@
+{
+  "parser_version": "0.1.0",
+  "id": "DRAMATIC_ENTRANCE",
+  "class_name": "DramaticEntrance",
+  "name": "DramaticEntrance",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DramaticEntrance.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "DRAMATIC_ENTRANCE.title",
+    "description_key": "DRAMATIC_ENTRANCE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 11
+  },
+  "keywords": [
+    "Exhaust",
+    "Innate"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 4
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

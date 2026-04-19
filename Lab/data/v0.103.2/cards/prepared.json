@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "PREPARED",
+  "class_name": "Prepared",
+  "name": "Prepared",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Prepared.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "localization": {
+    "title_key": "PREPARED.title",
+    "description_key": "PREPARED.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Cards",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

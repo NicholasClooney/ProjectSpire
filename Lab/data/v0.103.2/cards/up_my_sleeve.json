@@ -1,0 +1,44 @@
+{
+  "parser_version": "0.1.0",
+  "id": "UP_MY_SLEEVE",
+  "class_name": "UpMySleeve",
+  "name": "UpMySleeve",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/UpMySleeve.cs",
+  "cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "UP_MY_SLEEVE.title",
+    "description_key": "UP_MY_SLEEVE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 3
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Cards",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_card",
+      "target": "SHIV",
+      "source": "HoverTipFactory.FromCard"
+    },
+    {
+      "kind": "creates_card",
+      "target": "SHIV",
+      "source": "CreateInHand"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

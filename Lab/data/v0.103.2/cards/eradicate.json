@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "ERADICATE",
+  "class_name": "Eradicate",
+  "name": "Eradicate",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Eradicate.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "ERADICATE.title",
+    "description_key": "ERADICATE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 11
+  },
+  "keywords": [
+    "Retain"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

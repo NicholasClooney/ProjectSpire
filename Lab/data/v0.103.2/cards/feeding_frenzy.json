@@ -1,0 +1,46 @@
+{
+  "parser_version": "0.1.0",
+  "id": "FEEDING_FRENZY",
+  "class_name": "FeedingFrenzy",
+  "name": "FeedingFrenzy",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FeedingFrenzy.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Event",
+  "target": "Self",
+  "localization": {
+    "title_key": "FEEDING_FRENZY.title",
+    "description_key": "FEEDING_FRENZY.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "StrengthPower": 5,
+    "Strength": 5
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Strength",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "FeedingFrenzy",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "baseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "StrengthPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

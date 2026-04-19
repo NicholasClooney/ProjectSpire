@@ -1,0 +1,47 @@
+{
+  "parser_version": "0.1.0",
+  "id": "HYPERBEAM",
+  "class_name": "Hyperbeam",
+  "name": "Hyperbeam",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Hyperbeam.cs",
+  "cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "HYPERBEAM.title",
+    "description_key": "HYPERBEAM.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 26,
+    "FocusPower": 3,
+    "Focus": 3
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 8
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Focus",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "-base.DynamicVars[\"FocusPower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "FocusPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

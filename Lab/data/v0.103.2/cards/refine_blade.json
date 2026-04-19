@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "REFINE_BLADE",
+  "class_name": "RefineBlade",
+  "name": "RefineBlade",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/RefineBlade.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "localization": {
+    "title_key": "REFINE_BLADE.title",
+    "description_key": "REFINE_BLADE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Energy": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Forge",
+      "delta": 4
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "EnergyNextTurn",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Energy.BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

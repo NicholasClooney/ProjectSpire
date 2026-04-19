@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "VOLLEY",
+  "class_name": "Volley",
+  "name": "Volley",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Volley.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "RandomEnemy",
+  "localization": {
+    "title_key": "VOLLEY.title",
+    "description_key": "VOLLEY.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 10
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 4
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

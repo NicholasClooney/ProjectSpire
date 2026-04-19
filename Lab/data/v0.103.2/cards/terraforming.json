@@ -1,0 +1,46 @@
+{
+  "parser_version": "0.1.0",
+  "id": "TERRAFORMING",
+  "class_name": "Terraforming",
+  "name": "Terraforming",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Terraforming.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "TERRAFORMING.title",
+    "description_key": "TERRAFORMING.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "VigorPower": 6,
+    "Vigor": 6
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "VigorPower",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Vigor",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"VigorPower\"].IntValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "VigorPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

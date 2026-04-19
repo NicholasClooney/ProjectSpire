@@ -1,0 +1,53 @@
+{
+  "parser_version": "0.1.0",
+  "id": "FOCUSED_STRIKE",
+  "class_name": "FocusedStrike",
+  "name": "FocusedStrike",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FocusedStrike.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "FOCUSED_STRIKE.title",
+    "description_key": "FOCUSED_STRIKE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 9,
+    "FocusPower": 1,
+    "Focus": 1
+  },
+  "keywords": [],
+  "tags": [
+    "Strike"
+  ],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 2
+    },
+    {
+      "var": "FocusPower",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "FocusedStrike",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"FocusPower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "FocusPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

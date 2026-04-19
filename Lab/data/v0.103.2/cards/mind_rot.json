@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "MIND_ROT",
+  "class_name": "MindRot",
+  "name": "MindRot",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MindRot.cs",
+  "cost": -1,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "None",
+  "localization": {
+    "title_key": "MIND_ROT.title",
+    "description_key": "MIND_ROT.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "MindRotPower": 1,
+    "MindRot": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "MindRot",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"MindRotPower\"].IntValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

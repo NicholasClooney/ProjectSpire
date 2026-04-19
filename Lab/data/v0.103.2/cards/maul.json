@@ -1,0 +1,38 @@
+{
+  "parser_version": "0.1.0",
+  "id": "MAUL",
+  "class_name": "Maul",
+  "name": "Maul",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Maul.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Ancient",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "MAUL.title",
+    "description_key": "MAUL.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 5,
+    "Increase": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 1
+    },
+    {
+      "var": "Increase",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

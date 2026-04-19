@@ -1,0 +1,36 @@
+{
+  "parser_version": "0.1.0",
+  "id": "DECISIONS_DECISIONS",
+  "class_name": "DecisionsDecisions",
+  "name": "DecisionsDecisions",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DecisionsDecisions.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "DECISIONS_DECISIONS.title",
+    "description_key": "DECISIONS_DECISIONS.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 3
+  },
+  "keywords": [
+    "Exhaust",
+    "Unplayable"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Cards",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BARRAGE",
+  "class_name": "Barrage",
+  "name": "Barrage",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Barrage.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "BARRAGE.title",
+    "description_key": "BARRAGE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 5
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

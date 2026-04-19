@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SLOTH",
+  "class_name": "Sloth",
+  "name": "Sloth",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Sloth.cs",
+  "cost": -1,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "None",
+  "localization": {
+    "title_key": "SLOTH.title",
+    "description_key": "SLOTH.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "SlothPower": 3,
+    "Sloth": 3
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "Sloth",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"SlothPower\"].IntValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

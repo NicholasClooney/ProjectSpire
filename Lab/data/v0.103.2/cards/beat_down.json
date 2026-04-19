@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BEAT_DOWN",
+  "class_name": "BeatDown",
+  "name": "BeatDown",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BeatDown.cs",
+  "cost": 3,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "RandomEnemy",
+  "localization": {
+    "title_key": "BEAT_DOWN.title",
+    "description_key": "BEAT_DOWN.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 3
+  },
+  "keywords": [
+    "Unplayable"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Cards",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

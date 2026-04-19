@@ -1,0 +1,40 @@
+{
+  "parser_version": "0.1.0",
+  "id": "ITERATION",
+  "class_name": "Iteration",
+  "name": "Iteration",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Iteration.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "ITERATION.title",
+    "description_key": "ITERATION.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "IterationPower": 2,
+    "Iteration": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "IterationPower",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Iteration",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"IterationPower\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "parser_version": "0.1.0",
+  "id": "FLASH_OF_STEEL",
+  "class_name": "FlashOfSteel",
+  "name": "FlashOfSteel",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FlashOfSteel.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "FLASH_OF_STEEL.title",
+    "description_key": "FLASH_OF_STEEL.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 5,
+    "Cards": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

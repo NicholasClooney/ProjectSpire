@@ -1,0 +1,36 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BOOT_SEQUENCE",
+  "class_name": "BootSequence",
+  "name": "BootSequence",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BootSequence.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "BOOT_SEQUENCE.title",
+    "description_key": "BOOT_SEQUENCE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 10
+  },
+  "keywords": [
+    "Exhaust",
+    "Innate"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

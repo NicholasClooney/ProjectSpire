@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "HEADBUTT",
+  "class_name": "Headbutt",
+  "name": "Headbutt",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Headbutt.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "HEADBUTT.title",
+    "description_key": "HEADBUTT.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 9
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

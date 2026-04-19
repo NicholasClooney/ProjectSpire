@@ -1,0 +1,44 @@
+{
+  "parser_version": "0.1.0",
+  "id": "APPARITION",
+  "class_name": "Apparition",
+  "name": "Apparition",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Apparition.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Ancient",
+  "target": "Self",
+  "localization": {
+    "title_key": "APPARITION.title",
+    "description_key": "APPARITION.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "IntangiblePower": 1,
+    "Intangible": 1
+  },
+  "keywords": [
+    "Exhaust",
+    "Ethereal"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "Intangible",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"IntangiblePower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "IntangiblePower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

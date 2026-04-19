@@ -1,0 +1,28 @@
+{
+  "parser_version": "0.1.0",
+  "id": "GOLD_AXE",
+  "class_name": "GoldAxe",
+  "name": "GoldAxe",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GoldAxe.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "GOLD_AXE.title",
+    "description_key": "GOLD_AXE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Retain"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

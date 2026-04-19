@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "PINPOINT",
+  "class_name": "Pinpoint",
+  "name": "Pinpoint",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Pinpoint.cs",
+  "cost": 3,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "PINPOINT.title",
+    "description_key": "PINPOINT.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 15
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 4
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

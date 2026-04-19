@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "HANG",
+  "class_name": "Hang",
+  "name": "Hang",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Hang.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "HANG.title",
+    "description_key": "HANG.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 10
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Hang",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "num"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

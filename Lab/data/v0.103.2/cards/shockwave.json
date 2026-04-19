@@ -1,0 +1,57 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SHOCKWAVE",
+  "class_name": "Shockwave",
+  "name": "Shockwave",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Shockwave.cs",
+  "cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "SHOCKWAVE.title",
+    "description_key": "SHOCKWAVE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Power": 3
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Power",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Weak",
+      "target_expr": "enemy",
+      "amount_expr": "amount"
+    },
+    {
+      "power": "Vulnerable",
+      "target_expr": "enemy",
+      "amount_expr": "amount"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "WeakPower",
+      "source": "HoverTipFactory.FromPower"
+    },
+    {
+      "kind": "hover_tip_power",
+      "target": "VulnerablePower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

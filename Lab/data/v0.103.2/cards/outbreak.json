@@ -1,0 +1,46 @@
+{
+  "parser_version": "0.1.0",
+  "id": "OUTBREAK",
+  "class_name": "Outbreak",
+  "name": "Outbreak",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Outbreak.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "OUTBREAK.title",
+    "description_key": "OUTBREAK.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "OutbreakPower": 11,
+    "Outbreak": 11
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "OutbreakPower",
+      "delta": 4
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Outbreak",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"OutbreakPower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "PoisonPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

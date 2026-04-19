@@ -1,0 +1,37 @@
+{
+  "parser_version": "0.1.0",
+  "id": "ROYALTIES",
+  "class_name": "Royalties",
+  "name": "Royalties",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Royalties.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "ROYALTIES.title",
+    "description_key": "ROYALTIES.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Gold",
+      "delta": 5
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Royalties",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Gold.BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

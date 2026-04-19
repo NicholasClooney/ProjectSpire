@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "FOREGONE_CONCLUSION",
+  "class_name": "ForegoneConclusion",
+  "name": "ForegoneConclusion",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ForegoneConclusion.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "FOREGONE_CONCLUSION.title",
+    "description_key": "FOREGONE_CONCLUSION.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Cards",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "ForegoneConclusion",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Cards.BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

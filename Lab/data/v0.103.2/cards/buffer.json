@@ -1,0 +1,40 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BUFFER",
+  "class_name": "Buffer",
+  "name": "Buffer",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Buffer.cs",
+  "cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "BUFFER.title",
+    "description_key": "BUFFER.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "BufferPower": 1,
+    "Buffer": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "BufferPower",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Buffer",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"BufferPower\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

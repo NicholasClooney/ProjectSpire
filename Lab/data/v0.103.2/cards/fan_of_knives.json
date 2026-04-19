@@ -1,0 +1,48 @@
+{
+  "parser_version": "0.1.0",
+  "id": "FAN_OF_KNIVES",
+  "class_name": "FanOfKnives",
+  "name": "FanOfKnives",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FanOfKnives.cs",
+  "cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "FAN_OF_KNIVES.title",
+    "description_key": "FAN_OF_KNIVES.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Shivs",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "FanOfKnives",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "1m"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_card",
+      "target": "SHIV",
+      "source": "HoverTipFactory.FromCard"
+    },
+    {
+      "kind": "creates_card",
+      "target": "SHIV",
+      "source": "CreateInHand"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

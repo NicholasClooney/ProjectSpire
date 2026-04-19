@@ -1,0 +1,57 @@
+{
+  "parser_version": "0.1.0",
+  "id": "FIGHT_ME",
+  "class_name": "FightMe",
+  "name": "FightMe",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FightMe.cs",
+  "cost": 2,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "FIGHT_ME.title",
+    "description_key": "FIGHT_ME.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 5,
+    "EnemyStrength": 1,
+    "StrengthPower": 3,
+    "Strength": 3
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 1
+    },
+    {
+      "var": "Strength",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Strength",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"StrengthPower\"].BaseValue"
+    },
+    {
+      "power": "Strength",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars[\"EnemyStrength\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "StrengthPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

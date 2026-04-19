@@ -1,0 +1,48 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SNAKEBITE",
+  "class_name": "Snakebite",
+  "name": "Snakebite",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Snakebite.cs",
+  "cost": 2,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "SNAKEBITE.title",
+    "description_key": "SNAKEBITE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "PoisonPower": 7,
+    "Poison": 7
+  },
+  "keywords": [
+    "Retain"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Poison",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Poison",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars.Poison.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "PoisonPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

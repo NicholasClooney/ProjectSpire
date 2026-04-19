@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "PECK",
+  "class_name": "Peck",
+  "name": "Peck",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Peck.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Event",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "PECK.title",
+    "description_key": "PECK.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Repeat",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

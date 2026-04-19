@@ -1,0 +1,59 @@
+{
+  "parser_version": "0.1.0",
+  "id": "COMET",
+  "class_name": "Comet",
+  "name": "Comet",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Comet.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "COMET.title",
+    "description_key": "COMET.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 33,
+    "VulnerablePower": 3,
+    "Vulnerable": 3,
+    "WeakPower": 3,
+    "Weak": 3
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 11
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Weak",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars.Weak.BaseValue"
+    },
+    {
+      "power": "Vulnerable",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "WeakPower",
+      "source": "HoverTipFactory.FromPower"
+    },
+    {
+      "kind": "hover_tip_power",
+      "target": "VulnerablePower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "parser_version": "0.1.0",
+  "id": "DARK_EMBRACE",
+  "class_name": "DarkEmbrace",
+  "name": "DarkEmbrace",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DarkEmbrace.cs",
+  "cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "DARK_EMBRACE.title",
+    "description_key": "DARK_EMBRACE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "DarkEmbrace",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "1m"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

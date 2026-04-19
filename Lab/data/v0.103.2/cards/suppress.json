@@ -1,0 +1,53 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SUPPRESS",
+  "class_name": "Suppress",
+  "name": "Suppress",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Suppress.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Ancient",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "SUPPRESS.title",
+    "description_key": "SUPPRESS.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 11,
+    "WeakPower": 3,
+    "Weak": 3
+  },
+  "keywords": [
+    "Innate"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 6
+    },
+    {
+      "var": "Weak",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Weak",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars.Weak.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "WeakPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "ICE_LANCE",
+  "class_name": "IceLance",
+  "name": "IceLance",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/IceLance.cs",
+  "cost": 3,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "ICE_LANCE.title",
+    "description_key": "ICE_LANCE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 19
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 5
+    }
+  ],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_orb",
+      "target": "FrostOrb",
+      "source": "HoverTipFactory.FromOrb"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

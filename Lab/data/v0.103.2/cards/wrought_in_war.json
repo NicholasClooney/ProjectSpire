@@ -1,0 +1,37 @@
+{
+  "parser_version": "0.1.0",
+  "id": "WROUGHT_IN_WAR",
+  "class_name": "WroughtInWar",
+  "name": "WroughtInWar",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/WroughtInWar.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "WROUGHT_IN_WAR.title",
+    "description_key": "WROUGHT_IN_WAR.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 7
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 2
+    },
+    {
+      "var": "Forge",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

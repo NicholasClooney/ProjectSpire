@@ -1,0 +1,51 @@
+{
+  "parser_version": "0.1.0",
+  "id": "PATTER",
+  "class_name": "Patter",
+  "name": "Patter",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Patter.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "localization": {
+    "title_key": "PATTER.title",
+    "description_key": "PATTER.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 9,
+    "VigorPower": 2,
+    "Vigor": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 2
+    },
+    {
+      "var": "VigorPower",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Vigor",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"VigorPower\"].IntValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "VigorPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

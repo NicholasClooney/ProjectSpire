@@ -1,0 +1,41 @@
+{
+  "parser_version": "0.1.0",
+  "id": "METEOR_STRIKE",
+  "class_name": "MeteorStrike",
+  "name": "MeteorStrike",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MeteorStrike.cs",
+  "cost": 5,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "METEOR_STRIKE.title",
+    "description_key": "METEOR_STRIKE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 24
+  },
+  "keywords": [],
+  "tags": [
+    "Strike"
+  ],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 6
+    }
+  ],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_orb",
+      "target": "PlasmaOrb",
+      "source": "HoverTipFactory.FromOrb"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

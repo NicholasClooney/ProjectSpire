@@ -1,0 +1,46 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SIC_EM",
+  "class_name": "SicEm",
+  "name": "SicEm",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SicEm.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "SIC_EM.title",
+    "description_key": "SIC_EM.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "SicEmPower": 2,
+    "SicEm": 2
+  },
+  "keywords": [],
+  "tags": [
+    "OstyAttack"
+  ],
+  "upgrades": [
+    {
+      "var": "OstyDamage",
+      "delta": 1
+    },
+    {
+      "var": "SicEmPower",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "SicEm",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars[\"SicEmPower\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

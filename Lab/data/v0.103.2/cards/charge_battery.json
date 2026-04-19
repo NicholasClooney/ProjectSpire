@@ -1,0 +1,40 @@
+{
+  "parser_version": "0.1.0",
+  "id": "CHARGE_BATTERY",
+  "class_name": "ChargeBattery",
+  "name": "ChargeBattery",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ChargeBattery.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "Self",
+  "localization": {
+    "title_key": "CHARGE_BATTERY.title",
+    "description_key": "CHARGE_BATTERY.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 7,
+    "Energy": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "EnergyNextTurn",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Energy.BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

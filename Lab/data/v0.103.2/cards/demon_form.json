@@ -1,0 +1,46 @@
+{
+  "parser_version": "0.1.0",
+  "id": "DEMON_FORM",
+  "class_name": "DemonForm",
+  "name": "DemonForm",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DemonForm.cs",
+  "cost": 3,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "DEMON_FORM.title",
+    "description_key": "DEMON_FORM.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "StrengthPower": 2,
+    "Strength": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "StrengthPower",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "DemonForm",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"StrengthPower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "StrengthPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SCAVENGE",
+  "class_name": "Scavenge",
+  "name": "Scavenge",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Scavenge.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "SCAVENGE.title",
+    "description_key": "SCAVENGE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Energy": 2
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Energy",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "EnergyNextTurn",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Energy.IntValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

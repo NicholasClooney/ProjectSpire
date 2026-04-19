@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "ASHEN_STRIKE",
+  "class_name": "AshenStrike",
+  "name": "AshenStrike",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/AshenStrike.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "ASHEN_STRIKE.title",
+    "description_key": "ASHEN_STRIKE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [
+    "Strike"
+  ],
+  "upgrades": [
+    {
+      "var": "ExtraDamage",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

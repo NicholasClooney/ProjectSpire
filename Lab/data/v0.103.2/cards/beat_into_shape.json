@@ -1,0 +1,41 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BEAT_INTO_SHAPE",
+  "class_name": "BeatIntoShape",
+  "name": "BeatIntoShape",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BeatIntoShape.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "BEAT_INTO_SHAPE.title",
+    "description_key": "BEAT_INTO_SHAPE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 5
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "CalculationBase",
+      "delta": 2
+    },
+    {
+      "var": "CalculationExtra",
+      "delta": 2
+    },
+    {
+      "var": "Damage",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

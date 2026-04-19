@@ -1,0 +1,36 @@
+{
+  "parser_version": "0.1.0",
+  "id": "PAGESTORM",
+  "class_name": "Pagestorm",
+  "name": "Pagestorm",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Pagestorm.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "PAGESTORM.title",
+    "description_key": "PAGESTORM.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 1
+  },
+  "keywords": [
+    "Ethereal"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "Pagestorm",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Cards.BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

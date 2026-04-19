@@ -1,0 +1,28 @@
+{
+  "parser_version": "0.1.0",
+  "id": "DISTRACTION",
+  "class_name": "Distraction",
+  "name": "Distraction",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Distraction.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Event",
+  "target": "Self",
+  "localization": {
+    "title_key": "DISTRACTION.title",
+    "description_key": "DISTRACTION.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

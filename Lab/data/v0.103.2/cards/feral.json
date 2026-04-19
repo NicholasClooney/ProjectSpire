@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "FERAL",
+  "class_name": "Feral",
+  "name": "Feral",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Feral.cs",
+  "cost": 2,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "FERAL.title",
+    "description_key": "FERAL.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "FeralPower": 1,
+    "Feral": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "Feral",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"FeralPower\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

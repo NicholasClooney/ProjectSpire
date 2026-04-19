@@ -1,0 +1,36 @@
+{
+  "parser_version": "0.1.0",
+  "id": "MACHINE_LEARNING",
+  "class_name": "MachineLearning",
+  "name": "MachineLearning",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MachineLearning.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "MACHINE_LEARNING.title",
+    "description_key": "MACHINE_LEARNING.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 1
+  },
+  "keywords": [
+    "Innate"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "MachineLearning",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Cards.BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "parser_version": "0.1.0",
+  "id": "PALE_BLUE_DOT",
+  "class_name": "PaleBlueDot",
+  "name": "PaleBlueDot",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PaleBlueDot.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "PALE_BLUE_DOT.title",
+    "description_key": "PALE_BLUE_DOT.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Cards": 1,
+    "CardPlay": 5
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Cards",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "PaleBlueDot",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Cards.BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

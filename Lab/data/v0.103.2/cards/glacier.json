@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "GLACIER",
+  "class_name": "Glacier",
+  "name": "Glacier",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Glacier.cs",
+  "cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "GLACIER.title",
+    "description_key": "GLACIER.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 6
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_orb",
+      "target": "FrostOrb",
+      "source": "HoverTipFactory.FromOrb"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

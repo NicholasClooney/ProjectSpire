@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "IMPERVIOUS",
+  "class_name": "Impervious",
+  "name": "Impervious",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Impervious.cs",
+  "cost": 2,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "IMPERVIOUS.title",
+    "description_key": "IMPERVIOUS.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 30
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 10
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

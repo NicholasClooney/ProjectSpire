@@ -1,0 +1,41 @@
+{
+  "parser_version": "0.1.0",
+  "id": "VEILPIERCER",
+  "class_name": "Veilpiercer",
+  "name": "Veilpiercer",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Veilpiercer.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "VEILPIERCER.title",
+    "description_key": "VEILPIERCER.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 10
+  },
+  "keywords": [
+    "Ethereal"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Veilpiercer",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "1m"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

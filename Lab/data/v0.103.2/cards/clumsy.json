@@ -1,0 +1,29 @@
+{
+  "parser_version": "0.1.0",
+  "id": "CLUMSY",
+  "class_name": "Clumsy",
+  "name": "Clumsy",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Clumsy.cs",
+  "cost": -1,
+  "type": "Curse",
+  "rarity": "Curse",
+  "target": "None",
+  "localization": {
+    "title_key": "CLUMSY.title",
+    "description_key": "CLUMSY.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Ethereal",
+    "Unplayable"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

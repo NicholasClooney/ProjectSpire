@@ -1,0 +1,45 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SHROUD",
+  "class_name": "Shroud",
+  "name": "Shroud",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Shroud.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "SHROUD.title",
+    "description_key": "SHROUD.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Block": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Block",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Shroud",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Block.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "DoomPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

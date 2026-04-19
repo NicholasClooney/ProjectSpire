@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "CONFLAGRATION",
+  "class_name": "Conflagration",
+  "name": "Conflagration",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Conflagration.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "CONFLAGRATION.title",
+    "description_key": "CONFLAGRATION.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "CalculationBase",
+      "delta": 1
+    },
+    {
+      "var": "ExtraDamage",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

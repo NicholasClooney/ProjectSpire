@@ -1,0 +1,37 @@
+{
+  "parser_version": "0.1.0",
+  "id": "FURNACE",
+  "class_name": "Furnace",
+  "name": "Furnace",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Furnace.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "FURNACE.title",
+    "description_key": "FURNACE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Forge",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Furnace",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Forge.BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

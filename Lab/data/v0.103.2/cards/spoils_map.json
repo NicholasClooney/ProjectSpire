@@ -1,0 +1,28 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SPOILS_MAP",
+  "class_name": "SpoilsMap",
+  "name": "SpoilsMap",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SpoilsMap.cs",
+  "cost": -1,
+  "type": "Quest",
+  "rarity": "Quest",
+  "target": "Self",
+  "localization": {
+    "title_key": "SPOILS_MAP.title",
+    "description_key": "SPOILS_MAP.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Unplayable"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "parser_version": "0.1.0",
+  "id": "FEEL_NO_PAIN",
+  "class_name": "FeelNoPain",
+  "name": "FeelNoPain",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FeelNoPain.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "FEEL_NO_PAIN.title",
+    "description_key": "FEEL_NO_PAIN.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Power": 3
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Power",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "FeelNoPain",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"Power\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "parser_version": "0.1.0",
+  "id": "PHANTOM_BLADES",
+  "class_name": "PhantomBlades",
+  "name": "PhantomBlades",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PhantomBlades.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "PHANTOM_BLADES.title",
+    "description_key": "PHANTOM_BLADES.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "PhantomBladesPower": 9,
+    "PhantomBlades": 9
+  },
+  "keywords": [
+    "Retain"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "PhantomBladesPower",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "PhantomBlades",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"PhantomBladesPower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_card",
+      "target": "SHIV",
+      "source": "HoverTipFactory.FromCard"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

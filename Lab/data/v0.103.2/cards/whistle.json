@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "WHISTLE",
+  "class_name": "Whistle",
+  "name": "Whistle",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Whistle.cs",
+  "cost": 3,
+  "type": "Attack",
+  "rarity": "Ancient",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "WHISTLE.title",
+    "description_key": "WHISTLE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 33
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 11
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

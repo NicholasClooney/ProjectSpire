@@ -1,0 +1,43 @@
+{
+  "parser_version": "0.1.0",
+  "id": "DOUBT",
+  "class_name": "Doubt",
+  "name": "Doubt",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Doubt.cs",
+  "cost": -1,
+  "type": "Curse",
+  "rarity": "Curse",
+  "target": "None",
+  "localization": {
+    "title_key": "DOUBT.title",
+    "description_key": "DOUBT.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "WeakPower": 1,
+    "Weak": 1
+  },
+  "keywords": [
+    "Unplayable"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "Weak",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Weak.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "WeakPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "parser_version": "0.1.0",
+  "id": "ARSENAL",
+  "class_name": "Arsenal",
+  "name": "Arsenal",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Arsenal.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "ARSENAL.title",
+    "description_key": "ARSENAL.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "ArsenalPower": 1,
+    "Arsenal": 1
+  },
+  "keywords": [
+    "Innate"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "Arsenal",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"ArsenalPower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "StrengthPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

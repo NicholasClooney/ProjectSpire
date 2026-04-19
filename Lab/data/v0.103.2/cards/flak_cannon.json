@@ -1,0 +1,35 @@
+{
+  "parser_version": "0.1.0",
+  "id": "FLAK_CANNON",
+  "class_name": "FlakCannon",
+  "name": "FlakCannon",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FlakCannon.cs",
+  "cost": 2,
+  "type": "Attack",
+  "rarity": "Rare",
+  "target": "RandomEnemy",
+  "localization": {
+    "title_key": "FLAK_CANNON.title",
+    "description_key": "FLAK_CANNON.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 8
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

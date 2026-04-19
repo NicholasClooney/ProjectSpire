@@ -1,0 +1,53 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SHARED_FATE",
+  "class_name": "SharedFate",
+  "name": "SharedFate",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SharedFate.cs",
+  "cost": 0,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "SHARED_FATE.title",
+    "description_key": "SHARED_FATE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "EnemyStrengthLoss": 2,
+    "PlayerStrengthLoss": 2
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "EnemyStrengthLoss",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Strength",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "-base.DynamicVars[\"PlayerStrengthLoss\"].BaseValue"
+    },
+    {
+      "power": "Strength",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "-base.DynamicVars[\"EnemyStrengthLoss\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "StrengthPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

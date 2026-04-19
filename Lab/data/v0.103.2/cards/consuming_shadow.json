@@ -1,0 +1,46 @@
+{
+  "parser_version": "0.1.0",
+  "id": "CONSUMING_SHADOW",
+  "class_name": "ConsumingShadow",
+  "name": "ConsumingShadow",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ConsumingShadow.cs",
+  "cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "CONSUMING_SHADOW.title",
+    "description_key": "CONSUMING_SHADOW.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "ConsumingShadowPower": 1,
+    "ConsumingShadow": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Repeat",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "ConsumingShadow",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"ConsumingShadowPower\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_orb",
+      "target": "DarkOrb",
+      "source": "HoverTipFactory.FromOrb"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

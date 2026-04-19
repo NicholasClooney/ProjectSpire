@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "EXTERMINATE",
+  "class_name": "Exterminate",
+  "name": "Exterminate",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Exterminate.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Event",
+  "target": "AllEnemies",
+  "localization": {
+    "title_key": "EXTERMINATE.title",
+    "description_key": "EXTERMINATE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 3
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "parser_version": "0.1.0",
+  "id": "INFERNO",
+  "class_name": "Inferno",
+  "name": "Inferno",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Inferno.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "INFERNO.title",
+    "description_key": "INFERNO.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "InfernoPower": 6,
+    "Inferno": 6
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "InfernoPower",
+      "delta": 3
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Inferno",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"InfernoPower\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

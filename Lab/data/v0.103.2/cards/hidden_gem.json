@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "HIDDEN_GEM",
+  "class_name": "HiddenGem",
+  "name": "HiddenGem",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HiddenGem.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "HIDDEN_GEM.title",
+    "description_key": "HIDDEN_GEM.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Unplayable"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Replay",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

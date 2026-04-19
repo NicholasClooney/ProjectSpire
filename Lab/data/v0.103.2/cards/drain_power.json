@@ -1,0 +1,38 @@
+{
+  "parser_version": "0.1.0",
+  "id": "DRAIN_POWER",
+  "class_name": "DrainPower",
+  "name": "DrainPower",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DrainPower.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "DRAIN_POWER.title",
+    "description_key": "DRAIN_POWER.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 10,
+    "Cards": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Cards",
+      "delta": 1
+    },
+    {
+      "var": "Damage",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SQUASH",
+  "class_name": "Squash",
+  "name": "Squash",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Squash.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Event",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "SQUASH.title",
+    "description_key": "SQUASH.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 10,
+    "VulnerablePower": 2,
+    "Vulnerable": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 2
+    },
+    {
+      "var": "Vulnerable",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Vulnerable",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "VulnerablePower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

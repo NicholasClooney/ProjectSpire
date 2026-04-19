@@ -1,0 +1,46 @@
+{
+  "parser_version": "0.1.0",
+  "id": "FOOTWORK",
+  "class_name": "Footwork",
+  "name": "Footwork",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Footwork.cs",
+  "cost": 1,
+  "type": "Power",
+  "rarity": "Uncommon",
+  "target": "Self",
+  "localization": {
+    "title_key": "FOOTWORK.title",
+    "description_key": "FOOTWORK.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "DexterityPower": 2,
+    "Dexterity": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Dexterity",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Dexterity",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars.Dexterity.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "DexterityPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

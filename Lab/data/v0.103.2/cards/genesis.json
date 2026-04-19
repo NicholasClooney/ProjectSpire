@@ -1,0 +1,39 @@
+{
+  "parser_version": "0.1.0",
+  "id": "GENESIS",
+  "class_name": "Genesis",
+  "name": "Genesis",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Genesis.cs",
+  "cost": 2,
+  "type": "Power",
+  "rarity": "Rare",
+  "target": "Self",
+  "localization": {
+    "title_key": "GENESIS.title",
+    "description_key": "GENESIS.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "StarsPerTurn": 2
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "StarsPerTurn",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Genesis",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"StarsPerTurn\"].BaseValue"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

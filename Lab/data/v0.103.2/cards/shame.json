@@ -1,0 +1,42 @@
+{
+  "parser_version": "0.1.0",
+  "id": "SHAME",
+  "class_name": "Shame",
+  "name": "Shame",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Shame.cs",
+  "cost": -1,
+  "type": "Curse",
+  "rarity": "Curse",
+  "target": "None",
+  "localization": {
+    "title_key": "SHAME.title",
+    "description_key": "SHAME.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Frail": 1
+  },
+  "keywords": [
+    "Unplayable"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "Frail",
+      "target_expr": "base.Owner.Creature",
+      "amount_expr": "base.DynamicVars[\"Frail\"].BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "FrailPower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

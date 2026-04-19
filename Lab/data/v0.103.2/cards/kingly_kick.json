@@ -1,0 +1,33 @@
+{
+  "parser_version": "0.1.0",
+  "id": "KINGLY_KICK",
+  "class_name": "KinglyKick",
+  "name": "KinglyKick",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/KinglyKick.cs",
+  "cost": 4,
+  "type": "Attack",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "KINGLY_KICK.title",
+    "description_key": "KINGLY_KICK.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 27
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 8
+    }
+  ],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

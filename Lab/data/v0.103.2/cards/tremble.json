@@ -1,0 +1,48 @@
+{
+  "parser_version": "0.1.0",
+  "id": "TREMBLE",
+  "class_name": "Tremble",
+  "name": "Tremble",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Tremble.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "TREMBLE.title",
+    "description_key": "TREMBLE.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "VulnerablePower": 3,
+    "Vulnerable": 3
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Vulnerable",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Vulnerable",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "VulnerablePower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

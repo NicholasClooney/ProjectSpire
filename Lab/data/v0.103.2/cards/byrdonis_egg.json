@@ -1,0 +1,28 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BYRDONIS_EGG",
+  "class_name": "ByrdonisEgg",
+  "name": "ByrdonisEgg",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ByrdonisEgg.cs",
+  "cost": -1,
+  "type": "Quest",
+  "rarity": "Quest",
+  "target": "None",
+  "localization": {
+    "title_key": "BYRDONIS_EGG.title",
+    "description_key": "BYRDONIS_EGG.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [
+    "Unplayable"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

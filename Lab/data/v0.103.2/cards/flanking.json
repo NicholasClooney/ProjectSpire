@@ -1,0 +1,32 @@
+{
+  "parser_version": "0.1.0",
+  "id": "FLANKING",
+  "class_name": "Flanking",
+  "name": "Flanking",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Flanking.cs",
+  "cost": 2,
+  "type": "Skill",
+  "rarity": "Uncommon",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "FLANKING.title",
+    "description_key": "FLANKING.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [
+    {
+      "power": "Flanking",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "2m"
+    }
+  ],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

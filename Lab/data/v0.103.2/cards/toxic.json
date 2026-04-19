@@ -1,0 +1,30 @@
+{
+  "parser_version": "0.1.0",
+  "id": "TOXIC",
+  "class_name": "Toxic",
+  "name": "Toxic",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Toxic.cs",
+  "cost": 1,
+  "type": "Status",
+  "rarity": "Status",
+  "target": "None",
+  "localization": {
+    "title_key": "TOXIC.title",
+    "description_key": "TOXIC.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 5
+  },
+  "keywords": [
+    "Exhaust"
+  ],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

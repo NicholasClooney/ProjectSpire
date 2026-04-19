@@ -1,0 +1,51 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BEAM_CELL",
+  "class_name": "BeamCell",
+  "name": "BeamCell",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BeamCell.cs",
+  "cost": 0,
+  "type": "Attack",
+  "rarity": "Common",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "BEAM_CELL.title",
+    "description_key": "BEAM_CELL.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 3,
+    "VulnerablePower": 1,
+    "Vulnerable": 1
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 1
+    },
+    {
+      "var": "Vulnerable",
+      "delta": 1
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Vulnerable",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "VulnerablePower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "parser_version": "0.1.0",
+  "id": "BREAK",
+  "class_name": "Break",
+  "name": "Break",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Break.cs",
+  "cost": 1,
+  "type": "Attack",
+  "rarity": "Ancient",
+  "target": "AnyEnemy",
+  "localization": {
+    "title_key": "BREAK.title",
+    "description_key": "BREAK.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {
+    "Damage": 20,
+    "VulnerablePower": 5,
+    "Vulnerable": 5
+  },
+  "keywords": [],
+  "tags": [],
+  "upgrades": [
+    {
+      "var": "Damage",
+      "delta": 10
+    },
+    {
+      "var": "Vulnerable",
+      "delta": 2
+    }
+  ],
+  "applies_powers": [
+    {
+      "power": "Vulnerable",
+      "target_expr": "cardPlay.Target",
+      "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
+    }
+  ],
+  "relations": [
+    {
+      "kind": "hover_tip_power",
+      "target": "VulnerablePower",
+      "source": "HoverTipFactory.FromPower"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}

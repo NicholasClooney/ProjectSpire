@@ -1,0 +1,32 @@
+{
+  "parser_version": "0.1.0",
+  "id": "ZAP",
+  "class_name": "Zap",
+  "name": "Zap",
+  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Zap.cs",
+  "cost": 1,
+  "type": "Skill",
+  "rarity": "Basic",
+  "target": "Self",
+  "localization": {
+    "title_key": "ZAP.title",
+    "description_key": "ZAP.description",
+    "title": null,
+    "description_raw": null
+  },
+  "vars": {},
+  "keywords": [],
+  "tags": [],
+  "upgrades": [],
+  "applies_powers": [],
+  "relations": [
+    {
+      "kind": "hover_tip_orb",
+      "target": "LightningOrb",
+      "source": "HoverTipFactory.FromOrb"
+    }
+  ],
+  "notes": [
+    "Description is not present in the C# file; supply localization data to populate it."
+  ]
+}
