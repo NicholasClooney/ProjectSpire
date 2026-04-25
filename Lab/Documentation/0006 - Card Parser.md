@@ -124,6 +124,40 @@ If localization data is supplied separately, those values can populate:
 
 If no localization data is supplied, the parser records the keys and adds a note explaining that description text is not present in the source file itself.
 
+### Localization key derivation
+
+The `<CARD_ID>.title` and `<CARD_ID>.description` convention comes from the decompiled base card model, not from an assumption in the parser.
+
+In `Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models/CardModel.cs`, `CardModel` defines:
+
+```csharp
+public LocString TitleLocString => new LocString("cards", base.Id.Entry + ".title");
+
+public LocString Description => new LocString("cards", base.Id.Entry + ".description");
+```
+
+This means card titles and descriptions are looked up in the `cards` localization table with entry keys derived from `base.Id.Entry`.
+
+`base.Id.Entry` is assigned by `AbstractModel` through `ModelDb.GetId(type)`. `ModelDb.GetEntry(Type type)` returns:
+
+```csharp
+return StringHelper.Slugify(type.Name);
+```
+
+`StringHelper.Slugify` converts a class name to the uppercase model entry form used by localization keys, for example:
+
+- `Accuracy` -> `ACCURACY`
+- `StrikeDefect` -> `STRIKE_DEFECT`
+
+The parser mirrors this with `class_name_to_id()` and then emits:
+
+```python
+title_key = f"{card_id}.title"
+description_key = f"{card_id}.description"
+```
+
+Strictly speaking, `<CARD_ID>` means the model entry ID derived from the card class name, not the displayed card title.
+
 ## Known Limitations
 
 This parser is a first-pass heuristic parser, not a full semantic compiler front-end.
