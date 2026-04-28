@@ -22,6 +22,7 @@ struct CardView: View {
             typePlaque
             typeText
             energyIcon
+            energyText
             description
         }
         .frame(width: 300, height: 422, alignment: .topLeading)
@@ -48,14 +49,17 @@ struct CardView: View {
     }
 
     var titleBanner: some View {
+        // Extract
         Image(ImageResource.cardBanner)
             .resizable()
+        // Extract
             .cardAssetColor(.commonBannerGray)
             .frame(width: 327, height: 83)
             .offset(x: -13, y: 14)
     }
 
     var portrait: some View {
+        // Extract
         Image(ImageResource.ballLightning)
             .resizable()
             .frame(width: 250, height: 190)
@@ -63,8 +67,10 @@ struct CardView: View {
     }
 
     var frame: some View {
+        // Extract
         Image(ImageResource.cardFrameAttackS)
             .resizable()
+        // Extract
             .cardAssetColor(.defectFrameBlue)
             .frame(width: 300, height: 422)
             .offset(x: 0, y: 0)
@@ -79,6 +85,7 @@ struct CardView: View {
     }
 
     var title: some View {
+        // Extract
         BallLightningTextEffect(
             text: "Ball Lightning",
             font: NeowSCafeFontFamily.Kreon.regular.font(size: 26),
@@ -88,14 +95,17 @@ struct CardView: View {
     }
 
     var typePlaque: some View {
+        // Extract
         Image(ImageResource.cardPortraitBorderPlaqueS)
             .resizable()
+        // Extract
             .cardAssetColor(.commonBannerGray)
             .frame(width: 61, height: 37)
             .offset(x: 119.5, y: 212)
     }
 
     var typeText: some View {
+        // Extract
         Text("Attack")
             .font(NeowSCafeFontFamily.Kreon.bold.swiftUIFont(size: 16))
             .foregroundStyle(Color.black.opacity(0.75))
@@ -104,27 +114,26 @@ struct CardView: View {
     }
 
     var energyIcon: some View {
-        ZStack {
-            Image(ImageResource.energyDefect)
-                .resizable()
-
-            energyText
-        }
-        .frame(width: 64, height: 64)
-        .offset(x: -16, y: -16)
+        // Extract
+        Image(ImageResource.energyDefect)
+            .resizable()
+            .frame(width: 64, height: 64)
+            .offset(x: -16, y: -16)
     }
 
     var energyText: some View {
+        // Extract
         BallLightningTextEffect(
             text: "1",
             font: NeowSCafeFontFamily.Kreon.regular.font(size: 32),
         )
-        .frame(width: 46, height: 56)
-        .offset(x: 0, y: 2)
+        .frame(width: 64, height: 64)
+        .offset(x: -16, y: -16)
     }
 
     var description: some View {
         VStack(spacing: 0) {
+            // Extract
             Text("Deal 7 damage.")
             Text("Channel 1 Lightning.")
                 .foregroundStyle(Color(red: 0.96, green: 0.78, blue: 0.28))
@@ -133,7 +142,6 @@ struct CardView: View {
         .foregroundStyle(Color(red: 1, green: 0.965, blue: 0.886))
         .shadow(color: Color.black.opacity(0.55), radius: 0, x: 2, y: 2)
         .multilineTextAlignment(.center)
-        .minimumScaleFactor(0.6)
         .frame(width: 243, height: 136)
         .offset(x: 28, y: 248)
     }
