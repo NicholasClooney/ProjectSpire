@@ -14,6 +14,10 @@ let project = Project(
                         "UIColorName": "",
                         "UIImageName": "",
                     ],
+                    "UIAppFonts": [
+                        "kreon_regular.ttf",
+                        "kreon_bold.ttf",
+                    ],
                 ]
             ),
             buildableFolders: [
