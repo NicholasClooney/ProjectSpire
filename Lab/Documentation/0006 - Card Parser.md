@@ -2,7 +2,7 @@
 
 > Updated for the current ProjectSpire implementation on 2026-04-19.
 
-This document describes the first-pass card parser in [Lab/parsers/card_parser.py](/Users/nicholasclooney/Source/Projects/ProjectSpire/Lab/parsers/card_parser.py:1).
+This document describes the first-pass card parser in `Lab/parsers/card_parser.py`.
 
 ## Purpose
 
