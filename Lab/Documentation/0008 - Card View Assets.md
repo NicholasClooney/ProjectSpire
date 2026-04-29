@@ -379,6 +379,20 @@ Normal card layout:
 | `StarLabel` inside icon | `-14, -20, 14, 20` | local `x: 15, y: 9, w: 28, h: 40` |
 | `Enchantment` | `-166, -116, -94, -62` | `x: -16, y: 95, w: 72, h: 54` |
 
+Ancient card layout differs from normal cards. `NCard.Reload()` hides `Portrait`, `PortraitBorder`, `Frame`, and `TitleBanner`, then shows `AncientPortrait`, `AncientBorder`, `AncientTextBg`, and `AncientBanner`.
+
+Ancient card layout:
+
+| Node | Godot offsets / scale | Swift-style frame |
+| --- | --- | --- |
+| `AncientPortrait` | `-153, -215, 445, 627`, scale `0.5` | `x: -3, y: -4, w: 299, h: 421` |
+| `AncientHighlight` | `-156, -220, 154, 217` | `x: -6, y: -9, w: 310, h: 437` |
+| `AncientBorder` | `-154, -223, 152, 217` | `x: -4, y: -12, w: 306, h: 440` |
+| `AncientTextBg` | `-132, -20, 132, 183` | `x: 18, y: 191, w: 264, h: 203` |
+| `AncientBanner` | `-163, -207, 164, -124` | `x: -13, y: 4, w: 327, h: 83` |
+
+`AncientTextBg` uses a type-specific texture: `ancient_card_text_bg_attack`, `ancient_card_text_bg_skill`, or `ancient_card_text_bg_power`. Quest, Curse, and Status can use the skill background as the closest shape fallback.
+
 Runtime layout rules from `NCard`:
 
 - `TypePlaque` is dynamically widened to `max(typeLabel.width + 17, 61)` and then recentered on its original midpoint.

@@ -15,10 +15,18 @@ struct CardView: View {
 
     var body: some View {
         ZStack(alignment: .topLeading) {
-            portrait
-            frame
-            portraitBorder
-            titleBanner
+            if card.isAncient {
+                ancientPortrait
+                ancientHighlight
+                ancientBorder
+                ancientTextBackground
+                ancientTitleBanner
+            } else {
+                portrait
+                frame
+                portraitBorder
+                titleBanner
+            }
 
             title
             typePlaque
@@ -50,6 +58,13 @@ struct CardView: View {
         .animation(.interactiveSpring(), value: offset)
     }
 
+    var ancientTitleBanner: some View {
+        Image(card.banner)
+            .resizable()
+            .frame(width: 327, height: 83)
+            .offset(x: -13, y: 4)
+    }
+
     var titleBanner: some View {
         Image(card.banner)
             .resizable()
@@ -65,12 +80,41 @@ struct CardView: View {
             .offset(x: 25, y: 43)
     }
 
+    var ancientPortrait: some View {
+        Image(card.portrait)
+            .resizable()
+            .frame(width: 299, height: 421)
+            .offset(x: -3, y: -4)
+    }
+
     var frame: some View {
         Image(card.frame)
             .resizable()
             .cardAssetColor(card.frameColor)
             .frame(width: 300, height: 422)
             .offset(x: 0, y: 0)
+    }
+
+    var ancientHighlight: some View {
+        Image(card.ancientHighlight)
+            .resizable()
+            .opacity(0.75)
+            .frame(width: 310, height: 437)
+            .offset(x: -6, y: -9)
+    }
+
+    var ancientBorder: some View {
+        Image(card.ancientBorder)
+            .resizable()
+            .frame(width: 306, height: 440)
+            .offset(x: -4, y: -12)
+    }
+
+    var ancientTextBackground: some View {
+        Image(card.ancientTextBackground)
+            .resizable()
+            .frame(width: 264, height: 203)
+            .offset(x: 18, y: 191)
     }
 
     @ViewBuilder
@@ -144,6 +188,10 @@ struct CardView: View {
 // But tests still can be done by doing snapshot testing.
 // Just some thoughts.
 private extension Card {
+    var isAncient: Bool {
+        rarity == .ancient
+    }
+
     /// Decided by `rarity`
     var banner: ImageResource {
         switch rarity {
@@ -151,6 +199,25 @@ private extension Card {
                 .ancientBanner
         default:
                 .cardBanner
+        }
+    }
+
+    var ancientBorder: ImageResource {
+        .init(name: "ancient_card_border", bundle: .module)
+    }
+
+    var ancientHighlight: ImageResource {
+        .init(name: "card_highlight_ancient", bundle: .module)
+    }
+
+    var ancientTextBackground: ImageResource {
+        switch cardType {
+        case .attack:
+            return .init(name: "ancient_card_text_bg_attack", bundle: .module)
+        case .power:
+            return .init(name: "ancient_card_text_bg_power", bundle: .module)
+        case .skill, .curse, .quest, .status:
+            return .init(name: "ancient_card_text_bg_skill", bundle: .module)
         }
     }
 
