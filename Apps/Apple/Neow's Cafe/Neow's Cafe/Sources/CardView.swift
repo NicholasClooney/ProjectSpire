@@ -11,18 +11,7 @@ import UIKit
 struct CardView: View {
     @State private var offset: CGSize = .zero
 
-    let card = Card(
-        id: "BALL_LIGHTNING",
-        title: "Ball Lightning",
-        description: """
-            Deal 7 damage.
-            Channel 1 Lightning.
-            """,
-        energyCost: 1,
-        rarity: .common,
-        cardType: .attack,
-        cardPool: .defect
-    )
+    let card: Card
 
     var body: some View {
         ZStack(alignment: .topLeading) {
@@ -126,7 +115,7 @@ struct CardView: View {
 
     var energyText: some View {
         BallLightningTextEffect(
-            text: "\(card.energyCost)",
+            text: card.energyCostText,
             font: NeowSCafeFontFamily.Kreon.regular.font(size: 32),
         )
         .frame(width: 64, height: 64)
@@ -246,6 +235,10 @@ private extension Card {
     /// Decided by `cardType`
     var typeText: String {
         cardType.rawValue.capitalized
+    }
+
+    var energyCostText: String {
+        energyCost < 0 ? "" : "\(energyCost)"
     }
 
     // Decided by `cardPool`
