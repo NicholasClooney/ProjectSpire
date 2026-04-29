@@ -144,6 +144,86 @@ struct CardView: View {
     }
 }
 
+// NOTE: `private extension` makes sense here since this is the only place accessing these values.
+// However, it will make all the properties below inaccessible to testing.
+// But tests still can be done by doing snapshot testing.
+// Just some thoughts.
+private extension Card {
+    /// Decided by `rarity`
+    var banner: ImageResource {
+        switch rarity {
+        case .ancient:
+                .ancientBanner
+        default:
+                .cardBanner
+        }
+    }
+
+    /// Decided by `id.lowercased()`
+    var portrait: ImageResource {
+        .init(name: id.lowercased(), bundle: .module)
+    }
+
+    /// Decided by `rarity`
+    /// Used for banner, portrait border, and plaque
+    var rarityColor: CardAssetColor {
+        // TODO
+        .commonBannerGray
+    }
+
+    /// Decided by `cardType` && `rarity`
+    var frame: ImageResource {
+        if rarity == .ancient {
+            return .cardFrameAncientS
+        }
+
+        switch cardType {
+        case .attack:
+            return .cardFrameAttackS
+        case .power:
+            return .cardFramePowerS
+        case .quest:
+            return .cardFrameQuestS
+        case .skill:
+            return .cardFrameSkillS
+        case .curse, .status:
+            return .cardFrameSkillS
+        }
+    }
+
+    /// Decided by `cardPool`
+    var frameColor: CardAssetColor {
+        // TODO
+        .defectFrameBlue
+    }
+
+    /// Decided by `cardType`
+    var portraitBorder: ImageResource {
+        switch cardType {
+        case .attack:
+                .cardPortraitBorderAttackS
+        case .power:
+                .cardPortraitBorderPowerS
+        case .skill:
+                .cardPortraitBorderSkillS
+        case .curse, .quest, .status:
+                .cardPortraitBorderSkillS
+        }
+    }
+
+    /// Decided by `cardType`
+    var typeText: String {
+        cardType.rawValue.capitalized
+    }
+
+    // Decided by `cardPool`
+    var energyIcon: ImageResource {
+        // TODO
+        .energyDefect
+    }
+}
+
+
 private extension Image {
     func cardAssetColor(_ approximation: CardAssetColor) -> some View {
         self
