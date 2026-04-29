@@ -49,7 +49,6 @@ struct CardView: View {
     }
 
     var titleBanner: some View {
-        // Extract
         Image(ImageResource.cardBanner)
             .resizable()
         // Extract
