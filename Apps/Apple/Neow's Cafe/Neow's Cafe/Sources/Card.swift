@@ -91,7 +91,7 @@ extension Card {
 
     /// Decided by `cardType`
     var typeText: String {
-        cardType.rawValue.uppercased()
+        cardType.rawValue.capitalized
     }
 
     // Decided by `cardPool`
