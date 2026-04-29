@@ -1,23 +1,60 @@
 import SwiftUI
 
+private enum AppTab {
+    case cards
+    case deck
+    case filter
+}
+
 public struct ContentView: View {
     public init() {}
 
+    @State private var searchText = ""
+    @State private var selected: AppTab = .cards
+
     public var body: some View {
+        TabView(selection: $selected) {
+            Tab("Cards", systemImage: "rectangle.grid.2x2", value: .cards) {
+                NavigationStack {
+                    cards
+                        .navigationTitle("Cards")
+                        .searchable(text: $searchText, prompt: "Search cards, i.e. Ball Lightning, etc.")
+                }
+            }
+
+            Tab("Deck",  systemImage: "square.stack.3d.up", value: .deck) {
+                NavigationStack {
+                    Text("Deck")
+                        .navigationTitle("Deck")
+                }
+            }
+        }
+    }
+
+    private var filteredCards: [Card] {
+        guard !searchText.isEmpty else {
+            return Self.previewCards
+        }
+
+        return Self.previewCards.filter { card in
+            card.title.localizedCaseInsensitiveContains(searchText) ||
+            card.description.localizedCaseInsensitiveContains(searchText)
+        }
+    }
+
+    private var cards: some View {
         ScrollView {
             LazyVGrid(
                 columns: [GridItem(.adaptive(minimum: 190), spacing: 24)],
                 spacing: 32
             ) {
-                ForEach(Self.previewCards, id: \.id) { card in
+                ForEach(filteredCards, id: \.id) { card in
                     CardView(card: card)
-                        .scaleEffect(0.6)
-                        .frame(width: 180, height: 253)
+                        .scaledToFit()
                 }
             }
             .padding(24)
         }
-        .background(Color(red: 0.07, green: 0.075, blue: 0.08))
     }
 }
 

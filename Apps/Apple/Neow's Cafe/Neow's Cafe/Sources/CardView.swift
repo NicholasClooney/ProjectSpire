@@ -84,6 +84,12 @@ struct CardView: View {
         Image(card.portrait)
             .resizable()
             .frame(width: 299, height: 421)
+            .mask(alignment: .topLeading) {
+                Image(card.ancientPortraitMask)
+                    .resizable()
+                    .frame(width: 300, height: 423.5)
+                    .offset(x: 2, y: 4)
+            }
             .offset(x: -3, y: -4)
     }
 
@@ -208,6 +214,10 @@ private extension Card {
 
     var ancientHighlight: ImageResource {
         .init(name: "card_highlight_ancient", bundle: .module)
+    }
+
+    var ancientPortraitMask: ImageResource {
+        .init(name: "ancient_portrait_mask_large", bundle: .module)
     }
 
     var ancientTextBackground: ImageResource {

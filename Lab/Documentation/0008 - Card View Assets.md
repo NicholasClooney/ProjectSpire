@@ -393,6 +393,8 @@ Ancient card layout:
 
 `AncientTextBg` uses a type-specific texture: `ancient_card_text_bg_attack`, `ancient_card_text_bg_skill`, or `ancient_card_text_bg_power`. Quest, Curse, and Status can use the skill background as the closest shape fallback.
 
+Ancient portraits are clipped by `card_canvas_group_mask_material.tres`, which uses `ancient_portrait_mask_large.tres` as `mask_texture`. The mask atlas region is `Rect2(615, 1151, 600, 847)` from `compressed_0.png`, with `mask_offset = Vector2(10, 8)`.
+
 Runtime layout rules from `NCard`:
 
 - `TypePlaque` is dynamically widened to `max(typeLabel.width + 17, 61)` and then recentered on its original midpoint.
@@ -516,6 +518,38 @@ Once the atlas image and rectangle are known, crop with ImageMagick:
 
 ```bash
 magick ui_atlas.png -crop 300x422+123+456 card_frame_attack_s.png
+```
+
+### macOS `sips` extraction
+
+On macOS, `sips` can crop without installing ImageMagick:
+
+```bash
+sips --cropToHeightWidth 422 300 \
+  --cropOffset 456 123 \
+  ui_atlas.png \
+  --out card_frame_attack_s.png
+```
+
+The argument order differs from Godot's `Rect2(x, y, w, h)`:
+
+```text
+Rect2(x, y, w, h) -> --cropToHeightWidth h w --cropOffset y x
+```
+
+For example, `ancient_portrait_mask_large.tres` contains:
+
+```text
+region = Rect2(615, 1151, 600, 847)
+```
+
+So the crop command is:
+
+```bash
+sips --cropToHeightWidth 847 600 \
+  --cropOffset 1151 615 \
+  compressed_0.png \
+  --out ancient_portrait_mask_large.png
 ```
 
 ### Godot extraction
