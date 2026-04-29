@@ -167,8 +167,24 @@ private extension Card {
     /// Decided by `rarity`
     /// Used for banner, portrait border, and plaque
     var rarityColor: CardAssetColor {
-        // TODO
-        .commonBannerGray
+        switch rarity {
+        case .basic, .common, .token:
+            return .commonBannerGray
+        case .uncommon:
+            return .uncommonBannerWhite
+        case .rare:
+            return .rareBannerBlue
+        case .ancient:
+            return .ancientBannerGray
+        case .event:
+            return .eventBannerMagenta
+        case .status:
+            return .statusBannerBlue
+        case .curse:
+            return .curseBannerGreen
+        case .quest:
+            return .questBannerCyan
+        }
     }
 
     /// Decided by `cardType` && `rarity`
@@ -193,8 +209,24 @@ private extension Card {
 
     /// Decided by `cardPool`
     var frameColor: CardAssetColor {
-        // TODO
-        .defectFrameBlue
+        switch cardPool {
+        case .ironclad:
+            return .ironcladFrameRed
+        case .silent:
+            return .silentFrameGreen
+        case .defect:
+            return .defectFrameBlue
+        case .regent:
+            return .regentFrameOrange
+        case .necrobinder:
+            return .necrobinderFramePink
+        case .colorless, .status, .event, .token, .depreacated, .mock:
+            return .colorlessFrameWhite
+        case .curse:
+            return .curseFramePurple
+        case .quest:
+            return .questFrameWhite
+        }
     }
 
     /// Decided by `cardType`
@@ -218,8 +250,22 @@ private extension Card {
 
     // Decided by `cardPool`
     var energyIcon: ImageResource {
-        // TODO
-        .energyDefect
+        switch cardPool {
+        case .ironclad:
+            return .energyIronclad
+        case .silent:
+            return .energySilent
+        case .defect:
+            return .energyDefect
+        case .regent:
+            return .energyRegent
+        case .necrobinder:
+            return .energyNecrobinder
+        case .quest:
+            return .energyQuest
+        case .colorless, .curse, .status, .event, .token, .depreacated, .mock:
+            return .energyColorless
+        }
     }
 }
 
