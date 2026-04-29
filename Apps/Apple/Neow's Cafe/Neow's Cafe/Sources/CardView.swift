@@ -76,8 +76,10 @@ struct CardView: View {
     }
 
     var portraitBorder: some View {
+        // Extract
         Image(ImageResource.cardPortraitBorderAttackS)
             .resizable()
+            // Extract
             .cardAssetColor(.commonBannerGray)
             .frame(width: 275, height: 210)
             .offset(x: 12.5, y: 47)
@@ -94,7 +96,6 @@ struct CardView: View {
     }
 
     var typePlaque: some View {
-        // Extract
         Image(ImageResource.cardPortraitBorderPlaqueS)
             .resizable()
         // Extract

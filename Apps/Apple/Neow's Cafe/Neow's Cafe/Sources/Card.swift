@@ -9,14 +9,67 @@ import DeveloperToolsSupport
 
 struct Card {
 
-    let id: String // Drives the localization & images
+    let id: String // e.g. "BALL_LIGHTNING" derives the localization (as is) & images (lowercased)
+
     let title: String
     let description: String
-    let rarity: Rarity
 
-    var image: ImageResource {
+    // TODO
+    enum EnergyCost {
+        case x
+        case int(Int)
+    }
+    let energyCost: Int
+
+    let rarity: Rarity // derives banner color, and portrait border & plaque color
+    let cardType: CardType // derives portrait boder image
+    let cardPool: CardPool // derives frame color
+}
+
+extension Card {
+    /// Decided by `rarity`
+    var banner: ImageResource {
+        // TODO
+        .cardBanner
+        // .ancientBanner
+    }
+
+    /// Decided by `id.lowercased()`
+    var portrait: ImageResource {
         // TODO
         .ballLightning
+    }
+
+    /// Decided by `rarity`
+    /// Used for banner, portrait border, and plaque
+    // TODO: CardAssetColorApproximation
+    var rarityColor: Never { fatalError() }
+
+    /// Decided by `cardType`
+    var frame: ImageResource {
+        // TODO
+        .cardFrameAttackS
+    }
+
+    /// Decided by `cardPool`
+    var frameColor: Never { fatalError() }
+
+    /// Decided by `cardType`
+    var portraitBorder: ImageResource {
+        // TODO
+        .cardPortraitBorderAttackS
+    }
+
+    /// Decided by `cardType`
+    var typeText: String {
+        // TODO
+        "Attack"
+    }
+
+    // Decided by `cardPool`
+    var energyIcon: ImageResource {
+        // TODO
+        .energyDefect
     }
 }
 
