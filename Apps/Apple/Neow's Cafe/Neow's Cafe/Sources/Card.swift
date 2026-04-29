@@ -29,41 +29,69 @@ struct Card {
 extension Card {
     /// Decided by `rarity`
     var banner: ImageResource {
-        // TODO
-        .cardBanner
-        // .ancientBanner
+        switch rarity {
+        case .ancient:
+            .ancientBanner
+        default:
+            .cardBanner
+        }
     }
 
     /// Decided by `id.lowercased()`
     var portrait: ImageResource {
-        // TODO
-        .ballLightning
+        .init(name: id.lowercased(), bundle: .module)
     }
 
     /// Decided by `rarity`
     /// Used for banner, portrait border, and plaque
-    // TODO: CardAssetColorApproximation
-    var rarityColor: Never { fatalError() }
-
-    /// Decided by `cardType`
-    var frame: ImageResource {
+    var rarityColor: CardAssetColor {
         // TODO
-        .cardFrameAttackS
+        .commonBannerGray
+    }
+
+    /// Decided by `cardType` && `rarity`
+    var frame: ImageResource {
+        if rarity == .ancient {
+            return .cardFrameAncientS
+        }
+
+        switch cardType {
+        case .attack:
+            return .cardFrameAttackS
+        case .power:
+            return .cardFramePowerS
+        case .quest:
+            return .cardFrameQuestS
+        case .skill:
+            return .cardFrameSkillS
+        case .curse, .status:
+            return .cardFrameSkillS
+        }
     }
 
     /// Decided by `cardPool`
-    var frameColor: Never { fatalError() }
+    var frameColor: CardAssetColor {
+        // TODO
+        .defectFrameBlue
+    }
 
     /// Decided by `cardType`
     var portraitBorder: ImageResource {
-        // TODO
-        .cardPortraitBorderAttackS
+        switch cardType {
+        case .attack:
+                .cardPortraitBorderAttackS
+        case .power:
+                .cardPortraitBorderPowerS
+        case .skill:
+                .cardPortraitBorderSkillS
+        case .curse, .quest, .status:
+                .cardPortraitBorderSkillS
+        }
     }
 
     /// Decided by `cardType`
     var typeText: String {
-        // TODO
-        "Attack"
+        cardType.rawValue.uppercased()
     }
 
     // Decided by `cardPool`
@@ -89,7 +117,7 @@ extension Card {
      }
      */
 
-    enum CardType {
+    enum CardType: String {
         case attack
         case skill
         case power
