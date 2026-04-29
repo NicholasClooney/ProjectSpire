@@ -17,6 +17,16 @@ Two mods with a deliberate separation of concerns:
 
 Building SpireRestAPI builds SpireAPI first and deploys both to the game's mods folder automatically.
 
+## Builds
+
+When compiling with `xcodebuild`, pipe through `xcbeautify` to keep output compact and readable:
+
+```
+xcodebuild ... | xcbeautify
+```
+
+Use raw `xcodebuild` output only when diagnosing a specific issue that needs the full log.
+
 ## Game logs
 
 ```
