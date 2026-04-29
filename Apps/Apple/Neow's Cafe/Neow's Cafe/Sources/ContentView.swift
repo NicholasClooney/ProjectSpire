@@ -55,7 +55,7 @@ private extension ContentView {
             Whenever you play a Skill, Exhaust it.
             """,
             energyCost: 3,
-            rarity: .rare,
+            rarity: .ancient,
             cardType: .power,
             cardPool: .ironclad
         ),

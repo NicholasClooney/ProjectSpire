@@ -73,12 +73,15 @@ struct CardView: View {
             .offset(x: 0, y: 0)
     }
 
+    @ViewBuilder
     var portraitBorder: some View {
-        Image(card.portraitBorder)
-            .resizable()
-            .cardAssetColor(card.rarityColor)
-            .frame(width: 275, height: 210)
-            .offset(x: 12.5, y: 47)
+        if let border = card.portraitBorder {
+            Image(border)
+                .resizable()
+                .cardAssetColor(card.rarityColor)
+                .frame(width: 275, height: 210)
+                .offset(x: 12.5, y: 47)
+        }
     }
 
     var title: some View {
@@ -106,11 +109,14 @@ struct CardView: View {
             .offset(x: 119.5, y: 212)
     }
 
+    @ViewBuilder
     var energyIcon: some View {
-        Image(card.energyIcon)
-            .resizable()
-            .frame(width: 64, height: 64)
-            .offset(x: -16, y: -16)
+        if card.energyCost >= 0 {
+            Image(card.energyIcon)
+                .resizable()
+                .frame(width: 64, height: 64)
+                .offset(x: -16, y: -16)
+        }
     }
 
     var energyText: some View {
@@ -219,16 +225,19 @@ private extension Card {
     }
 
     /// Decided by `cardType`
-    var portraitBorder: ImageResource {
+    var portraitBorder: ImageResource? {
+        if rarity == .ancient {
+            return nil
+        }
         switch cardType {
         case .attack:
-                .cardPortraitBorderAttackS
+            return .cardPortraitBorderAttackS
         case .power:
-                .cardPortraitBorderPowerS
+            return .cardPortraitBorderPowerS
         case .skill:
-                .cardPortraitBorderSkillS
+            return .cardPortraitBorderSkillS
         case .curse, .quest, .status:
-                .cardPortraitBorderSkillS
+            return .cardPortraitBorderSkillS
         }
     }
 
