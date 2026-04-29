@@ -79,6 +79,49 @@ public virtual string PortraitPath =>
     ImageHelper.GetImagePath($"atlases/card_atlas.sprites/{Pool.Title.ToLowerInvariant()}/{base.Id.Entry.ToLowerInvariant()}.tres");
 ```
 
+`ImageHelper.GetImagePath(...)` prefixes the path with `res://images/`, so the final Godot resource path is:
+
+```text
+res://images/atlases/card_atlas.sprites/<pool-title>/<card-id-lowercase>.tres
+```
+
+For extracted assets, drop the `res://images/` prefix:
+
+```text
+images/atlases/card_atlas.sprites/<pool-title>/<card-id-lowercase>.tres
+```
+
+The `<card-id-lowercase>` part comes from `base.Id.Entry.ToLowerInvariant()`. The id entry is generated from the card model class name through `ModelDb.GetEntry(type)`, which calls `StringHelper.Slugify(type.Name)`.
+
+For example:
+
+| Card class | Model id entry | Pool title | Portrait resource |
+| --- | --- | --- | --- |
+| `BallLightning` | `BALL_LIGHTNING` | `defect` | `atlases/card_atlas.sprites/defect/ball_lightning.tres` |
+
+The `<pool-title>` part comes from `CardModel.Pool.Title`. A card does not usually store that directly. `CardModel.Pool` searches `ModelDb.AllCardPools` and picks the first `CardPoolModel` whose `AllCardIds` contains the card id. For `BallLightning`, `DefectCardPool.GenerateAllCards()` includes `ModelDb.Card<BallLightning>()`, and `DefectCardPool.Title` is `defect`.
+
+Some cards override `PortraitPath`, so do not assume the default path formula is universal. `MadScience` is one example:
+
+```csharp
+public override string PortraitPath => GetPortraitPath(TinkerTimeType);
+
+private string GetPortraitPath(CardType cardType)
+{
+    return ImageHelper.GetImagePath("atlases/card_atlas.sprites/event/" + GetPortraitFilename(cardType) + ".tres");
+}
+```
+
+It can resolve to:
+
+```text
+atlases/card_atlas.sprites/event/mad_science_attack.tres
+atlases/card_atlas.sprites/event/mad_science_skill.tres
+atlases/card_atlas.sprites/event/mad_science_power.tres
+```
+
+So the safe rule is: use `CardModel.PortraitPath` as the source of truth. The default implementation maps to `<pool-title>/<card-id-lowercase>.tres`, but overrides can choose specific portrait assets.
+
 Card frame shape by card type:
 
 ```csharp
@@ -107,6 +150,10 @@ Relevant source:
 
 ```text
 Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models/CardModel.cs
+Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models/ModelDb.cs
+Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Helpers/StringHelper.cs
+Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.CardPools/DefectCardPool.cs
+Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MadScience.cs
 ```
 
 ## Color And Character Differences
