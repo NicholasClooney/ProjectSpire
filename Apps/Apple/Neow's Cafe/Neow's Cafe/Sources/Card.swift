@@ -13,13 +13,13 @@ struct Card {
 
     let title: String
     let description: String
+    let energyCost: Int
 
     // TODO
     enum EnergyCost {
         case x
         case int(Int)
     }
-    let energyCost: Int
 
     let rarity: Rarity // derives banner color, and portrait border & plaque color
     let cardType: CardType // derives portrait boder image
