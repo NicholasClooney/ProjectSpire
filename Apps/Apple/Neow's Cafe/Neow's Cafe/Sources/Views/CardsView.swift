@@ -1,7 +1,21 @@
 import SwiftUI
 
 struct CardsView: View {
-    let cards: [Card]
+    struct CardFilters {
+        let text: String
+        let pool: Card.DisplayedCardPool
+        let type: Card.DisplayedCardType
+        let rarity: Card.DisplayedRarity
+    }
+
+    struct Dependencies {
+        typealias FilterCards = ([Card], CardFilters) -> [Card]
+
+        let cards: [Card]
+        let filterCards: FilterCards
+    }
+
+    let dependencies: Dependencies
     @Binding var searchText: String
 
     @State private var selectedDisplayedCardPool: Card.DisplayedCardPool = .all
@@ -28,12 +42,16 @@ struct CardsView: View {
     }
 
     private var filteredCards: [Card] {
-        cards.filter { card in
-            matchesSearch(card) &&
-            matchesDisplayedCardPool(card) &&
-            matchesDisplayedCardType(card) &&
-            matchesDisplayedRarity(card)
-        }
+        dependencies.filterCards(dependencies.cards, cardFilters)
+    }
+
+    private var cardFilters: CardFilters {
+        CardFilters(
+            text: searchText,
+            pool: selectedDisplayedCardPool,
+            type: selectedDisplayedCardType,
+            rarity: selectedDisplayedRarity
+        )
     }
 
     private var filterPickers: some View {
@@ -57,82 +75,5 @@ struct CardsView: View {
         selectedDisplayedCardPool == .all &&
         selectedDisplayedCardType == .all &&
         selectedDisplayedRarity == .all
-    }
-
-    private func matchesSearch(_ card: Card) -> Bool {
-        guard !searchText.isEmpty else {
-            return true
-        }
-
-        return card.title.localizedCaseInsensitiveContains(searchText) ||
-        card.description.localizedCaseInsensitiveContains(searchText)
-    }
-
-    private func matchesDisplayedCardPool(_ card: Card) -> Bool {
-        switch selectedDisplayedCardPool {
-        case .all:
-            return true
-        case .ironclad:
-            return card.cardPool == .ironclad
-        case .silent:
-            return card.cardPool == .silent
-        case .defect:
-            return card.cardPool == .defect
-        case .regent:
-            return card.cardPool == .regent
-        case .necrobinder:
-            return card.cardPool == .necrobinder
-        case .colorless:
-            return card.cardPool == .colorless
-        case .ancient:
-            return card.rarity == .ancient
-        case .other:
-            switch card.cardPool {
-            case .curse, .status, .event, .quest, .token:
-                return true
-            case .ironclad, .silent, .defect, .regent, .necrobinder, .colorless, .deprecated, .mock:
-                return false
-            }
-        }
-    }
-
-    private func matchesDisplayedCardType(_ card: Card) -> Bool {
-        switch selectedDisplayedCardType {
-        case .all:
-            return true
-        case .attack:
-            return card.cardType == .attack
-        case .skill:
-            return card.cardType == .skill
-        case .power:
-            return card.cardType == .power
-        case .other:
-            switch card.cardType {
-            case .status, .curse, .quest:
-                return true
-            case .attack, .skill, .power:
-                return false
-            }
-        }
-    }
-
-    private func matchesDisplayedRarity(_ card: Card) -> Bool {
-        switch selectedDisplayedRarity {
-        case .all:
-            return true
-        case .common:
-            return card.rarity == .common
-        case .uncommon:
-            return card.rarity == .uncommon
-        case .rare:
-            return card.rarity == .rare
-        case .other:
-            switch card.rarity {
-            case .basic, .ancient, .event, .token, .status, .curse, .quest:
-                return true
-            case .common, .uncommon, .rare:
-                return false
-            }
-        }
     }
 }

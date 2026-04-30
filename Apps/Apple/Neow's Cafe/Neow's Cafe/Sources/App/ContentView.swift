@@ -7,10 +7,10 @@ private enum AppTab {
 }
 
 public struct ContentView: View {
-    private let cards: [Card]
+    private let dependencies: Dependencies
 
-    init(cards: [Card]) {
-        self.cards = cards
+    init(dependencies: Dependencies) {
+        self.dependencies = dependencies
     }
 
     @State private var searchText = ""
@@ -20,7 +20,7 @@ public struct ContentView: View {
         TabView(selection: $selected) {
             Tab("Cards", systemImage: "rectangle.grid.2x2", value: .cards) {
                 NavigationStack {
-                    CardsView(cards: cards, searchText: $searchText)
+                    CardsView(dependencies: dependencies.cardsView, searchText: $searchText)
                         .navigationTitle("Cards")
                         .searchable(text: $searchText, prompt: "Search cards, i.e. Ball Lightning, etc.")
                 }
@@ -38,6 +38,6 @@ public struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(cards: MockCards.cards)
+        ContentView(dependencies: .live)
     }
 }
