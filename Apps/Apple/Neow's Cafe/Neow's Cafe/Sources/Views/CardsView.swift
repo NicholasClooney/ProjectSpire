@@ -16,6 +16,7 @@ struct CardsView: View {
     }
 
     let dependencies: Dependencies
+
     @Binding var searchText: String
 
     @State private var selectedDisplayedCardPool: Card.DisplayedCardPool = .all
@@ -55,19 +56,21 @@ struct CardsView: View {
     }
 
     private var filterPickers: some View {
-        HStack(alignment: .center, spacing: 12) {
-            EnumPicker("Character", selection: $selectedDisplayedCardPool)
-            EnumPicker("Type", selection: $selectedDisplayedCardType)
-            EnumPicker("Rarity", selection: $selectedDisplayedRarity)
+        ScrollView(.horizontal) {
+            HStack(alignment: .center, spacing: 12) {
+                EnumPicker("Character", selection: $selectedDisplayedCardPool)
+                EnumPicker("Type", selection: $selectedDisplayedCardType)
+                EnumPicker("Rarity", selection: $selectedDisplayedRarity)
 
-            Button {
-                selectedDisplayedCardPool = .all
-                selectedDisplayedCardType = .all
-                selectedDisplayedRarity = .all
-            } label: {
-                Image(systemName: "arrow.counterclockwise")
+                Button {
+                    selectedDisplayedCardPool = .all
+                    selectedDisplayedCardType = .all
+                    selectedDisplayedRarity = .all
+                } label: {
+                    Image(systemName: "arrow.counterclockwise")
+                }
+                .disabled(areFiltersReset)
             }
-            .disabled(areFiltersReset)
         }
     }
 

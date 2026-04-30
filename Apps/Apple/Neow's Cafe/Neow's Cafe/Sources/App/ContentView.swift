@@ -20,7 +20,10 @@ public struct ContentView: View {
         TabView(selection: $selected) {
             Tab("Cards", systemImage: "rectangle.grid.2x2", value: .cards) {
                 NavigationStack {
-                    CardsView(dependencies: dependencies.cardsView, searchText: $searchText)
+                    CardsView(
+                        dependencies: dependencies.cardsView,
+                        searchText: $searchText
+                    )
                         .navigationTitle("Cards")
                         .searchable(text: $searchText, prompt: "Search cards, i.e. Ball Lightning, etc.")
                 }
