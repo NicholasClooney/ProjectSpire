@@ -4,7 +4,7 @@ import SwiftUI
 struct NeowSCafeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(cards: MockCards.cards)
         }
     }
 }
