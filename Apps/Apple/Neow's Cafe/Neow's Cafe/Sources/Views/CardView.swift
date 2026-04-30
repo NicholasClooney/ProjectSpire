@@ -135,7 +135,7 @@ struct CardView: View {
     }
 
     var title: some View {
-        BallLightningTextEffect(
+        BannerText(
             text: card.title,
             font: NeowSCafeFontFamily.Kreon.regular.font(size: 26),
         )
@@ -170,7 +170,7 @@ struct CardView: View {
     }
 
     var energyText: some View {
-        BallLightningTextEffect(
+        BannerText(
             text: card.energyCostText,
             font: NeowSCafeFontFamily.Kreon.regular.font(size: 32),
         )
