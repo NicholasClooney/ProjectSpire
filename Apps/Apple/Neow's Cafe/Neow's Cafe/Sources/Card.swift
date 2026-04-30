@@ -83,7 +83,7 @@ extension Card {
         case event
         case quest
         case token
-        case depreacated
+        case deprecated
         case mock
     }
 }

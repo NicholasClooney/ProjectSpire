@@ -292,7 +292,7 @@ private extension Card {
             return .regentFrameOrange
         case .necrobinder:
             return .necrobinderFramePink
-        case .colorless, .status, .event, .token, .depreacated, .mock:
+        case .colorless, .status, .event, .token, .deprecated, .mock:
             return .colorlessFrameWhite
         case .curse:
             return .curseFramePurple
@@ -342,7 +342,7 @@ private extension Card {
             return .energyNecrobinder
         case .quest:
             return .energyQuest
-        case .colorless, .curse, .status, .event, .token, .depreacated, .mock:
+        case .colorless, .curse, .status, .event, .token, .deprecated, .mock:
             return .energyColorless
         }
     }
