@@ -1,0 +1,698 @@
+{
+  "title": "Card Portrait Image Format Comparison",
+  "generated_at": "2026-05-01T16:42:07.269526+00:00",
+  "source_root": "Lab/unpacked/images/packed/card_portraits",
+  "sample_strategy": "4 largest, 4 middle-distribution, and 4 smallest PNG files from card portraits.",
+  "qualities": [
+    95,
+    85,
+    75,
+    60
+  ],
+  "samples": [
+    {
+      "bucket": "large",
+      "source": "Lab/unpacked/images/packed/card_portraits/curse/beta/spore_mind.png",
+      "width": 1000,
+      "height": 760,
+      "original_size": 859863,
+      "variants": [
+        {
+          "label": "PNG original",
+          "kind": "png",
+          "quality": null,
+          "size": 859863,
+          "path": "assets/01-curse__beta__spore_mind/original.png",
+          "ratio": 1.0
+        },
+        {
+          "label": "WebP lossless",
+          "kind": "webp-lossless",
+          "quality": null,
+          "size": 520444,
+          "path": "assets/01-curse__beta__spore_mind/lossless.webp",
+          "ratio": 0.6053
+        },
+        {
+          "label": "WebP q95",
+          "kind": "webp-lossy",
+          "quality": 95,
+          "size": 121026,
+          "path": "assets/01-curse__beta__spore_mind/q95.webp",
+          "ratio": 0.1408
+        },
+        {
+          "label": "WebP q85",
+          "kind": "webp-lossy",
+          "quality": 85,
+          "size": 57458,
+          "path": "assets/01-curse__beta__spore_mind/q85.webp",
+          "ratio": 0.0668
+        },
+        {
+          "label": "WebP q75",
+          "kind": "webp-lossy",
+          "quality": 75,
+          "size": 38706,
+          "path": "assets/01-curse__beta__spore_mind/q75.webp",
+          "ratio": 0.045
+        },
+        {
+          "label": "WebP q60",
+          "kind": "webp-lossy",
+          "quality": 60,
+          "size": 31980,
+          "path": "assets/01-curse__beta__spore_mind/q60.webp",
+          "ratio": 0.0372
+        }
+      ]
+    },
+    {
+      "bucket": "large",
+      "source": "Lab/unpacked/images/packed/card_portraits/curse/beta/greed.png",
+      "width": 1000,
+      "height": 760,
+      "original_size": 850149,
+      "variants": [
+        {
+          "label": "PNG original",
+          "kind": "png",
+          "quality": null,
+          "size": 850149,
+          "path": "assets/02-curse__beta__greed/original.png",
+          "ratio": 1.0
+        },
+        {
+          "label": "WebP lossless",
+          "kind": "webp-lossless",
+          "quality": null,
+          "size": 497242,
+          "path": "assets/02-curse__beta__greed/lossless.webp",
+          "ratio": 0.5849
+        },
+        {
+          "label": "WebP q95",
+          "kind": "webp-lossy",
+          "quality": 95,
+          "size": 113288,
+          "path": "assets/02-curse__beta__greed/q95.webp",
+          "ratio": 0.1333
+        },
+        {
+          "label": "WebP q85",
+          "kind": "webp-lossy",
+          "quality": 85,
+          "size": 55322,
+          "path": "assets/02-curse__beta__greed/q85.webp",
+          "ratio": 0.0651
+        },
+        {
+          "label": "WebP q75",
+          "kind": "webp-lossy",
+          "quality": 75,
+          "size": 35706,
+          "path": "assets/02-curse__beta__greed/q75.webp",
+          "ratio": 0.042
+        },
+        {
+          "label": "WebP q60",
+          "kind": "webp-lossy",
+          "quality": 60,
+          "size": 29692,
+          "path": "assets/02-curse__beta__greed/q60.webp",
+          "ratio": 0.0349
+        }
+      ]
+    },
+    {
+      "bucket": "large",
+      "source": "Lab/unpacked/images/packed/card_portraits/defect/white_noise.png",
+      "width": 1000,
+      "height": 760,
+      "original_size": 841454,
+      "variants": [
+        {
+          "label": "PNG original",
+          "kind": "png",
+          "quality": null,
+          "size": 841454,
+          "path": "assets/03-defect__white_noise/original.png",
+          "ratio": 1.0
+        },
+        {
+          "label": "WebP lossless",
+          "kind": "webp-lossless",
+          "quality": null,
+          "size": 477228,
+          "path": "assets/03-defect__white_noise/lossless.webp",
+          "ratio": 0.5671
+        },
+        {
+          "label": "WebP q95",
+          "kind": "webp-lossy",
+          "quality": 95,
+          "size": 193538,
+          "path": "assets/03-defect__white_noise/q95.webp",
+          "ratio": 0.23
+        },
+        {
+          "label": "WebP q85",
+          "kind": "webp-lossy",
+          "quality": 85,
+          "size": 122558,
+          "path": "assets/03-defect__white_noise/q85.webp",
+          "ratio": 0.1457
+        },
+        {
+          "label": "WebP q75",
+          "kind": "webp-lossy",
+          "quality": 75,
+          "size": 89120,
+          "path": "assets/03-defect__white_noise/q75.webp",
+          "ratio": 0.1059
+        },
+        {
+          "label": "WebP q60",
+          "kind": "webp-lossy",
+          "quality": 60,
+          "size": 75458,
+          "path": "assets/03-defect__white_noise/q60.webp",
+          "ratio": 0.0897
+        }
+      ]
+    },
+    {
+      "bucket": "large",
+      "source": "Lab/unpacked/images/packed/card_portraits/token/beta/giant_rock.png",
+      "width": 668,
+      "height": 508,
+      "original_size": 820289,
+      "variants": [
+        {
+          "label": "PNG original",
+          "kind": "png",
+          "quality": null,
+          "size": 820289,
+          "path": "assets/04-token__beta__giant_rock/original.png",
+          "ratio": 1.0
+        },
+        {
+          "label": "WebP lossless",
+          "kind": "webp-lossless",
+          "quality": null,
+          "size": 625766,
+          "path": "assets/04-token__beta__giant_rock/lossless.webp",
+          "ratio": 0.7629
+        },
+        {
+          "label": "WebP q95",
+          "kind": "webp-lossy",
+          "quality": 95,
+          "size": 159414,
+          "path": "assets/04-token__beta__giant_rock/q95.webp",
+          "ratio": 0.1943
+        },
+        {
+          "label": "WebP q85",
+          "kind": "webp-lossy",
+          "quality": 85,
+          "size": 86062,
+          "path": "assets/04-token__beta__giant_rock/q85.webp",
+          "ratio": 0.1049
+        },
+        {
+          "label": "WebP q75",
+          "kind": "webp-lossy",
+          "quality": 75,
+          "size": 47250,
+          "path": "assets/04-token__beta__giant_rock/q75.webp",
+          "ratio": 0.0576
+        },
+        {
+          "label": "WebP q60",
+          "kind": "webp-lossy",
+          "quality": 60,
+          "size": 33820,
+          "path": "assets/04-token__beta__giant_rock/q60.webp",
+          "ratio": 0.0412
+        }
+      ]
+    },
+    {
+      "bucket": "medium",
+      "source": "Lab/unpacked/images/packed/card_portraits/colorless/tag_team.png",
+      "width": 1000,
+      "height": 760,
+      "original_size": 388396,
+      "variants": [
+        {
+          "label": "PNG original",
+          "kind": "png",
+          "quality": null,
+          "size": 388396,
+          "path": "assets/05-colorless__tag_team/original.png",
+          "ratio": 1.0
+        },
+        {
+          "label": "WebP lossless",
+          "kind": "webp-lossless",
+          "quality": null,
+          "size": 251822,
+          "path": "assets/05-colorless__tag_team/lossless.webp",
+          "ratio": 0.6484
+        },
+        {
+          "label": "WebP q95",
+          "kind": "webp-lossy",
+          "quality": 95,
+          "size": 133026,
+          "path": "assets/05-colorless__tag_team/q95.webp",
+          "ratio": 0.3425
+        },
+        {
+          "label": "WebP q85",
+          "kind": "webp-lossy",
+          "quality": 85,
+          "size": 81728,
+          "path": "assets/05-colorless__tag_team/q85.webp",
+          "ratio": 0.2104
+        },
+        {
+          "label": "WebP q75",
+          "kind": "webp-lossy",
+          "quality": 75,
+          "size": 58426,
+          "path": "assets/05-colorless__tag_team/q75.webp",
+          "ratio": 0.1504
+        },
+        {
+          "label": "WebP q60",
+          "kind": "webp-lossy",
+          "quality": 60,
+          "size": 50522,
+          "path": "assets/05-colorless__tag_team/q60.webp",
+          "ratio": 0.1301
+        }
+      ]
+    },
+    {
+      "bucket": "medium",
+      "source": "Lab/unpacked/images/packed/card_portraits/defect/skim.png",
+      "width": 1000,
+      "height": 760,
+      "original_size": 354262,
+      "variants": [
+        {
+          "label": "PNG original",
+          "kind": "png",
+          "quality": null,
+          "size": 354262,
+          "path": "assets/06-defect__skim/original.png",
+          "ratio": 1.0
+        },
+        {
+          "label": "WebP lossless",
+          "kind": "webp-lossless",
+          "quality": null,
+          "size": 216600,
+          "path": "assets/06-defect__skim/lossless.webp",
+          "ratio": 0.6114
+        },
+        {
+          "label": "WebP q95",
+          "kind": "webp-lossy",
+          "quality": 95,
+          "size": 85554,
+          "path": "assets/06-defect__skim/q95.webp",
+          "ratio": 0.2415
+        },
+        {
+          "label": "WebP q85",
+          "kind": "webp-lossy",
+          "quality": 85,
+          "size": 48418,
+          "path": "assets/06-defect__skim/q85.webp",
+          "ratio": 0.1367
+        },
+        {
+          "label": "WebP q75",
+          "kind": "webp-lossy",
+          "quality": 75,
+          "size": 33620,
+          "path": "assets/06-defect__skim/q75.webp",
+          "ratio": 0.0949
+        },
+        {
+          "label": "WebP q60",
+          "kind": "webp-lossy",
+          "quality": 60,
+          "size": 28392,
+          "path": "assets/06-defect__skim/q60.webp",
+          "ratio": 0.0801
+        }
+      ]
+    },
+    {
+      "bucket": "medium",
+      "source": "Lab/unpacked/images/packed/card_portraits/status/dazed.png",
+      "width": 1000,
+      "height": 760,
+      "original_size": 321152,
+      "variants": [
+        {
+          "label": "PNG original",
+          "kind": "png",
+          "quality": null,
+          "size": 321152,
+          "path": "assets/07-status__dazed/original.png",
+          "ratio": 1.0
+        },
+        {
+          "label": "WebP lossless",
+          "kind": "webp-lossless",
+          "quality": null,
+          "size": 221362,
+          "path": "assets/07-status__dazed/lossless.webp",
+          "ratio": 0.6893
+        },
+        {
+          "label": "WebP q95",
+          "kind": "webp-lossy",
+          "quality": 95,
+          "size": 84620,
+          "path": "assets/07-status__dazed/q95.webp",
+          "ratio": 0.2635
+        },
+        {
+          "label": "WebP q85",
+          "kind": "webp-lossy",
+          "quality": 85,
+          "size": 52194,
+          "path": "assets/07-status__dazed/q85.webp",
+          "ratio": 0.1625
+        },
+        {
+          "label": "WebP q75",
+          "kind": "webp-lossy",
+          "quality": 75,
+          "size": 37828,
+          "path": "assets/07-status__dazed/q75.webp",
+          "ratio": 0.1178
+        },
+        {
+          "label": "WebP q60",
+          "kind": "webp-lossy",
+          "quality": 60,
+          "size": 32822,
+          "path": "assets/07-status__dazed/q60.webp",
+          "ratio": 0.1022
+        }
+      ]
+    },
+    {
+      "bucket": "medium",
+      "source": "Lab/unpacked/images/packed/card_portraits/defect/rocket_punch.png",
+      "width": 1000,
+      "height": 760,
+      "original_size": 276146,
+      "variants": [
+        {
+          "label": "PNG original",
+          "kind": "png",
+          "quality": null,
+          "size": 276146,
+          "path": "assets/08-defect__rocket_punch/original.png",
+          "ratio": 1.0
+        },
+        {
+          "label": "WebP lossless",
+          "kind": "webp-lossless",
+          "quality": null,
+          "size": 173518,
+          "path": "assets/08-defect__rocket_punch/lossless.webp",
+          "ratio": 0.6284
+        },
+        {
+          "label": "WebP q95",
+          "kind": "webp-lossy",
+          "quality": 95,
+          "size": 81262,
+          "path": "assets/08-defect__rocket_punch/q95.webp",
+          "ratio": 0.2943
+        },
+        {
+          "label": "WebP q85",
+          "kind": "webp-lossy",
+          "quality": 85,
+          "size": 49400,
+          "path": "assets/08-defect__rocket_punch/q85.webp",
+          "ratio": 0.1789
+        },
+        {
+          "label": "WebP q75",
+          "kind": "webp-lossy",
+          "quality": 75,
+          "size": 35354,
+          "path": "assets/08-defect__rocket_punch/q75.webp",
+          "ratio": 0.128
+        },
+        {
+          "label": "WebP q60",
+          "kind": "webp-lossy",
+          "quality": 60,
+          "size": 30328,
+          "path": "assets/08-defect__rocket_punch/q60.webp",
+          "ratio": 0.1098
+        }
+      ]
+    },
+    {
+      "bucket": "small",
+      "source": "Lab/unpacked/images/packed/card_portraits/necrobinder/beta/reap.png",
+      "width": 668,
+      "height": 508,
+      "original_size": 4312,
+      "variants": [
+        {
+          "label": "PNG original",
+          "kind": "png",
+          "quality": null,
+          "size": 4312,
+          "path": "assets/09-necrobinder__beta__reap/original.png",
+          "ratio": 1.0
+        },
+        {
+          "label": "WebP lossless",
+          "kind": "webp-lossless",
+          "quality": null,
+          "size": 978,
+          "path": "assets/09-necrobinder__beta__reap/lossless.webp",
+          "ratio": 0.2268
+        },
+        {
+          "label": "WebP q95",
+          "kind": "webp-lossy",
+          "quality": 95,
+          "size": 6804,
+          "path": "assets/09-necrobinder__beta__reap/q95.webp",
+          "ratio": 1.5779
+        },
+        {
+          "label": "WebP q85",
+          "kind": "webp-lossy",
+          "quality": 85,
+          "size": 4328,
+          "path": "assets/09-necrobinder__beta__reap/q85.webp",
+          "ratio": 1.0037
+        },
+        {
+          "label": "WebP q75",
+          "kind": "webp-lossy",
+          "quality": 75,
+          "size": 3404,
+          "path": "assets/09-necrobinder__beta__reap/q75.webp",
+          "ratio": 0.7894
+        },
+        {
+          "label": "WebP q60",
+          "kind": "webp-lossy",
+          "quality": 60,
+          "size": 3028,
+          "path": "assets/09-necrobinder__beta__reap/q60.webp",
+          "ratio": 0.7022
+        }
+      ]
+    },
+    {
+      "bucket": "small",
+      "source": "Lab/unpacked/images/packed/card_portraits/regent/beta/pale_blue_dot.png",
+      "width": 1000,
+      "height": 760,
+      "original_size": 4805,
+      "variants": [
+        {
+          "label": "PNG original",
+          "kind": "png",
+          "quality": null,
+          "size": 4805,
+          "path": "assets/10-regent__beta__pale_blue_dot/original.png",
+          "ratio": 1.0
+        },
+        {
+          "label": "WebP lossless",
+          "kind": "webp-lossless",
+          "quality": null,
+          "size": 132,
+          "path": "assets/10-regent__beta__pale_blue_dot/lossless.webp",
+          "ratio": 0.0275
+        },
+        {
+          "label": "WebP q95",
+          "kind": "webp-lossy",
+          "quality": 95,
+          "size": 1472,
+          "path": "assets/10-regent__beta__pale_blue_dot/q95.webp",
+          "ratio": 0.3063
+        },
+        {
+          "label": "WebP q85",
+          "kind": "webp-lossy",
+          "quality": 85,
+          "size": 1458,
+          "path": "assets/10-regent__beta__pale_blue_dot/q85.webp",
+          "ratio": 0.3034
+        },
+        {
+          "label": "WebP q75",
+          "kind": "webp-lossy",
+          "quality": 75,
+          "size": 1452,
+          "path": "assets/10-regent__beta__pale_blue_dot/q75.webp",
+          "ratio": 0.3022
+        },
+        {
+          "label": "WebP q60",
+          "kind": "webp-lossy",
+          "quality": 60,
+          "size": 1452,
+          "path": "assets/10-regent__beta__pale_blue_dot/q60.webp",
+          "ratio": 0.3022
+        }
+      ]
+    },
+    {
+      "bucket": "small",
+      "source": "Lab/unpacked/images/packed/card_portraits/colorless/beta/ultimate_defend.png",
+      "width": 668,
+      "height": 508,
+      "original_size": 5091,
+      "variants": [
+        {
+          "label": "PNG original",
+          "kind": "png",
+          "quality": null,
+          "size": 5091,
+          "path": "assets/11-colorless__beta__ultimate_defend/original.png",
+          "ratio": 1.0
+        },
+        {
+          "label": "WebP lossless",
+          "kind": "webp-lossless",
+          "quality": null,
+          "size": 1384,
+          "path": "assets/11-colorless__beta__ultimate_defend/lossless.webp",
+          "ratio": 0.2719
+        },
+        {
+          "label": "WebP q95",
+          "kind": "webp-lossy",
+          "quality": 95,
+          "size": 10794,
+          "path": "assets/11-colorless__beta__ultimate_defend/q95.webp",
+          "ratio": 2.1202
+        },
+        {
+          "label": "WebP q85",
+          "kind": "webp-lossy",
+          "quality": 85,
+          "size": 7132,
+          "path": "assets/11-colorless__beta__ultimate_defend/q85.webp",
+          "ratio": 1.4009
+        },
+        {
+          "label": "WebP q75",
+          "kind": "webp-lossy",
+          "quality": 75,
+          "size": 5336,
+          "path": "assets/11-colorless__beta__ultimate_defend/q75.webp",
+          "ratio": 1.0481
+        },
+        {
+          "label": "WebP q60",
+          "kind": "webp-lossy",
+          "quality": 60,
+          "size": 4684,
+          "path": "assets/11-colorless__beta__ultimate_defend/q60.webp",
+          "ratio": 0.9201
+        }
+      ]
+    },
+    {
+      "bucket": "small",
+      "source": "Lab/unpacked/images/packed/card_portraits/colorless/beta/rend.png",
+      "width": 668,
+      "height": 508,
+      "original_size": 5875,
+      "variants": [
+        {
+          "label": "PNG original",
+          "kind": "png",
+          "quality": null,
+          "size": 5875,
+          "path": "assets/12-colorless__beta__rend/original.png",
+          "ratio": 1.0
+        },
+        {
+          "label": "WebP lossless",
+          "kind": "webp-lossless",
+          "quality": null,
+          "size": 1560,
+          "path": "assets/12-colorless__beta__rend/lossless.webp",
+          "ratio": 0.2655
+        },
+        {
+          "label": "WebP q95",
+          "kind": "webp-lossy",
+          "quality": 95,
+          "size": 13578,
+          "path": "assets/12-colorless__beta__rend/q95.webp",
+          "ratio": 2.3111
+        },
+        {
+          "label": "WebP q85",
+          "kind": "webp-lossy",
+          "quality": 85,
+          "size": 9392,
+          "path": "assets/12-colorless__beta__rend/q85.webp",
+          "ratio": 1.5986
+        },
+        {
+          "label": "WebP q75",
+          "kind": "webp-lossy",
+          "quality": 75,
+          "size": 7256,
+          "path": "assets/12-colorless__beta__rend/q75.webp",
+          "ratio": 1.2351
+        },
+        {
+          "label": "WebP q60",
+          "kind": "webp-lossy",
+          "quality": 60,
+          "size": 6330,
+          "path": "assets/12-colorless__beta__rend/q60.webp",
+          "ratio": 1.0774
+        }
+      ]
+    }
+  ]
+}
