@@ -1,0 +1,23 @@
+version: 1
+source_root: Lab/unpacked
+output_root: Lab/resources
+
+entries:
+  - name: localization
+    from: localization
+    to: localization
+    include:
+      - "**/*"
+    exclude:
+      - ".DS_Store"
+    transform: copy
+
+  - name: card_portraits
+    from: images/packed/card_portraits
+    to: images/packed/card_portraits
+    include:
+      - "**/*.png"
+    exclude:
+      - ".DS_Store"
+      - "**/*.import"
+    transform: webp-q85
