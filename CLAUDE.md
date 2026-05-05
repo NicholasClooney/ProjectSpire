@@ -4,18 +4,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repo structure
 
-- `Lab/` — research workspace for decompiling and studying STS2 game source. See `Lab/CLAUDE.md`.
-- `Mods/SpireAPI/` — game-state API layer mod. See `Mods/SpireAPI/CLAUDE.md`.
-- `Mods/SpireRestAPI/` — REST HTTP server mod, depends on SpireAPI. See `Mods/SpireRestAPI/CLAUDE.md`.
+See `README.md`.
 
-## Mod architecture overview
+When making structural changes to the repository, update the repo structure section in `README.md` in the same change.
 
-Two mods with a deliberate separation of concerns:
+## Plans
 
-- **SpireAPI** — pure game-state access layer. Exposes C# classes (`CombatApi`, etc.) for reading and eventually mutating game state. No HTTP, no transport concerns. Intended to be a foundation other mods can also depend on.
-- **SpireRestAPI** — owns the HTTP server and REST routing. References SpireAPI as a project dependency and calls into it to serve game state over HTTP. Compiled with `ExcludeAssets="runtime"` so SpireAPI.dll is not bundled into its output; the game loads each mod independently.
+Implementation-ready plans live in `Documentation/Plans/`.
 
-Building SpireRestAPI builds SpireAPI first and deploys both to the game's mods folder automatically.
+Use this folder for agreed plans that should be executable by another engineer or agent without rediscovering the intent, target commit, naming convention, verification steps, or important assumptions.
 
 ## Builds
 
@@ -37,19 +34,11 @@ Use raw `xcodebuild` output only when diagnosing a specific issue that needs the
 
 ## Snapshot tags
 
-Snapshot tags are annotated, date-based checkpoints named `snapshot/YYYY-MM-DD`.
+See `Documentation/Snapshot Tags.md` before creating or reviewing snapshot tags.
 
-To create the next snapshot:
+## Release tags and pages
 
-1. Confirm the worktree is clean with `git status --short --branch`.
-2. Review the previous snapshot with `git tag --list 'snapshot/*'` and `git show --no-patch snapshot/YYYY-MM-DD`.
-3. Create an annotated tag:
-
-```
-git tag -a snapshot/YYYY-MM-DD -m "ProjectSpire snapshot YYYY-MM-DD" -m "Point-in-time snapshot of ProjectSpire work as of YYYY-MM-DD." -m "This is a baseline checkpoint, not a stable release." -m "Snapshot contents:" -m "- First notable change" -m "- Second notable change" -m "- Third notable change"
-```
-
-4. Push the tag with `git push origin snapshot/YYYY-MM-DD`.
+See `Documentation/Release Tags and Pages.md` before creating or reviewing release tags or GitHub Release pages.
 
 ## Commits
 
