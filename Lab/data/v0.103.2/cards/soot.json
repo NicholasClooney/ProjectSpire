@@ -1,28 +1,49 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SOOT",
-  "class_name": "Soot",
-  "name": "Soot",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Soot.cs",
-  "cost": -1,
-  "type": "Status",
-  "rarity": "Status",
-  "target": "None",
-  "localization": {
-    "title_key": "SOOT.title",
-    "description_key": "SOOT.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Soot",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Soot.cs",
+    "cost": -1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "localization": {
+      "table": "cards",
+      "title_key": "SOOT.title",
+      "description_key": "SOOT.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/status/soot.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/status/beta/soot.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Unplayable"
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Unplayable"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Soot",
+      "cost": -1,
+      "description": {
+        "plain": ""
+      }
+    },
+    "upgraded": {
+      "title": "Soot+",
+      "cost": -1,
+      "description": {
+        "plain": ""
+      }
+    }
+  }
 }

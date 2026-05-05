@@ -1,39 +1,128 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DODGE_AND_ROLL",
-  "class_name": "DodgeAndRoll",
-  "name": "DodgeAndRoll",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DodgeAndRoll.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Common",
-  "target": "Self",
-  "localization": {
-    "title_key": "DODGE_AND_ROLL.title",
-    "description_key": "DODGE_AND_ROLL.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "DodgeAndRoll",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DodgeAndRoll.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "DODGE_AND_ROLL.title",
+      "description_key": "DODGE_AND_ROLL.description"
+    },
+    "vars": {
+      "Block": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/dodge_and_roll.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 2
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "BlockNextTurn",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "amount"
+      }
+    ]
   },
-  "vars": {
-    "Block": 4
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Dodge and Roll",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 4 Block.\nNext turn, gain 4 Block.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "4",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nNext turn, gain "
+          },
+          {
+            "text": "4",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Dodge and Roll+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 6 Block.\nNext turn, gain 6 Block.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "6",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nNext turn, gain "
+          },
+          {
+            "text": "6",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "BlockNextTurn",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "amount"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,47 +1,121 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "HYPERBEAM",
-  "class_name": "Hyperbeam",
-  "name": "Hyperbeam",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Hyperbeam.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "HYPERBEAM.title",
-    "description_key": "HYPERBEAM.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Hyperbeam",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Hyperbeam.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "HYPERBEAM.title",
+      "description_key": "HYPERBEAM.description"
+    },
+    "vars": {
+      "Damage": 26,
+      "FocusPower": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/hyperbeam.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 8
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "FocusPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Focus",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "-base.DynamicVars[\"FocusPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Damage": 26,
-    "FocusPower": 3,
-    "Focus": 3
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 8
+  "resolved": {
+    "base": {
+      "title": "Hyperbeam",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 26 damage to ALL enemies.\nLose 3 Focus.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "26",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage to ALL enemies.\nLose "
+          },
+          {
+            "text": "3",
+            "source_var": "FocusPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Focus",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Hyperbeam+",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 34 damage to ALL enemies.\nLose 3 Focus.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "34",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage to ALL enemies.\nLose "
+          },
+          {
+            "text": "3",
+            "source_var": "FocusPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Focus",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Focus",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "-base.DynamicVars[\"FocusPower\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "FocusPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

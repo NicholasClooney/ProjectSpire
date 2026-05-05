@@ -1,51 +1,130 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "RESONANCE",
-  "class_name": "Resonance",
-  "name": "Resonance",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Resonance.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "RESONANCE.title",
-    "description_key": "RESONANCE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "StrengthPower": 1,
-    "Strength": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "StrengthPower",
-      "delta": 1
-    }
-  ],
-  "applies_powers": [
-    {
-      "power": "Strength",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "intValue"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Resonance",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Resonance.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "RESONANCE.title",
+      "description_key": "RESONANCE.description"
     },
-    {
-      "power": "Strength",
-      "target_expr": "hittableEnemy",
-      "amount_expr": "-1m"
+    "vars": {
+      "StrengthPower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/resonance.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/resonance.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "StrengthPower",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Strength",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "intValue"
+      },
+      {
+        "power": "Strength",
+        "target_expr": "hittableEnemy",
+        "amount_expr": "-1m"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Resonance",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 1 Strength. ALL enemies lose 1 Strength.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "1",
+            "source_var": "StrengthPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": ". ALL enemies lose 1 "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Resonance+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 2 Strength. ALL enemies lose 1 Strength.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "2",
+            "source_var": "StrengthPower",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": ". ALL enemies lose 1 "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "StrengthPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

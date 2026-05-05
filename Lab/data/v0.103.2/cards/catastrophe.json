@@ -1,35 +1,100 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CATASTROPHE",
-  "class_name": "Catastrophe",
-  "name": "Catastrophe",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Catastrophe.cs",
-  "cost": 2,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "CATASTROPHE.title",
-    "description_key": "CATASTROPHE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Catastrophe",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Catastrophe.cs",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "CATASTROPHE.title",
+      "description_key": "CATASTROPHE.description"
+    },
+    "vars": {
+      "Cards": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/catastrophe.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/catastrophe.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Unplayable"
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Cards": 2
-  },
-  "keywords": [
-    "Unplayable"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Catastrophe",
+      "cost": 2,
+      "description": {
+        "plain": "Play 2 random cards from your Draw Pile.",
+        "runs": [
+          {
+            "text": "Play "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards"
+          },
+          {
+            "text": " random cards from your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Catastrophe+",
+      "cost": 2,
+      "description": {
+        "plain": "Play 3 random cards from your Draw Pile.",
+        "runs": [
+          {
+            "text": "Play "
+          },
+          {
+            "text": "3",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " random cards from your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

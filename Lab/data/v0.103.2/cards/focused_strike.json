@@ -1,53 +1,134 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FOCUSED_STRIKE",
-  "class_name": "FocusedStrike",
-  "name": "FocusedStrike",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FocusedStrike.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "FOCUSED_STRIKE.title",
-    "description_key": "FOCUSED_STRIKE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 9,
-    "FocusPower": 1,
-    "Focus": 1
-  },
-  "keywords": [],
-  "tags": [
-    "Strike"
-  ],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 2
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "FocusedStrike",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FocusedStrike.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "FOCUSED_STRIKE.title",
+      "description_key": "FOCUSED_STRIKE.description"
     },
-    {
-      "var": "FocusPower",
-      "delta": 1
+    "vars": {
+      "Damage": 9,
+      "FocusPower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/focused_strike.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/focused_strike.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tags": [
+      "Strike"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 2
+      },
+      {
+        "var": "FocusPower",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "FocusPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "FocusedStrike",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"FocusPower\"].BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Focused Strike",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 9 damage.\nGain 1 Focus this turn.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "9",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nGain "
+          },
+          {
+            "text": "1",
+            "source_var": "FocusPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Focus",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Focused Strike+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 11 damage.\nGain 2 Focus this turn.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "11",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nGain "
+          },
+          {
+            "text": "2",
+            "source_var": "FocusPower",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Focus",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "FocusedStrike",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"FocusPower\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "FocusPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

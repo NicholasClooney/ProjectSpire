@@ -1,34 +1,99 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "MIRAGE",
-  "class_name": "Mirage",
-  "name": "Mirage",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Mirage.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "MIRAGE.title",
-    "description_key": "MIRAGE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Mirage",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Mirage.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "MIRAGE.title",
+      "description_key": "MIRAGE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/mirage.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "PoisonPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "PoisonPower",
-      "source": "HoverTipFactory.FromPower"
+  "resolved": {
+    "base": {
+      "title": "Mirage",
+      "cost": 1,
+      "description": {
+        "plain": "Gain Block equal to Poison on ALL enemies.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " equal to "
+          },
+          {
+            "text": "Poison",
+            "style": "gold"
+          },
+          {
+            "text": " on ALL enemies."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Mirage+",
+      "cost": 0,
+      "description": {
+        "plain": "Gain Block equal to Poison on ALL enemies.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " equal to "
+          },
+          {
+            "text": "Poison",
+            "style": "gold"
+          },
+          {
+            "text": " on ALL enemies."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

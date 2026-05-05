@@ -1,46 +1,126 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "COLOSSUS",
-  "class_name": "Colossus",
-  "name": "Colossus",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Colossus.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "COLOSSUS.title",
-    "description_key": "COLOSSUS.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Colossus",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Colossus.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "COLOSSUS.title",
+      "description_key": "COLOSSUS.description"
+    },
+    "vars": {
+      "Block": 5,
+      "Colossus": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/colossus.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/beta/colossus.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 3
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "VulnerablePower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Colossus",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"Colossus\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Block": 5,
-    "Colossus": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Colossus",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 5 Block.\nYou receive 50% less damage from Vulnerable enemies this turn.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "5",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nYou receive 50% less damage from "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": " enemies this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Colossus+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 8 Block.\nYou receive 50% less damage from Vulnerable enemies this turn.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "8",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nYou receive 50% less damage from "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": " enemies this turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Colossus",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"Colossus\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "VulnerablePower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

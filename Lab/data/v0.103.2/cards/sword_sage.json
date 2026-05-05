@@ -1,41 +1,91 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SWORD_SAGE",
-  "class_name": "SwordSage",
-  "name": "SwordSage",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SwordSage.cs",
-  "cost": 2,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "SWORD_SAGE.title",
-    "description_key": "SWORD_SAGE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "SwordSage",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SwordSage.cs",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SWORD_SAGE.title",
+      "description_key": "SWORD_SAGE.description"
+    },
+    "vars": {
+      "SwordSagePower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/sword_sage.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/sword_sage.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "SOVEREIGN_BLADE",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "SwordSage",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"SwordSagePower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "SwordSagePower": 1,
-    "SwordSage": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "SwordSage",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"SwordSagePower\"].BaseValue"
+  "resolved": {
+    "base": {
+      "title": "Sword Sage",
+      "cost": 2,
+      "description": {
+        "plain": "Sovereign Blade now hits an additional time.",
+        "runs": [
+          {
+            "text": "Sovereign Blade",
+            "style": "gold"
+          },
+          {
+            "text": " now hits an additional time."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Sword Sage+",
+      "cost": 1,
+      "description": {
+        "plain": "Sovereign Blade now hits an additional time.",
+        "runs": [
+          {
+            "text": "Sovereign Blade",
+            "style": "gold"
+          },
+          {
+            "text": " now hits an additional time."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_card",
-      "target": "SOVEREIGN_BLADE",
-      "source": "HoverTipFactory.FromCard"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,28 +1,78 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "WHITE_NOISE",
-  "class_name": "WhiteNoise",
-  "name": "WhiteNoise",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/WhiteNoise.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "WHITE_NOISE.title",
-    "description_key": "WHITE_NOISE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "WhiteNoise",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/WhiteNoise.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "WHITE_NOISE.title",
+      "description_key": "WHITE_NOISE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/white_noise.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "White Noise",
+      "cost": 1,
+      "description": {
+        "plain": "Add a random Power into your Hand. It's free to play this turn.",
+        "runs": [
+          {
+            "text": "Add a random Power into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ". It's free to play this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "White Noise+",
+      "cost": 0,
+      "description": {
+        "plain": "Add a random Power into your Hand. It's free to play this turn.",
+        "runs": [
+          {
+            "text": "Add a random Power into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ". It's free to play this turn."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
+    }
+  }
 }

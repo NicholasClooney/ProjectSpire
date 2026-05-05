@@ -1,40 +1,111 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CRIMSON_MANTLE",
-  "class_name": "CrimsonMantle",
-  "name": "CrimsonMantle",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CrimsonMantle.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "CRIMSON_MANTLE.title",
-    "description_key": "CRIMSON_MANTLE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "CrimsonMantle",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CrimsonMantle.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "CRIMSON_MANTLE.title",
+      "description_key": "CRIMSON_MANTLE.description"
+    },
+    "vars": {
+      "CrimsonMantlePower": 8
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/crimson_mantle.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/beta/crimson_mantle.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "CrimsonMantlePower",
+        "delta": 2
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "CrimsonMantle",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"CrimsonMantlePower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "CrimsonMantlePower": 8,
-    "CrimsonMantle": 8
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "CrimsonMantlePower",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Crimson Mantle",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, lose 1 HP and gain 8 Block.",
+        "runs": [
+          {
+            "text": "At the start of your turn, lose 1 HP and gain "
+          },
+          {
+            "text": "8",
+            "source_var": "CrimsonMantlePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Crimson Mantle+",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, lose 1 HP and gain 10 Block.",
+        "runs": [
+          {
+            "text": "At the start of your turn, lose 1 HP and gain "
+          },
+          {
+            "text": "10",
+            "source_var": "CrimsonMantlePower",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "CrimsonMantle",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"CrimsonMantlePower\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

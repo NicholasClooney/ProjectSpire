@@ -1,33 +1,87 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SPOILS_OF_BATTLE",
-  "class_name": "SpoilsOfBattle",
-  "name": "SpoilsOfBattle",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SpoilsOfBattle.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Common",
-  "target": "Self",
-  "localization": {
-    "title_key": "SPOILS_OF_BATTLE.title",
-    "description_key": "SPOILS_OF_BATTLE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "SpoilsOfBattle",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SpoilsOfBattle.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SPOILS_OF_BATTLE.title",
+      "description_key": "SPOILS_OF_BATTLE.description"
+    },
+    "vars": {
+      "Cards": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/spoils_of_battle.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/spoils_of_battle.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Forge",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {
-    "Cards": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Forge",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Spoils of Battle",
+      "cost": 1,
+      "description": {
+        "plain": "Forge {Forge:diff()}.\nDraw 2 cards.",
+        "runs": [
+          {
+            "text": "Forge",
+            "style": "gold"
+          },
+          {
+            "text": " {Forge:diff()}.\nDraw "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards"
+          },
+          {
+            "text": " cards."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Spoils of Battle+",
+      "cost": 1,
+      "description": {
+        "plain": "Forge {Forge:diff()}.\nDraw 2 cards.",
+        "runs": [
+          {
+            "text": "Forge",
+            "style": "gold"
+          },
+          {
+            "text": " {Forge:diff()}.\nDraw "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards"
+          },
+          {
+            "text": " cards."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

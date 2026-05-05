@@ -1,39 +1,85 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SOLAR_STRIKE",
-  "class_name": "SolarStrike",
-  "name": "SolarStrike",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SolarStrike.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "SOLAR_STRIKE.title",
-    "description_key": "SOLAR_STRIKE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 9
-  },
-  "keywords": [],
-  "tags": [
-    "Strike"
-  ],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 1
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "SolarStrike",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SolarStrike.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "SOLAR_STRIKE.title",
+      "description_key": "SOLAR_STRIKE.description"
     },
-    {
-      "var": "Stars",
-      "delta": 1
+    "vars": {
+      "Damage": 9
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/solar_strike.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tags": [
+      "Strike"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 1
+      },
+      {
+        "var": "Stars",
+        "delta": 1
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Solar Strike",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 9 damage.\nGain {Stars:starIcons()}.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "9",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nGain {Stars:starIcons()}."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Solar Strike+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 10 damage.\nGain {Stars:starIcons()}.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nGain {Stars:starIcons()}."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

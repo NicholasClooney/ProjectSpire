@@ -1,58 +1,145 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "WRAITH_FORM",
-  "class_name": "WraithForm",
-  "name": "WraithForm",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/WraithForm.cs",
-  "cost": 3,
-  "type": "Power",
-  "rarity": "Ancient",
-  "target": "Self",
-  "localization": {
-    "title_key": "WRAITH_FORM.title",
-    "description_key": "WRAITH_FORM.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "IntangiblePower": 2,
-    "Intangible": 2,
-    "WraithFormPower": 1,
-    "WraithForm": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "IntangiblePower",
-      "delta": 1
-    }
-  ],
-  "applies_powers": [
-    {
-      "power": "Intangible",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"IntangiblePower\"].BaseValue"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "WraithForm",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/WraithForm.cs",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Ancient",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "WRAITH_FORM.title",
+      "description_key": "WRAITH_FORM.description"
     },
-    {
-      "power": "WraithForm",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"WraithFormPower\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "IntangiblePower",
-      "source": "HoverTipFactory.FromPower"
+    "vars": {
+      "IntangiblePower": 2,
+      "WraithFormPower": 1
     },
-    {
-      "kind": "hover_tip_power",
-      "target": "DexterityPower",
-      "source": "HoverTipFactory.FromPower"
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/wraith_form.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "IntangiblePower",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "IntangiblePower",
+        "source": "HoverTipFactory.FromPower"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "DexterityPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Intangible",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"IntangiblePower\"].BaseValue"
+      },
+      {
+        "power": "WraithForm",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"WraithFormPower\"].BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Wraith Form",
+      "cost": 3,
+      "description": {
+        "plain": "Gain 2 Intangible.\nAt the start of your turn, lose 1 Dexterity.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "2",
+            "source_var": "IntangiblePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Intangible",
+            "style": "gold"
+          },
+          {
+            "text": ".\nAt the start of your turn, lose "
+          },
+          {
+            "text": "1",
+            "source_var": "WraithFormPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Dexterity",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Wraith Form+",
+      "cost": 3,
+      "description": {
+        "plain": "Gain 3 Intangible.\nAt the start of your turn, lose 1 Dexterity.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "3",
+            "source_var": "IntangiblePower",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Intangible",
+            "style": "gold"
+          },
+          {
+            "text": ".\nAt the start of your turn, lose "
+          },
+          {
+            "text": "1",
+            "source_var": "WraithFormPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Dexterity",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,40 +1,106 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "COOLANT",
-  "class_name": "Coolant",
-  "name": "Coolant",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Coolant.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "COOLANT.title",
-    "description_key": "COOLANT.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Coolant",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Coolant.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "COOLANT.title",
+      "description_key": "COOLANT.description"
+    },
+    "vars": {
+      "CoolantPower": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/coolant.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "CoolantPower",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Coolant",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"CoolantPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "CoolantPower": 2,
-    "Coolant": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "CoolantPower",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Coolant",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, gain 2 Block for each unique Orb you have.",
+        "runs": [
+          {
+            "text": "At the start of your turn, gain "
+          },
+          {
+            "text": "2",
+            "source_var": "CoolantPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " for each unique Orb you have."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Coolant+",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, gain 3 Block for each unique Orb you have.",
+        "runs": [
+          {
+            "text": "At the start of your turn, gain "
+          },
+          {
+            "text": "3",
+            "source_var": "CoolantPower",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " for each unique Orb you have."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Coolant",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"CoolantPower\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

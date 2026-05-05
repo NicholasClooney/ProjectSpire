@@ -1,47 +1,109 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BLIGHT_STRIKE",
-  "class_name": "BlightStrike",
-  "name": "BlightStrike",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BlightStrike.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "BLIGHT_STRIKE.title",
-    "description_key": "BLIGHT_STRIKE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "BlightStrike",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BlightStrike.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "BLIGHT_STRIKE.title",
+      "description_key": "BLIGHT_STRIKE.description"
+    },
+    "vars": {
+      "Damage": 8
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/blight_strike.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tags": [
+      "Strike"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 2
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "DoomPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Doom",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "attackCommand.Results.Sum((DamageResult r) => r.TotalDamage)"
+      }
+    ]
   },
-  "vars": {
-    "Damage": 8
-  },
-  "keywords": [],
-  "tags": [
-    "Strike"
-  ],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Blight Strike",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 8 damage.\nApply Doom equal to damage dealt.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "8",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nApply "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " equal to damage dealt."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Blight Strike+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 10 damage.\nApply Doom equal to damage dealt.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nApply "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " equal to damage dealt."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Doom",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "attackCommand.Results.Sum((DamageResult r) => r.TotalDamage)"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "DoomPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

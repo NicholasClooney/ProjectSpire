@@ -1,46 +1,118 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FRIENDSHIP",
-  "class_name": "Friendship",
-  "name": "Friendship",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Friendship.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "FRIENDSHIP.title",
-    "description_key": "FRIENDSHIP.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Energy": 1,
-    "StrengthPower": 2,
-    "Strength": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "StrengthPower",
-      "delta": -1
-    }
-  ],
-  "applies_powers": [
-    {
-      "power": "Strength",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "-base.DynamicVars[\"StrengthPower\"].BaseValue"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Friendship",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Friendship.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "FRIENDSHIP.title",
+      "description_key": "FRIENDSHIP.description"
     },
-    {
-      "power": "Friendship",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Energy.BaseValue"
+    "vars": {
+      "Energy": 1,
+      "StrengthPower": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/friendship.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "StrengthPower",
+        "delta": -1
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Strength",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "-base.DynamicVars[\"StrengthPower\"].BaseValue"
+      },
+      {
+        "power": "Friendship",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Energy.BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Friendship",
+      "cost": 1,
+      "description": {
+        "plain": "Lose 2 Strength.\nGain 1 at the start of each turn.",
+        "runs": [
+          {
+            "text": "Lose "
+          },
+          {
+            "text": "2",
+            "source_var": "StrengthPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": ".\nGain "
+          },
+          {
+            "text": "1",
+            "source_var": "Energy"
+          },
+          {
+            "text": " at the start of each turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Friendship+",
+      "cost": 1,
+      "description": {
+        "plain": "Lose 1 Strength.\nGain 1 at the start of each turn.",
+        "runs": [
+          {
+            "text": "Lose "
+          },
+          {
+            "text": "1",
+            "source_var": "StrengthPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": ".\nGain "
+          },
+          {
+            "text": "1",
+            "source_var": "Energy"
+          },
+          {
+            "text": " at the start of each turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,48 +1,105 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SNAKEBITE",
-  "class_name": "Snakebite",
-  "name": "Snakebite",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Snakebite.cs",
-  "cost": 2,
-  "type": "Skill",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "SNAKEBITE.title",
-    "description_key": "SNAKEBITE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Snakebite",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Snakebite.cs",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "SNAKEBITE.title",
+      "description_key": "SNAKEBITE.description"
+    },
+    "vars": {
+      "PoisonPower": 7
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/snakebite.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Retain"
+    ],
+    "upgrades": [
+      {
+        "var": "Poison",
+        "delta": 3
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "PoisonPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Poison",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars.Poison.BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "PoisonPower": 7,
-    "Poison": 7
-  },
-  "keywords": [
-    "Retain"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Poison",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Snakebite",
+      "cost": 2,
+      "description": {
+        "plain": "Apply 7 Poison.",
+        "runs": [
+          {
+            "text": "Apply "
+          },
+          {
+            "text": "7",
+            "source_var": "PoisonPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Poison",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Snakebite+",
+      "cost": 2,
+      "description": {
+        "plain": "Apply 7 Poison.",
+        "runs": [
+          {
+            "text": "Apply "
+          },
+          {
+            "text": "7",
+            "source_var": "PoisonPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Poison",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Poison",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars.Poison.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "PoisonPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

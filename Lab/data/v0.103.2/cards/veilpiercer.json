@@ -1,41 +1,107 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "VEILPIERCER",
-  "class_name": "Veilpiercer",
-  "name": "Veilpiercer",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Veilpiercer.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "VEILPIERCER.title",
-    "description_key": "VEILPIERCER.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Veilpiercer",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Veilpiercer.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "VEILPIERCER.title",
+      "description_key": "VEILPIERCER.description"
+    },
+    "vars": {
+      "Damage": 10
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/veilpiercer.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/veilpiercer.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Ethereal"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 3
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Veilpiercer",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      }
+    ]
   },
-  "vars": {
-    "Damage": 10
-  },
-  "keywords": [
-    "Ethereal"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Veilpiercer",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 10 damage.\nThe next Ethereal card you play costs 0 .",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nThe next "
+          },
+          {
+            "text": "Ethereal",
+            "style": "gold"
+          },
+          {
+            "text": " card you play costs 0 ."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Veilpiercer+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 13 damage.\nThe next Ethereal card you play costs 0 .",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "13",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nThe next "
+          },
+          {
+            "text": "Ethereal",
+            "style": "gold"
+          },
+          {
+            "text": " card you play costs 0 ."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Veilpiercer",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

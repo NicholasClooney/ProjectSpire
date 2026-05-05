@@ -1,39 +1,99 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "REBOUND",
-  "class_name": "Rebound",
-  "name": "Rebound",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Rebound.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Event",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "REBOUND.title",
-    "description_key": "REBOUND.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Rebound",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Rebound.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Event",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "REBOUND.title",
+      "description_key": "REBOUND.description"
+    },
+    "vars": {
+      "Damage": 9
+    },
+    "assets": [
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/event/beta/rebound.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 3
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Rebound",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      }
+    ]
   },
-  "vars": {
-    "Damage": 9
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Rebound",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 9 damage.\nPut the next card you play this turn on top of your Draw Pile.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "9",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nPut the next card you play this turn on top of your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Rebound+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 12 damage.\nPut the next card you play this turn on top of your Draw Pile.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "12",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nPut the next card you play this turn on top of your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Rebound",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,32 +1,94 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "UNMOVABLE",
-  "class_name": "Unmovable",
-  "name": "Unmovable",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Unmovable.cs",
-  "cost": 2,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "UNMOVABLE.title",
-    "description_key": "UNMOVABLE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Unmovable",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Unmovable.cs",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "UNMOVABLE.title",
+      "description_key": "UNMOVABLE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/unmovable.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/beta/unmovable.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Unmovable",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Unmovable",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
+  "resolved": {
+    "base": {
+      "title": "Unmovable",
+      "cost": 2,
+      "description": {
+        "plain": "The first time you gain Block from a card each turn, double the amount gained.",
+        "runs": [
+          {
+            "text": "The first time you gain "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " from a card each turn, double the amount gained."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Unmovable+",
+      "cost": 1,
+      "description": {
+        "plain": "The first time you gain Block from a card each turn, double the amount gained.",
+        "runs": [
+          {
+            "text": "The first time you gain "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " from a card each turn, double the amount gained."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

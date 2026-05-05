@@ -1,28 +1,78 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "INFERNAL_BLADE",
-  "class_name": "InfernalBlade",
-  "name": "InfernalBlade",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/InfernalBlade.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "INFERNAL_BLADE.title",
-    "description_key": "INFERNAL_BLADE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "InfernalBlade",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/InfernalBlade.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "INFERNAL_BLADE.title",
+      "description_key": "INFERNAL_BLADE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/infernal_blade.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Infernal Blade",
+      "cost": 1,
+      "description": {
+        "plain": "Add a random Attack into your Hand. It's free to play this turn.",
+        "runs": [
+          {
+            "text": "Add a random Attack into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ". It's free to play this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Infernal Blade+",
+      "cost": 0,
+      "description": {
+        "plain": "Add a random Attack into your Hand. It's free to play this turn.",
+        "runs": [
+          {
+            "text": "Add a random Attack into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ". It's free to play this turn."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
+    }
+  }
 }

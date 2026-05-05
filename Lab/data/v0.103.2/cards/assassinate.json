@@ -1,54 +1,129 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ASSASSINATE",
-  "class_name": "Assassinate",
-  "name": "Assassinate",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Assassinate.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "ASSASSINATE.title",
-    "description_key": "ASSASSINATE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 10,
-    "VulnerablePower": 1,
-    "Vulnerable": 1
-  },
-  "keywords": [
-    "Exhaust",
-    "Innate"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 3
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Assassinate",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Assassinate.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "ASSASSINATE.title",
+      "description_key": "ASSASSINATE.description"
     },
-    {
-      "var": "Vulnerable",
-      "delta": 1
+    "vars": {
+      "Damage": 10,
+      "VulnerablePower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/assassinate.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust",
+      "Innate"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 3
+      },
+      {
+        "var": "Vulnerable",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "VulnerablePower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Vulnerable",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Assassinate",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 10 damage.\nApply 1 Vulnerable.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nApply "
+          },
+          {
+            "text": "1",
+            "source_var": "VulnerablePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Assassinate+",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 13 damage.\nApply 1 Vulnerable.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "13",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nApply "
+          },
+          {
+            "text": "1",
+            "source_var": "VulnerablePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Vulnerable",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "VulnerablePower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

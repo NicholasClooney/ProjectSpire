@@ -1,53 +1,128 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FEAR",
-  "class_name": "Fear",
-  "name": "Fear",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Fear.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "FEAR.title",
-    "description_key": "FEAR.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 7,
-    "VulnerablePower": 1,
-    "Vulnerable": 1
-  },
-  "keywords": [
-    "Ethereal"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 1
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Fear",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Fear.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "FEAR.title",
+      "description_key": "FEAR.description"
     },
-    {
-      "var": "Vulnerable",
-      "delta": 1
+    "vars": {
+      "Damage": 7,
+      "VulnerablePower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/fear.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Ethereal"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 1
+      },
+      {
+        "var": "Vulnerable",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "VulnerablePower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Vulnerable",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Fear",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 7 damage.\nApply 1 Vulnerable.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "7",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nApply "
+          },
+          {
+            "text": "1",
+            "source_var": "VulnerablePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Fear+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 8 damage.\nApply 1 Vulnerable.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "8",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nApply "
+          },
+          {
+            "text": "1",
+            "source_var": "VulnerablePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Vulnerable",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "VulnerablePower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

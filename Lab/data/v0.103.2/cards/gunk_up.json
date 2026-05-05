@@ -1,44 +1,125 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "GUNK_UP",
-  "class_name": "GunkUp",
-  "name": "GunkUp",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GunkUp.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "GUNK_UP.title",
-    "description_key": "GUNK_UP.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 4
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 1
-    }
-  ],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "hover_tip_card",
-      "target": "SLIMED",
-      "source": "HoverTipFactory.FromCard"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "GunkUp",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GunkUp.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "GUNK_UP.title",
+      "description_key": "GUNK_UP.description"
     },
-    {
-      "kind": "creates_card",
-      "target": "SLIMED",
-      "source": "CreateCard"
+    "vars": {
+      "Damage": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/gunk_up.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/gunk_up.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "SLIMED",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "creates_card",
+        "target": "SLIMED",
+        "source": "CreateCard"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Gunk Up",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 4 damage {Repeat:diff()} {Repeat:plural:time|times}.\nAdd a Slimed into your Discard Pile.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "4",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage {Repeat:diff()} {Repeat:plural:time|times}.\nAdd a "
+          },
+          {
+            "text": "Slimed",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Gunk Up+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 5 damage {Repeat:diff()} {Repeat:plural:time|times}.\nAdd a Slimed into your Discard Pile.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "5",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage {Repeat:diff()} {Repeat:plural:time|times}.\nAdd a "
+          },
+          {
+            "text": "Slimed",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,44 +1,125 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CRASH_LANDING",
-  "class_name": "CrashLanding",
-  "name": "CrashLanding",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CrashLanding.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "CRASH_LANDING.title",
-    "description_key": "CRASH_LANDING.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 21
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 5
-    }
-  ],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "hover_tip_card",
-      "target": "DEBRIS",
-      "source": "HoverTipFactory.FromCard"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "CrashLanding",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CrashLanding.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "CRASH_LANDING.title",
+      "description_key": "CRASH_LANDING.description"
     },
-    {
-      "kind": "creates_card",
-      "target": "DEBRIS",
-      "source": "CreateCard"
+    "vars": {
+      "Damage": 21
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/crash_landing.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/crash_landing.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 5
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "DEBRIS",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "creates_card",
+        "target": "DEBRIS",
+        "source": "CreateCard"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Crash Landing",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 21 damage to ALL enemies.\nFill your Hand with Debris.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "21",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage to ALL enemies.\nFill your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " with "
+          },
+          {
+            "text": "Debris",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Crash Landing+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 26 damage to ALL enemies.\nFill your Hand with Debris.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "26",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage to ALL enemies.\nFill your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " with "
+          },
+          {
+            "text": "Debris",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

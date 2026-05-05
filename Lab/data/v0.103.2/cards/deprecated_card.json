@@ -1,28 +1,69 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DEPRECATED_CARD",
-  "class_name": "DeprecatedCard",
-  "name": "DeprecatedCard",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DeprecatedCard.cs",
-  "cost": 0,
-  "type": "Status",
-  "rarity": "Status",
-  "target": "None",
-  "localization": {
-    "title_key": "DEPRECATED_CARD.title",
-    "description_key": "DEPRECATED_CARD.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "DeprecatedCard",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DeprecatedCard.cs",
+    "cost": 0,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "localization": {
+      "table": "cards",
+      "title_key": "DEPRECATED_CARD.title",
+      "description_key": "DEPRECATED_CARD.description"
+    },
+    "keywords": [
+      "Exhaust"
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Deprecated Card",
+      "cost": 0,
+      "description": {
+        "plain": "This card was removed in a recent update.\nDraw 1 card.\nRemove this from your Deck.",
+        "runs": [
+          {
+            "text": "This card was removed in a recent update.",
+            "style": "blue"
+          },
+          {
+            "text": "\nDraw 1 card.\nRemove this from your "
+          },
+          {
+            "text": "Deck",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Deprecated Card+",
+      "cost": 0,
+      "description": {
+        "plain": "This card was removed in a recent update.\nDraw 1 card.\nRemove this from your Deck.",
+        "runs": [
+          {
+            "text": "This card was removed in a recent update.",
+            "style": "blue"
+          },
+          {
+            "text": "\nDraw 1 card.\nRemove this from your "
+          },
+          {
+            "text": "Deck",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    }
+  }
 }

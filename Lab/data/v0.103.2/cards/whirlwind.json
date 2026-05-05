@@ -1,33 +1,78 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "WHIRLWIND",
-  "class_name": "Whirlwind",
-  "name": "Whirlwind",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Whirlwind.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "WHIRLWIND.title",
-    "description_key": "WHIRLWIND.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Whirlwind",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Whirlwind.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "WHIRLWIND.title",
+      "description_key": "WHIRLWIND.description"
+    },
+    "vars": {
+      "Damage": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/whirlwind.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {
-    "Damage": 5
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Whirlwind",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 5 damage to ALL enemies X times.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "5",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage to ALL enemies X times."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Whirlwind+",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 8 damage to ALL enemies X times.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "8",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage to ALL enemies X times."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

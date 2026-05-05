@@ -1,35 +1,82 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "RICOCHET",
-  "class_name": "Ricochet",
-  "name": "Ricochet",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Ricochet.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "RandomEnemy",
-  "localization": {
-    "title_key": "RICOCHET.title",
-    "description_key": "RICOCHET.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Ricochet",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Ricochet.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "RandomEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "RICOCHET.title",
+      "description_key": "RICOCHET.description"
+    },
+    "vars": {
+      "Damage": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/ricochet.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/beta/ricochet.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Sly"
+    ],
+    "upgrades": [
+      {
+        "var": "Repeat",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Damage": 3
-  },
-  "keywords": [
-    "Sly"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Repeat",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Ricochet",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 3 damage to a random enemy {Repeat:diff()} times.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "3",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage to a random enemy {Repeat:diff()} times."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Ricochet+",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 3 damage to a random enemy {Repeat:diff()} times.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "3",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage to a random enemy {Repeat:diff()} times."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

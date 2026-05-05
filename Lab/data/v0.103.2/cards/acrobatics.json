@@ -1,33 +1,78 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ACROBATICS",
-  "class_name": "Acrobatics",
-  "name": "Acrobatics",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Acrobatics.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "ACROBATICS.title",
-    "description_key": "ACROBATICS.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Acrobatics",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Acrobatics.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "ACROBATICS.title",
+      "description_key": "ACROBATICS.description"
+    },
+    "vars": {
+      "Cards": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/acrobatics.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Cards": 3
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Acrobatics",
+      "cost": 1,
+      "description": {
+        "plain": "Draw 3 cards.\nDiscard 1 card.",
+        "runs": [
+          {
+            "text": "Draw "
+          },
+          {
+            "text": "3",
+            "source_var": "Cards"
+          },
+          {
+            "text": " cards.\nDiscard 1 card."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Acrobatics+",
+      "cost": 1,
+      "description": {
+        "plain": "Draw 4 cards.\nDiscard 1 card.",
+        "runs": [
+          {
+            "text": "Draw "
+          },
+          {
+            "text": "4",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " cards.\nDiscard 1 card."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

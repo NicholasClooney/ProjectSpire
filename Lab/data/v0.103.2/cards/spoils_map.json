@@ -1,28 +1,73 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SPOILS_MAP",
-  "class_name": "SpoilsMap",
-  "name": "SpoilsMap",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SpoilsMap.cs",
-  "cost": -1,
-  "type": "Quest",
-  "rarity": "Quest",
-  "target": "Self",
-  "localization": {
-    "title_key": "SPOILS_MAP.title",
-    "description_key": "SPOILS_MAP.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "SpoilsMap",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SpoilsMap.cs",
+    "cost": -1,
+    "type": "Quest",
+    "rarity": "Quest",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SPOILS_MAP.title",
+      "description_key": "SPOILS_MAP.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/quest/spoils_map.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/quest/beta/spoils_map.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Unplayable"
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Unplayable"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Spoils Map",
+      "cost": -1,
+      "description": {
+        "plain": "Marks a site of {Gold:diff()} extra Gold in the next Act.",
+        "runs": [
+          {
+            "text": "Marks a site of {Gold:diff()} extra "
+          },
+          {
+            "text": "Gold",
+            "style": "gold"
+          },
+          {
+            "text": " in the next Act."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Spoils Map+",
+      "cost": -1,
+      "description": {
+        "plain": "Marks a site of {Gold:diff()} extra Gold in the next Act.",
+        "runs": [
+          {
+            "text": "Marks a site of {Gold:diff()} extra "
+          },
+          {
+            "text": "Gold",
+            "style": "gold"
+          },
+          {
+            "text": " in the next Act."
+          }
+        ]
+      }
+    }
+  }
 }

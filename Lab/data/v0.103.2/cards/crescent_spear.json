@@ -1,31 +1,57 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CRESCENT_SPEAR",
-  "class_name": "CrescentSpear",
-  "name": "CrescentSpear",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CrescentSpear.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "CRESCENT_SPEAR.title",
-    "description_key": "CRESCENT_SPEAR.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "CrescentSpear",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CrescentSpear.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "CRESCENT_SPEAR.title",
+      "description_key": "CRESCENT_SPEAR.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/crescent_spear.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "ExtraDamage",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "ExtraDamage",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Crescent Spear",
+      "cost": 1,
+      "description": {
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your cards that have a * cost.",
+        "runs": [
+          {
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your cards that have a * cost."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Crescent Spear+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your cards that have a * cost.",
+        "runs": [
+          {
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your cards that have a * cost."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

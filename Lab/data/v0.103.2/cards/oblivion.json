@@ -1,46 +1,102 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "OBLIVION",
-  "class_name": "Oblivion",
-  "name": "Oblivion",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Oblivion.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "OBLIVION.title",
-    "description_key": "OBLIVION.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Oblivion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Oblivion.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "OBLIVION.title",
+      "description_key": "OBLIVION.description"
+    },
+    "vars": {
+      "DoomPower": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/oblivion.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Doom",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "DoomPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Oblivion",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars.Doom.BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "DoomPower": 3,
-    "Doom": 3
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Doom",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Oblivion",
+      "cost": 0,
+      "description": {
+        "plain": "Whenever you play a card this turn, apply 3 Doom to the enemy.",
+        "runs": [
+          {
+            "text": "Whenever you play a card this turn, apply "
+          },
+          {
+            "text": "3",
+            "source_var": "DoomPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " to the enemy."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Oblivion+",
+      "cost": 0,
+      "description": {
+        "plain": "Whenever you play a card this turn, apply 3 Doom to the enemy.",
+        "runs": [
+          {
+            "text": "Whenever you play a card this turn, apply "
+          },
+          {
+            "text": "3",
+            "source_var": "DoomPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " to the enemy."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Oblivion",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars.Doom.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "DoomPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

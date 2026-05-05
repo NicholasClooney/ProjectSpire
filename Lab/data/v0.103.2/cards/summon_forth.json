@@ -1,33 +1,101 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SUMMON_FORTH",
-  "class_name": "SummonForth",
-  "name": "SummonForth",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SummonForth.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "SUMMON_FORTH.title",
-    "description_key": "SUMMON_FORTH.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "SummonForth",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SummonForth.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SUMMON_FORTH.title",
+      "description_key": "SUMMON_FORTH.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/summon_forth.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/summon_forth.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Retain"
+    ],
+    "upgrades": [
+      {
+        "var": "Forge",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Retain"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Forge",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Summon Forth",
+      "cost": 1,
+      "description": {
+        "plain": "Forge {Forge:diff()}.\nPut Sovereign Blade into your Hand from anywhere.",
+        "runs": [
+          {
+            "text": "Forge",
+            "style": "gold"
+          },
+          {
+            "text": " {Forge:diff()}.\nPut "
+          },
+          {
+            "text": "Sovereign Blade",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " from anywhere."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Summon Forth+",
+      "cost": 1,
+      "description": {
+        "plain": "Forge {Forge:diff()}.\nPut Sovereign Blade into your Hand from anywhere.",
+        "runs": [
+          {
+            "text": "Forge",
+            "style": "gold"
+          },
+          {
+            "text": " {Forge:diff()}.\nPut "
+          },
+          {
+            "text": "Sovereign Blade",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " from anywhere."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

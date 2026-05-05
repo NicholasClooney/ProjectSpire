@@ -1,45 +1,110 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "STRANGLE",
-  "class_name": "Strangle",
-  "name": "Strangle",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Strangle.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "STRANGLE.title",
-    "description_key": "STRANGLE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 8,
-    "StranglePower": 2,
-    "Strangle": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 2
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Strangle",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Strangle.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "STRANGLE.title",
+      "description_key": "STRANGLE.description"
     },
-    {
-      "var": "StranglePower",
-      "delta": 1
+    "vars": {
+      "Damage": 8,
+      "StranglePower": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/strangle.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/beta/strangle.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 2
+      },
+      {
+        "var": "StranglePower",
+        "delta": 1
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Strangle",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars[\"StranglePower\"].BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Strangle",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 8 damage.\nWhenever you play a card this turn, the enemy loses 2 HP.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "8",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nWhenever you play a card this turn, the enemy loses "
+          },
+          {
+            "text": "2",
+            "source_var": "StranglePower"
+          },
+          {
+            "text": " HP."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Strangle+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 10 damage.\nWhenever you play a card this turn, the enemy loses 3 HP.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nWhenever you play a card this turn, the enemy loses "
+          },
+          {
+            "text": "3",
+            "source_var": "StranglePower",
+            "style": "green"
+          },
+          {
+            "text": " HP."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Strangle",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars[\"StranglePower\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

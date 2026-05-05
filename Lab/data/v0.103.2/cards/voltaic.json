@@ -1,34 +1,102 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "VOLTAIC",
-  "class_name": "Voltaic",
-  "name": "Voltaic",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Voltaic.cs",
-  "cost": 3,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "VOLTAIC.title",
-    "description_key": "VOLTAIC.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Voltaic",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Voltaic.cs",
+    "cost": 3,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "VOLTAIC.title",
+      "description_key": "VOLTAIC.description"
+    },
+    "assets": [
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/voltaic.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Channeling",
+        "source": "HoverTipFactory.Static"
+      },
+      {
+        "kind": "hover_tip_orb",
+        "target": "LightningOrb",
+        "source": "HoverTipFactory.FromOrb"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "hover_tip_orb",
-      "target": "LightningOrb",
-      "source": "HoverTipFactory.FromOrb"
+  "resolved": {
+    "base": {
+      "title": "Voltaic",
+      "cost": 3,
+      "description": {
+        "plain": "Channel Lightning equal to the Lightning already Channeled this combat.",
+        "runs": [
+          {
+            "text": "Channel Lightning",
+            "style": "gold"
+          },
+          {
+            "text": " equal to the "
+          },
+          {
+            "text": "Lightning",
+            "style": "gold"
+          },
+          {
+            "text": " already "
+          },
+          {
+            "text": "Channeled",
+            "style": "gold"
+          },
+          {
+            "text": " this combat."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Voltaic+",
+      "cost": 3,
+      "description": {
+        "plain": "Channel Lightning equal to the Lightning already Channeled this combat.",
+        "runs": [
+          {
+            "text": "Channel Lightning",
+            "style": "gold"
+          },
+          {
+            "text": " equal to the "
+          },
+          {
+            "text": "Lightning",
+            "style": "gold"
+          },
+          {
+            "text": " already "
+          },
+          {
+            "text": "Channeled",
+            "style": "gold"
+          },
+          {
+            "text": " this combat."
+          }
+        ]
+      }
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

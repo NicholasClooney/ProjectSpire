@@ -1,32 +1,83 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BARRICADE",
-  "class_name": "Barricade",
-  "name": "Barricade",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Barricade.cs",
-  "cost": 3,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "BARRICADE.title",
-    "description_key": "BARRICADE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Barricade",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Barricade.cs",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "BARRICADE.title",
+      "description_key": "BARRICADE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/barricade.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Barricade",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Barricade",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
+  "resolved": {
+    "base": {
+      "title": "Barricade",
+      "cost": 3,
+      "description": {
+        "plain": "Block is not removed at the start of your turn.",
+        "runs": [
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " is not removed at the start of your turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Barricade+",
+      "cost": 2,
+      "description": {
+        "plain": "Block is not removed at the start of your turn.",
+        "runs": [
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " is not removed at the start of your turn."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

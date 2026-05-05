@@ -1,52 +1,147 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "EXPOSE",
-  "class_name": "Expose",
-  "name": "Expose",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Expose.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "EXPOSE.title",
-    "description_key": "EXPOSE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Power": 2
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Power",
-      "delta": 1
-    }
-  ],
-  "applies_powers": [
-    {
-      "power": "Vulnerable",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "amount"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "VulnerablePower",
-      "source": "HoverTipFactory.FromPower"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Expose",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Expose.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "EXPOSE.title",
+      "description_key": "EXPOSE.description"
     },
-    {
-      "kind": "hover_tip_power",
-      "target": "ArtifactPower",
-      "source": "HoverTipFactory.FromPower"
+    "vars": {
+      "Power": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/expose.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Power",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "VulnerablePower",
+        "source": "HoverTipFactory.FromPower"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "ArtifactPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Vulnerable",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "amount"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Expose",
+      "cost": 0,
+      "description": {
+        "plain": "Remove all Artifact and Block from the enemy.\nApply 2 Vulnerable.",
+        "runs": [
+          {
+            "text": "Remove all "
+          },
+          {
+            "text": "Artifact",
+            "style": "gold"
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " from the enemy.\nApply "
+          },
+          {
+            "text": "2",
+            "source_var": "Power"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Expose+",
+      "cost": 0,
+      "description": {
+        "plain": "Remove all Artifact and Block from the enemy.\nApply 3 Vulnerable.",
+        "runs": [
+          {
+            "text": "Remove all "
+          },
+          {
+            "text": "Artifact",
+            "style": "gold"
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " from the enemy.\nApply "
+          },
+          {
+            "text": "3",
+            "source_var": "Power",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

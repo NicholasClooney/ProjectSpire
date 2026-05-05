@@ -1,39 +1,85 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "PANACHE",
-  "class_name": "Panache",
-  "name": "Panache",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Panache.cs",
-  "cost": 0,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "PANACHE.title",
-    "description_key": "PANACHE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Panache",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Panache.cs",
+    "cost": 0,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "PANACHE.title",
+      "description_key": "PANACHE.description"
+    },
+    "vars": {
+      "PanacheDamage": 10
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/panache.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "PanacheDamage",
+        "delta": 4
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Panache",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"PanacheDamage\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "PanacheDamage": 10
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "PanacheDamage",
-      "delta": 4
+  "resolved": {
+    "base": {
+      "title": "Panache",
+      "cost": 0,
+      "description": {
+        "plain": "Every time you play 5 cards in a single turn, deal 10 damage to ALL enemies.",
+        "runs": [
+          {
+            "text": "Every time you play 5 cards in a single turn, deal "
+          },
+          {
+            "text": "10",
+            "source_var": "PanacheDamage"
+          },
+          {
+            "text": " damage to ALL enemies."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Panache+",
+      "cost": 0,
+      "description": {
+        "plain": "Every time you play 5 cards in a single turn, deal 14 damage to ALL enemies.",
+        "runs": [
+          {
+            "text": "Every time you play 5 cards in a single turn, deal "
+          },
+          {
+            "text": "14",
+            "source_var": "PanacheDamage",
+            "style": "green"
+          },
+          {
+            "text": " damage to ALL enemies."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Panache",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"PanacheDamage\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

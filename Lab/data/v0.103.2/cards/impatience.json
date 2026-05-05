@@ -1,33 +1,92 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "IMPATIENCE",
-  "class_name": "Impatience",
-  "name": "Impatience",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Impatience.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "IMPATIENCE.title",
-    "description_key": "IMPATIENCE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Impatience",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Impatience.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "IMPATIENCE.title",
+      "description_key": "IMPATIENCE.description"
+    },
+    "vars": {
+      "Cards": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/impatience.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Cards": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Impatience",
+      "cost": 0,
+      "description": {
+        "plain": "If you have no Attacks in your Hand, draw 2 cards.",
+        "runs": [
+          {
+            "text": "If you have no Attacks in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ", draw "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards"
+          },
+          {
+            "text": " cards."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Impatience+",
+      "cost": 0,
+      "description": {
+        "plain": "If you have no Attacks in your Hand, draw 3 cards.",
+        "runs": [
+          {
+            "text": "If you have no Attacks in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ", draw "
+          },
+          {
+            "text": "3",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " cards."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

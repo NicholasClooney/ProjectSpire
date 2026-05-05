@@ -1,28 +1,87 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "MIMIC",
-  "class_name": "Mimic",
-  "name": "Mimic",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Mimic.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "AnyAlly",
-  "localization": {
-    "title_key": "MIMIC.title",
-    "description_key": "MIMIC.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Mimic",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Mimic.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "AnyAlly",
+    "localization": {
+      "table": "cards",
+      "title_key": "MIMIC.title",
+      "description_key": "MIMIC.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/mimic.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/mimic.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Mimic",
+      "cost": 1,
+      "description": {
+        "plain": "Gain Block equal to the Block on another player.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " equal to the "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " on another player."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Mimic+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain Block equal to the Block on another player.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " equal to the "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " on another player."
+          }
+        ]
+      }
+    }
+  }
 }

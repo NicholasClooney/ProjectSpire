@@ -1,35 +1,80 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SUPERCRITICAL",
-  "class_name": "Supercritical",
-  "name": "Supercritical",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Supercritical.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "SUPERCRITICAL.title",
-    "description_key": "SUPERCRITICAL.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Supercritical",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Supercritical.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SUPERCRITICAL.title",
+      "description_key": "SUPERCRITICAL.description"
+    },
+    "vars": {
+      "Energy": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/supercritical.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Energy",
+        "delta": 2
+      }
+    ]
   },
-  "vars": {
-    "Energy": 4
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Energy",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Supercritical",
+      "cost": 0,
+      "description": {
+        "plain": "Gain 4.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "4",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Supercritical+",
+      "cost": 0,
+      "description": {
+        "plain": "Gain 6.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "6",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,33 +1,83 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "LUNAR_BLAST",
-  "class_name": "LunarBlast",
-  "name": "LunarBlast",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/LunarBlast.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "LUNAR_BLAST.title",
-    "description_key": "LUNAR_BLAST.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "LunarBlast",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/LunarBlast.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "LUNAR_BLAST.title",
+      "description_key": "LUNAR_BLAST.description"
+    },
+    "vars": {
+      "Damage": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/lunar_blast.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/lunar_blast.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Damage": 4
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Lunar Blast",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 4 damage for each Skill already played this turn.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "4",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage for each Skill already played this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Lunar Blast+",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 5 damage for each Skill already played this turn.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "5",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage for each Skill already played this turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

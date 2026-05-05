@@ -1,41 +1,114 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "THE_HUNT",
-  "class_name": "TheHunt",
-  "name": "TheHunt",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TheHunt.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "THE_HUNT.title",
-    "description_key": "THE_HUNT.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "TheHunt",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TheHunt.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "THE_HUNT.title",
+      "description_key": "THE_HUNT.description"
+    },
+    "vars": {
+      "Damage": 10
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/the_hunt.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/beta/the_hunt.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 5
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Fatal",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "TheHunt",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      }
+    ]
   },
-  "vars": {
-    "Damage": 10
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 5
+  "resolved": {
+    "base": {
+      "title": "The Hunt",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 10 damage.\nIf Fatal, gain an additional card reward.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nIf "
+          },
+          {
+            "text": "Fatal",
+            "style": "gold"
+          },
+          {
+            "text": ", gain an additional card reward."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "The Hunt+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 15 damage.\nIf Fatal, gain an additional card reward.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "15",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nIf "
+          },
+          {
+            "text": "Fatal",
+            "style": "gold"
+          },
+          {
+            "text": ", gain an additional card reward."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "TheHunt",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

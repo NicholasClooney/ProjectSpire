@@ -1,40 +1,105 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "PALE_BLUE_DOT",
-  "class_name": "PaleBlueDot",
-  "name": "PaleBlueDot",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PaleBlueDot.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "PALE_BLUE_DOT.title",
-    "description_key": "PALE_BLUE_DOT.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "PaleBlueDot",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PaleBlueDot.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "PALE_BLUE_DOT.title",
+      "description_key": "PALE_BLUE_DOT.description"
+    },
+    "vars": {
+      "Cards": 1,
+      "CardPlay": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/pale_blue_dot.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/pale_blue_dot.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 1
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "PaleBlueDot",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Cards.BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Cards": 1,
-    "CardPlay": 5
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Pale Blue Dot",
+      "cost": 1,
+      "description": {
+        "plain": "If you play 5 or more cards in a turn, draw 1 card at the start of your next turn.",
+        "runs": [
+          {
+            "text": "If you play "
+          },
+          {
+            "text": "5",
+            "source_var": "CardPlay"
+          },
+          {
+            "text": " or more cards in a turn, draw "
+          },
+          {
+            "text": "1",
+            "source_var": "Cards"
+          },
+          {
+            "text": " card at the start of your next turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Pale Blue Dot+",
+      "cost": 1,
+      "description": {
+        "plain": "If you play 5 or more cards in a turn, draw 2 cards at the start of your next turn.",
+        "runs": [
+          {
+            "text": "If you play "
+          },
+          {
+            "text": "5",
+            "source_var": "CardPlay"
+          },
+          {
+            "text": " or more cards in a turn, draw "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " cards at the start of your next turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "PaleBlueDot",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Cards.BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

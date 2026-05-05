@@ -1,26 +1,66 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "MURDER",
-  "class_name": "Murder",
-  "name": "Murder",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Murder.cs",
-  "cost": 3,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "MURDER.title",
-    "description_key": "MURDER.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Murder",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Murder.cs",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "MURDER.title",
+      "description_key": "MURDER.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/murder.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/beta/murder.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Murder",
+      "cost": 3,
+      "description": {
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card drawn this combat.",
+        "runs": [
+          {
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card drawn this combat."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Murder+",
+      "cost": 2,
+      "description": {
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card drawn this combat.",
+        "runs": [
+          {
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card drawn this combat."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
+    }
+  }
 }

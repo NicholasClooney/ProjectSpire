@@ -1,33 +1,82 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "UNLEASH",
-  "class_name": "Unleash",
-  "name": "Unleash",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Unleash.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Basic",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "UNLEASH.title",
-    "description_key": "UNLEASH.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Unleash",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Unleash.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Basic",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "UNLEASH.title",
+      "description_key": "UNLEASH.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/unleash.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tags": [
+      "OstyAttack"
+    ],
+    "upgrades": [
+      {
+        "var": "CalculationBase",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [
-    "OstyAttack"
-  ],
-  "upgrades": [
-    {
-      "var": "CalculationBase",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Unleash",
+      "cost": 1,
+      "description": {
+        "plain": "Osty deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to Osty's current HP.",
+        "runs": [
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to "
+          },
+          {
+            "text": "Osty's",
+            "style": "gold"
+          },
+          {
+            "text": " current HP."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Unleash+",
+      "cost": 1,
+      "description": {
+        "plain": "Osty deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to Osty's current HP.",
+        "runs": [
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to "
+          },
+          {
+            "text": "Osty's",
+            "style": "gold"
+          },
+          {
+            "text": " current HP."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,46 +1,111 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "OUTBREAK",
-  "class_name": "Outbreak",
-  "name": "Outbreak",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Outbreak.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "OUTBREAK.title",
-    "description_key": "OUTBREAK.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Outbreak",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Outbreak.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "OUTBREAK.title",
+      "description_key": "OUTBREAK.description"
+    },
+    "vars": {
+      "OutbreakPower": 11
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/outbreak.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/beta/outbreak.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "OutbreakPower",
+        "delta": 4
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "PoisonPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Outbreak",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"OutbreakPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "OutbreakPower": 11,
-    "Outbreak": 11
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "OutbreakPower",
-      "delta": 4
+  "resolved": {
+    "base": {
+      "title": "Outbreak",
+      "cost": 1,
+      "description": {
+        "plain": "Every {Repeat:plural:time|{Repeat:diff()} times} you apply Poison, deal 11 damage to ALL enemies.",
+        "runs": [
+          {
+            "text": "Every {Repeat:plural:time|{Repeat:diff()} times} you apply "
+          },
+          {
+            "text": "Poison",
+            "style": "gold"
+          },
+          {
+            "text": ", deal "
+          },
+          {
+            "text": "11",
+            "source_var": "OutbreakPower"
+          },
+          {
+            "text": " damage to ALL enemies."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Outbreak+",
+      "cost": 1,
+      "description": {
+        "plain": "Every {Repeat:plural:time|{Repeat:diff()} times} you apply Poison, deal 15 damage to ALL enemies.",
+        "runs": [
+          {
+            "text": "Every {Repeat:plural:time|{Repeat:diff()} times} you apply "
+          },
+          {
+            "text": "Poison",
+            "style": "gold"
+          },
+          {
+            "text": ", deal "
+          },
+          {
+            "text": "15",
+            "source_var": "OutbreakPower",
+            "style": "green"
+          },
+          {
+            "text": " damage to ALL enemies."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Outbreak",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"OutbreakPower\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "PoisonPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

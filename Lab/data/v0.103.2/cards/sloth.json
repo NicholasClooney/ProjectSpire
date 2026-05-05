@@ -1,35 +1,80 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SLOTH",
-  "class_name": "Sloth",
-  "name": "Sloth",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Sloth.cs",
-  "cost": -1,
-  "type": "Status",
-  "rarity": "Status",
-  "target": "None",
-  "localization": {
-    "title_key": "SLOTH.title",
-    "description_key": "SLOTH.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Sloth",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Sloth.cs",
+    "cost": -1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "localization": {
+      "table": "cards",
+      "title_key": "SLOTH.title",
+      "description_key": "SLOTH.description"
+    },
+    "vars": {
+      "SlothPower": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/token/sloth.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/token/beta/sloth.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Sloth",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"SlothPower\"].IntValue"
+      }
+    ]
   },
-  "vars": {
-    "SlothPower": 3,
-    "Sloth": 3
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Sloth",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"SlothPower\"].IntValue"
+  "resolved": {
+    "base": {
+      "title": "Sloth",
+      "cost": -1,
+      "description": {
+        "plain": "You cannot play more than 3 cards each turn.",
+        "runs": [
+          {
+            "text": "You cannot play more than "
+          },
+          {
+            "text": "3",
+            "source_var": "SlothPower"
+          },
+          {
+            "text": " cards each turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Sloth+",
+      "cost": -1,
+      "description": {
+        "plain": "You cannot play more than 3 cards each turn.",
+        "runs": [
+          {
+            "text": "You cannot play more than "
+          },
+          {
+            "text": "3",
+            "source_var": "SlothPower"
+          },
+          {
+            "text": " cards each turn."
+          }
+        ]
+      }
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

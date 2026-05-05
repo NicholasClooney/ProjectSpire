@@ -1,35 +1,95 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CINDER",
-  "class_name": "Cinder",
-  "name": "Cinder",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Cinder.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "CINDER.title",
-    "description_key": "CINDER.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Cinder",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Cinder.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "CINDER.title",
+      "description_key": "CINDER.description"
+    },
+    "vars": {
+      "Damage": 18
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/cinder.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 6
+      }
+    ]
   },
-  "vars": {
-    "Damage": 18
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 6
+  "resolved": {
+    "base": {
+      "title": "Cinder",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 18 damage.\nExhaust 1 card at random.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "18",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\n"
+          },
+          {
+            "text": "Exhaust",
+            "style": "gold"
+          },
+          {
+            "text": " 1 card at random."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Cinder+",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 24 damage.\nExhaust 1 card at random.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "24",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\n"
+          },
+          {
+            "text": "Exhaust",
+            "style": "gold"
+          },
+          {
+            "text": " 1 card at random."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

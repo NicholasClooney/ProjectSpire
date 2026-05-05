@@ -1,51 +1,125 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "GO_FOR_THE_EYES",
-  "class_name": "GoForTheEyes",
-  "name": "GoForTheEyes",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GoForTheEyes.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "GO_FOR_THE_EYES.title",
-    "description_key": "GO_FOR_THE_EYES.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 3,
-    "WeakPower": 1,
-    "Weak": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 1
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "GoForTheEyes",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GoForTheEyes.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "GO_FOR_THE_EYES.title",
+      "description_key": "GO_FOR_THE_EYES.description"
     },
-    {
-      "var": "Weak",
-      "delta": 1
+    "vars": {
+      "Damage": 3,
+      "WeakPower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/go_for_the_eyes.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 1
+      },
+      {
+        "var": "Weak",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "WeakPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Weak",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars.Weak.BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Go for the Eyes",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 3 damage.\nIf the enemy intends to attack, apply 1 Weak.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "3",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nIf the enemy intends to attack, apply "
+          },
+          {
+            "text": "1",
+            "source_var": "WeakPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Go for the Eyes+",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 4 damage.\nIf the enemy intends to attack, apply 1 Weak.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "4",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nIf the enemy intends to attack, apply "
+          },
+          {
+            "text": "1",
+            "source_var": "WeakPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Weak",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars.Weak.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "WeakPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

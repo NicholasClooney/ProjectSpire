@@ -1,32 +1,106 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BIG_BANG",
-  "class_name": "BigBang",
-  "name": "BigBang",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BigBang.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "BIG_BANG.title",
-    "description_key": "BIG_BANG.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "BigBang",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BigBang.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "BIG_BANG.title",
+      "description_key": "BIG_BANG.description"
+    },
+    "vars": {
+      "Cards": 1,
+      "Energy": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/big_bang.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/big_bang.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust",
+      "Innate"
+    ]
   },
-  "vars": {
-    "Cards": 1,
-    "Energy": 1
-  },
-  "keywords": [
-    "Exhaust",
-    "Innate"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Big Bang",
+      "cost": 0,
+      "description": {
+        "plain": "Draw 1 card.\nGain 1.\nGain {Stars:starIcons()}.\nForge {Forge:diff()}.",
+        "runs": [
+          {
+            "text": "Draw "
+          },
+          {
+            "text": "1",
+            "source_var": "Cards"
+          },
+          {
+            "text": " card.\nGain "
+          },
+          {
+            "text": "1",
+            "source_var": "Energy"
+          },
+          {
+            "text": ".\nGain {Stars:starIcons()}.\n"
+          },
+          {
+            "text": "Forge",
+            "style": "gold"
+          },
+          {
+            "text": " {Forge:diff()}."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Big Bang+",
+      "cost": 0,
+      "description": {
+        "plain": "Draw 1 card.\nGain 1.\nGain {Stars:starIcons()}.\nForge {Forge:diff()}.",
+        "runs": [
+          {
+            "text": "Draw "
+          },
+          {
+            "text": "1",
+            "source_var": "Cards"
+          },
+          {
+            "text": " card.\nGain "
+          },
+          {
+            "text": "1",
+            "source_var": "Energy"
+          },
+          {
+            "text": ".\nGain {Stars:starIcons()}.\n"
+          },
+          {
+            "text": "Forge",
+            "style": "gold"
+          },
+          {
+            "text": " {Forge:diff()}."
+          }
+        ]
+      }
+    }
+  }
 }

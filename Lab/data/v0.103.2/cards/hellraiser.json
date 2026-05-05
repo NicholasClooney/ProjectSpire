@@ -1,32 +1,68 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "HELLRAISER",
-  "class_name": "Hellraiser",
-  "name": "Hellraiser",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Hellraiser.cs",
-  "cost": 2,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "HELLRAISER.title",
-    "description_key": "HELLRAISER.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Hellraiser",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Hellraiser.cs",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "HELLRAISER.title",
+      "description_key": "HELLRAISER.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/hellraiser.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Hellraiser",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Hellraiser",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
+  "resolved": {
+    "base": {
+      "title": "Hellraiser",
+      "cost": 2,
+      "description": {
+        "plain": "Whenever you draw a card containing \u201cStrike\u201d, it is played against a random enemy.",
+        "runs": [
+          {
+            "text": "Whenever you draw a card containing \u201cStrike\u201d, it is played against a random enemy."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Hellraiser+",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you draw a card containing \u201cStrike\u201d, it is played against a random enemy.",
+        "runs": [
+          {
+            "text": "Whenever you draw a card containing \u201cStrike\u201d, it is played against a random enemy."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

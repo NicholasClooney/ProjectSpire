@@ -1,33 +1,82 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ALIGNMENT",
-  "class_name": "Alignment",
-  "name": "Alignment",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Alignment.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "ALIGNMENT.title",
-    "description_key": "ALIGNMENT.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Alignment",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Alignment.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "ALIGNMENT.title",
+      "description_key": "ALIGNMENT.description"
+    },
+    "vars": {
+      "Energy": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/alignment.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/alignment.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Energy",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Energy": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Energy",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Alignment",
+      "cost": 0,
+      "description": {
+        "plain": "Gain 2.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "2",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Alignment+",
+      "cost": 0,
+      "description": {
+        "plain": "Gain 3.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "3",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

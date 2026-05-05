@@ -1,40 +1,155 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "TORIC_TOUGHNESS",
-  "class_name": "ToricToughness",
-  "name": "ToricToughness",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ToricToughness.cs",
-  "cost": 2,
-  "type": "Skill",
-  "rarity": "Event",
-  "target": "Self",
-  "localization": {
-    "title_key": "TORIC_TOUGHNESS.title",
-    "description_key": "TORIC_TOUGHNESS.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "ToricToughness",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ToricToughness.cs",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Event",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "TORIC_TOUGHNESS.title",
+      "description_key": "TORIC_TOUGHNESS.description"
+    },
+    "vars": {
+      "Block": 5,
+      "Turns": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/event/toric_toughness.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/event/beta/toric_toughness.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 2
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "ToricToughness",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"Turns\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Block": 5,
-    "Turns": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Toric Toughness",
+      "cost": 2,
+      "description": {
+        "plain": "Gain 5 Block.\nGain 5 Block at the start of the next 2 turns.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "5",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nGain "
+          },
+          {
+            "text": "5",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " at the start of the next "
+          },
+          {
+            "text": "2",
+            "source_var": "Turns"
+          },
+          {
+            "text": " turns."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Toric Toughness+",
+      "cost": 2,
+      "description": {
+        "plain": "Gain 7 Block.\nGain 7 Block at the start of the next 2 turns.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "7",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nGain "
+          },
+          {
+            "text": "7",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " at the start of the next "
+          },
+          {
+            "text": "2",
+            "source_var": "Turns"
+          },
+          {
+            "text": " turns."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "ToricToughness",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"Turns\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

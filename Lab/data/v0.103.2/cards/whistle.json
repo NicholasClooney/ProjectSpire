@@ -1,35 +1,100 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "WHISTLE",
-  "class_name": "Whistle",
-  "name": "Whistle",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Whistle.cs",
-  "cost": 3,
-  "type": "Attack",
-  "rarity": "Ancient",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "WHISTLE.title",
-    "description_key": "WHISTLE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Whistle",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Whistle.cs",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Ancient",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "WHISTLE.title",
+      "description_key": "WHISTLE.description"
+    },
+    "vars": {
+      "Damage": 33
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/event/whistle.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/event/beta/whistle.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 11
+      }
+    ]
   },
-  "vars": {
-    "Damage": 33
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 11
+  "resolved": {
+    "base": {
+      "title": "Whistle",
+      "cost": 3,
+      "description": {
+        "plain": "Deal 33 damage.\nStun the enemy.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "33",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\n"
+          },
+          {
+            "text": "Stun",
+            "style": "gold"
+          },
+          {
+            "text": " the enemy."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Whistle+",
+      "cost": 3,
+      "description": {
+        "plain": "Deal 44 damage.\nStun the enemy.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "44",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\n"
+          },
+          {
+            "text": "Stun",
+            "style": "gold"
+          },
+          {
+            "text": " the enemy."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

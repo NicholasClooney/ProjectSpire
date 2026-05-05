@@ -1,34 +1,103 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "AGGRESSION",
-  "class_name": "Aggression",
-  "name": "Aggression",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Aggression.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "AGGRESSION.title",
-    "description_key": "AGGRESSION.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Aggression",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Aggression.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "AGGRESSION.title",
+      "description_key": "AGGRESSION.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/aggression.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Innate"
+    ],
+    "applies_powers": [
+      {
+        "power": "Aggression",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Innate"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Aggression",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
+  "resolved": {
+    "base": {
+      "title": "Aggression",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, put a random Attack from your Discard Pile into your Hand and Upgrade it.",
+        "runs": [
+          {
+            "text": "At the start of your turn, put a random Attack from your "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "Upgrade",
+            "style": "gold"
+          },
+          {
+            "text": " it."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Aggression+",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, put a random Attack from your Discard Pile into your Hand and Upgrade it.",
+        "runs": [
+          {
+            "text": "At the start of your turn, put a random Attack from your "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "Upgrade",
+            "style": "gold"
+          },
+          {
+            "text": " it."
+          }
+        ]
+      }
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

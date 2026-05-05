@@ -1,33 +1,125 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "MANIFEST_AUTHORITY",
-  "class_name": "ManifestAuthority",
-  "name": "ManifestAuthority",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ManifestAuthority.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "MANIFEST_AUTHORITY.title",
-    "description_key": "MANIFEST_AUTHORITY.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "ManifestAuthority",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ManifestAuthority.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "MANIFEST_AUTHORITY.title",
+      "description_key": "MANIFEST_AUTHORITY.description"
+    },
+    "vars": {
+      "Block": 7
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/manifest_authority.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/manifest_authority.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ]
   },
-  "vars": {
-    "Block": 7
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Manifest Authority",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 7 Block.\nAdd 1 random Colorless card into your Hand.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "7",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nAdd 1 random Colorless card into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Manifest Authority+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 8 Block.\nAdd 1 random Upgraded Colorless card into your Hand.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "8",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nAdd 1 random "
+          },
+          {
+            "text": "Upgraded",
+            "style": "gold"
+          },
+          {
+            "text": " Colorless card into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

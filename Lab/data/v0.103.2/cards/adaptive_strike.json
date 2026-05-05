@@ -1,35 +1,100 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ADAPTIVE_STRIKE",
-  "class_name": "AdaptiveStrike",
-  "name": "AdaptiveStrike",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/AdaptiveStrike.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "ADAPTIVE_STRIKE.title",
-    "description_key": "ADAPTIVE_STRIKE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "AdaptiveStrike",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/AdaptiveStrike.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "ADAPTIVE_STRIKE.title",
+      "description_key": "ADAPTIVE_STRIKE.description"
+    },
+    "vars": {
+      "Damage": 18
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/adaptive_strike.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/adaptive_strike.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tags": [
+      "Strike"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 5
+      }
+    ]
   },
-  "vars": {
-    "Damage": 18
-  },
-  "keywords": [],
-  "tags": [
-    "Strike"
-  ],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 5
+  "resolved": {
+    "base": {
+      "title": "Adaptive Strike",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 18 damage.\nAdd a 0 copy of this card into your Discard Pile.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "18",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nAdd a 0 copy of this card into your "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Adaptive Strike+",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 23 damage.\nAdd a 0 copy of this card into your Discard Pile.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "23",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nAdd a 0 copy of this card into your "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,33 +1,106 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "PROTECTOR",
-  "class_name": "Protector",
-  "name": "Protector",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Protector.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Ancient",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "PROTECTOR.title",
-    "description_key": "PROTECTOR.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Protector",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Protector.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Ancient",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "PROTECTOR.title",
+      "description_key": "PROTECTOR.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/protector.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tags": [
+      "OstyAttack"
+    ],
+    "upgrades": [
+      {
+        "var": "CalculationBase",
+        "delta": 5
+      }
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [
-    "OstyAttack"
-  ],
-  "upgrades": [
-    {
-      "var": "CalculationBase",
-      "delta": 5
+  "resolved": {
+    "base": {
+      "title": "Protector",
+      "cost": 1,
+      "description": {
+        "plain": "Osty deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to Osty's Max HP.",
+        "runs": [
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to "
+          },
+          {
+            "text": "Osty's",
+            "style": "gold"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Max HP",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Protector+",
+      "cost": 0,
+      "description": {
+        "plain": "Osty deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to Osty's Max HP.",
+        "runs": [
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to "
+          },
+          {
+            "text": "Osty's",
+            "style": "gold"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Max HP",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

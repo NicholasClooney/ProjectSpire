@@ -1,34 +1,94 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "JUGGLING",
-  "class_name": "Juggling",
-  "name": "Juggling",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Juggling.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "JUGGLING.title",
-    "description_key": "JUGGLING.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Juggling",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Juggling.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "JUGGLING.title",
+      "description_key": "JUGGLING.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/juggling.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/beta/juggling.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Innate"
+    ],
+    "applies_powers": [
+      {
+        "power": "Juggling",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Innate"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Juggling",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
+  "resolved": {
+    "base": {
+      "title": "Juggling",
+      "cost": 1,
+      "description": {
+        "plain": "Add a copy of the third Attack you play each turn into your Hand.",
+        "runs": [
+          {
+            "text": "Add a copy of the third "
+          },
+          {
+            "text": "Attack",
+            "style": "gold"
+          },
+          {
+            "text": " you play each turn into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Juggling+",
+      "cost": 1,
+      "description": {
+        "plain": "Add a copy of the third Attack you play each turn into your Hand.",
+        "runs": [
+          {
+            "text": "Add a copy of the third "
+          },
+          {
+            "text": "Attack",
+            "style": "gold"
+          },
+          {
+            "text": " you play each turn into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,60 +1,148 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ABRASIVE",
-  "class_name": "Abrasive",
-  "name": "Abrasive",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Abrasive.cs",
-  "cost": 3,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "ABRASIVE.title",
-    "description_key": "ABRASIVE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "ThornsPower": 4,
-    "Thorns": 4,
-    "DexterityPower": 1,
-    "Dexterity": 1
-  },
-  "keywords": [
-    "Sly"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "ThornsPower",
-      "delta": 2
-    }
-  ],
-  "applies_powers": [
-    {
-      "power": "Dexterity",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Dexterity.BaseValue"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Abrasive",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Abrasive.cs",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "ABRASIVE.title",
+      "description_key": "ABRASIVE.description"
     },
-    {
-      "power": "Thorns",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"ThornsPower\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "DexterityPower",
-      "source": "HoverTipFactory.FromPower"
+    "vars": {
+      "ThornsPower": 4,
+      "DexterityPower": 1
     },
-    {
-      "kind": "hover_tip_power",
-      "target": "ThornsPower",
-      "source": "HoverTipFactory.FromPower"
+    "assets": [
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/beta/abrasive.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Sly"
+    ],
+    "upgrades": [
+      {
+        "var": "ThornsPower",
+        "delta": 2
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "DexterityPower",
+        "source": "HoverTipFactory.FromPower"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "ThornsPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Dexterity",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Dexterity.BaseValue"
+      },
+      {
+        "power": "Thorns",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"ThornsPower\"].BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Abrasive",
+      "cost": 3,
+      "description": {
+        "plain": "Gain 1 Dexterity.\nGain 4 Thorns.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "1",
+            "source_var": "DexterityPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Dexterity",
+            "style": "gold"
+          },
+          {
+            "text": ".\nGain "
+          },
+          {
+            "text": "4",
+            "source_var": "ThornsPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Thorns",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Abrasive+",
+      "cost": 3,
+      "description": {
+        "plain": "Gain 1 Dexterity.\nGain 6 Thorns.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "1",
+            "source_var": "DexterityPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Dexterity",
+            "style": "gold"
+          },
+          {
+            "text": ".\nGain "
+          },
+          {
+            "text": "6",
+            "source_var": "ThornsPower",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Thorns",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,37 +1,110 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "STORM_OF_STEEL",
-  "class_name": "StormOfSteel",
-  "name": "StormOfSteel",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/StormOfSteel.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "STORM_OF_STEEL.title",
-    "description_key": "STORM_OF_STEEL.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "hover_tip_card",
-      "target": "SHIV",
-      "source": "HoverTipFactory.FromCard"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "StormOfSteel",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/StormOfSteel.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "STORM_OF_STEEL.title",
+      "description_key": "STORM_OF_STEEL.description"
     },
-    {
-      "kind": "creates_card",
-      "target": "SHIV",
-      "source": "CreateInHand"
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/storm_of_steel.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "SHIV",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "creates_card",
+        "target": "SHIV",
+        "source": "CreateInHand"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Storm of Steel",
+      "cost": 1,
+      "description": {
+        "plain": "Discard your Hand.\nAdd 1 Shiv into your Hand for each card discarded.",
+        "runs": [
+          {
+            "text": "Discard your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ".\nAdd 1 "
+          },
+          {
+            "text": "Shiv",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " for each card discarded."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Storm of Steel+",
+      "cost": 1,
+      "description": {
+        "plain": "Discard your Hand.\nAdd 1 Shiv+ into your Hand for each card discarded.",
+        "runs": [
+          {
+            "text": "Discard your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ".\nAdd 1 "
+          },
+          {
+            "text": "Shiv+",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " for each card discarded."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

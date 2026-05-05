@@ -1,34 +1,93 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SUNDER",
-  "class_name": "Sunder",
-  "name": "Sunder",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Sunder.cs",
-  "cost": 3,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "SUNDER.title",
-    "description_key": "SUNDER.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Sunder",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Sunder.cs",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "SUNDER.title",
+      "description_key": "SUNDER.description"
+    },
+    "vars": {
+      "Damage": 24,
+      "Energy": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/sunder.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 8
+      }
+    ]
   },
-  "vars": {
-    "Damage": 24,
-    "Energy": 3
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 8
+  "resolved": {
+    "base": {
+      "title": "Sunder",
+      "cost": 3,
+      "description": {
+        "plain": "Deal 24 damage.\nIf this kills an enemy, gain 3.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "24",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nIf this kills an enemy, gain "
+          },
+          {
+            "text": "3",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Sunder+",
+      "cost": 3,
+      "description": {
+        "plain": "Deal 32 damage.\nIf this kills an enemy, gain 3.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "32",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nIf this kills an enemy, gain "
+          },
+          {
+            "text": "3",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

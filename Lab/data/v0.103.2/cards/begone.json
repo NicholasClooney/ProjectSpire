@@ -1,37 +1,115 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BEGONE",
-  "class_name": "Begone",
-  "name": "Begone",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Begone.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Common",
-  "target": "Self",
-  "localization": {
-    "title_key": "BEGONE.title",
-    "description_key": "BEGONE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "hover_tip_card",
-      "target": "MINION_STRIKE",
-      "source": "HoverTipFactory.FromCard"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Begone",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Begone.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "BEGONE.title",
+      "description_key": "BEGONE.description"
     },
-    {
-      "kind": "creates_card",
-      "target": "MINION_STRIKE",
-      "source": "CreateCard"
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/begone.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/begone.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "MINION_STRIKE",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "creates_card",
+        "target": "MINION_STRIKE",
+        "source": "CreateCard"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "BEGONE!",
+      "cost": 1,
+      "description": {
+        "plain": "Choose a card in your Hand to Transform into Minion Strike.",
+        "runs": [
+          {
+            "text": "Choose a card in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "Transform",
+            "style": "gold"
+          },
+          {
+            "text": " into "
+          },
+          {
+            "text": "Minion Strike",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "BEGONE!+",
+      "cost": 1,
+      "description": {
+        "plain": "Choose a card in your Hand to Transform into Minion Strike+.",
+        "runs": [
+          {
+            "text": "Choose a card in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "Transform",
+            "style": "gold"
+          },
+          {
+            "text": " into "
+          },
+          {
+            "text": "Minion Strike+",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

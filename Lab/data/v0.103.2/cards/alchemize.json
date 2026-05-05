@@ -1,28 +1,64 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ALCHEMIZE",
-  "class_name": "Alchemize",
-  "name": "Alchemize",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Alchemize.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "ALCHEMIZE.title",
-    "description_key": "ALCHEMIZE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Alchemize",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Alchemize.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "ALCHEMIZE.title",
+      "description_key": "ALCHEMIZE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/alchemize.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Alchemize",
+      "cost": 1,
+      "description": {
+        "plain": "Procure a random potion.",
+        "runs": [
+          {
+            "text": "Procure a random potion."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Alchemize+",
+      "cost": 0,
+      "description": {
+        "plain": "Procure a random potion.",
+        "runs": [
+          {
+            "text": "Procure a random potion."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
+    }
+  }
 }

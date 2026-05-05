@@ -1,39 +1,123 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ICE_LANCE",
-  "class_name": "IceLance",
-  "name": "IceLance",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/IceLance.cs",
-  "cost": 3,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "ICE_LANCE.title",
-    "description_key": "ICE_LANCE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "IceLance",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/IceLance.cs",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "ICE_LANCE.title",
+      "description_key": "ICE_LANCE.description"
+    },
+    "vars": {
+      "Damage": 19
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/ice_lance.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/ice_lance.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 5
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Channeling",
+        "source": "HoverTipFactory.Static"
+      },
+      {
+        "kind": "hover_tip_orb",
+        "target": "FrostOrb",
+        "source": "HoverTipFactory.FromOrb"
+      }
+    ]
   },
-  "vars": {
-    "Damage": 19
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 5
+  "resolved": {
+    "base": {
+      "title": "Ice Lance",
+      "cost": 3,
+      "description": {
+        "plain": "Deal 19 damage.\nChannel {Repeat:diff()} Frost.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "19",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\n"
+          },
+          {
+            "text": "Channel",
+            "style": "gold"
+          },
+          {
+            "text": " {Repeat:diff()} "
+          },
+          {
+            "text": "Frost",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Ice Lance+",
+      "cost": 3,
+      "description": {
+        "plain": "Deal 24 damage.\nChannel {Repeat:diff()} Frost.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "24",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\n"
+          },
+          {
+            "text": "Channel",
+            "style": "gold"
+          },
+          {
+            "text": " {Repeat:diff()} "
+          },
+          {
+            "text": "Frost",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "hover_tip_orb",
-      "target": "FrostOrb",
-      "source": "HoverTipFactory.FromOrb"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

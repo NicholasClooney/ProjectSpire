@@ -1,46 +1,102 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "RUPTURE",
-  "class_name": "Rupture",
-  "name": "Rupture",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Rupture.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "RUPTURE.title",
-    "description_key": "RUPTURE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Rupture",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Rupture.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "RUPTURE.title",
+      "description_key": "RUPTURE.description"
+    },
+    "vars": {
+      "StrengthPower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/rupture.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Strength",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Rupture",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Strength.BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "StrengthPower": 1,
-    "Strength": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Strength",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Rupture",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you lose HP on your turn, gain 1 Strength.",
+        "runs": [
+          {
+            "text": "Whenever you lose HP on your turn, gain "
+          },
+          {
+            "text": "1",
+            "source_var": "StrengthPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Rupture+",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you lose HP on your turn, gain 1 Strength.",
+        "runs": [
+          {
+            "text": "Whenever you lose HP on your turn, gain "
+          },
+          {
+            "text": "1",
+            "source_var": "StrengthPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Rupture",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Strength.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "StrengthPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

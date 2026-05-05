@@ -1,33 +1,106 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "PARTICLE_WALL",
-  "class_name": "ParticleWall",
-  "name": "ParticleWall",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ParticleWall.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "PARTICLE_WALL.title",
-    "description_key": "PARTICLE_WALL.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "ParticleWall",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ParticleWall.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "PARTICLE_WALL.title",
+      "description_key": "PARTICLE_WALL.description"
+    },
+    "vars": {
+      "Block": 9
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/particle_wall.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {
-    "Block": 9
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Particle Wall",
+      "cost": 0,
+      "description": {
+        "plain": "Gain 9 Block.\nReturn this card to your Hand.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "9",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nReturn this card to your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Particle Wall+",
+      "cost": 0,
+      "description": {
+        "plain": "Gain 12 Block.\nReturn this card to your Hand.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "12",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nReturn this card to your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

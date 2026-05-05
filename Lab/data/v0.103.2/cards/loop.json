@@ -1,39 +1,70 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "LOOP",
-  "class_name": "Loop",
-  "name": "Loop",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Loop.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "LOOP.title",
-    "description_key": "LOOP.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Loop",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Loop.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "LOOP.title",
+      "description_key": "LOOP.description"
+    },
+    "vars": {
+      "Loop": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/loop.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Loop",
+        "delta": 1
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Loop",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"Loop\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Loop": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Loop",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Loop",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, trigger the passive ability of your rightmost Orb.",
+        "runs": [
+          {
+            "text": "At the start of your turn, trigger the passive ability of your rightmost Orb."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Loop+",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, trigger the passive ability of your rightmost Orb 2 times.",
+        "runs": [
+          {
+            "text": "At the start of your turn, trigger the passive ability of your rightmost Orb 2 times."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Loop",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"Loop\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

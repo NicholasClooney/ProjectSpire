@@ -1,31 +1,77 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BAD_LUCK",
-  "class_name": "BadLuck",
-  "name": "BadLuck",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BadLuck.cs",
-  "cost": -1,
-  "type": "Curse",
-  "rarity": "Curse",
-  "target": "None",
-  "localization": {
-    "title_key": "BAD_LUCK.title",
-    "description_key": "BAD_LUCK.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "BadLuck",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BadLuck.cs",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "localization": {
+      "table": "cards",
+      "title_key": "BAD_LUCK.title",
+      "description_key": "BAD_LUCK.description"
+    },
+    "vars": {
+      "HpLoss": 13
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/curse/bad_luck.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/curse/beta/bad_luck.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Unplayable",
+      "Eternal"
+    ]
   },
-  "vars": {
-    "HpLoss": 13
-  },
-  "keywords": [
-    "Unplayable",
-    "Eternal"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Bad Luck",
+      "cost": -1,
+      "description": {
+        "plain": "At the end of your turn, if this is in your Hand, lose 13 HP.",
+        "runs": [
+          {
+            "text": "At the end of your turn, if this is in your Hand, lose "
+          },
+          {
+            "text": "13",
+            "source_var": "HpLoss"
+          },
+          {
+            "text": " HP."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Bad Luck+",
+      "cost": -1,
+      "description": {
+        "plain": "At the end of your turn, if this is in your Hand, lose 13 HP.",
+        "runs": [
+          {
+            "text": "At the end of your turn, if this is in your Hand, lose "
+          },
+          {
+            "text": "13",
+            "source_var": "HpLoss"
+          },
+          {
+            "text": " HP."
+          }
+        ]
+      }
+    }
+  }
 }

@@ -1,37 +1,91 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CONQUEROR",
-  "class_name": "Conqueror",
-  "name": "Conqueror",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Conqueror.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "CONQUEROR.title",
-    "description_key": "CONQUEROR.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Conqueror",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Conqueror.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "CONQUEROR.title",
+      "description_key": "CONQUEROR.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/conqueror.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/conqueror.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Forge",
+        "delta": 2
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Conqueror",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "1m"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Forge",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Conqueror",
+      "cost": 1,
+      "description": {
+        "plain": "Forge {Forge:diff()}.\nSovereign Blade deals double damage to the enemy this turn.",
+        "runs": [
+          {
+            "text": "Forge",
+            "style": "gold"
+          },
+          {
+            "text": " {Forge:diff()}.\n"
+          },
+          {
+            "text": "Sovereign Blade",
+            "style": "gold"
+          },
+          {
+            "text": " deals double damage to the enemy this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Conqueror+",
+      "cost": 1,
+      "description": {
+        "plain": "Forge {Forge:diff()}.\nSovereign Blade deals double damage to the enemy this turn.",
+        "runs": [
+          {
+            "text": "Forge",
+            "style": "gold"
+          },
+          {
+            "text": " {Forge:diff()}.\n"
+          },
+          {
+            "text": "Sovereign Blade",
+            "style": "gold"
+          },
+          {
+            "text": " deals double damage to the enemy this turn."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Conqueror",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "1m"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

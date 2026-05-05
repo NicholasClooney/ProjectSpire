@@ -1,26 +1,62 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "MULTI_CAST",
-  "class_name": "MultiCast",
-  "name": "MultiCast",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MultiCast.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "MULTI_CAST.title",
-    "description_key": "MULTI_CAST.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "MultiCast",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MultiCast.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "MULTI_CAST.title",
+      "description_key": "MULTI_CAST.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/multi_cast.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Multi-Cast",
+      "cost": 0,
+      "description": {
+        "plain": "Evoke your rightmost Orb X times.",
+        "runs": [
+          {
+            "text": "Evoke",
+            "style": "gold"
+          },
+          {
+            "text": " your rightmost Orb X times."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Multi-Cast+",
+      "cost": 0,
+      "description": {
+        "plain": "Evoke your rightmost Orb X+1 times.",
+        "runs": [
+          {
+            "text": "Evoke",
+            "style": "gold"
+          },
+          {
+            "text": " your rightmost Orb X+1 times."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
+    }
+  }
 }

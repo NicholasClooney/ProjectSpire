@@ -1,34 +1,85 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SHADOW_STEP",
-  "class_name": "ShadowStep",
-  "name": "ShadowStep",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ShadowStep.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "SHADOW_STEP.title",
-    "description_key": "SHADOW_STEP.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "ShadowStep",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ShadowStep.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SHADOW_STEP.title",
+      "description_key": "SHADOW_STEP.description"
+    },
+    "vars": {
+      "Cards": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/shadow_step.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "ShadowStep",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      }
+    ]
   },
-  "vars": {
-    "Cards": 3
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "ShadowStep",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
+  "resolved": {
+    "base": {
+      "title": "Shadow Step",
+      "cost": 1,
+      "description": {
+        "plain": "Discard your Hand.\nNext turn, Attacks deal double damage.",
+        "runs": [
+          {
+            "text": "Discard your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ".\nNext turn, Attacks deal double damage."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Shadow Step+",
+      "cost": 0,
+      "description": {
+        "plain": "Discard your Hand.\nNext turn, Attacks deal double damage.",
+        "runs": [
+          {
+            "text": "Discard your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ".\nNext turn, Attacks deal double damage."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

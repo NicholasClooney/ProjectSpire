@@ -1,51 +1,125 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SCOURGE",
-  "class_name": "Scourge",
-  "name": "Scourge",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Scourge.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "SCOURGE.title",
-    "description_key": "SCOURGE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Cards": 1,
-    "DoomPower": 13,
-    "Doom": 13
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 1
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Scourge",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Scourge.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "SCOURGE.title",
+      "description_key": "SCOURGE.description"
     },
-    {
-      "var": "Doom",
-      "delta": 3
+    "vars": {
+      "Cards": 1,
+      "DoomPower": 13
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/scourge.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 1
+      },
+      {
+        "var": "Doom",
+        "delta": 3
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "DoomPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Doom",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars.Doom.BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Scourge",
+      "cost": 1,
+      "description": {
+        "plain": "Apply 13 Doom.\nDraw 1 card.",
+        "runs": [
+          {
+            "text": "Apply "
+          },
+          {
+            "text": "13",
+            "source_var": "DoomPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": ".\nDraw "
+          },
+          {
+            "text": "1",
+            "source_var": "Cards"
+          },
+          {
+            "text": " card."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Scourge+",
+      "cost": 1,
+      "description": {
+        "plain": "Apply 13 Doom.\nDraw 2 cards.",
+        "runs": [
+          {
+            "text": "Apply "
+          },
+          {
+            "text": "13",
+            "source_var": "DoomPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": ".\nDraw "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " cards."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Doom",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars.Doom.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "DoomPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

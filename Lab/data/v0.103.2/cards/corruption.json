@@ -1,36 +1,88 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CORRUPTION",
-  "class_name": "Corruption",
-  "name": "Corruption",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Corruption.cs",
-  "cost": 3,
-  "type": "Power",
-  "rarity": "Ancient",
-  "target": "Self",
-  "localization": {
-    "title_key": "CORRUPTION.title",
-    "description_key": "CORRUPTION.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Corruption",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Corruption.cs",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Ancient",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "CORRUPTION.title",
+      "description_key": "CORRUPTION.description"
+    },
+    "vars": {
+      "Power": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/corruption.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Corruption",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"Power\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Power": 1
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Corruption",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"Power\"].BaseValue"
+  "resolved": {
+    "base": {
+      "title": "Corruption",
+      "cost": 3,
+      "description": {
+        "plain": "Skills cost 0 .\nWhenever you play a Skill, Exhaust it.",
+        "runs": [
+          {
+            "text": "Skills cost 0 .\nWhenever you play a Skill, "
+          },
+          {
+            "text": "Exhaust",
+            "style": "gold"
+          },
+          {
+            "text": " it."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Corruption+",
+      "cost": 2,
+      "description": {
+        "plain": "Skills cost 0 .\nWhenever you play a Skill, Exhaust it.",
+        "runs": [
+          {
+            "text": "Skills cost 0 .\nWhenever you play a Skill, "
+          },
+          {
+            "text": "Exhaust",
+            "style": "gold"
+          },
+          {
+            "text": " it."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

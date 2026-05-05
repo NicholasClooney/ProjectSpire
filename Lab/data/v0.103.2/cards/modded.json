@@ -1,33 +1,83 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "MODDED",
-  "class_name": "Modded",
-  "name": "Modded",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Modded.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "MODDED.title",
-    "description_key": "MODDED.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Modded",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Modded.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "MODDED.title",
+      "description_key": "MODDED.description"
+    },
+    "vars": {
+      "Cards": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/modded.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/modded.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Cards": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Modded",
+      "cost": 0,
+      "description": {
+        "plain": "Gain {Repeat:diff()} Orb {Repeat:plural:Slot|Slots}.\nDraw 1 card. Increase this card's cost by 1.",
+        "runs": [
+          {
+            "text": "Gain {Repeat:diff()} Orb {Repeat:plural:Slot|Slots}.\nDraw "
+          },
+          {
+            "text": "1",
+            "source_var": "Cards"
+          },
+          {
+            "text": " card. Increase this card's cost by 1."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Modded+",
+      "cost": 0,
+      "description": {
+        "plain": "Gain {Repeat:diff()} Orb {Repeat:plural:Slot|Slots}.\nDraw 2 cards. Increase this card's cost by 1.",
+        "runs": [
+          {
+            "text": "Gain {Repeat:diff()} Orb {Repeat:plural:Slot|Slots}.\nDraw "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " cards. Increase this card's cost by 1."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

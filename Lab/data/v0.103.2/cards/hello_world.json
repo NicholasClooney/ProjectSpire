@@ -1,34 +1,80 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "HELLO_WORLD",
-  "class_name": "HelloWorld",
-  "name": "HelloWorld",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HelloWorld.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Event",
-  "target": "Self",
-  "localization": {
-    "title_key": "HELLO_WORLD.title",
-    "description_key": "HELLO_WORLD.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "HelloWorld",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HelloWorld.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Event",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "HELLO_WORLD.title",
+      "description_key": "HELLO_WORLD.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/event/hello_world.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/event/beta/hello_world.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Innate"
+    ],
+    "applies_powers": [
+      {
+        "power": "HelloWorld",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Innate"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "HelloWorld",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
+  "resolved": {
+    "base": {
+      "title": "Hello World",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, add a random Common card into your Hand.",
+        "runs": [
+          {
+            "text": "At the start of your turn, add a random Common card into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Hello World+",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, add a random Common card into your Hand.",
+        "runs": [
+          {
+            "text": "At the start of your turn, add a random Common card into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

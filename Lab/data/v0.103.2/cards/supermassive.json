@@ -1,31 +1,62 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SUPERMASSIVE",
-  "class_name": "Supermassive",
-  "name": "Supermassive",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Supermassive.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "SUPERMASSIVE.title",
-    "description_key": "SUPERMASSIVE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Supermassive",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Supermassive.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "SUPERMASSIVE.title",
+      "description_key": "SUPERMASSIVE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/supermassive.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/supermassive.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "ExtraDamage",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "ExtraDamage",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Supermassive",
+      "cost": 1,
+      "description": {
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card you created this combat.",
+        "runs": [
+          {
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card you created this combat."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Supermassive+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card you created this combat.",
+        "runs": [
+          {
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card you created this combat."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,41 +1,105 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ROLLING_BOULDER",
-  "class_name": "RollingBoulder",
-  "name": "RollingBoulder",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/RollingBoulder.cs",
-  "cost": 3,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "ROLLING_BOULDER.title",
-    "description_key": "ROLLING_BOULDER.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "RollingBoulder",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/RollingBoulder.cs",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "ROLLING_BOULDER.title",
+      "description_key": "ROLLING_BOULDER.description"
+    },
+    "vars": {
+      "IncrementAmount": 5,
+      "RollingBoulderPower": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/rolling_boulder.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/rolling_boulder.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "RollingBoulderPower",
+        "delta": 5
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "RollingBoulder",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"RollingBoulderPower\"].IntValue"
+      }
+    ]
   },
-  "vars": {
-    "IncrementAmount": 5,
-    "RollingBoulderPower": 5,
-    "RollingBoulder": 5
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "RollingBoulderPower",
-      "delta": 5
+  "resolved": {
+    "base": {
+      "title": "Rolling Boulder",
+      "cost": 3,
+      "description": {
+        "plain": "At the start of your turn, deal 5 damage to ALL enemies and increase this damage by 5.",
+        "runs": [
+          {
+            "text": "At the start of your turn, deal "
+          },
+          {
+            "text": "5",
+            "source_var": "RollingBoulderPower"
+          },
+          {
+            "text": " damage to ALL enemies and increase this damage by "
+          },
+          {
+            "text": "5",
+            "source_var": "IncrementAmount"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Rolling Boulder+",
+      "cost": 3,
+      "description": {
+        "plain": "At the start of your turn, deal 10 damage to ALL enemies and increase this damage by 5.",
+        "runs": [
+          {
+            "text": "At the start of your turn, deal "
+          },
+          {
+            "text": "10",
+            "source_var": "RollingBoulderPower",
+            "style": "green"
+          },
+          {
+            "text": " damage to ALL enemies and increase this damage by "
+          },
+          {
+            "text": "5",
+            "source_var": "IncrementAmount"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "RollingBoulder",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"RollingBoulderPower\"].IntValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

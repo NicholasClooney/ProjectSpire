@@ -1,40 +1,90 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SERPENT_FORM",
-  "class_name": "SerpentForm",
-  "name": "SerpentForm",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SerpentForm.cs",
-  "cost": 3,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "SERPENT_FORM.title",
-    "description_key": "SERPENT_FORM.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "SerpentForm",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SerpentForm.cs",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SERPENT_FORM.title",
+      "description_key": "SERPENT_FORM.description"
+    },
+    "vars": {
+      "SerpentFormPower": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/serpent_form.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/beta/serpent_form.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "SerpentFormPower",
+        "delta": 2
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "SerpentForm",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"SerpentFormPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "SerpentFormPower": 4,
-    "SerpentForm": 4
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "SerpentFormPower",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Serpent Form",
+      "cost": 3,
+      "description": {
+        "plain": "Whenever you play a card, deal 4 damage to a random enemy.",
+        "runs": [
+          {
+            "text": "Whenever you play a card, deal "
+          },
+          {
+            "text": "4",
+            "source_var": "SerpentFormPower"
+          },
+          {
+            "text": " damage to a random enemy."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Serpent Form+",
+      "cost": 3,
+      "description": {
+        "plain": "Whenever you play a card, deal 6 damage to a random enemy.",
+        "runs": [
+          {
+            "text": "Whenever you play a card, deal "
+          },
+          {
+            "text": "6",
+            "source_var": "SerpentFormPower",
+            "style": "green"
+          },
+          {
+            "text": " damage to a random enemy."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "SerpentForm",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"SerpentFormPower\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,34 +1,101 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "KNIFE_TRAP",
-  "class_name": "KnifeTrap",
-  "name": "KnifeTrap",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/KnifeTrap.cs",
-  "cost": 2,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "KNIFE_TRAP.title",
-    "description_key": "KNIFE_TRAP.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "KnifeTrap",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/KnifeTrap.cs",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "KNIFE_TRAP.title",
+      "description_key": "KNIFE_TRAP.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/knife_trap.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/beta/knife_trap.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tags": [
+      "Shiv"
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "SHIV",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [
-    "Shiv"
-  ],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "hover_tip_card",
-      "target": "SHIV",
-      "source": "HoverTipFactory.FromCard"
+  "resolved": {
+    "base": {
+      "title": "Knife Trap",
+      "cost": 2,
+      "description": {
+        "plain": "Play every Shiv in your Exhaust Pile on the enemy.",
+        "runs": [
+          {
+            "text": "Play every "
+          },
+          {
+            "text": "Shiv",
+            "style": "gold"
+          },
+          {
+            "text": " in your "
+          },
+          {
+            "text": "Exhaust Pile",
+            "style": "gold"
+          },
+          {
+            "text": " on the enemy."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Knife Trap+",
+      "cost": 2,
+      "description": {
+        "plain": "Upgrade and play every Shiv in your Exhaust Pile on the enemy.",
+        "runs": [
+          {
+            "text": "Upgrade",
+            "style": "gold"
+          },
+          {
+            "text": " and play every "
+          },
+          {
+            "text": "Shiv",
+            "style": "gold"
+          },
+          {
+            "text": " in your "
+          },
+          {
+            "text": "Exhaust Pile",
+            "style": "gold"
+          },
+          {
+            "text": " on the enemy."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

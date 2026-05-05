@@ -1,33 +1,106 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "HEADBUTT",
-  "class_name": "Headbutt",
-  "name": "Headbutt",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Headbutt.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "HEADBUTT.title",
-    "description_key": "HEADBUTT.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Headbutt",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Headbutt.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "HEADBUTT.title",
+      "description_key": "HEADBUTT.description"
+    },
+    "vars": {
+      "Damage": 9
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/headbutt.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {
-    "Damage": 9
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Headbutt",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 9 damage.\nPut a card from your Discard Pile on top of your Draw Pile.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "9",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nPut a card from your "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": " on top of your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Headbutt+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 12 damage.\nPut a card from your Discard Pile on top of your Draw Pile.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "12",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nPut a card from your "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": " on top of your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

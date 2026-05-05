@@ -1,56 +1,163 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "NULL",
-  "class_name": "Null",
-  "name": "Null",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Null.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "NULL.title",
-    "description_key": "NULL.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 10,
-    "WeakPower": 2,
-    "Weak": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 3
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Null",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Null.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "NULL.title",
+      "description_key": "NULL.description"
     },
-    {
-      "var": "Weak",
-      "delta": 1
-    }
-  ],
-  "applies_powers": [
-    {
-      "power": "Weak",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars.Weak.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "WeakPower",
-      "source": "HoverTipFactory.FromPower"
+    "vars": {
+      "Damage": 10,
+      "WeakPower": 2
     },
-    {
-      "kind": "hover_tip_orb",
-      "target": "DarkOrb",
-      "source": "HoverTipFactory.FromOrb"
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/null.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 3
+      },
+      {
+        "var": "Weak",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Channeling",
+        "source": "HoverTipFactory.Static"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "WeakPower",
+        "source": "HoverTipFactory.FromPower"
+      },
+      {
+        "kind": "hover_tip_orb",
+        "target": "DarkOrb",
+        "source": "HoverTipFactory.FromOrb"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Weak",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars.Weak.BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Null",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 10 damage.\nApply 2 Weak.\nChannel 1 Dark.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nApply "
+          },
+          {
+            "text": "2",
+            "source_var": "WeakPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": ".\n"
+          },
+          {
+            "text": "Channel",
+            "style": "gold"
+          },
+          {
+            "text": " 1 "
+          },
+          {
+            "text": "Dark",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Null+",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 13 damage.\nApply 2 Weak.\nChannel 1 Dark.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "13",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nApply "
+          },
+          {
+            "text": "2",
+            "source_var": "WeakPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": ".\n"
+          },
+          {
+            "text": "Channel",
+            "style": "gold"
+          },
+          {
+            "text": " 1 "
+          },
+          {
+            "text": "Dark",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

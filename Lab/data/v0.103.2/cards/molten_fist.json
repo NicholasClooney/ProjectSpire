@@ -1,47 +1,109 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "MOLTEN_FIST",
-  "class_name": "MoltenFist",
-  "name": "MoltenFist",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MoltenFist.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "MOLTEN_FIST.title",
-    "description_key": "MOLTEN_FIST.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "MoltenFist",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MoltenFist.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "MOLTEN_FIST.title",
+      "description_key": "MOLTEN_FIST.description"
+    },
+    "vars": {
+      "Damage": 10
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/molten_fist.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 4
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "VulnerablePower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Vulnerable",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "num"
+      }
+    ]
   },
-  "vars": {
-    "Damage": 10
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 4
+  "resolved": {
+    "base": {
+      "title": "Molten Fist",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 10 damage.\nDouble the enemy's Vulnerable.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nDouble the enemy's "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Molten Fist+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 14 damage.\nDouble the enemy's Vulnerable.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "14",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nDouble the enemy's "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Vulnerable",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "num"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "VulnerablePower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,33 +1,114 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "HIDDEN_GEM",
-  "class_name": "HiddenGem",
-  "name": "HiddenGem",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HiddenGem.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "HIDDEN_GEM.title",
-    "description_key": "HIDDEN_GEM.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "HiddenGem",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HiddenGem.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "HIDDEN_GEM.title",
+      "description_key": "HIDDEN_GEM.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/hidden_gem.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/hidden_gem.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Unplayable"
+    ],
+    "upgrades": [
+      {
+        "var": "Replay",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "ReplayStatic",
+        "source": "HoverTipFactory.Static"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Unplayable"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Replay",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Hidden Gem",
+      "cost": 1,
+      "description": {
+        "plain": "A random card without Replay in your Draw Pile gains Replay {Replay:diff()}.",
+        "runs": [
+          {
+            "text": "A random card without "
+          },
+          {
+            "text": "Replay",
+            "style": "gold"
+          },
+          {
+            "text": " in your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": " gains "
+          },
+          {
+            "text": "Replay",
+            "style": "gold"
+          },
+          {
+            "text": " {Replay:diff()}."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Hidden Gem+",
+      "cost": 1,
+      "description": {
+        "plain": "A random card without Replay in your Draw Pile gains Replay {Replay:diff()}.",
+        "runs": [
+          {
+            "text": "A random card without "
+          },
+          {
+            "text": "Replay",
+            "style": "gold"
+          },
+          {
+            "text": " in your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": " gains "
+          },
+          {
+            "text": "Replay",
+            "style": "gold"
+          },
+          {
+            "text": " {Replay:diff()}."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,28 +1,49 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SPORE_MIND",
-  "class_name": "SporeMind",
-  "name": "SporeMind",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SporeMind.cs",
-  "cost": 1,
-  "type": "Curse",
-  "rarity": "Curse",
-  "target": "None",
-  "localization": {
-    "title_key": "SPORE_MIND.title",
-    "description_key": "SPORE_MIND.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "SporeMind",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SporeMind.cs",
+    "cost": 1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "localization": {
+      "table": "cards",
+      "title_key": "SPORE_MIND.title",
+      "description_key": "SPORE_MIND.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/curse/spore_mind.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/curse/beta/spore_mind.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Spore Mind",
+      "cost": 1,
+      "description": {
+        "plain": ""
+      }
+    },
+    "upgraded": {
+      "title": "Spore Mind+",
+      "cost": 1,
+      "description": {
+        "plain": ""
+      }
+    }
+  }
 }

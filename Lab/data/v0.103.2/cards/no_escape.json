@@ -1,45 +1,130 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "NO_ESCAPE",
-  "class_name": "NoEscape",
-  "name": "NoEscape",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/NoEscape.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "NO_ESCAPE.title",
-    "description_key": "NO_ESCAPE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "NoEscape",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/NoEscape.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "NO_ESCAPE.title",
+      "description_key": "NO_ESCAPE.description"
+    },
+    "vars": {
+      "DoomThreshold": 10
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/no_escape.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "CalculationBase",
+        "delta": 5
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "DoomPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Doom",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "((CalculatedVar)base.DynamicVars[\"CalculatedDoom\"]).Calculate(cardPlay.Target)"
+      }
+    ]
   },
-  "vars": {
-    "DoomThreshold": 10
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "CalculationBase",
-      "delta": 5
+  "resolved": {
+    "base": {
+      "title": "No Escape",
+      "cost": 1,
+      "description": {
+        "plain": "Apply {CalculationBase:diff()} Doom, plus an additional {CalculationExtra:diff()} Doom for every 10 Doom already on this enemy.{IsTargeting:\n(Apply {CalculatedDoom:diff()} [gold]Doom[/gold])|}",
+        "runs": [
+          {
+            "text": "Apply {CalculationBase:diff()} "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": ", plus an additional {CalculationExtra:diff()} "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " for every "
+          },
+          {
+            "text": "10",
+            "source_var": "DoomThreshold"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " already on this enemy.{IsTargeting:\n(Apply {CalculatedDoom:diff()} [gold]Doom[/gold])|}"
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "No Escape+",
+      "cost": 1,
+      "description": {
+        "plain": "Apply {CalculationBase:diff()} Doom, plus an additional {CalculationExtra:diff()} Doom for every 10 Doom already on this enemy.{IsTargeting:\n(Apply {CalculatedDoom:diff()} [gold]Doom[/gold])|}",
+        "runs": [
+          {
+            "text": "Apply {CalculationBase:diff()} "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": ", plus an additional {CalculationExtra:diff()} "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " for every "
+          },
+          {
+            "text": "10",
+            "source_var": "DoomThreshold"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " already on this enemy.{IsTargeting:\n(Apply {CalculatedDoom:diff()} [gold]Doom[/gold])|}"
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Doom",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "((CalculatedVar)base.DynamicVars[\"CalculatedDoom\"]).Calculate(cardPlay.Target)"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "DoomPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

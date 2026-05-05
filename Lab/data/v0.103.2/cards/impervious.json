@@ -1,35 +1,95 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "IMPERVIOUS",
-  "class_name": "Impervious",
-  "name": "Impervious",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Impervious.cs",
-  "cost": 2,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "IMPERVIOUS.title",
-    "description_key": "IMPERVIOUS.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Impervious",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Impervious.cs",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "IMPERVIOUS.title",
+      "description_key": "IMPERVIOUS.description"
+    },
+    "vars": {
+      "Block": 30
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/impervious.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 10
+      }
+    ]
   },
-  "vars": {
-    "Block": 30
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 10
+  "resolved": {
+    "base": {
+      "title": "Impervious",
+      "cost": 2,
+      "description": {
+        "plain": "Gain 30 Block.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "30",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Impervious+",
+      "cost": 2,
+      "description": {
+        "plain": "Gain 40 Block.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "40",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

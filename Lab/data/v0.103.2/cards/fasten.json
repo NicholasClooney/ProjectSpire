@@ -1,41 +1,114 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FASTEN",
-  "class_name": "Fasten",
-  "name": "Fasten",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Fasten.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "FASTEN.title",
-    "description_key": "FASTEN.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Fasten",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Fasten.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "FASTEN.title",
+      "description_key": "FASTEN.description"
+    },
+    "vars": {
+      "ExtraBlock": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/fasten.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/fasten.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tags": [
+      "Defend"
+    ],
+    "upgrades": [
+      {
+        "var": "ExtraBlock",
+        "delta": 2
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Fasten",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"ExtraBlock\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "ExtraBlock": 5
-  },
-  "keywords": [],
-  "tags": [
-    "Defend"
-  ],
-  "upgrades": [
-    {
-      "var": "ExtraBlock",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Fasten",
+      "cost": 1,
+      "description": {
+        "plain": "Gain an additional 5 Block from Defend cards.",
+        "runs": [
+          {
+            "text": "Gain an additional "
+          },
+          {
+            "text": "5",
+            "source_var": "ExtraBlock"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " from Defend cards."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Fasten+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain an additional 7 Block from Defend cards.",
+        "runs": [
+          {
+            "text": "Gain an additional "
+          },
+          {
+            "text": "7",
+            "source_var": "ExtraBlock",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " from Defend cards."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Fasten",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"ExtraBlock\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

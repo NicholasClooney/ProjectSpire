@@ -1,35 +1,100 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ULTIMATE_DEFEND",
-  "class_name": "UltimateDefend",
-  "name": "UltimateDefend",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/UltimateDefend.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "ULTIMATE_DEFEND.title",
-    "description_key": "ULTIMATE_DEFEND.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "UltimateDefend",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/UltimateDefend.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "ULTIMATE_DEFEND.title",
+      "description_key": "ULTIMATE_DEFEND.description"
+    },
+    "vars": {
+      "Block": 11
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/ultimate_defend.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/ultimate_defend.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tags": [
+      "Defend"
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 4
+      }
+    ]
   },
-  "vars": {
-    "Block": 11
-  },
-  "keywords": [],
-  "tags": [
-    "Defend"
-  ],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 4
+  "resolved": {
+    "base": {
+      "title": "Ultimate Defend",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 11 Block.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "11",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Ultimate Defend+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 15 Block.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "15",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

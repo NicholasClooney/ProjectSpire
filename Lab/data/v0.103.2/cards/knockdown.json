@@ -1,45 +1,95 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "KNOCKDOWN",
-  "class_name": "Knockdown",
-  "name": "Knockdown",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Knockdown.cs",
-  "cost": 3,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "KNOCKDOWN.title",
-    "description_key": "KNOCKDOWN.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 10,
-    "KnockdownPower": 2,
-    "Knockdown": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 4
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Knockdown",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Knockdown.cs",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "KNOCKDOWN.title",
+      "description_key": "KNOCKDOWN.description"
     },
-    {
-      "var": "KnockdownPower",
-      "delta": 1
+    "vars": {
+      "Damage": 10,
+      "KnockdownPower": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/knockdown.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/knockdown.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 4
+      },
+      {
+        "var": "KnockdownPower",
+        "delta": 1
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Knockdown",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars[\"KnockdownPower\"].BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Knockdown",
+      "cost": 3,
+      "description": {
+        "plain": "Deal 10 damage.\nThe enemy takes double damage from other players this turn.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nThe enemy takes double damage from other players this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Knockdown+",
+      "cost": 3,
+      "description": {
+        "plain": "Deal 14 damage.\nThe enemy takes triple damage from other players this turn.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "14",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nThe enemy takes triple damage from other players this turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Knockdown",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars[\"KnockdownPower\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

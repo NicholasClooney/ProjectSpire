@@ -1,46 +1,106 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DEMON_FORM",
-  "class_name": "DemonForm",
-  "name": "DemonForm",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DemonForm.cs",
-  "cost": 3,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "DEMON_FORM.title",
-    "description_key": "DEMON_FORM.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "DemonForm",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DemonForm.cs",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "DEMON_FORM.title",
+      "description_key": "DEMON_FORM.description"
+    },
+    "vars": {
+      "StrengthPower": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/demon_form.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "StrengthPower",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "DemonForm",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"StrengthPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "StrengthPower": 2,
-    "Strength": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "StrengthPower",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Demon Form",
+      "cost": 3,
+      "description": {
+        "plain": "At the start of your turn, gain 2 Strength.",
+        "runs": [
+          {
+            "text": "At the start of your turn, gain "
+          },
+          {
+            "text": "2",
+            "source_var": "StrengthPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Demon Form+",
+      "cost": 3,
+      "description": {
+        "plain": "At the start of your turn, gain 3 Strength.",
+        "runs": [
+          {
+            "text": "At the start of your turn, gain "
+          },
+          {
+            "text": "3",
+            "source_var": "StrengthPower",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "DemonForm",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"StrengthPower\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "StrengthPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

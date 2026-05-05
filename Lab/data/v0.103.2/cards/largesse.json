@@ -1,26 +1,80 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "LARGESSE",
-  "class_name": "Largesse",
-  "name": "Largesse",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Largesse.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "AnyAlly",
-  "localization": {
-    "title_key": "LARGESSE.title",
-    "description_key": "LARGESSE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Largesse",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Largesse.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyAlly",
+    "localization": {
+      "table": "cards",
+      "title_key": "LARGESSE.title",
+      "description_key": "LARGESSE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/largesse.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/largesse.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Largesse",
+      "cost": 0,
+      "description": {
+        "plain": "Another player adds 1 random Colorless card to their Hand.",
+        "runs": [
+          {
+            "text": "Another player adds 1 random Colorless card to their "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Largesse+",
+      "cost": 0,
+      "description": {
+        "plain": "Another player adds 1 random Upgraded Colorless card to their Hand.",
+        "runs": [
+          {
+            "text": "Another player adds 1 random "
+          },
+          {
+            "text": "Upgraded",
+            "style": "gold"
+          },
+          {
+            "text": " Colorless card to their "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
+    }
+  }
 }

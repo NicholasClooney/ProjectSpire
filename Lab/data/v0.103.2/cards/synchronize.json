@@ -1,40 +1,82 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SYNCHRONIZE",
-  "class_name": "Synchronize",
-  "name": "Synchronize",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Synchronize.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "SYNCHRONIZE.title",
-    "description_key": "SYNCHRONIZE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Synchronize",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Synchronize.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SYNCHRONIZE.title",
+      "description_key": "SYNCHRONIZE.description"
+    },
+    "assets": [
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/synchronize.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "FocusPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Synchronize",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "((CalculatedVar)base.DynamicVars[\"CalculatedFocus\"]).Calculate(cardPlay.Target)"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Synchronize",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "((CalculatedVar)base.DynamicVars[\"CalculatedFocus\"]).Calculate(cardPlay.Target)"
+  "resolved": {
+    "base": {
+      "title": "Synchronize",
+      "cost": 1,
+      "description": {
+        "plain": "Gain {CalculationExtra:diff()} Focus this turn for each unique Orb you have.",
+        "runs": [
+          {
+            "text": "Gain {CalculationExtra:diff()} "
+          },
+          {
+            "text": "Focus",
+            "style": "gold"
+          },
+          {
+            "text": " this turn for each unique Orb you have."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Synchronize+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain {CalculationExtra:diff()} Focus this turn for each unique Orb you have.",
+        "runs": [
+          {
+            "text": "Gain {CalculationExtra:diff()} "
+          },
+          {
+            "text": "Focus",
+            "style": "gold"
+          },
+          {
+            "text": " this turn for each unique Orb you have."
+          }
+        ]
+      }
     }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "FocusPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

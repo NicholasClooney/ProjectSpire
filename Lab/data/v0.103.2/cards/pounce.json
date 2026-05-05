@@ -1,39 +1,85 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "POUNCE",
-  "class_name": "Pounce",
-  "name": "Pounce",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Pounce.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "POUNCE.title",
-    "description_key": "POUNCE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Pounce",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Pounce.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "POUNCE.title",
+      "description_key": "POUNCE.description"
+    },
+    "vars": {
+      "Damage": 12
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/pounce.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 6
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "FreeSkill",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      }
+    ]
   },
-  "vars": {
-    "Damage": 12
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 6
+  "resolved": {
+    "base": {
+      "title": "Pounce",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 12 damage.\nThe next Skill you play costs 0 .",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "12",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nThe next Skill you play costs 0 ."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Pounce+",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 18 damage.\nThe next Skill you play costs 0 .",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "18",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nThe next Skill you play costs 0 ."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "FreeSkill",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,39 +1,89 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "GENESIS",
-  "class_name": "Genesis",
-  "name": "Genesis",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Genesis.cs",
-  "cost": 2,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "GENESIS.title",
-    "description_key": "GENESIS.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Genesis",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Genesis.cs",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "GENESIS.title",
+      "description_key": "GENESIS.description"
+    },
+    "vars": {
+      "StarsPerTurn": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/genesis.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/genesis.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "StarsPerTurn",
+        "delta": 1
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Genesis",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"StarsPerTurn\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "StarsPerTurn": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "StarsPerTurn",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Genesis",
+      "cost": 2,
+      "description": {
+        "plain": "At the start of your turn, gain 2.",
+        "runs": [
+          {
+            "text": "At the start of your turn, gain "
+          },
+          {
+            "text": "2",
+            "source_var": "StarsPerTurn"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Genesis+",
+      "cost": 2,
+      "description": {
+        "plain": "At the start of your turn, gain 3.",
+        "runs": [
+          {
+            "text": "At the start of your turn, gain "
+          },
+          {
+            "text": "3",
+            "source_var": "StarsPerTurn"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Genesis",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"StarsPerTurn\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

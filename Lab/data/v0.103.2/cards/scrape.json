@@ -1,38 +1,98 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SCRAPE",
-  "class_name": "Scrape",
-  "name": "Scrape",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Scrape.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "SCRAPE.title",
-    "description_key": "SCRAPE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 7,
-    "Cards": 4
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 1
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Scrape",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Scrape.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "SCRAPE.title",
+      "description_key": "SCRAPE.description"
     },
-    {
-      "var": "Damage",
-      "delta": 3
+    "vars": {
+      "Damage": 7,
+      "Cards": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/scrape.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 1
+      },
+      {
+        "var": "Damage",
+        "delta": 3
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Scrape",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 7 damage.\nDraw 4 cards.\nDiscard all cards drawn this way that do not cost 0 .",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "7",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nDraw "
+          },
+          {
+            "text": "4",
+            "source_var": "Cards"
+          },
+          {
+            "text": " cards.\nDiscard all cards drawn this way that do not cost 0 ."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Scrape+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 10 damage.\nDraw 5 cards.\nDiscard all cards drawn this way that do not cost 0 .",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nDraw "
+          },
+          {
+            "text": "5",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " cards.\nDiscard all cards drawn this way that do not cost 0 ."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

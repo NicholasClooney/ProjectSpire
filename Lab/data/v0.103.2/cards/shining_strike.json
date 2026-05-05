@@ -1,37 +1,103 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SHINING_STRIKE",
-  "class_name": "ShiningStrike",
-  "name": "ShiningStrike",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ShiningStrike.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "SHINING_STRIKE.title",
-    "description_key": "SHINING_STRIKE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "ShiningStrike",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ShiningStrike.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "SHINING_STRIKE.title",
+      "description_key": "SHINING_STRIKE.description"
+    },
+    "vars": {
+      "Damage": 8
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/shining_strike.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/shining_strike.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "tags": [
+      "Strike"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {
-    "Damage": 8
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [
-    "Strike"
-  ],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Shining Strike",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 8 damage.\nGain {Stars:starIcons()}.\nPut this card on top of your Draw Pile.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "8",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nGain {Stars:starIcons()}.\nPut this card on top of your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Shining Strike+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 11 damage.\nGain {Stars:starIcons()}.\nPut this card on top of your Draw Pile.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "11",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nGain {Stars:starIcons()}.\nPut this card on top of your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

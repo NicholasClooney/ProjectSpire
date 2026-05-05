@@ -1,40 +1,85 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ITERATION",
-  "class_name": "Iteration",
-  "name": "Iteration",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Iteration.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "ITERATION.title",
-    "description_key": "ITERATION.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Iteration",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Iteration.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "ITERATION.title",
+      "description_key": "ITERATION.description"
+    },
+    "vars": {
+      "IterationPower": 2
+    },
+    "assets": [
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/iteration.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "IterationPower",
+        "delta": 1
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Iteration",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"IterationPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "IterationPower": 2,
-    "Iteration": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "IterationPower",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Iteration",
+      "cost": 1,
+      "description": {
+        "plain": "The first time you draw a Status each turn, draw 2 cards.",
+        "runs": [
+          {
+            "text": "The first time you draw a Status each turn, draw "
+          },
+          {
+            "text": "2",
+            "source_var": "IterationPower"
+          },
+          {
+            "text": " cards."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Iteration+",
+      "cost": 1,
+      "description": {
+        "plain": "The first time you draw a Status each turn, draw 3 cards.",
+        "runs": [
+          {
+            "text": "The first time you draw a Status each turn, draw "
+          },
+          {
+            "text": "3",
+            "source_var": "IterationPower",
+            "style": "green"
+          },
+          {
+            "text": " cards."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Iteration",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"IterationPower\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

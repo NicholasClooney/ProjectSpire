@@ -1,40 +1,114 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "REAVE",
-  "class_name": "Reave",
-  "name": "Reave",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Reave.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "REAVE.title",
-    "description_key": "REAVE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Reave",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Reave.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "REAVE.title",
+      "description_key": "REAVE.description"
+    },
+    "vars": {
+      "Damage": 9,
+      "Cards": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/reave.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 2
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "SOUL",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ]
   },
-  "vars": {
-    "Damage": 9,
-    "Cards": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Reave",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 9 damage.\nAdd a Soul into your Draw Pile.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "9",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nAdd a "
+          },
+          {
+            "text": "Soul",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Reave+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 11 damage.\nAdd a Soul+ into your Draw Pile.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "11",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nAdd a "
+          },
+          {
+            "text": "Soul+",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "hover_tip_card",
-      "target": "SOUL",
-      "source": "HoverTipFactory.FromCard"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,30 +1,99 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "THINKING_AHEAD",
-  "class_name": "ThinkingAhead",
-  "name": "ThinkingAhead",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ThinkingAhead.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "THINKING_AHEAD.title",
-    "description_key": "THINKING_AHEAD.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "ThinkingAhead",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ThinkingAhead.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "THINKING_AHEAD.title",
+      "description_key": "THINKING_AHEAD.description"
+    },
+    "vars": {
+      "Cards": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/thinking_ahead.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ]
   },
-  "vars": {
-    "Cards": 2
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Thinking Ahead",
+      "cost": 0,
+      "description": {
+        "plain": "Draw 2 cards.\nPut 1 card from your Hand on top of your Draw Pile.",
+        "runs": [
+          {
+            "text": "Draw "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards"
+          },
+          {
+            "text": " cards.\nPut 1 card from your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " on top of your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Thinking Ahead+",
+      "cost": 0,
+      "description": {
+        "plain": "Draw 2 cards.\nPut 1 card from your Hand on top of your Draw Pile.",
+        "runs": [
+          {
+            "text": "Draw "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards"
+          },
+          {
+            "text": " cards.\nPut 1 card from your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " on top of your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    }
+  }
 }

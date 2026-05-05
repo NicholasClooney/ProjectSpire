@@ -1,31 +1,70 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BODYGUARD",
-  "class_name": "Bodyguard",
-  "name": "Bodyguard",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Bodyguard.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Basic",
-  "target": "Self",
-  "localization": {
-    "title_key": "BODYGUARD.title",
-    "description_key": "BODYGUARD.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Bodyguard",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Bodyguard.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Basic",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "BODYGUARD.title",
+      "description_key": "BODYGUARD.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/bodyguard.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/bodyguard.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Summon",
+        "delta": 2
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Summon",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Bodyguard",
+      "cost": 1,
+      "description": {
+        "plain": "Summon {Summon:diff()}.",
+        "runs": [
+          {
+            "text": "Summon",
+            "style": "gold"
+          },
+          {
+            "text": " {Summon:diff()}."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Bodyguard+",
+      "cost": 1,
+      "description": {
+        "plain": "Summon {Summon:diff()}.",
+        "runs": [
+          {
+            "text": "Summon",
+            "style": "gold"
+          },
+          {
+            "text": " {Summon:diff()}."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,33 +1,60 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "NOT_YET",
-  "class_name": "NotYet",
-  "name": "NotYet",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/NotYet.cs",
-  "cost": 2,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "NOT_YET.title",
-    "description_key": "NOT_YET.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "NotYet",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/NotYet.cs",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "NOT_YET.title",
+      "description_key": "NOT_YET.description"
+    },
+    "assets": [
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/beta/not_yet.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Heal",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Heal",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Not Yet",
+      "cost": 2,
+      "description": {
+        "plain": "Heal {Heal:diff()} HP.",
+        "runs": [
+          {
+            "text": "Heal {Heal:diff()} HP."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Not Yet+",
+      "cost": 2,
+      "description": {
+        "plain": "Heal {Heal:diff()} HP.",
+        "runs": [
+          {
+            "text": "Heal {Heal:diff()} HP."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

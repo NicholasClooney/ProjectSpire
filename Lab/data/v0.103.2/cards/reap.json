@@ -1,35 +1,86 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "REAP",
-  "class_name": "Reap",
-  "name": "Reap",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Reap.cs",
-  "cost": 3,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "REAP.title",
-    "description_key": "REAP.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Reap",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Reap.cs",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "REAP.title",
+      "description_key": "REAP.description"
+    },
+    "vars": {
+      "Damage": 27
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/reap.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/reap.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Retain"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 6
+      }
+    ]
   },
-  "vars": {
-    "Damage": 27
-  },
-  "keywords": [
-    "Retain"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 6
+  "resolved": {
+    "base": {
+      "title": "Reap",
+      "cost": 3,
+      "description": {
+        "plain": "Deal 27 damage.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "27",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Reap+",
+      "cost": 3,
+      "description": {
+        "plain": "Deal 33 damage.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "33",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

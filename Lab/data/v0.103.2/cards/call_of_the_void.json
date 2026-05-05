@@ -1,37 +1,112 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CALL_OF_THE_VOID",
-  "class_name": "CallOfTheVoid",
-  "name": "CallOfTheVoid",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CallOfTheVoid.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "CALL_OF_THE_VOID.title",
-    "description_key": "CALL_OF_THE_VOID.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "CallOfTheVoid",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CallOfTheVoid.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "CALL_OF_THE_VOID.title",
+      "description_key": "CALL_OF_THE_VOID.description"
+    },
+    "vars": {
+      "Cards": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/call_of_the_void.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/call_of_the_void.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Innate",
+      "Ethereal"
+    ],
+    "applies_powers": [
+      {
+        "power": "CallOfTheVoid",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Cards.BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Cards": 1
-  },
-  "keywords": [
-    "Innate",
-    "Ethereal"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "CallOfTheVoid",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Cards.BaseValue"
+  "resolved": {
+    "base": {
+      "title": "Call of the Void",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, add 1 random card into your Hand. It gains Ethereal.",
+        "runs": [
+          {
+            "text": "At the start of your turn, add "
+          },
+          {
+            "text": "1",
+            "source_var": "Cards"
+          },
+          {
+            "text": " random card into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ". It gains "
+          },
+          {
+            "text": "Ethereal",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Call of the Void+",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, add 1 random card into your Hand. It gains Ethereal.",
+        "runs": [
+          {
+            "text": "At the start of your turn, add "
+          },
+          {
+            "text": "1",
+            "source_var": "Cards"
+          },
+          {
+            "text": " random card into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ". It gains "
+          },
+          {
+            "text": "Ethereal",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

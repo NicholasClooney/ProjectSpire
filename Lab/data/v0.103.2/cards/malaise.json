@@ -1,50 +1,109 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "MALAISE",
-  "class_name": "Malaise",
-  "name": "Malaise",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Malaise.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "MALAISE.title",
-    "description_key": "MALAISE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Malaise",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Malaise.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "MALAISE.title",
+      "description_key": "MALAISE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/malaise.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "WeakPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Strength",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "-powerAmount"
+      },
+      {
+        "power": "Weak",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "powerAmount"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Strength",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "-powerAmount"
+  "resolved": {
+    "base": {
+      "title": "Malaise",
+      "cost": 0,
+      "description": {
+        "plain": "Enemy loses X Strength. Apply X Weak.",
+        "runs": [
+          {
+            "text": "Enemy loses X "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": ". Apply X "
+          },
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     },
-    {
-      "power": "Weak",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "powerAmount"
+    "upgraded": {
+      "title": "Malaise+",
+      "cost": 0,
+      "description": {
+        "plain": "Enemy loses X+1 Strength. Apply X+1 Weak.",
+        "runs": [
+          {
+            "text": "Enemy loses X+1 "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": ". Apply X+1 "
+          },
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "StrengthPower",
-      "source": "HoverTipFactory.FromPower"
-    },
-    {
-      "kind": "hover_tip_power",
-      "target": "WeakPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

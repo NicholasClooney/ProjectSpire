@@ -1,46 +1,111 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "TERRAFORMING",
-  "class_name": "Terraforming",
-  "name": "Terraforming",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Terraforming.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "TERRAFORMING.title",
-    "description_key": "TERRAFORMING.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Terraforming",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Terraforming.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "TERRAFORMING.title",
+      "description_key": "TERRAFORMING.description"
+    },
+    "vars": {
+      "VigorPower": 6
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/terraforming.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/terraforming.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "VigorPower",
+        "delta": 2
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "VigorPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Vigor",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"VigorPower\"].IntValue"
+      }
+    ]
   },
-  "vars": {
-    "VigorPower": 6,
-    "Vigor": 6
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "VigorPower",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Terraforming",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 6 Vigor.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "6",
+            "source_var": "VigorPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vigor",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Terraforming+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 8 Vigor.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "8",
+            "source_var": "VigorPower",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vigor",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Vigor",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"VigorPower\"].IntValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "VigorPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,43 +1,104 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ARSENAL",
-  "class_name": "Arsenal",
-  "name": "Arsenal",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Arsenal.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "ARSENAL.title",
-    "description_key": "ARSENAL.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Arsenal",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Arsenal.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "ARSENAL.title",
+      "description_key": "ARSENAL.description"
+    },
+    "vars": {
+      "ArsenalPower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/arsenal.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/arsenal.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Innate"
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Arsenal",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"ArsenalPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "ArsenalPower": 1,
-    "Arsenal": 1
-  },
-  "keywords": [
-    "Innate"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Arsenal",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"ArsenalPower\"].BaseValue"
+  "resolved": {
+    "base": {
+      "title": "Arsenal",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you create a card, gain 1 Strength.",
+        "runs": [
+          {
+            "text": "Whenever you create a card, gain "
+          },
+          {
+            "text": "1",
+            "source_var": "ArsenalPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Arsenal+",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you create a card, gain 1 Strength.",
+        "runs": [
+          {
+            "text": "Whenever you create a card, gain "
+          },
+          {
+            "text": "1",
+            "source_var": "ArsenalPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "StrengthPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

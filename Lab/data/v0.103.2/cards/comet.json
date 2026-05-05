@@ -1,59 +1,165 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "COMET",
-  "class_name": "Comet",
-  "name": "Comet",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Comet.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "COMET.title",
-    "description_key": "COMET.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 33,
-    "VulnerablePower": 3,
-    "Vulnerable": 3,
-    "WeakPower": 3,
-    "Weak": 3
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 11
-    }
-  ],
-  "applies_powers": [
-    {
-      "power": "Weak",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars.Weak.BaseValue"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Comet",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Comet.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "COMET.title",
+      "description_key": "COMET.description"
     },
-    {
-      "power": "Vulnerable",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "WeakPower",
-      "source": "HoverTipFactory.FromPower"
+    "vars": {
+      "Damage": 33,
+      "VulnerablePower": 3,
+      "WeakPower": 3
     },
-    {
-      "kind": "hover_tip_power",
-      "target": "VulnerablePower",
-      "source": "HoverTipFactory.FromPower"
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/comet.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/comet.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 11
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "WeakPower",
+        "source": "HoverTipFactory.FromPower"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "VulnerablePower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Weak",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars.Weak.BaseValue"
+      },
+      {
+        "power": "Vulnerable",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Comet",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 33 damage.\nApply 3 Weak.\nApply 3 Vulnerable.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "33",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nApply "
+          },
+          {
+            "text": "3",
+            "source_var": "WeakPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": ".\nApply "
+          },
+          {
+            "text": "3",
+            "source_var": "VulnerablePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Comet+",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 44 damage.\nApply 3 Weak.\nApply 3 Vulnerable.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "44",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nApply "
+          },
+          {
+            "text": "3",
+            "source_var": "WeakPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": ".\nApply "
+          },
+          {
+            "text": "3",
+            "source_var": "VulnerablePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

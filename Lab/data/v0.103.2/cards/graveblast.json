@@ -1,35 +1,114 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "GRAVEBLAST",
-  "class_name": "Graveblast",
-  "name": "Graveblast",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Graveblast.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "GRAVEBLAST.title",
-    "description_key": "GRAVEBLAST.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Graveblast",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Graveblast.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "GRAVEBLAST.title",
+      "description_key": "GRAVEBLAST.description"
+    },
+    "vars": {
+      "Damage": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/graveblast.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/graveblast.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 2
+      }
+    ]
   },
-  "vars": {
-    "Damage": 4
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Graveblast",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 4 damage.\nPut a card from your Discard Pile into your Hand.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "4",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nPut a card from your "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Graveblast+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 6 damage.\nPut a card from your Discard Pile into your Hand.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "6",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nPut a card from your "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

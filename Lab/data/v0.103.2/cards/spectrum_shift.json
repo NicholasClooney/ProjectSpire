@@ -1,34 +1,104 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SPECTRUM_SHIFT",
-  "class_name": "SpectrumShift",
-  "name": "SpectrumShift",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SpectrumShift.cs",
-  "cost": 2,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "SPECTRUM_SHIFT.title",
-    "description_key": "SPECTRUM_SHIFT.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "SpectrumShift",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SpectrumShift.cs",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SPECTRUM_SHIFT.title",
+      "description_key": "SPECTRUM_SHIFT.description"
+    },
+    "vars": {
+      "Cards": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/spectrum_shift.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/spectrum_shift.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "SpectrumShift",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Cards.BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Cards": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "SpectrumShift",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Cards.BaseValue"
+  "resolved": {
+    "base": {
+      "title": "Spectrum Shift",
+      "cost": 2,
+      "description": {
+        "plain": "At the start of your turn, add 1 random Colorless card into your Hand.",
+        "runs": [
+          {
+            "text": "At the start of your turn, add "
+          },
+          {
+            "text": "1",
+            "source_var": "Cards"
+          },
+          {
+            "text": " random Colorless card into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Spectrum Shift+",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, add 1 random Colorless card into your Hand.",
+        "runs": [
+          {
+            "text": "At the start of your turn, add "
+          },
+          {
+            "text": "1",
+            "source_var": "Cards"
+          },
+          {
+            "text": " random Colorless card into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,37 +1,97 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SOUL_STORM",
-  "class_name": "SoulStorm",
-  "name": "SoulStorm",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SoulStorm.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "SOUL_STORM.title",
-    "description_key": "SOUL_STORM.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "SoulStorm",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SoulStorm.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "SOUL_STORM.title",
+      "description_key": "SOUL_STORM.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/soul_storm.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/soul_storm.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "ExtraDamage",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "SOUL",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "ExtraDamage",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Soul Storm",
+      "cost": 1,
+      "description": {
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each Soul in your Exhaust Pile.",
+        "runs": [
+          {
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each "
+          },
+          {
+            "text": "Soul",
+            "style": "gold"
+          },
+          {
+            "text": " in your "
+          },
+          {
+            "text": "Exhaust Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Soul Storm+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each Soul in your Exhaust Pile.",
+        "runs": [
+          {
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each "
+          },
+          {
+            "text": "Soul",
+            "style": "gold"
+          },
+          {
+            "text": " in your "
+          },
+          {
+            "text": "Exhaust Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "hover_tip_card",
-      "target": "SOUL",
-      "source": "HoverTipFactory.FromCard"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

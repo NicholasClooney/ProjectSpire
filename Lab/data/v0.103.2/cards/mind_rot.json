@@ -1,35 +1,75 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "MIND_ROT",
-  "class_name": "MindRot",
-  "name": "MindRot",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MindRot.cs",
-  "cost": -1,
-  "type": "Status",
-  "rarity": "Status",
-  "target": "None",
-  "localization": {
-    "title_key": "MIND_ROT.title",
-    "description_key": "MIND_ROT.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "MindRot",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MindRot.cs",
+    "cost": -1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "localization": {
+      "table": "cards",
+      "title_key": "MIND_ROT.title",
+      "description_key": "MIND_ROT.description"
+    },
+    "vars": {
+      "MindRotPower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/token/mind_rot.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "MindRot",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"MindRotPower\"].IntValue"
+      }
+    ]
   },
-  "vars": {
-    "MindRotPower": 1,
-    "MindRot": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "MindRot",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"MindRotPower\"].IntValue"
+  "resolved": {
+    "base": {
+      "title": "Mind Rot",
+      "cost": -1,
+      "description": {
+        "plain": "Draw 1 fewer card each turn.",
+        "runs": [
+          {
+            "text": "Draw "
+          },
+          {
+            "text": "1",
+            "source_var": "MindRotPower"
+          },
+          {
+            "text": " fewer card each turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Mind Rot+",
+      "cost": -1,
+      "description": {
+        "plain": "Draw 1 fewer card each turn.",
+        "runs": [
+          {
+            "text": "Draw "
+          },
+          {
+            "text": "1",
+            "source_var": "MindRotPower"
+          },
+          {
+            "text": " fewer card each turn."
+          }
+        ]
+      }
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

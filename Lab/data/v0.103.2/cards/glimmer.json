@@ -1,34 +1,121 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "GLIMMER",
-  "class_name": "Glimmer",
-  "name": "Glimmer",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Glimmer.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "GLIMMER.title",
-    "description_key": "GLIMMER.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Glimmer",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Glimmer.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "GLIMMER.title",
+      "description_key": "GLIMMER.description"
+    },
+    "vars": {
+      "Cards": 3,
+      "PutBack": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/glimmer.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Cards": 3,
-    "PutBack": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Glimmer",
+      "cost": 1,
+      "description": {
+        "plain": "Draw 3 cards.\nPut 1 card from your Hand on top of your Draw Pile.",
+        "runs": [
+          {
+            "text": "Draw "
+          },
+          {
+            "text": "3",
+            "source_var": "Cards"
+          },
+          {
+            "text": " cards.\nPut "
+          },
+          {
+            "text": "1",
+            "source_var": "PutBack"
+          },
+          {
+            "text": " card from your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " on top of your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Glimmer+",
+      "cost": 1,
+      "description": {
+        "plain": "Draw 4 cards.\nPut 1 card from your Hand on top of your Draw Pile.",
+        "runs": [
+          {
+            "text": "Draw "
+          },
+          {
+            "text": "4",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " cards.\nPut "
+          },
+          {
+            "text": "1",
+            "source_var": "PutBack"
+          },
+          {
+            "text": " card from your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " on top of your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

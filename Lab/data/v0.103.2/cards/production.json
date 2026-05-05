@@ -1,35 +1,85 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "PRODUCTION",
-  "class_name": "Production",
-  "name": "Production",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Production.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "PRODUCTION.title",
-    "description_key": "PRODUCTION.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Production",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Production.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "PRODUCTION.title",
+      "description_key": "PRODUCTION.description"
+    },
+    "vars": {
+      "Energy": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/production.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/production.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Energy",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Energy": 2
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Energy",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Production",
+      "cost": 0,
+      "description": {
+        "plain": "Gain 2.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "2",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Production+",
+      "cost": 0,
+      "description": {
+        "plain": "Gain 3.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "3",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,69 +1,90 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "MAD_SCIENCE",
-  "class_name": "MadScience",
-  "name": "MadScience",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MadScience.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Event",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "MAD_SCIENCE.title",
-    "description_key": "MAD_SCIENCE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "MadScience",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MadScience.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Event",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "MAD_SCIENCE.title",
+      "description_key": "MAD_SCIENCE.description"
+    },
+    "vars": {
+      "Damage": 12,
+      "Block": 8,
+      "ViolenceHits": 3,
+      "CuriousReduction": 1
+    },
+    "keywords": [
+      "Innate"
+    ],
+    "applies_powers": [
+      {
+        "power": "Strength",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"ExpertiseStrength\"].BaseValue"
+      },
+      {
+        "power": "Dexterity",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"ExpertiseDexterity\"].BaseValue"
+      },
+      {
+        "power": "Curious",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"CuriousReduction\"].BaseValue"
+      },
+      {
+        "power": "Improvement",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      },
+      {
+        "power": "Weak",
+        "target_expr": "target",
+        "amount_expr": "base.DynamicVars[\"SappingWeak\"].BaseValue"
+      },
+      {
+        "power": "Vulnerable",
+        "target_expr": "target",
+        "amount_expr": "base.DynamicVars[\"SappingVulnerable\"].BaseValue"
+      },
+      {
+        "power": "Strangle",
+        "target_expr": "target",
+        "amount_expr": "base.DynamicVars[\"ChokingDamage\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Damage": 12,
-    "Block": 8,
-    "ViolenceHits": 3,
-    "CuriousReduction": 1
-  },
-  "keywords": [
-    "Innate"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Strength",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"ExpertiseStrength\"].BaseValue"
+  "resolved": {
+    "base": {
+      "title": "Mad Science",
+      "cost": 1,
+      "description": {
+        "plain": "{CardType:choose(Attack|Skill|Power):Deal {Damage:diff()} damage{Violence: {ViolenceHits:diff()} times|}.|Gain {Block:diff()} [gold]Block[/gold].|}{HasRider:{Sapping:\nApply {SappingWeak:diff()} [gold]Weak[/gold].\nApply {SappingVulnerable:diff()} [gold]Vulnerable[/gold].|}{Choking:\nWhenever you play a card this turn, the enemy loses {ChokingDamage:diff()} HP.|}{Energized:\nGain {EnergizedEnergy:energyIcons()}.|}{Wisdom:\nDraw {WisdomCards:diff()} cards.|}{Chaos:\nAdd a random card into your [gold]Hand[/gold]. It's free to play this turn.|}{Expertise:Gain {ExpertiseStrength:diff()} [gold]Strength[/gold].\nGain {ExpertiseDexterity:diff()} [gold]Dexterity[/gold].|}{Curious:Powers cost {CuriousReduction:diff()} {energyPrefix:energyIcons(1)} less.|}{Improvement:At the end of combat, [gold]Upgrade[/gold] a random card.|}|{CardType:choose(Attack|Skill|Power):\n???|\n???|???}}",
+        "runs": [
+          {
+            "text": "{CardType:choose(Attack|Skill|Power):Deal {Damage:diff()} damage{Violence: {ViolenceHits:diff()} times|}.|Gain {Block:diff()} [gold]Block[/gold].|}{HasRider:{Sapping:\nApply {SappingWeak:diff()} [gold]Weak[/gold].\nApply {SappingVulnerable:diff()} [gold]Vulnerable[/gold].|}{Choking:\nWhenever you play a card this turn, the enemy loses {ChokingDamage:diff()} HP.|}{Energized:\nGain {EnergizedEnergy:energyIcons()}.|}{Wisdom:\nDraw {WisdomCards:diff()} cards.|}{Chaos:\nAdd a random card into your [gold]Hand[/gold]. It's free to play this turn.|}{Expertise:Gain {ExpertiseStrength:diff()} [gold]Strength[/gold].\nGain {ExpertiseDexterity:diff()} [gold]Dexterity[/gold].|}{Curious:Powers cost {CuriousReduction:diff()} {energyPrefix:energyIcons(1)} less.|}{Improvement:At the end of combat, [gold]Upgrade[/gold] a random card.|}|{CardType:choose(Attack|Skill|Power):\n???|\n???|???}}"
+          }
+        ]
+      }
     },
-    {
-      "power": "Dexterity",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"ExpertiseDexterity\"].BaseValue"
-    },
-    {
-      "power": "Curious",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"CuriousReduction\"].BaseValue"
-    },
-    {
-      "power": "Improvement",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
-    },
-    {
-      "power": "Weak",
-      "target_expr": "target",
-      "amount_expr": "base.DynamicVars[\"SappingWeak\"].BaseValue"
-    },
-    {
-      "power": "Vulnerable",
-      "target_expr": "target",
-      "amount_expr": "base.DynamicVars[\"SappingVulnerable\"].BaseValue"
-    },
-    {
-      "power": "Strangle",
-      "target_expr": "target",
-      "amount_expr": "base.DynamicVars[\"ChokingDamage\"].BaseValue"
+    "upgraded": {
+      "title": "Mad Science+",
+      "cost": 1,
+      "description": {
+        "plain": "{CardType:choose(Attack|Skill|Power):Deal {Damage:diff()} damage{Violence: {ViolenceHits:diff()} times|}.|Gain {Block:diff()} [gold]Block[/gold].|}{HasRider:{Sapping:\nApply {SappingWeak:diff()} [gold]Weak[/gold].\nApply {SappingVulnerable:diff()} [gold]Vulnerable[/gold].|}{Choking:\nWhenever you play a card this turn, the enemy loses {ChokingDamage:diff()} HP.|}{Energized:\nGain {EnergizedEnergy:energyIcons()}.|}{Wisdom:\nDraw {WisdomCards:diff()} cards.|}{Chaos:\nAdd a random card into your [gold]Hand[/gold]. It's free to play this turn.|}{Expertise:Gain {ExpertiseStrength:diff()} [gold]Strength[/gold].\nGain {ExpertiseDexterity:diff()} [gold]Dexterity[/gold].|}{Curious:Powers cost {CuriousReduction:diff()} {energyPrefix:energyIcons(1)} less.|}{Improvement:At the end of combat, [gold]Upgrade[/gold] a random card.|}|{CardType:choose(Attack|Skill|Power):\n???|\n???|???}}",
+        "runs": [
+          {
+            "text": "{CardType:choose(Attack|Skill|Power):Deal {Damage:diff()} damage{Violence: {ViolenceHits:diff()} times|}.|Gain {Block:diff()} [gold]Block[/gold].|}{HasRider:{Sapping:\nApply {SappingWeak:diff()} [gold]Weak[/gold].\nApply {SappingVulnerable:diff()} [gold]Vulnerable[/gold].|}{Choking:\nWhenever you play a card this turn, the enemy loses {ChokingDamage:diff()} HP.|}{Energized:\nGain {EnergizedEnergy:energyIcons()}.|}{Wisdom:\nDraw {WisdomCards:diff()} cards.|}{Chaos:\nAdd a random card into your [gold]Hand[/gold]. It's free to play this turn.|}{Expertise:Gain {ExpertiseStrength:diff()} [gold]Strength[/gold].\nGain {ExpertiseDexterity:diff()} [gold]Dexterity[/gold].|}{Curious:Powers cost {CuriousReduction:diff()} {energyPrefix:energyIcons(1)} less.|}{Improvement:At the end of combat, [gold]Upgrade[/gold] a random card.|}|{CardType:choose(Attack|Skill|Power):\n???|\n???|???}}"
+          }
+        ]
+      }
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

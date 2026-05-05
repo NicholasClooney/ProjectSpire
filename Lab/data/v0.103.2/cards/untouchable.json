@@ -1,35 +1,95 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "UNTOUCHABLE",
-  "class_name": "Untouchable",
-  "name": "Untouchable",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Untouchable.cs",
-  "cost": 2,
-  "type": "Skill",
-  "rarity": "Common",
-  "target": "Self",
-  "localization": {
-    "title_key": "UNTOUCHABLE.title",
-    "description_key": "UNTOUCHABLE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Untouchable",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Untouchable.cs",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "UNTOUCHABLE.title",
+      "description_key": "UNTOUCHABLE.description"
+    },
+    "vars": {
+      "Block": 6
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/untouchable.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Sly"
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 2
+      }
+    ]
   },
-  "vars": {
-    "Block": 6
-  },
-  "keywords": [
-    "Sly"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Untouchable",
+      "cost": 2,
+      "description": {
+        "plain": "Gain 6 Block.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "6",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Untouchable+",
+      "cost": 2,
+      "description": {
+        "plain": "Gain 8 Block.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "8",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

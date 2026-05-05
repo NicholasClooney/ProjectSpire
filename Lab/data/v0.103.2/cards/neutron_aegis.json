@@ -1,46 +1,111 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "NEUTRON_AEGIS",
-  "class_name": "NeutronAegis",
-  "name": "NeutronAegis",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/NeutronAegis.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "NEUTRON_AEGIS.title",
-    "description_key": "NEUTRON_AEGIS.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "NeutronAegis",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/NeutronAegis.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "NEUTRON_AEGIS.title",
+      "description_key": "NEUTRON_AEGIS.description"
+    },
+    "vars": {
+      "PlatingPower": 8
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/neutron_aegis.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/neutron_aegis.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "PlatingPower",
+        "delta": 3
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "PlatingPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Plating",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"PlatingPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "PlatingPower": 8,
-    "Plating": 8
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "PlatingPower",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Neutron Aegis",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 8 Plating.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "8",
+            "source_var": "PlatingPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Plating",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Neutron Aegis+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 11 Plating.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "11",
+            "source_var": "PlatingPower",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Plating",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Plating",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"PlatingPower\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "PlatingPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

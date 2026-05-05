@@ -1,33 +1,78 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FINISHER",
-  "class_name": "Finisher",
-  "name": "Finisher",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Finisher.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "FINISHER.title",
-    "description_key": "FINISHER.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Finisher",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Finisher.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "FINISHER.title",
+      "description_key": "FINISHER.description"
+    },
+    "vars": {
+      "Damage": 6
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/finisher.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 2
+      }
+    ]
   },
-  "vars": {
-    "Damage": 6
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Finisher",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 6 damage for each Attack already played this turn.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "6",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage for each Attack already played this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Finisher+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 8 damage for each Attack already played this turn.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "8",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage for each Attack already played this turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,28 +1,68 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BYRDONIS_EGG",
-  "class_name": "ByrdonisEgg",
-  "name": "ByrdonisEgg",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ByrdonisEgg.cs",
-  "cost": -1,
-  "type": "Quest",
-  "rarity": "Quest",
-  "target": "None",
-  "localization": {
-    "title_key": "BYRDONIS_EGG.title",
-    "description_key": "BYRDONIS_EGG.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "ByrdonisEgg",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ByrdonisEgg.cs",
+    "cost": -1,
+    "type": "Quest",
+    "rarity": "Quest",
+    "target": "None",
+    "localization": {
+      "table": "cards",
+      "title_key": "BYRDONIS_EGG.title",
+      "description_key": "BYRDONIS_EGG.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/quest/byrdonis_egg.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Unplayable"
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Unplayable"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Byrdonis Egg",
+      "cost": -1,
+      "description": {
+        "plain": "Can be hatched at a Rest Site.",
+        "runs": [
+          {
+            "text": "Can be hatched at a "
+          },
+          {
+            "text": "Rest Site",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Byrdonis Egg+",
+      "cost": -1,
+      "description": {
+        "plain": "Can be hatched at a Rest Site.",
+        "runs": [
+          {
+            "text": "Can be hatched at a "
+          },
+          {
+            "text": "Rest Site",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    }
+  }
 }

@@ -1,35 +1,100 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BUNDLE_OF_JOY",
-  "class_name": "BundleOfJoy",
-  "name": "BundleOfJoy",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BundleOfJoy.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "BUNDLE_OF_JOY.title",
-    "description_key": "BUNDLE_OF_JOY.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "BundleOfJoy",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BundleOfJoy.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "BUNDLE_OF_JOY.title",
+      "description_key": "BUNDLE_OF_JOY.description"
+    },
+    "vars": {
+      "Cards": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/bundle_of_joy.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/bundle_of_joy.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Cards": 3
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Bundle of Joy",
+      "cost": 1,
+      "description": {
+        "plain": "Add 3 random Colorless cards into your Hand.",
+        "runs": [
+          {
+            "text": "Add "
+          },
+          {
+            "text": "3",
+            "source_var": "Cards"
+          },
+          {
+            "text": " random Colorless cards into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Bundle of Joy+",
+      "cost": 1,
+      "description": {
+        "plain": "Add 4 random Colorless cards into your Hand.",
+        "runs": [
+          {
+            "text": "Add "
+          },
+          {
+            "text": "4",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " random Colorless cards into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

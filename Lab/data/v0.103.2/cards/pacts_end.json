@@ -1,34 +1,107 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "PACTS_END",
-  "class_name": "PactsEnd",
-  "name": "PactsEnd",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PactsEnd.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "PACTS_END.title",
-    "description_key": "PACTS_END.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "PactsEnd",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PactsEnd.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "PACTS_END.title",
+      "description_key": "PACTS_END.description"
+    },
+    "vars": {
+      "Damage": 17,
+      "Cards": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/pacts_end.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 6
+      }
+    ]
   },
-  "vars": {
-    "Damage": 17,
-    "Cards": 3
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 6
+  "resolved": {
+    "base": {
+      "title": "Pact's End",
+      "cost": 0,
+      "description": {
+        "plain": "Can only be played if you have 3 or more cards in your Exhaust Pile.\nDeal 17 damage to ALL enemies.",
+        "runs": [
+          {
+            "text": "Can only be played if you have "
+          },
+          {
+            "text": "3",
+            "source_var": "Cards"
+          },
+          {
+            "text": " or more cards in your "
+          },
+          {
+            "text": "Exhaust Pile",
+            "style": "gold"
+          },
+          {
+            "text": ".\nDeal "
+          },
+          {
+            "text": "17",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage to ALL enemies."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Pact's End+",
+      "cost": 0,
+      "description": {
+        "plain": "Can only be played if you have 3 or more cards in your Exhaust Pile.\nDeal 23 damage to ALL enemies.",
+        "runs": [
+          {
+            "text": "Can only be played if you have "
+          },
+          {
+            "text": "3",
+            "source_var": "Cards"
+          },
+          {
+            "text": " or more cards in your "
+          },
+          {
+            "text": "Exhaust Pile",
+            "style": "gold"
+          },
+          {
+            "text": ".\nDeal "
+          },
+          {
+            "text": "23",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage to ALL enemies."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

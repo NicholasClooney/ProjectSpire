@@ -1,36 +1,107 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "PAGESTORM",
-  "class_name": "Pagestorm",
-  "name": "Pagestorm",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Pagestorm.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "PAGESTORM.title",
-    "description_key": "PAGESTORM.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Pagestorm",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Pagestorm.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "PAGESTORM.title",
+      "description_key": "PAGESTORM.description"
+    },
+    "vars": {
+      "Cards": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/pagestorm.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/pagestorm.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Ethereal"
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Pagestorm",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Cards.BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Cards": 1
-  },
-  "keywords": [
-    "Ethereal"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Pagestorm",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Cards.BaseValue"
+  "resolved": {
+    "base": {
+      "title": "Pagestorm",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you draw an Ethereal card, draw 1 card.",
+        "runs": [
+          {
+            "text": "Whenever you draw an "
+          },
+          {
+            "text": "Ethereal",
+            "style": "gold"
+          },
+          {
+            "text": " card, draw "
+          },
+          {
+            "text": "1",
+            "source_var": "Cards"
+          },
+          {
+            "text": " card."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Pagestorm+",
+      "cost": 0,
+      "description": {
+        "plain": "Whenever you draw an Ethereal card, draw 1 card.",
+        "runs": [
+          {
+            "text": "Whenever you draw an "
+          },
+          {
+            "text": "Ethereal",
+            "style": "gold"
+          },
+          {
+            "text": " card, draw "
+          },
+          {
+            "text": "1",
+            "source_var": "Cards"
+          },
+          {
+            "text": " card."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

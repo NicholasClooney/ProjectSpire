@@ -1,33 +1,78 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DAGGER_SPRAY",
-  "class_name": "DaggerSpray",
-  "name": "DaggerSpray",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DaggerSpray.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "DAGGER_SPRAY.title",
-    "description_key": "DAGGER_SPRAY.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "DaggerSpray",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DaggerSpray.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "DAGGER_SPRAY.title",
+      "description_key": "DAGGER_SPRAY.description"
+    },
+    "vars": {
+      "Damage": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/dagger_spray.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 2
+      }
+    ]
   },
-  "vars": {
-    "Damage": 4
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Dagger Spray",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 4 damage to ALL enemies twice.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "4",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage to ALL enemies twice."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Dagger Spray+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 6 damage to ALL enemies twice.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "6",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage to ALL enemies twice."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

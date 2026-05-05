@@ -1,32 +1,77 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FRANTIC_ESCAPE",
-  "class_name": "FranticEscape",
-  "name": "FranticEscape",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FranticEscape.cs",
-  "cost": 1,
-  "type": "Status",
-  "rarity": "Status",
-  "target": "Self",
-  "localization": {
-    "title_key": "FRANTIC_ESCAPE.title",
-    "description_key": "FRANTIC_ESCAPE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "FranticEscape",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FranticEscape.cs",
+    "cost": 1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "FRANTIC_ESCAPE.title",
+      "description_key": "FRANTIC_ESCAPE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/status/frantic_escape.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/status/beta/frantic_escape.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "SandpitPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "SandpitPower",
-      "source": "HoverTipFactory.FromPower"
+  "resolved": {
+    "base": {
+      "title": "Frantic Escape",
+      "cost": 1,
+      "description": {
+        "plain": "Get farther away.\nIncrease Sandpit by 1.\nIncrease the cost of this card by 1.",
+        "runs": [
+          {
+            "text": "Get farther away.\nIncrease "
+          },
+          {
+            "text": "Sandpit",
+            "style": "gold"
+          },
+          {
+            "text": " by 1.\nIncrease the cost of this card by 1."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Frantic Escape+",
+      "cost": 1,
+      "description": {
+        "plain": "Get farther away.\nIncrease Sandpit by 1.\nIncrease the cost of this card by 1.",
+        "runs": [
+          {
+            "text": "Get farther away.\nIncrease "
+          },
+          {
+            "text": "Sandpit",
+            "style": "gold"
+          },
+          {
+            "text": " by 1.\nIncrease the cost of this card by 1."
+          }
+        ]
+      }
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

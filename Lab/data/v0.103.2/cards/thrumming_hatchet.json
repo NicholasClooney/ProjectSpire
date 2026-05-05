@@ -1,33 +1,92 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "THRUMMING_HATCHET",
-  "class_name": "ThrummingHatchet",
-  "name": "ThrummingHatchet",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ThrummingHatchet.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "THRUMMING_HATCHET.title",
-    "description_key": "THRUMMING_HATCHET.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "ThrummingHatchet",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ThrummingHatchet.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "THRUMMING_HATCHET.title",
+      "description_key": "THRUMMING_HATCHET.description"
+    },
+    "vars": {
+      "Damage": 11
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/thrumming_hatchet.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {
-    "Damage": 11
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Thrumming Hatchet",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 11 damage.\nAt the start of your next turn, return this to your Hand.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "11",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nAt the start of your next turn, return this to your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Thrumming Hatchet+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 14 damage.\nAt the start of your next turn, return this to your Hand.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "14",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nAt the start of your next turn, return this to your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

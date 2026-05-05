@@ -1,46 +1,123 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BLADE_DANCE",
-  "class_name": "BladeDance",
-  "name": "BladeDance",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BladeDance.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Common",
-  "target": "Self",
-  "localization": {
-    "title_key": "BLADE_DANCE.title",
-    "description_key": "BLADE_DANCE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Cards": 3
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 1
-    }
-  ],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "hover_tip_card",
-      "target": "SHIV",
-      "source": "HoverTipFactory.FromCard"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "BladeDance",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BladeDance.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "BLADE_DANCE.title",
+      "description_key": "BLADE_DANCE.description"
     },
-    {
-      "kind": "creates_card",
-      "target": "SHIV",
-      "source": "CreateInHand"
+    "vars": {
+      "Cards": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/blade_dance.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "SHIV",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "creates_card",
+        "target": "SHIV",
+        "source": "CreateInHand"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Blade Dance",
+      "cost": 1,
+      "description": {
+        "plain": "Add 3 Shivs into your Hand.",
+        "runs": [
+          {
+            "text": "Add "
+          },
+          {
+            "text": "3",
+            "source_var": "Cards"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Shivs",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Blade Dance+",
+      "cost": 1,
+      "description": {
+        "plain": "Add 4 Shivs into your Hand.",
+        "runs": [
+          {
+            "text": "Add "
+          },
+          {
+            "text": "4",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Shivs",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,33 +1,104 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SHATTER",
-  "class_name": "Shatter",
-  "name": "Shatter",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Shatter.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "SHATTER.title",
-    "description_key": "SHATTER.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Shatter",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Shatter.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "SHATTER.title",
+      "description_key": "SHATTER.description"
+    },
+    "vars": {
+      "Damage": 11
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/shatter.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/shatter.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 4
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Evoke",
+        "source": "HoverTipFactory.Static"
+      }
+    ]
   },
-  "vars": {
-    "Damage": 11
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 4
+  "resolved": {
+    "base": {
+      "title": "Shatter",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 11 damage to ALL enemies.\nEvoke all of your Orbs.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "11",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage to ALL enemies.\n"
+          },
+          {
+            "text": "Evoke",
+            "style": "gold"
+          },
+          {
+            "text": " all of your Orbs."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Shatter+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 15 damage to ALL enemies.\nEvoke all of your Orbs.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "15",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage to ALL enemies.\n"
+          },
+          {
+            "text": "Evoke",
+            "style": "gold"
+          },
+          {
+            "text": " all of your Orbs."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,35 +1,95 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DEFEND_DEFECT",
-  "class_name": "DefendDefect",
-  "name": "DefendDefect",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DefendDefect.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Basic",
-  "target": "Self",
-  "localization": {
-    "title_key": "DEFEND_DEFECT.title",
-    "description_key": "DEFEND_DEFECT.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "DefendDefect",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DefendDefect.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Basic",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "DEFEND_DEFECT.title",
+      "description_key": "DEFEND_DEFECT.description"
+    },
+    "vars": {
+      "Block": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/defend_defect.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tags": [
+      "Defend"
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {
-    "Block": 5
-  },
-  "keywords": [],
-  "tags": [
-    "Defend"
-  ],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Defend",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 5 Block.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "5",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Defend+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 8 Block.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "8",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

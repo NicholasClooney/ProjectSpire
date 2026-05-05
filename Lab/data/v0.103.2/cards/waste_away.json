@@ -1,35 +1,80 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "WASTE_AWAY",
-  "class_name": "WasteAway",
-  "name": "WasteAway",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/WasteAway.cs",
-  "cost": -1,
-  "type": "Status",
-  "rarity": "Status",
-  "target": "None",
-  "localization": {
-    "title_key": "WASTE_AWAY.title",
-    "description_key": "WASTE_AWAY.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "WasteAway",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/WasteAway.cs",
+    "cost": -1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "localization": {
+      "table": "cards",
+      "title_key": "WASTE_AWAY.title",
+      "description_key": "WASTE_AWAY.description"
+    },
+    "vars": {
+      "WasteAwayPower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/token/waste_away.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/token/beta/waste_away.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "WasteAway",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"WasteAwayPower\"].IntValue"
+      }
+    ]
   },
-  "vars": {
-    "WasteAwayPower": 1,
-    "WasteAway": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "WasteAway",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"WasteAwayPower\"].IntValue"
+  "resolved": {
+    "base": {
+      "title": "Waste Away",
+      "cost": -1,
+      "description": {
+        "plain": "Gain 1 less  per turn.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "1",
+            "source_var": "WasteAwayPower"
+          },
+          {
+            "text": " less  per turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Waste Away+",
+      "cost": -1,
+      "description": {
+        "plain": "Gain 1 less  per turn.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "1",
+            "source_var": "WasteAwayPower"
+          },
+          {
+            "text": " less  per turn."
+          }
+        ]
+      }
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

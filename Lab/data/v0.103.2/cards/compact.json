@@ -1,44 +1,158 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "COMPACT",
-  "class_name": "Compact",
-  "name": "Compact",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Compact.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "COMPACT.title",
-    "description_key": "COMPACT.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Block": 6
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 1
-    }
-  ],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "hover_tip_card",
-      "target": "FUEL",
-      "source": "HoverTipFactory.FromCard"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Compact",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Compact.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "COMPACT.title",
+      "description_key": "COMPACT.description"
     },
-    {
-      "kind": "creates_card",
-      "target": "FUEL",
-      "source": "CreateCard"
+    "vars": {
+      "Block": 6
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/compact.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/compact.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Transform",
+        "source": "HoverTipFactory.Static"
+      },
+      {
+        "kind": "hover_tip_card",
+        "target": "FUEL",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "creates_card",
+        "target": "FUEL",
+        "source": "CreateCard"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Compact",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 6 Block.\nTransform all Status cards in your Hand into Fuel.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "6",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\n"
+          },
+          {
+            "text": "Transform",
+            "style": "gold"
+          },
+          {
+            "text": " all Status cards in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " into "
+          },
+          {
+            "text": "Fuel",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Compact+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 7 Block.\nTransform all Status cards in your Hand into Fuel+.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "7",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\n"
+          },
+          {
+            "text": "Transform",
+            "style": "gold"
+          },
+          {
+            "text": " all Status cards in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " into "
+          },
+          {
+            "text": "Fuel+",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

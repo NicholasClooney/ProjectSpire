@@ -1,40 +1,133 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "EIDOLON",
-  "class_name": "Eidolon",
-  "name": "Eidolon",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Eidolon.cs",
-  "cost": 2,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "EIDOLON.title",
-    "description_key": "EIDOLON.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Eidolon",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Eidolon.cs",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "EIDOLON.title",
+      "description_key": "EIDOLON.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/eidolon.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/eidolon.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "IntangiblePower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Intangible",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Intangible",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
+  "resolved": {
+    "base": {
+      "title": "Eidolon",
+      "cost": 2,
+      "description": {
+        "plain": "Exhaust your Hand.\nIf 9 cards were Exhausted this way, gain 1 Intangible.",
+        "runs": [
+          {
+            "text": "Exhaust",
+            "style": "gold"
+          },
+          {
+            "text": " your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ".\nIf 9 cards were "
+          },
+          {
+            "text": "Exhausted",
+            "style": "gold"
+          },
+          {
+            "text": " this way, gain 1 "
+          },
+          {
+            "text": "Intangible",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Eidolon+",
+      "cost": 1,
+      "description": {
+        "plain": "Exhaust your Hand.\nIf 9 cards were Exhausted this way, gain 1 Intangible.",
+        "runs": [
+          {
+            "text": "Exhaust",
+            "style": "gold"
+          },
+          {
+            "text": " your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ".\nIf 9 cards were "
+          },
+          {
+            "text": "Exhausted",
+            "style": "gold"
+          },
+          {
+            "text": " this way, gain 1 "
+          },
+          {
+            "text": "Intangible",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "IntangiblePower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

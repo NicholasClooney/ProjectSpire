@@ -1,35 +1,123 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "HAND_TRICK",
-  "class_name": "HandTrick",
-  "name": "HandTrick",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HandTrick.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "HAND_TRICK.title",
-    "description_key": "HAND_TRICK.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "HandTrick",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HandTrick.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "HAND_TRICK.title",
+      "description_key": "HAND_TRICK.description"
+    },
+    "vars": {
+      "Block": 7
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/hand_trick.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Sly"
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {
-    "Block": 7
-  },
-  "keywords": [
-    "Sly"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Hand Trick",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 7 Block.\nAdd Sly to a Skill in your Hand this turn.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "7",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nAdd "
+          },
+          {
+            "text": "Sly",
+            "style": "gold"
+          },
+          {
+            "text": " to a Skill in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Hand Trick+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 10 Block.\nAdd Sly to a Skill in your Hand this turn.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "10",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nAdd "
+          },
+          {
+            "text": "Sly",
+            "style": "gold"
+          },
+          {
+            "text": " to a Skill in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

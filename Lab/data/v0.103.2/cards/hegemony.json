@@ -1,44 +1,109 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "HEGEMONY",
-  "class_name": "Hegemony",
-  "name": "Hegemony",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Hegemony.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "HEGEMONY.title",
-    "description_key": "HEGEMONY.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 15,
-    "Energy": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 3
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Hegemony",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Hegemony.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "HEGEMONY.title",
+      "description_key": "HEGEMONY.description"
     },
-    {
-      "var": "Energy",
-      "delta": 1
+    "vars": {
+      "Damage": 15,
+      "Energy": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/hegemony.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/hegemony.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 3
+      },
+      {
+        "var": "Energy",
+        "delta": 1
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "EnergyNextTurn",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Energy.IntValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Hegemony",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 15 damage.\nNext turn, gain 2.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "15",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nNext turn, gain "
+          },
+          {
+            "text": "2",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Hegemony+",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 18 damage.\nNext turn, gain 3.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "18",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nNext turn, gain "
+          },
+          {
+            "text": "3",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "EnergyNextTurn",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Energy.IntValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

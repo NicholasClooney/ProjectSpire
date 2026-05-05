@@ -1,33 +1,78 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "STOMP",
-  "class_name": "Stomp",
-  "name": "Stomp",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Stomp.cs",
-  "cost": 3,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "STOMP.title",
-    "description_key": "STOMP.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Stomp",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Stomp.cs",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "STOMP.title",
+      "description_key": "STOMP.description"
+    },
+    "vars": {
+      "Damage": 12
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/stomp.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {
-    "Damage": 12
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Stomp",
+      "cost": 3,
+      "description": {
+        "plain": "Deal 12 damage to ALL enemies.\nCosts 1 less  for each Attack played this turn.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "12",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage to ALL enemies.\nCosts 1 less  for each Attack played this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Stomp+",
+      "cost": 3,
+      "description": {
+        "plain": "Deal 15 damage to ALL enemies.\nCosts 1 less  for each Attack played this turn.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "15",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage to ALL enemies.\nCosts 1 less  for each Attack played this turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

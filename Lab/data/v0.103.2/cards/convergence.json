@@ -1,51 +1,127 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CONVERGENCE",
-  "class_name": "Convergence",
-  "name": "Convergence",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Convergence.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "CONVERGENCE.title",
-    "description_key": "CONVERGENCE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Energy": 1
-  },
-  "keywords": [
-    "Retain"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Stars",
-      "delta": 1
-    }
-  ],
-  "applies_powers": [
-    {
-      "power": "RetainHand",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Convergence",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Convergence.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "CONVERGENCE.title",
+      "description_key": "CONVERGENCE.description"
     },
-    {
-      "power": "EnergyNextTurn",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Energy.BaseValue"
+    "vars": {
+      "Energy": 1
     },
-    {
-      "power": "StarNextTurn",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Stars.BaseValue"
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/convergence.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/convergence.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Retain"
+    ],
+    "upgrades": [
+      {
+        "var": "Stars",
+        "delta": 1
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "RetainHand",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      },
+      {
+        "power": "EnergyNextTurn",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Energy.BaseValue"
+      },
+      {
+        "power": "StarNextTurn",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Stars.BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Convergence",
+      "cost": 1,
+      "description": {
+        "plain": "Next turn,\ngain 1 and {Stars:starIcons()}.\nRetain your Hand this turn.",
+        "runs": [
+          {
+            "text": "Next turn,\ngain "
+          },
+          {
+            "text": "1",
+            "source_var": "Energy"
+          },
+          {
+            "text": " and {Stars:starIcons()}.\n"
+          },
+          {
+            "text": "Retain",
+            "style": "gold"
+          },
+          {
+            "text": " your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Convergence+",
+      "cost": 1,
+      "description": {
+        "plain": "Next turn,\ngain 1 and {Stars:starIcons()}.\nRetain your Hand this turn.",
+        "runs": [
+          {
+            "text": "Next turn,\ngain "
+          },
+          {
+            "text": "1",
+            "source_var": "Energy"
+          },
+          {
+            "text": " and {Stars:starIcons()}.\n"
+          },
+          {
+            "text": "Retain",
+            "style": "gold"
+          },
+          {
+            "text": " your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      }
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

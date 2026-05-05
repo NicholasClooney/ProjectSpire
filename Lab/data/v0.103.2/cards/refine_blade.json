@@ -1,39 +1,94 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "REFINE_BLADE",
-  "class_name": "RefineBlade",
-  "name": "RefineBlade",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/RefineBlade.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Common",
-  "target": "Self",
-  "localization": {
-    "title_key": "REFINE_BLADE.title",
-    "description_key": "REFINE_BLADE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "RefineBlade",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/RefineBlade.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "REFINE_BLADE.title",
+      "description_key": "REFINE_BLADE.description"
+    },
+    "vars": {
+      "Energy": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/refine_blade.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/refine_blade.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Forge",
+        "delta": 4
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "EnergyNextTurn",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Energy.BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Energy": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Forge",
-      "delta": 4
+  "resolved": {
+    "base": {
+      "title": "Refine Blade",
+      "cost": 1,
+      "description": {
+        "plain": "Forge {Forge:diff()}.\nNext turn, gain 1.",
+        "runs": [
+          {
+            "text": "Forge",
+            "style": "gold"
+          },
+          {
+            "text": " {Forge:diff()}.\nNext turn, gain "
+          },
+          {
+            "text": "1",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Refine Blade+",
+      "cost": 1,
+      "description": {
+        "plain": "Forge {Forge:diff()}.\nNext turn, gain 1.",
+        "runs": [
+          {
+            "text": "Forge",
+            "style": "gold"
+          },
+          {
+            "text": " {Forge:diff()}.\nNext turn, gain "
+          },
+          {
+            "text": "1",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "EnergyNextTurn",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Energy.BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

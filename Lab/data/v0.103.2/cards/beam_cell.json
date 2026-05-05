@@ -1,51 +1,125 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BEAM_CELL",
-  "class_name": "BeamCell",
-  "name": "BeamCell",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BeamCell.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "BEAM_CELL.title",
-    "description_key": "BEAM_CELL.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 3,
-    "VulnerablePower": 1,
-    "Vulnerable": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 1
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "BeamCell",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BeamCell.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "BEAM_CELL.title",
+      "description_key": "BEAM_CELL.description"
     },
-    {
-      "var": "Vulnerable",
-      "delta": 1
+    "vars": {
+      "Damage": 3,
+      "VulnerablePower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beam_cell.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 1
+      },
+      {
+        "var": "Vulnerable",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "VulnerablePower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Vulnerable",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Beam Cell",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 3 damage.\nApply 1 Vulnerable.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "3",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nApply "
+          },
+          {
+            "text": "1",
+            "source_var": "VulnerablePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Beam Cell+",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 4 damage.\nApply 1 Vulnerable.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "4",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nApply "
+          },
+          {
+            "text": "1",
+            "source_var": "VulnerablePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Vulnerable",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "VulnerablePower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

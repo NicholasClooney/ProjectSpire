@@ -1,35 +1,66 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "REND",
-  "class_name": "Rend",
-  "name": "Rend",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Rend.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "REND.title",
-    "description_key": "REND.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "CalculationBase",
-      "delta": 3
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Rend",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Rend.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "REND.title",
+      "description_key": "REND.description"
     },
-    {
-      "var": "ExtraDamage",
-      "delta": 3
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/rend.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/rend.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "CalculationBase",
+        "delta": 3
+      },
+      {
+        "var": "ExtraDamage",
+        "delta": 3
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Rend",
+      "cost": 2,
+      "description": {
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each unique debuff on the enemy.",
+        "runs": [
+          {
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each unique debuff on the enemy."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Rend+",
+      "cost": 2,
+      "description": {
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each unique debuff on the enemy.",
+        "runs": [
+          {
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each unique debuff on the enemy."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

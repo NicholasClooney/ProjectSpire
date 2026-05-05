@@ -1,39 +1,111 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "PILLAR_OF_CREATION",
-  "class_name": "PillarOfCreation",
-  "name": "PillarOfCreation",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PillarOfCreation.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "PILLAR_OF_CREATION.title",
-    "description_key": "PILLAR_OF_CREATION.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "PillarOfCreation",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PillarOfCreation.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "PILLAR_OF_CREATION.title",
+      "description_key": "PILLAR_OF_CREATION.description"
+    },
+    "vars": {
+      "Block": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/pillar_of_creation.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/pillar_of_creation.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "PillarOfCreation",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Block.BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Block": 3
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Pillar of Creation",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you create a card, gain 3 Block.",
+        "runs": [
+          {
+            "text": "Whenever you create a card, gain "
+          },
+          {
+            "text": "3",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Pillar of Creation+",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you create a card, gain 4 Block.",
+        "runs": [
+          {
+            "text": "Whenever you create a card, gain "
+          },
+          {
+            "text": "4",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "PillarOfCreation",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Block.BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

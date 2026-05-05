@@ -1,39 +1,132 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BONE_SHARDS",
-  "class_name": "BoneShards",
-  "name": "BoneShards",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BoneShards.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "BONE_SHARDS.title",
-    "description_key": "BONE_SHARDS.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Block": 9
-  },
-  "keywords": [],
-  "tags": [
-    "OstyAttack"
-  ],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 3
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "BoneShards",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BoneShards.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "BONE_SHARDS.title",
+      "description_key": "BONE_SHARDS.description"
     },
-    {
-      "var": "OstyDamage",
-      "delta": 3
+    "vars": {
+      "Block": 9
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/bone_shards.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/bone_shards.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tags": [
+      "OstyAttack"
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 3
+      },
+      {
+        "var": "OstyDamage",
+        "delta": 3
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Bone Shards",
+      "cost": 1,
+      "description": {
+        "plain": "If Osty is alive, he deals {OstyDamage:diff()} damage to ALL enemies and you gain 9 Block.\nOsty dies.",
+        "runs": [
+          {
+            "text": "If "
+          },
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " is alive, he deals {OstyDamage:diff()} damage to ALL enemies and you gain "
+          },
+          {
+            "text": "9",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\n"
+          },
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " dies."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Bone Shards+",
+      "cost": 1,
+      "description": {
+        "plain": "If Osty is alive, he deals {OstyDamage:diff()} damage to ALL enemies and you gain 12 Block.\nOsty dies.",
+        "runs": [
+          {
+            "text": "If "
+          },
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " is alive, he deals {OstyDamage:diff()} damage to ALL enemies and you gain "
+          },
+          {
+            "text": "12",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\n"
+          },
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " dies."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

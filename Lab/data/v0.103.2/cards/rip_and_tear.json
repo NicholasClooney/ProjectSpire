@@ -1,33 +1,78 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "RIP_AND_TEAR",
-  "class_name": "RipAndTear",
-  "name": "RipAndTear",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/RipAndTear.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Event",
-  "target": "RandomEnemy",
-  "localization": {
-    "title_key": "RIP_AND_TEAR.title",
-    "description_key": "RIP_AND_TEAR.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "RipAndTear",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/RipAndTear.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Event",
+    "target": "RandomEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "RIP_AND_TEAR.title",
+      "description_key": "RIP_AND_TEAR.description"
+    },
+    "vars": {
+      "Damage": 7
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/event/rip_and_tear.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 2
+      }
+    ]
   },
-  "vars": {
-    "Damage": 7
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Rip and Tear",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 7 damage to a random enemy twice.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "7",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage to a random enemy twice."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Rip and Tear+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 9 damage to a random enemy twice.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "9",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage to a random enemy twice."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

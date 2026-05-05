@@ -1,51 +1,145 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "PATTER",
-  "class_name": "Patter",
-  "name": "Patter",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Patter.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Common",
-  "target": "Self",
-  "localization": {
-    "title_key": "PATTER.title",
-    "description_key": "PATTER.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Block": 9,
-    "VigorPower": 2,
-    "Vigor": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 2
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Patter",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Patter.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "PATTER.title",
+      "description_key": "PATTER.description"
     },
-    {
-      "var": "VigorPower",
-      "delta": 1
+    "vars": {
+      "Block": 9,
+      "VigorPower": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/patter.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/patter.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 2
+      },
+      {
+        "var": "VigorPower",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "VigorPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Vigor",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"VigorPower\"].IntValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Patter",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 9 Block.\nGain 2 Vigor.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "9",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nGain "
+          },
+          {
+            "text": "2",
+            "source_var": "VigorPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vigor",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Patter+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 11 Block.\nGain 3 Vigor.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "11",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nGain "
+          },
+          {
+            "text": "3",
+            "source_var": "VigorPower",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vigor",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Vigor",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"VigorPower\"].IntValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "VigorPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

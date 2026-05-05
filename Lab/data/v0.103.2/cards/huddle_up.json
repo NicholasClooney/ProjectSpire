@@ -1,35 +1,86 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "HUDDLE_UP",
-  "class_name": "HuddleUp",
-  "name": "HuddleUp",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HuddleUp.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "AllAllies",
-  "localization": {
-    "title_key": "HUDDLE_UP.title",
-    "description_key": "HUDDLE_UP.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "HuddleUp",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HuddleUp.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AllAllies",
+    "localization": {
+      "table": "cards",
+      "title_key": "HUDDLE_UP.title",
+      "description_key": "HUDDLE_UP.description"
+    },
+    "vars": {
+      "Cards": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/huddle_up.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/huddle_up.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Cards": 2
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Huddle Up",
+      "cost": 1,
+      "description": {
+        "plain": "ALL players draw 2 cards.",
+        "runs": [
+          {
+            "text": "ALL players draw "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards"
+          },
+          {
+            "text": " cards."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Huddle Up+",
+      "cost": 1,
+      "description": {
+        "plain": "ALL players draw 3 cards.",
+        "runs": [
+          {
+            "text": "ALL players draw "
+          },
+          {
+            "text": "3",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " cards."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

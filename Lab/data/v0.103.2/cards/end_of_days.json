@@ -1,46 +1,116 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "END_OF_DAYS",
-  "class_name": "EndOfDays",
-  "name": "EndOfDays",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/EndOfDays.cs",
-  "cost": 3,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "END_OF_DAYS.title",
-    "description_key": "END_OF_DAYS.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "EndOfDays",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/EndOfDays.cs",
+    "cost": 3,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "END_OF_DAYS.title",
+      "description_key": "END_OF_DAYS.description"
+    },
+    "vars": {
+      "DoomPower": 29
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/end_of_days.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Doom",
+        "delta": 8
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "DoomPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Doom",
+        "target_expr": "hittableEnemy",
+        "amount_expr": "base.DynamicVars.Doom.BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "DoomPower": 29,
-    "Doom": 29
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Doom",
-      "delta": 8
+  "resolved": {
+    "base": {
+      "title": "End of Days",
+      "cost": 3,
+      "description": {
+        "plain": "Apply 29 Doom to ALL enemies.\nKill enemies with at least as much Doom as HP.",
+        "runs": [
+          {
+            "text": "Apply "
+          },
+          {
+            "text": "29",
+            "source_var": "DoomPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " to ALL enemies.\nKill enemies with at least as much "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " as HP."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "End of Days+",
+      "cost": 3,
+      "description": {
+        "plain": "Apply 29 Doom to ALL enemies.\nKill enemies with at least as much Doom as HP.",
+        "runs": [
+          {
+            "text": "Apply "
+          },
+          {
+            "text": "29",
+            "source_var": "DoomPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " to ALL enemies.\nKill enemies with at least as much "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " as HP."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Doom",
-      "target_expr": "hittableEnemy",
-      "amount_expr": "base.DynamicVars.Doom.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "DoomPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,33 +1,83 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "VOLLEY",
-  "class_name": "Volley",
-  "name": "Volley",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Volley.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "RandomEnemy",
-  "localization": {
-    "title_key": "VOLLEY.title",
-    "description_key": "VOLLEY.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Volley",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Volley.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "RandomEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "VOLLEY.title",
+      "description_key": "VOLLEY.description"
+    },
+    "vars": {
+      "Damage": 10
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/volley.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/volley.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 4
+      }
+    ]
   },
-  "vars": {
-    "Damage": 10
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 4
+  "resolved": {
+    "base": {
+      "title": "Volley",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 10 damage to a random enemy X times.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage to a random enemy X times."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Volley+",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 14 damage to a random enemy X times.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "14",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage to a random enemy X times."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

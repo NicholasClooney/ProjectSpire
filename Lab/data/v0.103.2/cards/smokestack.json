@@ -1,40 +1,90 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SMOKESTACK",
-  "class_name": "Smokestack",
-  "name": "Smokestack",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Smokestack.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "SMOKESTACK.title",
-    "description_key": "SMOKESTACK.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Smokestack",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Smokestack.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SMOKESTACK.title",
+      "description_key": "SMOKESTACK.description"
+    },
+    "vars": {
+      "SmokestackPower": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/smokestack.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/smokestack.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "SmokestackPower",
+        "delta": 2
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Smokestack",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"SmokestackPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "SmokestackPower": 5,
-    "Smokestack": 5
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "SmokestackPower",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Smokestack",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you create a Status, deal 5 damage to ALL enemies.",
+        "runs": [
+          {
+            "text": "Whenever you create a Status, deal "
+          },
+          {
+            "text": "5",
+            "source_var": "SmokestackPower"
+          },
+          {
+            "text": " damage to ALL enemies."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Smokestack+",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you create a Status, deal 7 damage to ALL enemies.",
+        "runs": [
+          {
+            "text": "Whenever you create a Status, deal "
+          },
+          {
+            "text": "7",
+            "source_var": "SmokestackPower",
+            "style": "green"
+          },
+          {
+            "text": " damage to ALL enemies."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Smokestack",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"SmokestackPower\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

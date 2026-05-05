@@ -1,33 +1,74 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CELESTIAL_MIGHT",
-  "class_name": "CelestialMight",
-  "name": "CelestialMight",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CelestialMight.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "CELESTIAL_MIGHT.title",
-    "description_key": "CELESTIAL_MIGHT.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "CelestialMight",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CelestialMight.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "CELESTIAL_MIGHT.title",
+      "description_key": "CELESTIAL_MIGHT.description"
+    },
+    "vars": {
+      "Damage": 6
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/celestial_might.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Repeat",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Damage": 6
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Repeat",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Celestial Might",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 6 damage {Repeat:diff()} {Repeat:plural:time|times}.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "6",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage {Repeat:diff()} {Repeat:plural:time|times}."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Celestial Might+",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 6 damage {Repeat:diff()} {Repeat:plural:time|times}.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "6",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage {Repeat:diff()} {Repeat:plural:time|times}."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,33 +1,74 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SPITE",
-  "class_name": "Spite",
-  "name": "Spite",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Spite.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "SPITE.title",
-    "description_key": "SPITE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Spite",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Spite.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "SPITE.title",
+      "description_key": "SPITE.description"
+    },
+    "vars": {
+      "Damage": 5
+    },
+    "assets": [
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/beta/spite.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Repeat",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Damage": 5
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Repeat",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Spite",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 5 damage.\nIf you lost HP this turn,\nhits {Repeat:diff()} times.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "5",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nIf you lost HP this turn,\nhits {Repeat:diff()} times."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Spite+",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 5 damage.\nIf you lost HP this turn,\nhits {Repeat:diff()} times.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "5",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nIf you lost HP this turn,\nhits {Repeat:diff()} times."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

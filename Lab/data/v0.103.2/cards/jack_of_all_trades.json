@@ -1,35 +1,95 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "JACK_OF_ALL_TRADES",
-  "class_name": "JackOfAllTrades",
-  "name": "JackOfAllTrades",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/JackOfAllTrades.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "JACK_OF_ALL_TRADES.title",
-    "description_key": "JACK_OF_ALL_TRADES.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "JackOfAllTrades",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/JackOfAllTrades.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "JACK_OF_ALL_TRADES.title",
+      "description_key": "JACK_OF_ALL_TRADES.description"
+    },
+    "vars": {
+      "Cards": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/jack_of_all_trades.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Cards": 1
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Jack of All Trades",
+      "cost": 0,
+      "description": {
+        "plain": "Add 1 random Colorless card into your Hand.",
+        "runs": [
+          {
+            "text": "Add "
+          },
+          {
+            "text": "1",
+            "source_var": "Cards"
+          },
+          {
+            "text": " random Colorless card into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Jack of All Trades+",
+      "cost": 0,
+      "description": {
+        "plain": "Add 2 random Colorless cards into your Hand.",
+        "runs": [
+          {
+            "text": "Add "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " random Colorless cards into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

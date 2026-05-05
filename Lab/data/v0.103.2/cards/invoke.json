@@ -1,48 +1,112 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "INVOKE",
-  "class_name": "Invoke",
-  "name": "Invoke",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Invoke.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Common",
-  "target": "Self",
-  "localization": {
-    "title_key": "INVOKE.title",
-    "description_key": "INVOKE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Energy": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Energy",
-      "delta": 1
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Invoke",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Invoke.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "INVOKE.title",
+      "description_key": "INVOKE.description"
     },
-    {
-      "var": "Summon",
-      "delta": 1
-    }
-  ],
-  "applies_powers": [
-    {
-      "power": "SummonNextTurn",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Summon.IntValue"
+    "vars": {
+      "Energy": 2
     },
-    {
-      "power": "EnergyNextTurn",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Energy.IntValue"
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/invoke.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/invoke.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Energy",
+        "delta": 1
+      },
+      {
+        "var": "Summon",
+        "delta": 1
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "SummonNextTurn",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Summon.IntValue"
+      },
+      {
+        "power": "EnergyNextTurn",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Energy.IntValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Invoke",
+      "cost": 1,
+      "description": {
+        "plain": "Next turn, Summon {Summon:diff()} and gain 2.",
+        "runs": [
+          {
+            "text": "Next turn, "
+          },
+          {
+            "text": "Summon",
+            "style": "gold"
+          },
+          {
+            "text": " {Summon:diff()} and gain "
+          },
+          {
+            "text": "2",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Invoke+",
+      "cost": 1,
+      "description": {
+        "plain": "Next turn, Summon {Summon:diff()} and gain 3.",
+        "runs": [
+          {
+            "text": "Next turn, "
+          },
+          {
+            "text": "Summon",
+            "style": "gold"
+          },
+          {
+            "text": " {Summon:diff()} and gain "
+          },
+          {
+            "text": "3",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

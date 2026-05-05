@@ -1,39 +1,132 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DEATHS_DOOR",
-  "class_name": "DeathsDoor",
-  "name": "DeathsDoor",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DeathsDoor.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "DEATHS_DOOR.title",
-    "description_key": "DEATHS_DOOR.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "DeathsDoor",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DeathsDoor.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "DEATHS_DOOR.title",
+      "description_key": "DEATHS_DOOR.description"
+    },
+    "vars": {
+      "Block": 6
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/deaths_door.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/deaths_door.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "DoomPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ]
   },
-  "vars": {
-    "Block": 6
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Death's Door",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 6 Block.\nIf you applied Doom this turn, gain Block {Repeat:diff()} additional {Repeat:plural:time|times}.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "6",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nIf you applied "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " this turn, gain "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " {Repeat:diff()} additional {Repeat:plural:time|times}."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Death's Door+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 7 Block.\nIf you applied Doom this turn, gain Block {Repeat:diff()} additional {Repeat:plural:time|times}.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "7",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nIf you applied "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " this turn, gain "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " {Repeat:diff()} additional {Repeat:plural:time|times}."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "DoomPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

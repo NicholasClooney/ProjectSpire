@@ -1,33 +1,104 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BARRAGE",
-  "class_name": "Barrage",
-  "name": "Barrage",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Barrage.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "BARRAGE.title",
-    "description_key": "BARRAGE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Barrage",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Barrage.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "BARRAGE.title",
+      "description_key": "BARRAGE.description"
+    },
+    "vars": {
+      "Damage": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/barrage.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/barrage.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 2
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Channeling",
+        "source": "HoverTipFactory.Static"
+      }
+    ]
   },
-  "vars": {
-    "Damage": 5
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Barrage",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 5 damage for each Channeled Orb.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "5",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage for each "
+          },
+          {
+            "text": "Channeled",
+            "style": "gold"
+          },
+          {
+            "text": " Orb."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Barrage+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 7 damage for each Channeled Orb.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "7",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage for each "
+          },
+          {
+            "text": "Channeled",
+            "style": "gold"
+          },
+          {
+            "text": " Orb."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

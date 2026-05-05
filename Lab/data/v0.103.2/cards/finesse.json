@@ -1,34 +1,93 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FINESSE",
-  "class_name": "Finesse",
-  "name": "Finesse",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Finesse.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "FINESSE.title",
-    "description_key": "FINESSE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Finesse",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Finesse.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "FINESSE.title",
+      "description_key": "FINESSE.description"
+    },
+    "vars": {
+      "Block": 4,
+      "Cards": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/finesse.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {
-    "Block": 4,
-    "Cards": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Finesse",
+      "cost": 0,
+      "description": {
+        "plain": "Gain 4 Block.\nDraw 1 card.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "4",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nDraw 1 card."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Finesse+",
+      "cost": 0,
+      "description": {
+        "plain": "Gain 7 Block.\nDraw 1 card.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "7",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nDraw 1 card."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

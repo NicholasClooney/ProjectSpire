@@ -1,33 +1,92 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "GRAND_FINALE",
-  "class_name": "GrandFinale",
-  "name": "GrandFinale",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GrandFinale.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "GRAND_FINALE.title",
-    "description_key": "GRAND_FINALE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "GrandFinale",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GrandFinale.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "GRAND_FINALE.title",
+      "description_key": "GRAND_FINALE.description"
+    },
+    "vars": {
+      "Damage": 60
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/grand_finale.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 15
+      }
+    ]
   },
-  "vars": {
-    "Damage": 60
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 15
+  "resolved": {
+    "base": {
+      "title": "Grand Finale",
+      "cost": 0,
+      "description": {
+        "plain": "Can only be played if there are no cards in your Draw Pile. Deal 60 damage to ALL enemies.",
+        "runs": [
+          {
+            "text": "Can only be played if there are no cards in your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": ". Deal "
+          },
+          {
+            "text": "60",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage to ALL enemies."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Grand Finale+",
+      "cost": 0,
+      "description": {
+        "plain": "Can only be played if there are no cards in your Draw Pile. Deal 75 damage to ALL enemies.",
+        "runs": [
+          {
+            "text": "Can only be played if there are no cards in your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": ". Deal "
+          },
+          {
+            "text": "75",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage to ALL enemies."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

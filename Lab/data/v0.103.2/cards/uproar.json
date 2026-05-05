@@ -1,35 +1,100 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "UPROAR",
-  "class_name": "Uproar",
-  "name": "Uproar",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Uproar.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "UPROAR.title",
-    "description_key": "UPROAR.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Uproar",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Uproar.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "UPROAR.title",
+      "description_key": "UPROAR.description"
+    },
+    "vars": {
+      "Damage": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/uproar.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/uproar.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Unplayable"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 2
+      }
+    ]
   },
-  "vars": {
-    "Damage": 5
-  },
-  "keywords": [
-    "Unplayable"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Uproar",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 5 damage twice.\nPlay a random Attack from your Draw Pile.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "5",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage twice.\nPlay a random Attack from your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Uproar+",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 7 damage twice.\nPlay a random Attack from your Draw Pile.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "7",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage twice.\nPlay a random Attack from your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

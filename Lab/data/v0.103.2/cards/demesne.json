@@ -1,37 +1,108 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DEMESNE",
-  "class_name": "Demesne",
-  "name": "Demesne",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Demesne.cs",
-  "cost": 3,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "DEMESNE.title",
-    "description_key": "DEMESNE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Demesne",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Demesne.cs",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "DEMESNE.title",
+      "description_key": "DEMESNE.description"
+    },
+    "vars": {
+      "Cards": 1,
+      "Energy": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/demesne.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/demesne.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Ethereal"
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Demesne",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Cards.BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Cards": 1,
-    "Energy": 1
-  },
-  "keywords": [
-    "Ethereal"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Demesne",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Cards.BaseValue"
+  "resolved": {
+    "base": {
+      "title": "Demesne",
+      "cost": 3,
+      "description": {
+        "plain": "At the start of your turn, gain 1 and draw 1 additional card.",
+        "runs": [
+          {
+            "text": "At the start of your turn, gain "
+          },
+          {
+            "text": "1",
+            "source_var": "Energy"
+          },
+          {
+            "text": " and draw "
+          },
+          {
+            "text": "1",
+            "source_var": "Cards"
+          },
+          {
+            "text": " additional card."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Demesne+",
+      "cost": 2,
+      "description": {
+        "plain": "At the start of your turn, gain 1 and draw 1 additional card.",
+        "runs": [
+          {
+            "text": "At the start of your turn, gain "
+          },
+          {
+            "text": "1",
+            "source_var": "Energy"
+          },
+          {
+            "text": " and draw "
+          },
+          {
+            "text": "1",
+            "source_var": "Cards"
+          },
+          {
+            "text": " additional card."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

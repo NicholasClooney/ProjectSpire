@@ -1,41 +1,119 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BEAT_INTO_SHAPE",
-  "class_name": "BeatIntoShape",
-  "name": "BeatIntoShape",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BeatIntoShape.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "BEAT_INTO_SHAPE.title",
-    "description_key": "BEAT_INTO_SHAPE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 5
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "CalculationBase",
-      "delta": 2
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "BeatIntoShape",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BeatIntoShape.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "BEAT_INTO_SHAPE.title",
+      "description_key": "BEAT_INTO_SHAPE.description"
     },
-    {
-      "var": "CalculationExtra",
-      "delta": 2
+    "vars": {
+      "Damage": 5
     },
-    {
-      "var": "Damage",
-      "delta": 2
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beat_into_shape.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/beat_into_shape.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "CalculationBase",
+        "delta": 2
+      },
+      {
+        "var": "CalculationExtra",
+        "delta": 2
+      },
+      {
+        "var": "Damage",
+        "delta": 2
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Beat into Shape",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 5 damage.\nForge {CalculatedForge:diff()}.\nForges an additional {CalculationExtra:diff()} for every other time you've hit the enemy this turn.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "5",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\n"
+          },
+          {
+            "text": "Forge",
+            "style": "gold"
+          },
+          {
+            "text": " {CalculatedForge:diff()}.\n"
+          },
+          {
+            "text": "Forges",
+            "style": "gold"
+          },
+          {
+            "text": " an additional {CalculationExtra:diff()} for every other time you've hit the enemy this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Beat into Shape+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 7 damage.\nForge {CalculatedForge:diff()}.\nForges an additional {CalculationExtra:diff()} for every other time you've hit the enemy this turn.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "7",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\n"
+          },
+          {
+            "text": "Forge",
+            "style": "gold"
+          },
+          {
+            "text": " {CalculatedForge:diff()}.\n"
+          },
+          {
+            "text": "Forges",
+            "style": "gold"
+          },
+          {
+            "text": " an additional {CalculationExtra:diff()} for every other time you've hit the enemy this turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

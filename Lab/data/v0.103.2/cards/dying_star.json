@@ -1,52 +1,134 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DYING_STAR",
-  "class_name": "DyingStar",
-  "name": "DyingStar",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DyingStar.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "DYING_STAR.title",
-    "description_key": "DYING_STAR.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 9,
-    "StrengthLoss": 9
-  },
-  "keywords": [
-    "Ethereal"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 2
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "DyingStar",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DyingStar.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "DYING_STAR.title",
+      "description_key": "DYING_STAR.description"
     },
-    {
-      "var": "StrengthLoss",
-      "delta": 2
+    "vars": {
+      "Damage": 9,
+      "StrengthLoss": 9
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/dying_star.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/dying_star.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Ethereal"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 2
+      },
+      {
+        "var": "StrengthLoss",
+        "delta": 2
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "DyingStar",
+        "target_expr": "enemy",
+        "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Dying Star",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 9 damage to ALL enemies. ALL enemies lose 9 Strength this turn.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "9",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage to ALL enemies. ALL enemies lose "
+          },
+          {
+            "text": "9",
+            "source_var": "StrengthLoss"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Dying Star+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 11 damage to ALL enemies. ALL enemies lose 11 Strength this turn.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "11",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage to ALL enemies. ALL enemies lose "
+          },
+          {
+            "text": "11",
+            "source_var": "StrengthLoss",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "DyingStar",
-      "target_expr": "enemy",
-      "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "StrengthPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

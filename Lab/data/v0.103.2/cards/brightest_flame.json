@@ -1,38 +1,102 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BRIGHTEST_FLAME",
-  "class_name": "BrightestFlame",
-  "name": "BrightestFlame",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BrightestFlame.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Ancient",
-  "target": "Self",
-  "localization": {
-    "title_key": "BRIGHTEST_FLAME.title",
-    "description_key": "BRIGHTEST_FLAME.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Cards": 2,
-    "Energy": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 1
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "BrightestFlame",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BrightestFlame.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Ancient",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "BRIGHTEST_FLAME.title",
+      "description_key": "BRIGHTEST_FLAME.description"
     },
-    {
-      "var": "Energy",
-      "delta": 1
+    "vars": {
+      "Cards": 2,
+      "Energy": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/event/brightest_flame.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/event/beta/brightest_flame.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 1
+      },
+      {
+        "var": "Energy",
+        "delta": 1
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Brightest Flame",
+      "cost": 0,
+      "description": {
+        "plain": "Gain 2.\nDraw 2 cards.\nLose {MaxHp:diff()} Max HP.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "2",
+            "source_var": "Energy"
+          },
+          {
+            "text": ".\nDraw "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards"
+          },
+          {
+            "text": " cards.\nLose {MaxHp:diff()} Max HP."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Brightest Flame+",
+      "cost": 0,
+      "description": {
+        "plain": "Gain 3.\nDraw 3 cards.\nLose {MaxHp:diff()} Max HP.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "3",
+            "source_var": "Energy"
+          },
+          {
+            "text": ".\nDraw "
+          },
+          {
+            "text": "3",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " cards.\nLose {MaxHp:diff()} Max HP."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

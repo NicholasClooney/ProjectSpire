@@ -1,36 +1,64 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ECHO_FORM",
-  "class_name": "EchoForm",
-  "name": "EchoForm",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/EchoForm.cs",
-  "cost": 3,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "ECHO_FORM.title",
-    "description_key": "ECHO_FORM.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "EchoForm",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/EchoForm.cs",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "ECHO_FORM.title",
+      "description_key": "ECHO_FORM.description"
+    },
+    "vars": {
+      "EchoForm": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/echo_form.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Ethereal"
+    ],
+    "applies_powers": [
+      {
+        "power": "EchoForm",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"EchoForm\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "EchoForm": 1
-  },
-  "keywords": [
-    "Ethereal"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "EchoForm",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"EchoForm\"].BaseValue"
+  "resolved": {
+    "base": {
+      "title": "Echo Form",
+      "cost": 3,
+      "description": {
+        "plain": "The first card you play each turn is played an extra time.",
+        "runs": [
+          {
+            "text": "The first card you play each turn is played an extra time."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Echo Form+",
+      "cost": 3,
+      "description": {
+        "plain": "The first card you play each turn is played an extra time.",
+        "runs": [
+          {
+            "text": "The first card you play each turn is played an extra time."
+          }
+        ]
+      }
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

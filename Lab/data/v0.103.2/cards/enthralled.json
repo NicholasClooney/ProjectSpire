@@ -1,28 +1,73 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ENTHRALLED",
-  "class_name": "Enthralled",
-  "name": "Enthralled",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Enthralled.cs",
-  "cost": 2,
-  "type": "Curse",
-  "rarity": "Curse",
-  "target": "None",
-  "localization": {
-    "title_key": "ENTHRALLED.title",
-    "description_key": "ENTHRALLED.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Enthralled",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Enthralled.cs",
+    "cost": 2,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "localization": {
+      "table": "cards",
+      "title_key": "ENTHRALLED.title",
+      "description_key": "ENTHRALLED.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/curse/enthralled.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/curse/beta/enthralled.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Eternal"
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Eternal"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Enthralled",
+      "cost": 2,
+      "description": {
+        "plain": "If this is in your Hand, it must be played before other cards.",
+        "runs": [
+          {
+            "text": "If this is in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ", it must be played before other cards."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Enthralled+",
+      "cost": 2,
+      "description": {
+        "plain": "If this is in your Hand, it must be played before other cards.",
+        "runs": [
+          {
+            "text": "If this is in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ", it must be played before other cards."
+          }
+        ]
+      }
+    }
+  }
 }

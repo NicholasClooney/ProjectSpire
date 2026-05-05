@@ -1,34 +1,101 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BEACON_OF_HOPE",
-  "class_name": "BeaconOfHope",
-  "name": "BeaconOfHope",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BeaconOfHope.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "BEACON_OF_HOPE.title",
-    "description_key": "BEACON_OF_HOPE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "BeaconOfHope",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BeaconOfHope.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "BEACON_OF_HOPE.title",
+      "description_key": "BEACON_OF_HOPE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beacon_of_hope.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/beacon_of_hope.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Innate"
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "BeaconOfHope",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Innate"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "BeaconOfHope",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
+  "resolved": {
+    "base": {
+      "title": "Beacon of Hope",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you gain Block on your turn, other players gain half that much Block.",
+        "runs": [
+          {
+            "text": "Whenever you gain "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " on your turn, other players gain half that much "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Beacon of Hope+",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you gain Block on your turn, other players gain half that much Block.",
+        "runs": [
+          {
+            "text": "Whenever you gain "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " on your turn, other players gain half that much "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

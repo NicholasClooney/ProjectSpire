@@ -1,29 +1,69 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CALCULATED_GAMBLE",
-  "class_name": "CalculatedGamble",
-  "name": "CalculatedGamble",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CalculatedGamble.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "CALCULATED_GAMBLE.title",
-    "description_key": "CALCULATED_GAMBLE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "CalculatedGamble",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CalculatedGamble.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "CALCULATED_GAMBLE.title",
+      "description_key": "CALCULATED_GAMBLE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/calculated_gamble.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust",
+      "Retain"
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust",
-    "Retain"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Calculated Gamble",
+      "cost": 0,
+      "description": {
+        "plain": "Discard your Hand,\nthen draw that many cards.",
+        "runs": [
+          {
+            "text": "Discard your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ",\nthen draw that many cards."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Calculated Gamble+",
+      "cost": 0,
+      "description": {
+        "plain": "Discard your Hand,\nthen draw that many cards.",
+        "runs": [
+          {
+            "text": "Discard your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ",\nthen draw that many cards."
+          }
+        ]
+      }
+    }
+  }
 }

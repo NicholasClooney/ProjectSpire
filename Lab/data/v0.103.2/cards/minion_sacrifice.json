@@ -1,37 +1,103 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "MINION_SACRIFICE",
-  "class_name": "MinionSacrifice",
-  "name": "MinionSacrifice",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MinionSacrifice.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Token",
-  "target": "Self",
-  "localization": {
-    "title_key": "MINION_SACRIFICE.title",
-    "description_key": "MINION_SACRIFICE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "MinionSacrifice",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MinionSacrifice.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Token",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "MINION_SACRIFICE.title",
+      "description_key": "MINION_SACRIFICE.description"
+    },
+    "vars": {
+      "Block": 9
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/token/minion_sacrifice.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/token/beta/minion_sacrifice.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "tags": [
+      "Minion"
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {
-    "Block": 9
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [
-    "Minion"
-  ],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Minion Sacrifice",
+      "cost": 0,
+      "description": {
+        "plain": "Gain 9 Block.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "9",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Minion Sacrifice+",
+      "cost": 0,
+      "description": {
+        "plain": "Gain 12 Block.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "12",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

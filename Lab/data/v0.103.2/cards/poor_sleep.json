@@ -1,29 +1,50 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "POOR_SLEEP",
-  "class_name": "PoorSleep",
-  "name": "PoorSleep",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PoorSleep.cs",
-  "cost": -1,
-  "type": "Curse",
-  "rarity": "Curse",
-  "target": "None",
-  "localization": {
-    "title_key": "POOR_SLEEP.title",
-    "description_key": "POOR_SLEEP.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "PoorSleep",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PoorSleep.cs",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "localization": {
+      "table": "cards",
+      "title_key": "POOR_SLEEP.title",
+      "description_key": "POOR_SLEEP.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/curse/poor_sleep.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/curse/beta/poor_sleep.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Retain",
+      "Unplayable"
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Retain",
-    "Unplayable"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Poor Sleep",
+      "cost": -1,
+      "description": {
+        "plain": ""
+      }
+    },
+    "upgraded": {
+      "title": "Poor Sleep+",
+      "cost": -1,
+      "description": {
+        "plain": ""
+      }
+    }
+  }
 }

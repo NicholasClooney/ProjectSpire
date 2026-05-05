@@ -1,33 +1,92 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ANGER",
-  "class_name": "Anger",
-  "name": "Anger",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Anger.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "ANGER.title",
-    "description_key": "ANGER.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Anger",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Anger.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "ANGER.title",
+      "description_key": "ANGER.description"
+    },
+    "vars": {
+      "Damage": 6
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/anger.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 2
+      }
+    ]
   },
-  "vars": {
-    "Damage": 6
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Anger",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 6 damage.\nAdd a copy of this card into your Discard Pile.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "6",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nAdd a copy of this card into your "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Anger+",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 8 damage.\nAdd a copy of this card into your Discard Pile.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "8",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nAdd a copy of this card into your "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,29 +1,45 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CURSE_OF_THE_BELL",
-  "class_name": "CurseOfTheBell",
-  "name": "CurseOfTheBell",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CurseOfTheBell.cs",
-  "cost": -1,
-  "type": "Curse",
-  "rarity": "Curse",
-  "target": "None",
-  "localization": {
-    "title_key": "CURSE_OF_THE_BELL.title",
-    "description_key": "CURSE_OF_THE_BELL.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "CurseOfTheBell",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CurseOfTheBell.cs",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "localization": {
+      "table": "cards",
+      "title_key": "CURSE_OF_THE_BELL.title",
+      "description_key": "CURSE_OF_THE_BELL.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/curse/curse_of_the_bell.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Unplayable",
+      "Eternal"
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Unplayable",
-    "Eternal"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Curse of the Bell",
+      "cost": -1,
+      "description": {
+        "plain": ""
+      }
+    },
+    "upgraded": {
+      "title": "Curse of the Bell+",
+      "cost": -1,
+      "description": {
+        "plain": ""
+      }
+    }
+  }
 }

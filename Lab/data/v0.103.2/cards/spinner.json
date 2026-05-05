@@ -1,41 +1,120 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SPINNER",
-  "class_name": "Spinner",
-  "name": "Spinner",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Spinner.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "SPINNER.title",
-    "description_key": "SPINNER.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Spinner",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Spinner.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SPINNER.title",
+      "description_key": "SPINNER.description"
+    },
+    "vars": {
+      "SpinnerPower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/spinner.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/spinner.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Channeling",
+        "source": "HoverTipFactory.Static"
+      },
+      {
+        "kind": "hover_tip_orb",
+        "target": "GlassOrb",
+        "source": "HoverTipFactory.FromOrb"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Spinner",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"SpinnerPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "SpinnerPower": 1,
-    "Spinner": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Spinner",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"SpinnerPower\"].BaseValue"
+  "resolved": {
+    "base": {
+      "title": "Spinner",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, Channel 1 Glass.",
+        "runs": [
+          {
+            "text": "At the start of your turn, "
+          },
+          {
+            "text": "Channel",
+            "style": "gold"
+          },
+          {
+            "text": " 1 "
+          },
+          {
+            "text": "Glass",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Spinner+",
+      "cost": 1,
+      "description": {
+        "plain": "Channel 1 Glass.\nAt the start of your turn, Channel 1 Glass.",
+        "runs": [
+          {
+            "text": "Channel",
+            "style": "gold"
+          },
+          {
+            "text": " 1 "
+          },
+          {
+            "text": "Glass",
+            "style": "gold"
+          },
+          {
+            "text": ".\nAt the start of your turn, "
+          },
+          {
+            "text": "Channel",
+            "style": "gold"
+          },
+          {
+            "text": " 1 "
+          },
+          {
+            "text": "Glass",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_orb",
-      "target": "GlassOrb",
-      "source": "HoverTipFactory.FromOrb"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

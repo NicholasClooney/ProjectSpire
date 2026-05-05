@@ -1,48 +1,110 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "HAZE",
-  "class_name": "Haze",
-  "name": "Haze",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Haze.cs",
-  "cost": 3,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "HAZE.title",
-    "description_key": "HAZE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Haze",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Haze.cs",
+    "cost": 3,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "HAZE.title",
+      "description_key": "HAZE.description"
+    },
+    "vars": {
+      "PoisonPower": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/haze.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/beta/haze.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Sly"
+    ],
+    "upgrades": [
+      {
+        "var": "Poison",
+        "delta": 2
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "PoisonPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Poison",
+        "target_expr": "hittableEnemy",
+        "amount_expr": "base.DynamicVars.Poison.BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "PoisonPower": 4,
-    "Poison": 4
-  },
-  "keywords": [
-    "Sly"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Poison",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Haze",
+      "cost": 3,
+      "description": {
+        "plain": "Apply 4 Poison to ALL enemies.",
+        "runs": [
+          {
+            "text": "Apply "
+          },
+          {
+            "text": "4",
+            "source_var": "PoisonPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Poison",
+            "style": "gold"
+          },
+          {
+            "text": " to ALL enemies."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Haze+",
+      "cost": 3,
+      "description": {
+        "plain": "Apply 4 Poison to ALL enemies.",
+        "runs": [
+          {
+            "text": "Apply "
+          },
+          {
+            "text": "4",
+            "source_var": "PoisonPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Poison",
+            "style": "gold"
+          },
+          {
+            "text": " to ALL enemies."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Poison",
-      "target_expr": "hittableEnemy",
-      "amount_expr": "base.DynamicVars.Poison.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "PoisonPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

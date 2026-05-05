@@ -1,53 +1,128 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SETUP_STRIKE",
-  "class_name": "SetupStrike",
-  "name": "SetupStrike",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SetupStrike.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "SETUP_STRIKE.title",
-    "description_key": "SETUP_STRIKE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 7,
-    "StrengthPower": 2,
-    "Strength": 2
-  },
-  "keywords": [],
-  "tags": [
-    "Strike"
-  ],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 2
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "SetupStrike",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SetupStrike.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "SETUP_STRIKE.title",
+      "description_key": "SETUP_STRIKE.description"
     },
-    {
-      "var": "Strength",
-      "delta": 1
+    "vars": {
+      "Damage": 7,
+      "StrengthPower": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/setup_strike.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tags": [
+      "Strike"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 2
+      },
+      {
+        "var": "Strength",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "SetupStrike",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Strength.BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Setup Strike",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 7 damage.\nGain 2 Strength this turn.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "7",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nGain "
+          },
+          {
+            "text": "2",
+            "source_var": "StrengthPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Setup Strike+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 9 damage.\nGain 2 Strength this turn.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "9",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nGain "
+          },
+          {
+            "text": "2",
+            "source_var": "StrengthPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "SetupStrike",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Strength.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "StrengthPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

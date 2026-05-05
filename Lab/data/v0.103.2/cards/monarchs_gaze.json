@@ -1,40 +1,106 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "MONARCHS_GAZE",
-  "class_name": "MonarchsGaze",
-  "name": "MonarchsGaze",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MonarchsGaze.cs",
-  "cost": 3,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "MONARCHS_GAZE.title",
-    "description_key": "MONARCHS_GAZE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "MonarchsGaze",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MonarchsGaze.cs",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "MONARCHS_GAZE.title",
+      "description_key": "MONARCHS_GAZE.description"
+    },
+    "vars": {
+      "StrengthLoss": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/monarchs_gaze.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "MonarchsGaze",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "StrengthLoss": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "MonarchsGaze",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
+  "resolved": {
+    "base": {
+      "title": "Monarch's Gaze",
+      "cost": 3,
+      "description": {
+        "plain": "Whenever you attack an enemy, it loses 1 Strength this turn.",
+        "runs": [
+          {
+            "text": "Whenever you attack an enemy, it loses "
+          },
+          {
+            "text": "1",
+            "source_var": "StrengthLoss"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Monarch's Gaze+",
+      "cost": 2,
+      "description": {
+        "plain": "Whenever you attack an enemy, it loses 1 Strength this turn.",
+        "runs": [
+          {
+            "text": "Whenever you attack an enemy, it loses "
+          },
+          {
+            "text": "1",
+            "source_var": "StrengthLoss"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "StrengthPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

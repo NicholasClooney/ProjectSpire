@@ -1,33 +1,83 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BURY",
-  "class_name": "Bury",
-  "name": "Bury",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Bury.cs",
-  "cost": 4,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "BURY.title",
-    "description_key": "BURY.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Bury",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Bury.cs",
+    "cost": 4,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "BURY.title",
+      "description_key": "BURY.description"
+    },
+    "vars": {
+      "Damage": 52
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/bury.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/bury.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 11
+      }
+    ]
   },
-  "vars": {
-    "Damage": 52
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 11
+  "resolved": {
+    "base": {
+      "title": "Bury",
+      "cost": 4,
+      "description": {
+        "plain": "Deal 52 damage.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "52",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Bury+",
+      "cost": 4,
+      "description": {
+        "plain": "Deal 63 damage.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "63",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

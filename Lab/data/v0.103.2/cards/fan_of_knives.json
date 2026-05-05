@@ -1,48 +1,114 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FAN_OF_KNIVES",
-  "class_name": "FanOfKnives",
-  "name": "FanOfKnives",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FanOfKnives.cs",
-  "cost": 2,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "FAN_OF_KNIVES.title",
-    "description_key": "FAN_OF_KNIVES.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Shivs",
-      "delta": 1
-    }
-  ],
-  "applies_powers": [
-    {
-      "power": "FanOfKnives",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_card",
-      "target": "SHIV",
-      "source": "HoverTipFactory.FromCard"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "FanOfKnives",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FanOfKnives.cs",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "FAN_OF_KNIVES.title",
+      "description_key": "FAN_OF_KNIVES.description"
     },
-    {
-      "kind": "creates_card",
-      "target": "SHIV",
-      "source": "CreateInHand"
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/fan_of_knives.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Shivs",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "SHIV",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "FanOfKnives",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "creates_card",
+        "target": "SHIV",
+        "source": "CreateInHand"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Fan of Knives",
+      "cost": 2,
+      "description": {
+        "plain": "Shivs now hit ALL enemies.\nAdd {Shivs:diff()} Shivs into your Hand.",
+        "runs": [
+          {
+            "text": "Shivs",
+            "style": "gold"
+          },
+          {
+            "text": " now hit ALL enemies.\nAdd {Shivs:diff()} "
+          },
+          {
+            "text": "Shivs",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Fan of Knives+",
+      "cost": 2,
+      "description": {
+        "plain": "Shivs now hit ALL enemies.\nAdd {Shivs:diff()} Shivs into your Hand.",
+        "runs": [
+          {
+            "text": "Shivs",
+            "style": "gold"
+          },
+          {
+            "text": " now hit ALL enemies.\nAdd {Shivs:diff()} "
+          },
+          {
+            "text": "Shivs",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

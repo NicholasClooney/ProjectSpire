@@ -1,36 +1,78 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "MACHINE_LEARNING",
-  "class_name": "MachineLearning",
-  "name": "MachineLearning",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MachineLearning.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "MACHINE_LEARNING.title",
-    "description_key": "MACHINE_LEARNING.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "MachineLearning",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MachineLearning.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "MACHINE_LEARNING.title",
+      "description_key": "MACHINE_LEARNING.description"
+    },
+    "vars": {
+      "Cards": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/machine_learning.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Innate"
+    ],
+    "applies_powers": [
+      {
+        "power": "MachineLearning",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Cards.BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Cards": 1
-  },
-  "keywords": [
-    "Innate"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "MachineLearning",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Cards.BaseValue"
+  "resolved": {
+    "base": {
+      "title": "Machine Learning",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, draw 1 additional card.",
+        "runs": [
+          {
+            "text": "At the start of your turn, draw "
+          },
+          {
+            "text": "1",
+            "source_var": "Cards"
+          },
+          {
+            "text": " additional card."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Machine Learning+",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, draw 1 additional card.",
+        "runs": [
+          {
+            "text": "At the start of your turn, draw "
+          },
+          {
+            "text": "1",
+            "source_var": "Cards"
+          },
+          {
+            "text": " additional card."
+          }
+        ]
+      }
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

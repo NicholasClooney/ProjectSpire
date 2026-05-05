@@ -1,29 +1,83 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "WISH",
-  "class_name": "Wish",
-  "name": "Wish",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Wish.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Ancient",
-  "target": "Self",
-  "localization": {
-    "title_key": "WISH.title",
-    "description_key": "WISH.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Wish",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Wish.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Ancient",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "WISH.title",
+      "description_key": "WISH.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/event/wish.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust",
+      "Retain"
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust",
-    "Retain"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Wish",
+      "cost": 0,
+      "description": {
+        "plain": "Put a card from your Draw Pile into your Hand.",
+        "runs": [
+          {
+            "text": "Put a card from your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Wish+",
+      "cost": 0,
+      "description": {
+        "plain": "Put a card from your Draw Pile into your Hand.",
+        "runs": [
+          {
+            "text": "Put a card from your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    }
+  }
 }

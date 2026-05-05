@@ -1,43 +1,122 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DRUM_OF_BATTLE",
-  "class_name": "DrumOfBattle",
-  "name": "DrumOfBattle",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DrumOfBattle.cs",
-  "cost": 0,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "DRUM_OF_BATTLE.title",
-    "description_key": "DRUM_OF_BATTLE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "DrumOfBattle",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DrumOfBattle.cs",
+    "cost": 0,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "DRUM_OF_BATTLE.title",
+      "description_key": "DRUM_OF_BATTLE.description"
+    },
+    "vars": {
+      "Cards": 2,
+      "DrumOfBattlePower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/drum_of_battle.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/beta/drum_of_battle.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 1
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "DrumOfBattle",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"DrumOfBattlePower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Cards": 2,
-    "DrumOfBattlePower": 1,
-    "DrumOfBattle": 1
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Drum of Battle",
+      "cost": 0,
+      "description": {
+        "plain": "Draw 2 cards.\nAt the start of your turn, Exhaust the top card of your Draw Pile.",
+        "runs": [
+          {
+            "text": "Draw "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards"
+          },
+          {
+            "text": " cards.\nAt the start of your turn, "
+          },
+          {
+            "text": "Exhaust",
+            "style": "gold"
+          },
+          {
+            "text": " the top card of your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Drum of Battle+",
+      "cost": 0,
+      "description": {
+        "plain": "Draw 3 cards.\nAt the start of your turn, Exhaust the top card of your Draw Pile.",
+        "runs": [
+          {
+            "text": "Draw "
+          },
+          {
+            "text": "3",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " cards.\nAt the start of your turn, "
+          },
+          {
+            "text": "Exhaust",
+            "style": "gold"
+          },
+          {
+            "text": " the top card of your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "DrumOfBattle",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"DrumOfBattlePower\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

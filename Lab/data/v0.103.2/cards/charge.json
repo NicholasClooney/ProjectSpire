@@ -1,34 +1,114 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CHARGE",
-  "class_name": "Charge",
-  "name": "Charge",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Charge.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "CHARGE.title",
-    "description_key": "CHARGE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Charge",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Charge.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "CHARGE.title",
+      "description_key": "CHARGE.description"
+    },
+    "vars": {
+      "Cards": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/charge.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "MINION_DIVE_BOMB",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ]
   },
-  "vars": {
-    "Cards": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "hover_tip_card",
-      "target": "MINION_DIVE_BOMB",
-      "source": "HoverTipFactory.FromCard"
+  "resolved": {
+    "base": {
+      "title": "CHARGE!!",
+      "cost": 1,
+      "description": {
+        "plain": "Choose 2 cards in your Draw Pile to Transform into\nMinion Dive Bombs.",
+        "runs": [
+          {
+            "text": "Choose "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards"
+          },
+          {
+            "text": " cards in your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "Transform",
+            "style": "gold"
+          },
+          {
+            "text": " into\n"
+          },
+          {
+            "text": "Minion Dive Bombs.",
+            "style": "gold"
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "CHARGE!!+",
+      "cost": 1,
+      "description": {
+        "plain": "Choose 2 cards in your Draw Pile to Transform into\nMinion Dive Bombs+.",
+        "runs": [
+          {
+            "text": "Choose "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards"
+          },
+          {
+            "text": " cards in your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "Transform",
+            "style": "gold"
+          },
+          {
+            "text": " into\n"
+          },
+          {
+            "text": "Minion Dive Bombs+.",
+            "style": "gold"
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

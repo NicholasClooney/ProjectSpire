@@ -1,26 +1,80 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SPLASH",
-  "class_name": "Splash",
-  "name": "Splash",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Splash.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "SPLASH.title",
-    "description_key": "SPLASH.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Splash",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Splash.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SPLASH.title",
+      "description_key": "SPLASH.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/splash.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/splash.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Splash",
+      "cost": 1,
+      "description": {
+        "plain": "Choose 1 of 3 random Attacks from another character to add into your Hand. It's free to play this turn.",
+        "runs": [
+          {
+            "text": "Choose 1 of 3 random Attacks from another character to add into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ". It's free to play this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Splash+",
+      "cost": 1,
+      "description": {
+        "plain": "Choose 1 of 3 random Upgraded Attacks from another character to add into your Hand. It's free to play this turn.",
+        "runs": [
+          {
+            "text": "Choose 1 of 3 random "
+          },
+          {
+            "text": "Upgraded",
+            "style": "gold"
+          },
+          {
+            "text": " Attacks from another character to add into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ". It's free to play this turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
+    }
+  }
 }

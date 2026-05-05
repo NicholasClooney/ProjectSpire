@@ -1,35 +1,86 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DEFILE",
-  "class_name": "Defile",
-  "name": "Defile",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Defile.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "DEFILE.title",
-    "description_key": "DEFILE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Defile",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Defile.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "DEFILE.title",
+      "description_key": "DEFILE.description"
+    },
+    "vars": {
+      "Damage": 13
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/defile.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/defile.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Ethereal"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 4
+      }
+    ]
   },
-  "vars": {
-    "Damage": 13
-  },
-  "keywords": [
-    "Ethereal"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 4
+  "resolved": {
+    "base": {
+      "title": "Defile",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 13 damage.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "13",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Defile+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 17 damage.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "17",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

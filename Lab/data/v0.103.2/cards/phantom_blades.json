@@ -1,48 +1,136 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "PHANTOM_BLADES",
-  "class_name": "PhantomBlades",
-  "name": "PhantomBlades",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PhantomBlades.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "PHANTOM_BLADES.title",
-    "description_key": "PHANTOM_BLADES.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "PhantomBlades",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PhantomBlades.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "PHANTOM_BLADES.title",
+      "description_key": "PHANTOM_BLADES.description"
+    },
+    "vars": {
+      "PhantomBladesPower": 9
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/phantom_blades.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/beta/phantom_blades.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Retain"
+    ],
+    "upgrades": [
+      {
+        "var": "PhantomBladesPower",
+        "delta": 3
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "SHIV",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "PhantomBlades",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"PhantomBladesPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "PhantomBladesPower": 9,
-    "PhantomBlades": 9
-  },
-  "keywords": [
-    "Retain"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "PhantomBladesPower",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Phantom Blades",
+      "cost": 1,
+      "description": {
+        "plain": "Shivs gain Retain.\nThe first Shiv you play each turn deals 9 additional damage.",
+        "runs": [
+          {
+            "text": "Shivs",
+            "style": "gold"
+          },
+          {
+            "text": " gain "
+          },
+          {
+            "text": "Retain",
+            "style": "gold"
+          },
+          {
+            "text": ".\nThe first "
+          },
+          {
+            "text": "Shiv",
+            "style": "gold"
+          },
+          {
+            "text": " you play each turn deals "
+          },
+          {
+            "text": "9",
+            "source_var": "PhantomBladesPower"
+          },
+          {
+            "text": " additional damage."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Phantom Blades+",
+      "cost": 1,
+      "description": {
+        "plain": "Shivs gain Retain.\nThe first Shiv you play each turn deals 12 additional damage.",
+        "runs": [
+          {
+            "text": "Shivs",
+            "style": "gold"
+          },
+          {
+            "text": " gain "
+          },
+          {
+            "text": "Retain",
+            "style": "gold"
+          },
+          {
+            "text": ".\nThe first "
+          },
+          {
+            "text": "Shiv",
+            "style": "gold"
+          },
+          {
+            "text": " you play each turn deals "
+          },
+          {
+            "text": "12",
+            "source_var": "PhantomBladesPower",
+            "style": "green"
+          },
+          {
+            "text": " additional damage."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "PhantomBlades",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"PhantomBladesPower\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_card",
-      "target": "SHIV",
-      "source": "HoverTipFactory.FromCard"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

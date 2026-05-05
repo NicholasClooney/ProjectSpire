@@ -1,51 +1,139 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "TAUNT",
-  "class_name": "Taunt",
-  "name": "Taunt",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Taunt.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "TAUNT.title",
-    "description_key": "TAUNT.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Block": 7,
-    "VulnerablePower": 1,
-    "Vulnerable": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 1
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Taunt",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Taunt.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "TAUNT.title",
+      "description_key": "TAUNT.description"
     },
-    {
-      "var": "Vulnerable",
-      "delta": 1
+    "vars": {
+      "Block": 7,
+      "VulnerablePower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/taunt.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 1
+      },
+      {
+        "var": "Vulnerable",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "VulnerablePower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Vulnerable",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Taunt",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 7 Block.\nApply 1 Vulnerable.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "7",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nApply "
+          },
+          {
+            "text": "1",
+            "source_var": "VulnerablePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Taunt+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 8 Block.\nApply 1 Vulnerable.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "8",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nApply "
+          },
+          {
+            "text": "1",
+            "source_var": "VulnerablePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Vulnerable",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "VulnerablePower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

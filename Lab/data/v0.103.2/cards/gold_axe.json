@@ -1,28 +1,54 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "GOLD_AXE",
-  "class_name": "GoldAxe",
-  "name": "GoldAxe",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GoldAxe.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "GOLD_AXE.title",
-    "description_key": "GOLD_AXE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "GoldAxe",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GoldAxe.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "GOLD_AXE.title",
+      "description_key": "GOLD_AXE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/gold_axe.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Retain"
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Retain"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Gold Axe",
+      "cost": 1,
+      "description": {
+        "plain": "Deal damage equal to the number of cards played this combat.",
+        "runs": [
+          {
+            "text": "Deal damage equal to the number of cards played this combat."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Gold Axe+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal damage equal to the number of cards played this combat.",
+        "runs": [
+          {
+            "text": "Deal damage equal to the number of cards played this combat."
+          }
+        ]
+      }
+    }
+  }
 }

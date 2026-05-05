@@ -1,35 +1,108 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FLAK_CANNON",
-  "class_name": "FlakCannon",
-  "name": "FlakCannon",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FlakCannon.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "RandomEnemy",
-  "localization": {
-    "title_key": "FLAK_CANNON.title",
-    "description_key": "FLAK_CANNON.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "FlakCannon",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FlakCannon.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "RandomEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "FLAK_CANNON.title",
+      "description_key": "FLAK_CANNON.description"
+    },
+    "vars": {
+      "Damage": 8
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/flak_cannon.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/flak_cannon.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {
-    "Damage": 8
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Flak Cannon",
+      "cost": 2,
+      "description": {
+        "plain": "Exhaust ALL your Status cards.\nDeal 8 damage to a random enemy for each card Exhausted.",
+        "runs": [
+          {
+            "text": "Exhaust",
+            "style": "gold"
+          },
+          {
+            "text": " ALL your Status cards.\nDeal "
+          },
+          {
+            "text": "8",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage to a random enemy for each card "
+          },
+          {
+            "text": "Exhausted",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Flak Cannon+",
+      "cost": 2,
+      "description": {
+        "plain": "Exhaust ALL your Status cards.\nDeal 11 damage to a random enemy for each card Exhausted.",
+        "runs": [
+          {
+            "text": "Exhaust",
+            "style": "gold"
+          },
+          {
+            "text": " ALL your Status cards.\nDeal "
+          },
+          {
+            "text": "11",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage to a random enemy for each card "
+          },
+          {
+            "text": "Exhausted",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

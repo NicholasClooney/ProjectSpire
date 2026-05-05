@@ -1,35 +1,76 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "TIMES_UP",
-  "class_name": "TimesUp",
-  "name": "TimesUp",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TimesUp.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "TIMES_UP.title",
-    "description_key": "TIMES_UP.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "TimesUp",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TimesUp.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "TIMES_UP.title",
+      "description_key": "TIMES_UP.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/times_up.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust",
+      "Retain"
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "DoomPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust",
-    "Retain"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "DoomPower",
-      "source": "HoverTipFactory.FromPower"
+  "resolved": {
+    "base": {
+      "title": "Time's Up",
+      "cost": 2,
+      "description": {
+        "plain": "Deal damage equal to the enemy's Doom.{IsTargeting:\n(Deals {CalculatedDamage:diff()} damage)|}",
+        "runs": [
+          {
+            "text": "Deal damage equal to the enemy's "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": ".{IsTargeting:\n(Deals {CalculatedDamage:diff()} damage)|}"
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Time's Up+",
+      "cost": 2,
+      "description": {
+        "plain": "Deal damage equal to the enemy's Doom.{IsTargeting:\n(Deals {CalculatedDamage:diff()} damage)|}",
+        "runs": [
+          {
+            "text": "Deal damage equal to the enemy's "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": ".{IsTargeting:\n(Deals {CalculatedDamage:diff()} damage)|}"
+          }
+        ]
+      }
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

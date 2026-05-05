@@ -1,46 +1,106 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "COUNTDOWN",
-  "class_name": "Countdown",
-  "name": "Countdown",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Countdown.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "COUNTDOWN.title",
-    "description_key": "COUNTDOWN.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Countdown",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Countdown.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "COUNTDOWN.title",
+      "description_key": "COUNTDOWN.description"
+    },
+    "vars": {
+      "CountdownPower": 6
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/countdown.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "CountdownPower",
+        "delta": 3
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "DoomPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Countdown",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"CountdownPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "CountdownPower": 6,
-    "Countdown": 6
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "CountdownPower",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Countdown",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, apply 6 Doom to a random enemy.",
+        "runs": [
+          {
+            "text": "At the start of your turn, apply "
+          },
+          {
+            "text": "6",
+            "source_var": "CountdownPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " to a random enemy."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Countdown+",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, apply 9 Doom to a random enemy.",
+        "runs": [
+          {
+            "text": "At the start of your turn, apply "
+          },
+          {
+            "text": "9",
+            "source_var": "CountdownPower",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " to a random enemy."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Countdown",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"CountdownPower\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "DoomPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

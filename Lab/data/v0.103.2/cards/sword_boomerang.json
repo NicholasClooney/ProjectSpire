@@ -1,33 +1,74 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SWORD_BOOMERANG",
-  "class_name": "SwordBoomerang",
-  "name": "SwordBoomerang",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SwordBoomerang.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "RandomEnemy",
-  "localization": {
-    "title_key": "SWORD_BOOMERANG.title",
-    "description_key": "SWORD_BOOMERANG.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "SwordBoomerang",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SwordBoomerang.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "RandomEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "SWORD_BOOMERANG.title",
+      "description_key": "SWORD_BOOMERANG.description"
+    },
+    "vars": {
+      "Damage": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/sword_boomerang.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Repeat",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Damage": 3
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Repeat",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Sword Boomerang",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 3 damage to a random enemy {Repeat:diff()} times.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "3",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage to a random enemy {Repeat:diff()} times."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Sword Boomerang+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 3 damage to a random enemy {Repeat:diff()} times.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "3",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage to a random enemy {Repeat:diff()} times."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,46 +1,125 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "STORM",
-  "class_name": "Storm",
-  "name": "Storm",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Storm.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "STORM.title",
-    "description_key": "STORM.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Storm",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Storm.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "STORM.title",
+      "description_key": "STORM.description"
+    },
+    "vars": {
+      "StormPower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/storm.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "StormPower",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Channeling",
+        "source": "HoverTipFactory.Static"
+      },
+      {
+        "kind": "hover_tip_orb",
+        "target": "LightningOrb",
+        "source": "HoverTipFactory.FromOrb"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Storm",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"StormPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "StormPower": 1,
-    "Storm": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "StormPower",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Storm",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you play a Power, Channel 1 Lightning.",
+        "runs": [
+          {
+            "text": "Whenever you play a Power, "
+          },
+          {
+            "text": "Channel",
+            "style": "gold"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "1",
+            "source_var": "StormPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Lightning",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Storm+",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you play a Power, Channel 2 Lightning.",
+        "runs": [
+          {
+            "text": "Whenever you play a Power, "
+          },
+          {
+            "text": "Channel",
+            "style": "gold"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "2",
+            "source_var": "StormPower",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Lightning",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Storm",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"StormPower\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_orb",
-      "target": "LightningOrb",
-      "source": "HoverTipFactory.FromOrb"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,41 +1,102 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "WELL_LAID_PLANS",
-  "class_name": "WellLaidPlans",
-  "name": "WellLaidPlans",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/WellLaidPlans.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "WELL_LAID_PLANS.title",
-    "description_key": "WELL_LAID_PLANS.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "WellLaidPlans",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/WellLaidPlans.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "WELL_LAID_PLANS.title",
+      "description_key": "WELL_LAID_PLANS.description"
+    },
+    "vars": {
+      "RetainAmount": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/well_laid_plans.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Retain"
+    ],
+    "upgrades": [
+      {
+        "var": "RetainAmount",
+        "delta": 1
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "WellLaidPlans",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"RetainAmount\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "RetainAmount": 1
-  },
-  "keywords": [
-    "Retain"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "RetainAmount",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Well-Laid Plans",
+      "cost": 1,
+      "description": {
+        "plain": "At the end of your turn, Retain up to 1 card.",
+        "runs": [
+          {
+            "text": "At the end of your turn, "
+          },
+          {
+            "text": "Retain",
+            "style": "gold"
+          },
+          {
+            "text": " up to "
+          },
+          {
+            "text": "1",
+            "source_var": "RetainAmount"
+          },
+          {
+            "text": " card."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Well-Laid Plans+",
+      "cost": 1,
+      "description": {
+        "plain": "At the end of your turn, Retain up to 2 cards.",
+        "runs": [
+          {
+            "text": "At the end of your turn, "
+          },
+          {
+            "text": "Retain",
+            "style": "gold"
+          },
+          {
+            "text": " up to "
+          },
+          {
+            "text": "2",
+            "source_var": "RetainAmount",
+            "style": "green"
+          },
+          {
+            "text": " cards."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "WellLaidPlans",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"RetainAmount\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,47 +1,109 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DARK_SHACKLES",
-  "class_name": "DarkShackles",
-  "name": "DarkShackles",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DarkShackles.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "DARK_SHACKLES.title",
-    "description_key": "DARK_SHACKLES.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "DarkShackles",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DarkShackles.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "DARK_SHACKLES.title",
+      "description_key": "DARK_SHACKLES.description"
+    },
+    "vars": {
+      "StrengthLoss": 9
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/dark_shackles.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "StrengthLoss",
+        "delta": 6
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "DarkShackles",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "StrengthLoss": 9
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "StrengthLoss",
-      "delta": 6
+  "resolved": {
+    "base": {
+      "title": "Dark Shackles",
+      "cost": 0,
+      "description": {
+        "plain": "Enemy loses 9 Strength this turn.",
+        "runs": [
+          {
+            "text": "Enemy loses "
+          },
+          {
+            "text": "9",
+            "source_var": "StrengthLoss"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Dark Shackles+",
+      "cost": 0,
+      "description": {
+        "plain": "Enemy loses 15 Strength this turn.",
+        "runs": [
+          {
+            "text": "Enemy loses "
+          },
+          {
+            "text": "15",
+            "source_var": "StrengthLoss",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "DarkShackles",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "StrengthPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

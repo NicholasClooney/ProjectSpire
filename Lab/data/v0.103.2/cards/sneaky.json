@@ -1,42 +1,114 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SNEAKY",
-  "class_name": "Sneaky",
-  "name": "Sneaky",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Sneaky.cs",
-  "cost": 2,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "SNEAKY.title",
-    "description_key": "SNEAKY.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Sneaky",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Sneaky.cs",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SNEAKY.title",
+      "description_key": "SNEAKY.description"
+    },
+    "vars": {
+      "SneakyPower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/sneaky.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/beta/sneaky.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Sly"
+    ],
+    "upgrades": [
+      {
+        "var": "SneakyPower",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Sneaky",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"SneakyPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "SneakyPower": 1,
-    "Sneaky": 1
-  },
-  "keywords": [
-    "Sly"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "SneakyPower",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Sneaky",
+      "cost": 2,
+      "description": {
+        "plain": "Whenever another player attacks an enemy, gain 1 Block.",
+        "runs": [
+          {
+            "text": "Whenever another player attacks an enemy, gain "
+          },
+          {
+            "text": "1",
+            "source_var": "SneakyPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Sneaky+",
+      "cost": 2,
+      "description": {
+        "plain": "Whenever another player attacks an enemy, gain 2 Block.",
+        "runs": [
+          {
+            "text": "Whenever another player attacks an enemy, gain "
+          },
+          {
+            "text": "2",
+            "source_var": "SneakyPower",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Sneaky",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"SneakyPower\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

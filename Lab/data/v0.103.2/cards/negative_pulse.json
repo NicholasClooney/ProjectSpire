@@ -1,51 +1,139 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "NEGATIVE_PULSE",
-  "class_name": "NegativePulse",
-  "name": "NegativePulse",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/NegativePulse.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Common",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "NEGATIVE_PULSE.title",
-    "description_key": "NEGATIVE_PULSE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Block": 5,
-    "DoomPower": 7,
-    "Doom": 7
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 1
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "NegativePulse",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/NegativePulse.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "NEGATIVE_PULSE.title",
+      "description_key": "NEGATIVE_PULSE.description"
     },
-    {
-      "var": "Doom",
-      "delta": 4
+    "vars": {
+      "Block": 5,
+      "DoomPower": 7
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/negative_pulse.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 1
+      },
+      {
+        "var": "Doom",
+        "delta": 4
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "DoomPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Doom",
+        "target_expr": "hittableEnemy",
+        "amount_expr": "base.DynamicVars.Doom.BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Negative Pulse",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 5 Block.\nApply 7 Doom to ALL enemies.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "5",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nApply "
+          },
+          {
+            "text": "7",
+            "source_var": "DoomPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " to ALL enemies."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Negative Pulse+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 6 Block.\nApply 7 Doom to ALL enemies.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "6",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nApply "
+          },
+          {
+            "text": "7",
+            "source_var": "DoomPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " to ALL enemies."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Doom",
-      "target_expr": "hittableEnemy",
-      "amount_expr": "base.DynamicVars.Doom.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "DoomPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

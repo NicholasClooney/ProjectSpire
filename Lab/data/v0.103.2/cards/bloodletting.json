@@ -1,34 +1,92 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BLOODLETTING",
-  "class_name": "Bloodletting",
-  "name": "Bloodletting",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Bloodletting.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Common",
-  "target": "Self",
-  "localization": {
-    "title_key": "BLOODLETTING.title",
-    "description_key": "BLOODLETTING.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Bloodletting",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Bloodletting.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "BLOODLETTING.title",
+      "description_key": "BLOODLETTING.description"
+    },
+    "vars": {
+      "Energy": 2,
+      "HpLoss": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/bloodletting.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Energy",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Energy": 2,
-    "HpLoss": 3
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Energy",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Bloodletting",
+      "cost": 0,
+      "description": {
+        "plain": "Lose 3 HP.\nGain 2.",
+        "runs": [
+          {
+            "text": "Lose "
+          },
+          {
+            "text": "3",
+            "source_var": "HpLoss"
+          },
+          {
+            "text": " HP.\nGain "
+          },
+          {
+            "text": "2",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Bloodletting+",
+      "cost": 0,
+      "description": {
+        "plain": "Lose 3 HP.\nGain 3.",
+        "runs": [
+          {
+            "text": "Lose "
+          },
+          {
+            "text": "3",
+            "source_var": "HpLoss"
+          },
+          {
+            "text": " HP.\nGain "
+          },
+          {
+            "text": "3",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

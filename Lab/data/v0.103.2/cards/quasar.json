@@ -1,26 +1,80 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "QUASAR",
-  "class_name": "Quasar",
-  "name": "Quasar",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Quasar.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "QUASAR.title",
-    "description_key": "QUASAR.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Quasar",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Quasar.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "QUASAR.title",
+      "description_key": "QUASAR.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/quasar.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/quasar.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Quasar",
+      "cost": 0,
+      "description": {
+        "plain": "Choose 1 of 3 random Colorless cards to add into your Hand.",
+        "runs": [
+          {
+            "text": "Choose 1 of 3 random Colorless cards to add into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Quasar+",
+      "cost": 0,
+      "description": {
+        "plain": "Choose 1 of 3 random Upgraded Colorless cards to add into your Hand.",
+        "runs": [
+          {
+            "text": "Choose 1 of 3 random "
+          },
+          {
+            "text": "Upgraded",
+            "style": "gold"
+          },
+          {
+            "text": " Colorless cards to add into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
+    }
+  }
 }

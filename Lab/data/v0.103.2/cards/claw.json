@@ -1,38 +1,98 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CLAW",
-  "class_name": "Claw",
-  "name": "Claw",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Claw.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "CLAW.title",
-    "description_key": "CLAW.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 3,
-    "Increase": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 1
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Claw",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Claw.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "CLAW.title",
+      "description_key": "CLAW.description"
     },
-    {
-      "var": "Increase",
-      "delta": 1
+    "vars": {
+      "Damage": 3,
+      "Increase": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/claw.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 1
+      },
+      {
+        "var": "Increase",
+        "delta": 1
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Claw",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 3 damage.\nIncrease the damage of ALL Claw cards by 2 this combat.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "3",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nIncrease the damage of ALL Claw cards by "
+          },
+          {
+            "text": "2",
+            "source_var": "Increase"
+          },
+          {
+            "text": " this combat."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Claw+",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 4 damage.\nIncrease the damage of ALL Claw cards by 3 this combat.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "4",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nIncrease the damage of ALL Claw cards by "
+          },
+          {
+            "text": "3",
+            "source_var": "Increase",
+            "style": "green"
+          },
+          {
+            "text": " this combat."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

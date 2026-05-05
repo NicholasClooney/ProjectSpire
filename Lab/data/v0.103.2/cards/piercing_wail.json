@@ -1,47 +1,109 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "PIERCING_WAIL",
-  "class_name": "PiercingWail",
-  "name": "PiercingWail",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PiercingWail.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Common",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "PIERCING_WAIL.title",
-    "description_key": "PIERCING_WAIL.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "PiercingWail",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PiercingWail.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "PIERCING_WAIL.title",
+      "description_key": "PIERCING_WAIL.description"
+    },
+    "vars": {
+      "StrengthLoss": 6
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/piercing_wail.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "StrengthLoss",
+        "delta": 2
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "PiercingWail",
+        "target_expr": "hittableEnemy",
+        "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "StrengthLoss": 6
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "StrengthLoss",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Piercing Wail",
+      "cost": 1,
+      "description": {
+        "plain": "ALL enemies lose 6 Strength this turn.",
+        "runs": [
+          {
+            "text": "ALL enemies lose "
+          },
+          {
+            "text": "6",
+            "source_var": "StrengthLoss"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Piercing Wail+",
+      "cost": 1,
+      "description": {
+        "plain": "ALL enemies lose 8 Strength this turn.",
+        "runs": [
+          {
+            "text": "ALL enemies lose "
+          },
+          {
+            "text": "8",
+            "source_var": "StrengthLoss",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "PiercingWail",
-      "target_expr": "hittableEnemy",
-      "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "StrengthPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

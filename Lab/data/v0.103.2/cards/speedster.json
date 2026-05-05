@@ -1,37 +1,83 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SPEEDSTER",
-  "class_name": "Speedster",
-  "name": "Speedster",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Speedster.cs",
-  "cost": 2,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "SPEEDSTER.title",
-    "description_key": "SPEEDSTER.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Speedster",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Speedster.cs",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SPEEDSTER.title",
+      "description_key": "SPEEDSTER.description"
+    },
+    "vars": {
+      "SpeedsterPower": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/speedster.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/beta/speedster.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Innate"
+    ],
+    "applies_powers": [
+      {
+        "power": "Speedster",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"SpeedsterPower\"].IntValue"
+      }
+    ]
   },
-  "vars": {
-    "SpeedsterPower": 2,
-    "Speedster": 2
-  },
-  "keywords": [
-    "Innate"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Speedster",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"SpeedsterPower\"].IntValue"
+  "resolved": {
+    "base": {
+      "title": "Speedster",
+      "cost": 2,
+      "description": {
+        "plain": "Whenever you draw a card during your turn, deal 2 damage to ALL enemies.",
+        "runs": [
+          {
+            "text": "Whenever you draw a card during your turn, deal "
+          },
+          {
+            "text": "2",
+            "source_var": "SpeedsterPower"
+          },
+          {
+            "text": " damage to ALL enemies."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Speedster+",
+      "cost": 2,
+      "description": {
+        "plain": "Whenever you draw a card during your turn, deal 2 damage to ALL enemies.",
+        "runs": [
+          {
+            "text": "Whenever you draw a card during your turn, deal "
+          },
+          {
+            "text": "2",
+            "source_var": "SpeedsterPower"
+          },
+          {
+            "text": " damage to ALL enemies."
+          }
+        ]
+      }
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

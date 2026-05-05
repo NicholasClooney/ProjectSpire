@@ -1,34 +1,85 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "NIGHTMARE",
-  "class_name": "Nightmare",
-  "name": "Nightmare",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Nightmare.cs",
-  "cost": 3,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "NIGHTMARE.title",
-    "description_key": "NIGHTMARE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Nightmare",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Nightmare.cs",
+    "cost": 3,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "NIGHTMARE.title",
+      "description_key": "NIGHTMARE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/nightmare.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Nightmare",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "3m"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Nightmare",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "3m"
+  "resolved": {
+    "base": {
+      "title": "Nightmare",
+      "cost": 3,
+      "description": {
+        "plain": "Choose a card.\nNext turn, add 3 copies of that card into your Hand.",
+        "runs": [
+          {
+            "text": "Choose a card.\nNext turn, add 3 copies of that card into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Nightmare+",
+      "cost": 2,
+      "description": {
+        "plain": "Choose a card.\nNext turn, add 3 copies of that card into your Hand.",
+        "runs": [
+          {
+            "text": "Choose a card.\nNext turn, add 3 copies of that card into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

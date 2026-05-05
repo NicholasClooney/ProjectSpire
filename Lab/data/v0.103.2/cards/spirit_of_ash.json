@@ -1,41 +1,128 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SPIRIT_OF_ASH",
-  "class_name": "SpiritOfAsh",
-  "name": "SpiritOfAsh",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SpiritOfAsh.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "SPIRIT_OF_ASH.title",
-    "description_key": "SPIRIT_OF_ASH.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "SpiritOfAsh",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SpiritOfAsh.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SPIRIT_OF_ASH.title",
+      "description_key": "SPIRIT_OF_ASH.description"
+    },
+    "vars": {
+      "BlockOnExhaust": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/spirit_of_ash.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/spirit_of_ash.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Ethereal"
+    ],
+    "upgrades": [
+      {
+        "var": "BlockOnExhaust",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "SpiritOfAsh",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"BlockOnExhaust\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "BlockOnExhaust": 4
-  },
-  "keywords": [
-    "Ethereal"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "BlockOnExhaust",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Spirit of Ash",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you play an Ethereal card, gain 4 Block.",
+        "runs": [
+          {
+            "text": "Whenever you play an "
+          },
+          {
+            "text": "Ethereal",
+            "style": "gold"
+          },
+          {
+            "text": " card, gain "
+          },
+          {
+            "text": "4",
+            "source_var": "BlockOnExhaust"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Spirit of Ash+",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you play an Ethereal card, gain 5 Block.",
+        "runs": [
+          {
+            "text": "Whenever you play an "
+          },
+          {
+            "text": "Ethereal",
+            "style": "gold"
+          },
+          {
+            "text": " card, gain "
+          },
+          {
+            "text": "5",
+            "source_var": "BlockOnExhaust",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "SpiritOfAsh",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"BlockOnExhaust\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

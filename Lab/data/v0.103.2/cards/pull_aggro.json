@@ -1,37 +1,104 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "PULL_AGGRO",
-  "class_name": "PullAggro",
-  "name": "PullAggro",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PullAggro.cs",
-  "cost": 2,
-  "type": "Skill",
-  "rarity": "Common",
-  "target": "Self",
-  "localization": {
-    "title_key": "PULL_AGGRO.title",
-    "description_key": "PULL_AGGRO.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Block": 7
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 2
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "PullAggro",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PullAggro.cs",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "PULL_AGGRO.title",
+      "description_key": "PULL_AGGRO.description"
     },
-    {
-      "var": "Summon",
-      "delta": 1
+    "vars": {
+      "Block": 7
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/pull_aggro.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 2
+      },
+      {
+        "var": "Summon",
+        "delta": 1
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Pull Aggro",
+      "cost": 2,
+      "description": {
+        "plain": "Summon {Summon:diff()}.\nGain 7 Block.",
+        "runs": [
+          {
+            "text": "Summon",
+            "style": "gold"
+          },
+          {
+            "text": " {Summon:diff()}.\nGain "
+          },
+          {
+            "text": "7",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Pull Aggro+",
+      "cost": 2,
+      "description": {
+        "plain": "Summon {Summon:diff()}.\nGain 9 Block.",
+        "runs": [
+          {
+            "text": "Summon",
+            "style": "gold"
+          },
+          {
+            "text": " {Summon:diff()}.\nGain "
+          },
+          {
+            "text": "9",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

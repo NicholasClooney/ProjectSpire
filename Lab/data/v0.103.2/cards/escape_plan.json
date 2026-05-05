@@ -1,33 +1,92 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ESCAPE_PLAN",
-  "class_name": "EscapePlan",
-  "name": "EscapePlan",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/EscapePlan.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "ESCAPE_PLAN.title",
-    "description_key": "ESCAPE_PLAN.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "EscapePlan",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/EscapePlan.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "ESCAPE_PLAN.title",
+      "description_key": "ESCAPE_PLAN.description"
+    },
+    "vars": {
+      "Block": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/escape_plan.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 2
+      }
+    ]
   },
-  "vars": {
-    "Block": 3
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Escape Plan",
+      "cost": 0,
+      "description": {
+        "plain": "Draw 1 card.\nIf you draw a Skill, gain 3 Block.",
+        "runs": [
+          {
+            "text": "Draw 1 card.\nIf you draw a Skill, gain "
+          },
+          {
+            "text": "3",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Escape Plan+",
+      "cost": 0,
+      "description": {
+        "plain": "Draw 1 card.\nIf you draw a Skill, gain 5 Block.",
+        "runs": [
+          {
+            "text": "Draw 1 card.\nIf you draw a Skill, gain "
+          },
+          {
+            "text": "5",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

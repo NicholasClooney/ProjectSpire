@@ -1,29 +1,50 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "GREED",
-  "class_name": "Greed",
-  "name": "Greed",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Greed.cs",
-  "cost": -1,
-  "type": "Curse",
-  "rarity": "Curse",
-  "target": "None",
-  "localization": {
-    "title_key": "GREED.title",
-    "description_key": "GREED.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Greed",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Greed.cs",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "localization": {
+      "table": "cards",
+      "title_key": "GREED.title",
+      "description_key": "GREED.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/curse/greed.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/curse/beta/greed.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Unplayable",
+      "Eternal"
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Unplayable",
-    "Eternal"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Greed",
+      "cost": -1,
+      "description": {
+        "plain": ""
+      }
+    },
+    "upgraded": {
+      "title": "Greed+",
+      "cost": -1,
+      "description": {
+        "plain": ""
+      }
+    }
+  }
 }

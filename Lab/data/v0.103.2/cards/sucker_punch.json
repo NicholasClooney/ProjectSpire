@@ -1,51 +1,125 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SUCKER_PUNCH",
-  "class_name": "SuckerPunch",
-  "name": "SuckerPunch",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SuckerPunch.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "SUCKER_PUNCH.title",
-    "description_key": "SUCKER_PUNCH.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 8,
-    "WeakPower": 1,
-    "Weak": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 2
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "SuckerPunch",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SuckerPunch.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "SUCKER_PUNCH.title",
+      "description_key": "SUCKER_PUNCH.description"
     },
-    {
-      "var": "Weak",
-      "delta": 1
+    "vars": {
+      "Damage": 8,
+      "WeakPower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/sucker_punch.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 2
+      },
+      {
+        "var": "Weak",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "WeakPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Weak",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars.Weak.BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Sucker Punch",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 8 damage.\nApply 1 Weak.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "8",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nApply "
+          },
+          {
+            "text": "1",
+            "source_var": "WeakPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Sucker Punch+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 10 damage.\nApply 1 Weak.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nApply "
+          },
+          {
+            "text": "1",
+            "source_var": "WeakPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Weak",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars.Weak.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "WeakPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

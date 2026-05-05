@@ -1,57 +1,138 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SHOCKWAVE",
-  "class_name": "Shockwave",
-  "name": "Shockwave",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Shockwave.cs",
-  "cost": 2,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "SHOCKWAVE.title",
-    "description_key": "SHOCKWAVE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Power": 3
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Power",
-      "delta": 2
-    }
-  ],
-  "applies_powers": [
-    {
-      "power": "Weak",
-      "target_expr": "enemy",
-      "amount_expr": "amount"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Shockwave",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Shockwave.cs",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "SHOCKWAVE.title",
+      "description_key": "SHOCKWAVE.description"
     },
-    {
-      "power": "Vulnerable",
-      "target_expr": "enemy",
-      "amount_expr": "amount"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "WeakPower",
-      "source": "HoverTipFactory.FromPower"
+    "vars": {
+      "Power": 3
     },
-    {
-      "kind": "hover_tip_power",
-      "target": "VulnerablePower",
-      "source": "HoverTipFactory.FromPower"
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/shockwave.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/shockwave.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Power",
+        "delta": 2
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "WeakPower",
+        "source": "HoverTipFactory.FromPower"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "VulnerablePower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Weak",
+        "target_expr": "enemy",
+        "amount_expr": "amount"
+      },
+      {
+        "power": "Vulnerable",
+        "target_expr": "enemy",
+        "amount_expr": "amount"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Shockwave",
+      "cost": 2,
+      "description": {
+        "plain": "Apply 3 Weak and Vulnerable to ALL enemies.",
+        "runs": [
+          {
+            "text": "Apply "
+          },
+          {
+            "text": "3",
+            "source_var": "Power"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": " to ALL enemies."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Shockwave+",
+      "cost": 2,
+      "description": {
+        "plain": "Apply 5 Weak and Vulnerable to ALL enemies.",
+        "runs": [
+          {
+            "text": "Apply "
+          },
+          {
+            "text": "5",
+            "source_var": "Power",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": " to ALL enemies."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

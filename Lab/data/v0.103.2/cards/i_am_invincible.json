@@ -1,33 +1,111 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "I_AM_INVINCIBLE",
-  "class_name": "IAmInvincible",
-  "name": "IAmInvincible",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/IAmInvincible.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "I_AM_INVINCIBLE.title",
-    "description_key": "I_AM_INVINCIBLE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "IAmInvincible",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/IAmInvincible.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "I_AM_INVINCIBLE.title",
+      "description_key": "I_AM_INVINCIBLE.description"
+    },
+    "vars": {
+      "Block": 10
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/i_am_invincible.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/i_am_invincible.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {
-    "Block": 10
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "I Am Invincible",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 10 Block.\nAt the end of your turn, if this is on top of your Draw Pile, play it.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "10",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nAt the end of your turn, if this is on top of your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": ", play it."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "I Am Invincible+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 13 Block.\nAt the end of your turn, if this is on top of your Draw Pile, play it.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "13",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nAt the end of your turn, if this is on top of your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": ", play it."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

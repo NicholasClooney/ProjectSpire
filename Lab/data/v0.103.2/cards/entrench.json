@@ -1,26 +1,75 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ENTRENCH",
-  "class_name": "Entrench",
-  "name": "Entrench",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Entrench.cs",
-  "cost": 2,
-  "type": "Skill",
-  "rarity": "Event",
-  "target": "Self",
-  "localization": {
-    "title_key": "ENTRENCH.title",
-    "description_key": "ENTRENCH.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Entrench",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Entrench.cs",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Event",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "ENTRENCH.title",
+      "description_key": "ENTRENCH.description"
+    },
+    "assets": [
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/event/beta/entrench.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Entrench",
+      "cost": 2,
+      "description": {
+        "plain": "Double your Block.",
+        "runs": [
+          {
+            "text": "Double your "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Entrench+",
+      "cost": 1,
+      "description": {
+        "plain": "Double your Block.",
+        "runs": [
+          {
+            "text": "Double your "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
+    }
+  }
 }

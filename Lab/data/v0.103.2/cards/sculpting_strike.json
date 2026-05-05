@@ -1,37 +1,117 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SCULPTING_STRIKE",
-  "class_name": "SculptingStrike",
-  "name": "SculptingStrike",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SculptingStrike.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "SCULPTING_STRIKE.title",
-    "description_key": "SCULPTING_STRIKE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "SculptingStrike",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SculptingStrike.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "SCULPTING_STRIKE.title",
+      "description_key": "SCULPTING_STRIKE.description"
+    },
+    "vars": {
+      "Damage": 9
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/sculpting_strike.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/sculpting_strike.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Ethereal"
+    ],
+    "tags": [
+      "Strike"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {
-    "Damage": 9
-  },
-  "keywords": [
-    "Ethereal"
-  ],
-  "tags": [
-    "Strike"
-  ],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Sculpting Strike",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 9 damage.\nAdd Ethereal to a card in your Hand.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "9",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nAdd "
+          },
+          {
+            "text": "Ethereal",
+            "style": "gold"
+          },
+          {
+            "text": " to a card in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Sculpting Strike+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 12 damage.\nAdd Ethereal to a card in your Hand.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "12",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nAdd "
+          },
+          {
+            "text": "Ethereal",
+            "style": "gold"
+          },
+          {
+            "text": " to a card in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

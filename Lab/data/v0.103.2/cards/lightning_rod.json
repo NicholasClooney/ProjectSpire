@@ -1,47 +1,145 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "LIGHTNING_ROD",
-  "class_name": "LightningRod",
-  "name": "LightningRod",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/LightningRod.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Common",
-  "target": "Self",
-  "localization": {
-    "title_key": "LIGHTNING_ROD.title",
-    "description_key": "LIGHTNING_ROD.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "LightningRod",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/LightningRod.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "LIGHTNING_ROD.title",
+      "description_key": "LIGHTNING_ROD.description"
+    },
+    "vars": {
+      "Block": 4,
+      "LightningRodPower": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/lightning_rod.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/lightning_rod.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 3
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Channeling",
+        "source": "HoverTipFactory.Static"
+      },
+      {
+        "kind": "hover_tip_orb",
+        "target": "LightningOrb",
+        "source": "HoverTipFactory.FromOrb"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "LightningRod",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"LightningRodPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Block": 4,
-    "LightningRodPower": 2,
-    "LightningRod": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Lightning Rod",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 4 Block.\nAt the start of the next {:diff()} turns, Channel 1 Lightning.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "4",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nAt the start of the next {:diff()} turns, "
+          },
+          {
+            "text": "Channel",
+            "style": "gold"
+          },
+          {
+            "text": " 1 "
+          },
+          {
+            "text": "Lightning",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Lightning Rod+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 7 Block.\nAt the start of the next {:diff()} turns, Channel 1 Lightning.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "7",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nAt the start of the next {:diff()} turns, "
+          },
+          {
+            "text": "Channel",
+            "style": "gold"
+          },
+          {
+            "text": " 1 "
+          },
+          {
+            "text": "Lightning",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "LightningRod",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"LightningRodPower\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_orb",
-      "target": "LightningOrb",
-      "source": "HoverTipFactory.FromOrb"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

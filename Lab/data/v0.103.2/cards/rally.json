@@ -1,33 +1,97 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "RALLY",
-  "class_name": "Rally",
-  "name": "Rally",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Rally.cs",
-  "cost": 2,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "AllAllies",
-  "localization": {
-    "title_key": "RALLY.title",
-    "description_key": "RALLY.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Rally",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Rally.cs",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "AllAllies",
+    "localization": {
+      "table": "cards",
+      "title_key": "RALLY.title",
+      "description_key": "RALLY.description"
+    },
+    "vars": {
+      "Block": 12
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/rally.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/rally.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 5
+      }
+    ]
   },
-  "vars": {
-    "Block": 12
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 5
+  "resolved": {
+    "base": {
+      "title": "Rally",
+      "cost": 2,
+      "description": {
+        "plain": "ALL players gain 12 Block.",
+        "runs": [
+          {
+            "text": "ALL players gain "
+          },
+          {
+            "text": "12",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Rally+",
+      "cost": 2,
+      "description": {
+        "plain": "ALL players gain 17 Block.",
+        "runs": [
+          {
+            "text": "ALL players gain "
+          },
+          {
+            "text": "17",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

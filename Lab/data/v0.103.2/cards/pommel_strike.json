@@ -1,40 +1,101 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "POMMEL_STRIKE",
-  "class_name": "PommelStrike",
-  "name": "PommelStrike",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PommelStrike.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "POMMEL_STRIKE.title",
-    "description_key": "POMMEL_STRIKE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 9,
-    "Cards": 1
-  },
-  "keywords": [],
-  "tags": [
-    "Strike"
-  ],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 1
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "PommelStrike",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PommelStrike.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "POMMEL_STRIKE.title",
+      "description_key": "POMMEL_STRIKE.description"
     },
-    {
-      "var": "Damage",
-      "delta": 1
+    "vars": {
+      "Damage": 9,
+      "Cards": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/pommel_strike.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tags": [
+      "Strike"
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 1
+      },
+      {
+        "var": "Damage",
+        "delta": 1
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Pommel Strike",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 9 damage.\nDraw 1 card.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "9",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nDraw "
+          },
+          {
+            "text": "1",
+            "source_var": "Cards"
+          },
+          {
+            "text": " card."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Pommel Strike+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 10 damage.\nDraw 2 cards.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nDraw "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " cards."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

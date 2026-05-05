@@ -1,37 +1,86 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SPUR",
-  "class_name": "Spur",
-  "name": "Spur",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Spur.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "SPUR.title",
-    "description_key": "SPUR.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {},
-  "keywords": [
-    "Retain"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Heal",
-      "delta": 2
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Spur",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Spur.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SPUR.title",
+      "description_key": "SPUR.description"
     },
-    {
-      "var": "Summon",
-      "delta": 2
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/spur.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Retain"
+    ],
+    "upgrades": [
+      {
+        "var": "Heal",
+        "delta": 2
+      },
+      {
+        "var": "Summon",
+        "delta": 2
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Spur",
+      "cost": 1,
+      "description": {
+        "plain": "Summon {Summon:diff()}.\nOsty heals {Heal:diff()} HP.",
+        "runs": [
+          {
+            "text": "Summon",
+            "style": "gold"
+          },
+          {
+            "text": " {Summon:diff()}.\n"
+          },
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " heals {Heal:diff()} HP."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Spur+",
+      "cost": 1,
+      "description": {
+        "plain": "Summon {Summon:diff()}.\nOsty heals {Heal:diff()} HP.",
+        "runs": [
+          {
+            "text": "Summon",
+            "style": "gold"
+          },
+          {
+            "text": " {Summon:diff()}.\n"
+          },
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " heals {Heal:diff()} HP."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

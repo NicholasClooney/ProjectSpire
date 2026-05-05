@@ -1,39 +1,70 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BURST",
-  "class_name": "Burst",
-  "name": "Burst",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Burst.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "BURST.title",
-    "description_key": "BURST.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Burst",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Burst.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "BURST.title",
+      "description_key": "BURST.description"
+    },
+    "vars": {
+      "Skills": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/burst.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Skills",
+        "delta": 1
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Burst",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"Skills\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Skills": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Skills",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Burst",
+      "cost": 1,
+      "description": {
+        "plain": "This turn, your next Skill is played an extra time.",
+        "runs": [
+          {
+            "text": "This turn, your next Skill is played an extra time."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Burst+",
+      "cost": 1,
+      "description": {
+        "plain": "This turn, your next {:diff()} Skills are played an extra time.",
+        "runs": [
+          {
+            "text": "This turn, your next {:diff()} Skills are played an extra time."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Burst",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"Skills\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,47 +1,121 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "THUNDERCLAP",
-  "class_name": "Thunderclap",
-  "name": "Thunderclap",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Thunderclap.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "THUNDERCLAP.title",
-    "description_key": "THUNDERCLAP.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Thunderclap",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Thunderclap.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "THUNDERCLAP.title",
+      "description_key": "THUNDERCLAP.description"
+    },
+    "vars": {
+      "Damage": 4,
+      "VulnerablePower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/thunderclap.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 3
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "VulnerablePower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Vulnerable",
+        "target_expr": "base.CombatState.HittableEnemies",
+        "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Damage": 4,
-    "VulnerablePower": 1,
-    "Vulnerable": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Thunderclap",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 4 damage and apply 1 Vulnerable to ALL enemies.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "4",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage and apply "
+          },
+          {
+            "text": "1",
+            "source_var": "VulnerablePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": " to ALL enemies."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Thunderclap+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 7 damage and apply 1 Vulnerable to ALL enemies.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "7",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage and apply "
+          },
+          {
+            "text": "1",
+            "source_var": "VulnerablePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": " to ALL enemies."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Vulnerable",
-      "target_expr": "base.CombatState.HittableEnemies",
-      "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "VulnerablePower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

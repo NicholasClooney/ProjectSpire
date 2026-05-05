@@ -1,28 +1,71 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ENLIGHTENMENT",
-  "class_name": "Enlightenment",
-  "name": "Enlightenment",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Enlightenment.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Event",
-  "target": "Self",
-  "localization": {
-    "title_key": "ENLIGHTENMENT.title",
-    "description_key": "ENLIGHTENMENT.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Enlightenment",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Enlightenment.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Event",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "ENLIGHTENMENT.title",
+      "description_key": "ENLIGHTENMENT.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/event/enlightenment.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Enlightenment",
+      "cost": 0,
+      "description": {
+        "plain": "Reduce the cost of ALL cards in your Hand to 1 this turn.",
+        "runs": [
+          {
+            "text": "Reduce the cost of ALL cards in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " to 1 this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Enlightenment+",
+      "cost": 0,
+      "description": {
+        "plain": "Reduce the cost of ALL cards in your Hand to 1 this combat.",
+        "runs": [
+          {
+            "text": "Reduce the cost of ALL cards in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " to 1 this combat."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
+    }
+  }
 }

@@ -1,40 +1,78 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BUFFER",
-  "class_name": "Buffer",
-  "name": "Buffer",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Buffer.cs",
-  "cost": 2,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "BUFFER.title",
-    "description_key": "BUFFER.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Buffer",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Buffer.cs",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "BUFFER.title",
+      "description_key": "BUFFER.description"
+    },
+    "vars": {
+      "BufferPower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/buffer.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "BufferPower",
+        "delta": 1
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Buffer",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"BufferPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "BufferPower": 1,
-    "Buffer": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "BufferPower",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Buffer",
+      "cost": 2,
+      "description": {
+        "plain": "Prevent the next time you would lose HP.",
+        "runs": [
+          {
+            "text": "Prevent the next time you would lose HP."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Buffer+",
+      "cost": 2,
+      "description": {
+        "plain": "Prevent the next 2 times you would lose HP.",
+        "runs": [
+          {
+            "text": "Prevent the next "
+          },
+          {
+            "text": "2",
+            "source_var": "BufferPower",
+            "style": "green"
+          },
+          {
+            "text": " times you would lose HP."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Buffer",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"BufferPower\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

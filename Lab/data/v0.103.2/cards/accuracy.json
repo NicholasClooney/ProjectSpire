@@ -1,46 +1,100 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ACCURACY",
-  "class_name": "Accuracy",
-  "name": "Accuracy",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Accuracy.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "ACCURACY.title",
-    "description_key": "ACCURACY.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Accuracy",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Accuracy.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "ACCURACY.title",
+      "description_key": "ACCURACY.description"
+    },
+    "vars": {
+      "AccuracyPower": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/accuracy.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "AccuracyPower",
+        "delta": 2
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "SHIV",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Accuracy",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"AccuracyPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "AccuracyPower": 4,
-    "Accuracy": 4
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "AccuracyPower",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Accuracy",
+      "cost": 1,
+      "description": {
+        "plain": "Shivs deal 4 additional damage.",
+        "runs": [
+          {
+            "text": "Shivs",
+            "style": "gold"
+          },
+          {
+            "text": " deal "
+          },
+          {
+            "text": "4",
+            "source_var": "AccuracyPower"
+          },
+          {
+            "text": " additional damage."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Accuracy+",
+      "cost": 1,
+      "description": {
+        "plain": "Shivs deal 6 additional damage.",
+        "runs": [
+          {
+            "text": "Shivs",
+            "style": "gold"
+          },
+          {
+            "text": " deal "
+          },
+          {
+            "text": "6",
+            "source_var": "AccuracyPower",
+            "style": "green"
+          },
+          {
+            "text": " additional damage."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Accuracy",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"AccuracyPower\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_card",
-      "target": "SHIV",
-      "source": "HoverTipFactory.FromCard"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

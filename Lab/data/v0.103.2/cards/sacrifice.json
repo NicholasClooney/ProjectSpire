@@ -1,28 +1,92 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SACRIFICE",
-  "class_name": "Sacrifice",
-  "name": "Sacrifice",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Sacrifice.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "SACRIFICE.title",
-    "description_key": "SACRIFICE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Sacrifice",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Sacrifice.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SACRIFICE.title",
+      "description_key": "SACRIFICE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/sacrifice.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Retain"
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Retain"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Sacrifice",
+      "cost": 1,
+      "description": {
+        "plain": "If Osty is alive, he dies and you gain Block equal to double his Max HP.",
+        "runs": [
+          {
+            "text": "If "
+          },
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " is alive, he dies and you gain "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " equal to double his Max HP."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Sacrifice+",
+      "cost": 0,
+      "description": {
+        "plain": "If Osty is alive, he dies and you gain Block equal to double his Max HP.",
+        "runs": [
+          {
+            "text": "If "
+          },
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " is alive, he dies and you gain "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " equal to double his Max HP."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
+    }
+  }
 }

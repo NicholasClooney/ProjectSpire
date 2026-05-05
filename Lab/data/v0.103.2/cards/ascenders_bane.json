@@ -1,30 +1,51 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ASCENDERS_BANE",
-  "class_name": "AscendersBane",
-  "name": "AscendersBane",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/AscendersBane.cs",
-  "cost": -1,
-  "type": "Curse",
-  "rarity": "Curse",
-  "target": "None",
-  "localization": {
-    "title_key": "ASCENDERS_BANE.title",
-    "description_key": "ASCENDERS_BANE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "AscendersBane",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/AscendersBane.cs",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "localization": {
+      "table": "cards",
+      "title_key": "ASCENDERS_BANE.title",
+      "description_key": "ASCENDERS_BANE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/curse/ascenders_bane.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/curse/beta/ascenders_bane.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Ethereal",
+      "Unplayable",
+      "Eternal"
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Ethereal",
-    "Unplayable",
-    "Eternal"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Ascender's Bane",
+      "cost": -1,
+      "description": {
+        "plain": ""
+      }
+    },
+    "upgraded": {
+      "title": "Ascender's Bane+",
+      "cost": -1,
+      "description": {
+        "plain": ""
+      }
+    }
+  }
 }

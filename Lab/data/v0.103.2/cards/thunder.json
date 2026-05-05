@@ -1,46 +1,116 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "THUNDER",
-  "class_name": "Thunder",
-  "name": "Thunder",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Thunder.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "THUNDER.title",
-    "description_key": "THUNDER.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Thunder",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Thunder.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "THUNDER.title",
+      "description_key": "THUNDER.description"
+    },
+    "vars": {
+      "ThunderPower": 6
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/thunder.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/thunder.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "ThunderPower",
+        "delta": 2
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Evoke",
+        "source": "HoverTipFactory.Static"
+      },
+      {
+        "kind": "hover_tip_orb",
+        "target": "LightningOrb",
+        "source": "HoverTipFactory.FromOrb"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Thunder",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"ThunderPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "ThunderPower": 6,
-    "Thunder": 6
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "ThunderPower",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Thunder",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you Evoke Lightning, deal 6 damage to each enemy hit.",
+        "runs": [
+          {
+            "text": "Whenever you "
+          },
+          {
+            "text": "Evoke Lightning",
+            "style": "gold"
+          },
+          {
+            "text": ", deal "
+          },
+          {
+            "text": "6",
+            "source_var": "ThunderPower"
+          },
+          {
+            "text": " damage to each enemy hit."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Thunder+",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you Evoke Lightning, deal 8 damage to each enemy hit.",
+        "runs": [
+          {
+            "text": "Whenever you "
+          },
+          {
+            "text": "Evoke Lightning",
+            "style": "gold"
+          },
+          {
+            "text": ", deal "
+          },
+          {
+            "text": "8",
+            "source_var": "ThunderPower",
+            "style": "green"
+          },
+          {
+            "text": " damage to each enemy hit."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Thunder",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"ThunderPower\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_orb",
-      "target": "LightningOrb",
-      "source": "HoverTipFactory.FromOrb"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

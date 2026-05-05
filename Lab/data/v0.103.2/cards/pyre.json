@@ -1,39 +1,84 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "PYRE",
-  "class_name": "Pyre",
-  "name": "Pyre",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Pyre.cs",
-  "cost": 2,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "PYRE.title",
-    "description_key": "PYRE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Pyre",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Pyre.cs",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "PYRE.title",
+      "description_key": "PYRE.description"
+    },
+    "vars": {
+      "Energy": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/pyre.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Energy",
+        "delta": 1
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Pyre",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Energy.BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Energy": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Energy",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Pyre",
+      "cost": 2,
+      "description": {
+        "plain": "Gain 1 at the start of each turn.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "1",
+            "source_var": "Energy"
+          },
+          {
+            "text": " at the start of each turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Pyre+",
+      "cost": 2,
+      "description": {
+        "plain": "Gain 2 at the start of each turn.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "2",
+            "source_var": "Energy"
+          },
+          {
+            "text": " at the start of each turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Pyre",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Energy.BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

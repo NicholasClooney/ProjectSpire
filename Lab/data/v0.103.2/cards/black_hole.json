@@ -1,40 +1,90 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BLACK_HOLE",
-  "class_name": "BlackHole",
-  "name": "BlackHole",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BlackHole.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "BLACK_HOLE.title",
-    "description_key": "BLACK_HOLE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "BlackHole",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BlackHole.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "BLACK_HOLE.title",
+      "description_key": "BLACK_HOLE.description"
+    },
+    "vars": {
+      "BlackHolePower": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/black_hole.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/black_hole.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "BlackHolePower",
+        "delta": 1
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "BlackHole",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"BlackHolePower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "BlackHolePower": 3,
-    "BlackHole": 3
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "BlackHolePower",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Black Hole",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you spend or gain *, deal 3 damage to ALL enemies.",
+        "runs": [
+          {
+            "text": "Whenever you spend or gain *, deal "
+          },
+          {
+            "text": "3",
+            "source_var": "BlackHolePower"
+          },
+          {
+            "text": " damage to ALL enemies."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Black Hole+",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you spend or gain *, deal 4 damage to ALL enemies.",
+        "runs": [
+          {
+            "text": "Whenever you spend or gain *, deal "
+          },
+          {
+            "text": "4",
+            "source_var": "BlackHolePower",
+            "style": "green"
+          },
+          {
+            "text": " damage to ALL enemies."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "BlackHole",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"BlackHolePower\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,34 +1,98 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "HEAVENLY_DRILL",
-  "class_name": "HeavenlyDrill",
-  "name": "HeavenlyDrill",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HeavenlyDrill.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "HEAVENLY_DRILL.title",
-    "description_key": "HEAVENLY_DRILL.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "HeavenlyDrill",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HeavenlyDrill.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "HEAVENLY_DRILL.title",
+      "description_key": "HEAVENLY_DRILL.description"
+    },
+    "vars": {
+      "Damage": 8,
+      "Energy": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/heavenly_drill.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/heavenly_drill.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 2
+      }
+    ]
   },
-  "vars": {
-    "Damage": 8,
-    "Energy": 4
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Heavenly Drill",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 8 damage X times.\nDouble X if it's 4 or more.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "8",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage X times.\nDouble X if it's "
+          },
+          {
+            "text": "4",
+            "source_var": "Energy"
+          },
+          {
+            "text": " or more."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Heavenly Drill+",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 10 damage X times.\nDouble X if it's 4 or more.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage X times.\nDouble X if it's "
+          },
+          {
+            "text": "4",
+            "source_var": "Energy"
+          },
+          {
+            "text": " or more."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

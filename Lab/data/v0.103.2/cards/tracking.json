@@ -1,43 +1,93 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "TRACKING",
-  "class_name": "Tracking",
-  "name": "Tracking",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Tracking.cs",
-  "cost": 2,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "TRACKING.title",
-    "description_key": "TRACKING.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Tracking",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Tracking",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Tracking.cs",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "TRACKING.title",
+      "description_key": "TRACKING.description"
     },
-    {
-      "power": "Tracking",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "2m"
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/tracking.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/beta/tracking.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "WeakPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Tracking",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      },
+      {
+        "power": "Tracking",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "2m"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Tracking",
+      "cost": 2,
+      "description": {
+        "plain": "Weak enemies take double damage from Attacks.",
+        "runs": [
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": " enemies take double damage from Attacks."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Tracking+",
+      "cost": 1,
+      "description": {
+        "plain": "Weak enemies take double damage from Attacks.",
+        "runs": [
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": " enemies take double damage from Attacks."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "WeakPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,46 +1,111 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "PREP_TIME",
-  "class_name": "PrepTime",
-  "name": "PrepTime",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PrepTime.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "PREP_TIME.title",
-    "description_key": "PREP_TIME.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "PrepTime",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PrepTime.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "PREP_TIME.title",
+      "description_key": "PREP_TIME.description"
+    },
+    "vars": {
+      "PrepTimePower": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/prep_time.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/prep_time.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "PrepTimePower",
+        "delta": 2
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "VigorPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "PrepTime",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"PrepTimePower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "PrepTimePower": 4,
-    "PrepTime": 4
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "PrepTimePower",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Prep Time",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, gain 4 Vigor.",
+        "runs": [
+          {
+            "text": "At the start of your turn, gain "
+          },
+          {
+            "text": "4",
+            "source_var": "PrepTimePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vigor",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Prep Time+",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, gain 6 Vigor.",
+        "runs": [
+          {
+            "text": "At the start of your turn, gain "
+          },
+          {
+            "text": "6",
+            "source_var": "PrepTimePower",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vigor",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "PrepTime",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"PrepTimePower\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "VigorPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

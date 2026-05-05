@@ -1,46 +1,102 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DEADLY_POISON",
-  "class_name": "DeadlyPoison",
-  "name": "DeadlyPoison",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DeadlyPoison.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "DEADLY_POISON.title",
-    "description_key": "DEADLY_POISON.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "DeadlyPoison",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DeadlyPoison.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "DEADLY_POISON.title",
+      "description_key": "DEADLY_POISON.description"
+    },
+    "vars": {
+      "PoisonPower": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/deadly_poison.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Poison",
+        "delta": 2
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "PoisonPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Poison",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars.Poison.BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "PoisonPower": 5,
-    "Poison": 5
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Poison",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Deadly Poison",
+      "cost": 1,
+      "description": {
+        "plain": "Apply 5 Poison.",
+        "runs": [
+          {
+            "text": "Apply "
+          },
+          {
+            "text": "5",
+            "source_var": "PoisonPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Poison",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Deadly Poison+",
+      "cost": 1,
+      "description": {
+        "plain": "Apply 5 Poison.",
+        "runs": [
+          {
+            "text": "Apply "
+          },
+          {
+            "text": "5",
+            "source_var": "PoisonPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Poison",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Poison",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars.Poison.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "PoisonPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

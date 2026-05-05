@@ -1,35 +1,75 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DISINTEGRATION",
-  "class_name": "Disintegration",
-  "name": "Disintegration",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Disintegration.cs",
-  "cost": -1,
-  "type": "Status",
-  "rarity": "Status",
-  "target": "None",
-  "localization": {
-    "title_key": "DISINTEGRATION.title",
-    "description_key": "DISINTEGRATION.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Disintegration",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Disintegration.cs",
+    "cost": -1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "localization": {
+      "table": "cards",
+      "title_key": "DISINTEGRATION.title",
+      "description_key": "DISINTEGRATION.description"
+    },
+    "vars": {
+      "DisintegrationPower": 6
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/token/disintegration.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Disintegration",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"DisintegrationPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "DisintegrationPower": 6,
-    "Disintegration": 6
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Disintegration",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"DisintegrationPower\"].BaseValue"
+  "resolved": {
+    "base": {
+      "title": "Disintegration",
+      "cost": -1,
+      "description": {
+        "plain": "At the end of your turn, take 6 damage.",
+        "runs": [
+          {
+            "text": "At the end of your turn, take "
+          },
+          {
+            "text": "6",
+            "source_var": "DisintegrationPower"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Disintegration+",
+      "cost": -1,
+      "description": {
+        "plain": "At the end of your turn, take 6 damage.",
+        "runs": [
+          {
+            "text": "At the end of your turn, take "
+          },
+          {
+            "text": "6",
+            "source_var": "DisintegrationPower"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      }
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

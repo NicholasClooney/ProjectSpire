@@ -1,41 +1,93 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SOUL",
-  "class_name": "Soul",
-  "name": "Soul",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Soul.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Token",
-  "target": "Self",
-  "localization": {
-    "title_key": "SOUL.title",
-    "description_key": "SOUL.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Soul",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Soul.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Token",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SOUL.title",
+      "description_key": "SOUL.description"
+    },
+    "vars": {
+      "Cards": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/token/soul.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/token/beta/soul.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 1
+      }
+    ],
+    "relations": [
+      {
+        "kind": "creates_card",
+        "target": "SOUL",
+        "source": "CreateCard"
+      }
+    ]
   },
-  "vars": {
-    "Cards": 2
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Soul",
+      "cost": 0,
+      "description": {
+        "plain": "Draw 2 cards.",
+        "runs": [
+          {
+            "text": "Draw "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards"
+          },
+          {
+            "text": " cards."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Soul+",
+      "cost": 0,
+      "description": {
+        "plain": "Draw 3 cards.",
+        "runs": [
+          {
+            "text": "Draw "
+          },
+          {
+            "text": "3",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " cards."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "creates_card",
-      "target": "SOUL",
-      "source": "CreateCard"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

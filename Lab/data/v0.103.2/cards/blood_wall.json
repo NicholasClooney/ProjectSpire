@@ -1,34 +1,107 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BLOOD_WALL",
-  "class_name": "BloodWall",
-  "name": "BloodWall",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BloodWall.cs",
-  "cost": 2,
-  "type": "Skill",
-  "rarity": "Common",
-  "target": "Self",
-  "localization": {
-    "title_key": "BLOOD_WALL.title",
-    "description_key": "BLOOD_WALL.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "BloodWall",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BloodWall.cs",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "BLOOD_WALL.title",
+      "description_key": "BLOOD_WALL.description"
+    },
+    "vars": {
+      "Block": 16,
+      "HpLoss": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/blood_wall.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 4
+      }
+    ]
   },
-  "vars": {
-    "Block": 16,
-    "HpLoss": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 4
+  "resolved": {
+    "base": {
+      "title": "Blood Wall",
+      "cost": 2,
+      "description": {
+        "plain": "Lose 2 HP.\nGain 16 Block.",
+        "runs": [
+          {
+            "text": "Lose "
+          },
+          {
+            "text": "2",
+            "source_var": "HpLoss"
+          },
+          {
+            "text": " HP.\nGain "
+          },
+          {
+            "text": "16",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Blood Wall+",
+      "cost": 2,
+      "description": {
+        "plain": "Lose 2 HP.\nGain 20 Block.",
+        "runs": [
+          {
+            "text": "Lose "
+          },
+          {
+            "text": "2",
+            "source_var": "HpLoss"
+          },
+          {
+            "text": " HP.\nGain "
+          },
+          {
+            "text": "20",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

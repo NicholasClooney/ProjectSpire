@@ -1,39 +1,84 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ONE_TWO_PUNCH",
-  "class_name": "OneTwoPunch",
-  "name": "OneTwoPunch",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/OneTwoPunch.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "ONE_TWO_PUNCH.title",
-    "description_key": "ONE_TWO_PUNCH.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "OneTwoPunch",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/OneTwoPunch.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "ONE_TWO_PUNCH.title",
+      "description_key": "ONE_TWO_PUNCH.description"
+    },
+    "vars": {
+      "Attacks": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/one_two_punch.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Attacks",
+        "delta": 1
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "OneTwoPunch",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"Attacks\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Attacks": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Attacks",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "One-Two Punch",
+      "cost": 1,
+      "description": {
+        "plain": "This turn, your next 1 played an extra time.",
+        "runs": [
+          {
+            "text": "This turn, your next "
+          },
+          {
+            "text": "1",
+            "source_var": "Attacks"
+          },
+          {
+            "text": " played an extra time."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "One-Two Punch+",
+      "cost": 1,
+      "description": {
+        "plain": "This turn, your next 2 played an extra time.",
+        "runs": [
+          {
+            "text": "This turn, your next "
+          },
+          {
+            "text": "2",
+            "source_var": "Attacks"
+          },
+          {
+            "text": " played an extra time."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "OneTwoPunch",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"Attacks\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

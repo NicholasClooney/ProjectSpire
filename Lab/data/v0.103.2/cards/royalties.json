@@ -1,37 +1,83 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ROYALTIES",
-  "class_name": "Royalties",
-  "name": "Royalties",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Royalties.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "ROYALTIES.title",
-    "description_key": "ROYALTIES.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Royalties",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Royalties.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "ROYALTIES.title",
+      "description_key": "ROYALTIES.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/royalties.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/royalties.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Gold",
+        "delta": 5
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Royalties",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Gold.BaseValue"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Gold",
-      "delta": 5
+  "resolved": {
+    "base": {
+      "title": "Royalties",
+      "cost": 1,
+      "description": {
+        "plain": "At the end of combat, gain {Gold:diff()} Gold.",
+        "runs": [
+          {
+            "text": "At the end of combat, gain {Gold:diff()} "
+          },
+          {
+            "text": "Gold",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Royalties+",
+      "cost": 1,
+      "description": {
+        "plain": "At the end of combat, gain {Gold:diff()} Gold.",
+        "runs": [
+          {
+            "text": "At the end of combat, gain {Gold:diff()} "
+          },
+          {
+            "text": "Gold",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Royalties",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Gold.BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

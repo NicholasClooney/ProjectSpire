@@ -1,46 +1,107 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FEEDING_FRENZY",
-  "class_name": "FeedingFrenzy",
-  "name": "FeedingFrenzy",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FeedingFrenzy.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Event",
-  "target": "Self",
-  "localization": {
-    "title_key": "FEEDING_FRENZY.title",
-    "description_key": "FEEDING_FRENZY.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "FeedingFrenzy",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FeedingFrenzy.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Event",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "FEEDING_FRENZY.title",
+      "description_key": "FEEDING_FRENZY.description"
+    },
+    "vars": {
+      "StrengthPower": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/event/feeding_frenzy.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/event/beta/feeding_frenzy.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Strength",
+        "delta": 2
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "FeedingFrenzy",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "baseValue"
+      }
+    ]
   },
-  "vars": {
-    "StrengthPower": 5,
-    "Strength": 5
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Strength",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Feeding Frenzy",
+      "cost": 0,
+      "description": {
+        "plain": "Gain 5 Strength this turn.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "5",
+            "source_var": "StrengthPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Feeding Frenzy+",
+      "cost": 0,
+      "description": {
+        "plain": "Gain 5 Strength this turn.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "5",
+            "source_var": "StrengthPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "FeedingFrenzy",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "baseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "StrengthPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

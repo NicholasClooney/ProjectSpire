@@ -1,31 +1,88 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "STACK",
-  "class_name": "Stack",
-  "name": "Stack",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Stack.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Event",
-  "target": "Self",
-  "localization": {
-    "title_key": "STACK.title",
-    "description_key": "STACK.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Stack",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Stack.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Event",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "STACK.title",
+      "description_key": "STACK.description"
+    },
+    "assets": [
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/event/beta/stack.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "CalculationBase",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "CalculationBase",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Stack",
+      "cost": 1,
+      "description": {
+        "plain": "Gain Block equal to the number of cards in your Discard Pile.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " equal to the number of cards in your "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Stack+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain Block equal to the number of cards in your Discard Pile +{CalculationBase}.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " equal to the number of cards in your "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": " +{CalculationBase}."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

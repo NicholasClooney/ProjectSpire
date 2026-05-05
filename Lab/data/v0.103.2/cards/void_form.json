@@ -1,37 +1,83 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "VOID_FORM",
-  "class_name": "VoidForm",
-  "name": "VoidForm",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/VoidForm.cs",
-  "cost": 3,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "VOID_FORM.title",
-    "description_key": "VOID_FORM.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "VoidForm",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/VoidForm.cs",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "VOID_FORM.title",
+      "description_key": "VOID_FORM.description"
+    },
+    "vars": {
+      "VoidFormPower": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/void_form.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/void_form.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Ethereal"
+    ],
+    "applies_powers": [
+      {
+        "power": "VoidForm",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"VoidFormPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "VoidFormPower": 2,
-    "VoidForm": 2
-  },
-  "keywords": [
-    "Ethereal"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "VoidForm",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"VoidFormPower\"].BaseValue"
+  "resolved": {
+    "base": {
+      "title": "Void Form",
+      "cost": 3,
+      "description": {
+        "plain": "End your turn.\nThe first 2 cards you play each turn are free to play.",
+        "runs": [
+          {
+            "text": "End your turn.\nThe first "
+          },
+          {
+            "text": "2",
+            "source_var": "VoidFormPower"
+          },
+          {
+            "text": " cards you play each turn are free to play."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Void Form+",
+      "cost": 3,
+      "description": {
+        "plain": "End your turn.\nThe first 2 cards you play each turn are free to play.",
+        "runs": [
+          {
+            "text": "End your turn.\nThe first "
+          },
+          {
+            "text": "2",
+            "source_var": "VoidFormPower"
+          },
+          {
+            "text": " cards you play each turn are free to play."
+          }
+        ]
+      }
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

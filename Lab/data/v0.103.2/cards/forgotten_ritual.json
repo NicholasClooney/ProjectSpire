@@ -1,35 +1,94 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FORGOTTEN_RITUAL",
-  "class_name": "ForgottenRitual",
-  "name": "ForgottenRitual",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ForgottenRitual.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "FORGOTTEN_RITUAL.title",
-    "description_key": "FORGOTTEN_RITUAL.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "ForgottenRitual",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ForgottenRitual.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "FORGOTTEN_RITUAL.title",
+      "description_key": "FORGOTTEN_RITUAL.description"
+    },
+    "vars": {
+      "Energy": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/forgotten_ritual.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Energy",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Energy": 3
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Energy",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Forgotten Ritual",
+      "cost": 1,
+      "description": {
+        "plain": "If you Exhausted a card this turn, gain 3.",
+        "runs": [
+          {
+            "text": "If you "
+          },
+          {
+            "text": "Exhausted",
+            "style": "gold"
+          },
+          {
+            "text": " a card this turn, gain "
+          },
+          {
+            "text": "3",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Forgotten Ritual+",
+      "cost": 1,
+      "description": {
+        "plain": "If you Exhausted a card this turn, gain 4.",
+        "runs": [
+          {
+            "text": "If you "
+          },
+          {
+            "text": "Exhausted",
+            "style": "gold"
+          },
+          {
+            "text": " a card this turn, gain "
+          },
+          {
+            "text": "4",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

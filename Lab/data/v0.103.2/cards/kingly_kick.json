@@ -1,33 +1,78 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "KINGLY_KICK",
-  "class_name": "KinglyKick",
-  "name": "KinglyKick",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/KinglyKick.cs",
-  "cost": 4,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "KINGLY_KICK.title",
-    "description_key": "KINGLY_KICK.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "KinglyKick",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/KinglyKick.cs",
+    "cost": 4,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "KINGLY_KICK.title",
+      "description_key": "KINGLY_KICK.description"
+    },
+    "vars": {
+      "Damage": 27
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/kingly_kick.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 8
+      }
+    ]
   },
-  "vars": {
-    "Damage": 27
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 8
+  "resolved": {
+    "base": {
+      "title": "Kingly Kick",
+      "cost": 4,
+      "description": {
+        "plain": "Deal 27 damage.\nWhenever you draw this card, reduce its cost by 1.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "27",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nWhenever you draw this card, reduce its cost by 1."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Kingly Kick+",
+      "cost": 4,
+      "description": {
+        "plain": "Deal 35 damage.\nWhenever you draw this card, reduce its cost by 1.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "35",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nWhenever you draw this card, reduce its cost by 1."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

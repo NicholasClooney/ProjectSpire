@@ -1,46 +1,100 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CRUELTY",
-  "class_name": "Cruelty",
-  "name": "Cruelty",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Cruelty.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "CRUELTY.title",
-    "description_key": "CRUELTY.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Cruelty",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Cruelty.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "CRUELTY.title",
+      "description_key": "CRUELTY.description"
+    },
+    "vars": {
+      "CrueltyPower": 25
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/cruelty.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "CrueltyPower",
+        "delta": 25
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "VulnerablePower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Cruelty",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"CrueltyPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "CrueltyPower": 25,
-    "Cruelty": 25
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "CrueltyPower",
-      "delta": 25
+  "resolved": {
+    "base": {
+      "title": "Cruelty",
+      "cost": 1,
+      "description": {
+        "plain": "Vulnerable enemies take an additional 25% damage.",
+        "runs": [
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": " enemies take an additional "
+          },
+          {
+            "text": "25",
+            "source_var": "CrueltyPower"
+          },
+          {
+            "text": "% damage."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Cruelty+",
+      "cost": 1,
+      "description": {
+        "plain": "Vulnerable enemies take an additional 50% damage.",
+        "runs": [
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": " enemies take an additional "
+          },
+          {
+            "text": "50",
+            "source_var": "CrueltyPower",
+            "style": "green"
+          },
+          {
+            "text": "% damage."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Cruelty",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"CrueltyPower\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "VulnerablePower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

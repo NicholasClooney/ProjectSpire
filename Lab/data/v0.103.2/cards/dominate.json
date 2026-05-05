@@ -1,59 +1,162 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DOMINATE",
-  "class_name": "Dominate",
-  "name": "Dominate",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Dominate.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "DOMINATE.title",
-    "description_key": "DOMINATE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "StrengthPerVulnerable": 1,
-    "VulnerablePower": 1,
-    "Vulnerable": 1
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "VulnerablePower",
-      "delta": 1
-    }
-  ],
-  "applies_powers": [
-    {
-      "power": "Vulnerable",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars[\"VulnerablePower\"].BaseValue"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Dominate",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Dominate.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "DOMINATE.title",
+      "description_key": "DOMINATE.description"
     },
-    {
-      "power": "Strength",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "num"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "StrengthPower",
-      "source": "HoverTipFactory.FromPower"
+    "vars": {
+      "StrengthPerVulnerable": 1,
+      "VulnerablePower": 1
     },
-    {
-      "kind": "hover_tip_power",
-      "target": "VulnerablePower",
-      "source": "HoverTipFactory.FromPower"
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/dominate.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "VulnerablePower",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "VulnerablePower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Vulnerable",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars[\"VulnerablePower\"].BaseValue"
+      },
+      {
+        "power": "Strength",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "num"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Dominate",
+      "cost": 1,
+      "description": {
+        "plain": "Apply 1 Vulnerable.\nGain 1 Strength for each Vulnerable on the enemy.",
+        "runs": [
+          {
+            "text": "Apply "
+          },
+          {
+            "text": "1",
+            "source_var": "VulnerablePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": ".\nGain "
+          },
+          {
+            "text": "1",
+            "source_var": "StrengthPerVulnerable"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": " for each "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": " on the enemy."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Dominate+",
+      "cost": 1,
+      "description": {
+        "plain": "Apply 2 Vulnerable.\nGain 1 Strength for each Vulnerable on the enemy.",
+        "runs": [
+          {
+            "text": "Apply "
+          },
+          {
+            "text": "2",
+            "source_var": "VulnerablePower",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": ".\nGain "
+          },
+          {
+            "text": "1",
+            "source_var": "StrengthPerVulnerable"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": " for each "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": " on the enemy."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

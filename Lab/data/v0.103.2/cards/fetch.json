@@ -1,35 +1,85 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FETCH",
-  "class_name": "Fetch",
-  "name": "Fetch",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Fetch.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "FETCH.title",
-    "description_key": "FETCH.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Fetch",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Fetch.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "FETCH.title",
+      "description_key": "FETCH.description"
+    },
+    "vars": {
+      "Cards": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/fetch.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tags": [
+      "OstyAttack"
+    ],
+    "upgrades": [
+      {
+        "var": "OstyDamage",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {
-    "Cards": 1
-  },
-  "keywords": [],
-  "tags": [
-    "OstyAttack"
-  ],
-  "upgrades": [
-    {
-      "var": "OstyDamage",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Fetch",
+      "cost": 0,
+      "description": {
+        "plain": "Osty deals {OstyDamage:diff()} damage.\nIf this is the first time this card has been played this turn, draw 1 card.",
+        "runs": [
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " deals {OstyDamage:diff()} damage.\nIf this is the first time this card has been played this turn, draw "
+          },
+          {
+            "text": "1",
+            "source_var": "Cards"
+          },
+          {
+            "text": " card."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Fetch+",
+      "cost": 0,
+      "description": {
+        "plain": "Osty deals {OstyDamage:diff()} damage.\nIf this is the first time this card has been played this turn, draw 1 card.",
+        "runs": [
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " deals {OstyDamage:diff()} damage.\nIf this is the first time this card has been played this turn, draw "
+          },
+          {
+            "text": "1",
+            "source_var": "Cards"
+          },
+          {
+            "text": " card."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

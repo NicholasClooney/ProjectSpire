@@ -1,45 +1,111 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CORROSIVE_WAVE",
-  "class_name": "CorrosiveWave",
-  "name": "CorrosiveWave",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CorrosiveWave.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "CORROSIVE_WAVE.title",
-    "description_key": "CORROSIVE_WAVE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "CorrosiveWave",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CorrosiveWave.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "CORROSIVE_WAVE.title",
+      "description_key": "CORROSIVE_WAVE.description"
+    },
+    "vars": {
+      "CorrosiveWave": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/corrosive_wave.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/beta/corrosive_wave.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "CorrosiveWave",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "PoisonPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "CorrosiveWave",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"CorrosiveWave\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "CorrosiveWave": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "CorrosiveWave",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Corrosive Wave",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you draw a card this turn, apply 2 Poison to ALL enemies.",
+        "runs": [
+          {
+            "text": "Whenever you draw a card this turn, apply "
+          },
+          {
+            "text": "2",
+            "source_var": "CorrosiveWave"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Poison",
+            "style": "gold"
+          },
+          {
+            "text": " to ALL enemies."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Corrosive Wave+",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you draw a card this turn, apply 3 Poison to ALL enemies.",
+        "runs": [
+          {
+            "text": "Whenever you draw a card this turn, apply "
+          },
+          {
+            "text": "3",
+            "source_var": "CorrosiveWave",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Poison",
+            "style": "gold"
+          },
+          {
+            "text": " to ALL enemies."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "CorrosiveWave",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"CorrosiveWave\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "PoisonPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

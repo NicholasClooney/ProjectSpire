@@ -1,33 +1,92 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "EXPERTISE",
-  "class_name": "Expertise",
-  "name": "Expertise",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Expertise.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "EXPERTISE.title",
-    "description_key": "EXPERTISE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Expertise",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Expertise.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "EXPERTISE.title",
+      "description_key": "EXPERTISE.description"
+    },
+    "vars": {
+      "Cards": 6
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/expertise.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Cards": 6
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Expertise",
+      "cost": 1,
+      "description": {
+        "plain": "Draw cards until you have 6 in your Hand.",
+        "runs": [
+          {
+            "text": "Draw cards until you have "
+          },
+          {
+            "text": "6",
+            "source_var": "Cards"
+          },
+          {
+            "text": " in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Expertise+",
+      "cost": 1,
+      "description": {
+        "plain": "Draw cards until you have 7 in your Hand.",
+        "runs": [
+          {
+            "text": "Draw cards until you have "
+          },
+          {
+            "text": "7",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

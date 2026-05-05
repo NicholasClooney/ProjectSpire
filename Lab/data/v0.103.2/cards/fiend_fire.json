@@ -1,35 +1,117 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FIEND_FIRE",
-  "class_name": "FiendFire",
-  "name": "FiendFire",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FiendFire.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "FIEND_FIRE.title",
-    "description_key": "FIEND_FIRE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "FiendFire",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FiendFire.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "FIEND_FIRE.title",
+      "description_key": "FIEND_FIRE.description"
+    },
+    "vars": {
+      "Damage": 7
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/fiend_fire.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {
-    "Damage": 7
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Fiend Fire",
+      "cost": 2,
+      "description": {
+        "plain": "Exhaust your Hand.\nDeal 7 damage for each card Exhausted.",
+        "runs": [
+          {
+            "text": "Exhaust",
+            "style": "gold"
+          },
+          {
+            "text": " your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ".\nDeal "
+          },
+          {
+            "text": "7",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage for each card "
+          },
+          {
+            "text": "Exhausted",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Fiend Fire+",
+      "cost": 2,
+      "description": {
+        "plain": "Exhaust your Hand.\nDeal 10 damage for each card Exhausted.",
+        "runs": [
+          {
+            "text": "Exhaust",
+            "style": "gold"
+          },
+          {
+            "text": " your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ".\nDeal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage for each card "
+          },
+          {
+            "text": "Exhausted",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

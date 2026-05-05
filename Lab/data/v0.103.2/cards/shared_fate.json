@@ -1,53 +1,143 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SHARED_FATE",
-  "class_name": "SharedFate",
-  "name": "SharedFate",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SharedFate.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "SHARED_FATE.title",
-    "description_key": "SHARED_FATE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "EnemyStrengthLoss": 2,
-    "PlayerStrengthLoss": 2
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "EnemyStrengthLoss",
-      "delta": 1
-    }
-  ],
-  "applies_powers": [
-    {
-      "power": "Strength",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "-base.DynamicVars[\"PlayerStrengthLoss\"].BaseValue"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "SharedFate",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SharedFate.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "SHARED_FATE.title",
+      "description_key": "SHARED_FATE.description"
     },
-    {
-      "power": "Strength",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "-base.DynamicVars[\"EnemyStrengthLoss\"].BaseValue"
+    "vars": {
+      "EnemyStrengthLoss": 2,
+      "PlayerStrengthLoss": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/shared_fate.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "EnemyStrengthLoss",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Strength",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "-base.DynamicVars[\"PlayerStrengthLoss\"].BaseValue"
+      },
+      {
+        "power": "Strength",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "-base.DynamicVars[\"EnemyStrengthLoss\"].BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Shared Fate",
+      "cost": 0,
+      "description": {
+        "plain": "Lose 2 Strength.\nEnemy loses 2 Strength.",
+        "runs": [
+          {
+            "text": "Lose "
+          },
+          {
+            "text": "2",
+            "source_var": "PlayerStrengthLoss"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": ".\nEnemy loses "
+          },
+          {
+            "text": "2",
+            "source_var": "EnemyStrengthLoss"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Shared Fate+",
+      "cost": 0,
+      "description": {
+        "plain": "Lose 2 Strength.\nEnemy loses 3 Strength.",
+        "runs": [
+          {
+            "text": "Lose "
+          },
+          {
+            "text": "2",
+            "source_var": "PlayerStrengthLoss"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": ".\nEnemy loses "
+          },
+          {
+            "text": "3",
+            "source_var": "EnemyStrengthLoss",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "StrengthPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

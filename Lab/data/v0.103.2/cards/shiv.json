@@ -1,43 +1,91 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SHIV",
-  "class_name": "Shiv",
-  "name": "Shiv",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Shiv.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Token",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "SHIV.title",
-    "description_key": "SHIV.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Shiv",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Shiv.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Token",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "SHIV.title",
+      "description_key": "SHIV.description"
+    },
+    "vars": {
+      "Damage": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/token/shiv.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "tags": [
+      "Shiv"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 2
+      }
+    ],
+    "relations": [
+      {
+        "kind": "creates_card",
+        "target": "SHIV",
+        "source": "CreateCard"
+      }
+    ]
   },
-  "vars": {
-    "Damage": 4
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [
-    "Shiv"
-  ],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Shiv",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 4 damage{TargetType:choose(AllEnemies): to ALL enemies|}.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "4",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage{TargetType:choose(AllEnemies): to ALL enemies|}."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Shiv+",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 6 damage{TargetType:choose(AllEnemies): to ALL enemies|}.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "6",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage{TargetType:choose(AllEnemies): to ALL enemies|}."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "creates_card",
-      "target": "SHIV",
-      "source": "CreateCard"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

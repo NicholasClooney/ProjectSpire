@@ -1,63 +1,165 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BULK_UP",
-  "class_name": "BulkUp",
-  "name": "BulkUp",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BulkUp.cs",
-  "cost": 2,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "BULK_UP.title",
-    "description_key": "BULK_UP.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "BulkUp",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BulkUp.cs",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "BULK_UP.title",
+      "description_key": "BULK_UP.description"
+    },
+    "vars": {
+      "OrbSlots": 1,
+      "StrengthPower": 2,
+      "DexterityPower": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/bulk_up.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/bulk_up.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Dexterity",
+        "delta": 1
+      },
+      {
+        "var": "Strength",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "DexterityPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Strength",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Strength.BaseValue"
+      },
+      {
+        "power": "Dexterity",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Dexterity.BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "OrbSlots": 1,
-    "StrengthPower": 2,
-    "Strength": 2,
-    "DexterityPower": 2,
-    "Dexterity": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Dexterity",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Bulk Up",
+      "cost": 2,
+      "description": {
+        "plain": "Lose 1 Orb Slot.\nGain 2 Strength.\nGain 2 Dexterity.",
+        "runs": [
+          {
+            "text": "Lose "
+          },
+          {
+            "text": "1",
+            "source_var": "OrbSlots"
+          },
+          {
+            "text": " Orb Slot.\nGain "
+          },
+          {
+            "text": "2",
+            "source_var": "StrengthPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": ".\nGain "
+          },
+          {
+            "text": "2",
+            "source_var": "DexterityPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Dexterity",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     },
-    {
-      "var": "Strength",
-      "delta": 1
+    "upgraded": {
+      "title": "Bulk Up+",
+      "cost": 2,
+      "description": {
+        "plain": "Lose 1 Orb Slot.\nGain 2 Strength.\nGain 2 Dexterity.",
+        "runs": [
+          {
+            "text": "Lose "
+          },
+          {
+            "text": "1",
+            "source_var": "OrbSlots"
+          },
+          {
+            "text": " Orb Slot.\nGain "
+          },
+          {
+            "text": "2",
+            "source_var": "StrengthPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": ".\nGain "
+          },
+          {
+            "text": "2",
+            "source_var": "DexterityPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Dexterity",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Strength",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Strength.BaseValue"
-    },
-    {
-      "power": "Dexterity",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Dexterity.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "StrengthPower",
-      "source": "HoverTipFactory.FromPower"
-    },
-    {
-      "kind": "hover_tip_power",
-      "target": "DexterityPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

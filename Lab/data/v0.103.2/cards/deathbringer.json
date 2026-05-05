@@ -1,58 +1,141 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DEATHBRINGER",
-  "class_name": "Deathbringer",
-  "name": "Deathbringer",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Deathbringer.cs",
-  "cost": 2,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "DEATHBRINGER.title",
-    "description_key": "DEATHBRINGER.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "DoomPower": 21,
-    "Doom": 21,
-    "WeakPower": 1,
-    "Weak": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Doom",
-      "delta": 5
-    }
-  ],
-  "applies_powers": [
-    {
-      "power": "Doom",
-      "target_expr": "base.CombatState.HittableEnemies",
-      "amount_expr": "base.DynamicVars.Doom.BaseValue"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Deathbringer",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Deathbringer.cs",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "DEATHBRINGER.title",
+      "description_key": "DEATHBRINGER.description"
     },
-    {
-      "power": "Weak",
-      "target_expr": "base.CombatState.HittableEnemies",
-      "amount_expr": "base.DynamicVars.Weak.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "DoomPower",
-      "source": "HoverTipFactory.FromPower"
+    "vars": {
+      "DoomPower": 21,
+      "WeakPower": 1
     },
-    {
-      "kind": "hover_tip_power",
-      "target": "WeakPower",
-      "source": "HoverTipFactory.FromPower"
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/deathbringer.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Doom",
+        "delta": 5
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "DoomPower",
+        "source": "HoverTipFactory.FromPower"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "WeakPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Doom",
+        "target_expr": "base.CombatState.HittableEnemies",
+        "amount_expr": "base.DynamicVars.Doom.BaseValue"
+      },
+      {
+        "power": "Weak",
+        "target_expr": "base.CombatState.HittableEnemies",
+        "amount_expr": "base.DynamicVars.Weak.BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Deathbringer",
+      "cost": 2,
+      "description": {
+        "plain": "Apply 21 Doom and 1 Weak to ALL enemies.",
+        "runs": [
+          {
+            "text": "Apply "
+          },
+          {
+            "text": "21",
+            "source_var": "DoomPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "1",
+            "source_var": "WeakPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": " to ALL enemies."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Deathbringer+",
+      "cost": 2,
+      "description": {
+        "plain": "Apply 21 Doom and 1 Weak to ALL enemies.",
+        "runs": [
+          {
+            "text": "Apply "
+          },
+          {
+            "text": "21",
+            "source_var": "DoomPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "1",
+            "source_var": "WeakPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": " to ALL enemies."
+          }
+        ]
+      }
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

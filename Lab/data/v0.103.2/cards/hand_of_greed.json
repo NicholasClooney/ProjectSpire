@@ -1,38 +1,133 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "HAND_OF_GREED",
-  "class_name": "HandOfGreed",
-  "name": "HandOfGreed",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HandOfGreed.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "HAND_OF_GREED.title",
-    "description_key": "HAND_OF_GREED.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 20,
-    "Gold": 20
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 5
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "HandOfGreed",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HandOfGreed.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "HAND_OF_GREED.title",
+      "description_key": "HAND_OF_GREED.description"
     },
-    {
-      "var": "Gold",
-      "delta": 5
+    "vars": {
+      "Damage": 20,
+      "Gold": 20
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/hand_of_greed.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 5
+      },
+      {
+        "var": "Gold",
+        "delta": 5
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Fatal",
+        "source": "HoverTipFactory.Static"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Hand of Greed",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 20 damage.\nIf Fatal, gain 20 Gold.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "20",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nIf "
+          },
+          {
+            "text": "Fatal",
+            "style": "gold"
+          },
+          {
+            "text": ", gain "
+          },
+          {
+            "text": "20",
+            "source_var": "Gold"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Gold",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Hand of Greed+",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 25 damage.\nIf Fatal, gain 25 Gold.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "25",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nIf "
+          },
+          {
+            "text": "Fatal",
+            "style": "gold"
+          },
+          {
+            "text": ", gain "
+          },
+          {
+            "text": "25",
+            "source_var": "Gold",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Gold",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

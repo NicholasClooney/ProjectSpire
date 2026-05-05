@@ -1,38 +1,126 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DRAIN_POWER",
-  "class_name": "DrainPower",
-  "name": "DrainPower",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DrainPower.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "DRAIN_POWER.title",
-    "description_key": "DRAIN_POWER.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 10,
-    "Cards": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 1
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "DrainPower",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DrainPower.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "DRAIN_POWER.title",
+      "description_key": "DRAIN_POWER.description"
     },
-    {
-      "var": "Damage",
-      "delta": 2
+    "vars": {
+      "Damage": 10,
+      "Cards": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/drain_power.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 1
+      },
+      {
+        "var": "Damage",
+        "delta": 2
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Drain Power",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 10 damage.\nUpgrade 2 random cards in your Discard Pile.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\n"
+          },
+          {
+            "text": "Upgrade",
+            "style": "gold"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards"
+          },
+          {
+            "text": " random cards in your "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Drain Power+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 12 damage.\nUpgrade 3 random cards in your Discard Pile.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "12",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\n"
+          },
+          {
+            "text": "Upgrade",
+            "style": "gold"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "3",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " random cards in your "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,33 +1,83 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DEVASTATE",
-  "class_name": "Devastate",
-  "name": "Devastate",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Devastate.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "DEVASTATE.title",
-    "description_key": "DEVASTATE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Devastate",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Devastate.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "DEVASTATE.title",
+      "description_key": "DEVASTATE.description"
+    },
+    "vars": {
+      "Damage": 30
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/devastate.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/devastate.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 10
+      }
+    ]
   },
-  "vars": {
-    "Damage": 30
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 10
+  "resolved": {
+    "base": {
+      "title": "Devastate",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 30 damage.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "30",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Devastate+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 40 damage.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "40",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,35 +1,100 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BEAT_DOWN",
-  "class_name": "BeatDown",
-  "name": "BeatDown",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BeatDown.cs",
-  "cost": 3,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "RandomEnemy",
-  "localization": {
-    "title_key": "BEAT_DOWN.title",
-    "description_key": "BEAT_DOWN.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "BeatDown",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BeatDown.cs",
+    "cost": 3,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "RandomEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "BEAT_DOWN.title",
+      "description_key": "BEAT_DOWN.description"
+    },
+    "vars": {
+      "Cards": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beat_down.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/beat_down.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Unplayable"
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Cards": 3
-  },
-  "keywords": [
-    "Unplayable"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Beat Down",
+      "cost": 3,
+      "description": {
+        "plain": "Play 3 random Attacks from your Discard Pile.",
+        "runs": [
+          {
+            "text": "Play "
+          },
+          {
+            "text": "3",
+            "source_var": "Cards"
+          },
+          {
+            "text": " random Attacks from your "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Beat Down+",
+      "cost": 3,
+      "description": {
+        "plain": "Play 4 random Attacks from your Discard Pile.",
+        "runs": [
+          {
+            "text": "Play "
+          },
+          {
+            "text": "4",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " random Attacks from your "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,35 +1,85 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FERAL",
-  "class_name": "Feral",
-  "name": "Feral",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Feral.cs",
-  "cost": 2,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "FERAL.title",
-    "description_key": "FERAL.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Feral",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Feral.cs",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "FERAL.title",
+      "description_key": "FERAL.description"
+    },
+    "vars": {
+      "FeralPower": 1
+    },
+    "assets": [
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/feral.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Feral",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"FeralPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "FeralPower": 1,
-    "Feral": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Feral",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"FeralPower\"].BaseValue"
+  "resolved": {
+    "base": {
+      "title": "Feral",
+      "cost": 2,
+      "description": {
+        "plain": "The first time you play a\n0 Attack each turn,\nreturn it to your Hand.",
+        "runs": [
+          {
+            "text": "The first time you play a\n0 Attack each turn,\nreturn it to your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Feral+",
+      "cost": 1,
+      "description": {
+        "plain": "The first time you play a\n0 Attack each turn,\nreturn it to your Hand.",
+        "runs": [
+          {
+            "text": "The first time you play a\n0 Attack each turn,\nreturn it to your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

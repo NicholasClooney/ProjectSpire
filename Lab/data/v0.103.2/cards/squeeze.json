@@ -1,37 +1,91 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SQUEEZE",
-  "class_name": "Squeeze",
-  "name": "Squeeze",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Squeeze.cs",
-  "cost": 3,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "SQUEEZE.title",
-    "description_key": "SQUEEZE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {},
-  "keywords": [],
-  "tags": [
-    "OstyAttack"
-  ],
-  "upgrades": [
-    {
-      "var": "CalculationBase",
-      "delta": 5
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Squeeze",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Squeeze.cs",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "SQUEEZE.title",
+      "description_key": "SQUEEZE.description"
     },
-    {
-      "var": "ExtraDamage",
-      "delta": 1
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/squeeze.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/squeeze.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tags": [
+      "OstyAttack"
+    ],
+    "upgrades": [
+      {
+        "var": "CalculationBase",
+        "delta": 5
+      },
+      {
+        "var": "ExtraDamage",
+        "delta": 1
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Squeeze",
+      "cost": 3,
+      "description": {
+        "plain": "Osty deals {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your other Osty Attacks.",
+        "runs": [
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " deals {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your other "
+          },
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " Attacks."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Squeeze+",
+      "cost": 3,
+      "description": {
+        "plain": "Osty deals {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your other Osty Attacks.",
+        "runs": [
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " deals {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your other "
+          },
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " Attacks."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

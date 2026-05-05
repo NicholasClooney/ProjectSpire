@@ -1,34 +1,99 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "STAMPEDE",
-  "class_name": "Stampede",
-  "name": "Stampede",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Stampede.cs",
-  "cost": 2,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "STAMPEDE.title",
-    "description_key": "STAMPEDE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Stampede",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Stampede.cs",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "STAMPEDE.title",
+      "description_key": "STAMPEDE.description"
+    },
+    "vars": {
+      "Power": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/stampede.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Stampede",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"Power\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Power": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Stampede",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"Power\"].BaseValue"
+  "resolved": {
+    "base": {
+      "title": "Stampede",
+      "cost": 2,
+      "description": {
+        "plain": "At the end of your turn, 1 random Attack in your Hand is played against a random enemy.",
+        "runs": [
+          {
+            "text": "At the end of your turn, "
+          },
+          {
+            "text": "1",
+            "source_var": "Power"
+          },
+          {
+            "text": " random Attack in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " is played against a random enemy."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Stampede+",
+      "cost": 1,
+      "description": {
+        "plain": "At the end of your turn, 1 random Attack in your Hand is played against a random enemy.",
+        "runs": [
+          {
+            "text": "At the end of your turn, "
+          },
+          {
+            "text": "1",
+            "source_var": "Power"
+          },
+          {
+            "text": " random Attack in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " is played against a random enemy."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

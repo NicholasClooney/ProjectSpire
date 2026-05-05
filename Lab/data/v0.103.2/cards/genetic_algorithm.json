@@ -1,33 +1,88 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "GENETIC_ALGORITHM",
-  "class_name": "GeneticAlgorithm",
-  "name": "GeneticAlgorithm",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GeneticAlgorithm.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "GENETIC_ALGORITHM.title",
-    "description_key": "GENETIC_ALGORITHM.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "GeneticAlgorithm",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GeneticAlgorithm.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "GENETIC_ALGORITHM.title",
+      "description_key": "GENETIC_ALGORITHM.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/genetic_algorithm.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Increase",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Increase",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Genetic Algorithm",
+      "cost": 1,
+      "description": {
+        "plain": "Gain {Block:diff()} Block.\nPermanently increase this card's Block by {Increase:diff()}.",
+        "runs": [
+          {
+            "text": "Gain {Block:diff()} "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nPermanently increase this card's "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " by {Increase:diff()}."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Genetic Algorithm+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain {Block:diff()} Block.\nPermanently increase this card's Block by {Increase:diff()}.",
+        "runs": [
+          {
+            "text": "Gain {Block:diff()} "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nPermanently increase this card's "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " by {Increase:diff()}."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

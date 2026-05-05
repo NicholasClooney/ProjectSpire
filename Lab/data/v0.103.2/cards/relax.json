@@ -1,56 +1,151 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "RELAX",
-  "class_name": "Relax",
-  "name": "Relax",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Relax.cs",
-  "cost": 3,
-  "type": "Skill",
-  "rarity": "Ancient",
-  "target": "Self",
-  "localization": {
-    "title_key": "RELAX.title",
-    "description_key": "RELAX.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Relax",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Relax.cs",
+    "cost": 3,
+    "type": "Skill",
+    "rarity": "Ancient",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "RELAX.title",
+      "description_key": "RELAX.description"
+    },
+    "vars": {
+      "Block": 15,
+      "Cards": 2,
+      "Energy": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/event/relax.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/event/beta/relax.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 2
+      },
+      {
+        "var": "Cards",
+        "delta": 1
+      },
+      {
+        "var": "Energy",
+        "delta": 1
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "DrawCardsNextTurn",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Cards.BaseValue"
+      },
+      {
+        "power": "EnergyNextTurn",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Energy.BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Block": 15,
-    "Cards": 2,
-    "Energy": 2
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Relax",
+      "cost": 3,
+      "description": {
+        "plain": "Gain 15 Block.\nNext turn, draw 2 cards and gain 2.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "15",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nNext turn, draw "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards"
+          },
+          {
+            "text": " cards and gain "
+          },
+          {
+            "text": "2",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     },
-    {
-      "var": "Cards",
-      "delta": 1
-    },
-    {
-      "var": "Energy",
-      "delta": 1
+    "upgraded": {
+      "title": "Relax+",
+      "cost": 3,
+      "description": {
+        "plain": "Gain 17 Block.\nNext turn, draw 3 cards and gain 3.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "17",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nNext turn, draw "
+          },
+          {
+            "text": "3",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " cards and gain "
+          },
+          {
+            "text": "3",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "DrawCardsNextTurn",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Cards.BaseValue"
-    },
-    {
-      "power": "EnergyNextTurn",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Energy.BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,33 +1,111 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "HEIRLOOM_HAMMER",
-  "class_name": "HeirloomHammer",
-  "name": "HeirloomHammer",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HeirloomHammer.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "HEIRLOOM_HAMMER.title",
-    "description_key": "HEIRLOOM_HAMMER.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "HeirloomHammer",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HeirloomHammer.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "HEIRLOOM_HAMMER.title",
+      "description_key": "HEIRLOOM_HAMMER.description"
+    },
+    "vars": {
+      "Damage": 20
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/heirloom_hammer.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/heirloom_hammer.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 5
+      }
+    ]
   },
-  "vars": {
-    "Damage": 20
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 5
+  "resolved": {
+    "base": {
+      "title": "Heirloom Hammer",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 20 damage.\nChoose a Colorless card in your Hand. Add a copy of that card into your Hand.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "20",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nChoose a Colorless card in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ". Add a copy of that card into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Heirloom Hammer+",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 25 damage.\nChoose a Colorless card in your Hand. Add a copy of that card into your Hand.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "25",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nChoose a Colorless card in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ". Add a copy of that card into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

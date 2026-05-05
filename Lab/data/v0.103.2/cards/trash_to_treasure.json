@@ -1,34 +1,87 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "TRASH_TO_TREASURE",
-  "class_name": "TrashToTreasure",
-  "name": "TrashToTreasure",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TrashToTreasure.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "TRASH_TO_TREASURE.title",
-    "description_key": "TRASH_TO_TREASURE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "TrashToTreasure",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TrashToTreasure.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "TRASH_TO_TREASURE.title",
+      "description_key": "TRASH_TO_TREASURE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/trash_to_treasure.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/trash_to_treasure.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Innate"
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Channeling",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "TrashToTreasure",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Innate"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "TrashToTreasure",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
+  "resolved": {
+    "base": {
+      "title": "Trash to Treasure",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you create a Status, Channel 1 random Orb.",
+        "runs": [
+          {
+            "text": "Whenever you create a Status, "
+          },
+          {
+            "text": "Channel",
+            "style": "gold"
+          },
+          {
+            "text": " 1 random Orb."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Trash to Treasure+",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you create a Status, Channel 1 random Orb.",
+        "runs": [
+          {
+            "text": "Whenever you create a Status, "
+          },
+          {
+            "text": "Channel",
+            "style": "gold"
+          },
+          {
+            "text": " 1 random Orb."
+          }
+        ]
+      }
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

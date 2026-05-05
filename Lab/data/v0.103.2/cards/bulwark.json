@@ -1,37 +1,115 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BULWARK",
-  "class_name": "Bulwark",
-  "name": "Bulwark",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Bulwark.cs",
-  "cost": 2,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "BULWARK.title",
-    "description_key": "BULWARK.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Block": 13
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 3
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Bulwark",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Bulwark.cs",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "BULWARK.title",
+      "description_key": "BULWARK.description"
     },
-    {
-      "var": "Forge",
-      "delta": 3
+    "vars": {
+      "Block": 13
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/bulwark.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/bulwark.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 3
+      },
+      {
+        "var": "Forge",
+        "delta": 3
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Bulwark",
+      "cost": 2,
+      "description": {
+        "plain": "Gain 13 Block.\nForge {Forge:diff()}.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "13",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\n"
+          },
+          {
+            "text": "Forge",
+            "style": "gold"
+          },
+          {
+            "text": " {Forge:diff()}."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Bulwark+",
+      "cost": 2,
+      "description": {
+        "plain": "Gain 16 Block.\nForge {Forge:diff()}.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "16",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\n"
+          },
+          {
+            "text": "Forge",
+            "style": "gold"
+          },
+          {
+            "text": " {Forge:diff()}."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

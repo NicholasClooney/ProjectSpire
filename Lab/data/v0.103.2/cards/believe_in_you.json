@@ -1,33 +1,82 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BELIEVE_IN_YOU",
-  "class_name": "BelieveInYou",
-  "name": "BelieveInYou",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BelieveInYou.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "AnyAlly",
-  "localization": {
-    "title_key": "BELIEVE_IN_YOU.title",
-    "description_key": "BELIEVE_IN_YOU.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "BelieveInYou",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BelieveInYou.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyAlly",
+    "localization": {
+      "table": "cards",
+      "title_key": "BELIEVE_IN_YOU.title",
+      "description_key": "BELIEVE_IN_YOU.description"
+    },
+    "vars": {
+      "Energy": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/believe_in_you.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/believe_in_you.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Energy",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Energy": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Energy",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Believe in You",
+      "cost": 0,
+      "description": {
+        "plain": "Another player gains 2.",
+        "runs": [
+          {
+            "text": "Another player gains "
+          },
+          {
+            "text": "2",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Believe in You+",
+      "cost": 0,
+      "description": {
+        "plain": "Another player gains 3.",
+        "runs": [
+          {
+            "text": "Another player gains "
+          },
+          {
+            "text": "3",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,36 +1,77 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SWEEPING_GAZE",
-  "class_name": "SweepingGaze",
-  "name": "SweepingGaze",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SweepingGaze.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Token",
-  "target": "RandomEnemy",
-  "localization": {
-    "title_key": "SWEEPING_GAZE.title",
-    "description_key": "SWEEPING_GAZE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "SweepingGaze",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SweepingGaze.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Token",
+    "target": "RandomEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "SWEEPING_GAZE.title",
+      "description_key": "SWEEPING_GAZE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/token/sweeping_gaze.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/token/beta/sweeping_gaze.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust",
+      "Ethereal"
+    ],
+    "tags": [
+      "OstyAttack"
+    ],
+    "upgrades": [
+      {
+        "var": "OstyDamage",
+        "delta": 5
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust",
-    "Ethereal"
-  ],
-  "tags": [
-    "OstyAttack"
-  ],
-  "upgrades": [
-    {
-      "var": "OstyDamage",
-      "delta": 5
+  "resolved": {
+    "base": {
+      "title": "Sweeping Gaze",
+      "cost": 0,
+      "description": {
+        "plain": "Osty deals {OstyDamage:diff()} damage to a random enemy.",
+        "runs": [
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " deals {OstyDamage:diff()} damage to a random enemy."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Sweeping Gaze+",
+      "cost": 0,
+      "description": {
+        "plain": "Osty deals {OstyDamage:diff()} damage to a random enemy.",
+        "runs": [
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " deals {OstyDamage:diff()} damage to a random enemy."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

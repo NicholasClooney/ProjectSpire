@@ -1,39 +1,107 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "GUARDS",
-  "class_name": "Guards",
-  "name": "Guards",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Guards.cs",
-  "cost": 2,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "GUARDS.title",
-    "description_key": "GUARDS.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {},
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "hover_tip_card",
-      "target": "MINION_SACRIFICE",
-      "source": "HoverTipFactory.FromCard"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Guards",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Guards.cs",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "GUARDS.title",
+      "description_key": "GUARDS.description"
     },
-    {
-      "kind": "creates_card",
-      "target": "MINION_SACRIFICE",
-      "source": "CreateCard"
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/guards.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "MINION_SACRIFICE",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "creates_card",
+        "target": "MINION_SACRIFICE",
+        "source": "CreateCard"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "GUARDS!!!",
+      "cost": 2,
+      "description": {
+        "plain": "Transform any number of cards in your Hand into Minion Sacrifice.",
+        "runs": [
+          {
+            "text": "Transform",
+            "style": "gold"
+          },
+          {
+            "text": " any number of cards in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " into "
+          },
+          {
+            "text": "Minion Sacrifice",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "GUARDS!!!+",
+      "cost": 2,
+      "description": {
+        "plain": "Transform any number of cards in your Hand into Minion Sacrifice+.",
+        "runs": [
+          {
+            "text": "Transform",
+            "style": "gold"
+          },
+          {
+            "text": " any number of cards in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " into "
+          },
+          {
+            "text": "Minion Sacrifice+",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

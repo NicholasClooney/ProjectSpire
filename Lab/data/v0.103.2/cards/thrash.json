@@ -1,35 +1,109 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "THRASH",
-  "class_name": "Thrash",
-  "name": "Thrash",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Thrash.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "THRASH.title",
-    "description_key": "THRASH.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Thrash",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Thrash.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "THRASH.title",
+      "description_key": "THRASH.description"
+    },
+    "vars": {
+      "Damage": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/thrash.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 2
+      }
+    ]
   },
-  "vars": {
-    "Damage": 4
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Thrash",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 4 damage twice.\nExhaust a random Attack in your Hand and add its damage to this card.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "4",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage twice.\n"
+          },
+          {
+            "text": "Exhaust",
+            "style": "gold"
+          },
+          {
+            "text": " a random Attack in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " and add its damage to this card."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Thrash+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 6 damage twice.\nExhaust a random Attack in your Hand and add its damage to this card.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "6",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage twice.\n"
+          },
+          {
+            "text": "Exhaust",
+            "style": "gold"
+          },
+          {
+            "text": " a random Attack in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " and add its damage to this card."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,49 +1,134 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BRAND",
-  "class_name": "Brand",
-  "name": "Brand",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Brand.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "BRAND.title",
-    "description_key": "BRAND.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Brand",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Brand.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "BRAND.title",
+      "description_key": "BRAND.description"
+    },
+    "vars": {
+      "HpLoss": 1,
+      "StrengthPower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/brand.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Strength",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Strength",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Strength.BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "HpLoss": 1,
-    "StrengthPower": 1,
-    "Strength": 1
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Strength",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Brand",
+      "cost": 0,
+      "description": {
+        "plain": "Lose 1 HP.\nExhaust 1 card.\nGain 1 Strength.",
+        "runs": [
+          {
+            "text": "Lose "
+          },
+          {
+            "text": "1",
+            "source_var": "HpLoss"
+          },
+          {
+            "text": " HP.\n"
+          },
+          {
+            "text": "Exhaust",
+            "style": "gold"
+          },
+          {
+            "text": " 1 card.\nGain "
+          },
+          {
+            "text": "1",
+            "source_var": "StrengthPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Brand+",
+      "cost": 0,
+      "description": {
+        "plain": "Lose 1 HP.\nExhaust 1 card.\nGain 1 Strength.",
+        "runs": [
+          {
+            "text": "Lose "
+          },
+          {
+            "text": "1",
+            "source_var": "HpLoss"
+          },
+          {
+            "text": " HP.\n"
+          },
+          {
+            "text": "Exhaust",
+            "style": "gold"
+          },
+          {
+            "text": " 1 card.\nGain "
+          },
+          {
+            "text": "1",
+            "source_var": "StrengthPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Strength",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Strength.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "StrengthPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,30 +1,111 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "TRANSFIGURE",
-  "class_name": "Transfigure",
-  "name": "Transfigure",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Transfigure.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "TRANSFIGURE.title",
-    "description_key": "TRANSFIGURE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Transfigure",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Transfigure.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "TRANSFIGURE.title",
+      "description_key": "TRANSFIGURE.description"
+    },
+    "vars": {
+      "Energy": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/transfigure.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/transfigure.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "ReplayStatic",
+        "source": "HoverTipFactory.Static"
+      }
+    ]
   },
-  "vars": {
-    "Energy": 1
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Transfigure",
+      "cost": 1,
+      "description": {
+        "plain": "Add Replay to a card in your Hand.\nIt costs an extra 1.",
+        "runs": [
+          {
+            "text": "Add "
+          },
+          {
+            "text": "Replay",
+            "style": "gold"
+          },
+          {
+            "text": " to a card in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ".\nIt costs an extra "
+          },
+          {
+            "text": "1",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Transfigure+",
+      "cost": 1,
+      "description": {
+        "plain": "Add Replay to a card in your Hand.\nIt costs an extra 1.",
+        "runs": [
+          {
+            "text": "Add "
+          },
+          {
+            "text": "Replay",
+            "style": "gold"
+          },
+          {
+            "text": " to a card in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ".\nIt costs an extra "
+          },
+          {
+            "text": "1",
+            "source_var": "Energy"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    }
+  }
 }

@@ -1,46 +1,128 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "LEADING_STRIKE",
-  "class_name": "LeadingStrike",
-  "name": "LeadingStrike",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/LeadingStrike.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "LEADING_STRIKE.title",
-    "description_key": "LEADING_STRIKE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 3
-  },
-  "keywords": [],
-  "tags": [
-    "Strike"
-  ],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 3
-    }
-  ],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "hover_tip_card",
-      "target": "SHIV",
-      "source": "HoverTipFactory.FromCard"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "LeadingStrike",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/LeadingStrike.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "LEADING_STRIKE.title",
+      "description_key": "LEADING_STRIKE.description"
     },
-    {
-      "kind": "creates_card",
-      "target": "SHIV",
-      "source": "CreateInHand"
+    "vars": {
+      "Damage": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/leading_strike.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/beta/leading_strike.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tags": [
+      "Strike"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 3
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "SHIV",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "creates_card",
+        "target": "SHIV",
+        "source": "CreateInHand"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Leading Strike",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 3 damage.\nAdd {Shivs:diff()} {Shivs:plural:Shiv|Shivs} into your Hand.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "3",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nAdd {Shivs:diff()} "
+          },
+          {
+            "text": "{Shivs:plural:Shiv|Shivs}",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Leading Strike+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 6 damage.\nAdd {Shivs:diff()} {Shivs:plural:Shiv|Shivs} into your Hand.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "6",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nAdd {Shivs:diff()} "
+          },
+          {
+            "text": "{Shivs:plural:Shiv|Shivs}",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

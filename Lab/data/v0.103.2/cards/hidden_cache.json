@@ -1,40 +1,89 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "HIDDEN_CACHE",
-  "class_name": "HiddenCache",
-  "name": "HiddenCache",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HiddenCache.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Common",
-  "target": "Self",
-  "localization": {
-    "title_key": "HIDDEN_CACHE.title",
-    "description_key": "HIDDEN_CACHE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "HiddenCache",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HiddenCache.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "HIDDEN_CACHE.title",
+      "description_key": "HIDDEN_CACHE.description"
+    },
+    "vars": {
+      "StarNextTurnPower": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/hidden_cache.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/hidden_cache.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "StarNextTurnPower",
+        "delta": 1
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "StarNextTurn",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"StarNextTurnPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "StarNextTurnPower": 3,
-    "StarNextTurn": 3
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "StarNextTurnPower",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Hidden Cache",
+      "cost": 1,
+      "description": {
+        "plain": "Gain {Stars:starIcons()}.\nNext turn, gain 3.",
+        "runs": [
+          {
+            "text": "Gain {Stars:starIcons()}.\nNext turn, gain "
+          },
+          {
+            "text": "3",
+            "source_var": "StarNextTurnPower"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Hidden Cache+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain {Stars:starIcons()}.\nNext turn, gain 4.",
+        "runs": [
+          {
+            "text": "Gain {Stars:starIcons()}.\nNext turn, gain "
+          },
+          {
+            "text": "4",
+            "source_var": "StarNextTurnPower"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "StarNextTurn",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"StarNextTurnPower\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

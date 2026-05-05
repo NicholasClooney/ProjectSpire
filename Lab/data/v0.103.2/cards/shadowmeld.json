@@ -1,34 +1,92 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SHADOWMELD",
-  "class_name": "Shadowmeld",
-  "name": "Shadowmeld",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Shadowmeld.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "SHADOWMELD.title",
-    "description_key": "SHADOWMELD.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Shadowmeld",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Shadowmeld.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SHADOWMELD.title",
+      "description_key": "SHADOWMELD.description"
+    },
+    "vars": {
+      "Power": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/shadowmeld.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Shadowmeld",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"Power\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Power": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Shadowmeld",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"Power\"].BaseValue"
+  "resolved": {
+    "base": {
+      "title": "Shadowmeld",
+      "cost": 1,
+      "description": {
+        "plain": "Double your Block gain this turn.",
+        "runs": [
+          {
+            "text": "Double your "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " gain this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Shadowmeld+",
+      "cost": 0,
+      "description": {
+        "plain": "Double your Block gain this turn.",
+        "runs": [
+          {
+            "text": "Double your "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " gain this turn."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

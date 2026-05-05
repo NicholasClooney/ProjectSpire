@@ -1,39 +1,85 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "PREDATOR",
-  "class_name": "Predator",
-  "name": "Predator",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Predator.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "PREDATOR.title",
-    "description_key": "PREDATOR.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Predator",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Predator.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "PREDATOR.title",
+      "description_key": "PREDATOR.description"
+    },
+    "vars": {
+      "Damage": 15
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/predator.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 5
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "DrawCardsNextTurn",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "2m"
+      }
+    ]
   },
-  "vars": {
-    "Damage": 15
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 5
+  "resolved": {
+    "base": {
+      "title": "Predator",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 15 damage.\nNext turn, draw 2 cards.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "15",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nNext turn, draw 2 cards."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Predator+",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 20 damage.\nNext turn, draw 2 cards.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "20",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nNext turn, draw 2 cards."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "DrawCardsNextTurn",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "2m"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

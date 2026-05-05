@@ -1,39 +1,85 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "TAG_TEAM",
-  "class_name": "TagTeam",
-  "name": "TagTeam",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TagTeam.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "TAG_TEAM.title",
-    "description_key": "TAG_TEAM.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "TagTeam",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TagTeam.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "TAG_TEAM.title",
+      "description_key": "TAG_TEAM.description"
+    },
+    "vars": {
+      "Damage": 11
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/tag_team.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 4
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "TagTeam",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "1m"
+      }
+    ]
   },
-  "vars": {
-    "Damage": 11
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 4
+  "resolved": {
+    "base": {
+      "title": "Tag Team",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 11 damage.\nThe next Attack another player plays on the enemy is played an extra time.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "11",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nThe next Attack another player plays on the enemy is played an extra time."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Tag Team+",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 15 damage.\nThe next Attack another player plays on the enemy is played an extra time.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "15",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nThe next Attack another player plays on the enemy is played an extra time."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "TagTeam",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "1m"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

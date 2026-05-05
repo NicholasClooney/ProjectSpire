@@ -1,44 +1,134 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FIGHT_THROUGH",
-  "class_name": "FightThrough",
-  "name": "FightThrough",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FightThrough.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "FIGHT_THROUGH.title",
-    "description_key": "FIGHT_THROUGH.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Block": 13
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 4
-    }
-  ],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "hover_tip_card",
-      "target": "WOUND",
-      "source": "HoverTipFactory.FromCard"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "FightThrough",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FightThrough.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "FIGHT_THROUGH.title",
+      "description_key": "FIGHT_THROUGH.description"
     },
-    {
-      "kind": "creates_card",
-      "target": "WOUND",
-      "source": "CreateCard"
+    "vars": {
+      "Block": 13
+    },
+    "assets": [
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/fight_through.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 4
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "WOUND",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "creates_card",
+        "target": "WOUND",
+        "source": "CreateCard"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Fight Through",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 13 Block.\nAdd 2 Wounds into your Discard Pile.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "13",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nAdd 2 "
+          },
+          {
+            "text": "Wounds",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Fight Through+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 17 Block.\nAdd 2 Wounds into your Discard Pile.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "17",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nAdd 2 "
+          },
+          {
+            "text": "Wounds",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

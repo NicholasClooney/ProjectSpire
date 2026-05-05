@@ -1,34 +1,107 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FOLLOW_THROUGH",
-  "class_name": "FollowThrough",
-  "name": "FollowThrough",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FollowThrough.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "FOLLOW_THROUGH.title",
-    "description_key": "FOLLOW_THROUGH.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "FollowThrough",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FollowThrough.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "FOLLOW_THROUGH.title",
+      "description_key": "FOLLOW_THROUGH.description"
+    },
+    "vars": {
+      "Damage": 7,
+      "CardCount": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/follow_through.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 2
+      }
+    ]
   },
-  "vars": {
-    "Damage": 7,
-    "CardCount": 5
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Follow Through",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 7 damage.\nIf you have 5 or more other cards in your Hand, hits an additional time.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "7",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nIf you have "
+          },
+          {
+            "text": "5",
+            "source_var": "CardCount"
+          },
+          {
+            "text": " or more other cards in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ", hits an additional time."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Follow Through+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 9 damage.\nIf you have 5 or more other cards in your Hand, hits an additional time.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "9",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nIf you have "
+          },
+          {
+            "text": "5",
+            "source_var": "CardCount"
+          },
+          {
+            "text": " or more other cards in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ", hits an additional time."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

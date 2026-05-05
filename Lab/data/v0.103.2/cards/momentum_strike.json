@@ -1,35 +1,81 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "MOMENTUM_STRIKE",
-  "class_name": "MomentumStrike",
-  "name": "MomentumStrike",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MomentumStrike.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "MOMENTUM_STRIKE.title",
-    "description_key": "MOMENTUM_STRIKE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "MomentumStrike",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MomentumStrike.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "MOMENTUM_STRIKE.title",
+      "description_key": "MOMENTUM_STRIKE.description"
+    },
+    "vars": {
+      "Damage": 10
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/momentum_strike.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tags": [
+      "Strike"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {
-    "Damage": 10
-  },
-  "keywords": [],
-  "tags": [
-    "Strike"
-  ],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Momentum Strike",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 10 damage.\nReduce this card's cost to 0 .",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nReduce this card's cost to 0 ."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Momentum Strike+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 13 damage.\nReduce this card's cost to 0 .",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "13",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nReduce this card's cost to 0 ."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

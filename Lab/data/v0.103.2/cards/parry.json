@@ -1,46 +1,130 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "PARRY",
-  "class_name": "Parry",
-  "name": "Parry",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Parry.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "PARRY.title",
-    "description_key": "PARRY.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Parry",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Parry.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "PARRY.title",
+      "description_key": "PARRY.description"
+    },
+    "vars": {
+      "ParryPower": 10
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/parry.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/parry.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "ParryPower",
+        "delta": 4
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      },
+      {
+        "kind": "hover_tip_card",
+        "target": "SOVEREIGN_BLADE",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Parry",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"ParryPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "ParryPower": 10,
-    "Parry": 10
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "ParryPower",
-      "delta": 4
+  "resolved": {
+    "base": {
+      "title": "Parry",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you play Sovereign Blade, gain 10 Block.",
+        "runs": [
+          {
+            "text": "Whenever you play "
+          },
+          {
+            "text": "Sovereign Blade",
+            "style": "gold"
+          },
+          {
+            "text": ", gain "
+          },
+          {
+            "text": "10",
+            "source_var": "ParryPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Parry+",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you play Sovereign Blade, gain 14 Block.",
+        "runs": [
+          {
+            "text": "Whenever you play "
+          },
+          {
+            "text": "Sovereign Blade",
+            "style": "gold"
+          },
+          {
+            "text": ", gain "
+          },
+          {
+            "text": "14",
+            "source_var": "ParryPower",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Parry",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"ParryPower\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_card",
-      "target": "SOVEREIGN_BLADE",
-      "source": "HoverTipFactory.FromCard"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

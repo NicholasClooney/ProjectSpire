@@ -1,32 +1,88 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "TEMPEST",
-  "class_name": "Tempest",
-  "name": "Tempest",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Tempest.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "TEMPEST.title",
-    "description_key": "TEMPEST.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Tempest",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Tempest.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "TEMPEST.title",
+      "description_key": "TEMPEST.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/tempest.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Channeling",
+        "source": "HoverTipFactory.Static"
+      },
+      {
+        "kind": "hover_tip_orb",
+        "target": "LightningOrb",
+        "source": "HoverTipFactory.FromOrb"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [
-    {
-      "kind": "hover_tip_orb",
-      "target": "LightningOrb",
-      "source": "HoverTipFactory.FromOrb"
+  "resolved": {
+    "base": {
+      "title": "Tempest",
+      "cost": 0,
+      "description": {
+        "plain": "Channel X Lightning.",
+        "runs": [
+          {
+            "text": "Channel",
+            "style": "gold"
+          },
+          {
+            "text": " X "
+          },
+          {
+            "text": "Lightning",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Tempest+",
+      "cost": 0,
+      "description": {
+        "plain": "Channel X+1 Lightning.",
+        "runs": [
+          {
+            "text": "Channel",
+            "style": "gold"
+          },
+          {
+            "text": " X+1 "
+          },
+          {
+            "text": "Lightning",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

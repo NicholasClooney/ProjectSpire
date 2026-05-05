@@ -1,33 +1,74 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "PECK",
-  "class_name": "Peck",
-  "name": "Peck",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Peck.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Event",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "PECK.title",
-    "description_key": "PECK.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Peck",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Peck.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Event",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "PECK.title",
+      "description_key": "PECK.description"
+    },
+    "vars": {
+      "Damage": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/event/peck.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Repeat",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {
-    "Damage": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Repeat",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Peck",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 2 damage {Repeat:diff()} times.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "2",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage {Repeat:diff()} times."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Peck+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 2 damage {Repeat:diff()} times.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "2",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage {Repeat:diff()} times."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

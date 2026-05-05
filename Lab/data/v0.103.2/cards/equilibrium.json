@@ -1,42 +1,131 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "EQUILIBRIUM",
-  "class_name": "Equilibrium",
-  "name": "Equilibrium",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Equilibrium.cs",
-  "cost": 2,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "EQUILIBRIUM.title",
-    "description_key": "EQUILIBRIUM.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Equilibrium",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Equilibrium.cs",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "EQUILIBRIUM.title",
+      "description_key": "EQUILIBRIUM.description"
+    },
+    "vars": {
+      "Block": 13,
+      "Equilibrium": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/equilibrium.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Retain"
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 3
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "RetainHand",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"Equilibrium\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Block": 13,
-    "Equilibrium": 1
-  },
-  "keywords": [
-    "Retain"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Equilibrium",
+      "cost": 2,
+      "description": {
+        "plain": "Gain 13 Block.\nRetain your Hand this turn.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "13",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\n"
+          },
+          {
+            "text": "Retain",
+            "style": "gold"
+          },
+          {
+            "text": " your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Equilibrium+",
+      "cost": 2,
+      "description": {
+        "plain": "Gain 16 Block.\nRetain your Hand this turn.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "16",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\n"
+          },
+          {
+            "text": "Retain",
+            "style": "gold"
+          },
+          {
+            "text": " your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "RetainHand",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"Equilibrium\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,38 +1,103 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ROCKET_PUNCH",
-  "class_name": "RocketPunch",
-  "name": "RocketPunch",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/RocketPunch.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "ROCKET_PUNCH.title",
-    "description_key": "ROCKET_PUNCH.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 13,
-    "Cards": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 1
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "RocketPunch",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/RocketPunch.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "ROCKET_PUNCH.title",
+      "description_key": "ROCKET_PUNCH.description"
     },
-    {
-      "var": "Damage",
-      "delta": 1
+    "vars": {
+      "Damage": 13,
+      "Cards": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/rocket_punch.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/rocket_punch.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 1
+      },
+      {
+        "var": "Damage",
+        "delta": 1
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Rocket Punch",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 13 damage.\nDraw 1 card.\nWhenever you create a Status, reduce this card's cost to 0  until played.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "13",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nDraw "
+          },
+          {
+            "text": "1",
+            "source_var": "Cards"
+          },
+          {
+            "text": " card.\nWhenever you create a Status, reduce this card's cost to 0  until played."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Rocket Punch+",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 14 damage.\nDraw 2 cards.\nWhenever you create a Status, reduce this card's cost to 0  until played.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "14",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nDraw "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " cards.\nWhenever you create a Status, reduce this card's cost to 0  until played."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

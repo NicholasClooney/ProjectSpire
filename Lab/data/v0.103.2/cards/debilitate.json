@@ -1,56 +1,150 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DEBILITATE",
-  "class_name": "Debilitate",
-  "name": "Debilitate",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Debilitate.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "DEBILITATE.title",
-    "description_key": "DEBILITATE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 10,
-    "DebilitatePower": 3,
-    "Debilitate": 3
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 2
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Debilitate",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Debilitate.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "DEBILITATE.title",
+      "description_key": "DEBILITATE.description"
     },
-    {
-      "var": "DebilitatePower",
-      "delta": 1
-    }
-  ],
-  "applies_powers": [
-    {
-      "power": "Debilitate",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars[\"DebilitatePower\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "VulnerablePower",
-      "source": "HoverTipFactory.FromPower"
+    "vars": {
+      "Damage": 10,
+      "DebilitatePower": 3
     },
-    {
-      "kind": "hover_tip_power",
-      "target": "WeakPower",
-      "source": "HoverTipFactory.FromPower"
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/debilitate.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/debilitate.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 2
+      },
+      {
+        "var": "DebilitatePower",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "VulnerablePower",
+        "source": "HoverTipFactory.FromPower"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "WeakPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Debilitate",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars[\"DebilitatePower\"].BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Debilitate",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 10 damage.\nVulnerable and Weak are twice as effective against the enemy for the next 3 turns.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\n"
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": " are twice as effective against the enemy for the next "
+          },
+          {
+            "text": "3",
+            "source_var": "DebilitatePower"
+          },
+          {
+            "text": " turns."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Debilitate+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 12 damage.\nVulnerable and Weak are twice as effective against the enemy for the next 4 turns.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "12",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\n"
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": " are twice as effective against the enemy for the next "
+          },
+          {
+            "text": "4",
+            "source_var": "DebilitatePower",
+            "style": "green"
+          },
+          {
+            "text": " turns."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,37 +1,84 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "MINION_DIVE_BOMB",
-  "class_name": "MinionDiveBomb",
-  "name": "MinionDiveBomb",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MinionDiveBomb.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Token",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "MINION_DIVE_BOMB.title",
-    "description_key": "MINION_DIVE_BOMB.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "MinionDiveBomb",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MinionDiveBomb.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Token",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "MINION_DIVE_BOMB.title",
+      "description_key": "MINION_DIVE_BOMB.description"
+    },
+    "vars": {
+      "Damage": 13
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/token/minion_dive_bomb.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "tags": [
+      "Minion"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {
-    "Damage": 13
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [
-    "Minion"
-  ],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Minion Dive Bomb",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 13 damage.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "13",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Minion Dive Bomb+",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 16 damage.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "16",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

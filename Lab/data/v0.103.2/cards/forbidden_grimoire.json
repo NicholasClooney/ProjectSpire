@@ -1,34 +1,90 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FORBIDDEN_GRIMOIRE",
-  "class_name": "ForbiddenGrimoire",
-  "name": "ForbiddenGrimoire",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ForbiddenGrimoire.cs",
-  "cost": 2,
-  "type": "Power",
-  "rarity": "Ancient",
-  "target": "Self",
-  "localization": {
-    "title_key": "FORBIDDEN_GRIMOIRE.title",
-    "description_key": "FORBIDDEN_GRIMOIRE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "ForbiddenGrimoire",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ForbiddenGrimoire.cs",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Ancient",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "FORBIDDEN_GRIMOIRE.title",
+      "description_key": "FORBIDDEN_GRIMOIRE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/forbidden_grimoire.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/forbidden_grimoire.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Eternal"
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "ForbiddenGrimoire",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Eternal"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "ForbiddenGrimoire",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
+  "resolved": {
+    "base": {
+      "title": "Forbidden Grimoire",
+      "cost": 2,
+      "description": {
+        "plain": "At the end of combat, you may remove a card from your Deck.",
+        "runs": [
+          {
+            "text": "At the end of combat, you may remove a card from your "
+          },
+          {
+            "text": "Deck",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Forbidden Grimoire+",
+      "cost": 1,
+      "description": {
+        "plain": "At the end of combat, you may remove a card from your Deck.",
+        "runs": [
+          {
+            "text": "At the end of combat, you may remove a card from your "
+          },
+          {
+            "text": "Deck",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

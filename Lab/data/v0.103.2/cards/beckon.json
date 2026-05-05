@@ -1,28 +1,87 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BECKON",
-  "class_name": "Beckon",
-  "name": "Beckon",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Beckon.cs",
-  "cost": 1,
-  "type": "Status",
-  "rarity": "Status",
-  "target": "None",
-  "localization": {
-    "title_key": "BECKON.title",
-    "description_key": "BECKON.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Beckon",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Beckon.cs",
+    "cost": 1,
+    "type": "Status",
+    "rarity": "Status",
+    "target": "None",
+    "localization": {
+      "table": "cards",
+      "title_key": "BECKON.title",
+      "description_key": "BECKON.description"
+    },
+    "vars": {
+      "HpLoss": 6
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/status/beckon.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/status/beta/beckon.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ]
   },
-  "vars": {
-    "HpLoss": 6
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Beckon",
+      "cost": 1,
+      "description": {
+        "plain": "At the end of your turn, if this is in your Hand,\n lose 6 HP.",
+        "runs": [
+          {
+            "text": "At the end of your turn, if this is in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ",\n lose "
+          },
+          {
+            "text": "6",
+            "source_var": "HpLoss"
+          },
+          {
+            "text": " HP."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Beckon+",
+      "cost": 1,
+      "description": {
+        "plain": "At the end of your turn, if this is in your Hand,\n lose 6 HP.",
+        "runs": [
+          {
+            "text": "At the end of your turn, if this is in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ",\n lose "
+          },
+          {
+            "text": "6",
+            "source_var": "HpLoss"
+          },
+          {
+            "text": " HP."
+          }
+        ]
+      }
+    }
+  }
 }

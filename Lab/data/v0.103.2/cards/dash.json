@@ -1,38 +1,112 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DASH",
-  "class_name": "Dash",
-  "name": "Dash",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Dash.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "DASH.title",
-    "description_key": "DASH.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 10,
-    "Block": 10
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 3
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Dash",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Dash.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "DASH.title",
+      "description_key": "DASH.description"
     },
-    {
-      "var": "Damage",
-      "delta": 3
+    "vars": {
+      "Damage": 10,
+      "Block": 10
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/dash.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 3
+      },
+      {
+        "var": "Damage",
+        "delta": 3
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Dash",
+      "cost": 2,
+      "description": {
+        "plain": "Gain 10 Block.\nDeal 10 damage.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "10",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nDeal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Dash+",
+      "cost": 2,
+      "description": {
+        "plain": "Gain 13 Block.\nDeal 13 damage.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "13",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nDeal "
+          },
+          {
+            "text": "13",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

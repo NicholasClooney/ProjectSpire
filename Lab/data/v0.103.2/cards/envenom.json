@@ -1,46 +1,106 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ENVENOM",
-  "class_name": "Envenom",
-  "name": "Envenom",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Envenom.cs",
-  "cost": 2,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "ENVENOM.title",
-    "description_key": "ENVENOM.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Envenom",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Envenom.cs",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "ENVENOM.title",
+      "description_key": "ENVENOM.description"
+    },
+    "vars": {
+      "EnvenomPower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/envenom.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "EnvenomPower",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "PoisonPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Envenom",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"EnvenomPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "EnvenomPower": 1,
-    "Envenom": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "EnvenomPower",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Envenom",
+      "cost": 2,
+      "description": {
+        "plain": "Whenever an Attack deals unblocked damage, apply 1 Poison.",
+        "runs": [
+          {
+            "text": "Whenever an Attack deals unblocked damage, apply "
+          },
+          {
+            "text": "1",
+            "source_var": "EnvenomPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Poison",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Envenom+",
+      "cost": 2,
+      "description": {
+        "plain": "Whenever an Attack deals unblocked damage, apply 2 Poison.",
+        "runs": [
+          {
+            "text": "Whenever an Attack deals unblocked damage, apply "
+          },
+          {
+            "text": "2",
+            "source_var": "EnvenomPower",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Poison",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Envenom",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"EnvenomPower\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "PoisonPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,33 +1,65 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "THE_SCYTHE",
-  "class_name": "TheScythe",
-  "name": "TheScythe",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TheScythe.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "THE_SCYTHE.title",
-    "description_key": "THE_SCYTHE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "TheScythe",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TheScythe.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "THE_SCYTHE.title",
+      "description_key": "THE_SCYTHE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/the_scythe.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/the_scythe.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Increase",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Increase",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "The Scythe",
+      "cost": 2,
+      "description": {
+        "plain": "Deal {Damage:diff()} damage.\nPermanently increase this card's damage by {Increase:diff()}.",
+        "runs": [
+          {
+            "text": "Deal {Damage:diff()} damage.\nPermanently increase this card's damage by {Increase:diff()}."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "The Scythe+",
+      "cost": 2,
+      "description": {
+        "plain": "Deal {Damage:diff()} damage.\nPermanently increase this card's damage by {Increase:diff()}.",
+        "runs": [
+          {
+            "text": "Deal {Damage:diff()} damage.\nPermanently increase this card's damage by {Increase:diff()}."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

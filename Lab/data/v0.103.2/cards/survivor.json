@@ -1,33 +1,92 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SURVIVOR",
-  "class_name": "Survivor",
-  "name": "Survivor",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Survivor.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Basic",
-  "target": "Self",
-  "localization": {
-    "title_key": "SURVIVOR.title",
-    "description_key": "SURVIVOR.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Survivor",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Survivor.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Basic",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SURVIVOR.title",
+      "description_key": "SURVIVOR.description"
+    },
+    "vars": {
+      "Block": 8
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/survivor.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {
-    "Block": 8
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Survivor",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 8 Block.\nDiscard 1 card.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "8",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nDiscard 1 card."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Survivor+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 11 Block.\nDiscard 1 card.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "11",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nDiscard 1 card."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

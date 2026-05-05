@@ -1,40 +1,100 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "THE_BOMB",
-  "class_name": "TheBomb",
-  "name": "TheBomb",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TheBomb.cs",
-  "cost": 2,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "THE_BOMB.title",
-    "description_key": "THE_BOMB.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "TheBomb",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TheBomb.cs",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "THE_BOMB.title",
+      "description_key": "THE_BOMB.description"
+    },
+    "vars": {
+      "Turns": 3,
+      "BombDamage": 40
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/the_bomb.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "BombDamage",
+        "delta": 10
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "TheBomb",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"Turns\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Turns": 3,
-    "BombDamage": 40
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "BombDamage",
-      "delta": 10
+  "resolved": {
+    "base": {
+      "title": "The Bomb",
+      "cost": 2,
+      "description": {
+        "plain": "At the end of 3 turns, deal 40 damage to ALL enemies.",
+        "runs": [
+          {
+            "text": "At the end of "
+          },
+          {
+            "text": "3",
+            "source_var": "Turns"
+          },
+          {
+            "text": " turns, deal "
+          },
+          {
+            "text": "40",
+            "source_var": "BombDamage"
+          },
+          {
+            "text": " damage to ALL enemies."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "The Bomb+",
+      "cost": 2,
+      "description": {
+        "plain": "At the end of 3 turns, deal 50 damage to ALL enemies.",
+        "runs": [
+          {
+            "text": "At the end of "
+          },
+          {
+            "text": "3",
+            "source_var": "Turns"
+          },
+          {
+            "text": " turns, deal "
+          },
+          {
+            "text": "50",
+            "source_var": "BombDamage",
+            "style": "green"
+          },
+          {
+            "text": " damage to ALL enemies."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "TheBomb",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"Turns\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

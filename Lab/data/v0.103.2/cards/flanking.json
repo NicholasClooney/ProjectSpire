@@ -1,32 +1,68 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FLANKING",
-  "class_name": "Flanking",
-  "name": "Flanking",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Flanking.cs",
-  "cost": 2,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "FLANKING.title",
-    "description_key": "FLANKING.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Flanking",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Flanking.cs",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "FLANKING.title",
+      "description_key": "FLANKING.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/flanking.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Flanking",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "2m"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Flanking",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "2m"
+  "resolved": {
+    "base": {
+      "title": "Flanking",
+      "cost": 2,
+      "description": {
+        "plain": "The enemy takes double attack damage from other players this turn.",
+        "runs": [
+          {
+            "text": "The enemy takes double attack damage from other players this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Flanking+",
+      "cost": 1,
+      "description": {
+        "plain": "The enemy takes double attack damage from other players this turn.",
+        "runs": [
+          {
+            "text": "The enemy takes double attack damage from other players this turn."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

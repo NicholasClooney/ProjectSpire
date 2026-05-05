@@ -1,41 +1,119 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DANSE_MACABRE",
-  "class_name": "DanseMacabre",
-  "name": "DanseMacabre",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DanseMacabre.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "DANSE_MACABRE.title",
-    "description_key": "DANSE_MACABRE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "DanseMacabre",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DanseMacabre.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "DANSE_MACABRE.title",
+      "description_key": "DANSE_MACABRE.description"
+    },
+    "vars": {
+      "Energy": 2,
+      "DanseMacabrePower": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/danse_macabre.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/danse_macabre.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "DanseMacabrePower",
+        "delta": 2
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "DanseMacabre",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"DanseMacabrePower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Energy": 2,
-    "DanseMacabrePower": 4,
-    "DanseMacabre": 4
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "DanseMacabrePower",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Danse Macabre",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you play a card that costs 2 or more, gain 4 Block.",
+        "runs": [
+          {
+            "text": "Whenever you play a card that costs "
+          },
+          {
+            "text": "2",
+            "source_var": "Energy"
+          },
+          {
+            "text": " or more, gain "
+          },
+          {
+            "text": "4",
+            "source_var": "DanseMacabrePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Danse Macabre+",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you play a card that costs 2 or more, gain 6 Block.",
+        "runs": [
+          {
+            "text": "Whenever you play a card that costs "
+          },
+          {
+            "text": "2",
+            "source_var": "Energy"
+          },
+          {
+            "text": " or more, gain "
+          },
+          {
+            "text": "6",
+            "source_var": "DanseMacabrePower",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "DanseMacabre",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"DanseMacabrePower\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

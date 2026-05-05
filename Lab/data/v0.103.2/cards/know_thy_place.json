@@ -1,55 +1,143 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "KNOW_THY_PLACE",
-  "class_name": "KnowThyPlace",
-  "name": "KnowThyPlace",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/KnowThyPlace.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "KNOW_THY_PLACE.title",
-    "description_key": "KNOW_THY_PLACE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "WeakPower": 1,
-    "Weak": 1,
-    "VulnerablePower": 1,
-    "Vulnerable": 1
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Weak",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars.Weak.BaseValue"
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "KnowThyPlace",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/KnowThyPlace.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "KNOW_THY_PLACE.title",
+      "description_key": "KNOW_THY_PLACE.description"
     },
-    {
-      "power": "Vulnerable",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "WeakPower",
-      "source": "HoverTipFactory.FromPower"
+    "vars": {
+      "WeakPower": 1,
+      "VulnerablePower": 1
     },
-    {
-      "kind": "hover_tip_power",
-      "target": "VulnerablePower",
-      "source": "HoverTipFactory.FromPower"
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/know_thy_place.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/know_thy_place.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "WeakPower",
+        "source": "HoverTipFactory.FromPower"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "VulnerablePower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Weak",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars.Weak.BaseValue"
+      },
+      {
+        "power": "Vulnerable",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars.Vulnerable.BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Know Thy Place",
+      "cost": 0,
+      "description": {
+        "plain": "Apply 1 Weak.\nApply 1 Vulnerable.",
+        "runs": [
+          {
+            "text": "Apply "
+          },
+          {
+            "text": "1",
+            "source_var": "WeakPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": ".\nApply "
+          },
+          {
+            "text": "1",
+            "source_var": "VulnerablePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Know Thy Place+",
+      "cost": 0,
+      "description": {
+        "plain": "Apply 1 Weak.\nApply 1 Vulnerable.",
+        "runs": [
+          {
+            "text": "Apply "
+          },
+          {
+            "text": "1",
+            "source_var": "WeakPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": ".\nApply "
+          },
+          {
+            "text": "1",
+            "source_var": "VulnerablePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Vulnerable",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

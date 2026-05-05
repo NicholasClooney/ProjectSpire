@@ -1,38 +1,83 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FTL",
-  "class_name": "Ftl",
-  "name": "Ftl",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Ftl.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "FTL.title",
-    "description_key": "FTL.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 5,
-    "Cards": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 1
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Ftl",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Ftl.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "FTL.title",
+      "description_key": "FTL.description"
     },
-    {
-      "var": "PlayMax",
-      "delta": 1
+    "vars": {
+      "Damage": 5,
+      "Cards": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/ftl.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 1
+      },
+      {
+        "var": "PlayMax",
+        "delta": 1
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "FTL",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 5 damage.\nIf you have played fewer than {PlayMax:diff()} cards this turn, draw 1 card.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "5",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nIf you have played fewer than {PlayMax:diff()} cards this turn, draw 1 card."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "FTL+",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 6 damage.\nIf you have played fewer than {PlayMax:diff()} cards this turn, draw 1 card.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "6",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nIf you have played fewer than {PlayMax:diff()} cards this turn, draw 1 card."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

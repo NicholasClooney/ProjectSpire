@@ -1,33 +1,97 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "LIFT",
-  "class_name": "Lift",
-  "name": "Lift",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Lift.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "AnyAlly",
-  "localization": {
-    "title_key": "LIFT.title",
-    "description_key": "LIFT.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Lift",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Lift.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyAlly",
+    "localization": {
+      "table": "cards",
+      "title_key": "LIFT.title",
+      "description_key": "LIFT.description"
+    },
+    "vars": {
+      "Block": 11
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/lift.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/lift.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 5
+      }
+    ]
   },
-  "vars": {
-    "Block": 11
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 5
+  "resolved": {
+    "base": {
+      "title": "Lift",
+      "cost": 1,
+      "description": {
+        "plain": "Give another player 11 Block.",
+        "runs": [
+          {
+            "text": "Give another player "
+          },
+          {
+            "text": "11",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Lift+",
+      "cost": 1,
+      "description": {
+        "plain": "Give another player 16 Block.",
+        "runs": [
+          {
+            "text": "Give another player "
+          },
+          {
+            "text": "16",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

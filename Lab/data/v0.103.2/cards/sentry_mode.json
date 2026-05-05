@@ -1,41 +1,120 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SENTRY_MODE",
-  "class_name": "SentryMode",
-  "name": "SentryMode",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SentryMode.cs",
-  "cost": 2,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "SENTRY_MODE.title",
-    "description_key": "SENTRY_MODE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "SentryMode",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SentryMode.cs",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SENTRY_MODE.title",
+      "description_key": "SENTRY_MODE.description"
+    },
+    "vars": {
+      "SentryModePower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/sentry_mode.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "SWEEPING_GAZE",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "SentryMode",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"SentryModePower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "SentryModePower": 1,
-    "SentryMode": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "SentryMode",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"SentryModePower\"].BaseValue"
+  "resolved": {
+    "base": {
+      "title": "Sentry Mode",
+      "cost": 2,
+      "description": {
+        "plain": "At the start of your turn, add 1 Sweeping Gaze into your Hand.",
+        "runs": [
+          {
+            "text": "At the start of your turn, add "
+          },
+          {
+            "text": "1",
+            "source_var": "SentryModePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Sweeping Gaze",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Sentry Mode+",
+      "cost": 1,
+      "description": {
+        "plain": "At the start of your turn, add 1 Sweeping Gaze into your Hand.",
+        "runs": [
+          {
+            "text": "At the start of your turn, add "
+          },
+          {
+            "text": "1",
+            "source_var": "SentryModePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Sweeping Gaze",
+            "style": "gold"
+          },
+          {
+            "text": " into your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_card",
-      "target": "SWEEPING_GAZE",
-      "source": "HoverTipFactory.FromCard"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

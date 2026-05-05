@@ -1,46 +1,106 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "HAILSTORM",
-  "class_name": "Hailstorm",
-  "name": "Hailstorm",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Hailstorm.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "HAILSTORM.title",
-    "description_key": "HAILSTORM.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Hailstorm",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Hailstorm.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "HAILSTORM.title",
+      "description_key": "HAILSTORM.description"
+    },
+    "vars": {
+      "HailstormPower": 6
+    },
+    "assets": [
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/hailstorm.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "HailstormPower",
+        "delta": 2
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_orb",
+        "target": "FrostOrb",
+        "source": "HoverTipFactory.FromOrb"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Hailstorm",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"HailstormPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "HailstormPower": 6,
-    "Hailstorm": 6
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "HailstormPower",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Hailstorm",
+      "cost": 1,
+      "description": {
+        "plain": "At the end of your turn, if you have Frost, deal 6 damage to ALL enemies.",
+        "runs": [
+          {
+            "text": "At the end of your turn, if you have "
+          },
+          {
+            "text": "Frost",
+            "style": "gold"
+          },
+          {
+            "text": ", deal "
+          },
+          {
+            "text": "6",
+            "source_var": "HailstormPower"
+          },
+          {
+            "text": " damage to ALL enemies."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Hailstorm+",
+      "cost": 1,
+      "description": {
+        "plain": "At the end of your turn, if you have Frost, deal 8 damage to ALL enemies.",
+        "runs": [
+          {
+            "text": "At the end of your turn, if you have "
+          },
+          {
+            "text": "Frost",
+            "style": "gold"
+          },
+          {
+            "text": ", deal "
+          },
+          {
+            "text": "8",
+            "source_var": "HailstormPower",
+            "style": "green"
+          },
+          {
+            "text": " damage to ALL enemies."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Hailstorm",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"HailstormPower\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_orb",
-      "target": "FrostOrb",
-      "source": "HoverTipFactory.FromOrb"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

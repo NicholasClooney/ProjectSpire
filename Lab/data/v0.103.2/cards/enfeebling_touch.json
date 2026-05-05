@@ -1,47 +1,114 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ENFEEBLING_TOUCH",
-  "class_name": "EnfeeblingTouch",
-  "name": "EnfeeblingTouch",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/EnfeeblingTouch.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "ENFEEBLING_TOUCH.title",
-    "description_key": "ENFEEBLING_TOUCH.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "EnfeeblingTouch",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/EnfeeblingTouch.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "ENFEEBLING_TOUCH.title",
+      "description_key": "ENFEEBLING_TOUCH.description"
+    },
+    "vars": {
+      "StrengthLoss": 8
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/enfeebling_touch.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/enfeebling_touch.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Ethereal"
+    ],
+    "upgrades": [
+      {
+        "var": "StrengthLoss",
+        "delta": 3
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "EnfeeblingTouch",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "StrengthLoss": 8
-  },
-  "keywords": [
-    "Ethereal"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "StrengthLoss",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Enfeebling Touch",
+      "cost": 1,
+      "description": {
+        "plain": "Enemy loses 8 Strength this turn.",
+        "runs": [
+          {
+            "text": "Enemy loses "
+          },
+          {
+            "text": "8",
+            "source_var": "StrengthLoss"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Enfeebling Touch+",
+      "cost": 1,
+      "description": {
+        "plain": "Enemy loses 11 Strength this turn.",
+        "runs": [
+          {
+            "text": "Enemy loses "
+          },
+          {
+            "text": "11",
+            "source_var": "StrengthLoss",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "EnfeeblingTouch",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "StrengthPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

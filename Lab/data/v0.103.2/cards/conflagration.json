@@ -1,35 +1,66 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CONFLAGRATION",
-  "class_name": "Conflagration",
-  "name": "Conflagration",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Conflagration.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "CONFLAGRATION.title",
-    "description_key": "CONFLAGRATION.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "CalculationBase",
-      "delta": 1
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Conflagration",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Conflagration.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "CONFLAGRATION.title",
+      "description_key": "CONFLAGRATION.description"
     },
-    {
-      "var": "ExtraDamage",
-      "delta": 1
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/conflagration.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/beta/conflagration.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "CalculationBase",
+        "delta": 1
+      },
+      {
+        "var": "ExtraDamage",
+        "delta": 1
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Conflagration",
+      "cost": 1,
+      "description": {
+        "plain": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals {ExtraDamage:diff()} additional damage for each other Attack you've played this turn.",
+        "runs": [
+          {
+            "text": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals {ExtraDamage:diff()} additional damage for each other Attack you've played this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Conflagration+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals {ExtraDamage:diff()} additional damage for each other Attack you've played this turn.",
+        "runs": [
+          {
+            "text": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals {ExtraDamage:diff()} additional damage for each other Attack you've played this turn."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

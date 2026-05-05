@@ -1,26 +1,74 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "QUADCAST",
-  "class_name": "Quadcast",
-  "name": "Quadcast",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Quadcast.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Ancient",
-  "target": "Self",
-  "localization": {
-    "title_key": "QUADCAST.title",
-    "description_key": "QUADCAST.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Quadcast",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Quadcast.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Ancient",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "QUADCAST.title",
+      "description_key": "QUADCAST.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/quadcast.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/beta/quadcast.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Quadcast",
+      "cost": 1,
+      "description": {
+        "plain": "Evoke your rightmost Orb {Repeat:diff()} {Repeat:plural:time|times}.",
+        "runs": [
+          {
+            "text": "Evoke",
+            "style": "gold"
+          },
+          {
+            "text": " your rightmost Orb {Repeat:diff()} {Repeat:plural:time|times}."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Quadcast+",
+      "cost": 0,
+      "description": {
+        "plain": "Evoke your rightmost Orb {Repeat:diff()} {Repeat:plural:time|times}.",
+        "runs": [
+          {
+            "text": "Evoke",
+            "style": "gold"
+          },
+          {
+            "text": " your rightmost Orb {Repeat:diff()} {Repeat:plural:time|times}."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
+    }
+  }
 }

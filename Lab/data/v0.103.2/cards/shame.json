@@ -1,42 +1,113 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SHAME",
-  "class_name": "Shame",
-  "name": "Shame",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Shame.cs",
-  "cost": -1,
-  "type": "Curse",
-  "rarity": "Curse",
-  "target": "None",
-  "localization": {
-    "title_key": "SHAME.title",
-    "description_key": "SHAME.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Shame",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Shame.cs",
+    "cost": -1,
+    "type": "Curse",
+    "rarity": "Curse",
+    "target": "None",
+    "localization": {
+      "table": "cards",
+      "title_key": "SHAME.title",
+      "description_key": "SHAME.description"
+    },
+    "vars": {
+      "Frail": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/curse/shame.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Unplayable"
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "FrailPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Frail",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"Frail\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Frail": 1
-  },
-  "keywords": [
-    "Unplayable"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "Frail",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"Frail\"].BaseValue"
+  "resolved": {
+    "base": {
+      "title": "Shame",
+      "cost": -1,
+      "description": {
+        "plain": "At the end of your turn, if this is in your Hand, gain 1 Frail.",
+        "runs": [
+          {
+            "text": "At the end of your turn, if this is in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ", gain "
+          },
+          {
+            "text": "1",
+            "source_var": "Frail"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Frail",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Shame+",
+      "cost": -1,
+      "description": {
+        "plain": "At the end of your turn, if this is in your Hand, gain 1 Frail.",
+        "runs": [
+          {
+            "text": "At the end of your turn, if this is in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": ", gain "
+          },
+          {
+            "text": "1",
+            "source_var": "Frail"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Frail",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "FrailPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

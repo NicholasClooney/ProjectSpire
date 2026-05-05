@@ -1,34 +1,79 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FLASH_OF_STEEL",
-  "class_name": "FlashOfSteel",
-  "name": "FlashOfSteel",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FlashOfSteel.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "FLASH_OF_STEEL.title",
-    "description_key": "FLASH_OF_STEEL.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "FlashOfSteel",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FlashOfSteel.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "FLASH_OF_STEEL.title",
+      "description_key": "FLASH_OF_STEEL.description"
+    },
+    "vars": {
+      "Damage": 5,
+      "Cards": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/flash_of_steel.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {
-    "Damage": 5,
-    "Cards": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Flash of Steel",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 5 damage.\nDraw 1 card.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "5",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nDraw 1 card."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Flash of Steel+",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 8 damage.\nDraw 1 card.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "8",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nDraw 1 card."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

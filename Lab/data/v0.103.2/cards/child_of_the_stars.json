@@ -1,39 +1,111 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CHILD_OF_THE_STARS",
-  "class_name": "ChildOfTheStars",
-  "name": "ChildOfTheStars",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ChildOfTheStars.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "CHILD_OF_THE_STARS.title",
-    "description_key": "CHILD_OF_THE_STARS.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "ChildOfTheStars",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ChildOfTheStars.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "CHILD_OF_THE_STARS.title",
+      "description_key": "CHILD_OF_THE_STARS.description"
+    },
+    "vars": {
+      "BlockForStars": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/child_of_the_stars.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/child_of_the_stars.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "BlockForStars",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "ChildOfTheStars",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"BlockForStars\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "BlockForStars": 2
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "BlockForStars",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Child of the Stars",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you spend *, gain 2 Block for each * spent.",
+        "runs": [
+          {
+            "text": "Whenever you spend *, gain "
+          },
+          {
+            "text": "2",
+            "source_var": "BlockForStars"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " for each * spent."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Child of the Stars+",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you spend *, gain 3 Block for each * spent.",
+        "runs": [
+          {
+            "text": "Whenever you spend *, gain "
+          },
+          {
+            "text": "3",
+            "source_var": "BlockForStars",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " for each * spent."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "ChildOfTheStars",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"BlockForStars\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

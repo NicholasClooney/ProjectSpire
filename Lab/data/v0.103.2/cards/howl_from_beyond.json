@@ -1,35 +1,95 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "HOWL_FROM_BEYOND",
-  "class_name": "HowlFromBeyond",
-  "name": "HowlFromBeyond",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HowlFromBeyond.cs",
-  "cost": 3,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "HOWL_FROM_BEYOND.title",
-    "description_key": "HOWL_FROM_BEYOND.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "HowlFromBeyond",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HowlFromBeyond.cs",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "HOWL_FROM_BEYOND.title",
+      "description_key": "HOWL_FROM_BEYOND.description"
+    },
+    "vars": {
+      "Damage": 16
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/howl_from_beyond.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 5
+      }
+    ]
   },
-  "vars": {
-    "Damage": 16
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 5
+  "resolved": {
+    "base": {
+      "title": "Howl from Beyond",
+      "cost": 3,
+      "description": {
+        "plain": "Deal 16 damage to ALL enemies.\nAt the start of your turn, if this is in your Exhaust Pile, play it.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "16",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage to ALL enemies.\nAt the start of your turn, if this is in your "
+          },
+          {
+            "text": "Exhaust Pile",
+            "style": "gold"
+          },
+          {
+            "text": ", play it."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Howl from Beyond+",
+      "cost": 3,
+      "description": {
+        "plain": "Deal 21 damage to ALL enemies.\nAt the start of your turn, if this is in your Exhaust Pile, play it.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "21",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage to ALL enemies.\nAt the start of your turn, if this is in your "
+          },
+          {
+            "text": "Exhaust Pile",
+            "style": "gold"
+          },
+          {
+            "text": ", play it."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

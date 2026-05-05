@@ -1,37 +1,91 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SEEKING_EDGE",
-  "class_name": "SeekingEdge",
-  "name": "SeekingEdge",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SeekingEdge.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "SEEKING_EDGE.title",
-    "description_key": "SEEKING_EDGE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "SeekingEdge",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SeekingEdge.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SEEKING_EDGE.title",
+      "description_key": "SEEKING_EDGE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/seeking_edge.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/seeking_edge.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Forge",
+        "delta": 4
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "SeekingEdge",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Forge",
-      "delta": 4
+  "resolved": {
+    "base": {
+      "title": "Seeking Edge",
+      "cost": 1,
+      "description": {
+        "plain": "Forge {Forge:diff()}.\nSovereign Blade now deals damage to ALL enemies.",
+        "runs": [
+          {
+            "text": "Forge",
+            "style": "gold"
+          },
+          {
+            "text": " {Forge:diff()}.\n"
+          },
+          {
+            "text": "Sovereign Blade",
+            "style": "gold"
+          },
+          {
+            "text": " now deals damage to ALL enemies."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Seeking Edge+",
+      "cost": 1,
+      "description": {
+        "plain": "Forge {Forge:diff()}.\nSovereign Blade now deals damage to ALL enemies.",
+        "runs": [
+          {
+            "text": "Forge",
+            "style": "gold"
+          },
+          {
+            "text": " {Forge:diff()}.\n"
+          },
+          {
+            "text": "Sovereign Blade",
+            "style": "gold"
+          },
+          {
+            "text": " now deals damage to ALL enemies."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "SeekingEdge",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

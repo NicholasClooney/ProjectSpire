@@ -1,35 +1,118 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "RIGHT_HAND_HAND",
-  "class_name": "RightHandHand",
-  "name": "RightHandHand",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/RightHandHand.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "RIGHT_HAND_HAND.title",
-    "description_key": "RIGHT_HAND_HAND.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "RightHandHand",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/RightHandHand.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "RIGHT_HAND_HAND.title",
+      "description_key": "RIGHT_HAND_HAND.description"
+    },
+    "vars": {
+      "Energy": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/right_hand_hand.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/right_hand_hand.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tags": [
+      "OstyAttack"
+    ],
+    "upgrades": [
+      {
+        "var": "OstyDamage",
+        "delta": 2
+      }
+    ]
   },
-  "vars": {
-    "Energy": 2
-  },
-  "keywords": [],
-  "tags": [
-    "OstyAttack"
-  ],
-  "upgrades": [
-    {
-      "var": "OstyDamage",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Right Hand Hand",
+      "cost": 0,
+      "description": {
+        "plain": "Osty deals {OstyDamage:diff()} damage.\nWhenever you play a card that costs 2 or more, return this to your Hand from the Discard Pile.",
+        "runs": [
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " deals {OstyDamage:diff()} damage.\nWhenever you play a card that costs "
+          },
+          {
+            "text": "2",
+            "source_var": "Energy"
+          },
+          {
+            "text": " or more, return this to your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " from the "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Right Hand Hand+",
+      "cost": 0,
+      "description": {
+        "plain": "Osty deals {OstyDamage:diff()} damage.\nWhenever you play a card that costs 2 or more, return this to your Hand from the Discard Pile.",
+        "runs": [
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " deals {OstyDamage:diff()} damage.\nWhenever you play a card that costs "
+          },
+          {
+            "text": "2",
+            "source_var": "Energy"
+          },
+          {
+            "text": " or more, return this to your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " from the "
+          },
+          {
+            "text": "Discard Pile",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

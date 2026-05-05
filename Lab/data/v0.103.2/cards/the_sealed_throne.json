@@ -1,34 +1,66 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "THE_SEALED_THRONE",
-  "class_name": "TheSealedThrone",
-  "name": "TheSealedThrone",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TheSealedThrone.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Ancient",
-  "target": "Self",
-  "localization": {
-    "title_key": "THE_SEALED_THRONE.title",
-    "description_key": "THE_SEALED_THRONE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "TheSealedThrone",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TheSealedThrone.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Ancient",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "THE_SEALED_THRONE.title",
+      "description_key": "THE_SEALED_THRONE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/the_sealed_throne.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/the_sealed_throne.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Innate"
+    ],
+    "applies_powers": [
+      {
+        "power": "TheSealedThrone",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Innate"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "TheSealedThrone",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
+  "resolved": {
+    "base": {
+      "title": "The Sealed Throne",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you play a card, gain *.",
+        "runs": [
+          {
+            "text": "Whenever you play a card, gain *."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "The Sealed Throne+",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever you play a card, gain *.",
+        "runs": [
+          {
+            "text": "Whenever you play a card, gain *."
+          }
+        ]
+      }
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

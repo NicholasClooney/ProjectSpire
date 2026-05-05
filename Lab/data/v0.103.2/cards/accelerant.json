@@ -1,45 +1,100 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ACCELERANT",
-  "class_name": "Accelerant",
-  "name": "Accelerant",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Accelerant.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "ACCELERANT.title",
-    "description_key": "ACCELERANT.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Accelerant",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Accelerant.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "ACCELERANT.title",
+      "description_key": "ACCELERANT.description"
+    },
+    "vars": {
+      "Accelerant": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/accelerant.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Accelerant",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "PoisonPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Accelerant",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"Accelerant\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Accelerant": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Accelerant",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Accelerant",
+      "cost": 1,
+      "description": {
+        "plain": "Poison is triggered 1 additional time.",
+        "runs": [
+          {
+            "text": "Poison",
+            "style": "gold"
+          },
+          {
+            "text": " is triggered "
+          },
+          {
+            "text": "1",
+            "source_var": "Accelerant"
+          },
+          {
+            "text": " additional time."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Accelerant+",
+      "cost": 1,
+      "description": {
+        "plain": "Poison is triggered 2 additional times.",
+        "runs": [
+          {
+            "text": "Poison",
+            "style": "gold"
+          },
+          {
+            "text": " is triggered "
+          },
+          {
+            "text": "2",
+            "source_var": "Accelerant",
+            "style": "green"
+          },
+          {
+            "text": " additional times."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Accelerant",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"Accelerant\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "PoisonPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

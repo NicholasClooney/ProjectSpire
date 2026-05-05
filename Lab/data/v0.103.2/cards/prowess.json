@@ -1,62 +1,150 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "PROWESS",
-  "class_name": "Prowess",
-  "name": "Prowess",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Prowess.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "PROWESS.title",
-    "description_key": "PROWESS.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Prowess",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Prowess.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "PROWESS.title",
+      "description_key": "PROWESS.description"
+    },
+    "vars": {
+      "StrengthPower": 1,
+      "DexterityPower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/prowess.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/prowess.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Dexterity",
+        "delta": 1
+      },
+      {
+        "var": "Strength",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "DexterityPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Strength",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Strength.BaseValue"
+      },
+      {
+        "power": "Dexterity",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars.Dexterity.BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "StrengthPower": 1,
-    "Strength": 1,
-    "DexterityPower": 1,
-    "Dexterity": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Dexterity",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Prowess",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 1 Strength.\nGain 1 Dexterity.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "1",
+            "source_var": "StrengthPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": ".\nGain "
+          },
+          {
+            "text": "1",
+            "source_var": "DexterityPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Dexterity",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     },
-    {
-      "var": "Strength",
-      "delta": 1
+    "upgraded": {
+      "title": "Prowess+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 1 Strength.\nGain 1 Dexterity.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "1",
+            "source_var": "StrengthPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": ".\nGain "
+          },
+          {
+            "text": "1",
+            "source_var": "DexterityPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Dexterity",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Strength",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Strength.BaseValue"
-    },
-    {
-      "power": "Dexterity",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars.Dexterity.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "StrengthPower",
-      "source": "HoverTipFactory.FromPower"
-    },
-    {
-      "kind": "hover_tip_power",
-      "target": "DexterityPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

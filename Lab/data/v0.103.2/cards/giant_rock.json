@@ -1,33 +1,83 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "GIANT_ROCK",
-  "class_name": "GiantRock",
-  "name": "GiantRock",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GiantRock.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Token",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "GIANT_ROCK.title",
-    "description_key": "GIANT_ROCK.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "GiantRock",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GiantRock.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Token",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "GIANT_ROCK.title",
+      "description_key": "GIANT_ROCK.description"
+    },
+    "vars": {
+      "Damage": 16
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/token/giant_rock.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/token/beta/giant_rock.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 4
+      }
+    ]
   },
-  "vars": {
-    "Damage": 16
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 4
+  "resolved": {
+    "base": {
+      "title": "Giant Rock",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 16 damage.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "16",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Giant Rock+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 20 damage.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "20",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

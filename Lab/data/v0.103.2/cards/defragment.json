@@ -1,46 +1,106 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DEFRAGMENT",
-  "class_name": "Defragment",
-  "name": "Defragment",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Defragment.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "DEFRAGMENT.title",
-    "description_key": "DEFRAGMENT.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Defragment",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Defragment.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "DEFRAGMENT.title",
+      "description_key": "DEFRAGMENT.description"
+    },
+    "vars": {
+      "FocusPower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/defragment.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "FocusPower",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "FocusPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Focus",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"FocusPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "FocusPower": 1,
-    "Focus": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "FocusPower",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Defragment",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 1 Focus.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "1",
+            "source_var": "FocusPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Focus",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Defragment+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 2 Focus.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "2",
+            "source_var": "FocusPower",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Focus",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Focus",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"FocusPower\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "FocusPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

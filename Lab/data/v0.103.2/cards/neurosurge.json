@@ -1,48 +1,140 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "NEUROSURGE",
-  "class_name": "Neurosurge",
-  "name": "Neurosurge",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Neurosurge.cs",
-  "cost": 0,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "NEUROSURGE.title",
-    "description_key": "NEUROSURGE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Neurosurge",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Neurosurge.cs",
+    "cost": 0,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "NEUROSURGE.title",
+      "description_key": "NEUROSURGE.description"
+    },
+    "vars": {
+      "Cards": 2,
+      "Energy": 3,
+      "NeurosurgePower": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/neurosurge.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/neurosurge.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Energy",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "DoomPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Neurosurge",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"NeurosurgePower\"].IntValue"
+      }
+    ]
   },
-  "vars": {
-    "Cards": 2,
-    "Energy": 3,
-    "NeurosurgePower": 3,
-    "Neurosurge": 3
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Energy",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Neurosurge",
+      "cost": 0,
+      "description": {
+        "plain": "Gain 3.\nDraw 2 cards.\nAt the start of your turn, apply 3 Doom to yourself.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "3",
+            "source_var": "Energy"
+          },
+          {
+            "text": ".\nDraw "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards"
+          },
+          {
+            "text": " cards.\nAt the start of your turn, apply "
+          },
+          {
+            "text": "3",
+            "source_var": "NeurosurgePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " to yourself."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Neurosurge+",
+      "cost": 0,
+      "description": {
+        "plain": "Gain 4.\nDraw 2 cards.\nAt the start of your turn, apply 3 Doom to yourself.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "4",
+            "source_var": "Energy"
+          },
+          {
+            "text": ".\nDraw "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards"
+          },
+          {
+            "text": " cards.\nAt the start of your turn, apply "
+          },
+          {
+            "text": "3",
+            "source_var": "NeurosurgePower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Doom",
+            "style": "gold"
+          },
+          {
+            "text": " to yourself."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Neurosurge",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"NeurosurgePower\"].IntValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "DoomPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

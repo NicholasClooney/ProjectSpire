@@ -1,33 +1,68 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "POKE",
-  "class_name": "Poke",
-  "name": "Poke",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Poke.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "POKE.title",
-    "description_key": "POKE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Poke",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Poke.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "POKE.title",
+      "description_key": "POKE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/poke.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "tags": [
+      "OstyAttack"
+    ],
+    "upgrades": [
+      {
+        "var": "OstyDamage",
+        "delta": 3
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [
-    "OstyAttack"
-  ],
-  "upgrades": [
-    {
-      "var": "OstyDamage",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Poke",
+      "cost": 0,
+      "description": {
+        "plain": "Osty deals {OstyDamage:diff()} damage.",
+        "runs": [
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " deals {OstyDamage:diff()} damage."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Poke+",
+      "cost": 0,
+      "description": {
+        "plain": "Osty deals {OstyDamage:diff()} damage.",
+        "runs": [
+          {
+            "text": "Osty",
+            "style": "gold"
+          },
+          {
+            "text": " deals {OstyDamage:diff()} damage."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,34 +1,93 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "RAMPAGE",
-  "class_name": "Rampage",
-  "name": "Rampage",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Rampage.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "RAMPAGE.title",
-    "description_key": "RAMPAGE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Rampage",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Rampage.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "RAMPAGE.title",
+      "description_key": "RAMPAGE.description"
+    },
+    "vars": {
+      "Damage": 9,
+      "Increase": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/rampage.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Increase",
+        "delta": 4
+      }
+    ]
   },
-  "vars": {
-    "Damage": 9,
-    "Increase": 5
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Increase",
-      "delta": 4
+  "resolved": {
+    "base": {
+      "title": "Rampage",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 9 damage.\nIncrease this card's damage by 5 this combat.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "9",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nIncrease this card's damage by "
+          },
+          {
+            "text": "5",
+            "source_var": "Increase"
+          },
+          {
+            "text": " this combat."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Rampage+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 9 damage.\nIncrease this card's damage by 9 this combat.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "9",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nIncrease this card's damage by "
+          },
+          {
+            "text": "9",
+            "source_var": "Increase",
+            "style": "green"
+          },
+          {
+            "text": " this combat."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

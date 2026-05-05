@@ -1,34 +1,85 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "DARK_EMBRACE",
-  "class_name": "DarkEmbrace",
-  "name": "DarkEmbrace",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DarkEmbrace.cs",
-  "cost": 2,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "DARK_EMBRACE.title",
-    "description_key": "DARK_EMBRACE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "DarkEmbrace",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DarkEmbrace.cs",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "DARK_EMBRACE.title",
+      "description_key": "DARK_EMBRACE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/dark_embrace.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "DarkEmbrace",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "1m"
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [
-    {
-      "power": "DarkEmbrace",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "1m"
+  "resolved": {
+    "base": {
+      "title": "Dark Embrace",
+      "cost": 2,
+      "description": {
+        "plain": "Whenever a card is Exhausted,\ndraw 1 card.",
+        "runs": [
+          {
+            "text": "Whenever a card is "
+          },
+          {
+            "text": "Exhausted",
+            "style": "gold"
+          },
+          {
+            "text": ",\ndraw 1 card."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Dark Embrace+",
+      "cost": 1,
+      "description": {
+        "plain": "Whenever a card is Exhausted,\ndraw 1 card.",
+        "runs": [
+          {
+            "text": "Whenever a card is "
+          },
+          {
+            "text": "Exhausted",
+            "style": "gold"
+          },
+          {
+            "text": ",\ndraw 1 card."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
     }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

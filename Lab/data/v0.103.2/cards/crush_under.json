@@ -1,50 +1,131 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CRUSH_UNDER",
-  "class_name": "CrushUnder",
-  "name": "CrushUnder",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CrushUnder.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AllEnemies",
-  "localization": {
-    "title_key": "CRUSH_UNDER.title",
-    "description_key": "CRUSH_UNDER.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 7,
-    "StrengthLoss": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 1
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "CrushUnder",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CrushUnder.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AllEnemies",
+    "localization": {
+      "table": "cards",
+      "title_key": "CRUSH_UNDER.title",
+      "description_key": "CRUSH_UNDER.description"
     },
-    {
-      "var": "StrengthLoss",
-      "delta": 1
+    "vars": {
+      "Damage": 7,
+      "StrengthLoss": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/crush_under.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/crush_under.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 1
+      },
+      {
+        "var": "StrengthLoss",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "CrushUnder",
+        "target_expr": "enemies",
+        "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Crush Under",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 7 damage to ALL enemies. All enemies lose 1 Strength this turn.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "7",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage to ALL enemies. All enemies lose "
+          },
+          {
+            "text": "1",
+            "source_var": "StrengthLoss"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Crush Under+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 8 damage to ALL enemies. All enemies lose 2 Strength this turn.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "8",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage to ALL enemies. All enemies lose "
+          },
+          {
+            "text": "2",
+            "source_var": "StrengthLoss",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "CrushUnder",
-      "target_expr": "enemies",
-      "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "StrengthPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

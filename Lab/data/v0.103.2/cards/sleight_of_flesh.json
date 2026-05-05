@@ -1,40 +1,90 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SLEIGHT_OF_FLESH",
-  "class_name": "SleightOfFlesh",
-  "name": "SleightOfFlesh",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SleightOfFlesh.cs",
-  "cost": 2,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "SLEIGHT_OF_FLESH.title",
-    "description_key": "SLEIGHT_OF_FLESH.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "SleightOfFlesh",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SleightOfFlesh.cs",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SLEIGHT_OF_FLESH.title",
+      "description_key": "SLEIGHT_OF_FLESH.description"
+    },
+    "vars": {
+      "SleightOfFleshPower": 9
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/sleight_of_flesh.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/necrobinder/beta/sleight_of_flesh.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "SleightOfFleshPower",
+        "delta": 4
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "SleightOfFlesh",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"SleightOfFleshPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "SleightOfFleshPower": 9,
-    "SleightOfFlesh": 9
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "SleightOfFleshPower",
-      "delta": 4
+  "resolved": {
+    "base": {
+      "title": "Sleight of Flesh",
+      "cost": 2,
+      "description": {
+        "plain": "Whenever you apply a debuff to an enemy, they take 9 damage.",
+        "runs": [
+          {
+            "text": "Whenever you apply a debuff to an enemy, they take "
+          },
+          {
+            "text": "9",
+            "source_var": "SleightOfFleshPower"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Sleight of Flesh+",
+      "cost": 2,
+      "description": {
+        "plain": "Whenever you apply a debuff to an enemy, they take 13 damage.",
+        "runs": [
+          {
+            "text": "Whenever you apply a debuff to an enemy, they take "
+          },
+          {
+            "text": "13",
+            "source_var": "SleightOfFleshPower",
+            "style": "green"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "SleightOfFlesh",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"SleightOfFleshPower\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,33 +1,83 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "KNOCKOUT_BLOW",
-  "class_name": "KnockoutBlow",
-  "name": "KnockoutBlow",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/KnockoutBlow.cs",
-  "cost": 3,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "KNOCKOUT_BLOW.title",
-    "description_key": "KNOCKOUT_BLOW.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "KnockoutBlow",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/KnockoutBlow.cs",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "KNOCKOUT_BLOW.title",
+      "description_key": "KNOCKOUT_BLOW.description"
+    },
+    "vars": {
+      "Damage": 30
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/knockout_blow.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/regent/beta/knockout_blow.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 8
+      }
+    ]
   },
-  "vars": {
-    "Damage": 30
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 8
+  "resolved": {
+    "base": {
+      "title": "Knockout Blow",
+      "cost": 3,
+      "description": {
+        "plain": "Deal 30 damage.\nIf this kills an enemy, gain {Stars:starIcons()}.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "30",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nIf this kills an enemy, gain {Stars:starIcons()}."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Knockout Blow+",
+      "cost": 3,
+      "description": {
+        "plain": "Deal 38 damage.\nIf this kills an enemy, gain {Stars:starIcons()}.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "38",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nIf this kills an enemy, gain {Stars:starIcons()}."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

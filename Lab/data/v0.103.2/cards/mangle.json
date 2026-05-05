@@ -1,50 +1,126 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "MANGLE",
-  "class_name": "Mangle",
-  "name": "Mangle",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Mangle.cs",
-  "cost": 3,
-  "type": "Attack",
-  "rarity": "Rare",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "MANGLE.title",
-    "description_key": "MANGLE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 15,
-    "StrengthLoss": 10
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 5
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Mangle",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Mangle.cs",
+    "cost": 3,
+    "type": "Attack",
+    "rarity": "Rare",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "MANGLE.title",
+      "description_key": "MANGLE.description"
     },
-    {
-      "var": "StrengthLoss",
-      "delta": 5
+    "vars": {
+      "Damage": 15,
+      "StrengthLoss": 10
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/mangle.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 5
+      },
+      {
+        "var": "StrengthLoss",
+        "delta": 5
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Mangle",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Mangle",
+      "cost": 3,
+      "description": {
+        "plain": "Deal 15 damage.\nEnemy loses 10 Strength this turn.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "15",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nEnemy loses "
+          },
+          {
+            "text": "10",
+            "source_var": "StrengthLoss"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Mangle+",
+      "cost": 3,
+      "description": {
+        "plain": "Deal 20 damage.\nEnemy loses 15 Strength this turn.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "20",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nEnemy loses "
+          },
+          {
+            "text": "15",
+            "source_var": "StrengthLoss",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": " this turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Mangle",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars[\"StrengthLoss\"].BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "StrengthPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

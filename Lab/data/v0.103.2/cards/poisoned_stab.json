@@ -1,51 +1,125 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "POISONED_STAB",
-  "class_name": "PoisonedStab",
-  "name": "PoisonedStab",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PoisonedStab.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "POISONED_STAB.title",
-    "description_key": "POISONED_STAB.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 6,
-    "PoisonPower": 3,
-    "Poison": 3
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 2
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "PoisonedStab",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PoisonedStab.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "POISONED_STAB.title",
+      "description_key": "POISONED_STAB.description"
     },
-    {
-      "var": "Poison",
-      "delta": 1
+    "vars": {
+      "Damage": 6,
+      "PoisonPower": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/poisoned_stab.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 2
+      },
+      {
+        "var": "Poison",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "PoisonPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Poison",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars.Poison.BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Poisoned Stab",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 6 damage.\nApply 3 Poison.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "6",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nApply "
+          },
+          {
+            "text": "3",
+            "source_var": "PoisonPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Poison",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Poisoned Stab+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 8 damage.\nApply 3 Poison.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "8",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nApply "
+          },
+          {
+            "text": "3",
+            "source_var": "PoisonPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Poison",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Poison",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars.Poison.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "PoisonPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

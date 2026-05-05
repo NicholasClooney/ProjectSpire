@@ -1,30 +1,86 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SOVEREIGN_BLADE",
-  "class_name": "SovereignBlade",
-  "name": "SovereignBlade",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SovereignBlade.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Token",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "SOVEREIGN_BLADE.title",
-    "description_key": "SOVEREIGN_BLADE.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "SovereignBlade",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SovereignBlade.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Token",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "SOVEREIGN_BLADE.title",
+      "description_key": "SOVEREIGN_BLADE.description"
+    },
+    "vars": {
+      "Damage": 10
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/token/sovereign_blade.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/token/beta/sovereign_blade.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Retain"
+    ],
+    "cost_upgrades": [
+      {
+        "target": "cost",
+        "delta": -1,
+        "source": "EnergyCost.UpgradeBy"
+      }
+    ]
   },
-  "vars": {
-    "Damage": 10
-  },
-  "keywords": [
-    "Retain"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Sovereign Blade",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 10 damage{SeekingEdgeAmount:cond:>0? to ALL enemies|}{Repeat:plural:| {} times}.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage{SeekingEdgeAmount:cond:>0? to ALL enemies|}{Repeat:plural:| {} times}."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Sovereign Blade+",
+      "cost": 1,
+      "description": {
+        "plain": "Deal 10 damage{SeekingEdgeAmount:cond:>0? to ALL enemies|}{Repeat:plural:| {} times}.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "10",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage{SeekingEdgeAmount:cond:>0? to ALL enemies|}{Repeat:plural:| {} times}."
+          }
+        ]
+      },
+      "changed": [
+        "cost"
+      ]
+    }
+  }
 }

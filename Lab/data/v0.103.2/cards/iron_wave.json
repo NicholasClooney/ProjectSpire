@@ -1,38 +1,112 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "IRON_WAVE",
-  "class_name": "IronWave",
-  "name": "IronWave",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/IronWave.cs",
-  "cost": 1,
-  "type": "Attack",
-  "rarity": "Common",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "IRON_WAVE.title",
-    "description_key": "IRON_WAVE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 5,
-    "Block": 5
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 2
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "IronWave",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/IronWave.cs",
+    "cost": 1,
+    "type": "Attack",
+    "rarity": "Common",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "IRON_WAVE.title",
+      "description_key": "IRON_WAVE.description"
     },
-    {
-      "var": "Damage",
-      "delta": 2
+    "vars": {
+      "Damage": 5,
+      "Block": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/iron_wave.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 2
+      },
+      {
+        "var": "Damage",
+        "delta": 2
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Iron Wave",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 5 Block.\nDeal 5 damage.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "5",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nDeal "
+          },
+          {
+            "text": "5",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Iron Wave+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 7 Block.\nDeal 7 damage.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "7",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nDeal "
+          },
+          {
+            "text": "7",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

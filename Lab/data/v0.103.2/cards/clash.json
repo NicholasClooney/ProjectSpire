@@ -1,33 +1,92 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CLASH",
-  "class_name": "Clash",
-  "name": "Clash",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Clash.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Event",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "CLASH.title",
-    "description_key": "CLASH.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Clash",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Clash.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Event",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "CLASH.title",
+      "description_key": "CLASH.description"
+    },
+    "vars": {
+      "Damage": 14
+    },
+    "assets": [
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/event/beta/clash.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 4
+      }
+    ]
   },
-  "vars": {
-    "Damage": 14
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 4
+  "resolved": {
+    "base": {
+      "title": "Clash",
+      "cost": 0,
+      "description": {
+        "plain": "Can only be played if every card in your Hand is an Attack.\nDeal 14 damage.",
+        "runs": [
+          {
+            "text": "Can only be played if every card in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " is an Attack.\nDeal "
+          },
+          {
+            "text": "14",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Clash+",
+      "cost": 0,
+      "description": {
+        "plain": "Can only be played if every card in your Hand is an Attack.\nDeal 18 damage.",
+        "runs": [
+          {
+            "text": "Can only be played if every card in your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " is an Attack.\nDeal "
+          },
+          {
+            "text": "18",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

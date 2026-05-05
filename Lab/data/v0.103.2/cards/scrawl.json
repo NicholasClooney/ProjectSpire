@@ -1,29 +1,74 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "SCRAWL",
-  "class_name": "Scrawl",
-  "name": "Scrawl",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Scrawl.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "SCRAWL.title",
-    "description_key": "SCRAWL.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Scrawl",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Scrawl.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "SCRAWL.title",
+      "description_key": "SCRAWL.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/scrawl.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/beta/scrawl.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust",
+      "Retain"
+    ]
   },
-  "vars": {},
-  "keywords": [
-    "Exhaust",
-    "Retain"
-  ],
-  "tags": [],
-  "upgrades": [],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  "resolved": {
+    "base": {
+      "title": "Scrawl",
+      "cost": 1,
+      "description": {
+        "plain": "Draw cards until your Hand is full.",
+        "runs": [
+          {
+            "text": "Draw cards until your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " is full."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Scrawl+",
+      "cost": 1,
+      "description": {
+        "plain": "Draw cards until your Hand is full.",
+        "runs": [
+          {
+            "text": "Draw cards until your "
+          },
+          {
+            "text": "Hand",
+            "style": "gold"
+          },
+          {
+            "text": " is full."
+          }
+        ]
+      }
+    }
+  }
 }

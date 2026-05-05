@@ -1,51 +1,125 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "NEUTRALIZE",
-  "class_name": "Neutralize",
-  "name": "Neutralize",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Neutralize.cs",
-  "cost": 0,
-  "type": "Attack",
-  "rarity": "Basic",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "NEUTRALIZE.title",
-    "description_key": "NEUTRALIZE.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 3,
-    "WeakPower": 1,
-    "Weak": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 1
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Neutralize",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Neutralize.cs",
+    "cost": 0,
+    "type": "Attack",
+    "rarity": "Basic",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "NEUTRALIZE.title",
+      "description_key": "NEUTRALIZE.description"
     },
-    {
-      "var": "Weak",
-      "delta": 1
+    "vars": {
+      "Damage": 3,
+      "WeakPower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/neutralize.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 1
+      },
+      {
+        "var": "Weak",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "WeakPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Weak",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars.Weak.BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Neutralize",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 3 damage.\nApply 1 Weak.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "3",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nApply "
+          },
+          {
+            "text": "1",
+            "source_var": "WeakPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Neutralize+",
+      "cost": 0,
+      "description": {
+        "plain": "Deal 4 damage.\nApply 1 Weak.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "4",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nApply "
+          },
+          {
+            "text": "1",
+            "source_var": "WeakPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Weak",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Weak",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars.Weak.BaseValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "WeakPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

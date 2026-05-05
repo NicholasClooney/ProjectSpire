@@ -1,40 +1,114 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "BLUR",
-  "class_name": "Blur",
-  "name": "Blur",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Blur.cs",
-  "cost": 1,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "BLUR.title",
-    "description_key": "BLUR.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Blur",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Blur.cs",
+    "cost": 1,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "BLUR.title",
+      "description_key": "BLUR.description"
+    },
+    "vars": {
+      "Block": 5,
+      "Blur": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/silent/blur.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 3
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Blur",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"Blur\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "Block": 5,
-    "Blur": 1
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Blur",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 5 Block.\nBlock is not removed at the start of your next turn.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "5",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\n"
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " is not removed at the start of your next turn."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Blur+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain 8 Block.\nBlock is not removed at the start of your next turn.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "8",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\n"
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": " is not removed at the start of your next turn."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Blur",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"Blur\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

@@ -1,57 +1,164 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FIGHT_ME",
-  "class_name": "FightMe",
-  "name": "FightMe",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FightMe.cs",
-  "cost": 2,
-  "type": "Attack",
-  "rarity": "Uncommon",
-  "target": "AnyEnemy",
-  "localization": {
-    "title_key": "FIGHT_ME.title",
-    "description_key": "FIGHT_ME.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Damage": 5,
-    "EnemyStrength": 1,
-    "StrengthPower": 3,
-    "Strength": 3
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Damage",
-      "delta": 1
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "FightMe",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FightMe.cs",
+    "cost": 2,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "localization": {
+      "table": "cards",
+      "title_key": "FIGHT_ME.title",
+      "description_key": "FIGHT_ME.description"
     },
-    {
-      "var": "Strength",
-      "delta": 1
-    }
-  ],
-  "applies_powers": [
-    {
-      "power": "Strength",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"StrengthPower\"].BaseValue"
+    "vars": {
+      "Damage": 5,
+      "EnemyStrength": 1,
+      "StrengthPower": 3
     },
-    {
-      "power": "Strength",
-      "target_expr": "cardPlay.Target",
-      "amount_expr": "base.DynamicVars[\"EnemyStrength\"].BaseValue"
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/fight_me.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/beta/fight_me.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Damage",
+        "delta": 1
+      },
+      {
+        "var": "Strength",
+        "delta": 1
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Strength",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"StrengthPower\"].BaseValue"
+      },
+      {
+        "power": "Strength",
+        "target_expr": "cardPlay.Target",
+        "amount_expr": "base.DynamicVars[\"EnemyStrength\"].BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Fight Me!",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 5 damage twice.\nGain 3 Strength.\nThe enemy gains 1 Strength.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "5",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage twice.\nGain "
+          },
+          {
+            "text": "3",
+            "source_var": "StrengthPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": ".\nThe enemy gains "
+          },
+          {
+            "text": "1",
+            "source_var": "EnemyStrength"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Fight Me!+",
+      "cost": 2,
+      "description": {
+        "plain": "Deal 6 damage twice.\nGain 3 Strength.\nThe enemy gains 1 Strength.",
+        "runs": [
+          {
+            "text": "Deal "
+          },
+          {
+            "text": "6",
+            "source_var": "Damage",
+            "style": "green"
+          },
+          {
+            "text": " damage twice.\nGain "
+          },
+          {
+            "text": "3",
+            "source_var": "StrengthPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": ".\nThe enemy gains "
+          },
+          {
+            "text": "1",
+            "source_var": "EnemyStrength"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Strength",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "StrengthPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

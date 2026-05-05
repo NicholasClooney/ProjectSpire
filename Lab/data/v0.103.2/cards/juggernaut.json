@@ -1,40 +1,106 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "JUGGERNAUT",
-  "class_name": "Juggernaut",
-  "name": "Juggernaut",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Juggernaut.cs",
-  "cost": 2,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "JUGGERNAUT.title",
-    "description_key": "JUGGERNAUT.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Juggernaut",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Juggernaut.cs",
+    "cost": 2,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "JUGGERNAUT.title",
+      "description_key": "JUGGERNAUT.description"
+    },
+    "vars": {
+      "JuggernautPower": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/juggernaut.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "JuggernautPower",
+        "delta": 2
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Juggernaut",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"JuggernautPower\"].BaseValue"
+      }
+    ]
   },
-  "vars": {
-    "JuggernautPower": 5,
-    "Juggernaut": 5
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "JuggernautPower",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Juggernaut",
+      "cost": 2,
+      "description": {
+        "plain": "Whenever you gain Block, deal 5 damage to a random enemy.",
+        "runs": [
+          {
+            "text": "Whenever you gain "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ", deal "
+          },
+          {
+            "text": "5",
+            "source_var": "JuggernautPower"
+          },
+          {
+            "text": " damage to a random enemy."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Juggernaut+",
+      "cost": 2,
+      "description": {
+        "plain": "Whenever you gain Block, deal 7 damage to a random enemy.",
+        "runs": [
+          {
+            "text": "Whenever you gain "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ", deal "
+          },
+          {
+            "text": "7",
+            "source_var": "JuggernautPower",
+            "style": "green"
+          },
+          {
+            "text": " damage to a random enemy."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Juggernaut",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"JuggernautPower\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

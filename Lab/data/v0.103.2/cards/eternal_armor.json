@@ -1,46 +1,111 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "ETERNAL_ARMOR",
-  "class_name": "EternalArmor",
-  "name": "EternalArmor",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/EternalArmor.cs",
-  "cost": 3,
-  "type": "Power",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "ETERNAL_ARMOR.title",
-    "description_key": "ETERNAL_ARMOR.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "EternalArmor",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/EternalArmor.cs",
+    "cost": 3,
+    "type": "Power",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "ETERNAL_ARMOR.title",
+      "description_key": "ETERNAL_ARMOR.description"
+    },
+    "vars": {
+      "PlatingPower": 9
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/colorless/eternal_armor.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "PlatingPower",
+        "delta": 3
+      }
+    ],
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "PlatingPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "Plating",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"PlatingPower\"].IntValue"
+      }
+    ]
   },
-  "vars": {
-    "PlatingPower": 9,
-    "Plating": 9
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "PlatingPower",
-      "delta": 3
+  "resolved": {
+    "base": {
+      "title": "Eternal Armor",
+      "cost": 3,
+      "description": {
+        "plain": "Gain 9 Plating.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "9",
+            "source_var": "PlatingPower"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Plating",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Eternal Armor+",
+      "cost": 3,
+      "description": {
+        "plain": "Gain 12 Plating.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "12",
+            "source_var": "PlatingPower",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Plating",
+            "style": "gold"
+          },
+          {
+            "text": "."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "Plating",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"PlatingPower\"].IntValue"
-    }
-  ],
-  "relations": [
-    {
-      "kind": "hover_tip_power",
-      "target": "PlatingPower",
-      "source": "HoverTipFactory.FromPower"
-    }
-  ],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

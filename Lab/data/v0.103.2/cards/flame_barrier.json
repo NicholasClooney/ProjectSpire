@@ -1,44 +1,119 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "FLAME_BARRIER",
-  "class_name": "FlameBarrier",
-  "name": "FlameBarrier",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FlameBarrier.cs",
-  "cost": 2,
-  "type": "Skill",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "FLAME_BARRIER.title",
-    "description_key": "FLAME_BARRIER.description",
-    "title": null,
-    "description_raw": null
-  },
-  "vars": {
-    "Block": 12,
-    "DamageBack": 4
-  },
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Block",
-      "delta": 4
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "FlameBarrier",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FlameBarrier.cs",
+    "cost": 2,
+    "type": "Skill",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "FLAME_BARRIER.title",
+      "description_key": "FLAME_BARRIER.description"
     },
-    {
-      "var": "DamageBack",
-      "delta": 2
+    "vars": {
+      "Block": 12,
+      "DamageBack": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/ironclad/flame_barrier.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Block",
+        "delta": 4
+      },
+      {
+        "var": "DamageBack",
+        "delta": 2
+      }
+    ],
+    "applies_powers": [
+      {
+        "power": "FlameBarrier",
+        "target_expr": "base.Owner.Creature",
+        "amount_expr": "base.DynamicVars[\"DamageBack\"].BaseValue"
+      }
+    ]
+  },
+  "resolved": {
+    "base": {
+      "title": "Flame Barrier",
+      "cost": 2,
+      "description": {
+        "plain": "Gain 12 Block.\nWhenever you are attacked this turn, deal 4 damage back.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "12",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nWhenever you are attacked this turn, deal "
+          },
+          {
+            "text": "4",
+            "source_var": "DamageBack"
+          },
+          {
+            "text": " damage back."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Flame Barrier+",
+      "cost": 2,
+      "description": {
+        "plain": "Gain 16 Block.\nWhenever you are attacked this turn, deal 6 damage back.",
+        "runs": [
+          {
+            "text": "Gain "
+          },
+          {
+            "text": "16",
+            "source_var": "Block",
+            "style": "green"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Block",
+            "style": "gold"
+          },
+          {
+            "text": ".\nWhenever you are attacked this turn, deal "
+          },
+          {
+            "text": "6",
+            "source_var": "DamageBack",
+            "style": "green"
+          },
+          {
+            "text": " damage back."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [
-    {
-      "power": "FlameBarrier",
-      "target_expr": "base.Owner.Creature",
-      "amount_expr": "base.DynamicVars[\"DamageBack\"].BaseValue"
-    }
-  ],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

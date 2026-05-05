@@ -1,31 +1,57 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "CAPACITOR",
-  "class_name": "Capacitor",
-  "name": "Capacitor",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Capacitor.cs",
-  "cost": 1,
-  "type": "Power",
-  "rarity": "Uncommon",
-  "target": "Self",
-  "localization": {
-    "title_key": "CAPACITOR.title",
-    "description_key": "CAPACITOR.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Capacitor",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Capacitor.cs",
+    "cost": 1,
+    "type": "Power",
+    "rarity": "Uncommon",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "CAPACITOR.title",
+      "description_key": "CAPACITOR.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/capacitor.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "upgrades": [
+      {
+        "var": "Repeat",
+        "delta": 1
+      }
+    ]
   },
-  "vars": {},
-  "keywords": [],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Repeat",
-      "delta": 1
+  "resolved": {
+    "base": {
+      "title": "Capacitor",
+      "cost": 1,
+      "description": {
+        "plain": "Gain {Repeat:diff()} Orb Slots.",
+        "runs": [
+          {
+            "text": "Gain {Repeat:diff()} Orb Slots."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Capacitor+",
+      "cost": 1,
+      "description": {
+        "plain": "Gain {Repeat:diff()} Orb Slots.",
+        "runs": [
+          {
+            "text": "Gain {Repeat:diff()} Orb Slots."
+          }
+        ]
+      }
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }

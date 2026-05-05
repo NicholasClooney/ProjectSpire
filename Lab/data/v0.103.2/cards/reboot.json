@@ -1,35 +1,95 @@
 {
-  "parser_version": "0.1.0",
+  "schema_version": "0.2.1",
   "id": "REBOOT",
-  "class_name": "Reboot",
-  "name": "Reboot",
-  "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Reboot.cs",
-  "cost": 0,
-  "type": "Skill",
-  "rarity": "Rare",
-  "target": "Self",
-  "localization": {
-    "title_key": "REBOOT.title",
-    "description_key": "REBOOT.description",
-    "title": null,
-    "description_raw": null
+  "raw": {
+    "parser_version": "0.2.1",
+    "class_name": "Reboot",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Reboot.cs",
+    "cost": 0,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "localization": {
+      "table": "cards",
+      "title_key": "REBOOT.title",
+      "description_key": "REBOOT.description"
+    },
+    "vars": {
+      "Cards": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/packed/card_portraits/defect/reboot.webp",
+        "source": "Lab.resources.images.packed.card_portraits"
+      }
+    ],
+    "keywords": [
+      "Exhaust"
+    ],
+    "upgrades": [
+      {
+        "var": "Cards",
+        "delta": 2
+      }
+    ]
   },
-  "vars": {
-    "Cards": 4
-  },
-  "keywords": [
-    "Exhaust"
-  ],
-  "tags": [],
-  "upgrades": [
-    {
-      "var": "Cards",
-      "delta": 2
+  "resolved": {
+    "base": {
+      "title": "Reboot",
+      "cost": 0,
+      "description": {
+        "plain": "Shuffle ALL your cards into your Draw Pile.\nDraw 4 cards.",
+        "runs": [
+          {
+            "text": "Shuffle ALL your cards into your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": ".\nDraw "
+          },
+          {
+            "text": "4",
+            "source_var": "Cards"
+          },
+          {
+            "text": " cards."
+          }
+        ]
+      }
+    },
+    "upgraded": {
+      "title": "Reboot+",
+      "cost": 0,
+      "description": {
+        "plain": "Shuffle ALL your cards into your Draw Pile.\nDraw 6 cards.",
+        "runs": [
+          {
+            "text": "Shuffle ALL your cards into your "
+          },
+          {
+            "text": "Draw Pile",
+            "style": "gold"
+          },
+          {
+            "text": ".\nDraw "
+          },
+          {
+            "text": "6",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " cards."
+          }
+        ]
+      },
+      "changed": [
+        "description"
+      ]
     }
-  ],
-  "applies_powers": [],
-  "relations": [],
-  "notes": [
-    "Description is not present in the C# file; supply localization data to populate it."
-  ]
+  }
 }
