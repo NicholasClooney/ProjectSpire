@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "MAD_SCIENCE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "MadScience",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MadScience.cs",
     "cost": 1,
@@ -17,7 +17,14 @@
     "vars": {
       "Damage": 12,
       "Block": 8,
+      "SappingWeak": 2,
+      "SappingVulnerable": 2,
       "ViolenceHits": 3,
+      "ChokingDamage": 6,
+      "EnergizedEnergy": 2,
+      "WisdomCards": 3,
+      "ExpertiseStrength": 2,
+      "ExpertiseDexterity": 2,
       "CuriousReduction": 1
     },
     "keywords": [

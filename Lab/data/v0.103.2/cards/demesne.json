@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "DEMESNE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Demesne",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Demesne.cs",
     "cost": 3,
@@ -15,8 +15,8 @@
       "description_key": "DEMESNE.description"
     },
     "vars": {
-      "Cards": 1,
-      "Energy": 1
+      "Energy": 1,
+      "Cards": 1
     },
     "assets": [
       {

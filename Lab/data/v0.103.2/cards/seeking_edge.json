@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "SEEKING_EDGE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "SeekingEdge",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SeekingEdge.cs",
     "cost": 1,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "SEEKING_EDGE.title",
       "description_key": "SEEKING_EDGE.description"
+    },
+    "vars": {
+      "Forge": 7
     },
     "assets": [
       {
@@ -45,14 +48,21 @@
       "title": "Seeking Edge",
       "cost": 1,
       "description": {
-        "plain": "Forge {Forge:diff()}.\nSovereign Blade now deals damage to ALL enemies.",
+        "plain": "Forge 7.\nSovereign Blade now deals damage to ALL enemies.",
         "runs": [
           {
             "text": "Forge",
             "style": "gold"
           },
           {
-            "text": " {Forge:diff()}.\n"
+            "text": " "
+          },
+          {
+            "text": "7",
+            "source_var": "Forge"
+          },
+          {
+            "text": ".\n"
           },
           {
             "text": "Sovereign Blade",
@@ -68,14 +78,22 @@
       "title": "Seeking Edge+",
       "cost": 1,
       "description": {
-        "plain": "Forge {Forge:diff()}.\nSovereign Blade now deals damage to ALL enemies.",
+        "plain": "Forge 11.\nSovereign Blade now deals damage to ALL enemies.",
         "runs": [
           {
             "text": "Forge",
             "style": "gold"
           },
           {
-            "text": " {Forge:diff()}.\n"
+            "text": " "
+          },
+          {
+            "text": "11",
+            "source_var": "Forge",
+            "style": "green"
+          },
+          {
+            "text": ".\n"
           },
           {
             "text": "Sovereign Blade",
@@ -85,7 +103,10 @@
             "text": " now deals damage to ALL enemies."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

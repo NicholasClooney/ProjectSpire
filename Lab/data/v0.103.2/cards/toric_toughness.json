@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "TORIC_TOUGHNESS",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "ToricToughness",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ToricToughness.cs",
     "cost": 2,
@@ -15,8 +15,8 @@
       "description_key": "TORIC_TOUGHNESS.description"
     },
     "vars": {
-      "Block": 5,
-      "Turns": 2
+      "Turns": 2,
+      "Block": 5
     },
     "assets": [
       {

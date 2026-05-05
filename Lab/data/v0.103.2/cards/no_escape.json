@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "NO_ESCAPE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "NoEscape",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/NoEscape.cs",
     "cost": 1,
@@ -15,7 +15,9 @@
       "description_key": "NO_ESCAPE.description"
     },
     "vars": {
-      "DoomThreshold": 10
+      "DoomThreshold": 10,
+      "CalculationBase": 10,
+      "CalculationExtra": 5
     },
     "assets": [
       {
@@ -50,17 +52,31 @@
       "title": "No Escape",
       "cost": 1,
       "description": {
-        "plain": "Apply {CalculationBase:diff()} Doom, plus an additional {CalculationExtra:diff()} Doom for every 10 Doom already on this enemy.{IsTargeting:\n(Apply {CalculatedDoom:diff()} [gold]Doom[/gold])|}",
+        "plain": "Apply 10 Doom, plus an additional 5 Doom for every 10 Doom already on this enemy.{IsTargeting:\n(Apply {CalculatedDoom:diff()} [gold]Doom[/gold])|}",
         "runs": [
           {
-            "text": "Apply {CalculationBase:diff()} "
+            "text": "Apply "
+          },
+          {
+            "text": "10",
+            "source_var": "CalculationBase"
+          },
+          {
+            "text": " "
           },
           {
             "text": "Doom",
             "style": "gold"
           },
           {
-            "text": ", plus an additional {CalculationExtra:diff()} "
+            "text": ", plus an additional "
+          },
+          {
+            "text": "5",
+            "source_var": "CalculationExtra"
+          },
+          {
+            "text": " "
           },
           {
             "text": "Doom",
@@ -90,17 +106,32 @@
       "title": "No Escape+",
       "cost": 1,
       "description": {
-        "plain": "Apply {CalculationBase:diff()} Doom, plus an additional {CalculationExtra:diff()} Doom for every 10 Doom already on this enemy.{IsTargeting:\n(Apply {CalculatedDoom:diff()} [gold]Doom[/gold])|}",
+        "plain": "Apply 15 Doom, plus an additional 5 Doom for every 10 Doom already on this enemy.{IsTargeting:\n(Apply {CalculatedDoom:diff()} [gold]Doom[/gold])|}",
         "runs": [
           {
-            "text": "Apply {CalculationBase:diff()} "
+            "text": "Apply "
+          },
+          {
+            "text": "15",
+            "source_var": "CalculationBase",
+            "style": "green"
+          },
+          {
+            "text": " "
           },
           {
             "text": "Doom",
             "style": "gold"
           },
           {
-            "text": ", plus an additional {CalculationExtra:diff()} "
+            "text": ", plus an additional "
+          },
+          {
+            "text": "5",
+            "source_var": "CalculationExtra"
+          },
+          {
+            "text": " "
           },
           {
             "text": "Doom",
@@ -124,7 +155,10 @@
             "text": " already on this enemy.{IsTargeting:\n(Apply {CalculatedDoom:diff()} [gold]Doom[/gold])|}"
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

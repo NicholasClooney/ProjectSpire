@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "SPITE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Spite",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Spite.cs",
     "cost": 0,
@@ -15,7 +15,8 @@
       "description_key": "SPITE.description"
     },
     "vars": {
-      "Damage": 5
+      "Damage": 5,
+      "Repeat": 2
     },
     "assets": [
       {
@@ -36,7 +37,7 @@
       "title": "Spite",
       "cost": 0,
       "description": {
-        "plain": "Deal 5 damage.\nIf you lost HP this turn,\nhits {Repeat:diff()} times.",
+        "plain": "Deal 5 damage.\nIf you lost HP this turn,\nhits 2 times.",
         "runs": [
           {
             "text": "Deal "
@@ -46,7 +47,14 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage.\nIf you lost HP this turn,\nhits {Repeat:diff()} times."
+            "text": " damage.\nIf you lost HP this turn,\nhits "
+          },
+          {
+            "text": "2",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " times."
           }
         ]
       }
@@ -55,7 +63,7 @@
       "title": "Spite+",
       "cost": 0,
       "description": {
-        "plain": "Deal 5 damage.\nIf you lost HP this turn,\nhits {Repeat:diff()} times.",
+        "plain": "Deal 5 damage.\nIf you lost HP this turn,\nhits 3 times.",
         "runs": [
           {
             "text": "Deal "
@@ -65,10 +73,21 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage.\nIf you lost HP this turn,\nhits {Repeat:diff()} times."
+            "text": " damage.\nIf you lost HP this turn,\nhits "
+          },
+          {
+            "text": "3",
+            "source_var": "Repeat",
+            "style": "green"
+          },
+          {
+            "text": " times."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

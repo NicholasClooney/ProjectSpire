@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "CHAOS",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Chaos",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Chaos.cs",
     "cost": 1,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "CHAOS.title",
       "description_key": "CHAOS.description"
+    },
+    "vars": {
+      "Repeat": 1
     },
     "assets": [
       {
@@ -40,14 +43,21 @@
       "title": "Chaos",
       "cost": 1,
       "description": {
-        "plain": "Channel {Repeat:diff()} random {Repeat:plural:Orb|Orbs}.",
+        "plain": "Channel 1 random Orb.",
         "runs": [
           {
             "text": "Channel",
             "style": "gold"
           },
           {
-            "text": " {Repeat:diff()} random {Repeat:plural:Orb|Orbs}."
+            "text": " "
+          },
+          {
+            "text": "1",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " random Orb."
           }
         ]
       }
@@ -56,17 +66,28 @@
       "title": "Chaos+",
       "cost": 1,
       "description": {
-        "plain": "Channel {Repeat:diff()} random {Repeat:plural:Orb|Orbs}.",
+        "plain": "Channel 2 random Orbs.",
         "runs": [
           {
             "text": "Channel",
             "style": "gold"
           },
           {
-            "text": " {Repeat:diff()} random {Repeat:plural:Orb|Orbs}."
+            "text": " "
+          },
+          {
+            "text": "2",
+            "source_var": "Repeat",
+            "style": "green"
+          },
+          {
+            "text": " random Orbs."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

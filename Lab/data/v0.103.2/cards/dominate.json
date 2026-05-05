@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "DOMINATE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Dominate",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Dominate.cs",
     "cost": 1,
@@ -15,8 +15,8 @@
       "description_key": "DOMINATE.description"
     },
     "vars": {
-      "StrengthPerVulnerable": 1,
-      "VulnerablePower": 1
+      "VulnerablePower": 1,
+      "StrengthPerVulnerable": 1
     },
     "assets": [
       {

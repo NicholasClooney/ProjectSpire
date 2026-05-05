@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "FRIENDSHIP",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Friendship",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Friendship.cs",
     "cost": 1,
@@ -15,8 +15,8 @@
       "description_key": "FRIENDSHIP.description"
     },
     "vars": {
-      "Energy": 1,
-      "StrengthPower": 2
+      "StrengthPower": 2,
+      "Energy": 1
     },
     "assets": [
       {

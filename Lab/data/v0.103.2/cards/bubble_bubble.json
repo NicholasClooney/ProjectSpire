@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "BUBBLE_BUBBLE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "BubbleBubble",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BubbleBubble.cs",
     "cost": 1,
@@ -31,7 +31,7 @@
     ],
     "upgrades": [
       {
-        "var": "Poison",
+        "var": "PoisonPower",
         "delta": 3
       }
     ],
@@ -88,7 +88,7 @@
       "title": "Bubble Bubble+",
       "cost": 1,
       "description": {
-        "plain": "If the enemy has Poison, apply 9 Poison.",
+        "plain": "If the enemy has Poison, apply 12 Poison.",
         "runs": [
           {
             "text": "If the enemy has "
@@ -101,8 +101,9 @@
             "text": ", apply "
           },
           {
-            "text": "9",
-            "source_var": "PoisonPower"
+            "text": "12",
+            "source_var": "PoisonPower",
+            "style": "green"
           },
           {
             "text": " "
@@ -115,7 +116,10 @@
             "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

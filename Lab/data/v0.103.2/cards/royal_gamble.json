@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "ROYAL_GAMBLE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "RoyalGamble",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/RoyalGamble.cs",
     "cost": 0,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "ROYAL_GAMBLE.title",
       "description_key": "ROYAL_GAMBLE.description"
+    },
+    "vars": {
+      "Stars": 9
     },
     "assets": [
       {
@@ -36,10 +39,17 @@
       "title": "Royal Gamble",
       "cost": 0,
       "description": {
-        "plain": "Gain {Stars:diff()} *.",
+        "plain": "Gain 9 *.",
         "runs": [
           {
-            "text": "Gain {Stars:diff()} *."
+            "text": "Gain "
+          },
+          {
+            "text": "9",
+            "source_var": "Stars"
+          },
+          {
+            "text": " *."
           }
         ]
       }
@@ -48,10 +58,17 @@
       "title": "Royal Gamble+",
       "cost": 0,
       "description": {
-        "plain": "Gain {Stars:diff()} *.",
+        "plain": "Gain 9 *.",
         "runs": [
           {
-            "text": "Gain {Stars:diff()} *."
+            "text": "Gain "
+          },
+          {
+            "text": "9",
+            "source_var": "Stars"
+          },
+          {
+            "text": " *."
           }
         ]
       }

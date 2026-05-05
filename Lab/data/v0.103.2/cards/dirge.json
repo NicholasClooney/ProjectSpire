@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "DIRGE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Dirge",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Dirge.cs",
     "cost": 0,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "DIRGE.title",
       "description_key": "DIRGE.description"
+    },
+    "vars": {
+      "Summon": 3
     },
     "assets": [
       {
@@ -48,14 +51,21 @@
       "title": "Dirge",
       "cost": 0,
       "description": {
-        "plain": "Summon {Summon:diff()} X times.\nAdd X Souls into your Draw Pile.",
+        "plain": "Summon 3 X times.\nAdd X Souls into your Draw Pile.",
         "runs": [
           {
             "text": "Summon",
             "style": "gold"
           },
           {
-            "text": " {Summon:diff()} X times.\nAdd X "
+            "text": " "
+          },
+          {
+            "text": "3",
+            "source_var": "Summon"
+          },
+          {
+            "text": " X times.\nAdd X "
           },
           {
             "text": "Souls",
@@ -78,14 +88,22 @@
       "title": "Dirge+",
       "cost": 0,
       "description": {
-        "plain": "Summon {Summon:diff()} X times.\nAdd X Souls+ into your Draw Pile.",
+        "plain": "Summon 4 X times.\nAdd X Souls+ into your Draw Pile.",
         "runs": [
           {
             "text": "Summon",
             "style": "gold"
           },
           {
-            "text": " {Summon:diff()} X times.\nAdd X "
+            "text": " "
+          },
+          {
+            "text": "4",
+            "source_var": "Summon",
+            "style": "green"
+          },
+          {
+            "text": " X times.\nAdd X "
           },
           {
             "text": "Souls+",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "GLOW",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Glow",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Glow.cs",
     "cost": 1,
@@ -15,6 +15,7 @@
       "description_key": "GLOW.description"
     },
     "vars": {
+      "Stars": 1,
       "Cards": 1
     },
     "assets": [
@@ -48,10 +49,17 @@
       "title": "Glow",
       "cost": 1,
       "description": {
-        "plain": "Gain {Stars:starIcons()}.\nDraw 1 card.\nNext turn, draw 1 card.",
+        "plain": "Gain 1.\nDraw 1 card.\nNext turn, draw 1 card.",
         "runs": [
           {
-            "text": "Gain {Stars:starIcons()}.\nDraw "
+            "text": "Gain "
+          },
+          {
+            "text": "1",
+            "source_var": "Stars"
+          },
+          {
+            "text": ".\nDraw "
           },
           {
             "text": "1",
@@ -74,10 +82,17 @@
       "title": "Glow+",
       "cost": 1,
       "description": {
-        "plain": "Gain {Stars:starIcons()}.\nDraw 1 card.\nNext turn, draw 1 card.",
+        "plain": "Gain 2.\nDraw 1 card.\nNext turn, draw 1 card.",
         "runs": [
           {
-            "text": "Gain {Stars:starIcons()}.\nDraw "
+            "text": "Gain "
+          },
+          {
+            "text": "2",
+            "source_var": "Stars"
+          },
+          {
+            "text": ".\nDraw "
           },
           {
             "text": "1",
@@ -94,7 +109,10 @@
             "text": " card."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

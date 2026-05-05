@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "ADRENALINE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Adrenaline",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Adrenaline.cs",
     "cost": 0,
@@ -15,8 +15,8 @@
       "description_key": "ADRENALINE.description"
     },
     "vars": {
-      "Cards": 2,
-      "Energy": 1
+      "Energy": 1,
+      "Cards": 2
     },
     "assets": [
       {

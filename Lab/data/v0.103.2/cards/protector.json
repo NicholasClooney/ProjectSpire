@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "PROTECTOR",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Protector",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Protector.cs",
     "cost": 1,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "PROTECTOR.title",
       "description_key": "PROTECTOR.description"
+    },
+    "vars": {
+      "CalculationBase": 10,
+      "ExtraDamage": 1
     },
     "assets": [
       {

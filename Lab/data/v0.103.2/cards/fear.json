@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "FEAR",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Fear",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Fear.cs",
     "cost": 1,
@@ -34,7 +34,7 @@
         "delta": 1
       },
       {
-        "var": "Vulnerable",
+        "var": "VulnerablePower",
         "delta": 1
       }
     ],
@@ -91,7 +91,7 @@
       "title": "Fear+",
       "cost": 1,
       "description": {
-        "plain": "Deal 8 damage.\nApply 1 Vulnerable.",
+        "plain": "Deal 8 damage.\nApply 2 Vulnerable.",
         "runs": [
           {
             "text": "Deal "
@@ -105,8 +105,9 @@
             "text": " damage.\nApply "
           },
           {
-            "text": "1",
-            "source_var": "VulnerablePower"
+            "text": "2",
+            "source_var": "VulnerablePower",
+            "style": "green"
           },
           {
             "text": " "

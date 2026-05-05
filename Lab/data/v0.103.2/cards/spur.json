@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "SPUR",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Spur",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Spur.cs",
     "cost": 1,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "SPUR.title",
       "description_key": "SPUR.description"
+    },
+    "vars": {
+      "Summon": 3,
+      "Heal": 5
     },
     "assets": [
       {
@@ -40,21 +44,35 @@
       "title": "Spur",
       "cost": 1,
       "description": {
-        "plain": "Summon {Summon:diff()}.\nOsty heals {Heal:diff()} HP.",
+        "plain": "Summon 3.\nOsty heals 5 HP.",
         "runs": [
           {
             "text": "Summon",
             "style": "gold"
           },
           {
-            "text": " {Summon:diff()}.\n"
+            "text": " "
+          },
+          {
+            "text": "3",
+            "source_var": "Summon"
+          },
+          {
+            "text": ".\n"
           },
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " heals {Heal:diff()} HP."
+            "text": " heals "
+          },
+          {
+            "text": "5",
+            "source_var": "Heal"
+          },
+          {
+            "text": " HP."
           }
         ]
       }
@@ -63,24 +81,43 @@
       "title": "Spur+",
       "cost": 1,
       "description": {
-        "plain": "Summon {Summon:diff()}.\nOsty heals {Heal:diff()} HP.",
+        "plain": "Summon 5.\nOsty heals 7 HP.",
         "runs": [
           {
             "text": "Summon",
             "style": "gold"
           },
           {
-            "text": " {Summon:diff()}.\n"
+            "text": " "
+          },
+          {
+            "text": "5",
+            "source_var": "Summon",
+            "style": "green"
+          },
+          {
+            "text": ".\n"
           },
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " heals {Heal:diff()} HP."
+            "text": " heals "
+          },
+          {
+            "text": "7",
+            "source_var": "Heal",
+            "style": "green"
+          },
+          {
+            "text": " HP."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

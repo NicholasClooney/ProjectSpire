@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "ROYALTIES",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Royalties",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Royalties.cs",
     "cost": 1,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "ROYALTIES.title",
       "description_key": "ROYALTIES.description"
+    },
+    "vars": {
+      "Gold": 30
     },
     "assets": [
       {
@@ -45,10 +48,17 @@
       "title": "Royalties",
       "cost": 1,
       "description": {
-        "plain": "At the end of combat, gain {Gold:diff()} Gold.",
+        "plain": "At the end of combat, gain 30 Gold.",
         "runs": [
           {
-            "text": "At the end of combat, gain {Gold:diff()} "
+            "text": "At the end of combat, gain "
+          },
+          {
+            "text": "30",
+            "source_var": "Gold"
+          },
+          {
+            "text": " "
           },
           {
             "text": "Gold",
@@ -64,10 +74,18 @@
       "title": "Royalties+",
       "cost": 1,
       "description": {
-        "plain": "At the end of combat, gain {Gold:diff()} Gold.",
+        "plain": "At the end of combat, gain 35 Gold.",
         "runs": [
           {
-            "text": "At the end of combat, gain {Gold:diff()} "
+            "text": "At the end of combat, gain "
+          },
+          {
+            "text": "35",
+            "source_var": "Gold",
+            "style": "green"
+          },
+          {
+            "text": " "
           },
           {
             "text": "Gold",
@@ -77,7 +95,10 @@
             "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

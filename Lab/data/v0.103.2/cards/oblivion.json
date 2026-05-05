@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "OBLIVION",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Oblivion",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Oblivion.cs",
     "cost": 0,
@@ -26,7 +26,7 @@
     ],
     "upgrades": [
       {
-        "var": "Doom",
+        "var": "DoomPower",
         "delta": 1
       }
     ],
@@ -76,14 +76,15 @@
       "title": "Oblivion+",
       "cost": 0,
       "description": {
-        "plain": "Whenever you play a card this turn, apply 3 Doom to the enemy.",
+        "plain": "Whenever you play a card this turn, apply 4 Doom to the enemy.",
         "runs": [
           {
             "text": "Whenever you play a card this turn, apply "
           },
           {
-            "text": "3",
-            "source_var": "DoomPower"
+            "text": "4",
+            "source_var": "DoomPower",
+            "style": "green"
           },
           {
             "text": " "
@@ -96,7 +97,10 @@
             "text": " to the enemy."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

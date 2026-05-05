@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "PRECISE_CUT",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "PreciseCut",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PreciseCut.cs",
     "cost": 0,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "PRECISE_CUT.title",
       "description_key": "PRECISE_CUT.description"
+    },
+    "vars": {
+      "CalculationBase": 13,
+      "ExtraDamage": 2
     },
     "assets": [
       {
@@ -38,10 +42,17 @@
       "title": "Precise Cut",
       "cost": 0,
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:inverseDiff()} less damage for each other card in your Hand.",
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 2 less damage for each other card in your Hand.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:inverseDiff()} less damage for each other card in your "
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+          },
+          {
+            "text": "2",
+            "source_var": "ExtraDamage"
+          },
+          {
+            "text": " less damage for each other card in your "
           },
           {
             "text": "Hand",
@@ -57,10 +68,17 @@
       "title": "Precise Cut+",
       "cost": 0,
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:inverseDiff()} less damage for each other card in your Hand.",
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 2 less damage for each other card in your Hand.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:inverseDiff()} less damage for each other card in your "
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+          },
+          {
+            "text": "2",
+            "source_var": "ExtraDamage"
+          },
+          {
+            "text": " less damage for each other card in your "
           },
           {
             "text": "Hand",

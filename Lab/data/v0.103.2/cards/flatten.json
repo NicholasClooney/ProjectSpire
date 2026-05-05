@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "FLATTEN",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Flatten",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Flatten.cs",
     "cost": 2,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "FLATTEN.title",
       "description_key": "FLATTEN.description"
+    },
+    "vars": {
+      "OstyDamage": 12
     },
     "assets": [
       {
@@ -36,14 +39,21 @@
       "title": "Flatten",
       "cost": 2,
       "description": {
-        "plain": "Osty deals {OstyDamage:diff()} damage.\nThis card costs 0  if Osty has attacked this turn.",
+        "plain": "Osty deals 12 damage.\nThis card costs 0  if Osty has attacked this turn.",
         "runs": [
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " deals {OstyDamage:diff()} damage.\nThis card costs 0  if "
+            "text": " deals "
+          },
+          {
+            "text": "12",
+            "source_var": "OstyDamage"
+          },
+          {
+            "text": " damage.\nThis card costs 0  if "
           },
           {
             "text": "Osty",
@@ -59,14 +69,22 @@
       "title": "Flatten+",
       "cost": 2,
       "description": {
-        "plain": "Osty deals {OstyDamage:diff()} damage.\nThis card costs 0  if Osty has attacked this turn.",
+        "plain": "Osty deals 16 damage.\nThis card costs 0  if Osty has attacked this turn.",
         "runs": [
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " deals {OstyDamage:diff()} damage.\nThis card costs 0  if "
+            "text": " deals "
+          },
+          {
+            "text": "16",
+            "source_var": "OstyDamage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nThis card costs 0  if "
           },
           {
             "text": "Osty",
@@ -76,7 +94,10 @@
             "text": " has attacked this turn."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

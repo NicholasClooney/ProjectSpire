@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "VOLTAIC",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Voltaic",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Voltaic.cs",
     "cost": 3,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "VOLTAIC.title",
       "description_key": "VOLTAIC.description"
+    },
+    "vars": {
+      "CalculationBase": 0,
+      "CalculationExtra": 1
     },
     "assets": [
       {

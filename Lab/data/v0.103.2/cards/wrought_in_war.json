@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "WROUGHT_IN_WAR",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "WroughtInWar",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/WroughtInWar.cs",
     "cost": 1,
@@ -15,7 +15,8 @@
       "description_key": "WROUGHT_IN_WAR.description"
     },
     "vars": {
-      "Damage": 7
+      "Damage": 7,
+      "Forge": 7
     },
     "assets": [
       {
@@ -45,7 +46,7 @@
       "title": "Wrought in War",
       "cost": 1,
       "description": {
-        "plain": "Deal 7 damage.\nForge {Forge:diff()}.",
+        "plain": "Deal 7 damage.\nForge 7.",
         "runs": [
           {
             "text": "Deal "
@@ -62,7 +63,14 @@
             "style": "gold"
           },
           {
-            "text": " {Forge:diff()}."
+            "text": " "
+          },
+          {
+            "text": "7",
+            "source_var": "Forge"
+          },
+          {
+            "text": "."
           }
         ]
       }
@@ -71,7 +79,7 @@
       "title": "Wrought in War+",
       "cost": 1,
       "description": {
-        "plain": "Deal 9 damage.\nForge {Forge:diff()}.",
+        "plain": "Deal 9 damage.\nForge 9.",
         "runs": [
           {
             "text": "Deal "
@@ -89,7 +97,15 @@
             "style": "gold"
           },
           {
-            "text": " {Forge:diff()}."
+            "text": " "
+          },
+          {
+            "text": "9",
+            "source_var": "Forge",
+            "style": "green"
+          },
+          {
+            "text": "."
           }
         ]
       },

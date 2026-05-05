@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "RICOCHET",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Ricochet",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Ricochet.cs",
     "cost": 2,
@@ -15,7 +15,8 @@
       "description_key": "RICOCHET.description"
     },
     "vars": {
-      "Damage": 3
+      "Damage": 3,
+      "Repeat": 4
     },
     "assets": [
       {
@@ -44,7 +45,7 @@
       "title": "Ricochet",
       "cost": 2,
       "description": {
-        "plain": "Deal 3 damage to a random enemy {Repeat:diff()} times.",
+        "plain": "Deal 3 damage to a random enemy 4 times.",
         "runs": [
           {
             "text": "Deal "
@@ -54,7 +55,14 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage to a random enemy {Repeat:diff()} times."
+            "text": " damage to a random enemy "
+          },
+          {
+            "text": "4",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " times."
           }
         ]
       }
@@ -63,7 +71,7 @@
       "title": "Ricochet+",
       "cost": 2,
       "description": {
-        "plain": "Deal 3 damage to a random enemy {Repeat:diff()} times.",
+        "plain": "Deal 3 damage to a random enemy 5 times.",
         "runs": [
           {
             "text": "Deal "
@@ -73,10 +81,21 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage to a random enemy {Repeat:diff()} times."
+            "text": " damage to a random enemy "
+          },
+          {
+            "text": "5",
+            "source_var": "Repeat",
+            "style": "green"
+          },
+          {
+            "text": " times."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

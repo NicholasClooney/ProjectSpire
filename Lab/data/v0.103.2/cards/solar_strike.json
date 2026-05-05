@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "SOLAR_STRIKE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "SolarStrike",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SolarStrike.cs",
     "cost": 1,
@@ -15,7 +15,8 @@
       "description_key": "SOLAR_STRIKE.description"
     },
     "vars": {
-      "Damage": 9
+      "Damage": 9,
+      "Stars": 1
     },
     "assets": [
       {
@@ -43,7 +44,7 @@
       "title": "Solar Strike",
       "cost": 1,
       "description": {
-        "plain": "Deal 9 damage.\nGain {Stars:starIcons()}.",
+        "plain": "Deal 9 damage.\nGain 1.",
         "runs": [
           {
             "text": "Deal "
@@ -53,7 +54,14 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage.\nGain {Stars:starIcons()}."
+            "text": " damage.\nGain "
+          },
+          {
+            "text": "1",
+            "source_var": "Stars"
+          },
+          {
+            "text": "."
           }
         ]
       }
@@ -62,7 +70,7 @@
       "title": "Solar Strike+",
       "cost": 1,
       "description": {
-        "plain": "Deal 10 damage.\nGain {Stars:starIcons()}.",
+        "plain": "Deal 10 damage.\nGain 2.",
         "runs": [
           {
             "text": "Deal "
@@ -73,7 +81,14 @@
             "style": "green"
           },
           {
-            "text": " damage.\nGain {Stars:starIcons()}."
+            "text": " damage.\nGain "
+          },
+          {
+            "text": "2",
+            "source_var": "Stars"
+          },
+          {
+            "text": "."
           }
         ]
       },

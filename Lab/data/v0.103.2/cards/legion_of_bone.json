@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "LEGION_OF_BONE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "LegionOfBone",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/LegionOfBone.cs",
     "cost": 2,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "LEGION_OF_BONE.title",
       "description_key": "LEGION_OF_BONE.description"
+    },
+    "vars": {
+      "Summon": 6
     },
     "assets": [
       {
@@ -41,7 +44,7 @@
       "title": "Legion of Bone",
       "cost": 2,
       "description": {
-        "plain": "ALL players Summon {Summon:diff()}.",
+        "plain": "ALL players Summon 6.",
         "runs": [
           {
             "text": "ALL players "
@@ -51,7 +54,14 @@
             "style": "gold"
           },
           {
-            "text": " {Summon:diff()}."
+            "text": " "
+          },
+          {
+            "text": "6",
+            "source_var": "Summon"
+          },
+          {
+            "text": "."
           }
         ]
       }
@@ -60,7 +70,7 @@
       "title": "Legion of Bone+",
       "cost": 2,
       "description": {
-        "plain": "ALL players Summon {Summon:diff()}.",
+        "plain": "ALL players Summon 8.",
         "runs": [
           {
             "text": "ALL players "
@@ -70,10 +80,21 @@
             "style": "gold"
           },
           {
-            "text": " {Summon:diff()}."
+            "text": " "
+          },
+          {
+            "text": "8",
+            "source_var": "Summon",
+            "style": "green"
+          },
+          {
+            "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

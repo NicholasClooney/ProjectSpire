@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "DEATHS_DOOR",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "DeathsDoor",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DeathsDoor.cs",
     "cost": 1,
@@ -15,7 +15,8 @@
       "description_key": "DEATHS_DOOR.description"
     },
     "vars": {
-      "Block": 6
+      "Block": 6,
+      "Repeat": 2
     },
     "assets": [
       {
@@ -48,7 +49,7 @@
       "title": "Death's Door",
       "cost": 1,
       "description": {
-        "plain": "Gain 6 Block.\nIf you applied Doom this turn, gain Block {Repeat:diff()} additional {Repeat:plural:time|times}.",
+        "plain": "Gain 6 Block.\nIf you applied Doom this turn, gain Block 2 additional times.",
         "runs": [
           {
             "text": "Gain "
@@ -79,7 +80,14 @@
             "style": "gold"
           },
           {
-            "text": " {Repeat:diff()} additional {Repeat:plural:time|times}."
+            "text": " "
+          },
+          {
+            "text": "2",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " additional times."
           }
         ]
       }
@@ -88,7 +96,7 @@
       "title": "Death's Door+",
       "cost": 1,
       "description": {
-        "plain": "Gain 7 Block.\nIf you applied Doom this turn, gain Block {Repeat:diff()} additional {Repeat:plural:time|times}.",
+        "plain": "Gain 7 Block.\nIf you applied Doom this turn, gain Block 2 additional times.",
         "runs": [
           {
             "text": "Gain "
@@ -120,7 +128,14 @@
             "style": "gold"
           },
           {
-            "text": " {Repeat:diff()} additional {Repeat:plural:time|times}."
+            "text": " "
+          },
+          {
+            "text": "2",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " additional times."
           }
         ]
       },

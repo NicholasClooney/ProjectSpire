@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "BLOODLETTING",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Bloodletting",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Bloodletting.cs",
     "cost": 0,
@@ -15,8 +15,8 @@
       "description_key": "BLOODLETTING.description"
     },
     "vars": {
-      "Energy": 2,
-      "HpLoss": 3
+      "HpLoss": 3,
+      "Energy": 2
     },
     "assets": [
       {

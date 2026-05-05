@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "GLITTERSTREAM",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Glitterstream",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Glitterstream.cs",
     "cost": 2,
@@ -15,7 +15,8 @@
       "description_key": "GLITTERSTREAM.description"
     },
     "vars": {
-      "Block": 11
+      "Block": 11,
+      "BlockNextTurn": 5
     },
     "assets": [
       {
@@ -47,7 +48,7 @@
       "title": "Glitterstream",
       "cost": 2,
       "description": {
-        "plain": "Gain 11 Block.\nNext turn, gain {BlockNextTurn:diff()} Block.",
+        "plain": "Gain 11 Block.\nNext turn, gain 5 Block.",
         "runs": [
           {
             "text": "Gain "
@@ -64,7 +65,14 @@
             "style": "gold"
           },
           {
-            "text": ".\nNext turn, gain {BlockNextTurn:diff()} "
+            "text": ".\nNext turn, gain "
+          },
+          {
+            "text": "5",
+            "source_var": "BlockNextTurn"
+          },
+          {
+            "text": " "
           },
           {
             "text": "Block",
@@ -80,7 +88,7 @@
       "title": "Glitterstream+",
       "cost": 2,
       "description": {
-        "plain": "Gain 13 Block.\nNext turn, gain {BlockNextTurn:diff()} Block.",
+        "plain": "Gain 13 Block.\nNext turn, gain 7 Block.",
         "runs": [
           {
             "text": "Gain "
@@ -98,7 +106,15 @@
             "style": "gold"
           },
           {
-            "text": ".\nNext turn, gain {BlockNextTurn:diff()} "
+            "text": ".\nNext turn, gain "
+          },
+          {
+            "text": "7",
+            "source_var": "BlockNextTurn",
+            "style": "green"
+          },
+          {
+            "text": " "
           },
           {
             "text": "Block",

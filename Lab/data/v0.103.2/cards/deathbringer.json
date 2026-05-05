@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "DEATHBRINGER",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Deathbringer",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Deathbringer.cs",
     "cost": 2,
@@ -27,7 +27,7 @@
     ],
     "upgrades": [
       {
-        "var": "Doom",
+        "var": "DoomPower",
         "delta": 5
       }
     ],
@@ -101,14 +101,15 @@
       "title": "Deathbringer+",
       "cost": 2,
       "description": {
-        "plain": "Apply 21 Doom and 1 Weak to ALL enemies.",
+        "plain": "Apply 26 Doom and 1 Weak to ALL enemies.",
         "runs": [
           {
             "text": "Apply "
           },
           {
-            "text": "21",
-            "source_var": "DoomPower"
+            "text": "26",
+            "source_var": "DoomPower",
+            "style": "green"
           },
           {
             "text": " "
@@ -135,7 +136,10 @@
             "text": " to ALL enemies."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

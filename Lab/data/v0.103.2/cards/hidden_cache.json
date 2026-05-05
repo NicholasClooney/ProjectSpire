@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "HIDDEN_CACHE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "HiddenCache",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HiddenCache.cs",
     "cost": 1,
@@ -15,6 +15,7 @@
       "description_key": "HIDDEN_CACHE.description"
     },
     "vars": {
+      "Stars": 1,
       "StarNextTurnPower": 3
     },
     "assets": [
@@ -48,10 +49,17 @@
       "title": "Hidden Cache",
       "cost": 1,
       "description": {
-        "plain": "Gain {Stars:starIcons()}.\nNext turn, gain 3.",
+        "plain": "Gain 1.\nNext turn, gain 3.",
         "runs": [
           {
-            "text": "Gain {Stars:starIcons()}.\nNext turn, gain "
+            "text": "Gain "
+          },
+          {
+            "text": "1",
+            "source_var": "Stars"
+          },
+          {
+            "text": ".\nNext turn, gain "
           },
           {
             "text": "3",
@@ -67,10 +75,17 @@
       "title": "Hidden Cache+",
       "cost": 1,
       "description": {
-        "plain": "Gain {Stars:starIcons()}.\nNext turn, gain 4.",
+        "plain": "Gain 1.\nNext turn, gain 4.",
         "runs": [
           {
-            "text": "Gain {Stars:starIcons()}.\nNext turn, gain "
+            "text": "Gain "
+          },
+          {
+            "text": "1",
+            "source_var": "Stars"
+          },
+          {
+            "text": ".\nNext turn, gain "
           },
           {
             "text": "4",

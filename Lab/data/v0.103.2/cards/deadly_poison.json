@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "DEADLY_POISON",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "DeadlyPoison",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DeadlyPoison.cs",
     "cost": 1,
@@ -26,7 +26,7 @@
     ],
     "upgrades": [
       {
-        "var": "Poison",
+        "var": "PoisonPower",
         "delta": 2
       }
     ],
@@ -76,14 +76,15 @@
       "title": "Deadly Poison+",
       "cost": 1,
       "description": {
-        "plain": "Apply 5 Poison.",
+        "plain": "Apply 7 Poison.",
         "runs": [
           {
             "text": "Apply "
           },
           {
-            "text": "5",
-            "source_var": "PoisonPower"
+            "text": "7",
+            "source_var": "PoisonPower",
+            "style": "green"
           },
           {
             "text": " "
@@ -96,7 +97,10 @@
             "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

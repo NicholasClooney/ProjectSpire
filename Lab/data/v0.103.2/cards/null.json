@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "NULL",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Null",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Null.cs",
     "cost": 2,
@@ -31,7 +31,7 @@
         "delta": 3
       },
       {
-        "var": "Weak",
+        "var": "WeakPower",
         "delta": 1
       }
     ],
@@ -112,7 +112,7 @@
       "title": "Null+",
       "cost": 2,
       "description": {
-        "plain": "Deal 13 damage.\nApply 2 Weak.\nChannel 1 Dark.",
+        "plain": "Deal 13 damage.\nApply 3 Weak.\nChannel 1 Dark.",
         "runs": [
           {
             "text": "Deal "
@@ -126,8 +126,9 @@
             "text": " damage.\nApply "
           },
           {
-            "text": "2",
-            "source_var": "WeakPower"
+            "text": "3",
+            "source_var": "WeakPower",
+            "style": "green"
           },
           {
             "text": " "

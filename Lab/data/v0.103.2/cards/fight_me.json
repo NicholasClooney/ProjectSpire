@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "FIGHT_ME",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "FightMe",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FightMe.cs",
     "cost": 2,
@@ -16,8 +16,9 @@
     },
     "vars": {
       "Damage": 5,
-      "EnemyStrength": 1,
-      "StrengthPower": 3
+      "Repeat": 2,
+      "StrengthPower": 3,
+      "EnemyStrength": 1
     },
     "assets": [
       {
@@ -37,7 +38,7 @@
         "delta": 1
       },
       {
-        "var": "Strength",
+        "var": "StrengthPower",
         "delta": 1
       }
     ],
@@ -113,7 +114,7 @@
       "title": "Fight Me!+",
       "cost": 2,
       "description": {
-        "plain": "Deal 6 damage twice.\nGain 3 Strength.\nThe enemy gains 1 Strength.",
+        "plain": "Deal 6 damage twice.\nGain 4 Strength.\nThe enemy gains 1 Strength.",
         "runs": [
           {
             "text": "Deal "
@@ -127,8 +128,9 @@
             "text": " damage twice.\nGain "
           },
           {
-            "text": "3",
-            "source_var": "StrengthPower"
+            "text": "4",
+            "source_var": "StrengthPower",
+            "style": "green"
           },
           {
             "text": " "

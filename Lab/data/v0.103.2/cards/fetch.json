@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "FETCH",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Fetch",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Fetch.cs",
     "cost": 0,
@@ -15,6 +15,7 @@
       "description_key": "FETCH.description"
     },
     "vars": {
+      "OstyDamage": 3,
       "Cards": 1
     },
     "assets": [
@@ -39,14 +40,21 @@
       "title": "Fetch",
       "cost": 0,
       "description": {
-        "plain": "Osty deals {OstyDamage:diff()} damage.\nIf this is the first time this card has been played this turn, draw 1 card.",
+        "plain": "Osty deals 3 damage.\nIf this is the first time this card has been played this turn, draw 1 card.",
         "runs": [
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " deals {OstyDamage:diff()} damage.\nIf this is the first time this card has been played this turn, draw "
+            "text": " deals "
+          },
+          {
+            "text": "3",
+            "source_var": "OstyDamage"
+          },
+          {
+            "text": " damage.\nIf this is the first time this card has been played this turn, draw "
           },
           {
             "text": "1",
@@ -62,14 +70,22 @@
       "title": "Fetch+",
       "cost": 0,
       "description": {
-        "plain": "Osty deals {OstyDamage:diff()} damage.\nIf this is the first time this card has been played this turn, draw 1 card.",
+        "plain": "Osty deals 6 damage.\nIf this is the first time this card has been played this turn, draw 1 card.",
         "runs": [
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " deals {OstyDamage:diff()} damage.\nIf this is the first time this card has been played this turn, draw "
+            "text": " deals "
+          },
+          {
+            "text": "6",
+            "source_var": "OstyDamage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nIf this is the first time this card has been played this turn, draw "
           },
           {
             "text": "1",
@@ -79,7 +95,10 @@
             "text": " card."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

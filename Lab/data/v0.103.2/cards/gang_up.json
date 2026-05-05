@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "GANG_UP",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "GangUp",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GangUp.cs",
     "cost": 1,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "GANG_UP.title",
       "description_key": "GANG_UP.description"
+    },
+    "vars": {
+      "CalculationBase": 5,
+      "ExtraDamage": 5
     },
     "assets": [
       {
@@ -38,10 +42,17 @@
       "title": "Gang Up",
       "cost": 1,
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each time another player has attacked the enemy this turn.",
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 5 additional damage for each time another player has attacked the enemy this turn.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each time another player has attacked the enemy this turn."
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+          },
+          {
+            "text": "5",
+            "source_var": "ExtraDamage"
+          },
+          {
+            "text": " additional damage for each time another player has attacked the enemy this turn."
           }
         ]
       }
@@ -50,13 +61,24 @@
       "title": "Gang Up+",
       "cost": 1,
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each time another player has attacked the enemy this turn.",
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 7 additional damage for each time another player has attacked the enemy this turn.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each time another player has attacked the enemy this turn."
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+          },
+          {
+            "text": "7",
+            "source_var": "ExtraDamage",
+            "style": "green"
+          },
+          {
+            "text": " additional damage for each time another player has attacked the enemy this turn."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

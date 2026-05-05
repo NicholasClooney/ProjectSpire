@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "FINISHER",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Finisher",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Finisher.cs",
     "cost": 1,
@@ -15,7 +15,9 @@
       "description_key": "FINISHER.description"
     },
     "vars": {
-      "Damage": 6
+      "Damage": 6,
+      "CalculationBase": 0,
+      "CalculationExtra": 1
     },
     "assets": [
       {

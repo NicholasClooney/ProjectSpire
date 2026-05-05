@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "TREMBLE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Tremble",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Tremble.cs",
     "cost": 1,
@@ -29,7 +29,7 @@
     ],
     "upgrades": [
       {
-        "var": "Vulnerable",
+        "var": "VulnerablePower",
         "delta": 1
       }
     ],
@@ -79,14 +79,15 @@
       "title": "Tremble+",
       "cost": 1,
       "description": {
-        "plain": "Apply 3 Vulnerable.",
+        "plain": "Apply 4 Vulnerable.",
         "runs": [
           {
             "text": "Apply "
           },
           {
-            "text": "3",
-            "source_var": "VulnerablePower"
+            "text": "4",
+            "source_var": "VulnerablePower",
+            "style": "green"
           },
           {
             "text": " "
@@ -99,7 +100,10 @@
             "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

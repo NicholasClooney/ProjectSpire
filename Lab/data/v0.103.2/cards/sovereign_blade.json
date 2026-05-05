@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "SOVEREIGN_BLADE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "SovereignBlade",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SovereignBlade.cs",
     "cost": 2,
@@ -15,7 +15,10 @@
       "description_key": "SOVEREIGN_BLADE.description"
     },
     "vars": {
-      "Damage": 10
+      "Damage": 10,
+      "CalculationBase": 0,
+      "CalculationExtra": 1,
+      "Repeat": 1
     },
     "assets": [
       {
@@ -45,7 +48,7 @@
       "title": "Sovereign Blade",
       "cost": 2,
       "description": {
-        "plain": "Deal 10 damage{SeekingEdgeAmount:cond:>0? to ALL enemies|}{Repeat:plural:| {} times}.",
+        "plain": "Deal 10 damage{SeekingEdgeAmount:cond:>0? to ALL enemies|}.",
         "runs": [
           {
             "text": "Deal "
@@ -55,7 +58,7 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage{SeekingEdgeAmount:cond:>0? to ALL enemies|}{Repeat:plural:| {} times}."
+            "text": " damage{SeekingEdgeAmount:cond:>0? to ALL enemies|}."
           }
         ]
       }
@@ -64,7 +67,7 @@
       "title": "Sovereign Blade+",
       "cost": 1,
       "description": {
-        "plain": "Deal 10 damage{SeekingEdgeAmount:cond:>0? to ALL enemies|}{Repeat:plural:| {} times}.",
+        "plain": "Deal 10 damage{SeekingEdgeAmount:cond:>0? to ALL enemies|}.",
         "runs": [
           {
             "text": "Deal "
@@ -74,7 +77,7 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage{SeekingEdgeAmount:cond:>0? to ALL enemies|}{Repeat:plural:| {} times}."
+            "text": " damage{SeekingEdgeAmount:cond:>0? to ALL enemies|}."
           }
         ]
       },

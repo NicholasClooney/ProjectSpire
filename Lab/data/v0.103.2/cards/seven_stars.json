@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "SEVEN_STARS",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "SevenStars",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SevenStars.cs",
     "cost": 2,
@@ -15,7 +15,8 @@
       "description_key": "SEVEN_STARS.description"
     },
     "vars": {
-      "Damage": 7
+      "Damage": 7,
+      "Repeat": 7
     },
     "assets": [
       {
@@ -42,7 +43,7 @@
       "title": "Seven Stars",
       "cost": 2,
       "description": {
-        "plain": "Deal 7 damage to ALL enemies {Repeat:plural:{} time|{} times}.",
+        "plain": "Deal 7 damage to ALL enemies {} times.",
         "runs": [
           {
             "text": "Deal "
@@ -52,7 +53,7 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage to ALL enemies {Repeat:plural:{} time|{} times}."
+            "text": " damage to ALL enemies {} times."
           }
         ]
       }
@@ -61,7 +62,7 @@
       "title": "Seven Stars+",
       "cost": 1,
       "description": {
-        "plain": "Deal 7 damage to ALL enemies {Repeat:plural:{} time|{} times}.",
+        "plain": "Deal 7 damage to ALL enemies {} times.",
         "runs": [
           {
             "text": "Deal "
@@ -71,7 +72,7 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage to ALL enemies {Repeat:plural:{} time|{} times}."
+            "text": " damage to ALL enemies {} times."
           }
         ]
       },

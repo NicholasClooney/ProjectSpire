@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "SWEEPING_GAZE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "SweepingGaze",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SweepingGaze.cs",
     "cost": 0,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "SWEEPING_GAZE.title",
       "description_key": "SWEEPING_GAZE.description"
+    },
+    "vars": {
+      "OstyDamage": 10
     },
     "assets": [
       {
@@ -45,14 +48,21 @@
       "title": "Sweeping Gaze",
       "cost": 0,
       "description": {
-        "plain": "Osty deals {OstyDamage:diff()} damage to a random enemy.",
+        "plain": "Osty deals 10 damage to a random enemy.",
         "runs": [
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " deals {OstyDamage:diff()} damage to a random enemy."
+            "text": " deals "
+          },
+          {
+            "text": "10",
+            "source_var": "OstyDamage"
+          },
+          {
+            "text": " damage to a random enemy."
           }
         ]
       }
@@ -61,17 +71,28 @@
       "title": "Sweeping Gaze+",
       "cost": 0,
       "description": {
-        "plain": "Osty deals {OstyDamage:diff()} damage to a random enemy.",
+        "plain": "Osty deals 15 damage to a random enemy.",
         "runs": [
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " deals {OstyDamage:diff()} damage to a random enemy."
+            "text": " deals "
+          },
+          {
+            "text": "15",
+            "source_var": "OstyDamage",
+            "style": "green"
+          },
+          {
+            "text": " damage to a random enemy."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

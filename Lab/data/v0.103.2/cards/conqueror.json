@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "CONQUEROR",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Conqueror",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Conqueror.cs",
     "cost": 1,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "CONQUEROR.title",
       "description_key": "CONQUEROR.description"
+    },
+    "vars": {
+      "Forge": 3
     },
     "assets": [
       {
@@ -45,14 +48,21 @@
       "title": "Conqueror",
       "cost": 1,
       "description": {
-        "plain": "Forge {Forge:diff()}.\nSovereign Blade deals double damage to the enemy this turn.",
+        "plain": "Forge 3.\nSovereign Blade deals double damage to the enemy this turn.",
         "runs": [
           {
             "text": "Forge",
             "style": "gold"
           },
           {
-            "text": " {Forge:diff()}.\n"
+            "text": " "
+          },
+          {
+            "text": "3",
+            "source_var": "Forge"
+          },
+          {
+            "text": ".\n"
           },
           {
             "text": "Sovereign Blade",
@@ -68,14 +78,22 @@
       "title": "Conqueror+",
       "cost": 1,
       "description": {
-        "plain": "Forge {Forge:diff()}.\nSovereign Blade deals double damage to the enemy this turn.",
+        "plain": "Forge 5.\nSovereign Blade deals double damage to the enemy this turn.",
         "runs": [
           {
             "text": "Forge",
             "style": "gold"
           },
           {
-            "text": " {Forge:diff()}.\n"
+            "text": " "
+          },
+          {
+            "text": "5",
+            "source_var": "Forge",
+            "style": "green"
+          },
+          {
+            "text": ".\n"
           },
           {
             "text": "Sovereign Blade",
@@ -85,7 +103,10 @@
             "text": " deals double damage to the enemy this turn."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

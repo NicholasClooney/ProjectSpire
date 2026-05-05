@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "NECRO_MASTERY",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "NecroMastery",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/NecroMastery.cs",
     "cost": 2,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "NECRO_MASTERY.title",
       "description_key": "NECRO_MASTERY.description"
+    },
+    "vars": {
+      "Summon": 5
     },
     "assets": [
       {
@@ -45,14 +48,21 @@
       "title": "Necro Mastery",
       "cost": 2,
       "description": {
-        "plain": "Summon {Summon:diff()}.\nWhenever Osty loses HP,\nALL enemies lose that much HP as well.",
+        "plain": "Summon 5.\nWhenever Osty loses HP,\nALL enemies lose that much HP as well.",
         "runs": [
           {
             "text": "Summon",
             "style": "gold"
           },
           {
-            "text": " {Summon:diff()}.\nWhenever "
+            "text": " "
+          },
+          {
+            "text": "5",
+            "source_var": "Summon"
+          },
+          {
+            "text": ".\nWhenever "
           },
           {
             "text": "Osty",
@@ -68,14 +78,22 @@
       "title": "Necro Mastery+",
       "cost": 2,
       "description": {
-        "plain": "Summon {Summon:diff()}.\nWhenever Osty loses HP,\nALL enemies lose that much HP as well.",
+        "plain": "Summon 8.\nWhenever Osty loses HP,\nALL enemies lose that much HP as well.",
         "runs": [
           {
             "text": "Summon",
             "style": "gold"
           },
           {
-            "text": " {Summon:diff()}.\nWhenever "
+            "text": " "
+          },
+          {
+            "text": "8",
+            "source_var": "Summon",
+            "style": "green"
+          },
+          {
+            "text": ".\nWhenever "
           },
           {
             "text": "Osty",
@@ -85,7 +103,10 @@
             "text": " loses HP,\nALL enemies lose that much HP as well."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

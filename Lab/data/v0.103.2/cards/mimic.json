@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "MIMIC",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Mimic",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Mimic.cs",
     "cost": 1,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "MIMIC.title",
       "description_key": "MIMIC.description"
+    },
+    "vars": {
+      "CalculationBase": 0,
+      "CalculationExtra": 1
     },
     "assets": [
       {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "BEAT_INTO_SHAPE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "BeatIntoShape",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BeatIntoShape.cs",
     "cost": 1,
@@ -15,7 +15,9 @@
       "description_key": "BEAT_INTO_SHAPE.description"
     },
     "vars": {
-      "Damage": 5
+      "Damage": 5,
+      "CalculationBase": 5,
+      "CalculationExtra": 5
     },
     "assets": [
       {
@@ -49,7 +51,7 @@
       "title": "Beat into Shape",
       "cost": 1,
       "description": {
-        "plain": "Deal 5 damage.\nForge {CalculatedForge:diff()}.\nForges an additional {CalculationExtra:diff()} for every other time you've hit the enemy this turn.",
+        "plain": "Deal 5 damage.\nForge {CalculatedForge:diff()}.\nForges an additional 5 for every other time you've hit the enemy this turn.",
         "runs": [
           {
             "text": "Deal "
@@ -73,7 +75,14 @@
             "style": "gold"
           },
           {
-            "text": " an additional {CalculationExtra:diff()} for every other time you've hit the enemy this turn."
+            "text": " an additional "
+          },
+          {
+            "text": "5",
+            "source_var": "CalculationExtra"
+          },
+          {
+            "text": " for every other time you've hit the enemy this turn."
           }
         ]
       }
@@ -82,7 +91,7 @@
       "title": "Beat into Shape+",
       "cost": 1,
       "description": {
-        "plain": "Deal 7 damage.\nForge {CalculatedForge:diff()}.\nForges an additional {CalculationExtra:diff()} for every other time you've hit the enemy this turn.",
+        "plain": "Deal 7 damage.\nForge {CalculatedForge:diff()}.\nForges an additional 7 for every other time you've hit the enemy this turn.",
         "runs": [
           {
             "text": "Deal "
@@ -107,7 +116,15 @@
             "style": "gold"
           },
           {
-            "text": " an additional {CalculationExtra:diff()} for every other time you've hit the enemy this turn."
+            "text": " an additional "
+          },
+          {
+            "text": "7",
+            "source_var": "CalculationExtra",
+            "style": "green"
+          },
+          {
+            "text": " for every other time you've hit the enemy this turn."
           }
         ]
       },

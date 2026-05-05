@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "RADIATE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Radiate",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Radiate.cs",
     "cost": 0,
@@ -15,7 +15,10 @@
       "description_key": "RADIATE.description"
     },
     "vars": {
-      "Damage": 3
+      "Damage": 3,
+      "Stars": 1,
+      "CalculationBase": 0,
+      "CalculationExtra": 1
     },
     "assets": [
       {
@@ -36,7 +39,7 @@
       "title": "Radiate",
       "cost": 0,
       "description": {
-        "plain": "Deal 3 damage to ALL enemies for each {Stars:starIcons()} gained this turn.",
+        "plain": "Deal 3 damage to ALL enemies for each 1 gained this turn.",
         "runs": [
           {
             "text": "Deal "
@@ -46,7 +49,14 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage to ALL enemies for each {Stars:starIcons()} gained this turn."
+            "text": " damage to ALL enemies for each "
+          },
+          {
+            "text": "1",
+            "source_var": "Stars"
+          },
+          {
+            "text": " gained this turn."
           }
         ]
       }
@@ -55,7 +65,7 @@
       "title": "Radiate+",
       "cost": 0,
       "description": {
-        "plain": "Deal 4 damage to ALL enemies for each {Stars:starIcons()} gained this turn.",
+        "plain": "Deal 4 damage to ALL enemies for each 1 gained this turn.",
         "runs": [
           {
             "text": "Deal "
@@ -66,7 +76,14 @@
             "style": "green"
           },
           {
-            "text": " damage to ALL enemies for each {Stars:starIcons()} gained this turn."
+            "text": " damage to ALL enemies for each "
+          },
+          {
+            "text": "1",
+            "source_var": "Stars"
+          },
+          {
+            "text": " gained this turn."
           }
         ]
       },

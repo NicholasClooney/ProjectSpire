@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "SYNCHRONIZE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Synchronize",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Synchronize.cs",
     "cost": 1,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "SYNCHRONIZE.title",
       "description_key": "SYNCHRONIZE.description"
+    },
+    "vars": {
+      "CalculationBase": 0,
+      "CalculationExtra": 2
     },
     "assets": [
       {
@@ -44,10 +48,17 @@
       "title": "Synchronize",
       "cost": 1,
       "description": {
-        "plain": "Gain {CalculationExtra:diff()} Focus this turn for each unique Orb you have.",
+        "plain": "Gain 2 Focus this turn for each unique Orb you have.",
         "runs": [
           {
-            "text": "Gain {CalculationExtra:diff()} "
+            "text": "Gain "
+          },
+          {
+            "text": "2",
+            "source_var": "CalculationExtra"
+          },
+          {
+            "text": " "
           },
           {
             "text": "Focus",
@@ -63,10 +74,17 @@
       "title": "Synchronize+",
       "cost": 1,
       "description": {
-        "plain": "Gain {CalculationExtra:diff()} Focus this turn for each unique Orb you have.",
+        "plain": "Gain 2 Focus this turn for each unique Orb you have.",
         "runs": [
           {
-            "text": "Gain {CalculationExtra:diff()} "
+            "text": "Gain "
+          },
+          {
+            "text": "2",
+            "source_var": "CalculationExtra"
+          },
+          {
+            "text": " "
           },
           {
             "text": "Focus",

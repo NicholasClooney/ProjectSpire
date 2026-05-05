@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "LEG_SWEEP",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "LegSweep",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/LegSweep.cs",
     "cost": 2,
@@ -31,7 +31,7 @@
         "delta": 3
       },
       {
-        "var": "Weak",
+        "var": "WeakPower",
         "delta": 1
       }
     ],
@@ -95,14 +95,15 @@
       "title": "Leg Sweep+",
       "cost": 2,
       "description": {
-        "plain": "Apply 2 Weak.\nGain 14 Block.",
+        "plain": "Apply 3 Weak.\nGain 14 Block.",
         "runs": [
           {
             "text": "Apply "
           },
           {
-            "text": "2",
-            "source_var": "WeakPower"
+            "text": "3",
+            "source_var": "WeakPower",
+            "style": "green"
           },
           {
             "text": " "

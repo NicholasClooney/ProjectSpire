@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "BRIGHTEST_FLAME",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "BrightestFlame",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BrightestFlame.cs",
     "cost": 0,
@@ -15,8 +15,9 @@
       "description_key": "BRIGHTEST_FLAME.description"
     },
     "vars": {
-      "Cards": 2,
-      "Energy": 2
+      "MaxHp": 1,
+      "Energy": 2,
+      "Cards": 2
     },
     "assets": [
       {
@@ -46,7 +47,7 @@
       "title": "Brightest Flame",
       "cost": 0,
       "description": {
-        "plain": "Gain 2.\nDraw 2 cards.\nLose {MaxHp:diff()} Max HP.",
+        "plain": "Gain 2.\nDraw 2 cards.\nLose 1 Max HP.",
         "runs": [
           {
             "text": "Gain "
@@ -63,7 +64,14 @@
             "source_var": "Cards"
           },
           {
-            "text": " cards.\nLose {MaxHp:diff()} Max HP."
+            "text": " cards.\nLose "
+          },
+          {
+            "text": "1",
+            "source_var": "MaxHp"
+          },
+          {
+            "text": " Max HP."
           }
         ]
       }
@@ -72,7 +80,7 @@
       "title": "Brightest Flame+",
       "cost": 0,
       "description": {
-        "plain": "Gain 3.\nDraw 3 cards.\nLose {MaxHp:diff()} Max HP.",
+        "plain": "Gain 3.\nDraw 3 cards.\nLose 1 Max HP.",
         "runs": [
           {
             "text": "Gain "
@@ -90,7 +98,14 @@
             "style": "green"
           },
           {
-            "text": " cards.\nLose {MaxHp:diff()} Max HP."
+            "text": " cards.\nLose "
+          },
+          {
+            "text": "1",
+            "source_var": "MaxHp"
+          },
+          {
+            "text": " Max HP."
           }
         ]
       },

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "SNAKEBITE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Snakebite",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Snakebite.cs",
     "cost": 2,
@@ -29,7 +29,7 @@
     ],
     "upgrades": [
       {
-        "var": "Poison",
+        "var": "PoisonPower",
         "delta": 3
       }
     ],
@@ -79,14 +79,15 @@
       "title": "Snakebite+",
       "cost": 2,
       "description": {
-        "plain": "Apply 7 Poison.",
+        "plain": "Apply 10 Poison.",
         "runs": [
           {
             "text": "Apply "
           },
           {
-            "text": "7",
-            "source_var": "PoisonPower"
+            "text": "10",
+            "source_var": "PoisonPower",
+            "style": "green"
           },
           {
             "text": " "
@@ -99,7 +100,10 @@
             "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "CELESTIAL_MIGHT",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "CelestialMight",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CelestialMight.cs",
     "cost": 2,
@@ -15,7 +15,8 @@
       "description_key": "CELESTIAL_MIGHT.description"
     },
     "vars": {
-      "Damage": 6
+      "Damage": 6,
+      "Repeat": 3
     },
     "assets": [
       {
@@ -36,7 +37,7 @@
       "title": "Celestial Might",
       "cost": 2,
       "description": {
-        "plain": "Deal 6 damage {Repeat:diff()} {Repeat:plural:time|times}.",
+        "plain": "Deal 6 damage 3 times.",
         "runs": [
           {
             "text": "Deal "
@@ -46,7 +47,14 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage {Repeat:diff()} {Repeat:plural:time|times}."
+            "text": " damage "
+          },
+          {
+            "text": "3",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " times."
           }
         ]
       }
@@ -55,7 +63,7 @@
       "title": "Celestial Might+",
       "cost": 2,
       "description": {
-        "plain": "Deal 6 damage {Repeat:diff()} {Repeat:plural:time|times}.",
+        "plain": "Deal 6 damage 4 times.",
         "runs": [
           {
             "text": "Deal "
@@ -65,10 +73,21 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage {Repeat:diff()} {Repeat:plural:time|times}."
+            "text": " damage "
+          },
+          {
+            "text": "4",
+            "source_var": "Repeat",
+            "style": "green"
+          },
+          {
+            "text": " times."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

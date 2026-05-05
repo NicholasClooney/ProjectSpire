@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "OFFERING",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Offering",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Offering.cs",
     "cost": 0,
@@ -15,9 +15,9 @@
       "description_key": "OFFERING.description"
     },
     "vars": {
-      "Cards": 3,
+      "HpLoss": 6,
       "Energy": 2,
-      "HpLoss": 6
+      "Cards": 3
     },
     "assets": [
       {

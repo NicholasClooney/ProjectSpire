@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "BORROWED_TIME",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "BorrowedTime",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BorrowedTime.cs",
     "cost": 1,
@@ -15,7 +15,8 @@
       "description_key": "BORROWED_TIME.description"
     },
     "vars": {
-      "Energy": 4
+      "Energy": 4,
+      "ExtraCost": 1
     },
     "assets": [
       {
@@ -43,7 +44,7 @@
       "title": "Borrowed Time",
       "cost": 1,
       "description": {
-        "plain": "Gain 4.\nCards cost an additional {ExtraCost:energyIcons()} this turn.",
+        "plain": "Gain 4.\nCards cost an additional 1 this turn.",
         "runs": [
           {
             "text": "Gain "
@@ -53,7 +54,14 @@
             "source_var": "Energy"
           },
           {
-            "text": ".\nCards cost an additional {ExtraCost:energyIcons()} this turn."
+            "text": ".\nCards cost an additional "
+          },
+          {
+            "text": "1",
+            "source_var": "ExtraCost"
+          },
+          {
+            "text": " this turn."
           }
         ]
       }
@@ -62,7 +70,7 @@
       "title": "Borrowed Time+",
       "cost": 1,
       "description": {
-        "plain": "Gain 6.\nCards cost an additional {ExtraCost:energyIcons()} this turn.",
+        "plain": "Gain 6.\nCards cost an additional 1 this turn.",
         "runs": [
           {
             "text": "Gain "
@@ -72,7 +80,14 @@
             "source_var": "Energy"
           },
           {
-            "text": ".\nCards cost an additional {ExtraCost:energyIcons()} this turn."
+            "text": ".\nCards cost an additional "
+          },
+          {
+            "text": "1",
+            "source_var": "ExtraCost"
+          },
+          {
+            "text": " this turn."
           }
         ]
       },

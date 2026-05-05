@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "CLEANSE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Cleanse",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Cleanse.cs",
     "cost": 1,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "CLEANSE.title",
       "description_key": "CLEANSE.description"
+    },
+    "vars": {
+      "Summon": 3
     },
     "assets": [
       {
@@ -36,14 +39,21 @@
       "title": "Cleanse",
       "cost": 1,
       "description": {
-        "plain": "Summon {Summon:diff()}.\nExhaust 1 card from your Draw Pile.",
+        "plain": "Summon 3.\nExhaust 1 card from your Draw Pile.",
         "runs": [
           {
             "text": "Summon",
             "style": "gold"
           },
           {
-            "text": " {Summon:diff()}.\n"
+            "text": " "
+          },
+          {
+            "text": "3",
+            "source_var": "Summon"
+          },
+          {
+            "text": ".\n"
           },
           {
             "text": "Exhaust",
@@ -66,14 +76,22 @@
       "title": "Cleanse+",
       "cost": 1,
       "description": {
-        "plain": "Summon {Summon:diff()}.\nExhaust 1 card from your Draw Pile.",
+        "plain": "Summon 5.\nExhaust 1 card from your Draw Pile.",
         "runs": [
           {
             "text": "Summon",
             "style": "gold"
           },
           {
-            "text": " {Summon:diff()}.\n"
+            "text": " "
+          },
+          {
+            "text": "5",
+            "source_var": "Summon",
+            "style": "green"
+          },
+          {
+            "text": ".\n"
           },
           {
             "text": "Exhaust",
@@ -90,7 +108,10 @@
             "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

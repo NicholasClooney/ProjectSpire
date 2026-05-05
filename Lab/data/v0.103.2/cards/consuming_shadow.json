@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "CONSUMING_SHADOW",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "ConsumingShadow",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ConsumingShadow.cs",
     "cost": 2,
@@ -15,6 +15,7 @@
       "description_key": "CONSUMING_SHADOW.description"
     },
     "vars": {
+      "Repeat": 2,
       "ConsumingShadowPower": 1
     },
     "assets": [
@@ -65,14 +66,21 @@
       "title": "Consuming Shadow",
       "cost": 2,
       "description": {
-        "plain": "Channel {Repeat:diff()} Dark.\nAt the end of your turn, Evoke your leftmost Orb.",
+        "plain": "Channel 2 Dark.\nAt the end of your turn, Evoke your leftmost Orb.",
         "runs": [
           {
             "text": "Channel",
             "style": "gold"
           },
           {
-            "text": " {Repeat:diff()} "
+            "text": " "
+          },
+          {
+            "text": "2",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " "
           },
           {
             "text": "Dark",
@@ -95,14 +103,22 @@
       "title": "Consuming Shadow+",
       "cost": 2,
       "description": {
-        "plain": "Channel {Repeat:diff()} Dark.\nAt the end of your turn, Evoke your leftmost Orb.",
+        "plain": "Channel 3 Dark.\nAt the end of your turn, Evoke your leftmost Orb.",
         "runs": [
           {
             "text": "Channel",
             "style": "gold"
           },
           {
-            "text": " {Repeat:diff()} "
+            "text": " "
+          },
+          {
+            "text": "3",
+            "source_var": "Repeat",
+            "style": "green"
+          },
+          {
+            "text": " "
           },
           {
             "text": "Dark",
@@ -119,7 +135,10 @@
             "text": " your leftmost Orb."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

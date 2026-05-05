@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "ICE_LANCE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "IceLance",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/IceLance.cs",
     "cost": 3,
@@ -15,7 +15,8 @@
       "description_key": "ICE_LANCE.description"
     },
     "vars": {
-      "Damage": 19
+      "Damage": 19,
+      "Repeat": 3
     },
     "assets": [
       {
@@ -53,7 +54,7 @@
       "title": "Ice Lance",
       "cost": 3,
       "description": {
-        "plain": "Deal 19 damage.\nChannel {Repeat:diff()} Frost.",
+        "plain": "Deal 19 damage.\nChannel 3 Frost.",
         "runs": [
           {
             "text": "Deal "
@@ -70,7 +71,14 @@
             "style": "gold"
           },
           {
-            "text": " {Repeat:diff()} "
+            "text": " "
+          },
+          {
+            "text": "3",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " "
           },
           {
             "text": "Frost",
@@ -86,7 +94,7 @@
       "title": "Ice Lance+",
       "cost": 3,
       "description": {
-        "plain": "Deal 24 damage.\nChannel {Repeat:diff()} Frost.",
+        "plain": "Deal 24 damage.\nChannel 3 Frost.",
         "runs": [
           {
             "text": "Deal "
@@ -104,7 +112,14 @@
             "style": "gold"
           },
           {
-            "text": " {Repeat:diff()} "
+            "text": " "
+          },
+          {
+            "text": "3",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " "
           },
           {
             "text": "Frost",

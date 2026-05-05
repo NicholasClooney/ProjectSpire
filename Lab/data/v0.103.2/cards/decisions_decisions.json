@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "DECISIONS_DECISIONS",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "DecisionsDecisions",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DecisionsDecisions.cs",
     "cost": 0,
@@ -15,7 +15,8 @@
       "description_key": "DECISIONS_DECISIONS.description"
     },
     "vars": {
-      "Cards": 3
+      "Cards": 3,
+      "Repeat": 3
     },
     "assets": [
       {
@@ -45,7 +46,7 @@
       "title": "Decisions, Decisions",
       "cost": 0,
       "description": {
-        "plain": "Draw 3 cards.\nChoose a Skill in your Hand and play it {Repeat:diff()} times.",
+        "plain": "Draw 3 cards.\nChoose a Skill in your Hand and play it 3 times.",
         "runs": [
           {
             "text": "Draw "
@@ -62,7 +63,14 @@
             "style": "gold"
           },
           {
-            "text": " and play it {Repeat:diff()} times."
+            "text": " and play it "
+          },
+          {
+            "text": "3",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " times."
           }
         ]
       }
@@ -71,7 +79,7 @@
       "title": "Decisions, Decisions+",
       "cost": 0,
       "description": {
-        "plain": "Draw 5 cards.\nChoose a Skill in your Hand and play it {Repeat:diff()} times.",
+        "plain": "Draw 5 cards.\nChoose a Skill in your Hand and play it 3 times.",
         "runs": [
           {
             "text": "Draw "
@@ -89,7 +97,14 @@
             "style": "gold"
           },
           {
-            "text": " and play it {Repeat:diff()} times."
+            "text": " and play it "
+          },
+          {
+            "text": "3",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " times."
           }
         ]
       },

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "POISONED_STAB",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "PoisonedStab",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PoisonedStab.cs",
     "cost": 1,
@@ -31,7 +31,7 @@
         "delta": 2
       },
       {
-        "var": "Poison",
+        "var": "PoisonPower",
         "delta": 1
       }
     ],
@@ -88,7 +88,7 @@
       "title": "Poisoned Stab+",
       "cost": 1,
       "description": {
-        "plain": "Deal 8 damage.\nApply 3 Poison.",
+        "plain": "Deal 8 damage.\nApply 4 Poison.",
         "runs": [
           {
             "text": "Deal "
@@ -102,8 +102,9 @@
             "text": " damage.\nApply "
           },
           {
-            "text": "3",
-            "source_var": "PoisonPower"
+            "text": "4",
+            "source_var": "PoisonPower",
+            "style": "green"
           },
           {
             "text": " "

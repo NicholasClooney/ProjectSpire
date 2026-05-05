@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "NEGATIVE_PULSE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "NegativePulse",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/NegativePulse.cs",
     "cost": 1,
@@ -31,7 +31,7 @@
         "delta": 1
       },
       {
-        "var": "Doom",
+        "var": "DoomPower",
         "delta": 4
       }
     ],
@@ -95,7 +95,7 @@
       "title": "Negative Pulse+",
       "cost": 1,
       "description": {
-        "plain": "Gain 6 Block.\nApply 7 Doom to ALL enemies.",
+        "plain": "Gain 6 Block.\nApply 11 Doom to ALL enemies.",
         "runs": [
           {
             "text": "Gain "
@@ -116,8 +116,9 @@
             "text": ".\nApply "
           },
           {
-            "text": "7",
-            "source_var": "DoomPower"
+            "text": "11",
+            "source_var": "DoomPower",
+            "style": "green"
           },
           {
             "text": " "

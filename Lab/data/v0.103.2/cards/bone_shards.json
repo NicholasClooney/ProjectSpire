@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "BONE_SHARDS",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "BoneShards",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BoneShards.cs",
     "cost": 1,
@@ -15,6 +15,7 @@
       "description_key": "BONE_SHARDS.description"
     },
     "vars": {
+      "OstyDamage": 9,
       "Block": 9
     },
     "assets": [
@@ -48,7 +49,7 @@
       "title": "Bone Shards",
       "cost": 1,
       "description": {
-        "plain": "If Osty is alive, he deals {OstyDamage:diff()} damage to ALL enemies and you gain 9 Block.\nOsty dies.",
+        "plain": "If Osty is alive, he deals 9 damage to ALL enemies and you gain 9 Block.\nOsty dies.",
         "runs": [
           {
             "text": "If "
@@ -58,7 +59,14 @@
             "style": "gold"
           },
           {
-            "text": " is alive, he deals {OstyDamage:diff()} damage to ALL enemies and you gain "
+            "text": " is alive, he deals "
+          },
+          {
+            "text": "9",
+            "source_var": "OstyDamage"
+          },
+          {
+            "text": " damage to ALL enemies and you gain "
           },
           {
             "text": "9",
@@ -88,7 +96,7 @@
       "title": "Bone Shards+",
       "cost": 1,
       "description": {
-        "plain": "If Osty is alive, he deals {OstyDamage:diff()} damage to ALL enemies and you gain 12 Block.\nOsty dies.",
+        "plain": "If Osty is alive, he deals 12 damage to ALL enemies and you gain 12 Block.\nOsty dies.",
         "runs": [
           {
             "text": "If "
@@ -98,7 +106,15 @@
             "style": "gold"
           },
           {
-            "text": " is alive, he deals {OstyDamage:diff()} damage to ALL enemies and you gain "
+            "text": " is alive, he deals "
+          },
+          {
+            "text": "12",
+            "source_var": "OstyDamage",
+            "style": "green"
+          },
+          {
+            "text": " damage to ALL enemies and you gain "
           },
           {
             "text": "12",

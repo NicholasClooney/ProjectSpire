@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "BODYGUARD",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Bodyguard",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Bodyguard.cs",
     "cost": 1,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "BODYGUARD.title",
       "description_key": "BODYGUARD.description"
+    },
+    "vars": {
+      "Summon": 5
     },
     "assets": [
       {
@@ -38,14 +41,21 @@
       "title": "Bodyguard",
       "cost": 1,
       "description": {
-        "plain": "Summon {Summon:diff()}.",
+        "plain": "Summon 5.",
         "runs": [
           {
             "text": "Summon",
             "style": "gold"
           },
           {
-            "text": " {Summon:diff()}."
+            "text": " "
+          },
+          {
+            "text": "5",
+            "source_var": "Summon"
+          },
+          {
+            "text": "."
           }
         ]
       }
@@ -54,17 +64,28 @@
       "title": "Bodyguard+",
       "cost": 1,
       "description": {
-        "plain": "Summon {Summon:diff()}.",
+        "plain": "Summon 7.",
         "runs": [
           {
             "text": "Summon",
             "style": "gold"
           },
           {
-            "text": " {Summon:diff()}."
+            "text": " "
+          },
+          {
+            "text": "7",
+            "source_var": "Summon",
+            "style": "green"
+          },
+          {
+            "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

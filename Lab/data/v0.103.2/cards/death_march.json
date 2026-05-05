@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "DEATH_MARCH",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "DeathMarch",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DeathMarch.cs",
     "cost": 1,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "DEATH_MARCH.title",
       "description_key": "DEATH_MARCH.description"
+    },
+    "vars": {
+      "CalculationBase": 8,
+      "ExtraDamage": 3
     },
     "assets": [
       {
@@ -37,10 +41,17 @@
       "title": "Death March",
       "cost": 1,
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card drawn during your turn.",
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 3 additional damage for each card drawn during your turn.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card drawn during your turn."
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+          },
+          {
+            "text": "3",
+            "source_var": "ExtraDamage"
+          },
+          {
+            "text": " additional damage for each card drawn during your turn."
           }
         ]
       }
@@ -49,13 +60,24 @@
       "title": "Death March+",
       "cost": 1,
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card drawn during your turn.",
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 4 additional damage for each card drawn during your turn.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card drawn during your turn."
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+          },
+          {
+            "text": "4",
+            "source_var": "ExtraDamage",
+            "style": "green"
+          },
+          {
+            "text": " additional damage for each card drawn during your turn."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

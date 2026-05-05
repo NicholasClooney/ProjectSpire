@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "PECK",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Peck",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Peck.cs",
     "cost": 1,
@@ -15,7 +15,8 @@
       "description_key": "PECK.description"
     },
     "vars": {
-      "Damage": 2
+      "Damage": 2,
+      "Repeat": 3
     },
     "assets": [
       {
@@ -36,7 +37,7 @@
       "title": "Peck",
       "cost": 1,
       "description": {
-        "plain": "Deal 2 damage {Repeat:diff()} times.",
+        "plain": "Deal 2 damage 3 times.",
         "runs": [
           {
             "text": "Deal "
@@ -46,7 +47,14 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage {Repeat:diff()} times."
+            "text": " damage "
+          },
+          {
+            "text": "3",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " times."
           }
         ]
       }
@@ -55,7 +63,7 @@
       "title": "Peck+",
       "cost": 1,
       "description": {
-        "plain": "Deal 2 damage {Repeat:diff()} times.",
+        "plain": "Deal 2 damage 4 times.",
         "runs": [
           {
             "text": "Deal "
@@ -65,10 +73,21 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage {Repeat:diff()} times."
+            "text": " damage "
+          },
+          {
+            "text": "4",
+            "source_var": "Repeat",
+            "style": "green"
+          },
+          {
+            "text": " times."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

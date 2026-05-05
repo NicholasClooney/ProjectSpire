@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "POKE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Poke",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Poke.cs",
     "cost": 0,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "POKE.title",
       "description_key": "POKE.description"
+    },
+    "vars": {
+      "OstyDamage": 6
     },
     "assets": [
       {
@@ -36,14 +39,21 @@
       "title": "Poke",
       "cost": 0,
       "description": {
-        "plain": "Osty deals {OstyDamage:diff()} damage.",
+        "plain": "Osty deals 6 damage.",
         "runs": [
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " deals {OstyDamage:diff()} damage."
+            "text": " deals "
+          },
+          {
+            "text": "6",
+            "source_var": "OstyDamage"
+          },
+          {
+            "text": " damage."
           }
         ]
       }
@@ -52,17 +62,28 @@
       "title": "Poke+",
       "cost": 0,
       "description": {
-        "plain": "Osty deals {OstyDamage:diff()} damage.",
+        "plain": "Osty deals 9 damage.",
         "runs": [
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " deals {OstyDamage:diff()} damage."
+            "text": " deals "
+          },
+          {
+            "text": "9",
+            "source_var": "OstyDamage",
+            "style": "green"
+          },
+          {
+            "text": " damage."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

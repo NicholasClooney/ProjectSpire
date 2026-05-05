@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "VENERATE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Venerate",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Venerate.cs",
     "cost": 1,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "VENERATE.title",
       "description_key": "VENERATE.description"
+    },
+    "vars": {
+      "Stars": 2
     },
     "assets": [
       {
@@ -38,10 +41,17 @@
       "title": "Venerate",
       "cost": 1,
       "description": {
-        "plain": "Gain {Stars:starIcons()}.",
+        "plain": "Gain 2.",
         "runs": [
           {
-            "text": "Gain {Stars:starIcons()}."
+            "text": "Gain "
+          },
+          {
+            "text": "2",
+            "source_var": "Stars"
+          },
+          {
+            "text": "."
           }
         ]
       }
@@ -50,13 +60,23 @@
       "title": "Venerate+",
       "cost": 1,
       "description": {
-        "plain": "Gain {Stars:starIcons()}.",
+        "plain": "Gain 3.",
         "runs": [
           {
-            "text": "Gain {Stars:starIcons()}."
+            "text": "Gain "
+          },
+          {
+            "text": "3",
+            "source_var": "Stars"
+          },
+          {
+            "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

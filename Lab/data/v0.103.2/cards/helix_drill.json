@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "HELIX_DRILL",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "HelixDrill",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HelixDrill.cs",
     "cost": 0,
@@ -15,7 +15,9 @@
       "description_key": "HELIX_DRILL.description"
     },
     "vars": {
-      "Damage": 3
+      "Damage": 3,
+      "CalculationBase": 0,
+      "CalculationExtra": 1
     },
     "assets": [
       {

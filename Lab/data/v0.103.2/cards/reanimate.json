@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "REANIMATE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Reanimate",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Reanimate.cs",
     "cost": 3,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "REANIMATE.title",
       "description_key": "REANIMATE.description"
+    },
+    "vars": {
+      "Summon": 20
     },
     "assets": [
       {
@@ -36,14 +39,21 @@
       "title": "Reanimate",
       "cost": 3,
       "description": {
-        "plain": "Summon {Summon:diff()}.",
+        "plain": "Summon 20.",
         "runs": [
           {
             "text": "Summon",
             "style": "gold"
           },
           {
-            "text": " {Summon:diff()}."
+            "text": " "
+          },
+          {
+            "text": "20",
+            "source_var": "Summon"
+          },
+          {
+            "text": "."
           }
         ]
       }
@@ -52,17 +62,28 @@
       "title": "Reanimate+",
       "cost": 3,
       "description": {
-        "plain": "Summon {Summon:diff()}.",
+        "plain": "Summon 25.",
         "runs": [
           {
             "text": "Summon",
             "style": "gold"
           },
           {
-            "text": " {Summon:diff()}."
+            "text": " "
+          },
+          {
+            "text": "25",
+            "source_var": "Summon",
+            "style": "green"
+          },
+          {
+            "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

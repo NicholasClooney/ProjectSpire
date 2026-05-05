@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "NORMALITY",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Normality",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Normality.cs",
     "cost": -1,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "NORMALITY.title",
       "description_key": "NORMALITY.description"
+    },
+    "vars": {
+      "CalculationBase": 3,
+      "CalculationExtra": -1
     },
     "assets": [
       {

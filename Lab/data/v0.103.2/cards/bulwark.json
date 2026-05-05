@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "BULWARK",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Bulwark",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Bulwark.cs",
     "cost": 2,
@@ -15,7 +15,8 @@
       "description_key": "BULWARK.description"
     },
     "vars": {
-      "Block": 13
+      "Block": 13,
+      "Forge": 10
     },
     "assets": [
       {
@@ -45,7 +46,7 @@
       "title": "Bulwark",
       "cost": 2,
       "description": {
-        "plain": "Gain 13 Block.\nForge {Forge:diff()}.",
+        "plain": "Gain 13 Block.\nForge 10.",
         "runs": [
           {
             "text": "Gain "
@@ -69,7 +70,14 @@
             "style": "gold"
           },
           {
-            "text": " {Forge:diff()}."
+            "text": " "
+          },
+          {
+            "text": "10",
+            "source_var": "Forge"
+          },
+          {
+            "text": "."
           }
         ]
       }
@@ -78,7 +86,7 @@
       "title": "Bulwark+",
       "cost": 2,
       "description": {
-        "plain": "Gain 16 Block.\nForge {Forge:diff()}.",
+        "plain": "Gain 16 Block.\nForge 13.",
         "runs": [
           {
             "text": "Gain "
@@ -103,7 +111,15 @@
             "style": "gold"
           },
           {
-            "text": " {Forge:diff()}."
+            "text": " "
+          },
+          {
+            "text": "13",
+            "source_var": "Forge",
+            "style": "green"
+          },
+          {
+            "text": "."
           }
         ]
       },

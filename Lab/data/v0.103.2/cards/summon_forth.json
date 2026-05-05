@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "SUMMON_FORTH",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "SummonForth",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SummonForth.cs",
     "cost": 1,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "SUMMON_FORTH.title",
       "description_key": "SUMMON_FORTH.description"
+    },
+    "vars": {
+      "Forge": 8
     },
     "assets": [
       {
@@ -41,14 +44,21 @@
       "title": "Summon Forth",
       "cost": 1,
       "description": {
-        "plain": "Forge {Forge:diff()}.\nPut Sovereign Blade into your Hand from anywhere.",
+        "plain": "Forge 8.\nPut Sovereign Blade into your Hand from anywhere.",
         "runs": [
           {
             "text": "Forge",
             "style": "gold"
           },
           {
-            "text": " {Forge:diff()}.\nPut "
+            "text": " "
+          },
+          {
+            "text": "8",
+            "source_var": "Forge"
+          },
+          {
+            "text": ".\nPut "
           },
           {
             "text": "Sovereign Blade",
@@ -71,14 +81,22 @@
       "title": "Summon Forth+",
       "cost": 1,
       "description": {
-        "plain": "Forge {Forge:diff()}.\nPut Sovereign Blade into your Hand from anywhere.",
+        "plain": "Forge 11.\nPut Sovereign Blade into your Hand from anywhere.",
         "runs": [
           {
             "text": "Forge",
             "style": "gold"
           },
           {
-            "text": " {Forge:diff()}.\nPut "
+            "text": " "
+          },
+          {
+            "text": "11",
+            "source_var": "Forge",
+            "style": "green"
+          },
+          {
+            "text": ".\nPut "
           },
           {
             "text": "Sovereign Blade",
@@ -95,7 +113,10 @@
             "text": " from anywhere."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

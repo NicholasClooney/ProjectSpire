@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "HEMOKINESIS",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Hemokinesis",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Hemokinesis.cs",
     "cost": 1,
@@ -15,8 +15,8 @@
       "description_key": "HEMOKINESIS.description"
     },
     "vars": {
-      "Damage": 15,
-      "HpLoss": 2
+      "HpLoss": 2,
+      "Damage": 15
     },
     "assets": [
       {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "SQUASH",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Squash",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Squash.cs",
     "cost": 1,
@@ -31,7 +31,7 @@
         "delta": 2
       },
       {
-        "var": "Vulnerable",
+        "var": "VulnerablePower",
         "delta": 1
       }
     ],
@@ -88,7 +88,7 @@
       "title": "Squash+",
       "cost": 1,
       "description": {
-        "plain": "Deal 12 damage.\nApply 2 Vulnerable.",
+        "plain": "Deal 12 damage.\nApply 3 Vulnerable.",
         "runs": [
           {
             "text": "Deal "
@@ -102,8 +102,9 @@
             "text": " damage.\nApply "
           },
           {
-            "text": "2",
-            "source_var": "VulnerablePower"
+            "text": "3",
+            "source_var": "VulnerablePower",
+            "style": "green"
           },
           {
             "text": " "

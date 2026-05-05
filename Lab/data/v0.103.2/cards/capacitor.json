@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "CAPACITOR",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Capacitor",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Capacitor.cs",
     "cost": 1,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "CAPACITOR.title",
       "description_key": "CAPACITOR.description"
+    },
+    "vars": {
+      "Repeat": 2
     },
     "assets": [
       {
@@ -33,10 +36,17 @@
       "title": "Capacitor",
       "cost": 1,
       "description": {
-        "plain": "Gain {Repeat:diff()} Orb Slots.",
+        "plain": "Gain 2 Orb Slots.",
         "runs": [
           {
-            "text": "Gain {Repeat:diff()} Orb Slots."
+            "text": "Gain "
+          },
+          {
+            "text": "2",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " Orb Slots."
           }
         ]
       }
@@ -45,13 +55,24 @@
       "title": "Capacitor+",
       "cost": 1,
       "description": {
-        "plain": "Gain {Repeat:diff()} Orb Slots.",
+        "plain": "Gain 3 Orb Slots.",
         "runs": [
           {
-            "text": "Gain {Repeat:diff()} Orb Slots."
+            "text": "Gain "
+          },
+          {
+            "text": "3",
+            "source_var": "Repeat",
+            "style": "green"
+          },
+          {
+            "text": " Orb Slots."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "FUEL",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Fuel",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Fuel.cs",
     "cost": 0,
@@ -15,8 +15,8 @@
       "description_key": "FUEL.description"
     },
     "vars": {
-      "Cards": 1,
-      "Energy": 1
+      "Energy": 1,
+      "Cards": 1
     },
     "assets": [
       {

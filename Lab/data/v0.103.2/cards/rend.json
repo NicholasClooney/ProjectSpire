@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "REND",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Rend",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Rend.cs",
     "cost": 2,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "REND.title",
       "description_key": "REND.description"
+    },
+    "vars": {
+      "CalculationBase": 15,
+      "ExtraDamage": 5
     },
     "assets": [
       {
@@ -42,10 +46,17 @@
       "title": "Rend",
       "cost": 2,
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each unique debuff on the enemy.",
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 5 additional damage for each unique debuff on the enemy.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each unique debuff on the enemy."
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+          },
+          {
+            "text": "5",
+            "source_var": "ExtraDamage"
+          },
+          {
+            "text": " additional damage for each unique debuff on the enemy."
           }
         ]
       }
@@ -54,13 +65,24 @@
       "title": "Rend+",
       "cost": 2,
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each unique debuff on the enemy.",
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 8 additional damage for each unique debuff on the enemy.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each unique debuff on the enemy."
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+          },
+          {
+            "text": "8",
+            "source_var": "ExtraDamage",
+            "style": "green"
+          },
+          {
+            "text": " additional damage for each unique debuff on the enemy."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

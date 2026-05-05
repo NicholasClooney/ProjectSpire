@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "GENETIC_ALGORITHM",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "GeneticAlgorithm",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GeneticAlgorithm.cs",
     "cost": 1,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "GENETIC_ALGORITHM.title",
       "description_key": "GENETIC_ALGORITHM.description"
+    },
+    "vars": {
+      "Increase": 3
     },
     "assets": [
       {
@@ -36,7 +39,7 @@
       "title": "Genetic Algorithm",
       "cost": 1,
       "description": {
-        "plain": "Gain {Block:diff()} Block.\nPermanently increase this card's Block by {Increase:diff()}.",
+        "plain": "Gain {Block:diff()} Block.\nPermanently increase this card's Block by 3.",
         "runs": [
           {
             "text": "Gain {Block:diff()} "
@@ -53,7 +56,14 @@
             "style": "gold"
           },
           {
-            "text": " by {Increase:diff()}."
+            "text": " by "
+          },
+          {
+            "text": "3",
+            "source_var": "Increase"
+          },
+          {
+            "text": "."
           }
         ]
       }
@@ -62,7 +72,7 @@
       "title": "Genetic Algorithm+",
       "cost": 1,
       "description": {
-        "plain": "Gain {Block:diff()} Block.\nPermanently increase this card's Block by {Increase:diff()}.",
+        "plain": "Gain {Block:diff()} Block.\nPermanently increase this card's Block by 4.",
         "runs": [
           {
             "text": "Gain {Block:diff()} "
@@ -79,10 +89,21 @@
             "style": "gold"
           },
           {
-            "text": " by {Increase:diff()}."
+            "text": " by "
+          },
+          {
+            "text": "4",
+            "source_var": "Increase",
+            "style": "green"
+          },
+          {
+            "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

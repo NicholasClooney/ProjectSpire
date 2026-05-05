@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "SETUP_STRIKE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "SetupStrike",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SetupStrike.cs",
     "cost": 1,
@@ -34,7 +34,7 @@
         "delta": 2
       },
       {
-        "var": "Strength",
+        "var": "StrengthPower",
         "delta": 1
       }
     ],
@@ -91,7 +91,7 @@
       "title": "Setup Strike+",
       "cost": 1,
       "description": {
-        "plain": "Deal 9 damage.\nGain 2 Strength this turn.",
+        "plain": "Deal 9 damage.\nGain 3 Strength this turn.",
         "runs": [
           {
             "text": "Deal "
@@ -105,8 +105,9 @@
             "text": " damage.\nGain "
           },
           {
-            "text": "2",
-            "source_var": "StrengthPower"
+            "text": "3",
+            "source_var": "StrengthPower",
+            "style": "green"
           },
           {
             "text": " "

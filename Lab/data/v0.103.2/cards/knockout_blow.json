@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "KNOCKOUT_BLOW",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "KnockoutBlow",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/KnockoutBlow.cs",
     "cost": 3,
@@ -15,7 +15,8 @@
       "description_key": "KNOCKOUT_BLOW.description"
     },
     "vars": {
-      "Damage": 30
+      "Damage": 30,
+      "Stars": 5
     },
     "assets": [
       {
@@ -41,7 +42,7 @@
       "title": "Knockout Blow",
       "cost": 3,
       "description": {
-        "plain": "Deal 30 damage.\nIf this kills an enemy, gain {Stars:starIcons()}.",
+        "plain": "Deal 30 damage.\nIf this kills an enemy, gain 5.",
         "runs": [
           {
             "text": "Deal "
@@ -51,7 +52,14 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage.\nIf this kills an enemy, gain {Stars:starIcons()}."
+            "text": " damage.\nIf this kills an enemy, gain "
+          },
+          {
+            "text": "5",
+            "source_var": "Stars"
+          },
+          {
+            "text": "."
           }
         ]
       }
@@ -60,7 +68,7 @@
       "title": "Knockout Blow+",
       "cost": 3,
       "description": {
-        "plain": "Deal 38 damage.\nIf this kills an enemy, gain {Stars:starIcons()}.",
+        "plain": "Deal 38 damage.\nIf this kills an enemy, gain 5.",
         "runs": [
           {
             "text": "Deal "
@@ -71,7 +79,14 @@
             "style": "green"
           },
           {
-            "text": " damage.\nIf this kills an enemy, gain {Stars:starIcons()}."
+            "text": " damage.\nIf this kills an enemy, gain "
+          },
+          {
+            "text": "5",
+            "source_var": "Stars"
+          },
+          {
+            "text": "."
           }
         ]
       },

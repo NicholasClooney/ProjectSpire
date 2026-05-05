@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "DEBT",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Debt",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Debt.cs",
     "cost": -1,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "DEBT.title",
       "description_key": "DEBT.description"
+    },
+    "vars": {
+      "Gold": 10
     },
     "assets": [
       {
@@ -30,7 +33,7 @@
       "title": "Debt",
       "cost": -1,
       "description": {
-        "plain": "At the end of your turn, if this is in your Hand, lose {Gold:diff()} Gold.",
+        "plain": "At the end of your turn, if this is in your Hand, lose 10 Gold.",
         "runs": [
           {
             "text": "At the end of your turn, if this is in your "
@@ -40,7 +43,14 @@
             "style": "gold"
           },
           {
-            "text": ", lose {Gold:diff()} "
+            "text": ", lose "
+          },
+          {
+            "text": "10",
+            "source_var": "Gold"
+          },
+          {
+            "text": " "
           },
           {
             "text": "Gold",
@@ -56,7 +66,7 @@
       "title": "Debt+",
       "cost": -1,
       "description": {
-        "plain": "At the end of your turn, if this is in your Hand, lose {Gold:diff()} Gold.",
+        "plain": "At the end of your turn, if this is in your Hand, lose 10 Gold.",
         "runs": [
           {
             "text": "At the end of your turn, if this is in your "
@@ -66,7 +76,14 @@
             "style": "gold"
           },
           {
-            "text": ", lose {Gold:diff()} "
+            "text": ", lose "
+          },
+          {
+            "text": "10",
+            "source_var": "Gold"
+          },
+          {
+            "text": " "
           },
           {
             "text": "Gold",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "MIRAGE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Mirage",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Mirage.cs",
     "cost": 1,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "MIRAGE.title",
       "description_key": "MIRAGE.description"
+    },
+    "vars": {
+      "CalculationBase": 0,
+      "CalculationExtra": 1
     },
     "assets": [
       {

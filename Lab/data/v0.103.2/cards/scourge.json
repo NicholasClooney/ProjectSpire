@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "SCOURGE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Scourge",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Scourge.cs",
     "cost": 1,
@@ -15,8 +15,8 @@
       "description_key": "SCOURGE.description"
     },
     "vars": {
-      "Cards": 1,
-      "DoomPower": 13
+      "DoomPower": 13,
+      "Cards": 1
     },
     "assets": [
       {
@@ -31,7 +31,7 @@
         "delta": 1
       },
       {
-        "var": "Doom",
+        "var": "DoomPower",
         "delta": 3
       }
     ],
@@ -88,14 +88,15 @@
       "title": "Scourge+",
       "cost": 1,
       "description": {
-        "plain": "Apply 13 Doom.\nDraw 2 cards.",
+        "plain": "Apply 16 Doom.\nDraw 2 cards.",
         "runs": [
           {
             "text": "Apply "
           },
           {
-            "text": "13",
-            "source_var": "DoomPower"
+            "text": "16",
+            "source_var": "DoomPower",
+            "style": "green"
           },
           {
             "text": " "

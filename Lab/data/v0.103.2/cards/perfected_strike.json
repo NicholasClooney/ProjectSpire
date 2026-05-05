@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "PERFECTED_STRIKE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "PerfectedStrike",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PerfectedStrike.cs",
     "cost": 2,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "PERFECTED_STRIKE.title",
       "description_key": "PERFECTED_STRIKE.description"
+    },
+    "vars": {
+      "CalculationBase": 6,
+      "ExtraDamage": 2
     },
     "assets": [
       {
@@ -36,10 +40,17 @@
       "title": "Perfected Strike",
       "cost": 2,
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your cards containing \u201cStrike\u201d.",
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 2 additional damage for ALL your cards containing \u201cStrike\u201d.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your cards containing \u201cStrike\u201d."
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+          },
+          {
+            "text": "2",
+            "source_var": "ExtraDamage"
+          },
+          {
+            "text": " additional damage for ALL your cards containing \u201cStrike\u201d."
           }
         ]
       }
@@ -48,13 +59,24 @@
       "title": "Perfected Strike+",
       "cost": 2,
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your cards containing \u201cStrike\u201d.",
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 3 additional damage for ALL your cards containing \u201cStrike\u201d.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your cards containing \u201cStrike\u201d."
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+          },
+          {
+            "text": "3",
+            "source_var": "ExtraDamage",
+            "style": "green"
+          },
+          {
+            "text": " additional damage for ALL your cards containing \u201cStrike\u201d."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

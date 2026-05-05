@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "THE_SMITH",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "TheSmith",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TheSmith.cs",
     "cost": 1,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "THE_SMITH.title",
       "description_key": "THE_SMITH.description"
+    },
+    "vars": {
+      "Forge": 30
     },
     "assets": [
       {
@@ -33,14 +36,21 @@
       "title": "The Smith",
       "cost": 1,
       "description": {
-        "plain": "Forge {Forge:diff()}.",
+        "plain": "Forge 30.",
         "runs": [
           {
             "text": "Forge",
             "style": "gold"
           },
           {
-            "text": " {Forge:diff()}."
+            "text": " "
+          },
+          {
+            "text": "30",
+            "source_var": "Forge"
+          },
+          {
+            "text": "."
           }
         ]
       }
@@ -49,17 +59,28 @@
       "title": "The Smith+",
       "cost": 1,
       "description": {
-        "plain": "Forge {Forge:diff()}.",
+        "plain": "Forge 40.",
         "runs": [
           {
             "text": "Forge",
             "style": "gold"
           },
           {
-            "text": " {Forge:diff()}."
+            "text": " "
+          },
+          {
+            "text": "40",
+            "source_var": "Forge",
+            "style": "green"
+          },
+          {
+            "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

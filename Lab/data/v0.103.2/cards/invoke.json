@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "INVOKE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Invoke",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Invoke.cs",
     "cost": 1,
@@ -15,6 +15,7 @@
       "description_key": "INVOKE.description"
     },
     "vars": {
+      "Summon": 2,
       "Energy": 2
     },
     "assets": [
@@ -57,7 +58,7 @@
       "title": "Invoke",
       "cost": 1,
       "description": {
-        "plain": "Next turn, Summon {Summon:diff()} and gain 2.",
+        "plain": "Next turn, Summon 2 and gain 2.",
         "runs": [
           {
             "text": "Next turn, "
@@ -67,7 +68,14 @@
             "style": "gold"
           },
           {
-            "text": " {Summon:diff()} and gain "
+            "text": " "
+          },
+          {
+            "text": "2",
+            "source_var": "Summon"
+          },
+          {
+            "text": " and gain "
           },
           {
             "text": "2",
@@ -83,7 +91,7 @@
       "title": "Invoke+",
       "cost": 1,
       "description": {
-        "plain": "Next turn, Summon {Summon:diff()} and gain 3.",
+        "plain": "Next turn, Summon 3 and gain 3.",
         "runs": [
           {
             "text": "Next turn, "
@@ -93,7 +101,15 @@
             "style": "gold"
           },
           {
-            "text": " {Summon:diff()} and gain "
+            "text": " "
+          },
+          {
+            "text": "3",
+            "source_var": "Summon",
+            "style": "green"
+          },
+          {
+            "text": " and gain "
           },
           {
             "text": "3",

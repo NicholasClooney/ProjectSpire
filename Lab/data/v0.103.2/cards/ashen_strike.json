@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "ASHEN_STRIKE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "AshenStrike",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/AshenStrike.cs",
     "cost": 1,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "ASHEN_STRIKE.title",
       "description_key": "ASHEN_STRIKE.description"
+    },
+    "vars": {
+      "CalculationBase": 6,
+      "ExtraDamage": 3
     },
     "assets": [
       {
@@ -39,10 +43,17 @@
       "title": "Ashen Strike",
       "cost": 1,
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card in your Exhaust Pile.",
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 3 additional damage for each card in your Exhaust Pile.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card in your "
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+          },
+          {
+            "text": "3",
+            "source_var": "ExtraDamage"
+          },
+          {
+            "text": " additional damage for each card in your "
           },
           {
             "text": "Exhaust Pile",
@@ -58,10 +69,18 @@
       "title": "Ashen Strike+",
       "cost": 1,
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card in your Exhaust Pile.",
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 4 additional damage for each card in your Exhaust Pile.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card in your "
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+          },
+          {
+            "text": "4",
+            "source_var": "ExtraDamage",
+            "style": "green"
+          },
+          {
+            "text": " additional damage for each card in your "
           },
           {
             "text": "Exhaust Pile",
@@ -71,7 +90,10 @@
             "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

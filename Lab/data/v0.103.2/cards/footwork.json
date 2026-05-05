@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "FOOTWORK",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Footwork",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Footwork.cs",
     "cost": 1,
@@ -26,7 +26,7 @@
     ],
     "upgrades": [
       {
-        "var": "Dexterity",
+        "var": "DexterityPower",
         "delta": 1
       }
     ],
@@ -76,14 +76,15 @@
       "title": "Footwork+",
       "cost": 1,
       "description": {
-        "plain": "Gain 2 Dexterity.",
+        "plain": "Gain 3 Dexterity.",
         "runs": [
           {
             "text": "Gain "
           },
           {
-            "text": "2",
-            "source_var": "DexterityPower"
+            "text": "3",
+            "source_var": "DexterityPower",
+            "style": "green"
           },
           {
             "text": " "
@@ -96,7 +97,10 @@
             "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

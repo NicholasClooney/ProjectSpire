@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "HIGH_FIVE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "HighFive",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HighFive.cs",
     "cost": 2,
@@ -15,6 +15,7 @@
       "description_key": "HIGH_FIVE.description"
     },
     "vars": {
+      "OstyDamage": 11,
       "VulnerablePower": 2
     },
     "assets": [
@@ -33,7 +34,7 @@
         "delta": 2
       },
       {
-        "var": "Vulnerable",
+        "var": "VulnerablePower",
         "delta": 1
       }
     ],
@@ -57,14 +58,21 @@
       "title": "High Five",
       "cost": 2,
       "description": {
-        "plain": "Osty deals {OstyDamage:diff()} damage\nand applies 2 Vulnerable\nto ALL enemies.",
+        "plain": "Osty deals 11 damage\nand applies 2 Vulnerable\nto ALL enemies.",
         "runs": [
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " deals {OstyDamage:diff()} damage\nand applies "
+            "text": " deals "
+          },
+          {
+            "text": "11",
+            "source_var": "OstyDamage"
+          },
+          {
+            "text": " damage\nand applies "
           },
           {
             "text": "2",
@@ -87,18 +95,27 @@
       "title": "High Five+",
       "cost": 2,
       "description": {
-        "plain": "Osty deals {OstyDamage:diff()} damage\nand applies 2 Vulnerable\nto ALL enemies.",
+        "plain": "Osty deals 13 damage\nand applies 3 Vulnerable\nto ALL enemies.",
         "runs": [
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " deals {OstyDamage:diff()} damage\nand applies "
+            "text": " deals "
           },
           {
-            "text": "2",
-            "source_var": "VulnerablePower"
+            "text": "13",
+            "source_var": "OstyDamage",
+            "style": "green"
+          },
+          {
+            "text": " damage\nand applies "
+          },
+          {
+            "text": "3",
+            "source_var": "VulnerablePower",
+            "style": "green"
           },
           {
             "text": " "
@@ -111,7 +128,10 @@
             "text": "\nto ALL enemies."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

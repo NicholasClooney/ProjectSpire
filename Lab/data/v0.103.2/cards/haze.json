@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "HAZE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Haze",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Haze.cs",
     "cost": 3,
@@ -34,7 +34,7 @@
     ],
     "upgrades": [
       {
-        "var": "Poison",
+        "var": "PoisonPower",
         "delta": 2
       }
     ],
@@ -84,14 +84,15 @@
       "title": "Haze+",
       "cost": 3,
       "description": {
-        "plain": "Apply 4 Poison to ALL enemies.",
+        "plain": "Apply 6 Poison to ALL enemies.",
         "runs": [
           {
             "text": "Apply "
           },
           {
-            "text": "4",
-            "source_var": "PoisonPower"
+            "text": "6",
+            "source_var": "PoisonPower",
+            "style": "green"
           },
           {
             "text": " "
@@ -104,7 +105,10 @@
             "text": " to ALL enemies."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

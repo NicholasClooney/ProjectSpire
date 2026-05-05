@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "LEADING_STRIKE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "LeadingStrike",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/LeadingStrike.cs",
     "cost": 1,
@@ -15,6 +15,7 @@
       "description_key": "LEADING_STRIKE.description"
     },
     "vars": {
+      "Shivs": 2,
       "Damage": 3
     },
     "assets": [
@@ -58,7 +59,7 @@
       "title": "Leading Strike",
       "cost": 1,
       "description": {
-        "plain": "Deal 3 damage.\nAdd {Shivs:diff()} {Shivs:plural:Shiv|Shivs} into your Hand.",
+        "plain": "Deal 3 damage.\nAdd 2 Shivs into your Hand.",
         "runs": [
           {
             "text": "Deal "
@@ -68,10 +69,17 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage.\nAdd {Shivs:diff()} "
+            "text": " damage.\nAdd "
           },
           {
-            "text": "{Shivs:plural:Shiv|Shivs}",
+            "text": "2",
+            "source_var": "Shivs"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Shivs",
             "style": "gold"
           },
           {
@@ -91,7 +99,7 @@
       "title": "Leading Strike+",
       "cost": 1,
       "description": {
-        "plain": "Deal 6 damage.\nAdd {Shivs:diff()} {Shivs:plural:Shiv|Shivs} into your Hand.",
+        "plain": "Deal 6 damage.\nAdd 2 Shivs into your Hand.",
         "runs": [
           {
             "text": "Deal "
@@ -102,10 +110,17 @@
             "style": "green"
           },
           {
-            "text": " damage.\nAdd {Shivs:diff()} "
+            "text": " damage.\nAdd "
           },
           {
-            "text": "{Shivs:plural:Shiv|Shivs}",
+            "text": "2",
+            "source_var": "Shivs"
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "Shivs",
             "style": "gold"
           },
           {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "SPOILS_OF_BATTLE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "SpoilsOfBattle",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SpoilsOfBattle.cs",
     "cost": 1,
@@ -15,6 +15,7 @@
       "description_key": "SPOILS_OF_BATTLE.description"
     },
     "vars": {
+      "Forge": 5,
       "Cards": 2
     },
     "assets": [
@@ -41,14 +42,21 @@
       "title": "Spoils of Battle",
       "cost": 1,
       "description": {
-        "plain": "Forge {Forge:diff()}.\nDraw 2 cards.",
+        "plain": "Forge 5.\nDraw 2 cards.",
         "runs": [
           {
             "text": "Forge",
             "style": "gold"
           },
           {
-            "text": " {Forge:diff()}.\nDraw "
+            "text": " "
+          },
+          {
+            "text": "5",
+            "source_var": "Forge"
+          },
+          {
+            "text": ".\nDraw "
           },
           {
             "text": "2",
@@ -64,14 +72,22 @@
       "title": "Spoils of Battle+",
       "cost": 1,
       "description": {
-        "plain": "Forge {Forge:diff()}.\nDraw 2 cards.",
+        "plain": "Forge 8.\nDraw 2 cards.",
         "runs": [
           {
             "text": "Forge",
             "style": "gold"
           },
           {
-            "text": " {Forge:diff()}.\nDraw "
+            "text": " "
+          },
+          {
+            "text": "8",
+            "source_var": "Forge",
+            "style": "green"
+          },
+          {
+            "text": ".\nDraw "
           },
           {
             "text": "2",
@@ -81,7 +97,10 @@
             "text": " cards."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

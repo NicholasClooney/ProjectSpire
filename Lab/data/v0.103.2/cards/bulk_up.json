@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "BULK_UP",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "BulkUp",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BulkUp.cs",
     "cost": 2,
@@ -33,11 +33,11 @@
     ],
     "upgrades": [
       {
-        "var": "Dexterity",
+        "var": "DexterityPower",
         "delta": 1
       },
       {
-        "var": "Strength",
+        "var": "StrengthPower",
         "delta": 1
       }
     ],
@@ -118,7 +118,7 @@
       "title": "Bulk Up+",
       "cost": 2,
       "description": {
-        "plain": "Lose 1 Orb Slot.\nGain 2 Strength.\nGain 2 Dexterity.",
+        "plain": "Lose 1 Orb Slot.\nGain 3 Strength.\nGain 3 Dexterity.",
         "runs": [
           {
             "text": "Lose "
@@ -131,8 +131,9 @@
             "text": " Orb Slot.\nGain "
           },
           {
-            "text": "2",
-            "source_var": "StrengthPower"
+            "text": "3",
+            "source_var": "StrengthPower",
+            "style": "green"
           },
           {
             "text": " "
@@ -145,8 +146,9 @@
             "text": ".\nGain "
           },
           {
-            "text": "2",
-            "source_var": "DexterityPower"
+            "text": "3",
+            "source_var": "DexterityPower",
+            "style": "green"
           },
           {
             "text": " "
@@ -159,7 +161,10 @@
             "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

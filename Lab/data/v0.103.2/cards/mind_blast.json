@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "MIND_BLAST",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "MindBlast",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MindBlast.cs",
     "cost": 1,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "MIND_BLAST.title",
       "description_key": "MIND_BLAST.description"
+    },
+    "vars": {
+      "CalculationBase": 0,
+      "ExtraDamage": 1
     },
     "assets": [
       {

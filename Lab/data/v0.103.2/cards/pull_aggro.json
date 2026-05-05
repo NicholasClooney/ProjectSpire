@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "PULL_AGGRO",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "PullAggro",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PullAggro.cs",
     "cost": 2,
@@ -15,6 +15,7 @@
       "description_key": "PULL_AGGRO.description"
     },
     "vars": {
+      "Summon": 4,
       "Block": 7
     },
     "assets": [
@@ -40,14 +41,21 @@
       "title": "Pull Aggro",
       "cost": 2,
       "description": {
-        "plain": "Summon {Summon:diff()}.\nGain 7 Block.",
+        "plain": "Summon 4.\nGain 7 Block.",
         "runs": [
           {
             "text": "Summon",
             "style": "gold"
           },
           {
-            "text": " {Summon:diff()}.\nGain "
+            "text": " "
+          },
+          {
+            "text": "4",
+            "source_var": "Summon"
+          },
+          {
+            "text": ".\nGain "
           },
           {
             "text": "7",
@@ -70,14 +78,22 @@
       "title": "Pull Aggro+",
       "cost": 2,
       "description": {
-        "plain": "Summon {Summon:diff()}.\nGain 9 Block.",
+        "plain": "Summon 5.\nGain 9 Block.",
         "runs": [
           {
             "text": "Summon",
             "style": "gold"
           },
           {
-            "text": " {Summon:diff()}.\nGain "
+            "text": " "
+          },
+          {
+            "text": "5",
+            "source_var": "Summon",
+            "style": "green"
+          },
+          {
+            "text": ".\nGain "
           },
           {
             "text": "9",

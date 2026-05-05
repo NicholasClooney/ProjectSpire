@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "FURNACE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Furnace",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Furnace.cs",
     "cost": 1,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "FURNACE.title",
       "description_key": "FURNACE.description"
+    },
+    "vars": {
+      "Forge": 4
     },
     "assets": [
       {
@@ -45,7 +48,7 @@
       "title": "Furnace",
       "cost": 1,
       "description": {
-        "plain": "At the start of your turn, Forge {Forge:diff()}.",
+        "plain": "At the start of your turn, Forge 4.",
         "runs": [
           {
             "text": "At the start of your turn, "
@@ -55,7 +58,14 @@
             "style": "gold"
           },
           {
-            "text": " {Forge:diff()}."
+            "text": " "
+          },
+          {
+            "text": "4",
+            "source_var": "Forge"
+          },
+          {
+            "text": "."
           }
         ]
       }
@@ -64,7 +74,7 @@
       "title": "Furnace+",
       "cost": 1,
       "description": {
-        "plain": "At the start of your turn, Forge {Forge:diff()}.",
+        "plain": "At the start of your turn, Forge 6.",
         "runs": [
           {
             "text": "At the start of your turn, "
@@ -74,10 +84,21 @@
             "style": "gold"
           },
           {
-            "text": " {Forge:diff()}."
+            "text": " "
+          },
+          {
+            "text": "6",
+            "source_var": "Forge",
+            "style": "green"
+          },
+          {
+            "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

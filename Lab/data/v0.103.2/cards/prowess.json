@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "PROWESS",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Prowess",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Prowess.cs",
     "cost": 1,
@@ -32,11 +32,11 @@
     ],
     "upgrades": [
       {
-        "var": "Dexterity",
+        "var": "DexterityPower",
         "delta": 1
       },
       {
-        "var": "Strength",
+        "var": "StrengthPower",
         "delta": 1
       }
     ],
@@ -110,14 +110,15 @@
       "title": "Prowess+",
       "cost": 1,
       "description": {
-        "plain": "Gain 1 Strength.\nGain 1 Dexterity.",
+        "plain": "Gain 2 Strength.\nGain 2 Dexterity.",
         "runs": [
           {
             "text": "Gain "
           },
           {
-            "text": "1",
-            "source_var": "StrengthPower"
+            "text": "2",
+            "source_var": "StrengthPower",
+            "style": "green"
           },
           {
             "text": " "
@@ -130,8 +131,9 @@
             "text": ".\nGain "
           },
           {
-            "text": "1",
-            "source_var": "DexterityPower"
+            "text": "2",
+            "source_var": "DexterityPower",
+            "style": "green"
           },
           {
             "text": " "
@@ -144,7 +146,10 @@
             "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

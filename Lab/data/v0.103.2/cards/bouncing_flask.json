@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "BOUNCING_FLASK",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "BouncingFlask",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BouncingFlask.cs",
     "cost": 2,
@@ -15,7 +15,8 @@
       "description_key": "BOUNCING_FLASK.description"
     },
     "vars": {
-      "PoisonPower": 3
+      "PoisonPower": 3,
+      "Repeat": 3
     },
     "assets": [
       {
@@ -50,7 +51,7 @@
       "title": "Bouncing Flask",
       "cost": 2,
       "description": {
-        "plain": "Apply 3 Poison to a random enemy {Repeat:diff()} times.",
+        "plain": "Apply 3 Poison to a random enemy 3 times.",
         "runs": [
           {
             "text": "Apply "
@@ -67,7 +68,14 @@
             "style": "gold"
           },
           {
-            "text": " to a random enemy {Repeat:diff()} times."
+            "text": " to a random enemy "
+          },
+          {
+            "text": "3",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " times."
           }
         ]
       }
@@ -76,7 +84,7 @@
       "title": "Bouncing Flask+",
       "cost": 2,
       "description": {
-        "plain": "Apply 3 Poison to a random enemy {Repeat:diff()} times.",
+        "plain": "Apply 3 Poison to a random enemy 4 times.",
         "runs": [
           {
             "text": "Apply "
@@ -93,10 +101,21 @@
             "style": "gold"
           },
           {
-            "text": " to a random enemy {Repeat:diff()} times."
+            "text": " to a random enemy "
+          },
+          {
+            "text": "4",
+            "source_var": "Repeat",
+            "style": "green"
+          },
+          {
+            "text": " times."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

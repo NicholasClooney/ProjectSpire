@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "SIC_EM",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "SicEm",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SicEm.cs",
     "cost": 1,
@@ -15,6 +15,7 @@
       "description_key": "SIC_EM.description"
     },
     "vars": {
+      "OstyDamage": 5,
       "SicEmPower": 2
     },
     "assets": [
@@ -62,14 +63,21 @@
       "title": "Sic 'Em",
       "cost": 1,
       "description": {
-        "plain": "Osty deals {OstyDamage:diff()} damage.\nWhenever Osty hits this enemy this turn, Summon 2.",
+        "plain": "Osty deals 5 damage.\nWhenever Osty hits this enemy this turn, Summon 2.",
         "runs": [
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " deals {OstyDamage:diff()} damage.\nWhenever "
+            "text": " deals "
+          },
+          {
+            "text": "5",
+            "source_var": "OstyDamage"
+          },
+          {
+            "text": " damage.\nWhenever "
           },
           {
             "text": "Osty",
@@ -99,14 +107,22 @@
       "title": "Sic 'Em+",
       "cost": 1,
       "description": {
-        "plain": "Osty deals {OstyDamage:diff()} damage.\nWhenever Osty hits this enemy this turn, Summon 3.",
+        "plain": "Osty deals 6 damage.\nWhenever Osty hits this enemy this turn, Summon 3.",
         "runs": [
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " deals {OstyDamage:diff()} damage.\nWhenever "
+            "text": " deals "
+          },
+          {
+            "text": "6",
+            "source_var": "OstyDamage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nWhenever "
           },
           {
             "text": "Osty",

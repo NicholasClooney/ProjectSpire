@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "MURDER",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Murder",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Murder.cs",
     "cost": 3,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "MURDER.title",
       "description_key": "MURDER.description"
+    },
+    "vars": {
+      "CalculationBase": 1,
+      "ExtraDamage": 1
     },
     "assets": [
       {
@@ -39,10 +43,17 @@
       "title": "Murder",
       "cost": 3,
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card drawn this combat.",
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 1 additional damage for each card drawn this combat.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card drawn this combat."
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+          },
+          {
+            "text": "1",
+            "source_var": "ExtraDamage"
+          },
+          {
+            "text": " additional damage for each card drawn this combat."
           }
         ]
       }
@@ -51,10 +62,17 @@
       "title": "Murder+",
       "cost": 2,
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card drawn this combat.",
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 1 additional damage for each card drawn this combat.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card drawn this combat."
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+          },
+          {
+            "text": "1",
+            "source_var": "ExtraDamage"
+          },
+          {
+            "text": " additional damage for each card drawn this combat."
           }
         ]
       },

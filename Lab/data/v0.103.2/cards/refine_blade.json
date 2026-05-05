@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "REFINE_BLADE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "RefineBlade",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/RefineBlade.cs",
     "cost": 1,
@@ -15,6 +15,7 @@
       "description_key": "REFINE_BLADE.description"
     },
     "vars": {
+      "Forge": 9,
       "Energy": 1
     },
     "assets": [
@@ -48,14 +49,21 @@
       "title": "Refine Blade",
       "cost": 1,
       "description": {
-        "plain": "Forge {Forge:diff()}.\nNext turn, gain 1.",
+        "plain": "Forge 9.\nNext turn, gain 1.",
         "runs": [
           {
             "text": "Forge",
             "style": "gold"
           },
           {
-            "text": " {Forge:diff()}.\nNext turn, gain "
+            "text": " "
+          },
+          {
+            "text": "9",
+            "source_var": "Forge"
+          },
+          {
+            "text": ".\nNext turn, gain "
           },
           {
             "text": "1",
@@ -71,14 +79,22 @@
       "title": "Refine Blade+",
       "cost": 1,
       "description": {
-        "plain": "Forge {Forge:diff()}.\nNext turn, gain 1.",
+        "plain": "Forge 13.\nNext turn, gain 1.",
         "runs": [
           {
             "text": "Forge",
             "style": "gold"
           },
           {
-            "text": " {Forge:diff()}.\nNext turn, gain "
+            "text": " "
+          },
+          {
+            "text": "13",
+            "source_var": "Forge",
+            "style": "green"
+          },
+          {
+            "text": ".\nNext turn, gain "
           },
           {
             "text": "1",
@@ -88,7 +104,10 @@
             "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

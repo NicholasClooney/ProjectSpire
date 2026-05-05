@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "SQUEEZE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Squeeze",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Squeeze.cs",
     "cost": 3,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "SQUEEZE.title",
       "description_key": "SQUEEZE.description"
+    },
+    "vars": {
+      "CalculationBase": 25,
+      "ExtraDamage": 5
     },
     "assets": [
       {
@@ -45,14 +49,21 @@
       "title": "Squeeze",
       "cost": 3,
       "description": {
-        "plain": "Osty deals {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your other Osty Attacks.",
+        "plain": "Osty deals {CalculatedDamage:diff()} damage.\nDeals 5 additional damage for ALL your other Osty Attacks.",
         "runs": [
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " deals {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your other "
+            "text": " deals {CalculatedDamage:diff()} damage.\nDeals "
+          },
+          {
+            "text": "5",
+            "source_var": "ExtraDamage"
+          },
+          {
+            "text": " additional damage for ALL your other "
           },
           {
             "text": "Osty",
@@ -68,14 +79,22 @@
       "title": "Squeeze+",
       "cost": 3,
       "description": {
-        "plain": "Osty deals {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your other Osty Attacks.",
+        "plain": "Osty deals {CalculatedDamage:diff()} damage.\nDeals 6 additional damage for ALL your other Osty Attacks.",
         "runs": [
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " deals {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your other "
+            "text": " deals {CalculatedDamage:diff()} damage.\nDeals "
+          },
+          {
+            "text": "6",
+            "source_var": "ExtraDamage",
+            "style": "green"
+          },
+          {
+            "text": " additional damage for ALL your other "
           },
           {
             "text": "Osty",
@@ -85,7 +104,10 @@
             "text": " Attacks."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "MEMENTO_MORI",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "MementoMori",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MementoMori.cs",
     "cost": 1,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "MEMENTO_MORI.title",
       "description_key": "MEMENTO_MORI.description"
+    },
+    "vars": {
+      "CalculationBase": 9,
+      "ExtraDamage": 4
     },
     "assets": [
       {
@@ -37,10 +41,17 @@
       "title": "Memento Mori",
       "cost": 1,
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card discarded this turn.",
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 4 additional damage for each card discarded this turn.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card discarded this turn."
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+          },
+          {
+            "text": "4",
+            "source_var": "ExtraDamage"
+          },
+          {
+            "text": " additional damage for each card discarded this turn."
           }
         ]
       }
@@ -49,13 +60,24 @@
       "title": "Memento Mori+",
       "cost": 1,
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card discarded this turn.",
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 5 additional damage for each card discarded this turn.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card discarded this turn."
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+          },
+          {
+            "text": "5",
+            "source_var": "ExtraDamage",
+            "style": "green"
+          },
+          {
+            "text": " additional damage for each card discarded this turn."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

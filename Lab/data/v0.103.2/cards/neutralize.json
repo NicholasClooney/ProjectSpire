@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "NEUTRALIZE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Neutralize",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Neutralize.cs",
     "cost": 0,
@@ -31,7 +31,7 @@
         "delta": 1
       },
       {
-        "var": "Weak",
+        "var": "WeakPower",
         "delta": 1
       }
     ],
@@ -88,7 +88,7 @@
       "title": "Neutralize+",
       "cost": 0,
       "description": {
-        "plain": "Deal 4 damage.\nApply 1 Weak.",
+        "plain": "Deal 4 damage.\nApply 2 Weak.",
         "runs": [
           {
             "text": "Deal "
@@ -102,8 +102,9 @@
             "text": " damage.\nApply "
           },
           {
-            "text": "1",
-            "source_var": "WeakPower"
+            "text": "2",
+            "source_var": "WeakPower",
+            "style": "green"
           },
           {
             "text": " "

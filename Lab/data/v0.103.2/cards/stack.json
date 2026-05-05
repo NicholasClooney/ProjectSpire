@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "STACK",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Stack",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Stack.cs",
     "cost": 1,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "STACK.title",
       "description_key": "STACK.description"
+    },
+    "vars": {
+      "CalculationBase": 0,
+      "CalculationExtra": 1
     },
     "assets": [
       {
@@ -59,7 +63,7 @@
       "title": "Stack+",
       "cost": 1,
       "description": {
-        "plain": "Gain Block equal to the number of cards in your Discard Pile +{CalculationBase}.",
+        "plain": "Gain Block equal to the number of cards in your Discard Pile +3.",
         "runs": [
           {
             "text": "Gain "
@@ -76,7 +80,14 @@
             "style": "gold"
           },
           {
-            "text": " +{CalculationBase}."
+            "text": " +"
+          },
+          {
+            "text": "3",
+            "source_var": "CalculationBase"
+          },
+          {
+            "text": "."
           }
         ]
       },

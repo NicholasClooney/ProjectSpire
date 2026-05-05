@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "BULLY",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Bully",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Bully.cs",
     "cost": 0,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "BULLY.title",
       "description_key": "BULLY.description"
+    },
+    "vars": {
+      "CalculationBase": 4,
+      "ExtraDamage": 2
     },
     "assets": [
       {
@@ -40,10 +44,17 @@
       "title": "Bully",
       "cost": 0,
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each Vulnerable on the enemy.",
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 2 additional damage for each Vulnerable on the enemy.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each "
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+          },
+          {
+            "text": "2",
+            "source_var": "ExtraDamage"
+          },
+          {
+            "text": " additional damage for each "
           },
           {
             "text": "Vulnerable",
@@ -59,10 +70,18 @@
       "title": "Bully+",
       "cost": 0,
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each Vulnerable on the enemy.",
+        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 3 additional damage for each Vulnerable on the enemy.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each "
+            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+          },
+          {
+            "text": "3",
+            "source_var": "ExtraDamage",
+            "style": "green"
+          },
+          {
+            "text": " additional damage for each "
           },
           {
             "text": "Vulnerable",
@@ -72,7 +91,10 @@
             "text": " on the enemy."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

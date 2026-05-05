@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "CONVERGENCE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Convergence",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Convergence.cs",
     "cost": 1,
@@ -15,7 +15,8 @@
       "description_key": "CONVERGENCE.description"
     },
     "vars": {
-      "Energy": 1
+      "Energy": 1,
+      "Stars": 1
     },
     "assets": [
       {
@@ -61,7 +62,7 @@
       "title": "Convergence",
       "cost": 1,
       "description": {
-        "plain": "Next turn,\ngain 1 and {Stars:starIcons()}.\nRetain your Hand this turn.",
+        "plain": "Next turn,\ngain 1 and 1.\nRetain your Hand this turn.",
         "runs": [
           {
             "text": "Next turn,\ngain "
@@ -71,7 +72,14 @@
             "source_var": "Energy"
           },
           {
-            "text": " and {Stars:starIcons()}.\n"
+            "text": " and "
+          },
+          {
+            "text": "1",
+            "source_var": "Stars"
+          },
+          {
+            "text": ".\n"
           },
           {
             "text": "Retain",
@@ -94,7 +102,7 @@
       "title": "Convergence+",
       "cost": 1,
       "description": {
-        "plain": "Next turn,\ngain 1 and {Stars:starIcons()}.\nRetain your Hand this turn.",
+        "plain": "Next turn,\ngain 1 and 2.\nRetain your Hand this turn.",
         "runs": [
           {
             "text": "Next turn,\ngain "
@@ -104,7 +112,14 @@
             "source_var": "Energy"
           },
           {
-            "text": " and {Stars:starIcons()}.\n"
+            "text": " and "
+          },
+          {
+            "text": "2",
+            "source_var": "Stars"
+          },
+          {
+            "text": ".\n"
           },
           {
             "text": "Retain",
@@ -121,7 +136,10 @@
             "text": " this turn."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "SPOILS_MAP",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "SpoilsMap",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SpoilsMap.cs",
     "cost": -1,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "SPOILS_MAP.title",
       "description_key": "SPOILS_MAP.description"
+    },
+    "vars": {
+      "Gold": 600
     },
     "assets": [
       {
@@ -35,10 +38,17 @@
       "title": "Spoils Map",
       "cost": -1,
       "description": {
-        "plain": "Marks a site of {Gold:diff()} extra Gold in the next Act.",
+        "plain": "Marks a site of 600 extra Gold in the next Act.",
         "runs": [
           {
-            "text": "Marks a site of {Gold:diff()} extra "
+            "text": "Marks a site of "
+          },
+          {
+            "text": "600",
+            "source_var": "Gold"
+          },
+          {
+            "text": " extra "
           },
           {
             "text": "Gold",
@@ -54,10 +64,17 @@
       "title": "Spoils Map+",
       "cost": -1,
       "description": {
-        "plain": "Marks a site of {Gold:diff()} extra Gold in the next Act.",
+        "plain": "Marks a site of 600 extra Gold in the next Act.",
         "runs": [
           {
-            "text": "Marks a site of {Gold:diff()} extra "
+            "text": "Marks a site of "
+          },
+          {
+            "text": "600",
+            "source_var": "Gold"
+          },
+          {
+            "text": " extra "
           },
           {
             "text": "Gold",

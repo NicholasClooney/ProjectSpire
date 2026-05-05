@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "RIGHT_HAND_HAND",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "RightHandHand",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/RightHandHand.cs",
     "cost": 0,
@@ -15,6 +15,7 @@
       "description_key": "RIGHT_HAND_HAND.description"
     },
     "vars": {
+      "OstyDamage": 4,
       "Energy": 2
     },
     "assets": [
@@ -44,14 +45,21 @@
       "title": "Right Hand Hand",
       "cost": 0,
       "description": {
-        "plain": "Osty deals {OstyDamage:diff()} damage.\nWhenever you play a card that costs 2 or more, return this to your Hand from the Discard Pile.",
+        "plain": "Osty deals 4 damage.\nWhenever you play a card that costs 2 or more, return this to your Hand from the Discard Pile.",
         "runs": [
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " deals {OstyDamage:diff()} damage.\nWhenever you play a card that costs "
+            "text": " deals "
+          },
+          {
+            "text": "4",
+            "source_var": "OstyDamage"
+          },
+          {
+            "text": " damage.\nWhenever you play a card that costs "
           },
           {
             "text": "2",
@@ -81,14 +89,22 @@
       "title": "Right Hand Hand+",
       "cost": 0,
       "description": {
-        "plain": "Osty deals {OstyDamage:diff()} damage.\nWhenever you play a card that costs 2 or more, return this to your Hand from the Discard Pile.",
+        "plain": "Osty deals 6 damage.\nWhenever you play a card that costs 2 or more, return this to your Hand from the Discard Pile.",
         "runs": [
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " deals {OstyDamage:diff()} damage.\nWhenever you play a card that costs "
+            "text": " deals "
+          },
+          {
+            "text": "6",
+            "source_var": "OstyDamage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nWhenever you play a card that costs "
           },
           {
             "text": "2",
@@ -112,7 +128,10 @@
             "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

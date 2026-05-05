@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "TAUNT",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Taunt",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Taunt.cs",
     "cost": 1,
@@ -31,7 +31,7 @@
         "delta": 1
       },
       {
-        "var": "Vulnerable",
+        "var": "VulnerablePower",
         "delta": 1
       }
     ],
@@ -95,7 +95,7 @@
       "title": "Taunt+",
       "cost": 1,
       "description": {
-        "plain": "Gain 8 Block.\nApply 1 Vulnerable.",
+        "plain": "Gain 8 Block.\nApply 2 Vulnerable.",
         "runs": [
           {
             "text": "Gain "
@@ -116,8 +116,9 @@
             "text": ".\nApply "
           },
           {
-            "text": "1",
-            "source_var": "VulnerablePower"
+            "text": "2",
+            "source_var": "VulnerablePower",
+            "style": "green"
           },
           {
             "text": " "

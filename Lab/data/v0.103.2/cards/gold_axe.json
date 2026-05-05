@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "GOLD_AXE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "GoldAxe",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GoldAxe.cs",
     "cost": 1,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "GOLD_AXE.title",
       "description_key": "GOLD_AXE.description"
+    },
+    "vars": {
+      "CalculationBase": 0,
+      "ExtraDamage": 1
     },
     "assets": [
       {

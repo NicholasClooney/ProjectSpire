@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "SUPPRESS",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Suppress",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Suppress.cs",
     "cost": 0,
@@ -34,7 +34,7 @@
         "delta": 6
       },
       {
-        "var": "Weak",
+        "var": "WeakPower",
         "delta": 2
       }
     ],
@@ -91,7 +91,7 @@
       "title": "Suppress+",
       "cost": 0,
       "description": {
-        "plain": "Deal 17 damage.\nApply 3 Weak.",
+        "plain": "Deal 17 damage.\nApply 5 Weak.",
         "runs": [
           {
             "text": "Deal "
@@ -105,8 +105,9 @@
             "text": " damage.\nApply "
           },
           {
-            "text": "3",
-            "source_var": "WeakPower"
+            "text": "5",
+            "source_var": "WeakPower",
+            "style": "green"
           },
           {
             "text": " "

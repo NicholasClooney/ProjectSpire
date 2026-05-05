@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "FEED",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Feed",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Feed.cs",
     "cost": 1,
@@ -15,7 +15,8 @@
       "description_key": "FEED.description"
     },
     "vars": {
-      "Damage": 10
+      "Damage": 10,
+      "MaxHp": 3
     },
     "assets": [
       {
@@ -50,7 +51,7 @@
       "title": "Feed",
       "cost": 1,
       "description": {
-        "plain": "Deal 10 damage.\nIf Fatal, raise your Max HP by {MaxHp:diff()}.",
+        "plain": "Deal 10 damage.\nIf Fatal, raise your Max HP by 3.",
         "runs": [
           {
             "text": "Deal "
@@ -67,7 +68,14 @@
             "style": "gold"
           },
           {
-            "text": ", raise your Max HP by {MaxHp:diff()}."
+            "text": ", raise your Max HP by "
+          },
+          {
+            "text": "3",
+            "source_var": "MaxHp"
+          },
+          {
+            "text": "."
           }
         ]
       }
@@ -76,7 +84,7 @@
       "title": "Feed+",
       "cost": 1,
       "description": {
-        "plain": "Deal 12 damage.\nIf Fatal, raise your Max HP by {MaxHp:diff()}.",
+        "plain": "Deal 12 damage.\nIf Fatal, raise your Max HP by 4.",
         "runs": [
           {
             "text": "Deal "
@@ -94,7 +102,15 @@
             "style": "gold"
           },
           {
-            "text": ", raise your Max HP by {MaxHp:diff()}."
+            "text": ", raise your Max HP by "
+          },
+          {
+            "text": "4",
+            "source_var": "MaxHp",
+            "style": "green"
+          },
+          {
+            "text": "."
           }
         ]
       },

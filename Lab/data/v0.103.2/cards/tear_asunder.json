@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "TEAR_ASUNDER",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "TearAsunder",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TearAsunder.cs",
     "cost": 2,
@@ -15,7 +15,10 @@
       "description_key": "TEAR_ASUNDER.description"
     },
     "vars": {
-      "Damage": 5
+      "Damage": 5,
+      "Repeat": 1,
+      "CalculationBase": 0,
+      "CalculationExtra": 1
     },
     "assets": [
       {

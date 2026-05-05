@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "BIG_BANG",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "BigBang",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BigBang.cs",
     "cost": 0,
@@ -16,7 +16,9 @@
     },
     "vars": {
       "Cards": 1,
-      "Energy": 1
+      "Energy": 1,
+      "Stars": 1,
+      "Forge": 5
     },
     "assets": [
       {
@@ -40,7 +42,7 @@
       "title": "Big Bang",
       "cost": 0,
       "description": {
-        "plain": "Draw 1 card.\nGain 1.\nGain {Stars:starIcons()}.\nForge {Forge:diff()}.",
+        "plain": "Draw 1 card.\nGain 1.\nGain 1.\nForge 5.",
         "runs": [
           {
             "text": "Draw "
@@ -57,14 +59,28 @@
             "source_var": "Energy"
           },
           {
-            "text": ".\nGain {Stars:starIcons()}.\n"
+            "text": ".\nGain "
+          },
+          {
+            "text": "1",
+            "source_var": "Stars"
+          },
+          {
+            "text": ".\n"
           },
           {
             "text": "Forge",
             "style": "gold"
           },
           {
-            "text": " {Forge:diff()}."
+            "text": " "
+          },
+          {
+            "text": "5",
+            "source_var": "Forge"
+          },
+          {
+            "text": "."
           }
         ]
       }
@@ -73,7 +89,7 @@
       "title": "Big Bang+",
       "cost": 0,
       "description": {
-        "plain": "Draw 1 card.\nGain 1.\nGain {Stars:starIcons()}.\nForge {Forge:diff()}.",
+        "plain": "Draw 1 card.\nGain 1.\nGain 1.\nForge 5.",
         "runs": [
           {
             "text": "Draw "
@@ -90,14 +106,28 @@
             "source_var": "Energy"
           },
           {
-            "text": ".\nGain {Stars:starIcons()}.\n"
+            "text": ".\nGain "
+          },
+          {
+            "text": "1",
+            "source_var": "Stars"
+          },
+          {
+            "text": ".\n"
           },
           {
             "text": "Forge",
             "style": "gold"
           },
           {
-            "text": " {Forge:diff()}."
+            "text": " "
+          },
+          {
+            "text": "5",
+            "source_var": "Forge"
+          },
+          {
+            "text": "."
           }
         ]
       }

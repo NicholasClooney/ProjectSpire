@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "AFTERLIFE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Afterlife",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Afterlife.cs",
     "cost": 1,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "AFTERLIFE.title",
       "description_key": "AFTERLIFE.description"
+    },
+    "vars": {
+      "Summon": 6
     },
     "assets": [
       {
@@ -41,14 +44,21 @@
       "title": "Afterlife",
       "cost": 1,
       "description": {
-        "plain": "Summon {Summon:diff()}.",
+        "plain": "Summon 6.",
         "runs": [
           {
             "text": "Summon",
             "style": "gold"
           },
           {
-            "text": " {Summon:diff()}."
+            "text": " "
+          },
+          {
+            "text": "6",
+            "source_var": "Summon"
+          },
+          {
+            "text": "."
           }
         ]
       }
@@ -57,17 +67,28 @@
       "title": "Afterlife+",
       "cost": 1,
       "description": {
-        "plain": "Summon {Summon:diff()}.",
+        "plain": "Summon 9.",
         "runs": [
           {
             "text": "Summon",
             "style": "gold"
           },
           {
-            "text": " {Summon:diff()}."
+            "text": " "
+          },
+          {
+            "text": "9",
+            "source_var": "Summon",
+            "style": "green"
+          },
+          {
+            "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

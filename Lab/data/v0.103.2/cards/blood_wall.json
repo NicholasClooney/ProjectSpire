@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "BLOOD_WALL",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "BloodWall",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BloodWall.cs",
     "cost": 2,
@@ -15,8 +15,8 @@
       "description_key": "BLOOD_WALL.description"
     },
     "vars": {
-      "Block": 16,
-      "HpLoss": 2
+      "HpLoss": 2,
+      "Block": 16
     },
     "assets": [
       {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "SHINING_STRIKE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "ShiningStrike",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ShiningStrike.cs",
     "cost": 1,
@@ -15,7 +15,8 @@
       "description_key": "SHINING_STRIKE.description"
     },
     "vars": {
-      "Damage": 8
+      "Damage": 8,
+      "Stars": 2
     },
     "assets": [
       {
@@ -47,7 +48,7 @@
       "title": "Shining Strike",
       "cost": 1,
       "description": {
-        "plain": "Deal 8 damage.\nGain {Stars:starIcons()}.\nPut this card on top of your Draw Pile.",
+        "plain": "Deal 8 damage.\nGain 2.\nPut this card on top of your Draw Pile.",
         "runs": [
           {
             "text": "Deal "
@@ -57,7 +58,14 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage.\nGain {Stars:starIcons()}.\nPut this card on top of your "
+            "text": " damage.\nGain "
+          },
+          {
+            "text": "2",
+            "source_var": "Stars"
+          },
+          {
+            "text": ".\nPut this card on top of your "
           },
           {
             "text": "Draw Pile",
@@ -73,7 +81,7 @@
       "title": "Shining Strike+",
       "cost": 1,
       "description": {
-        "plain": "Deal 11 damage.\nGain {Stars:starIcons()}.\nPut this card on top of your Draw Pile.",
+        "plain": "Deal 11 damage.\nGain 2.\nPut this card on top of your Draw Pile.",
         "runs": [
           {
             "text": "Deal "
@@ -84,7 +92,14 @@
             "style": "green"
           },
           {
-            "text": " damage.\nGain {Stars:starIcons()}.\nPut this card on top of your "
+            "text": " damage.\nGain "
+          },
+          {
+            "text": "2",
+            "source_var": "Stars"
+          },
+          {
+            "text": ".\nPut this card on top of your "
           },
           {
             "text": "Draw Pile",

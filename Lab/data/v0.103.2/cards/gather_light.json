@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "GATHER_LIGHT",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "GatherLight",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GatherLight.cs",
     "cost": 1,
@@ -15,7 +15,8 @@
       "description_key": "GATHER_LIGHT.description"
     },
     "vars": {
-      "Block": 8
+      "Block": 8,
+      "Stars": 1
     },
     "assets": [
       {
@@ -41,7 +42,7 @@
       "title": "Gather Light",
       "cost": 1,
       "description": {
-        "plain": "Gain 8 Block.\nGain {Stars:starIcons()}.",
+        "plain": "Gain 8 Block.\nGain 1.",
         "runs": [
           {
             "text": "Gain "
@@ -58,7 +59,14 @@
             "style": "gold"
           },
           {
-            "text": ".\nGain {Stars:starIcons()}."
+            "text": ".\nGain "
+          },
+          {
+            "text": "1",
+            "source_var": "Stars"
+          },
+          {
+            "text": "."
           }
         ]
       }
@@ -67,7 +75,7 @@
       "title": "Gather Light+",
       "cost": 1,
       "description": {
-        "plain": "Gain 11 Block.\nGain {Stars:starIcons()}.",
+        "plain": "Gain 11 Block.\nGain 1.",
         "runs": [
           {
             "text": "Gain "
@@ -85,7 +93,14 @@
             "style": "gold"
           },
           {
-            "text": ".\nGain {Stars:starIcons()}."
+            "text": ".\nGain "
+          },
+          {
+            "text": "1",
+            "source_var": "Stars"
+          },
+          {
+            "text": "."
           }
         ]
       },

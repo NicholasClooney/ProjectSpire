@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "DEMONIC_SHIELD",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "DemonicShield",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DemonicShield.cs",
     "cost": 0,
@@ -15,7 +15,9 @@
       "description_key": "DEMONIC_SHIELD.description"
     },
     "vars": {
-      "HpLoss": 1
+      "CalculationBase": 0,
+      "HpLoss": 1,
+      "CalculationExtra": 1
     },
     "assets": [
       {

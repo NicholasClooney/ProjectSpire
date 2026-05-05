@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "GUNK_UP",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "GunkUp",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GunkUp.cs",
     "cost": 1,
@@ -15,7 +15,8 @@
       "description_key": "GUNK_UP.description"
     },
     "vars": {
-      "Damage": 4
+      "Damage": 4,
+      "Repeat": 3
     },
     "assets": [
       {
@@ -55,7 +56,7 @@
       "title": "Gunk Up",
       "cost": 1,
       "description": {
-        "plain": "Deal 4 damage {Repeat:diff()} {Repeat:plural:time|times}.\nAdd a Slimed into your Discard Pile.",
+        "plain": "Deal 4 damage 3 times.\nAdd a Slimed into your Discard Pile.",
         "runs": [
           {
             "text": "Deal "
@@ -65,7 +66,14 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage {Repeat:diff()} {Repeat:plural:time|times}.\nAdd a "
+            "text": " damage "
+          },
+          {
+            "text": "3",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " times.\nAdd a "
           },
           {
             "text": "Slimed",
@@ -88,7 +96,7 @@
       "title": "Gunk Up+",
       "cost": 1,
       "description": {
-        "plain": "Deal 5 damage {Repeat:diff()} {Repeat:plural:time|times}.\nAdd a Slimed into your Discard Pile.",
+        "plain": "Deal 5 damage 3 times.\nAdd a Slimed into your Discard Pile.",
         "runs": [
           {
             "text": "Deal "
@@ -99,7 +107,14 @@
             "style": "green"
           },
           {
-            "text": " damage {Repeat:diff()} {Repeat:plural:time|times}.\nAdd a "
+            "text": " damage "
+          },
+          {
+            "text": "3",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " times.\nAdd a "
           },
           {
             "text": "Slimed",

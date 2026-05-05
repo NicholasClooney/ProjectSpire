@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "HEIRLOOM_HAMMER",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "HeirloomHammer",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HeirloomHammer.cs",
     "cost": 2,
@@ -15,7 +15,8 @@
       "description_key": "HEIRLOOM_HAMMER.description"
     },
     "vars": {
-      "Damage": 20
+      "Damage": 20,
+      "Repeat": 1
     },
     "assets": [
       {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "END_OF_DAYS",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "EndOfDays",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/EndOfDays.cs",
     "cost": 3,
@@ -26,7 +26,7 @@
     ],
     "upgrades": [
       {
-        "var": "Doom",
+        "var": "DoomPower",
         "delta": 8
       }
     ],
@@ -83,14 +83,15 @@
       "title": "End of Days+",
       "cost": 3,
       "description": {
-        "plain": "Apply 29 Doom to ALL enemies.\nKill enemies with at least as much Doom as HP.",
+        "plain": "Apply 37 Doom to ALL enemies.\nKill enemies with at least as much Doom as HP.",
         "runs": [
           {
             "text": "Apply "
           },
           {
-            "text": "29",
-            "source_var": "DoomPower"
+            "text": "37",
+            "source_var": "DoomPower",
+            "style": "green"
           },
           {
             "text": " "
@@ -110,7 +111,10 @@
             "text": " as HP."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

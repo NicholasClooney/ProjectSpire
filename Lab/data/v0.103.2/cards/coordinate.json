@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "COORDINATE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Coordinate",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Coordinate.cs",
     "cost": 1,
@@ -31,7 +31,7 @@
     ],
     "upgrades": [
       {
-        "var": "Strength",
+        "var": "StrengthPower",
         "delta": 3
       }
     ],
@@ -81,14 +81,15 @@
       "title": "Coordinate+",
       "cost": 1,
       "description": {
-        "plain": "Give another player 5 Strength this turn.",
+        "plain": "Give another player 8 Strength this turn.",
         "runs": [
           {
             "text": "Give another player "
           },
           {
-            "text": "5",
-            "source_var": "StrengthPower"
+            "text": "8",
+            "source_var": "StrengthPower",
+            "style": "green"
           },
           {
             "text": " "
@@ -101,7 +102,10 @@
             "text": " this turn."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

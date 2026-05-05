@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "CONFLAGRATION",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Conflagration",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Conflagration.cs",
     "cost": 1,
@@ -13,6 +13,10 @@
       "table": "cards",
       "title_key": "CONFLAGRATION.title",
       "description_key": "CONFLAGRATION.description"
+    },
+    "vars": {
+      "CalculationBase": 8,
+      "ExtraDamage": 2
     },
     "assets": [
       {
@@ -42,10 +46,17 @@
       "title": "Conflagration",
       "cost": 1,
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals {ExtraDamage:diff()} additional damage for each other Attack you've played this turn.",
+        "plain": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals 2 additional damage for each other Attack you've played this turn.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals {ExtraDamage:diff()} additional damage for each other Attack you've played this turn."
+            "text": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals "
+          },
+          {
+            "text": "2",
+            "source_var": "ExtraDamage"
+          },
+          {
+            "text": " additional damage for each other Attack you've played this turn."
           }
         ]
       }
@@ -54,13 +65,24 @@
       "title": "Conflagration+",
       "cost": 1,
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals {ExtraDamage:diff()} additional damage for each other Attack you've played this turn.",
+        "plain": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals 3 additional damage for each other Attack you've played this turn.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals {ExtraDamage:diff()} additional damage for each other Attack you've played this turn."
+            "text": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals "
+          },
+          {
+            "text": "3",
+            "source_var": "ExtraDamage",
+            "style": "green"
+          },
+          {
+            "text": " additional damage for each other Attack you've played this turn."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

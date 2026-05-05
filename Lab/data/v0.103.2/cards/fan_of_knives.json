@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "FAN_OF_KNIVES",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "FanOfKnives",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FanOfKnives.cs",
     "cost": 2,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "FAN_OF_KNIVES.title",
       "description_key": "FAN_OF_KNIVES.description"
+    },
+    "vars": {
+      "Shivs": 4
     },
     "assets": [
       {
@@ -54,14 +57,21 @@
       "title": "Fan of Knives",
       "cost": 2,
       "description": {
-        "plain": "Shivs now hit ALL enemies.\nAdd {Shivs:diff()} Shivs into your Hand.",
+        "plain": "Shivs now hit ALL enemies.\nAdd 4 Shivs into your Hand.",
         "runs": [
           {
             "text": "Shivs",
             "style": "gold"
           },
           {
-            "text": " now hit ALL enemies.\nAdd {Shivs:diff()} "
+            "text": " now hit ALL enemies.\nAdd "
+          },
+          {
+            "text": "4",
+            "source_var": "Shivs"
+          },
+          {
+            "text": " "
           },
           {
             "text": "Shivs",
@@ -84,14 +94,22 @@
       "title": "Fan of Knives+",
       "cost": 2,
       "description": {
-        "plain": "Shivs now hit ALL enemies.\nAdd {Shivs:diff()} Shivs into your Hand.",
+        "plain": "Shivs now hit ALL enemies.\nAdd 5 Shivs into your Hand.",
         "runs": [
           {
             "text": "Shivs",
             "style": "gold"
           },
           {
-            "text": " now hit ALL enemies.\nAdd {Shivs:diff()} "
+            "text": " now hit ALL enemies.\nAdd "
+          },
+          {
+            "text": "5",
+            "source_var": "Shivs",
+            "style": "green"
+          },
+          {
+            "text": " "
           },
           {
             "text": "Shivs",
@@ -108,7 +126,10 @@
             "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

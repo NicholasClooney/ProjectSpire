@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "MODDED",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Modded",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Modded.cs",
     "cost": 0,
@@ -15,6 +15,7 @@
       "description_key": "MODDED.description"
     },
     "vars": {
+      "Repeat": 1,
       "Cards": 1
     },
     "assets": [
@@ -41,10 +42,17 @@
       "title": "Modded",
       "cost": 0,
       "description": {
-        "plain": "Gain {Repeat:diff()} Orb {Repeat:plural:Slot|Slots}.\nDraw 1 card. Increase this card's cost by 1.",
+        "plain": "Gain 1 Orb Slot.\nDraw 1 card. Increase this card's cost by 1.",
         "runs": [
           {
-            "text": "Gain {Repeat:diff()} Orb {Repeat:plural:Slot|Slots}.\nDraw "
+            "text": "Gain "
+          },
+          {
+            "text": "1",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " Orb Slot.\nDraw "
           },
           {
             "text": "1",
@@ -60,10 +68,17 @@
       "title": "Modded+",
       "cost": 0,
       "description": {
-        "plain": "Gain {Repeat:diff()} Orb {Repeat:plural:Slot|Slots}.\nDraw 2 cards. Increase this card's cost by 1.",
+        "plain": "Gain 1 Orb Slot.\nDraw 2 cards. Increase this card's cost by 1.",
         "runs": [
           {
-            "text": "Gain {Repeat:diff()} Orb {Repeat:plural:Slot|Slots}.\nDraw "
+            "text": "Gain "
+          },
+          {
+            "text": "1",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " Orb Slot.\nDraw "
           },
           {
             "text": "2",

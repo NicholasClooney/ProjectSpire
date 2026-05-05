@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "NEUROSURGE",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Neurosurge",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Neurosurge.cs",
     "cost": 0,
@@ -15,9 +15,9 @@
       "description_key": "NEUROSURGE.description"
     },
     "vars": {
-      "Cards": 2,
+      "NeurosurgePower": 3,
       "Energy": 3,
-      "NeurosurgePower": 3
+      "Cards": 2
     },
     "assets": [
       {

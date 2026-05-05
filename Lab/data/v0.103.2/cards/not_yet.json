@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "NOT_YET",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "NotYet",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/NotYet.cs",
     "cost": 2,
@@ -13,6 +13,9 @@
       "table": "cards",
       "title_key": "NOT_YET.title",
       "description_key": "NOT_YET.description"
+    },
+    "vars": {
+      "Heal": 10
     },
     "assets": [
       {
@@ -36,10 +39,17 @@
       "title": "Not Yet",
       "cost": 2,
       "description": {
-        "plain": "Heal {Heal:diff()} HP.",
+        "plain": "Heal 10 HP.",
         "runs": [
           {
-            "text": "Heal {Heal:diff()} HP."
+            "text": "Heal "
+          },
+          {
+            "text": "10",
+            "source_var": "Heal"
+          },
+          {
+            "text": " HP."
           }
         ]
       }
@@ -48,13 +58,24 @@
       "title": "Not Yet+",
       "cost": 2,
       "description": {
-        "plain": "Heal {Heal:diff()} HP.",
+        "plain": "Heal 13 HP.",
         "runs": [
           {
-            "text": "Heal {Heal:diff()} HP."
+            "text": "Heal "
+          },
+          {
+            "text": "13",
+            "source_var": "Heal",
+            "style": "green"
+          },
+          {
+            "text": " HP."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "FTL",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Ftl",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Ftl.cs",
     "cost": 0,
@@ -16,6 +16,7 @@
     },
     "vars": {
       "Damage": 5,
+      "PlayMax": 3,
       "Cards": 1
     },
     "assets": [
@@ -41,7 +42,7 @@
       "title": "FTL",
       "cost": 0,
       "description": {
-        "plain": "Deal 5 damage.\nIf you have played fewer than {PlayMax:diff()} cards this turn, draw 1 card.",
+        "plain": "Deal 5 damage.\nIf you have played fewer than 3 cards this turn, draw 1 card.",
         "runs": [
           {
             "text": "Deal "
@@ -51,7 +52,14 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage.\nIf you have played fewer than {PlayMax:diff()} cards this turn, draw 1 card."
+            "text": " damage.\nIf you have played fewer than "
+          },
+          {
+            "text": "3",
+            "source_var": "PlayMax"
+          },
+          {
+            "text": " cards this turn, draw 1 card."
           }
         ]
       }
@@ -60,7 +68,7 @@
       "title": "FTL+",
       "cost": 0,
       "description": {
-        "plain": "Deal 6 damage.\nIf you have played fewer than {PlayMax:diff()} cards this turn, draw 1 card.",
+        "plain": "Deal 6 damage.\nIf you have played fewer than 4 cards this turn, draw 1 card.",
         "runs": [
           {
             "text": "Deal "
@@ -71,7 +79,15 @@
             "style": "green"
           },
           {
-            "text": " damage.\nIf you have played fewer than {PlayMax:diff()} cards this turn, draw 1 card."
+            "text": " damage.\nIf you have played fewer than "
+          },
+          {
+            "text": "4",
+            "source_var": "PlayMax",
+            "style": "green"
+          },
+          {
+            "text": " cards this turn, draw 1 card."
           }
         ]
       },

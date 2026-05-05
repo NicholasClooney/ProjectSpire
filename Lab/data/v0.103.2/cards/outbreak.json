@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "OUTBREAK",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Outbreak",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Outbreak.cs",
     "cost": 1,
@@ -15,7 +15,8 @@
       "description_key": "OUTBREAK.description"
     },
     "vars": {
-      "OutbreakPower": 11
+      "OutbreakPower": 11,
+      "Repeat": 3
     },
     "assets": [
       {
@@ -55,10 +56,17 @@
       "title": "Outbreak",
       "cost": 1,
       "description": {
-        "plain": "Every {Repeat:plural:time|{Repeat:diff()} times} you apply Poison, deal 11 damage to ALL enemies.",
+        "plain": "Every 3 times you apply Poison, deal 11 damage to ALL enemies.",
         "runs": [
           {
-            "text": "Every {Repeat:plural:time|{Repeat:diff()} times} you apply "
+            "text": "Every "
+          },
+          {
+            "text": "3",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " times you apply "
           },
           {
             "text": "Poison",
@@ -81,10 +89,17 @@
       "title": "Outbreak+",
       "cost": 1,
       "description": {
-        "plain": "Every {Repeat:plural:time|{Repeat:diff()} times} you apply Poison, deal 15 damage to ALL enemies.",
+        "plain": "Every 3 times you apply Poison, deal 15 damage to ALL enemies.",
         "runs": [
           {
-            "text": "Every {Repeat:plural:time|{Repeat:diff()} times} you apply "
+            "text": "Every "
+          },
+          {
+            "text": "3",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " times you apply "
           },
           {
             "text": "Poison",

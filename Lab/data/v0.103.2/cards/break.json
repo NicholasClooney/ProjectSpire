@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "id": "BREAK",
   "raw": {
-    "parser_version": "0.2.1",
+    "parser_version": "0.2.2",
     "class_name": "Break",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Break.cs",
     "cost": 1,
@@ -31,7 +31,7 @@
         "delta": 10
       },
       {
-        "var": "Vulnerable",
+        "var": "VulnerablePower",
         "delta": 2
       }
     ],
@@ -88,7 +88,7 @@
       "title": "Break+",
       "cost": 1,
       "description": {
-        "plain": "Deal 30 damage.\nApply 5 Vulnerable.",
+        "plain": "Deal 30 damage.\nApply 7 Vulnerable.",
         "runs": [
           {
             "text": "Deal "
@@ -102,8 +102,9 @@
             "text": " damage.\nApply "
           },
           {
-            "text": "5",
-            "source_var": "VulnerablePower"
+            "text": "7",
+            "source_var": "VulnerablePower",
+            "style": "green"
           },
           {
             "text": " "
