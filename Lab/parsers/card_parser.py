@@ -351,18 +351,45 @@ def extract_costs_x(content: str) -> bool:
     return bool(re.search(r"HasEnergyCostX\s*=>\s*true", content))
 
 
+def extract_numeric_symbols(content: str) -> dict[str, int]:
+    symbols: dict[str, int] = {}
+    for match in re.finditer(r"\b(?:public|private|protected)?\s*const\s+int\s+(\w+)\s*=\s*(-?\d+)", content):
+        symbols[match.group(1)] = int(match.group(2))
+    for match in re.finditer(r"\b(?:private|public|protected)?\s*int\s+(\w+)\s*=\s*(-?\d+)", content):
+        symbols[match.group(1)] = int(match.group(2))
+    for match in re.finditer(r"\bpublic\s+int\s+(\w+)\s*\{.*?\breturn\s+(\w+)\s*;.*?\bset\b", content, re.DOTALL):
+        if match.group(2) in symbols:
+            symbols[match.group(1)] = symbols[match.group(2)]
+    return symbols
+
+
+def parse_numeric_arg(value: str, symbols: dict[str, int]) -> int | None:
+    if re.fullmatch(r"-?\d+", value):
+        return int(value)
+    return symbols.get(value)
+
+
 def extract_vars(content: str, type_names: dict[str, str] | None = None) -> dict[str, int]:
     vars_found: dict[str, int] = {}
     type_names = type_names or {}
+    symbols = extract_numeric_symbols(content)
 
     for match in re.finditer(
-        r'new (?P<type>\w+Var)(?:<(?P<generic>\w+)>)?\(\s*(?:"(?P<name>\w+)"\s*,\s*)?(?P<value>-?\d+)(?:m)?',
+        r'new (?P<type>\w+Var|DynamicVar)(?:<(?P<generic>\w+)>)?\(\s*(?:"(?P<name>\w+)"\s*,\s*)?(?P<value>-?\d+|\w+)(?:m)?',
         content,
     ):
         var_type = match.group("type")
         var_name = match.group("name") or (match.group("generic") if var_type == "PowerVar" else type_names.get(var_type))
-        if var_name:
-            vars_found[var_name] = int(match.group("value"))
+        var_value = parse_numeric_arg(match.group("value"), symbols)
+        if var_name and var_value is not None:
+            vars_found[var_name] = var_value
+
+    calculated_base = vars_found.get("CalculationBase", 0)
+    for match in re.finditer(r'new (?P<type>Calculated\w*Var)(?:<[^>]+>)?\(\s*(?:"(?P<name>\w+)"|[^),]+)', content):
+        var_type = match.group("type")
+        var_name = match.group("name") or type_names.get(var_type)
+        if var_name and var_name not in vars_found:
+            vars_found[var_name] = calculated_base
 
     return vars_found
 
@@ -545,6 +572,14 @@ def split_top_level(value: str, separator: str = "|") -> list[str]:
     return parts
 
 
+def parse_placeholder_parts(placeholder: str) -> tuple[str, str | None, str]:
+    parts = split_top_level(placeholder, ":")
+    name = parts[0] if parts else ""
+    formatter = parts[1] if len(parts) > 1 else None
+    formatter_arg = ":".join(parts[2:]) if len(parts) > 2 else ""
+    return name, formatter, formatter_arg
+
+
 def find_matching_brace(markup: str, start: int) -> int:
     depth = 0
     for index in range(start, len(markup)):
@@ -565,23 +600,27 @@ def format_value(value: Any) -> str:
 
 def resolve_placeholder(
     placeholder: str,
-    vars_by_name: dict[str, int],
+    vars_by_name: dict[str, Any],
     changed_vars: set[str],
     upgraded: bool,
     style_stack: list[str],
+    current_var: str | None = None,
 ) -> list[TextRun]:
-    parts = placeholder.split(":", 2)
-    name = parts[0]
-    formatter = parts[1] if len(parts) > 1 else None
+    raw_name, formatter, formatter_arg = parse_placeholder_parts(placeholder)
+    name = raw_name or current_var or ""
     if formatter and formatter.endswith("()"):
         formatter = formatter[:-2]
-    formatter_arg = parts[2] if len(parts) > 2 else ""
+    formatter_args = ""
+    formatter_match = re.fullmatch(r"(\w+)\((.*)\)", formatter or "")
+    if formatter_match:
+        formatter = formatter_match.group(1)
+        formatter_args = formatter_match.group(2)
     style = style_stack[-1] if style_stack else None
 
     if name == "IfUpgraded" and formatter == "show":
         options = split_top_level(formatter_arg)
         selected = options[0] if upgraded else (options[1] if len(options) > 1 else "")
-        return render_text_runs(selected, vars_by_name, changed_vars, upgraded, style_stack)
+        return render_text_runs(selected, vars_by_name, changed_vars, upgraded, style_stack, current_var)
 
     if name == "InCombat":
         return []
@@ -596,14 +635,43 @@ def resolve_placeholder(
         return [TextRun(text="{" + placeholder + "}", style=style)]
 
     value = vars_by_name[name]
+    if formatter and formatter not in {"plural", "choose", "diff", "inverseDiff", "energyIcons", "starIcons", "cond"}:
+        options = split_top_level(formatter)
+        if isinstance(value, bool):
+            selected = options[0] if value else (options[1] if len(options) > 1 else "")
+            return render_text_runs(selected, vars_by_name, changed_vars, upgraded, style_stack, name)
+        return [TextRun(text="{" + placeholder + "}", style=style)]
+
     if formatter == "plural":
         options = split_top_level(formatter_arg)
-        selected = options[0] if abs(value) == 1 else (options[1] if len(options) > 1 else options[0])
-        return render_text_runs(selected, vars_by_name, changed_vars, upgraded, style_stack)
+        selected = options[0] if isinstance(value, int) and abs(value) == 1 else (options[1] if len(options) > 1 else options[0])
+        return render_text_runs(selected, vars_by_name, changed_vars, upgraded, style_stack, name)
 
-    if formatter in (None, "diff", "energyIcons", "starIcons"):
+    if formatter == "choose":
+        choices = split_top_level(formatter_args)
+        options = split_top_level(formatter_arg)
+        if choices and str(value) in choices:
+            choice_index = choices.index(str(value))
+            selected = options[choice_index] if choice_index < len(options) else ""
+        else:
+            selected = options[-1] if len(options) > len(choices) else ""
+        return render_text_runs(selected, vars_by_name, changed_vars, upgraded, style_stack, name)
+
+    if formatter == "cond":
+        condition, _, options_markup = formatter_arg.partition("?")
+        options = split_top_level(options_markup)
+        selected = ""
+        if condition.startswith(">") and isinstance(value, int):
+            threshold = parse_numeric_arg(condition[1:], {})
+            if threshold is not None and value > threshold:
+                selected = options[0] if options else ""
+            elif len(options) > 1:
+                selected = options[1]
+        return render_text_runs(selected, vars_by_name, changed_vars, upgraded, style_stack, name)
+
+    if formatter in (None, "diff", "inverseDiff", "energyIcons", "starIcons"):
         value_style = style
-        if formatter == "diff" and upgraded and name in changed_vars:
+        if formatter in {"diff", "inverseDiff"} and upgraded and name in changed_vars:
             value_style = "green" if value >= 0 else "red"
         return [TextRun(text=format_value(value), source_var=name, style=value_style)]
 
@@ -612,10 +680,11 @@ def resolve_placeholder(
 
 def render_text_runs(
     markup: str,
-    vars_by_name: dict[str, int],
+    vars_by_name: dict[str, Any],
     changed_vars: set[str],
     upgraded: bool,
     style_stack: list[str] | None = None,
+    current_var: str | None = None,
 ) -> list[TextRun]:
     style_stack = list(style_stack or [])
     runs: list[TextRun] = []
@@ -629,7 +698,7 @@ def render_text_runs(
                 append_run(runs, markup[index], style=style_stack[-1] if style_stack else None)
                 index += 1
                 continue
-            for run in resolve_placeholder(markup[index + 1 : end], vars_by_name, changed_vars, upgraded, style_stack):
+            for run in resolve_placeholder(markup[index + 1 : end], vars_by_name, changed_vars, upgraded, style_stack, current_var):
                 append_run(runs, run.text, run.source_var, run.style)
             index = end + 1
             continue
@@ -657,7 +726,7 @@ def render_text_runs(
     return runs
 
 
-def resolve_text(markup: str, vars_by_name: dict[str, int], changed_vars: set[str], upgraded: bool) -> ResolvedText:
+def resolve_text(markup: str, vars_by_name: dict[str, Any], changed_vars: set[str], upgraded: bool) -> ResolvedText:
     runs = render_text_runs(markup, vars_by_name, changed_vars, upgraded)
     return ResolvedText(plain=text_plain(runs), runs=runs)
 
@@ -666,6 +735,8 @@ def build_resolved_card(
     card_id: str,
     cost: int,
     costs_x: bool,
+    card_type: str,
+    target: str,
     vars_by_name: dict[str, int],
     upgrades: list[UpgradeDelta],
     cost_upgrades: list[CostUpgradeDelta],
@@ -677,7 +748,23 @@ def build_resolved_card(
     if missing_keys:
         raise ValueError(f"Missing required localization keys for {card_id}: {', '.join(missing_keys)}")
 
-    base_description = resolve_text(localization[description_key], vars_by_name, set(), upgraded=False)
+    base_display_vars: dict[str, Any] = {
+        **vars_by_name,
+        "CardType": card_type,
+        "TargetType": target,
+        "HasRider": False,
+        "IsTargeting": False,
+        "Sapping": False,
+        "Choking": False,
+        "Energized": False,
+        "Wisdom": False,
+        "Chaos": False,
+        "Expertise": False,
+        "Curious": False,
+        "Improvement": False,
+        "Violence": False,
+    }
+    base_description = resolve_text(localization[description_key], base_display_vars, set(), upgraded=False)
     base = ResolvedCardState(
         title=localization[title_key],
         cost=cost,
@@ -691,13 +778,34 @@ def build_resolved_card(
         if upgrade.var in upgraded_vars:
             upgraded_vars[upgrade.var] += upgrade.delta
             changed_vars.add(upgrade.var)
+            if upgrade.var == "CalculationBase":
+                for var_name in upgraded_vars:
+                    if var_name.startswith("Calculated"):
+                        upgraded_vars[var_name] = upgraded_vars["CalculationBase"]
+                        changed_vars.add(var_name)
 
     upgraded_cost = cost
     for cost_upgrade in cost_upgrades:
         if cost_upgrade.target == "cost":
             upgraded_cost = max(upgraded_cost + cost_upgrade.delta, 0)
 
-    upgraded_description = resolve_text(localization[description_key], upgraded_vars, changed_vars, upgraded=True)
+    upgraded_display_vars: dict[str, Any] = {
+        **upgraded_vars,
+        "CardType": card_type,
+        "TargetType": target,
+        "HasRider": False,
+        "IsTargeting": False,
+        "Sapping": False,
+        "Choking": False,
+        "Energized": False,
+        "Wisdom": False,
+        "Chaos": False,
+        "Expertise": False,
+        "Curious": False,
+        "Improvement": False,
+        "Violence": False,
+    }
+    upgraded_description = resolve_text(localization[description_key], upgraded_display_vars, changed_vars, upgraded=True)
     changed: list[str] = []
     if upgraded_cost != cost:
         changed.append("cost")
@@ -743,7 +851,7 @@ def parse_card(
 
     resolved: ResolvedCard | dict[str, Any] = {}
     if localization:
-        resolved = build_resolved_card(card_id, cost, costs_x, vars_by_name, upgrades, cost_upgrades, localization)
+        resolved = build_resolved_card(card_id, cost, costs_x, card_type, target, vars_by_name, upgrades, cost_upgrades, localization)
 
     return CardInfo(
         schema_version=SCHEMA_VERSION,

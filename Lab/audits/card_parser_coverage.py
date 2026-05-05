@@ -128,16 +128,43 @@ def extract_costs_x(content: str) -> bool:
     return bool(re.search(r"HasEnergyCostX\s*=>\s*true", content))
 
 
+def extract_numeric_symbols(content: str) -> dict[str, int]:
+    symbols: dict[str, int] = {}
+    for match in re.finditer(r"\b(?:public|private|protected)?\s*const\s+int\s+(\w+)\s*=\s*(-?\d+)", content):
+        symbols[match.group(1)] = int(match.group(2))
+    for match in re.finditer(r"\b(?:private|public|protected)?\s*int\s+(\w+)\s*=\s*(-?\d+)", content):
+        symbols[match.group(1)] = int(match.group(2))
+    for match in re.finditer(r"\bpublic\s+int\s+(\w+)\s*\{.*?\breturn\s+(\w+)\s*;.*?\bset\b", content, re.DOTALL):
+        if match.group(2) in symbols:
+            symbols[match.group(1)] = symbols[match.group(2)]
+    return symbols
+
+
+def parse_numeric_arg(value: str, symbols: dict[str, int]) -> int | None:
+    if re.fullmatch(r"-?\d+", value):
+        return int(value)
+    return symbols.get(value)
+
+
 def extract_source_vars(content: str, type_names: dict[str, str]) -> dict[str, int]:
     vars_found: dict[str, int] = {}
+    symbols = extract_numeric_symbols(content)
     for match in re.finditer(
-        r'new (?P<type>\w+Var)(?:<(?P<generic>\w+)>)?\(\s*(?:"(?P<name>\w+)"\s*,\s*)?(?P<value>-?\d+)(?:m)?',
+        r'new (?P<type>\w+Var|DynamicVar)(?:<(?P<generic>\w+)>)?\(\s*(?:"(?P<name>\w+)"\s*,\s*)?(?P<value>-?\d+|\w+)(?:m)?',
         content,
     ):
         var_type = match.group("type")
         var_name = match.group("name") or (match.group("generic") if var_type == "PowerVar" else type_names.get(var_type))
-        if var_name:
-            vars_found[var_name] = int(match.group("value"))
+        var_value = parse_numeric_arg(match.group("value"), symbols)
+        if var_name and var_value is not None:
+            vars_found[var_name] = var_value
+
+    calculated_base = vars_found.get("CalculationBase", 0)
+    for match in re.finditer(r'new (?P<type>Calculated\w*Var)(?:<[^>]+>)?\(\s*(?:"(?P<name>\w+)"|[^),]+)', content):
+        var_type = match.group("type")
+        var_name = match.group("name") or type_names.get(var_type)
+        if var_name and var_name not in vars_found:
+            vars_found[var_name] = calculated_base
 
     return vars_found
 
