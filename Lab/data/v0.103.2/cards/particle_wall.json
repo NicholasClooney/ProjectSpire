@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "PARTICLE_WALL",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "ParticleWall",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ParticleWall.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "PARTICLE_WALL.title",
@@ -35,6 +40,10 @@
     "base": {
       "title": "Particle Wall",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Gain 9 Block.\nReturn this card to your Hand.",
         "runs": [
@@ -68,6 +77,10 @@
     "upgraded": {
       "title": "Particle Wall+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Gain 12 Block.\nReturn this card to your Hand.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SWORD_SAGE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "SwordSage",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SwordSage.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "SWORD_SAGE.title",
@@ -55,6 +60,10 @@
     "base": {
       "title": "Sword Sage",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Sovereign Blade now hits an additional time.",
         "runs": [
@@ -71,6 +80,10 @@
     "upgraded": {
       "title": "Sword Sage+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Sovereign Blade now hits an additional time.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "DEMON_FORM",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "DemonForm",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DemonForm.cs",
     "cost": 3,
+    "energy_cost": {
+      "kind": "int",
+      "value": 3
+    },
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "DEMON_FORM.title",
@@ -49,6 +54,10 @@
     "base": {
       "title": "Demon Form",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "At the start of your turn, gain 2 Strength.",
         "runs": [
@@ -75,6 +84,10 @@
     "upgraded": {
       "title": "Demon Form+",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "At the start of your turn, gain 3 Strength.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "BULLET_TIME",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "BulletTime",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BulletTime.cs",
     "cost": 3,
+    "energy_cost": {
+      "kind": "int",
+      "value": 3
+    },
     "type": "Skill",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "BULLET_TIME.title",
@@ -40,6 +45,10 @@
     "base": {
       "title": "Bullet Time",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "You cannot draw additional cards this turn. ALL cards in your Hand are free to play this turn.",
         "runs": [
@@ -59,6 +68,10 @@
     "upgraded": {
       "title": "Bullet Time+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "You cannot draw additional cards this turn. ALL cards in your Hand are free to play this turn.",
         "runs": [

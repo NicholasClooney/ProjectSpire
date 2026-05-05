@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "NOT_YET",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "NotYet",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/NotYet.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Skill",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "NOT_YET.title",
@@ -38,6 +43,10 @@
     "base": {
       "title": "Not Yet",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Heal 10 HP.",
         "runs": [
@@ -57,6 +66,10 @@
     "upgraded": {
       "title": "Not Yet+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Heal 13 HP.",
         "runs": [

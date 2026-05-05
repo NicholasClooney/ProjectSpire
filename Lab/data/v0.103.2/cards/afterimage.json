@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "AFTERIMAGE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Afterimage",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Afterimage.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "AFTERIMAGE.title",
@@ -46,6 +51,10 @@
     "base": {
       "title": "Afterimage",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Whenever you play a card, gain 1 Block.",
         "runs": [
@@ -72,6 +81,10 @@
     "upgraded": {
       "title": "Afterimage+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Whenever you play a card, gain 1 Block.",
         "runs": [

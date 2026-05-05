@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "DEADLY_POISON",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "DeadlyPoison",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DeadlyPoison.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Common",
     "target": "AnyEnemy",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "DEADLY_POISON.title",
@@ -49,6 +54,10 @@
     "base": {
       "title": "Deadly Poison",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Apply 5 Poison.",
         "runs": [
@@ -75,6 +84,10 @@
     "upgraded": {
       "title": "Deadly Poison+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Apply 7 Poison.",
         "runs": [

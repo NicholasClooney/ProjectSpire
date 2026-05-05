@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "WHITE_NOISE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "WhiteNoise",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/WhiteNoise.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "defect",
     "localization": {
       "table": "cards",
       "title_key": "WHITE_NOISE.title",
@@ -36,6 +41,10 @@
     "base": {
       "title": "White Noise",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Add a random Power into your Hand. It's free to play this turn.",
         "runs": [
@@ -55,6 +64,10 @@
     "upgraded": {
       "title": "White Noise+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Add a random Power into your Hand. It's free to play this turn.",
         "runs": [

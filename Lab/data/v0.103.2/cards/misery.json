@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "MISERY",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Misery",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Misery.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AnyEnemy",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "MISERY.title",
@@ -43,6 +48,10 @@
     "base": {
       "title": "Misery",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 7 damage.\nApply any debuffs on the enemy to ALL other enemies.",
         "runs": [
@@ -62,6 +71,10 @@
     "upgraded": {
       "title": "Misery+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 9 damage.\nApply any debuffs on the enemy to ALL other enemies.",
         "runs": [

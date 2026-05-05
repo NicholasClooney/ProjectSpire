@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "BARRICADE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Barricade",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Barricade.cs",
     "cost": 3,
+    "energy_cost": {
+      "kind": "int",
+      "value": 3
+    },
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "BARRICADE.title",
@@ -47,6 +52,10 @@
     "base": {
       "title": "Barricade",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Block is not removed at the start of your turn.",
         "runs": [
@@ -63,6 +72,10 @@
     "upgraded": {
       "title": "Barricade+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Block is not removed at the start of your turn.",
         "runs": [

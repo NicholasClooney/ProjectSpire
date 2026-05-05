@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "BOMBARDMENT",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Bombardment",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Bombardment.cs",
     "cost": 3,
+    "energy_cost": {
+      "kind": "int",
+      "value": 3
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AnyEnemy",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "BOMBARDMENT.title",
@@ -43,6 +48,10 @@
     "base": {
       "title": "Bombardment",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Deal 18 damage.\nAt the start of your turn, if this is in your Exhaust Pile, play it.",
         "runs": [
@@ -69,6 +78,10 @@
     "upgraded": {
       "title": "Bombardment+",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Deal 24 damage.\nAt the start of your turn, if this is in your Exhaust Pile, play it.",
         "runs": [

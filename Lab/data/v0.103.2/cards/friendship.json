@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "FRIENDSHIP",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Friendship",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Friendship.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Power",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "FRIENDSHIP.title",
@@ -48,6 +53,10 @@
     "base": {
       "title": "Friendship",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Lose 2 Strength.\nGain 1 at the start of each turn.",
         "runs": [
@@ -81,6 +90,10 @@
     "upgraded": {
       "title": "Friendship+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Lose 1 Strength.\nGain 1 at the start of each turn.",
         "runs": [

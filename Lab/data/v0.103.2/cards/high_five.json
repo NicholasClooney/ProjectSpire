@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "HIGH_FIVE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "HighFive",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HighFive.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AllEnemies",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "HIGH_FIVE.title",
@@ -57,6 +62,10 @@
     "base": {
       "title": "High Five",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Osty deals 11 damage\nand applies 2 Vulnerable\nto ALL enemies.",
         "runs": [
@@ -94,6 +103,10 @@
     "upgraded": {
       "title": "High Five+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Osty deals 13 damage\nand applies 3 Vulnerable\nto ALL enemies.",
         "runs": [

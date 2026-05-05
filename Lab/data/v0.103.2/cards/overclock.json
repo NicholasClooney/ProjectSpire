@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "OVERCLOCK",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Overclock",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Overclock.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "defect",
     "localization": {
       "table": "cards",
       "title_key": "OVERCLOCK.title",
@@ -49,6 +54,10 @@
     "base": {
       "title": "Overclock",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Draw 2 cards.\nAdd a Burn into your Discard Pile.",
         "runs": [
@@ -82,6 +91,10 @@
     "upgraded": {
       "title": "Overclock+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Draw 3 cards.\nAdd a Burn into your Discard Pile.",
         "runs": [

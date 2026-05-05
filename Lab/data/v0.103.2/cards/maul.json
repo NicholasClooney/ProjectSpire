@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "MAUL",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Maul",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Maul.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Ancient",
     "target": "AnyEnemy",
+    "card_pool": "event",
     "localization": {
       "table": "cards",
       "title_key": "MAUL.title",
@@ -45,6 +50,10 @@
     "base": {
       "title": "Maul",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 5 damage twice.\nIncrease the damage of ALL Maul cards by 1 this combat.",
         "runs": [
@@ -71,6 +80,10 @@
     "upgraded": {
       "title": "Maul+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 6 damage twice.\nIncrease the damage of ALL Maul cards by 2 this combat.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "FINESSE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Finesse",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Finesse.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "colorless",
     "localization": {
       "table": "cards",
       "title_key": "FINESSE.title",
@@ -36,6 +41,10 @@
     "base": {
       "title": "Finesse",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Gain 4 Block.\nDraw 1 card.",
         "runs": [
@@ -62,6 +71,10 @@
     "upgraded": {
       "title": "Finesse+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Gain 7 Block.\nDraw 1 card.",
         "runs": [

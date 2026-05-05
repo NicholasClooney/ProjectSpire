@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "LEADING_STRIKE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "LeadingStrike",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/LeadingStrike.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Common",
     "target": "AnyEnemy",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "LEADING_STRIKE.title",
@@ -58,6 +63,10 @@
     "base": {
       "title": "Leading Strike",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 3 damage.\nAdd 2 Shivs into your Hand.",
         "runs": [
@@ -98,6 +107,10 @@
     "upgraded": {
       "title": "Leading Strike+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 6 damage.\nAdd 2 Shivs into your Hand.",
         "runs": [

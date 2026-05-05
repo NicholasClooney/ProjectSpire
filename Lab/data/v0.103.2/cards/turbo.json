@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "TURBO",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Turbo",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Turbo.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Common",
     "target": "Self",
+    "card_pool": "defect",
     "localization": {
       "table": "cards",
       "title_key": "TURBO.title",
@@ -54,6 +59,10 @@
     "base": {
       "title": "TURBO",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Gain 2.\nAdd a Void into your Discard Pile.",
         "runs": [
@@ -87,6 +96,10 @@
     "upgraded": {
       "title": "TURBO+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Gain 3.\nAdd a Void into your Discard Pile.",
         "runs": [

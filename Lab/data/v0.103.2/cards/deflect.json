@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "DEFLECT",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Deflect",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Deflect.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Common",
     "target": "Self",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "DEFLECT.title",
@@ -35,6 +40,10 @@
     "base": {
       "title": "Deflect",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Gain 4 Block.",
         "runs": [
@@ -61,6 +70,10 @@
     "upgraded": {
       "title": "Deflect+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Gain 7 Block.",
         "runs": [

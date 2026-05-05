@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "TRASH_TO_TREASURE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "TrashToTreasure",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TrashToTreasure.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "defect",
     "localization": {
       "table": "cards",
       "title_key": "TRASH_TO_TREASURE.title",
@@ -48,6 +53,10 @@
     "base": {
       "title": "Trash to Treasure",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Whenever you create a Status, Channel 1 random Orb.",
         "runs": [
@@ -67,6 +76,10 @@
     "upgraded": {
       "title": "Trash to Treasure+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Whenever you create a Status, Channel 1 random Orb.",
         "runs": [

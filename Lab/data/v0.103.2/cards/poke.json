@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "POKE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Poke",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Poke.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Attack",
     "rarity": "Common",
     "target": "AnyEnemy",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "POKE.title",
@@ -38,6 +43,10 @@
     "base": {
       "title": "Poke",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Osty deals 6 damage.",
         "runs": [
@@ -61,6 +70,10 @@
     "upgraded": {
       "title": "Poke+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Osty deals 9 damage.",
         "runs": [

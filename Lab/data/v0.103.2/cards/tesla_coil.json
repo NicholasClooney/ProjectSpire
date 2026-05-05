@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "TESLA_COIL",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "TeslaCoil",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TeslaCoil.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
+    "card_pool": "defect",
     "localization": {
       "table": "cards",
       "title_key": "TESLA_COIL.title",
@@ -47,6 +52,10 @@
     "base": {
       "title": "Tesla Coil",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 3 damage.\nTrigger all Lightning against the enemy.",
         "runs": [
@@ -73,6 +82,10 @@
     "upgraded": {
       "title": "Tesla Coil+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 6 damage.\nTrigger all Lightning against the enemy.",
         "runs": [

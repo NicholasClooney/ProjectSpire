@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "PROTECTOR",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Protector",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Protector.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Ancient",
     "target": "AnyEnemy",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "PROTECTOR.title",
@@ -46,6 +51,10 @@
     "base": {
       "title": "Protector",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Osty deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to Osty's Max HP.",
         "runs": [
@@ -76,6 +85,10 @@
     "upgraded": {
       "title": "Protector+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Osty deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to Osty's Max HP.",
         "runs": [

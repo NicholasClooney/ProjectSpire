@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "TOXIC",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Toxic",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Toxic.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Status",
     "rarity": "Status",
     "target": "None",
+    "card_pool": "status",
     "localization": {
       "table": "cards",
       "title_key": "TOXIC.title",
@@ -32,6 +37,10 @@
     "base": {
       "title": "Toxic",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "At the end of your turn, if this is in your Hand, take 5 damage.",
         "runs": [
@@ -58,6 +67,10 @@
     "upgraded": {
       "title": "Toxic+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "At the end of your turn, if this is in your Hand, take 5 damage.",
         "runs": [

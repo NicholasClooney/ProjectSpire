@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "WRAITH_FORM",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "WraithForm",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/WraithForm.cs",
     "cost": 3,
+    "energy_cost": {
+      "kind": "int",
+      "value": 3
+    },
     "type": "Power",
     "rarity": "Ancient",
     "target": "Self",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "WRAITH_FORM.title",
@@ -60,6 +65,10 @@
     "base": {
       "title": "Wraith Form",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Gain 2 Intangible.\nAt the start of your turn, lose 1 Dexterity.",
         "runs": [
@@ -100,6 +109,10 @@
     "upgraded": {
       "title": "Wraith Form+",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Gain 3 Intangible.\nAt the start of your turn, lose 1 Dexterity.",
         "runs": [

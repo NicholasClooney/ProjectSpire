@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SCRAPE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Scrape",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Scrape.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
+    "card_pool": "defect",
     "localization": {
       "table": "cards",
       "title_key": "SCRAPE.title",
@@ -40,6 +45,10 @@
     "base": {
       "title": "Scrape",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 7 damage.\nDraw 4 cards.\nDiscard all cards drawn this way that do not cost 0 .",
         "runs": [
@@ -66,6 +75,10 @@
     "upgraded": {
       "title": "Scrape+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 10 damage.\nDraw 5 cards.\nDiscard all cards drawn this way that do not cost 0 .",
         "runs": [

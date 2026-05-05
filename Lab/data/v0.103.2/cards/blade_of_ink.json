@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "BLADE_OF_INK",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "BladeOfInk",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BladeOfInk.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "BLADE_OF_INK.title",
@@ -54,6 +59,10 @@
     "base": {
       "title": "Blade of Ink",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Add 2 Inky Shivs into your Hand.",
         "runs": [
@@ -94,6 +103,10 @@
     "upgraded": {
       "title": "Blade of Ink+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Add 3 Inky Shivs into your Hand.",
         "runs": [

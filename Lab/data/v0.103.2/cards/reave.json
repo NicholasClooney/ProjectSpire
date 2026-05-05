@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "REAVE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Reave",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Reave.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Common",
     "target": "AnyEnemy",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "REAVE.title",
@@ -43,6 +48,10 @@
     "base": {
       "title": "Reave",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 9 damage.\nAdd a Soul into your Draw Pile.",
         "runs": [
@@ -76,6 +85,10 @@
     "upgraded": {
       "title": "Reave+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 11 damage.\nAdd a Soul+ into your Draw Pile.",
         "runs": [

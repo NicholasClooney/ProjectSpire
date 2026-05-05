@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "MANIFEST_AUTHORITY",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "ManifestAuthority",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ManifestAuthority.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "MANIFEST_AUTHORITY.title",
@@ -47,6 +52,10 @@
     "base": {
       "title": "Manifest Authority",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain 7 Block.\nAdd 1 random Colorless card into your Hand.",
         "runs": [
@@ -80,6 +89,10 @@
     "upgraded": {
       "title": "Manifest Authority+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain 8 Block.\nAdd 1 random Upgraded Colorless card into your Hand.",
         "runs": [

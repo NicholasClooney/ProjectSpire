@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "BEAM_CELL",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "BeamCell",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BeamCell.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Attack",
     "rarity": "Common",
     "target": "AnyEnemy",
+    "card_pool": "defect",
     "localization": {
       "table": "cards",
       "title_key": "BEAM_CELL.title",
@@ -54,6 +59,10 @@
     "base": {
       "title": "Beam Cell",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 3 damage.\nApply 1 Vulnerable.",
         "runs": [
@@ -87,6 +96,10 @@
     "upgraded": {
       "title": "Beam Cell+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 4 damage.\nApply 2 Vulnerable.",
         "runs": [

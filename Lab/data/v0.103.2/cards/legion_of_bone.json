@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "LEGION_OF_BONE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "LegionOfBone",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/LegionOfBone.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "AllAllies",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "LEGION_OF_BONE.title",
@@ -43,6 +48,10 @@
     "base": {
       "title": "Legion of Bone",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "ALL players Summon 6.",
         "runs": [
@@ -69,6 +78,10 @@
     "upgraded": {
       "title": "Legion of Bone+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "ALL players Summon 8.",
         "runs": [

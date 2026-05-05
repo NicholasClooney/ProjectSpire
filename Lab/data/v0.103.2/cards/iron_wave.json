@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "IRON_WAVE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "IronWave",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/IronWave.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Common",
     "target": "AnyEnemy",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "IRON_WAVE.title",
@@ -40,6 +45,10 @@
     "base": {
       "title": "Iron Wave",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain 5 Block.\nDeal 5 damage.",
         "runs": [
@@ -73,6 +82,10 @@
     "upgraded": {
       "title": "Iron Wave+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain 7 Block.\nDeal 7 damage.",
         "runs": [

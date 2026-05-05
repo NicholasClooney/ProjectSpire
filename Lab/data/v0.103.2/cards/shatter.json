@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SHATTER",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Shatter",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Shatter.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AllEnemies",
+    "card_pool": "defect",
     "localization": {
       "table": "cards",
       "title_key": "SHATTER.title",
@@ -47,6 +52,10 @@
     "base": {
       "title": "Shatter",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 11 damage to ALL enemies.\nEvoke all of your Orbs.",
         "runs": [
@@ -73,6 +82,10 @@
     "upgraded": {
       "title": "Shatter+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 15 damage to ALL enemies.\nEvoke all of your Orbs.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "MOLTEN_FIST",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "MoltenFist",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MoltenFist.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Common",
     "target": "AnyEnemy",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "MOLTEN_FIST.title",
@@ -52,6 +57,10 @@
     "base": {
       "title": "Molten Fist",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 10 damage.\nDouble the enemy's Vulnerable.",
         "runs": [
@@ -78,6 +87,10 @@
     "upgraded": {
       "title": "Molten Fist+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 14 damage.\nDouble the enemy's Vulnerable.",
         "runs": [

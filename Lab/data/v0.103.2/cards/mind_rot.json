@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "MIND_ROT",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "MindRot",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MindRot.cs",
     "cost": -1,
+    "energy_cost": {
+      "kind": "int",
+      "value": -1
+    },
     "type": "Status",
     "rarity": "Status",
     "target": "None",
+    "card_pool": "token",
     "localization": {
       "table": "cards",
       "title_key": "MIND_ROT.title",
@@ -36,6 +41,10 @@
     "base": {
       "title": "Mind Rot",
       "cost": -1,
+      "energy_cost": {
+        "kind": "int",
+        "value": -1
+      },
       "description": {
         "plain": "Draw 1 fewer card each turn.",
         "runs": [
@@ -55,6 +64,10 @@
     "upgraded": {
       "title": "Mind Rot+",
       "cost": -1,
+      "energy_cost": {
+        "kind": "int",
+        "value": -1
+      },
       "description": {
         "plain": "Draw 1 fewer card each turn.",
         "runs": [

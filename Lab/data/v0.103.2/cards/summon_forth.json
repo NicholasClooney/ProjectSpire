@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SUMMON_FORTH",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "SummonForth",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SummonForth.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "SUMMON_FORTH.title",
@@ -43,6 +48,10 @@
     "base": {
       "title": "Summon Forth",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Forge 8.\nPut Sovereign Blade into your Hand from anywhere.",
         "runs": [
@@ -80,6 +89,10 @@
     "upgraded": {
       "title": "Summon Forth+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Forge 11.\nPut Sovereign Blade into your Hand from anywhere.",
         "runs": [

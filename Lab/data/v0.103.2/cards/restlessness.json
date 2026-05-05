@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "RESTLESSNESS",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Restlessness",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Restlessness.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "colorless",
     "localization": {
       "table": "cards",
       "title_key": "RESTLESSNESS.title",
@@ -43,6 +48,10 @@
     "base": {
       "title": "Restlessness",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "If your Hand is empty, draw 2 cards and gain 2.",
         "runs": [
@@ -76,6 +85,10 @@
     "upgraded": {
       "title": "Restlessness+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "If your Hand is empty, draw 3 cards and gain 3.",
         "runs": [

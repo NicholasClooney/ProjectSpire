@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "CALCULATED_GAMBLE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "CalculatedGamble",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CalculatedGamble.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "CALCULATED_GAMBLE.title",
@@ -30,6 +35,10 @@
     "base": {
       "title": "Calculated Gamble",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Discard your Hand,\nthen draw that many cards.",
         "runs": [
@@ -49,6 +58,10 @@
     "upgraded": {
       "title": "Calculated Gamble+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Discard your Hand,\nthen draw that many cards.",
         "runs": [

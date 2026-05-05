@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "DRAIN_POWER",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "DrainPower",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DrainPower.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Common",
     "target": "AnyEnemy",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "DRAIN_POWER.title",
@@ -40,6 +45,10 @@
     "base": {
       "title": "Drain Power",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 10 damage.\nUpgrade 2 random cards in your Discard Pile.",
         "runs": [
@@ -80,6 +89,10 @@
     "upgraded": {
       "title": "Drain Power+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 12 damage.\nUpgrade 3 random cards in your Discard Pile.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "OFFERING",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Offering",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Offering.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "OFFERING.title",
@@ -40,6 +45,10 @@
     "base": {
       "title": "Offering",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Lose 6 HP.\nGain 2.\nDraw 3 cards.",
         "runs": [
@@ -73,6 +82,10 @@
     "upgraded": {
       "title": "Offering+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Lose 6 HP.\nGain 2.\nDraw 5 cards.",
         "runs": [

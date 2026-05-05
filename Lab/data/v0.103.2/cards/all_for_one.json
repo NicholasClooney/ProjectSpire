@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "ALL_FOR_ONE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "AllForOne",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/AllForOne.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AnyEnemy",
+    "card_pool": "defect",
     "localization": {
       "table": "cards",
       "title_key": "ALL_FOR_ONE.title",
@@ -35,6 +40,10 @@
     "base": {
       "title": "All for One",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal 10 damage.\nPut ALL 0 cards from your Discard Pile into your Hand.",
         "runs": [
@@ -68,6 +77,10 @@
     "upgraded": {
       "title": "All for One+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal 14 damage.\nPut ALL 0 cards from your Discard Pile into your Hand.",
         "runs": [

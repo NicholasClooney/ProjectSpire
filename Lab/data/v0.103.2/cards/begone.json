@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "BEGONE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Begone",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Begone.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Common",
     "target": "Self",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "BEGONE.title",
@@ -45,6 +50,10 @@
     "base": {
       "title": "BEGONE!",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Choose a card in your Hand to Transform into Minion Strike.",
         "runs": [
@@ -78,6 +87,10 @@
     "upgraded": {
       "title": "BEGONE!+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Choose a card in your Hand to Transform into Minion Strike+.",
         "runs": [

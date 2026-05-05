@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "DAZED",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Dazed",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Dazed.cs",
     "cost": -1,
+    "energy_cost": {
+      "kind": "int",
+      "value": -1
+    },
     "type": "Status",
     "rarity": "Status",
     "target": "None",
+    "card_pool": "status",
     "localization": {
       "table": "cards",
       "title_key": "DAZED.title",
@@ -30,6 +35,10 @@
     "base": {
       "title": "Dazed",
       "cost": -1,
+      "energy_cost": {
+        "kind": "int",
+        "value": -1
+      },
       "description": {
         "plain": ""
       }
@@ -37,6 +46,10 @@
     "upgraded": {
       "title": "Dazed+",
       "cost": -1,
+      "energy_cost": {
+        "kind": "int",
+        "value": -1
+      },
       "description": {
         "plain": ""
       }

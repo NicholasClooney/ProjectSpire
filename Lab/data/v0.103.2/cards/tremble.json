@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "TREMBLE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Tremble",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Tremble.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Common",
     "target": "AnyEnemy",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "TREMBLE.title",
@@ -52,6 +57,10 @@
     "base": {
       "title": "Tremble",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Apply 3 Vulnerable.",
         "runs": [
@@ -78,6 +87,10 @@
     "upgraded": {
       "title": "Tremble+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Apply 4 Vulnerable.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "ULTIMATE_DEFEND",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "UltimateDefend",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/UltimateDefend.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "colorless",
     "localization": {
       "table": "cards",
       "title_key": "ULTIMATE_DEFEND.title",
@@ -43,6 +48,10 @@
     "base": {
       "title": "Ultimate Defend",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain 11 Block.",
         "runs": [
@@ -69,6 +78,10 @@
     "upgraded": {
       "title": "Ultimate Defend+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain 15 Block.",
         "runs": [

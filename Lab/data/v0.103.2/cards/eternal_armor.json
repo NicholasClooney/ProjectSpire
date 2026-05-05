@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "ETERNAL_ARMOR",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "EternalArmor",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/EternalArmor.cs",
     "cost": 3,
+    "energy_cost": {
+      "kind": "int",
+      "value": 3
+    },
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "colorless",
     "localization": {
       "table": "cards",
       "title_key": "ETERNAL_ARMOR.title",
@@ -54,6 +59,10 @@
     "base": {
       "title": "Eternal Armor",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Gain 9 Plating.",
         "runs": [
@@ -80,6 +89,10 @@
     "upgraded": {
       "title": "Eternal Armor+",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Gain 12 Plating.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "GANG_UP",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "GangUp",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GangUp.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
+    "card_pool": "colorless",
     "localization": {
       "table": "cards",
       "title_key": "GANG_UP.title",
@@ -41,6 +46,10 @@
     "base": {
       "title": "Gang Up",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 5 additional damage for each time another player has attacked the enemy this turn.",
         "runs": [
@@ -60,6 +69,10 @@
     "upgraded": {
       "title": "Gang Up+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 7 additional damage for each time another player has attacked the enemy this turn.",
         "runs": [

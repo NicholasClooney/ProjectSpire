@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "DEBT",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Debt",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Debt.cs",
     "cost": -1,
+    "energy_cost": {
+      "kind": "int",
+      "value": -1
+    },
     "type": "Curse",
     "rarity": "Curse",
     "target": "None",
+    "card_pool": "curse",
     "localization": {
       "table": "cards",
       "title_key": "DEBT.title",
@@ -32,6 +37,10 @@
     "base": {
       "title": "Debt",
       "cost": -1,
+      "energy_cost": {
+        "kind": "int",
+        "value": -1
+      },
       "description": {
         "plain": "At the end of your turn, if this is in your Hand, lose 10 Gold.",
         "runs": [
@@ -65,6 +74,10 @@
     "upgraded": {
       "title": "Debt+",
       "cost": -1,
+      "energy_cost": {
+        "kind": "int",
+        "value": -1
+      },
       "description": {
         "plain": "At the end of your turn, if this is in your Hand, lose 10 Gold.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "ADAPTIVE_STRIKE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "AdaptiveStrike",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/AdaptiveStrike.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AnyEnemy",
+    "card_pool": "defect",
     "localization": {
       "table": "cards",
       "title_key": "ADAPTIVE_STRIKE.title",
@@ -43,6 +48,10 @@
     "base": {
       "title": "Adaptive Strike",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal 18 damage.\nAdd a 0 copy of this card into your Discard Pile.",
         "runs": [
@@ -69,6 +78,10 @@
     "upgraded": {
       "title": "Adaptive Strike+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal 23 damage.\nAdd a 0 copy of this card into your Discard Pile.",
         "runs": [

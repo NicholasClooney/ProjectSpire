@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "MACHINE_LEARNING",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "MachineLearning",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MachineLearning.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "defect",
     "localization": {
       "table": "cards",
       "title_key": "MACHINE_LEARNING.title",
@@ -39,6 +44,10 @@
     "base": {
       "title": "Machine Learning",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "At the start of your turn, draw 1 additional card.",
         "runs": [
@@ -58,6 +67,10 @@
     "upgraded": {
       "title": "Machine Learning+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "At the start of your turn, draw 1 additional card.",
         "runs": [

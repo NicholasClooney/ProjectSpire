@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "ROLLING_BOULDER",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "RollingBoulder",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/RollingBoulder.cs",
     "cost": 3,
+    "energy_cost": {
+      "kind": "int",
+      "value": 3
+    },
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "colorless",
     "localization": {
       "table": "cards",
       "title_key": "ROLLING_BOULDER.title",
@@ -48,6 +53,10 @@
     "base": {
       "title": "Rolling Boulder",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "At the start of your turn, deal 5 damage to ALL enemies and increase this damage by 5.",
         "runs": [
@@ -74,6 +83,10 @@
     "upgraded": {
       "title": "Rolling Boulder+",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "At the start of your turn, deal 10 damage to ALL enemies and increase this damage by 5.",
         "runs": [

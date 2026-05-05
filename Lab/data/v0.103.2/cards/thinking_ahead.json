@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "THINKING_AHEAD",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "ThinkingAhead",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ThinkingAhead.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "colorless",
     "localization": {
       "table": "cards",
       "title_key": "THINKING_AHEAD.title",
@@ -32,6 +37,10 @@
     "base": {
       "title": "Thinking Ahead",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Draw 2 cards.\nPut 1 card from your Hand on top of your Draw Pile.",
         "runs": [
@@ -65,6 +74,10 @@
     "upgraded": {
       "title": "Thinking Ahead+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Draw 2 cards.\nPut 1 card from your Hand on top of your Draw Pile.",
         "runs": [

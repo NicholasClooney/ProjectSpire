@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "DEPRECATED_CARD",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "DeprecatedCard",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DeprecatedCard.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Status",
     "rarity": "Status",
     "target": "None",
+    "card_pool": "token",
     "localization": {
       "table": "cards",
       "title_key": "DEPRECATED_CARD.title",
@@ -22,6 +27,10 @@
     "base": {
       "title": "Deprecated Card",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "This card was removed in a recent update.\nDraw 1 card.\nRemove this from your Deck.",
         "runs": [
@@ -45,6 +54,10 @@
     "upgraded": {
       "title": "Deprecated Card+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "This card was removed in a recent update.\nDraw 1 card.\nRemove this from your Deck.",
         "runs": [

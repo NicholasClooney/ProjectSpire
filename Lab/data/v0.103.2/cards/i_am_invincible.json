@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "I_AM_INVINCIBLE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "IAmInvincible",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/IAmInvincible.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "I_AM_INVINCIBLE.title",
@@ -40,6 +45,10 @@
     "base": {
       "title": "I Am Invincible",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain 10 Block.\nAt the end of your turn, if this is on top of your Draw Pile, play it.",
         "runs": [
@@ -73,6 +82,10 @@
     "upgraded": {
       "title": "I Am Invincible+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain 13 Block.\nAt the end of your turn, if this is on top of your Draw Pile, play it.",
         "runs": [

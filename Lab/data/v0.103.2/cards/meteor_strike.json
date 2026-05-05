@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "METEOR_STRIKE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "MeteorStrike",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MeteorStrike.cs",
     "cost": 5,
+    "energy_cost": {
+      "kind": "int",
+      "value": 5
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AnyEnemy",
+    "card_pool": "defect",
     "localization": {
       "table": "cards",
       "title_key": "METEOR_STRIKE.title",
@@ -50,6 +55,10 @@
     "base": {
       "title": "Meteor Strike",
       "cost": 5,
+      "energy_cost": {
+        "kind": "int",
+        "value": 5
+      },
       "description": {
         "plain": "Deal 24 damage.\nChannel 3 Plasma.",
         "runs": [
@@ -83,6 +92,10 @@
     "upgraded": {
       "title": "Meteor Strike+",
       "cost": 5,
+      "energy_cost": {
+        "kind": "int",
+        "value": 5
+      },
       "description": {
         "plain": "Deal 30 damage.\nChannel 3 Plasma.",
         "runs": [

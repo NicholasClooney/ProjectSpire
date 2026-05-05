@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "BASH",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Bash",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Bash.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Attack",
     "rarity": "Basic",
     "target": "AnyEnemy",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "BASH.title",
@@ -54,6 +59,10 @@
     "base": {
       "title": "Bash",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal 8 damage.\nApply 2 Vulnerable.",
         "runs": [
@@ -87,6 +96,10 @@
     "upgraded": {
       "title": "Bash+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal 10 damage.\nApply 3 Vulnerable.",
         "runs": [

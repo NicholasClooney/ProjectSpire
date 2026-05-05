@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "MANGLE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Mangle",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Mangle.cs",
     "cost": 3,
+    "energy_cost": {
+      "kind": "int",
+      "value": 3
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AnyEnemy",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "MANGLE.title",
@@ -54,6 +59,10 @@
     "base": {
       "title": "Mangle",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Deal 15 damage.\nEnemy loses 10 Strength this turn.",
         "runs": [
@@ -87,6 +96,10 @@
     "upgraded": {
       "title": "Mangle+",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Deal 20 damage.\nEnemy loses 15 Strength this turn.",
         "runs": [

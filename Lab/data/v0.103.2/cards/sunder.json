@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SUNDER",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Sunder",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Sunder.cs",
     "cost": 3,
+    "energy_cost": {
+      "kind": "int",
+      "value": 3
+    },
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
+    "card_pool": "defect",
     "localization": {
       "table": "cards",
       "title_key": "SUNDER.title",
@@ -36,6 +41,10 @@
     "base": {
       "title": "Sunder",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Deal 24 damage.\nIf this kills an enemy, gain 3.",
         "runs": [
@@ -62,6 +71,10 @@
     "upgraded": {
       "title": "Sunder+",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Deal 32 damage.\nIf this kills an enemy, gain 3.",
         "runs": [

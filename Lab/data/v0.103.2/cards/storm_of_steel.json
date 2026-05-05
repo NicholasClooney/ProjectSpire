@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "STORM_OF_STEEL",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "StormOfSteel",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/StormOfSteel.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "STORM_OF_STEEL.title",
@@ -40,6 +45,10 @@
     "base": {
       "title": "Storm of Steel",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Discard your Hand.\nAdd 1 Shiv into your Hand for each card discarded.",
         "runs": [
@@ -73,6 +82,10 @@
     "upgraded": {
       "title": "Storm of Steel+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Discard your Hand.\nAdd 1 Shiv+ into your Hand for each card discarded.",
         "runs": [

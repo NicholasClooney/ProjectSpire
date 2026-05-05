@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "FALLING_STAR",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "FallingStar",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FallingStar.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Attack",
     "rarity": "Basic",
     "target": "AnyEnemy",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "FALLING_STAR.title",
@@ -66,6 +71,10 @@
     "base": {
       "title": "Falling Star",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 8 damage.\nApply 1 Weak.\nApply 1 Vulnerable.",
         "runs": [
@@ -113,6 +122,10 @@
     "upgraded": {
       "title": "Falling Star+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 12 damage.\nApply 1 Weak.\nApply 1 Vulnerable.",
         "runs": [

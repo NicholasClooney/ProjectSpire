@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "KINGLY_PUNCH",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "KinglyPunch",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/KinglyPunch.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "KINGLY_PUNCH.title",
@@ -45,6 +50,10 @@
     "base": {
       "title": "Kingly Punch",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 8 damage.\nWhenever you draw this card, increase its damage by 4 this combat.",
         "runs": [
@@ -71,6 +80,10 @@
     "upgraded": {
       "title": "Kingly Punch+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 10 damage.\nWhenever you draw this card, increase its damage by 6 this combat.",
         "runs": [

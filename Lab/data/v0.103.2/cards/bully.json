@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "BULLY",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Bully",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Bully.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "BULLY.title",
@@ -43,6 +48,10 @@
     "base": {
       "title": "Bully",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 2 additional damage for each Vulnerable on the enemy.",
         "runs": [
@@ -69,6 +78,10 @@
     "upgraded": {
       "title": "Bully+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 3 additional damage for each Vulnerable on the enemy.",
         "runs": [

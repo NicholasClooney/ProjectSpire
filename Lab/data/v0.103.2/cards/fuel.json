@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "FUEL",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Fuel",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Fuel.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Token",
     "target": "Self",
+    "card_pool": "token",
     "localization": {
       "table": "cards",
       "title_key": "FUEL.title",
@@ -44,6 +49,10 @@
     "base": {
       "title": "Fuel",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Gain 1.\nDraw 1 card.",
         "runs": [
@@ -70,6 +79,10 @@
     "upgraded": {
       "title": "Fuel+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Gain 1.\nDraw 2 cards.",
         "runs": [

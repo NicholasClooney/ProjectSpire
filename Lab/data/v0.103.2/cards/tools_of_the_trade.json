@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "TOOLS_OF_THE_TRADE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "ToolsOfTheTrade",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ToolsOfTheTrade.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "TOOLS_OF_THE_TRADE.title",
@@ -40,6 +45,10 @@
     "base": {
       "title": "Tools of the Trade",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "At the start of your turn, draw 1 card and discard 1 card.",
         "runs": [
@@ -52,6 +61,10 @@
     "upgraded": {
       "title": "Tools of the Trade+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "At the start of your turn, draw 1 card and discard 1 card.",
         "runs": [

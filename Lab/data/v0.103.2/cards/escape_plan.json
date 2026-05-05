@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "ESCAPE_PLAN",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "EscapePlan",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/EscapePlan.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "ESCAPE_PLAN.title",
@@ -35,6 +40,10 @@
     "base": {
       "title": "Escape Plan",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Draw 1 card.\nIf you draw a Skill, gain 3 Block.",
         "runs": [
@@ -61,6 +70,10 @@
     "upgraded": {
       "title": "Escape Plan+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Draw 1 card.\nIf you draw a Skill, gain 5 Block.",
         "runs": [

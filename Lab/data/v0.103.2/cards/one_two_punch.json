@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "ONE_TWO_PUNCH",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "OneTwoPunch",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/OneTwoPunch.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "ONE_TWO_PUNCH.title",
@@ -42,6 +47,10 @@
     "base": {
       "title": "One-Two Punch",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "This turn, your next 1 played an extra time.",
         "runs": [
@@ -61,6 +70,10 @@
     "upgraded": {
       "title": "One-Two Punch+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "This turn, your next 2 played an extra time.",
         "runs": [

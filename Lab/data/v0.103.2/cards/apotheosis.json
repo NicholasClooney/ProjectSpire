@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "APOTHEOSIS",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Apotheosis",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Apotheosis.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Skill",
     "rarity": "Ancient",
     "target": "Self",
+    "card_pool": "event",
     "localization": {
       "table": "cards",
       "title_key": "APOTHEOSIS.title",
@@ -37,6 +42,10 @@
     "base": {
       "title": "Apotheosis",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Upgrade ALL your cards.",
         "runs": [
@@ -53,6 +62,10 @@
     "upgraded": {
       "title": "Apotheosis+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Upgrade ALL your cards.",
         "runs": [

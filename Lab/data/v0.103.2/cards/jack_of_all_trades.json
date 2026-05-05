@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "JACK_OF_ALL_TRADES",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "JackOfAllTrades",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/JackOfAllTrades.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "colorless",
     "localization": {
       "table": "cards",
       "title_key": "JACK_OF_ALL_TRADES.title",
@@ -38,6 +43,10 @@
     "base": {
       "title": "Jack of All Trades",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Add 1 random Colorless card into your Hand.",
         "runs": [
@@ -64,6 +73,10 @@
     "upgraded": {
       "title": "Jack of All Trades+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Add 2 random Colorless cards into your Hand.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "FETCH",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Fetch",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Fetch.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "FETCH.title",
@@ -39,6 +44,10 @@
     "base": {
       "title": "Fetch",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Osty deals 3 damage.\nIf this is the first time this card has been played this turn, draw 1 card.",
         "runs": [
@@ -69,6 +78,10 @@
     "upgraded": {
       "title": "Fetch+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Osty deals 6 damage.\nIf this is the first time this card has been played this turn, draw 1 card.",
         "runs": [

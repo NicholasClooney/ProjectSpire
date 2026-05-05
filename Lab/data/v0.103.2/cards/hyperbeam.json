@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "HYPERBEAM",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Hyperbeam",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Hyperbeam.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AllEnemies",
+    "card_pool": "defect",
     "localization": {
       "table": "cards",
       "title_key": "HYPERBEAM.title",
@@ -50,6 +55,10 @@
     "base": {
       "title": "Hyperbeam",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal 26 damage to ALL enemies.\nLose 3 Focus.",
         "runs": [
@@ -83,6 +92,10 @@
     "upgraded": {
       "title": "Hyperbeam+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal 34 damage to ALL enemies.\nLose 3 Focus.",
         "runs": [

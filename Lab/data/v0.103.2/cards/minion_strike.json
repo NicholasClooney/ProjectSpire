@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "MINION_STRIKE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "MinionStrike",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MinionStrike.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Attack",
     "rarity": "Token",
     "target": "AnyEnemy",
+    "card_pool": "token",
     "localization": {
       "table": "cards",
       "title_key": "MINION_STRIKE.title",
@@ -48,6 +53,10 @@
     "base": {
       "title": "Minion Strike",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 6 damage.\nDraw 1 card.",
         "runs": [
@@ -74,6 +83,10 @@
     "upgraded": {
       "title": "Minion Strike+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 9 damage.\nDraw 1 card.",
         "runs": [

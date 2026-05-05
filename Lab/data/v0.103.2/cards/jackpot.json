@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "JACKPOT",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Jackpot",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Jackpot.cs",
     "cost": 3,
+    "energy_cost": {
+      "kind": "int",
+      "value": 3
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AnyEnemy",
+    "card_pool": "colorless",
     "localization": {
       "table": "cards",
       "title_key": "JACKPOT.title",
@@ -41,6 +46,10 @@
     "base": {
       "title": "Jackpot",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Deal 25 damage.\nAdd 3 random 0 cards into your Hand.",
         "runs": [
@@ -74,6 +83,10 @@
     "upgraded": {
       "title": "Jackpot+",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Deal 30 damage.\nAdd 3 random Upgraded 0 cards into your Hand.",
         "runs": [

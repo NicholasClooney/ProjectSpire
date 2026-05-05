@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SLEIGHT_OF_FLESH",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "SleightOfFlesh",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SleightOfFlesh.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Power",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "SLEIGHT_OF_FLESH.title",
@@ -47,6 +52,10 @@
     "base": {
       "title": "Sleight of Flesh",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Whenever you apply a debuff to an enemy, they take 9 damage.",
         "runs": [
@@ -66,6 +75,10 @@
     "upgraded": {
       "title": "Sleight of Flesh+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Whenever you apply a debuff to an enemy, they take 13 damage.",
         "runs": [

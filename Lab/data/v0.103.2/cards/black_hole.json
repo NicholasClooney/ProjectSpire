@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "BLACK_HOLE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "BlackHole",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BlackHole.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Power",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "BLACK_HOLE.title",
@@ -47,6 +52,10 @@
     "base": {
       "title": "Black Hole",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Whenever you spend or gain *, deal 3 damage to ALL enemies.",
         "runs": [
@@ -66,6 +75,10 @@
     "upgraded": {
       "title": "Black Hole+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Whenever you spend or gain *, deal 4 damage to ALL enemies.",
         "runs": [

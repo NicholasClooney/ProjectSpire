@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "ERADICATE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Eradicate",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Eradicate.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "x",
+      "value": 0
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AnyEnemy",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "ERADICATE.title",
@@ -38,6 +43,10 @@
     "base": {
       "title": "Eradicate",
       "cost": 0,
+      "energy_cost": {
+        "kind": "x",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 11 damage X times.",
         "runs": [
@@ -57,6 +66,10 @@
     "upgraded": {
       "title": "Eradicate+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "x",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 14 damage X times.",
         "runs": [

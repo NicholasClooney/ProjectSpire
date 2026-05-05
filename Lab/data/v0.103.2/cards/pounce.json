@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "POUNCE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Pounce",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Pounce.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "POUNCE.title",
@@ -42,6 +47,10 @@
     "base": {
       "title": "Pounce",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal 12 damage.\nThe next Skill you play costs 0 .",
         "runs": [
@@ -61,6 +70,10 @@
     "upgraded": {
       "title": "Pounce+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal 18 damage.\nThe next Skill you play costs 0 .",
         "runs": [

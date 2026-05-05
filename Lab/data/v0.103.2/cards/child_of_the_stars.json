@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "CHILD_OF_THE_STARS",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "ChildOfTheStars",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ChildOfTheStars.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Power",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "CHILD_OF_THE_STARS.title",
@@ -54,6 +59,10 @@
     "base": {
       "title": "Child of the Stars",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Whenever you spend *, gain 2 Block for each * spent.",
         "runs": [
@@ -80,6 +89,10 @@
     "upgraded": {
       "title": "Child of the Stars+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Whenever you spend *, gain 3 Block for each * spent.",
         "runs": [

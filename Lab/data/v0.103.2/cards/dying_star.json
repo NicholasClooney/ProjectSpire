@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "DYING_STAR",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "DyingStar",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DyingStar.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AllEnemies",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "DYING_STAR.title",
@@ -62,6 +67,10 @@
     "base": {
       "title": "Dying Star",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 9 damage to ALL enemies. ALL enemies lose 9 Strength this turn.",
         "runs": [
@@ -95,6 +104,10 @@
     "upgraded": {
       "title": "Dying Star+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 11 damage to ALL enemies. ALL enemies lose 11 Strength this turn.",
         "runs": [

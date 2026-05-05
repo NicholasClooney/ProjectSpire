@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SUCKER_PUNCH",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "SuckerPunch",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SuckerPunch.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Common",
     "target": "AnyEnemy",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "SUCKER_PUNCH.title",
@@ -54,6 +59,10 @@
     "base": {
       "title": "Sucker Punch",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 8 damage.\nApply 1 Weak.",
         "runs": [
@@ -87,6 +96,10 @@
     "upgraded": {
       "title": "Sucker Punch+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 10 damage.\nApply 2 Weak.",
         "runs": [

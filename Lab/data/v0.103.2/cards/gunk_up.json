@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "GUNK_UP",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "GunkUp",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GunkUp.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Common",
     "target": "AnyEnemy",
+    "card_pool": "defect",
     "localization": {
       "table": "cards",
       "title_key": "GUNK_UP.title",
@@ -55,6 +60,10 @@
     "base": {
       "title": "Gunk Up",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 4 damage 3 times.\nAdd a Slimed into your Discard Pile.",
         "runs": [
@@ -95,6 +104,10 @@
     "upgraded": {
       "title": "Gunk Up+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 5 damage 3 times.\nAdd a Slimed into your Discard Pile.",
         "runs": [

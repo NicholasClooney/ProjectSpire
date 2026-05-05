@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "HELLO_WORLD",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "HelloWorld",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HelloWorld.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Power",
     "rarity": "Event",
     "target": "Self",
+    "card_pool": "event",
     "localization": {
       "table": "cards",
       "title_key": "HELLO_WORLD.title",
@@ -41,6 +46,10 @@
     "base": {
       "title": "Hello World",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "At the start of your turn, add a random Common card into your Hand.",
         "runs": [
@@ -60,6 +69,10 @@
     "upgraded": {
       "title": "Hello World+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "At the start of your turn, add a random Common card into your Hand.",
         "runs": [

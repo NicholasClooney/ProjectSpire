@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "CHARGE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Charge",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Charge.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "CHARGE.title",
@@ -36,6 +41,10 @@
     "base": {
       "title": "CHARGE!!",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Choose 2 cards in your Draw Pile to Transform into\nMinion Dive Bombs.",
         "runs": [
@@ -73,6 +82,10 @@
     "upgraded": {
       "title": "CHARGE!!+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Choose 2 cards in your Draw Pile to Transform into\nMinion Dive Bombs+.",
         "runs": [

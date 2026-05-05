@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "REGRET",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Regret",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Regret.cs",
     "cost": -1,
+    "energy_cost": {
+      "kind": "int",
+      "value": -1
+    },
     "type": "Curse",
     "rarity": "Curse",
     "target": "None",
+    "card_pool": "curse",
     "localization": {
       "table": "cards",
       "title_key": "REGRET.title",
@@ -29,6 +34,10 @@
     "base": {
       "title": "Regret",
       "cost": -1,
+      "energy_cost": {
+        "kind": "int",
+        "value": -1
+      },
       "description": {
         "plain": "At the end of your turn, if this is in your Hand, lose 1 HP for each card in your Hand.",
         "runs": [
@@ -55,6 +64,10 @@
     "upgraded": {
       "title": "Regret+",
       "cost": -1,
+      "energy_cost": {
+        "kind": "int",
+        "value": -1
+      },
       "description": {
         "plain": "At the end of your turn, if this is in your Hand, lose 1 HP for each card in your Hand.",
         "runs": [

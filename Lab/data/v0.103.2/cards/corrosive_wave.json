@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "CORROSIVE_WAVE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "CorrosiveWave",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CorrosiveWave.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "CORROSIVE_WAVE.title",
@@ -54,6 +59,10 @@
     "base": {
       "title": "Corrosive Wave",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Whenever you draw a card this turn, apply 2 Poison to ALL enemies.",
         "runs": [
@@ -80,6 +89,10 @@
     "upgraded": {
       "title": "Corrosive Wave+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Whenever you draw a card this turn, apply 3 Poison to ALL enemies.",
         "runs": [

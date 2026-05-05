@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "PULL_AGGRO",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "PullAggro",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PullAggro.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Skill",
     "rarity": "Common",
     "target": "Self",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "PULL_AGGRO.title",
@@ -40,6 +45,10 @@
     "base": {
       "title": "Pull Aggro",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Summon 4.\nGain 7 Block.",
         "runs": [
@@ -77,6 +86,10 @@
     "upgraded": {
       "title": "Pull Aggro+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Summon 5.\nGain 9 Block.",
         "runs": [

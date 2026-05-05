@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SUPERMASSIVE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Supermassive",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Supermassive.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "SUPERMASSIVE.title",
@@ -41,6 +46,10 @@
     "base": {
       "title": "Supermassive",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 3 additional damage for each card you created this combat.",
         "runs": [
@@ -60,6 +69,10 @@
     "upgraded": {
       "title": "Supermassive+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 4 additional damage for each card you created this combat.",
         "runs": [

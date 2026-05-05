@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SEEKING_EDGE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "SeekingEdge",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SeekingEdge.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "SEEKING_EDGE.title",
@@ -47,6 +52,10 @@
     "base": {
       "title": "Seeking Edge",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Forge 7.\nSovereign Blade now deals damage to ALL enemies.",
         "runs": [
@@ -77,6 +86,10 @@
     "upgraded": {
       "title": "Seeking Edge+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Forge 11.\nSovereign Blade now deals damage to ALL enemies.",
         "runs": [

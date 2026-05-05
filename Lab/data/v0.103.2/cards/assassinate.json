@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "ASSASSINATE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Assassinate",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Assassinate.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AnyEnemy",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "ASSASSINATE.title",
@@ -58,6 +63,10 @@
     "base": {
       "title": "Assassinate",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 10 damage.\nApply 1 Vulnerable.",
         "runs": [
@@ -91,6 +100,10 @@
     "upgraded": {
       "title": "Assassinate+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 13 damage.\nApply 2 Vulnerable.",
         "runs": [

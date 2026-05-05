@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "TEAR_ASUNDER",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "TearAsunder",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TearAsunder.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AnyEnemy",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "TEAR_ASUNDER.title",
@@ -38,6 +43,10 @@
     "base": {
       "title": "Tear Asunder",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal 5 damage.\nHits an additional time for each time you lost HP this combat.",
         "runs": [
@@ -57,6 +66,10 @@
     "upgraded": {
       "title": "Tear Asunder+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal 7 damage.\nHits an additional time for each time you lost HP this combat.",
         "runs": [

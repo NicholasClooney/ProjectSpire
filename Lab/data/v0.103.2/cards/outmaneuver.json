@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "OUTMANEUVER",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Outmaneuver",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Outmaneuver.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Event",
     "target": "Self",
+    "card_pool": "event",
     "localization": {
       "table": "cards",
       "title_key": "OUTMANEUVER.title",
@@ -42,6 +47,10 @@
     "base": {
       "title": "Outmaneuver",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Next turn, gain 2.",
         "runs": [
@@ -61,6 +70,10 @@
     "upgraded": {
       "title": "Outmaneuver+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Next turn, gain 3.",
         "runs": [

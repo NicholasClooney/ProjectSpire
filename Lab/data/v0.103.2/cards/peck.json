@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "PECK",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Peck",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Peck.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Event",
     "target": "AnyEnemy",
+    "card_pool": "event",
     "localization": {
       "table": "cards",
       "title_key": "PECK.title",
@@ -36,6 +41,10 @@
     "base": {
       "title": "Peck",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 2 damage 3 times.",
         "runs": [
@@ -62,6 +71,10 @@
     "upgraded": {
       "title": "Peck+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 2 damage 4 times.",
         "runs": [

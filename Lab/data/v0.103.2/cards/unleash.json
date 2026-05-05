@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "UNLEASH",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Unleash",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Unleash.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Basic",
     "target": "AnyEnemy",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "UNLEASH.title",
@@ -39,6 +44,10 @@
     "base": {
       "title": "Unleash",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Osty deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to Osty's current HP.",
         "runs": [
@@ -62,6 +71,10 @@
     "upgraded": {
       "title": "Unleash+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Osty deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to Osty's current HP.",
         "runs": [

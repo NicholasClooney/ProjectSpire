@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "LANTERN_KEY",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "LanternKey",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/LanternKey.cs",
     "cost": -1,
+    "energy_cost": {
+      "kind": "int",
+      "value": -1
+    },
     "type": "Quest",
     "rarity": "Quest",
     "target": "Self",
+    "card_pool": "quest",
     "localization": {
       "table": "cards",
       "title_key": "LANTERN_KEY.title",
@@ -34,6 +39,10 @@
     "base": {
       "title": "Lantern Key",
       "cost": -1,
+      "energy_cost": {
+        "kind": "int",
+        "value": -1
+      },
       "description": {
         "plain": "Unlocks a special event in the next Act.",
         "runs": [
@@ -46,6 +55,10 @@
     "upgraded": {
       "title": "Lantern Key+",
       "cost": -1,
+      "energy_cost": {
+        "kind": "int",
+        "value": -1
+      },
       "description": {
         "plain": "Unlocks a special event in the next Act.",
         "runs": [

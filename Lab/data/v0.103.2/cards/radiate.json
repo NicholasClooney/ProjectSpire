@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "RADIATE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Radiate",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Radiate.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AllEnemies",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "RADIATE.title",
@@ -38,6 +43,10 @@
     "base": {
       "title": "Radiate",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 3 damage to ALL enemies for each 1 gained this turn.",
         "runs": [
@@ -64,6 +73,10 @@
     "upgraded": {
       "title": "Radiate+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 4 damage to ALL enemies for each 1 gained this turn.",
         "runs": [

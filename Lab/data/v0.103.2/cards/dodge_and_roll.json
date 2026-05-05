@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "DODGE_AND_ROLL",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "DodgeAndRoll",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DodgeAndRoll.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Common",
     "target": "Self",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "DODGE_AND_ROLL.title",
@@ -42,6 +47,10 @@
     "base": {
       "title": "Dodge and Roll",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain 4 Block.\nNext turn, gain 4 Block.",
         "runs": [
@@ -82,6 +91,10 @@
     "upgraded": {
       "title": "Dodge and Roll+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain 6 Block.\nNext turn, gain 6 Block.",
         "runs": [

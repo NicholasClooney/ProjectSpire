@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "BYRDONIS_EGG",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "ByrdonisEgg",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ByrdonisEgg.cs",
     "cost": -1,
+    "energy_cost": {
+      "kind": "int",
+      "value": -1
+    },
     "type": "Quest",
     "rarity": "Quest",
     "target": "None",
+    "card_pool": "quest",
     "localization": {
       "table": "cards",
       "title_key": "BYRDONIS_EGG.title",
@@ -29,6 +34,10 @@
     "base": {
       "title": "Byrdonis Egg",
       "cost": -1,
+      "energy_cost": {
+        "kind": "int",
+        "value": -1
+      },
       "description": {
         "plain": "Can be hatched at a Rest Site.",
         "runs": [
@@ -48,6 +57,10 @@
     "upgraded": {
       "title": "Byrdonis Egg+",
       "cost": -1,
+      "energy_cost": {
+        "kind": "int",
+        "value": -1
+      },
       "description": {
         "plain": "Can be hatched at a Rest Site.",
         "runs": [

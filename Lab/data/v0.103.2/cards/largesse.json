@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "LARGESSE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Largesse",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Largesse.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "AnyAlly",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "LARGESSE.title",
@@ -31,6 +36,10 @@
     "base": {
       "title": "Largesse",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Another player adds 1 random Colorless card to their Hand.",
         "runs": [
@@ -50,6 +59,10 @@
     "upgraded": {
       "title": "Largesse+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Another player adds 1 random Upgraded Colorless card to their Hand.",
         "runs": [

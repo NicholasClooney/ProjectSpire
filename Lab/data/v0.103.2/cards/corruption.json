@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "CORRUPTION",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Corruption",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Corruption.cs",
     "cost": 3,
+    "energy_cost": {
+      "kind": "int",
+      "value": 3
+    },
     "type": "Power",
     "rarity": "Ancient",
     "target": "Self",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "CORRUPTION.title",
@@ -46,6 +51,10 @@
     "base": {
       "title": "Corruption",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Skills cost 0 .\nWhenever you play a Skill, Exhaust it.",
         "runs": [
@@ -65,6 +74,10 @@
     "upgraded": {
       "title": "Corruption+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Skills cost 0 .\nWhenever you play a Skill, Exhaust it.",
         "runs": [

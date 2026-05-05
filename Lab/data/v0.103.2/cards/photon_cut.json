@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "PHOTON_CUT",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "PhotonCut",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PhotonCut.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Common",
     "target": "AnyEnemy",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "PHOTON_CUT.title",
@@ -46,6 +51,10 @@
     "base": {
       "title": "Photon Cut",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 10 damage.\nDraw 1 card.\nPut 1 card from your Hand on top of your Draw Pile.",
         "runs": [
@@ -86,6 +95,10 @@
     "upgraded": {
       "title": "Photon Cut+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 13 damage.\nDraw 2 cards.\nPut 1 card from your Hand on top of your Draw Pile.",
         "runs": [

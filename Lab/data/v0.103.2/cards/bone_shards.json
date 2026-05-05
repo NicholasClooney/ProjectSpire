@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "BONE_SHARDS",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "BoneShards",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BoneShards.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AllEnemies",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "BONE_SHARDS.title",
@@ -48,6 +53,10 @@
     "base": {
       "title": "Bone Shards",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "If Osty is alive, he deals 9 damage to ALL enemies and you gain 9 Block.\nOsty dies.",
         "runs": [
@@ -95,6 +104,10 @@
     "upgraded": {
       "title": "Bone Shards+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "If Osty is alive, he deals 12 damage to ALL enemies and you gain 12 Block.\nOsty dies.",
         "runs": [

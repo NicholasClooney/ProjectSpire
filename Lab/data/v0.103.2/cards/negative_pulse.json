@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "NEGATIVE_PULSE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "NegativePulse",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/NegativePulse.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Common",
     "target": "AllEnemies",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "NEGATIVE_PULSE.title",
@@ -54,6 +59,10 @@
     "base": {
       "title": "Negative Pulse",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain 5 Block.\nApply 7 Doom to ALL enemies.",
         "runs": [
@@ -94,6 +103,10 @@
     "upgraded": {
       "title": "Negative Pulse+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain 6 Block.\nApply 11 Doom to ALL enemies.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "FORGOTTEN_RITUAL",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "ForgottenRitual",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ForgottenRitual.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "FORGOTTEN_RITUAL.title",
@@ -38,6 +43,10 @@
     "base": {
       "title": "Forgotten Ritual",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "If you Exhausted a card this turn, gain 3.",
         "runs": [
@@ -64,6 +73,10 @@
     "upgraded": {
       "title": "Forgotten Ritual+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "If you Exhausted a card this turn, gain 4.",
         "runs": [

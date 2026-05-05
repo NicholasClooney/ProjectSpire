@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "CRIMSON_MANTLE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "CrimsonMantle",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CrimsonMantle.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "CRIMSON_MANTLE.title",
@@ -54,6 +59,10 @@
     "base": {
       "title": "Crimson Mantle",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "At the start of your turn, lose 1 HP and gain 8 Block.",
         "runs": [
@@ -80,6 +89,10 @@
     "upgraded": {
       "title": "Crimson Mantle+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "At the start of your turn, lose 1 HP and gain 10 Block.",
         "runs": [

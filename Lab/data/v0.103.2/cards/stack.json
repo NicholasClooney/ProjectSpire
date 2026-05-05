@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "STACK",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Stack",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Stack.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Event",
     "target": "Self",
+    "card_pool": "event",
     "localization": {
       "table": "cards",
       "title_key": "STACK.title",
@@ -36,6 +41,10 @@
     "base": {
       "title": "Stack",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain Block equal to the number of cards in your Discard Pile.",
         "runs": [
@@ -62,6 +71,10 @@
     "upgraded": {
       "title": "Stack+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain Block equal to the number of cards in your Discard Pile +3.",
         "runs": [

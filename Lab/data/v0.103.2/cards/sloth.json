@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SLOTH",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Sloth",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Sloth.cs",
     "cost": -1,
+    "energy_cost": {
+      "kind": "int",
+      "value": -1
+    },
     "type": "Status",
     "rarity": "Status",
     "target": "None",
+    "card_pool": "token",
     "localization": {
       "table": "cards",
       "title_key": "SLOTH.title",
@@ -41,6 +46,10 @@
     "base": {
       "title": "Sloth",
       "cost": -1,
+      "energy_cost": {
+        "kind": "int",
+        "value": -1
+      },
       "description": {
         "plain": "You cannot play more than 3 cards each turn.",
         "runs": [
@@ -60,6 +69,10 @@
     "upgraded": {
       "title": "Sloth+",
       "cost": -1,
+      "energy_cost": {
+        "kind": "int",
+        "value": -1
+      },
       "description": {
         "plain": "You cannot play more than 3 cards each turn.",
         "runs": [

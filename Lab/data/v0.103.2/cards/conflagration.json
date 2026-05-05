@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "CONFLAGRATION",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Conflagration",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Conflagration.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AllEnemies",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "CONFLAGRATION.title",
@@ -45,6 +50,10 @@
     "base": {
       "title": "Conflagration",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals 2 additional damage for each other Attack you've played this turn.",
         "runs": [
@@ -64,6 +73,10 @@
     "upgraded": {
       "title": "Conflagration+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals 3 additional damage for each other Attack you've played this turn.",
         "runs": [

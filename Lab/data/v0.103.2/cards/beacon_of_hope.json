@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "BEACON_OF_HOPE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "BeaconOfHope",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BeaconOfHope.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "colorless",
     "localization": {
       "table": "cards",
       "title_key": "BEACON_OF_HOPE.title",
@@ -48,6 +53,10 @@
     "base": {
       "title": "Beacon of Hope",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Whenever you gain Block on your turn, other players gain half that much Block.",
         "runs": [
@@ -74,6 +83,10 @@
     "upgraded": {
       "title": "Beacon of Hope+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Whenever you gain Block on your turn, other players gain half that much Block.",
         "runs": [

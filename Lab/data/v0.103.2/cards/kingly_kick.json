@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "KINGLY_KICK",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "KinglyKick",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/KinglyKick.cs",
     "cost": 4,
+    "energy_cost": {
+      "kind": "int",
+      "value": 4
+    },
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "KINGLY_KICK.title",
@@ -35,6 +40,10 @@
     "base": {
       "title": "Kingly Kick",
       "cost": 4,
+      "energy_cost": {
+        "kind": "int",
+        "value": 4
+      },
       "description": {
         "plain": "Deal 27 damage.\nWhenever you draw this card, reduce its cost by 1.",
         "runs": [
@@ -54,6 +63,10 @@
     "upgraded": {
       "title": "Kingly Kick+",
       "cost": 4,
+      "energy_cost": {
+        "kind": "int",
+        "value": 4
+      },
       "description": {
         "plain": "Deal 35 damage.\nWhenever you draw this card, reduce its cost by 1.",
         "runs": [

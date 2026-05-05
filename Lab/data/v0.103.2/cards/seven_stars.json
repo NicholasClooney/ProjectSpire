@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SEVEN_STARS",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "SevenStars",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SevenStars.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AllEnemies",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "SEVEN_STARS.title",
@@ -42,6 +47,10 @@
     "base": {
       "title": "Seven Stars",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal 7 damage to ALL enemies {} times.",
         "runs": [
@@ -61,6 +70,10 @@
     "upgraded": {
       "title": "Seven Stars+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 7 damage to ALL enemies {} times.",
         "runs": [

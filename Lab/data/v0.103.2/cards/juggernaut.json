@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "JUGGERNAUT",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Juggernaut",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Juggernaut.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "JUGGERNAUT.title",
@@ -49,6 +54,10 @@
     "base": {
       "title": "Juggernaut",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Whenever you gain Block, deal 5 damage to a random enemy.",
         "runs": [
@@ -75,6 +84,10 @@
     "upgraded": {
       "title": "Juggernaut+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Whenever you gain Block, deal 7 damage to a random enemy.",
         "runs": [

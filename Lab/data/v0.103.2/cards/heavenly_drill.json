@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "HEAVENLY_DRILL",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "HeavenlyDrill",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HeavenlyDrill.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "x",
+      "value": 0
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AnyEnemy",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "HEAVENLY_DRILL.title",
@@ -41,6 +46,10 @@
     "base": {
       "title": "Heavenly Drill",
       "cost": 0,
+      "energy_cost": {
+        "kind": "x",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 8 damage X times.\nDouble X if it's 4 or more.",
         "runs": [
@@ -67,6 +76,10 @@
     "upgraded": {
       "title": "Heavenly Drill+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "x",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 10 damage X times.\nDouble X if it's 4 or more.",
         "runs": [

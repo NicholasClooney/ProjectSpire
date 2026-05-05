@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "CALCIFY",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Calcify",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Calcify.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Power",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "CALCIFY.title",
@@ -42,6 +47,10 @@
     "base": {
       "title": "Calcify",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Osty's attacks deal 4 additional damage.",
         "runs": [
@@ -65,6 +74,10 @@
     "upgraded": {
       "title": "Calcify+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Osty's attacks deal 6 additional damage.",
         "runs": [

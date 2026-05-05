@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "PIERCING_WAIL",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "PiercingWail",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PiercingWail.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Common",
     "target": "AllEnemies",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "PIERCING_WAIL.title",
@@ -52,6 +57,10 @@
     "base": {
       "title": "Piercing Wail",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "ALL enemies lose 6 Strength this turn.",
         "runs": [
@@ -78,6 +87,10 @@
     "upgraded": {
       "title": "Piercing Wail+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "ALL enemies lose 8 Strength this turn.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "CLASH",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Clash",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Clash.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Attack",
     "rarity": "Event",
     "target": "AnyEnemy",
+    "card_pool": "event",
     "localization": {
       "table": "cards",
       "title_key": "CLASH.title",
@@ -35,6 +40,10 @@
     "base": {
       "title": "Clash",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Can only be played if every card in your Hand is an Attack.\nDeal 14 damage.",
         "runs": [
@@ -61,6 +70,10 @@
     "upgraded": {
       "title": "Clash+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Can only be played if every card in your Hand is an Attack.\nDeal 18 damage.",
         "runs": [

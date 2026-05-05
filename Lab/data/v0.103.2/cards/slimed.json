@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SLIMED",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Slimed",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Slimed.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Status",
     "rarity": "Status",
     "target": "None",
+    "card_pool": "status",
     "localization": {
       "table": "cards",
       "title_key": "SLIMED.title",
@@ -32,6 +37,10 @@
     "base": {
       "title": "Slimed",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Draw 1 card.",
         "runs": [
@@ -44,6 +53,10 @@
     "upgraded": {
       "title": "Slimed+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Draw 1 card.",
         "runs": [

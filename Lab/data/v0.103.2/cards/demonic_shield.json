@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "DEMONIC_SHIELD",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "DemonicShield",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DemonicShield.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "AnyAlly",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "DEMONIC_SHIELD.title",
@@ -39,6 +44,10 @@
     "base": {
       "title": "Demonic Shield",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Lose 1 HP.\nGive another player Block equal to your Block.",
         "runs": [
@@ -72,6 +81,10 @@
     "upgraded": {
       "title": "Demonic Shield+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Lose 1 HP.\nGive another player Block equal to your Block.",
         "runs": [

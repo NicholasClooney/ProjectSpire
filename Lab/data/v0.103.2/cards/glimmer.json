@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "GLIMMER",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Glimmer",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Glimmer.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "GLIMMER.title",
@@ -36,6 +41,10 @@
     "base": {
       "title": "Glimmer",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Draw 3 cards.\nPut 1 card from your Hand on top of your Draw Pile.",
         "runs": [
@@ -76,6 +85,10 @@
     "upgraded": {
       "title": "Glimmer+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Draw 4 cards.\nPut 1 card from your Hand on top of your Draw Pile.",
         "runs": [

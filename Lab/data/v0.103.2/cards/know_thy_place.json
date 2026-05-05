@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "KNOW_THY_PLACE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "KnowThyPlace",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/KnowThyPlace.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Common",
     "target": "AnyEnemy",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "KNOW_THY_PLACE.title",
@@ -62,6 +67,10 @@
     "base": {
       "title": "Know Thy Place",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Apply 1 Weak.\nApply 1 Vulnerable.",
         "runs": [
@@ -102,6 +111,10 @@
     "upgraded": {
       "title": "Know Thy Place+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Apply 1 Weak.\nApply 1 Vulnerable.",
         "runs": [

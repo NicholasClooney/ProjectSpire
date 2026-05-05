@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "BOUNCING_FLASK",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "BouncingFlask",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BouncingFlask.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "RandomEnemy",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "BOUNCING_FLASK.title",
@@ -50,6 +55,10 @@
     "base": {
       "title": "Bouncing Flask",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Apply 3 Poison to a random enemy 3 times.",
         "runs": [
@@ -83,6 +92,10 @@
     "upgraded": {
       "title": "Bouncing Flask+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Apply 3 Poison to a random enemy 4 times.",
         "runs": [

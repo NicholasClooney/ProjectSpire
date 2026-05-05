@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "BELIEVE_IN_YOU",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "BelieveInYou",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BelieveInYou.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "AnyAlly",
+    "card_pool": "colorless",
     "localization": {
       "table": "cards",
       "title_key": "BELIEVE_IN_YOU.title",
@@ -40,6 +45,10 @@
     "base": {
       "title": "Believe in You",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Another player gains 2.",
         "runs": [
@@ -59,6 +68,10 @@
     "upgraded": {
       "title": "Believe in You+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Another player gains 3.",
         "runs": [

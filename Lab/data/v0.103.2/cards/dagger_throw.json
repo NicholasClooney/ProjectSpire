@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "DAGGER_THROW",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "DaggerThrow",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DaggerThrow.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Common",
     "target": "AnyEnemy",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "DAGGER_THROW.title",
@@ -35,6 +40,10 @@
     "base": {
       "title": "Dagger Throw",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 9 damage.\nDraw 1 card.\nDiscard 1 card.",
         "runs": [
@@ -54,6 +63,10 @@
     "upgraded": {
       "title": "Dagger Throw+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 12 damage.\nDraw 1 card.\nDiscard 1 card.",
         "runs": [

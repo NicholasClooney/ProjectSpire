@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "LETHALITY",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Lethality",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Lethality.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Power",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "LETHALITY.title",
@@ -50,6 +55,10 @@
     "base": {
       "title": "Lethality",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "The first Attack each turn deals 50% additional damage.",
         "runs": [
@@ -69,6 +78,10 @@
     "upgraded": {
       "title": "Lethality+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "The first Attack each turn deals 75% additional damage.",
         "runs": [

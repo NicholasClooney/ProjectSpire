@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SHINING_STRIKE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "ShiningStrike",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ShiningStrike.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "SHINING_STRIKE.title",
@@ -47,6 +52,10 @@
     "base": {
       "title": "Shining Strike",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 8 damage.\nGain 2.\nPut this card on top of your Draw Pile.",
         "runs": [
@@ -80,6 +89,10 @@
     "upgraded": {
       "title": "Shining Strike+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 11 damage.\nGain 2.\nPut this card on top of your Draw Pile.",
         "runs": [

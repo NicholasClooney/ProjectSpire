@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "FOLLOW_THROUGH",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "FollowThrough",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FollowThrough.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Common",
     "target": "AnyEnemy",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "FOLLOW_THROUGH.title",
@@ -36,6 +41,10 @@
     "base": {
       "title": "Follow Through",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 7 damage.\nIf you have 5 or more other cards in your Hand, hits an additional time.",
         "runs": [
@@ -69,6 +78,10 @@
     "upgraded": {
       "title": "Follow Through+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 9 damage.\nIf you have 5 or more other cards in your Hand, hits an additional time.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "GIANT_ROCK",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "GiantRock",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GiantRock.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Token",
     "target": "AnyEnemy",
+    "card_pool": "token",
     "localization": {
       "table": "cards",
       "title_key": "GIANT_ROCK.title",
@@ -40,6 +45,10 @@
     "base": {
       "title": "Giant Rock",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 16 damage.",
         "runs": [
@@ -59,6 +68,10 @@
     "upgraded": {
       "title": "Giant Rock+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 20 damage.",
         "runs": [

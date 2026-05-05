@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SEEKER_STRIKE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "SeekerStrike",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SeekerStrike.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
+    "card_pool": "colorless",
     "localization": {
       "table": "cards",
       "title_key": "SEEKER_STRIKE.title",
@@ -44,6 +49,10 @@
     "base": {
       "title": "Seeker Strike",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 9 damage.\nChoose 1 of 3 cards in your Draw Pile to add into your Hand.",
         "runs": [
@@ -84,6 +93,10 @@
     "upgraded": {
       "title": "Seeker Strike+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 12 damage.\nChoose 1 of 3 cards in your Draw Pile to add into your Hand.",
         "runs": [

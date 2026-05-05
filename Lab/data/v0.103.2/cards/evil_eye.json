@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "EVIL_EYE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "EvilEye",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/EvilEye.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "EVIL_EYE.title",
@@ -38,6 +43,10 @@
     "base": {
       "title": "Evil Eye",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain 8 Block.\nGain another 8 Block if you have Exhausted a card this turn.",
         "runs": [
@@ -85,6 +94,10 @@
     "upgraded": {
       "title": "Evil Eye+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain 11 Block.\nGain another 11 Block if you have Exhausted a card this turn.",
         "runs": [

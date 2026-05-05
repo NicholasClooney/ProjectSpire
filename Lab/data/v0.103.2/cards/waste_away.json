@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "WASTE_AWAY",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "WasteAway",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/WasteAway.cs",
     "cost": -1,
+    "energy_cost": {
+      "kind": "int",
+      "value": -1
+    },
     "type": "Status",
     "rarity": "Status",
     "target": "None",
+    "card_pool": "token",
     "localization": {
       "table": "cards",
       "title_key": "WASTE_AWAY.title",
@@ -41,6 +46,10 @@
     "base": {
       "title": "Waste Away",
       "cost": -1,
+      "energy_cost": {
+        "kind": "int",
+        "value": -1
+      },
       "description": {
         "plain": "Gain 1 less  per turn.",
         "runs": [
@@ -60,6 +69,10 @@
     "upgraded": {
       "title": "Waste Away+",
       "cost": -1,
+      "energy_cost": {
+        "kind": "int",
+        "value": -1
+      },
       "description": {
         "plain": "Gain 1 less  per turn.",
         "runs": [

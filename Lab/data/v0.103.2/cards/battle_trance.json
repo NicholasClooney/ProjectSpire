@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "BATTLE_TRANCE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "BattleTrance",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BattleTrance.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "BATTLE_TRANCE.title",
@@ -42,6 +47,10 @@
     "base": {
       "title": "Battle Trance",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Draw 3 cards.\nYou cannot draw additional cards this turn.",
         "runs": [
@@ -61,6 +70,10 @@
     "upgraded": {
       "title": "Battle Trance+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Draw 4 cards.\nYou cannot draw additional cards this turn.",
         "runs": [

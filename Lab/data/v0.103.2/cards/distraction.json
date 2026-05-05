@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "DISTRACTION",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Distraction",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Distraction.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Event",
     "target": "Self",
+    "card_pool": "event",
     "localization": {
       "table": "cards",
       "title_key": "DISTRACTION.title",
@@ -36,6 +41,10 @@
     "base": {
       "title": "Distraction",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Add a random Skill into your Hand. It's free to play this turn.",
         "runs": [
@@ -55,6 +64,10 @@
     "upgraded": {
       "title": "Distraction+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Add a random Skill into your Hand. It's free to play this turn.",
         "runs": [

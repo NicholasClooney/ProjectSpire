@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SALVO",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Salvo",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Salvo.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AnyEnemy",
+    "card_pool": "colorless",
     "localization": {
       "table": "cards",
       "title_key": "SALVO.title",
@@ -50,6 +55,10 @@
     "base": {
       "title": "Salvo",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 12 damage.\nRetain your Hand this turn.",
         "runs": [
@@ -83,6 +92,10 @@
     "upgraded": {
       "title": "Salvo+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 16 damage.\nRetain your Hand this turn.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "HELLRAISER",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Hellraiser",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Hellraiser.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "HELLRAISER.title",
@@ -40,6 +45,10 @@
     "base": {
       "title": "Hellraiser",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Whenever you draw a card containing \u201cStrike\u201d, it is played against a random enemy.",
         "runs": [
@@ -52,6 +61,10 @@
     "upgraded": {
       "title": "Hellraiser+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Whenever you draw a card containing \u201cStrike\u201d, it is played against a random enemy.",
         "runs": [

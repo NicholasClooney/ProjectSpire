@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "RELAX",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Relax",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Relax.cs",
     "cost": 3,
+    "energy_cost": {
+      "kind": "int",
+      "value": 3
+    },
     "type": "Skill",
     "rarity": "Ancient",
     "target": "Self",
+    "card_pool": "event",
     "localization": {
       "table": "cards",
       "title_key": "RELAX.title",
@@ -65,6 +70,10 @@
     "base": {
       "title": "Relax",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Gain 15 Block.\nNext turn, draw 2 cards and gain 2.",
         "runs": [
@@ -105,6 +114,10 @@
     "upgraded": {
       "title": "Relax+",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Gain 17 Block.\nNext turn, draw 3 cards and gain 3.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "ASTRAL_PULSE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "AstralPulse",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/AstralPulse.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Attack",
     "rarity": "Common",
     "target": "AllEnemies",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "ASTRAL_PULSE.title",
@@ -40,6 +45,10 @@
     "base": {
       "title": "Astral Pulse",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 14 damage to ALL enemies.",
         "runs": [
@@ -59,6 +68,10 @@
     "upgraded": {
       "title": "Astral Pulse+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 18 damage to ALL enemies.",
         "runs": [

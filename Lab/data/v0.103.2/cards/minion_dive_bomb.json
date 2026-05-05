@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "MINION_DIVE_BOMB",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "MinionDiveBomb",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MinionDiveBomb.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Attack",
     "rarity": "Token",
     "target": "AnyEnemy",
+    "card_pool": "token",
     "localization": {
       "table": "cards",
       "title_key": "MINION_DIVE_BOMB.title",
@@ -41,6 +46,10 @@
     "base": {
       "title": "Minion Dive Bomb",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 13 damage.",
         "runs": [
@@ -60,6 +69,10 @@
     "upgraded": {
       "title": "Minion Dive Bomb+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 16 damage.",
         "runs": [

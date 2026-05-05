@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SOUL_STORM",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "SoulStorm",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SoulStorm.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AnyEnemy",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "SOUL_STORM.title",
@@ -48,6 +53,10 @@
     "base": {
       "title": "Soul Storm",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 2 additional damage for each Soul in your Exhaust Pile.",
         "runs": [
@@ -81,6 +90,10 @@
     "upgraded": {
       "title": "Soul Storm+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 3 additional damage for each Soul in your Exhaust Pile.",
         "runs": [

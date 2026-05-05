@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "GOLD_AXE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "GoldAxe",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GoldAxe.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AnyEnemy",
+    "card_pool": "colorless",
     "localization": {
       "table": "cards",
       "title_key": "GOLD_AXE.title",
@@ -33,6 +38,10 @@
     "base": {
       "title": "Gold Axe",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal damage equal to the number of cards played this combat.",
         "runs": [
@@ -45,6 +54,10 @@
     "upgraded": {
       "title": "Gold Axe+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal damage equal to the number of cards played this combat.",
         "runs": [

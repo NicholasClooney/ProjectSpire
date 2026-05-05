@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "COLOSSUS",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Colossus",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Colossus.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "COLOSSUS.title",
@@ -55,6 +60,10 @@
     "base": {
       "title": "Colossus",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain 5 Block.\nYou receive 50% less damage from Vulnerable enemies this turn.",
         "runs": [
@@ -88,6 +97,10 @@
     "upgraded": {
       "title": "Colossus+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain 8 Block.\nYou receive 50% less damage from Vulnerable enemies this turn.",
         "runs": [

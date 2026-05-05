@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "EXTERMINATE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Exterminate",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Exterminate.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Event",
     "target": "AllEnemies",
+    "card_pool": "event",
     "localization": {
       "table": "cards",
       "title_key": "EXTERMINATE.title",
@@ -36,6 +41,10 @@
     "base": {
       "title": "Exterminate",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 3 damage 4 times to ALL enemies.",
         "runs": [
@@ -62,6 +71,10 @@
     "upgraded": {
       "title": "Exterminate+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 4 damage 4 times to ALL enemies.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "ENTHRALLED",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Enthralled",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Enthralled.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Curse",
     "rarity": "Curse",
     "target": "None",
+    "card_pool": "curse",
     "localization": {
       "table": "cards",
       "title_key": "ENTHRALLED.title",
@@ -34,6 +39,10 @@
     "base": {
       "title": "Enthralled",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "If this is in your Hand, it must be played before other cards.",
         "runs": [
@@ -53,6 +62,10 @@
     "upgraded": {
       "title": "Enthralled+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "If this is in your Hand, it must be played before other cards.",
         "runs": [

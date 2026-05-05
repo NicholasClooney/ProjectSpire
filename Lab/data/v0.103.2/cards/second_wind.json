@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SECOND_WIND",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "SecondWind",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SecondWind.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "SECOND_WIND.title",
@@ -38,6 +43,10 @@
     "base": {
       "title": "Second Wind",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Exhaust all non-Attack cards in your Hand. Gain 5 Block for each card Exhausted.",
         "runs": [
@@ -82,6 +91,10 @@
     "upgraded": {
       "title": "Second Wind+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Exhaust all non-Attack cards in your Hand. Gain 7 Block for each card Exhausted.",
         "runs": [

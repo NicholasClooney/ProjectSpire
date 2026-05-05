@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "GRAND_FINALE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "GrandFinale",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GrandFinale.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AllEnemies",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "GRAND_FINALE.title",
@@ -35,6 +40,10 @@
     "base": {
       "title": "Grand Finale",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Can only be played if there are no cards in your Draw Pile. Deal 60 damage to ALL enemies.",
         "runs": [
@@ -61,6 +70,10 @@
     "upgraded": {
       "title": "Grand Finale+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Can only be played if there are no cards in your Draw Pile. Deal 75 damage to ALL enemies.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "NORMALITY",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Normality",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Normality.cs",
     "cost": -1,
+    "energy_cost": {
+      "kind": "int",
+      "value": -1
+    },
     "type": "Curse",
     "rarity": "Curse",
     "target": "None",
+    "card_pool": "curse",
     "localization": {
       "table": "cards",
       "title_key": "NORMALITY.title",
@@ -33,6 +38,10 @@
     "base": {
       "title": "Normality",
       "cost": -1,
+      "energy_cost": {
+        "kind": "int",
+        "value": -1
+      },
       "description": {
         "plain": "You cannot play more than 3 cards this turn.",
         "runs": [
@@ -45,6 +54,10 @@
     "upgraded": {
       "title": "Normality+",
       "cost": -1,
+      "energy_cost": {
+        "kind": "int",
+        "value": -1
+      },
       "description": {
         "plain": "You cannot play more than 3 cards this turn.",
         "runs": [

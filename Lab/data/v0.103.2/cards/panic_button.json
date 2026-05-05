@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "PANIC_BUTTON",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "PanicButton",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PanicButton.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "colorless",
     "localization": {
       "table": "cards",
       "title_key": "PANIC_BUTTON.title",
@@ -46,6 +51,10 @@
     "base": {
       "title": "Panic Button",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Gain 30 Block.\nYou cannot gain Block from cards for 2 turns.",
         "runs": [
@@ -86,6 +95,10 @@
     "upgraded": {
       "title": "Panic Button+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Gain 40 Block.\nYou cannot gain Block from cards for 2 turns.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "PHANTOM_BLADES",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "PhantomBlades",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PhantomBlades.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Power",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "PHANTOM_BLADES.title",
@@ -57,6 +62,10 @@
     "base": {
       "title": "Phantom Blades",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Shivs gain Retain.\nThe first Shiv you play each turn deals 9 additional damage.",
         "runs": [
@@ -94,6 +103,10 @@
     "upgraded": {
       "title": "Phantom Blades+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Shivs gain Retain.\nThe first Shiv you play each turn deals 12 additional damage.",
         "runs": [

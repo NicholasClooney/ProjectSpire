@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "DECAY",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Decay",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Decay.cs",
     "cost": -1,
+    "energy_cost": {
+      "kind": "int",
+      "value": -1
+    },
     "type": "Curse",
     "rarity": "Curse",
     "target": "None",
+    "card_pool": "curse",
     "localization": {
       "table": "cards",
       "title_key": "DECAY.title",
@@ -32,6 +37,10 @@
     "base": {
       "title": "Decay",
       "cost": -1,
+      "energy_cost": {
+        "kind": "int",
+        "value": -1
+      },
       "description": {
         "plain": "At the end of your turn, if this is in your Hand, take 2 damage.",
         "runs": [
@@ -58,6 +67,10 @@
     "upgraded": {
       "title": "Decay+",
       "cost": -1,
+      "energy_cost": {
+        "kind": "int",
+        "value": -1
+      },
       "description": {
         "plain": "At the end of your turn, if this is in your Hand, take 2 damage.",
         "runs": [

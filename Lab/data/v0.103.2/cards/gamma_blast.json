@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "GAMMA_BLAST",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "GammaBlast",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GammaBlast.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "GAMMA_BLAST.title",
@@ -66,6 +71,10 @@
     "base": {
       "title": "Gamma Blast",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 13 damage.\nApply 2 Weak.\nApply 2 Vulnerable.",
         "runs": [
@@ -113,6 +122,10 @@
     "upgraded": {
       "title": "Gamma Blast+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 18 damage.\nApply 2 Weak.\nApply 2 Vulnerable.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SOUL",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Soul",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Soul.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Token",
     "target": "Self",
+    "card_pool": "token",
     "localization": {
       "table": "cards",
       "title_key": "SOUL.title",
@@ -50,6 +55,10 @@
     "base": {
       "title": "Soul",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Draw 2 cards.",
         "runs": [
@@ -69,6 +78,10 @@
     "upgraded": {
       "title": "Soul+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Draw 3 cards.",
         "runs": [

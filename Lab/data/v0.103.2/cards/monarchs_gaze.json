@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "MONARCHS_GAZE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "MonarchsGaze",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MonarchsGaze.cs",
     "cost": 3,
+    "energy_cost": {
+      "kind": "int",
+      "value": 3
+    },
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "MONARCHS_GAZE.title",
@@ -50,6 +55,10 @@
     "base": {
       "title": "Monarch's Gaze",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Whenever you attack an enemy, it loses 1 Strength this turn.",
         "runs": [
@@ -76,6 +85,10 @@
     "upgraded": {
       "title": "Monarch's Gaze+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Whenever you attack an enemy, it loses 1 Strength this turn.",
         "runs": [

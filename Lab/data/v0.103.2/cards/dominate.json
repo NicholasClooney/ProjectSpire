@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "DOMINATE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Dominate",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Dominate.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "DOMINATE.title",
@@ -63,6 +68,10 @@
     "base": {
       "title": "Dominate",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Apply 1 Vulnerable.\nGain 1 Strength for each Vulnerable on the enemy.",
         "runs": [
@@ -110,6 +119,10 @@
     "upgraded": {
       "title": "Dominate+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Apply 2 Vulnerable.\nGain 1 Strength for each Vulnerable on the enemy.",
         "runs": [

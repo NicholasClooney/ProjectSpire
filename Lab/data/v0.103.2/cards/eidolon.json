@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "EIDOLON",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Eidolon",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Eidolon.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Skill",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "EIDOLON.title",
@@ -55,6 +60,10 @@
     "base": {
       "title": "Eidolon",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Exhaust your Hand.\nIf 9 cards were Exhausted this way, gain 1 Intangible.",
         "runs": [
@@ -92,6 +101,10 @@
     "upgraded": {
       "title": "Eidolon+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Exhaust your Hand.\nIf 9 cards were Exhausted this way, gain 1 Intangible.",
         "runs": [

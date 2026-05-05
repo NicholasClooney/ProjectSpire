@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "HAZE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Haze",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Haze.cs",
     "cost": 3,
+    "energy_cost": {
+      "kind": "int",
+      "value": 3
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "AllEnemies",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "HAZE.title",
@@ -57,6 +62,10 @@
     "base": {
       "title": "Haze",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Apply 4 Poison to ALL enemies.",
         "runs": [
@@ -83,6 +92,10 @@
     "upgraded": {
       "title": "Haze+",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Apply 6 Poison to ALL enemies.",
         "runs": [

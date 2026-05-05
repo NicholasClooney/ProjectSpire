@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "BANSHEES_CRY",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "BansheesCry",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BansheesCry.cs",
     "cost": 9,
+    "energy_cost": {
+      "kind": "int",
+      "value": 9
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AllEnemies",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "BANSHEES_CRY.title",
@@ -45,6 +50,10 @@
     "base": {
       "title": "Banshee's Cry",
       "cost": 9,
+      "energy_cost": {
+        "kind": "int",
+        "value": 9
+      },
       "description": {
         "plain": "Deal 33 damage to ALL enemies.\nCosts 2 less for each Ethereal card played this combat.",
         "runs": [
@@ -78,6 +87,10 @@
     "upgraded": {
       "title": "Banshee's Cry+",
       "cost": 7,
+      "energy_cost": {
+        "kind": "int",
+        "value": 7
+      },
       "description": {
         "plain": "Deal 33 damage to ALL enemies.\nCosts 2 less for each Ethereal card played this combat.",
         "runs": [

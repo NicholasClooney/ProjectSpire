@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "BRIGHTEST_FLAME",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "BrightestFlame",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BrightestFlame.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Ancient",
     "target": "Self",
+    "card_pool": "event",
     "localization": {
       "table": "cards",
       "title_key": "BRIGHTEST_FLAME.title",
@@ -46,6 +51,10 @@
     "base": {
       "title": "Brightest Flame",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Gain 2.\nDraw 2 cards.\nLose 1 Max HP.",
         "runs": [
@@ -79,6 +88,10 @@
     "upgraded": {
       "title": "Brightest Flame+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Gain 3.\nDraw 3 cards.\nLose 1 Max HP.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "IGNITION",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Ignition",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Ignition.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Rare",
     "target": "AnyAlly",
+    "card_pool": "defect",
     "localization": {
       "table": "cards",
       "title_key": "IGNITION.title",
@@ -46,6 +51,10 @@
     "base": {
       "title": "Ignition",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Another player Channels Plasma.",
         "runs": [
@@ -72,6 +81,10 @@
     "upgraded": {
       "title": "Ignition+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Another player Channels Plasma.",
         "runs": [

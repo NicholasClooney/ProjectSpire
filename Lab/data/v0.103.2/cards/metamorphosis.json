@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "METAMORPHOSIS",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Metamorphosis",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Metamorphosis.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Skill",
     "rarity": "Event",
     "target": "Self",
+    "card_pool": "event",
     "localization": {
       "table": "cards",
       "title_key": "METAMORPHOSIS.title",
@@ -38,6 +43,10 @@
     "base": {
       "title": "Metamorphosis",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Add 3 random Attacks into your Draw Pile. They're free to play this combat.",
         "runs": [
@@ -64,6 +73,10 @@
     "upgraded": {
       "title": "Metamorphosis+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Add 5 random Attacks into your Draw Pile. They're free to play this combat.",
         "runs": [

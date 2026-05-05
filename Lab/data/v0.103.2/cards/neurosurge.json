@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "NEUROSURGE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Neurosurge",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Neurosurge.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "NEUROSURGE.title",
@@ -56,6 +61,10 @@
     "base": {
       "title": "Neurosurge",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Gain 3.\nDraw 2 cards.\nAt the start of your turn, apply 3 Doom to yourself.",
         "runs": [
@@ -96,6 +105,10 @@
     "upgraded": {
       "title": "Neurosurge+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Gain 4.\nDraw 2 cards.\nAt the start of your turn, apply 3 Doom to yourself.",
         "runs": [

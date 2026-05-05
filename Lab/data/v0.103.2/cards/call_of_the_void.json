@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "CALL_OF_THE_VOID",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "CallOfTheVoid",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CallOfTheVoid.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "CALL_OF_THE_VOID.title",
@@ -45,6 +50,10 @@
     "base": {
       "title": "Call of the Void",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "At the start of your turn, add 1 random card into your Hand. It gains Ethereal.",
         "runs": [
@@ -78,6 +87,10 @@
     "upgraded": {
       "title": "Call of the Void+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "At the start of your turn, add 1 random card into your Hand. It gains Ethereal.",
         "runs": [

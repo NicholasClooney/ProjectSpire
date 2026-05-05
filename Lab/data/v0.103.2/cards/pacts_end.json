@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "PACTS_END",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "PactsEnd",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PactsEnd.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AllEnemies",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "PACTS_END.title",
@@ -36,6 +41,10 @@
     "base": {
       "title": "Pact's End",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Can only be played if you have 3 or more cards in your Exhaust Pile.\nDeal 17 damage to ALL enemies.",
         "runs": [
@@ -69,6 +78,10 @@
     "upgraded": {
       "title": "Pact's End+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Can only be played if you have 3 or more cards in your Exhaust Pile.\nDeal 23 damage to ALL enemies.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "MEMENTO_MORI",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "MementoMori",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MementoMori.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "MEMENTO_MORI.title",
@@ -40,6 +45,10 @@
     "base": {
       "title": "Memento Mori",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 4 additional damage for each card discarded this turn.",
         "runs": [
@@ -59,6 +68,10 @@
     "upgraded": {
       "title": "Memento Mori+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 5 additional damage for each card discarded this turn.",
         "runs": [

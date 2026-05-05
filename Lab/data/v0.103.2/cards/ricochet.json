@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "RICOCHET",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Ricochet",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Ricochet.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Attack",
     "rarity": "Common",
     "target": "RandomEnemy",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "RICOCHET.title",
@@ -44,6 +49,10 @@
     "base": {
       "title": "Ricochet",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal 3 damage to a random enemy 4 times.",
         "runs": [
@@ -70,6 +79,10 @@
     "upgraded": {
       "title": "Ricochet+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal 3 damage to a random enemy 5 times.",
         "runs": [

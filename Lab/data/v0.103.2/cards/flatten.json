@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "FLATTEN",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Flatten",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Flatten.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Attack",
     "rarity": "Common",
     "target": "AnyEnemy",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "FLATTEN.title",
@@ -38,6 +43,10 @@
     "base": {
       "title": "Flatten",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Osty deals 12 damage.\nThis card costs 0  if Osty has attacked this turn.",
         "runs": [
@@ -68,6 +77,10 @@
     "upgraded": {
       "title": "Flatten+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Osty deals 16 damage.\nThis card costs 0  if Osty has attacked this turn.",
         "runs": [

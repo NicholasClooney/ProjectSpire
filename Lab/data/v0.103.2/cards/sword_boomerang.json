@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SWORD_BOOMERANG",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "SwordBoomerang",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SwordBoomerang.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Common",
     "target": "RandomEnemy",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "SWORD_BOOMERANG.title",
@@ -36,6 +41,10 @@
     "base": {
       "title": "Sword Boomerang",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 3 damage to a random enemy 3 times.",
         "runs": [
@@ -62,6 +71,10 @@
     "upgraded": {
       "title": "Sword Boomerang+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 3 damage to a random enemy 4 times.",
         "runs": [

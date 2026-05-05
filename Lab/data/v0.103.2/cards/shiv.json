@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SHIV",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Shiv",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Shiv.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Attack",
     "rarity": "Token",
     "target": "AnyEnemy",
+    "card_pool": "token",
     "localization": {
       "table": "cards",
       "title_key": "SHIV.title",
@@ -48,6 +53,10 @@
     "base": {
       "title": "Shiv",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 4 damage{TargetType:choose(AllEnemies): to ALL enemies|}.",
         "runs": [
@@ -67,6 +76,10 @@
     "upgraded": {
       "title": "Shiv+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Deal 6 damage{TargetType:choose(AllEnemies): to ALL enemies|}.",
         "runs": [

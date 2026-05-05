@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "HIDDEN_GEM",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "HiddenGem",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HiddenGem.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "colorless",
     "localization": {
       "table": "cards",
       "title_key": "HIDDEN_GEM.title",
@@ -50,6 +55,10 @@
     "base": {
       "title": "Hidden Gem",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "A random card without Replay in your Draw Pile gains Replay 2.",
         "runs": [
@@ -90,6 +99,10 @@
     "upgraded": {
       "title": "Hidden Gem+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "A random card without Replay in your Draw Pile gains Replay 3.",
         "runs": [

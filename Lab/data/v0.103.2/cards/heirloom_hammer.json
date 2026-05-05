@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "HEIRLOOM_HAMMER",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "HeirloomHammer",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HeirloomHammer.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AnyEnemy",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "HEIRLOOM_HAMMER.title",
@@ -41,6 +46,10 @@
     "base": {
       "title": "Heirloom Hammer",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal 20 damage.\nChoose a Colorless card in your Hand. Add a copy of that card into your Hand.",
         "runs": [
@@ -74,6 +83,10 @@
     "upgraded": {
       "title": "Heirloom Hammer+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal 25 damage.\nChoose a Colorless card in your Hand. Add a copy of that card into your Hand.",
         "runs": [

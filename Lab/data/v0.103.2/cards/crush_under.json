@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "CRUSH_UNDER",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "CrushUnder",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CrushUnder.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Common",
     "target": "AllEnemies",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "CRUSH_UNDER.title",
@@ -59,6 +64,10 @@
     "base": {
       "title": "Crush Under",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 7 damage to ALL enemies. All enemies lose 1 Strength this turn.",
         "runs": [
@@ -92,6 +101,10 @@
     "upgraded": {
       "title": "Crush Under+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 8 damage to ALL enemies. All enemies lose 2 Strength this turn.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "CLOAK_AND_DAGGER",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "CloakAndDagger",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CloakAndDagger.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Common",
     "target": "Self",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "CLOAK_AND_DAGGER.title",
@@ -50,6 +55,10 @@
     "base": {
       "title": "Cloak and Dagger",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain 6 Block.\nAdd 1 Shiv into your Hand.",
         "runs": [
@@ -97,6 +106,10 @@
     "upgraded": {
       "title": "Cloak and Dagger+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain 6 Block.\nAdd 2 Shivs into your Hand.",
         "runs": [

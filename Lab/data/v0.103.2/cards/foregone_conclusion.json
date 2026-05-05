@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "FOREGONE_CONCLUSION",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "ForegoneConclusion",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ForegoneConclusion.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "FOREGONE_CONCLUSION.title",
@@ -47,6 +52,10 @@
     "base": {
       "title": "Foregone Conclusion",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Next turn, put 2 cards from your Draw Pile into your Hand.",
         "runs": [
@@ -80,6 +89,10 @@
     "upgraded": {
       "title": "Foregone Conclusion+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Next turn, put 3 cards from your Draw Pile into your Hand.",
         "runs": [

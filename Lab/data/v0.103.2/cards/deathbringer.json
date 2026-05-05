@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "DEATHBRINGER",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Deathbringer",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Deathbringer.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "AllEnemies",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "DEATHBRINGER.title",
@@ -60,6 +65,10 @@
     "base": {
       "title": "Deathbringer",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Apply 21 Doom and 1 Weak to ALL enemies.",
         "runs": [
@@ -100,6 +109,10 @@
     "upgraded": {
       "title": "Deathbringer+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Apply 26 Doom and 1 Weak to ALL enemies.",
         "runs": [

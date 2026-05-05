@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SPIRIT_OF_ASH",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "SpiritOfAsh",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SpiritOfAsh.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Power",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "SPIRIT_OF_ASH.title",
@@ -57,6 +62,10 @@
     "base": {
       "title": "Spirit of Ash",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Whenever you play an Ethereal card, gain 4 Block.",
         "runs": [
@@ -90,6 +99,10 @@
     "upgraded": {
       "title": "Spirit of Ash+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Whenever you play an Ethereal card, gain 5 Block.",
         "runs": [

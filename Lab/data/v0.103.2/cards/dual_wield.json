@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "DUAL_WIELD",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "DualWield",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DualWield.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Event",
     "target": "Self",
+    "card_pool": "event",
     "localization": {
       "table": "cards",
       "title_key": "DUAL_WIELD.title",
@@ -35,6 +40,10 @@
     "base": {
       "title": "Dual Wield",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Choose an Attack or Power card. Add a copy of that card into your Hand.",
         "runs": [
@@ -54,6 +63,10 @@
     "upgraded": {
       "title": "Dual Wield+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Choose an Attack or Power card. Add 2 copies of that card into your Hand.",
         "runs": [

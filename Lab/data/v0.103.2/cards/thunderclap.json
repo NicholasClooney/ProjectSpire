@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "THUNDERCLAP",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Thunderclap",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Thunderclap.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Common",
     "target": "AllEnemies",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "THUNDERCLAP.title",
@@ -50,6 +55,10 @@
     "base": {
       "title": "Thunderclap",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 4 damage and apply 1 Vulnerable to ALL enemies.",
         "runs": [
@@ -83,6 +92,10 @@
     "upgraded": {
       "title": "Thunderclap+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 7 damage and apply 1 Vulnerable to ALL enemies.",
         "runs": [

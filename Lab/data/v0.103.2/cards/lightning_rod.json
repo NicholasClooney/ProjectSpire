@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "LIGHTNING_ROD",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "LightningRod",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/LightningRod.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Skill",
     "rarity": "Common",
     "target": "Self",
+    "card_pool": "defect",
     "localization": {
       "table": "cards",
       "title_key": "LIGHTNING_ROD.title",
@@ -60,6 +65,10 @@
     "base": {
       "title": "Lightning Rod",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain 4 Block.\nAt the start of the next {:diff()} turns, Channel 1 Lightning.",
         "runs": [
@@ -100,6 +109,10 @@
     "upgraded": {
       "title": "Lightning Rod+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Gain 7 Block.\nAt the start of the next {:diff()} turns, Channel 1 Lightning.",
         "runs": [

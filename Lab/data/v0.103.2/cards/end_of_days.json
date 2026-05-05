@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "END_OF_DAYS",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "EndOfDays",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/EndOfDays.cs",
     "cost": 3,
+    "energy_cost": {
+      "kind": "int",
+      "value": 3
+    },
     "type": "Skill",
     "rarity": "Rare",
     "target": "AllEnemies",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "END_OF_DAYS.title",
@@ -49,6 +54,10 @@
     "base": {
       "title": "End of Days",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Apply 29 Doom to ALL enemies.\nKill enemies with at least as much Doom as HP.",
         "runs": [
@@ -82,6 +91,10 @@
     "upgraded": {
       "title": "End of Days+",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Apply 37 Doom to ALL enemies.\nKill enemies with at least as much Doom as HP.",
         "runs": [

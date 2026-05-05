@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "NIGHTMARE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Nightmare",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Nightmare.cs",
     "cost": 3,
+    "energy_cost": {
+      "kind": "int",
+      "value": 3
+    },
     "type": "Skill",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "silent",
     "localization": {
       "table": "cards",
       "title_key": "NIGHTMARE.title",
@@ -43,6 +48,10 @@
     "base": {
       "title": "Nightmare",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Choose a card.\nNext turn, add 3 copies of that card into your Hand.",
         "runs": [
@@ -62,6 +71,10 @@
     "upgraded": {
       "title": "Nightmare+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Choose a card.\nNext turn, add 3 copies of that card into your Hand.",
         "runs": [

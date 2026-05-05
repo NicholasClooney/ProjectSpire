@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "BULK_UP",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "BulkUp",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BulkUp.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Power",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "defect",
     "localization": {
       "table": "cards",
       "title_key": "BULK_UP.title",
@@ -70,6 +75,10 @@
     "base": {
       "title": "Bulk Up",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Lose 1 Orb Slot.\nGain 2 Strength.\nGain 2 Dexterity.",
         "runs": [
@@ -117,6 +126,10 @@
     "upgraded": {
       "title": "Bulk Up+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Lose 1 Orb Slot.\nGain 3 Strength.\nGain 3 Dexterity.",
         "runs": [

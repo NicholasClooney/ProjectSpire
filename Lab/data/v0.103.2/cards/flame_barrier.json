@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "FLAME_BARRIER",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "FlameBarrier",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FlameBarrier.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "FLAME_BARRIER.title",
@@ -47,6 +52,10 @@
     "base": {
       "title": "Flame Barrier",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Gain 12 Block.\nWhenever you are attacked this turn, deal 4 damage back.",
         "runs": [
@@ -80,6 +89,10 @@
     "upgraded": {
       "title": "Flame Barrier+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Gain 16 Block.\nWhenever you are attacked this turn, deal 6 damage back.",
         "runs": [

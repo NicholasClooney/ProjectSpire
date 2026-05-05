@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "SQUEEZE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Squeeze",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Squeeze.cs",
     "cost": 3,
+    "energy_cost": {
+      "kind": "int",
+      "value": 3
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AnyEnemy",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "SQUEEZE.title",
@@ -48,6 +53,10 @@
     "base": {
       "title": "Squeeze",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Osty deals {CalculatedDamage:diff()} damage.\nDeals 5 additional damage for ALL your other Osty Attacks.",
         "runs": [
@@ -78,6 +87,10 @@
     "upgraded": {
       "title": "Squeeze+",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Osty deals {CalculatedDamage:diff()} damage.\nDeals 6 additional damage for ALL your other Osty Attacks.",
         "runs": [

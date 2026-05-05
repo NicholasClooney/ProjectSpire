@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "PERFECTED_STRIKE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "PerfectedStrike",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PerfectedStrike.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Attack",
     "rarity": "Common",
     "target": "AnyEnemy",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "PERFECTED_STRIKE.title",
@@ -39,6 +44,10 @@
     "base": {
       "title": "Perfected Strike",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 2 additional damage for ALL your cards containing \u201cStrike\u201d.",
         "runs": [
@@ -58,6 +67,10 @@
     "upgraded": {
       "title": "Perfected Strike+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 3 additional damage for ALL your cards containing \u201cStrike\u201d.",
         "runs": [

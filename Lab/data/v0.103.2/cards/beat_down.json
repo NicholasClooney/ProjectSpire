@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "BEAT_DOWN",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "BeatDown",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BeatDown.cs",
     "cost": 3,
+    "energy_cost": {
+      "kind": "int",
+      "value": 3
+    },
     "type": "Skill",
     "rarity": "Rare",
     "target": "RandomEnemy",
+    "card_pool": "colorless",
     "localization": {
       "table": "cards",
       "title_key": "BEAT_DOWN.title",
@@ -43,6 +48,10 @@
     "base": {
       "title": "Beat Down",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Play 3 random Attacks from your Discard Pile.",
         "runs": [
@@ -69,6 +78,10 @@
     "upgraded": {
       "title": "Beat Down+",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Play 4 random Attacks from your Discard Pile.",
         "runs": [

@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "RIGHT_HAND_HAND",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "RightHandHand",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/RightHandHand.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "RIGHT_HAND_HAND.title",
@@ -44,6 +49,10 @@
     "base": {
       "title": "Right Hand Hand",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Osty deals 4 damage.\nWhenever you play a card that costs 2 or more, return this to your Hand from the Discard Pile.",
         "runs": [
@@ -88,6 +97,10 @@
     "upgraded": {
       "title": "Right Hand Hand+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Osty deals 6 damage.\nWhenever you play a card that costs 2 or more, return this to your Hand from the Discard Pile.",
         "runs": [

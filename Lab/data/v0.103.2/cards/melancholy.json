@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "MELANCHOLY",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Melancholy",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Melancholy.cs",
     "cost": 3,
+    "energy_cost": {
+      "kind": "int",
+      "value": 3
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "MELANCHOLY.title",
@@ -36,6 +41,10 @@
     "base": {
       "title": "Melancholy",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Gain 13 Block.\nReduce this card's cost by 1 whenever ANYONE dies.",
         "runs": [
@@ -69,6 +78,10 @@
     "upgraded": {
       "title": "Melancholy+",
       "cost": 3,
+      "energy_cost": {
+        "kind": "int",
+        "value": 3
+      },
       "description": {
         "plain": "Gain 17 Block.\nReduce this card's cost by 1 whenever ANYONE dies.",
         "runs": [

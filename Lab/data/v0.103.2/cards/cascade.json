@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "CASCADE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Cascade",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Cascade.cs",
     "cost": -1,
+    "energy_cost": {
+      "kind": "x",
+      "value": -1
+    },
     "type": "Skill",
     "rarity": "Rare",
     "target": "Self",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "CASCADE.title",
@@ -31,6 +36,10 @@
     "base": {
       "title": "Cascade",
       "cost": -1,
+      "energy_cost": {
+        "kind": "x",
+        "value": -1
+      },
       "description": {
         "plain": "Play the top X cards of your Draw Pile.",
         "runs": [
@@ -50,6 +59,10 @@
     "upgraded": {
       "title": "Cascade+",
       "cost": -1,
+      "energy_cost": {
+        "kind": "x",
+        "value": -1
+      },
       "description": {
         "plain": "Play the top X+1 cards of your Draw Pile.",
         "runs": [

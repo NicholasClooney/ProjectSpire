@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "FIGHT_ME",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "FightMe",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FightMe.cs",
     "cost": 2,
+    "energy_cost": {
+      "kind": "int",
+      "value": 2
+    },
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "FIGHT_ME.title",
@@ -66,6 +71,10 @@
     "base": {
       "title": "Fight Me!",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal 5 damage twice.\nGain 3 Strength.\nThe enemy gains 1 Strength.",
         "runs": [
@@ -113,6 +122,10 @@
     "upgraded": {
       "title": "Fight Me!+",
       "cost": 2,
+      "energy_cost": {
+        "kind": "int",
+        "value": 2
+      },
       "description": {
         "plain": "Deal 6 damage twice.\nGain 4 Strength.\nThe enemy gains 1 Strength.",
         "runs": [

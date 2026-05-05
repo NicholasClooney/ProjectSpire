@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "DIRGE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "Dirge",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Dirge.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "x",
+      "value": 0
+    },
     "type": "Skill",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "necrobinder",
     "localization": {
       "table": "cards",
       "title_key": "DIRGE.title",
@@ -50,6 +55,10 @@
     "base": {
       "title": "Dirge",
       "cost": 0,
+      "energy_cost": {
+        "kind": "x",
+        "value": 0
+      },
       "description": {
         "plain": "Summon 3 X times.\nAdd X Souls into your Draw Pile.",
         "runs": [
@@ -87,6 +96,10 @@
     "upgraded": {
       "title": "Dirge+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "x",
+        "value": 0
+      },
       "description": {
         "plain": "Summon 4 X times.\nAdd X Souls+ into your Draw Pile.",
         "runs": [

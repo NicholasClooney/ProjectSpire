@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "DRUM_OF_BATTLE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "DrumOfBattle",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DrumOfBattle.cs",
     "cost": 0,
+    "energy_cost": {
+      "kind": "int",
+      "value": 0
+    },
     "type": "Power",
     "rarity": "Uncommon",
     "target": "Self",
+    "card_pool": "ironclad",
     "localization": {
       "table": "cards",
       "title_key": "DRUM_OF_BATTLE.title",
@@ -51,6 +56,10 @@
     "base": {
       "title": "Drum of Battle",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Draw 2 cards.\nAt the start of your turn, Exhaust the top card of your Draw Pile.",
         "runs": [
@@ -84,6 +93,10 @@
     "upgraded": {
       "title": "Drum of Battle+",
       "cost": 0,
+      "energy_cost": {
+        "kind": "int",
+        "value": 0
+      },
       "description": {
         "plain": "Draw 3 cards.\nAt the start of your turn, Exhaust the top card of your Draw Pile.",
         "runs": [

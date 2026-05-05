@@ -1,14 +1,19 @@
 {
-  "schema_version": "0.2.2",
+  "schema_version": "0.2.3",
   "id": "BEAT_INTO_SHAPE",
   "raw": {
-    "parser_version": "0.2.2",
+    "parser_version": "0.2.3",
     "class_name": "BeatIntoShape",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BeatIntoShape.cs",
     "cost": 1,
+    "energy_cost": {
+      "kind": "int",
+      "value": 1
+    },
     "type": "Attack",
     "rarity": "Rare",
     "target": "AnyEnemy",
+    "card_pool": "regent",
     "localization": {
       "table": "cards",
       "title_key": "BEAT_INTO_SHAPE.title",
@@ -50,6 +55,10 @@
     "base": {
       "title": "Beat into Shape",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 5 damage.\nForge {CalculatedForge:diff()}.\nForges an additional 5 for every other time you've hit the enemy this turn.",
         "runs": [
@@ -90,6 +99,10 @@
     "upgraded": {
       "title": "Beat into Shape+",
       "cost": 1,
+      "energy_cost": {
+        "kind": "int",
+        "value": 1
+      },
       "description": {
         "plain": "Deal 7 damage.\nForge {CalculatedForge:diff()}.\nForges an additional 7 for every other time you've hit the enemy this turn.",
         "runs": [
