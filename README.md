@@ -2,7 +2,8 @@
 
 ## Repo structure
 
-- `Documentation/` — project-wide records, plans, and decisions that span multiple repo areas.
+- `Documentation/` — project-wide records, plans, decisions, and devlogs that span multiple repo areas.
+- `Documentation/Devlogs/` — dated development notes capturing implementation context, issues found, and follow-up lessons.
 - `Lab/` — research workspace for decompiling and studying STS2 game source. See `Lab/CLAUDE.md`.
 - `Lab/audits/` — source-vs-output audit scripts for generated Lab data.
 - `Mods/` — Godot/C# mod projects. See `Mods/README.md`.
