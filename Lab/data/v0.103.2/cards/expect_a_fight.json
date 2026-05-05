@@ -22,7 +22,8 @@
     "vars": {
       "Energy": 0,
       "CalculationBase": 0,
-      "CalculationExtra": 1
+      "CalculationExtra": 1,
+      "CalculatedEnergy": 0
     },
     "assets": [
       {

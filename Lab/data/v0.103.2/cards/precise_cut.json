@@ -21,7 +21,8 @@
     },
     "vars": {
       "CalculationBase": 13,
-      "ExtraDamage": 2
+      "ExtraDamage": 2,
+      "CalculatedDamage": 13
     },
     "assets": [
       {
@@ -51,10 +52,17 @@
         "value": 0
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 2 less damage for each other card in your Hand.",
+        "plain": "Deal 13 damage.\nDeals 2 less damage for each other card in your Hand.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "13",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "2",
@@ -81,10 +89,18 @@
         "value": 0
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 2 less damage for each other card in your Hand.",
+        "plain": "Deal 16 damage.\nDeals 2 less damage for each other card in your Hand.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "16",
+            "source_var": "CalculatedDamage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "2",
@@ -101,7 +117,10 @@
             "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

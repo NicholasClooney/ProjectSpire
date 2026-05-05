@@ -21,7 +21,8 @@
     },
     "vars": {
       "CalculationBase": 25,
-      "ExtraDamage": 5
+      "ExtraDamage": 5,
+      "CalculatedDamage": 25
     },
     "assets": [
       {
@@ -58,14 +59,21 @@
         "value": 3
       },
       "description": {
-        "plain": "Osty deals {CalculatedDamage:diff()} damage.\nDeals 5 additional damage for ALL your other Osty Attacks.",
+        "plain": "Osty deals 25 damage.\nDeals 5 additional damage for ALL your other Osty Attacks.",
         "runs": [
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " deals {CalculatedDamage:diff()} damage.\nDeals "
+            "text": " deals "
+          },
+          {
+            "text": "25",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "5",
@@ -92,14 +100,22 @@
         "value": 3
       },
       "description": {
-        "plain": "Osty deals {CalculatedDamage:diff()} damage.\nDeals 6 additional damage for ALL your other Osty Attacks.",
+        "plain": "Osty deals 30 damage.\nDeals 6 additional damage for ALL your other Osty Attacks.",
         "runs": [
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " deals {CalculatedDamage:diff()} damage.\nDeals "
+            "text": " deals "
+          },
+          {
+            "text": "30",
+            "source_var": "CalculatedDamage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "6",

@@ -21,7 +21,8 @@
     },
     "vars": {
       "CalculationBase": 9,
-      "ExtraDamage": 2
+      "ExtraDamage": 2,
+      "CalculatedDamage": 9
     },
     "assets": [
       {
@@ -58,10 +59,17 @@
         "value": 1
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 2 additional damage for each Soul in your Exhaust Pile.",
+        "plain": "Deal 9 damage.\nDeals 2 additional damage for each Soul in your Exhaust Pile.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "9",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "2",
@@ -95,10 +103,17 @@
         "value": 1
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 3 additional damage for each Soul in your Exhaust Pile.",
+        "plain": "Deal 9 damage.\nDeals 3 additional damage for each Soul in your Exhaust Pile.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "9",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "3",

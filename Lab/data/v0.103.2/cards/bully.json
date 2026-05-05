@@ -21,7 +21,8 @@
     },
     "vars": {
       "CalculationBase": 4,
-      "ExtraDamage": 2
+      "ExtraDamage": 2,
+      "CalculatedDamage": 4
     },
     "assets": [
       {
@@ -53,10 +54,17 @@
         "value": 0
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 2 additional damage for each Vulnerable on the enemy.",
+        "plain": "Deal 4 damage.\nDeals 2 additional damage for each Vulnerable on the enemy.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "4",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "2",
@@ -83,10 +91,17 @@
         "value": 0
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 3 additional damage for each Vulnerable on the enemy.",
+        "plain": "Deal 4 damage.\nDeals 3 additional damage for each Vulnerable on the enemy.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "4",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "3",

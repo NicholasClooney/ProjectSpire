@@ -23,7 +23,8 @@
       "Damage": 5,
       "Repeat": 1,
       "CalculationBase": 0,
-      "CalculationExtra": 1
+      "CalculationExtra": 1,
+      "CalculatedHits": 0
     },
     "assets": [
       {

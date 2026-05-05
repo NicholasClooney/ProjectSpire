@@ -58,7 +58,7 @@
         "value": 0
       },
       "description": {
-        "plain": "Deal 4 damage{TargetType:choose(AllEnemies): to ALL enemies|}.",
+        "plain": "Deal 4 damage.",
         "runs": [
           {
             "text": "Deal "
@@ -68,7 +68,7 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage{TargetType:choose(AllEnemies): to ALL enemies|}."
+            "text": " damage."
           }
         ]
       }
@@ -81,7 +81,7 @@
         "value": 0
       },
       "description": {
-        "plain": "Deal 6 damage{TargetType:choose(AllEnemies): to ALL enemies|}.",
+        "plain": "Deal 6 damage.",
         "runs": [
           {
             "text": "Deal "
@@ -92,7 +92,7 @@
             "style": "green"
           },
           {
-            "text": " damage{TargetType:choose(AllEnemies): to ALL enemies|}."
+            "text": " damage."
           }
         ]
       },

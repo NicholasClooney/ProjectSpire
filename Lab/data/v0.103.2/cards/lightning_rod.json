@@ -70,7 +70,7 @@
         "value": 1
       },
       "description": {
-        "plain": "Gain 4 Block.\nAt the start of the next {:diff()} turns, Channel 1 Lightning.",
+        "plain": "Gain 4 Block.\nAt the start of the next 2 turns, Channel 1 Lightning.",
         "runs": [
           {
             "text": "Gain "
@@ -87,7 +87,14 @@
             "style": "gold"
           },
           {
-            "text": ".\nAt the start of the next {:diff()} turns, "
+            "text": ".\nAt the start of the next "
+          },
+          {
+            "text": "2",
+            "source_var": "LightningRodPower"
+          },
+          {
+            "text": " turns, "
           },
           {
             "text": "Channel",
@@ -114,7 +121,7 @@
         "value": 1
       },
       "description": {
-        "plain": "Gain 7 Block.\nAt the start of the next {:diff()} turns, Channel 1 Lightning.",
+        "plain": "Gain 7 Block.\nAt the start of the next 2 turns, Channel 1 Lightning.",
         "runs": [
           {
             "text": "Gain "
@@ -132,7 +139,14 @@
             "style": "gold"
           },
           {
-            "text": ".\nAt the start of the next {:diff()} turns, "
+            "text": ".\nAt the start of the next "
+          },
+          {
+            "text": "2",
+            "source_var": "LightningRodPower"
+          },
+          {
+            "text": " turns, "
           },
           {
             "text": "Channel",

@@ -53,7 +53,7 @@
         "value": 1
       },
       "description": {
-        "plain": "Deal 10 damage.\nPut {:diff()} random cards from your Discard Pile into your Hand.",
+        "plain": "Deal 10 damage.\nPut 2 random cards from your Discard Pile into your Hand.",
         "runs": [
           {
             "text": "Deal "
@@ -63,7 +63,14 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage.\nPut {:diff()} random cards from your "
+            "text": " damage.\nPut "
+          },
+          {
+            "text": "2",
+            "source_var": "Cards"
+          },
+          {
+            "text": " random cards from your "
           },
           {
             "text": "Discard Pile",
@@ -90,7 +97,7 @@
         "value": 1
       },
       "description": {
-        "plain": "Deal 14 damage.\nPut {:diff()} random cards from your Discard Pile into your Hand.",
+        "plain": "Deal 14 damage.\nPut 3 random cards from your Discard Pile into your Hand.",
         "runs": [
           {
             "text": "Deal "
@@ -101,7 +108,15 @@
             "style": "green"
           },
           {
-            "text": " damage.\nPut {:diff()} random cards from your "
+            "text": " damage.\nPut "
+          },
+          {
+            "text": "3",
+            "source_var": "Cards",
+            "style": "green"
+          },
+          {
+            "text": " random cards from your "
           },
           {
             "text": "Discard Pile",

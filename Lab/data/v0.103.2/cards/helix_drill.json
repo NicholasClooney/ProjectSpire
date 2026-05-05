@@ -22,7 +22,8 @@
     "vars": {
       "Damage": 3,
       "CalculationBase": 0,
-      "CalculationExtra": 1
+      "CalculationExtra": 1,
+      "CalculatedHits": 0
     },
     "assets": [
       {

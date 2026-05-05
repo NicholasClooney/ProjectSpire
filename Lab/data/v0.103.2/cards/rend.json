@@ -21,7 +21,8 @@
     },
     "vars": {
       "CalculationBase": 15,
-      "ExtraDamage": 5
+      "ExtraDamage": 5,
+      "CalculatedDamage": 15
     },
     "assets": [
       {
@@ -55,10 +56,17 @@
         "value": 2
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 5 additional damage for each unique debuff on the enemy.",
+        "plain": "Deal 15 damage.\nDeals 5 additional damage for each unique debuff on the enemy.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "15",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "5",
@@ -78,10 +86,18 @@
         "value": 2
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 8 additional damage for each unique debuff on the enemy.",
+        "plain": "Deal 18 damage.\nDeals 8 additional damage for each unique debuff on the enemy.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "18",
+            "source_var": "CalculatedDamage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "8",

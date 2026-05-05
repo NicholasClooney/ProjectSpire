@@ -20,6 +20,7 @@
       "description_key": "GENETIC_ALGORITHM.description"
     },
     "vars": {
+      "Block": 1,
       "Increase": 3
     },
     "assets": [
@@ -48,10 +49,17 @@
         "value": 1
       },
       "description": {
-        "plain": "Gain {Block:diff()} Block.\nPermanently increase this card's Block by 3.",
+        "plain": "Gain 1 Block.\nPermanently increase this card's Block by 3.",
         "runs": [
           {
-            "text": "Gain {Block:diff()} "
+            "text": "Gain "
+          },
+          {
+            "text": "1",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
           },
           {
             "text": "Block",
@@ -85,10 +93,17 @@
         "value": 1
       },
       "description": {
-        "plain": "Gain {Block:diff()} Block.\nPermanently increase this card's Block by 4.",
+        "plain": "Gain 1 Block.\nPermanently increase this card's Block by 4.",
         "runs": [
           {
-            "text": "Gain {Block:diff()} "
+            "text": "Gain "
+          },
+          {
+            "text": "1",
+            "source_var": "Block"
+          },
+          {
+            "text": " "
           },
           {
             "text": "Block",

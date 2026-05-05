@@ -22,7 +22,8 @@
     "vars": {
       "DoomThreshold": 10,
       "CalculationBase": 10,
-      "CalculationExtra": 5
+      "CalculationExtra": 5,
+      "CalculatedDoom": 10
     },
     "assets": [
       {
@@ -61,7 +62,7 @@
         "value": 1
       },
       "description": {
-        "plain": "Apply 10 Doom, plus an additional 5 Doom for every 10 Doom already on this enemy.{IsTargeting:\n(Apply {CalculatedDoom:diff()} [gold]Doom[/gold])|}",
+        "plain": "Apply 10 Doom, plus an additional 5 Doom for every 10 Doom already on this enemy.",
         "runs": [
           {
             "text": "Apply "
@@ -106,7 +107,7 @@
             "style": "gold"
           },
           {
-            "text": " already on this enemy.{IsTargeting:\n(Apply {CalculatedDoom:diff()} [gold]Doom[/gold])|}"
+            "text": " already on this enemy."
           }
         ]
       }
@@ -119,7 +120,7 @@
         "value": 1
       },
       "description": {
-        "plain": "Apply 15 Doom, plus an additional 5 Doom for every 10 Doom already on this enemy.{IsTargeting:\n(Apply {CalculatedDoom:diff()} [gold]Doom[/gold])|}",
+        "plain": "Apply 15 Doom, plus an additional 5 Doom for every 10 Doom already on this enemy.",
         "runs": [
           {
             "text": "Apply "
@@ -165,7 +166,7 @@
             "style": "gold"
           },
           {
-            "text": " already on this enemy.{IsTargeting:\n(Apply {CalculatedDoom:diff()} [gold]Doom[/gold])|}"
+            "text": " already on this enemy."
           }
         ]
       },

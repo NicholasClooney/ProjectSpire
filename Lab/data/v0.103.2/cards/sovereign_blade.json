@@ -23,7 +23,8 @@
       "Damage": 10,
       "CalculationBase": 0,
       "CalculationExtra": 1,
-      "Repeat": 1
+      "Repeat": 1,
+      "SeekingEdgeAmount": 0
     },
     "assets": [
       {
@@ -57,7 +58,7 @@
         "value": 2
       },
       "description": {
-        "plain": "Deal 10 damage{SeekingEdgeAmount:cond:>0? to ALL enemies|}.",
+        "plain": "Deal 10 damage.",
         "runs": [
           {
             "text": "Deal "
@@ -67,7 +68,7 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage{SeekingEdgeAmount:cond:>0? to ALL enemies|}."
+            "text": " damage."
           }
         ]
       }
@@ -80,7 +81,7 @@
         "value": 1
       },
       "description": {
-        "plain": "Deal 10 damage{SeekingEdgeAmount:cond:>0? to ALL enemies|}.",
+        "plain": "Deal 10 damage.",
         "runs": [
           {
             "text": "Deal "
@@ -90,7 +91,7 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage{SeekingEdgeAmount:cond:>0? to ALL enemies|}."
+            "text": " damage."
           }
         ]
       },

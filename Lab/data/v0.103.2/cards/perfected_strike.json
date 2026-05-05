@@ -21,7 +21,8 @@
     },
     "vars": {
       "CalculationBase": 6,
-      "ExtraDamage": 2
+      "ExtraDamage": 2,
+      "CalculatedDamage": 6
     },
     "assets": [
       {
@@ -49,10 +50,17 @@
         "value": 2
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 2 additional damage for ALL your cards containing \u201cStrike\u201d.",
+        "plain": "Deal 6 damage.\nDeals 2 additional damage for ALL your cards containing \u201cStrike\u201d.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "6",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "2",
@@ -72,10 +80,17 @@
         "value": 2
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 3 additional damage for ALL your cards containing \u201cStrike\u201d.",
+        "plain": "Deal 6 damage.\nDeals 3 additional damage for ALL your cards containing \u201cStrike\u201d.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "6",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "3",

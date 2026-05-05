@@ -21,7 +21,8 @@
     },
     "vars": {
       "CalculationBase": 5,
-      "ExtraDamage": 5
+      "ExtraDamage": 5,
+      "CalculatedDamage": 5
     },
     "assets": [
       {
@@ -51,10 +52,17 @@
         "value": 1
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 5 additional damage for each time another player has attacked the enemy this turn.",
+        "plain": "Deal 5 damage.\nDeals 5 additional damage for each time another player has attacked the enemy this turn.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "5",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "5",
@@ -74,10 +82,17 @@
         "value": 1
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 7 additional damage for each time another player has attacked the enemy this turn.",
+        "plain": "Deal 5 damage.\nDeals 7 additional damage for each time another player has attacked the enemy this turn.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "5",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "7",

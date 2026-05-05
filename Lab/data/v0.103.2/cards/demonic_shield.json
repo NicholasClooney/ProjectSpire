@@ -22,7 +22,8 @@
     "vars": {
       "CalculationBase": 0,
       "HpLoss": 1,
-      "CalculationExtra": 1
+      "CalculationExtra": 1,
+      "CalculatedBlock": 0
     },
     "assets": [
       {

@@ -21,7 +21,8 @@
     },
     "vars": {
       "CalculationBase": 0,
-      "ExtraDamage": 1
+      "ExtraDamage": 1,
+      "CalculatedDamage": 0
     },
     "assets": [
       {
@@ -51,7 +52,7 @@
         "value": 2
       },
       "description": {
-        "plain": "Deal damage equal to the enemy's Doom.{IsTargeting:\n(Deals {CalculatedDamage:diff()} damage)|}",
+        "plain": "Deal damage equal to the enemy's Doom.",
         "runs": [
           {
             "text": "Deal damage equal to the enemy's "
@@ -61,7 +62,7 @@
             "style": "gold"
           },
           {
-            "text": ".{IsTargeting:\n(Deals {CalculatedDamage:diff()} damage)|}"
+            "text": "."
           }
         ]
       }
@@ -74,7 +75,7 @@
         "value": 2
       },
       "description": {
-        "plain": "Deal damage equal to the enemy's Doom.{IsTargeting:\n(Deals {CalculatedDamage:diff()} damage)|}",
+        "plain": "Deal damage equal to the enemy's Doom.",
         "runs": [
           {
             "text": "Deal damage equal to the enemy's "
@@ -84,7 +85,7 @@
             "style": "gold"
           },
           {
-            "text": ".{IsTargeting:\n(Deals {CalculatedDamage:diff()} damage)|}"
+            "text": "."
           }
         ]
       }

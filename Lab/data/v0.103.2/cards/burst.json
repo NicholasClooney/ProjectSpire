@@ -68,10 +68,18 @@
         "value": 1
       },
       "description": {
-        "plain": "This turn, your next {:diff()} Skills are played an extra time.",
+        "plain": "This turn, your next 2 Skills are played an extra time.",
         "runs": [
           {
-            "text": "This turn, your next {:diff()} Skills are played an extra time."
+            "text": "This turn, your next "
+          },
+          {
+            "text": "2",
+            "source_var": "Skills",
+            "style": "green"
+          },
+          {
+            "text": " Skills are played an extra time."
           }
         ]
       },

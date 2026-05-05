@@ -21,7 +21,8 @@
     },
     "vars": {
       "CalculationBase": 8,
-      "ExtraDamage": 3
+      "ExtraDamage": 3,
+      "CalculatedDamage": 8
     },
     "assets": [
       {
@@ -50,10 +51,17 @@
         "value": 1
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 3 additional damage for each card drawn during your turn.",
+        "plain": "Deal 8 damage.\nDeals 3 additional damage for each card drawn during your turn.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "8",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "3",
@@ -73,10 +81,18 @@
         "value": 1
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 4 additional damage for each card drawn during your turn.",
+        "plain": "Deal 9 damage.\nDeals 4 additional damage for each card drawn during your turn.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "9",
+            "source_var": "CalculatedDamage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "4",

@@ -21,7 +21,8 @@
     },
     "vars": {
       "CalculationBase": 6,
-      "ExtraDamage": 2
+      "ExtraDamage": 2,
+      "CalculatedDamage": 6
     },
     "assets": [
       {
@@ -46,10 +47,17 @@
         "value": 1
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 2 additional damage for ALL your cards that have a * cost.",
+        "plain": "Deal 6 damage.\nDeals 2 additional damage for ALL your cards that have a * cost.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "6",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "2",
@@ -69,10 +77,17 @@
         "value": 1
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 3 additional damage for ALL your cards that have a * cost.",
+        "plain": "Deal 6 damage.\nDeals 3 additional damage for ALL your cards that have a * cost.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "6",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "3",

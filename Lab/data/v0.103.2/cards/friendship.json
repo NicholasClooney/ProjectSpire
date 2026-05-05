@@ -102,7 +102,8 @@
           },
           {
             "text": "1",
-            "source_var": "StrengthPower"
+            "source_var": "StrengthPower",
+            "style": "green"
           },
           {
             "text": " "

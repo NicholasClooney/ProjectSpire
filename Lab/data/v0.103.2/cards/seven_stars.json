@@ -52,7 +52,7 @@
         "value": 2
       },
       "description": {
-        "plain": "Deal 7 damage to ALL enemies {} times.",
+        "plain": "Deal 7 damage to ALL enemies 7 times.",
         "runs": [
           {
             "text": "Deal "
@@ -62,7 +62,14 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage to ALL enemies {} times."
+            "text": " damage to ALL enemies "
+          },
+          {
+            "text": "7",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " times."
           }
         ]
       }
@@ -75,7 +82,7 @@
         "value": 1
       },
       "description": {
-        "plain": "Deal 7 damage to ALL enemies {} times.",
+        "plain": "Deal 7 damage to ALL enemies 7 times.",
         "runs": [
           {
             "text": "Deal "
@@ -85,7 +92,14 @@
             "source_var": "Damage"
           },
           {
-            "text": " damage to ALL enemies {} times."
+            "text": " damage to ALL enemies "
+          },
+          {
+            "text": "7",
+            "source_var": "Repeat"
+          },
+          {
+            "text": " times."
           }
         ]
       },

@@ -21,7 +21,8 @@
     },
     "vars": {
       "CalculationBase": 6,
-      "ExtraDamage": 3
+      "ExtraDamage": 3,
+      "CalculatedDamage": 6
     },
     "assets": [
       {
@@ -52,10 +53,17 @@
         "value": 1
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 3 additional damage for each card in your Exhaust Pile.",
+        "plain": "Deal 6 damage.\nDeals 3 additional damage for each card in your Exhaust Pile.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "6",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "3",
@@ -82,10 +90,17 @@
         "value": 1
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 4 additional damage for each card in your Exhaust Pile.",
+        "plain": "Deal 6 damage.\nDeals 4 additional damage for each card in your Exhaust Pile.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "6",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "4",

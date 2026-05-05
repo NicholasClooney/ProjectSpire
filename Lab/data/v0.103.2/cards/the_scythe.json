@@ -20,6 +20,7 @@
       "description_key": "THE_SCYTHE.description"
     },
     "vars": {
+      "Damage": 13,
       "Increase": 3
     },
     "assets": [
@@ -53,10 +54,17 @@
         "value": 2
       },
       "description": {
-        "plain": "Deal {Damage:diff()} damage.\nPermanently increase this card's damage by 3.",
+        "plain": "Deal 13 damage.\nPermanently increase this card's damage by 3.",
         "runs": [
           {
-            "text": "Deal {Damage:diff()} damage.\nPermanently increase this card's damage by "
+            "text": "Deal "
+          },
+          {
+            "text": "13",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nPermanently increase this card's damage by "
           },
           {
             "text": "3",
@@ -76,10 +84,17 @@
         "value": 2
       },
       "description": {
-        "plain": "Deal {Damage:diff()} damage.\nPermanently increase this card's damage by 4.",
+        "plain": "Deal 13 damage.\nPermanently increase this card's damage by 4.",
         "runs": [
           {
-            "text": "Deal {Damage:diff()} damage.\nPermanently increase this card's damage by "
+            "text": "Deal "
+          },
+          {
+            "text": "13",
+            "source_var": "Damage"
+          },
+          {
+            "text": " damage.\nPermanently increase this card's damage by "
           },
           {
             "text": "4",

@@ -52,17 +52,10 @@
         "value": 1
       },
       "description": {
-        "plain": "This turn, your next 1 played an extra time.",
+        "plain": "This turn, your next Attack is played an extra time.",
         "runs": [
           {
-            "text": "This turn, your next "
-          },
-          {
-            "text": "1",
-            "source_var": "Attacks"
-          },
-          {
-            "text": " played an extra time."
+            "text": "This turn, your next Attack is played an extra time."
           }
         ]
       }
@@ -75,17 +68,18 @@
         "value": 1
       },
       "description": {
-        "plain": "This turn, your next 2 played an extra time.",
+        "plain": "This turn, your next 2 Attacks are played an extra time.",
         "runs": [
           {
             "text": "This turn, your next "
           },
           {
             "text": "2",
-            "source_var": "Attacks"
+            "source_var": "Attacks",
+            "style": "green"
           },
           {
-            "text": " played an extra time."
+            "text": " Attacks are played an extra time."
           }
         ]
       },

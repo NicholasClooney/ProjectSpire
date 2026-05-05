@@ -21,7 +21,8 @@
     },
     "vars": {
       "CalculationBase": 8,
-      "ExtraDamage": 2
+      "ExtraDamage": 2,
+      "CalculatedDamage": 8
     },
     "assets": [
       {
@@ -55,10 +56,17 @@
         "value": 1
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals 2 additional damage for each other Attack you've played this turn.",
+        "plain": "Deal 8 damage to ALL enemies.\nDeals 2 additional damage for each other Attack you've played this turn.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "8",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage to ALL enemies.\nDeals "
           },
           {
             "text": "2",
@@ -78,10 +86,18 @@
         "value": 1
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals 3 additional damage for each other Attack you've played this turn.",
+        "plain": "Deal 9 damage to ALL enemies.\nDeals 3 additional damage for each other Attack you've played this turn.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "9",
+            "source_var": "CalculatedDamage",
+            "style": "green"
+          },
+          {
+            "text": " damage to ALL enemies.\nDeals "
           },
           {
             "text": "3",

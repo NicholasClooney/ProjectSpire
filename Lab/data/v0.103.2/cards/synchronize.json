@@ -21,7 +21,8 @@
     },
     "vars": {
       "CalculationBase": 0,
-      "CalculationExtra": 2
+      "CalculationExtra": 2,
+      "CalculatedFocus": 0
     },
     "assets": [
       {

@@ -21,7 +21,8 @@
     },
     "vars": {
       "CalculationBase": 9,
-      "ExtraDamage": 4
+      "ExtraDamage": 4,
+      "CalculatedDamage": 9
     },
     "assets": [
       {
@@ -50,10 +51,17 @@
         "value": 1
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 4 additional damage for each card discarded this turn.",
+        "plain": "Deal 9 damage.\nDeals 4 additional damage for each card discarded this turn.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "9",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "4",
@@ -73,10 +81,18 @@
         "value": 1
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 5 additional damage for each card discarded this turn.",
+        "plain": "Deal 11 damage.\nDeals 5 additional damage for each card discarded this turn.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "11",
+            "source_var": "CalculatedDamage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "5",

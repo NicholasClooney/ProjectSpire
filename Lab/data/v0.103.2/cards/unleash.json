@@ -21,7 +21,8 @@
     },
     "vars": {
       "CalculationBase": 6,
-      "ExtraDamage": 1
+      "ExtraDamage": 1,
+      "CalculatedDamage": 6
     },
     "assets": [
       {
@@ -49,14 +50,21 @@
         "value": 1
       },
       "description": {
-        "plain": "Osty deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to Osty's current HP.",
+        "plain": "Osty deals 6 damage.\nDeals additional damage equal to Osty's current HP.",
         "runs": [
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to "
+            "text": " deals "
+          },
+          {
+            "text": "6",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage.\nDeals additional damage equal to "
           },
           {
             "text": "Osty's",
@@ -76,14 +84,22 @@
         "value": 1
       },
       "description": {
-        "plain": "Osty deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to Osty's current HP.",
+        "plain": "Osty deals 9 damage.\nDeals additional damage equal to Osty's current HP.",
         "runs": [
           {
             "text": "Osty",
             "style": "gold"
           },
           {
-            "text": " deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to "
+            "text": " deals "
+          },
+          {
+            "text": "9",
+            "source_var": "CalculatedDamage",
+            "style": "green"
+          },
+          {
+            "text": " damage.\nDeals additional damage equal to "
           },
           {
             "text": "Osty's",
@@ -93,7 +109,10 @@
             "text": " current HP."
           }
         ]
-      }
+      },
+      "changed": [
+        "description"
+      ]
     }
   }
 }

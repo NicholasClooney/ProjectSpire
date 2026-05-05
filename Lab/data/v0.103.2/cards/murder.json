@@ -21,7 +21,8 @@
     },
     "vars": {
       "CalculationBase": 1,
-      "ExtraDamage": 1
+      "ExtraDamage": 1,
+      "CalculatedDamage": 1
     },
     "assets": [
       {
@@ -52,10 +53,17 @@
         "value": 3
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 1 additional damage for each card drawn this combat.",
+        "plain": "Deal 1 damage.\nDeals 1 additional damage for each card drawn this combat.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "1",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "1",
@@ -75,10 +83,17 @@
         "value": 2
       },
       "description": {
-        "plain": "Deal {CalculatedDamage:diff()} damage.\nDeals 1 additional damage for each card drawn this combat.",
+        "plain": "Deal 1 damage.\nDeals 1 additional damage for each card drawn this combat.",
         "runs": [
           {
-            "text": "Deal {CalculatedDamage:diff()} damage.\nDeals "
+            "text": "Deal "
+          },
+          {
+            "text": "1",
+            "source_var": "CalculatedDamage"
+          },
+          {
+            "text": " damage.\nDeals "
           },
           {
             "text": "1",
