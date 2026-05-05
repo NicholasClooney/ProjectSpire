@@ -4,6 +4,7 @@
 
 - `Documentation/` — project-wide records, plans, and decisions that span multiple repo areas.
 - `Lab/` — research workspace for decompiling and studying STS2 game source. See `Lab/CLAUDE.md`.
+- `Lab/audits/` — source-vs-output audit scripts for generated Lab data.
 - `Mods/` — Godot/C# mod projects. See `Mods/README.md`.
 - `Mods/SpireAPI/` — game-state API layer mod. See `Mods/SpireAPI/CLAUDE.md`.
 - `Mods/SpireRestAPI/` — REST HTTP server mod, depends on SpireAPI. See `Mods/SpireRestAPI/CLAUDE.md`.

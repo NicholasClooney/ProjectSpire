@@ -15,6 +15,7 @@ import re
 import sys
 import time
 from dataclasses import dataclass, field, fields, is_dataclass
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
@@ -23,8 +24,8 @@ SCRIPT_PATH = Path(__file__).resolve()
 LAB_DIR = SCRIPT_PATH.parent.parent
 DECOMPILED_DIR = LAB_DIR / "decompiled"
 CARDS_SUBDIR = "MegaCrit.Sts2.Core.Models.Cards"
-PARSER_VERSION = "0.2.1"
-SCHEMA_VERSION = "0.2.1"
+PARSER_VERSION = "0.2.2"
+SCHEMA_VERSION = "0.2.2"
 DEFAULT_LANGUAGE = "eng"
 RESOURCES_DIR = LAB_DIR / "resources"
 LOCALIZATION_DIR = RESOURCES_DIR / "localization"
@@ -192,6 +193,51 @@ def latest_decompiled_version() -> str:
     return versions[-1]
 
 
+def source_version(filepath: Path) -> str | None:
+    try:
+        relative = filepath.resolve().relative_to(DECOMPILED_DIR.resolve())
+    except ValueError:
+        return None
+    return relative.parts[0] if relative.parts else None
+
+
+@lru_cache(maxsize=None)
+def dynamic_var_accessor_keys(version: str) -> dict[str, str]:
+    dynamic_var_set = DECOMPILED_DIR / version / "MegaCrit.Sts2.Core.Localization.DynamicVars" / "DynamicVarSet.cs"
+    if not dynamic_var_set.exists():
+        raise FileNotFoundError(f"Missing DynamicVarSet source for {version}: {dynamic_var_set}")
+
+    content = dynamic_var_set.read_text(encoding="utf-8")
+    return {
+        match.group(1): match.group(2)
+        for match in re.finditer(r"public [^;\n]+? (\w+) => [^;\n]*_vars\[\s*\"(\w+)\"\s*\]", content)
+    }
+
+
+@lru_cache(maxsize=None)
+def dynamic_var_type_names(version: str) -> dict[str, str]:
+    dynamic_vars_dir = DECOMPILED_DIR / version / "MegaCrit.Sts2.Core.Localization.DynamicVars"
+    if not dynamic_vars_dir.exists():
+        raise FileNotFoundError(f"Missing DynamicVars source directory for {version}: {dynamic_vars_dir}")
+
+    type_names: dict[str, str] = {}
+    for path in sorted(dynamic_vars_dir.glob("*Var.cs")):
+        content = path.read_text(encoding="utf-8")
+        class_match = re.search(r"public class (\w+Var)(?:<[^>]+>)?\s*:", content)
+        if not class_match:
+            continue
+
+        default_name_match = re.search(r'public const string defaultName = "(\w+)"', content)
+        base_name_match = re.search(r':\s*(?:base|this)\("(\w+)"[,)]', content)
+        var_name_match = default_name_match or base_name_match
+        if var_name_match:
+            type_names[class_match.group(1)] = var_name_match.group(1)
+
+    if not type_names:
+        raise ValueError(f"No DynamicVar type names found under {dynamic_vars_dir}")
+    return type_names
+
+
 def prompt_for_version(versions: list[str], default_version: str) -> str:
     print("Available decompiled versions:", file=sys.stderr)
     for index, version in enumerate(versions, start=1):
@@ -279,27 +325,18 @@ def extract_constructor_fields(content: str) -> tuple[int, str, str, str]:
     return cost, card_type, rarity, target
 
 
-def extract_vars(content: str) -> dict[str, int]:
+def extract_vars(content: str, type_names: dict[str, str] | None = None) -> dict[str, int]:
     vars_found: dict[str, int] = {}
+    type_names = type_names or {}
 
-    simple_var_patterns = [
-        (r"new DamageVar\((\d+)m", "Damage"),
-        (r"new BlockVar\((\d+)m", "Block"),
-        (r"new CardsVar\((\d+)\)", "Cards"),
-        (r"new EnergyVar\((\d+)\)", "Energy"),
-        (r"new HpLossVar\((\d+)m", "HpLoss"),
-    ]
-    for pattern, var_name in simple_var_patterns:
-        for match in re.finditer(pattern, content):
-            vars_found[var_name] = int(match.group(1))
-
-    for match in re.finditer(r'new DynamicVar\("(\w+)"\s*,\s*(\d+)m\)', content):
-        vars_found[match.group(1)] = int(match.group(2))
-
-    for match in re.finditer(r"new PowerVar<(\w+)>\((\d+)m\)", content):
-        power_name = match.group(1)
-        value = int(match.group(2))
-        vars_found[power_name] = value
+    for match in re.finditer(
+        r'new (?P<type>\w+Var)(?:<(?P<generic>\w+)>)?\(\s*(?:"(?P<name>\w+)"\s*,\s*)?(?P<value>-?\d+)(?:m)?',
+        content,
+    ):
+        var_type = match.group("type")
+        var_name = match.group("name") or (match.group("generic") if var_type == "PowerVar" else type_names.get(var_type))
+        if var_name:
+            vars_found[var_name] = int(match.group("value"))
 
     return vars_found
 
@@ -363,11 +400,13 @@ def extract_tags(content: str) -> list[str]:
     return tags
 
 
-def extract_upgrades(content: str) -> list[UpgradeDelta]:
+def extract_upgrades(content: str, accessor_keys: dict[str, str] | None = None) -> list[UpgradeDelta]:
     upgrades: dict[str, int] = {}
+    accessor_keys = accessor_keys or {}
 
     for match in re.finditer(r"(?<!\w)(\w+)\.UpgradeValueBy\((-?\d+)m\)", content):
-        upgrades[match.group(1)] = int(match.group(2))
+        var_name = accessor_keys.get(match.group(1), match.group(1))
+        upgrades[var_name] = int(match.group(2))
 
     for match in re.finditer(r'\["(\w+)"\]\.UpgradeValueBy\((-?\d+)m\)', content):
         upgrades.setdefault(match.group(1), int(match.group(2)))
@@ -660,8 +699,9 @@ def parse_card(
     card_pools = card_pools or {}
     title_key = f"{card_id}.title"
     description_key = f"{card_id}.description"
-    vars_by_name = extract_vars(content)
-    upgrades = extract_upgrades(content)
+    version = source_version(filepath)
+    vars_by_name = extract_vars(content, dynamic_var_type_names(version) if version else {})
+    upgrades = extract_upgrades(content, dynamic_var_accessor_keys(version) if version else {})
     cost_upgrades = extract_cost_upgrades(content)
 
     notes: list[str] = []

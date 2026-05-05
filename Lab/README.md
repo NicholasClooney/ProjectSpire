@@ -2,6 +2,24 @@
 
 This is where we research and document findings from Slay the Spire 2.
 
+## Audits
+
+Audit scripts live in:
+
+```text
+Lab/audits/
+```
+
+For example, check whether generated card JSON still covers source patterns
+recognized by the card parser:
+
+```sh
+python3 Lab/audits/card_parser_coverage.py --version v0.103.2
+```
+
+The audit exits non-zero for hard source-vs-JSON mismatches. Warnings identify
+source API patterns that may deserve parser support.
+
 ## Asset recovery
 
 The asset recovery workflow keeps the full recovered game dump out of Git while

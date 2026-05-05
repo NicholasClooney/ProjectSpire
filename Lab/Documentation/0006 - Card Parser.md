@@ -120,6 +120,8 @@ These fields come directly from the decompiled card class:
 
 `vars` uses canonical localization variable identities only. For example, `PowerVar<DexterityPower>` is emitted as `DexterityPower`, not as both `DexterityPower` and a stripped `Dexterity` alias.
 
+`upgrades` uses the same canonical identities as `vars`. When source calls an accessor such as `base.DynamicVars.Vulnerable.UpgradeValueBy(1m)`, the parser resolves that accessor through `DynamicVarSet` and emits `VulnerablePower` so upgraded descriptions apply the delta.
+
 `assets` records discovered packed card portrait files under `Lab/resources/images/packed/card_portraits/`. The parser derives each card pool from decompiled `CardPool` classes, then checks for regular and beta `.webp` portraits in that pool.
 
 `cost_upgrades` records source-level `base.EnergyCost.UpgradeBy(...)` calls separately from dynamic variable upgrades. Resolved upgraded card states apply those deltas to `cost`, clamped to zero to match `CardEnergyCost.UpgradeBy`.
@@ -224,6 +226,26 @@ Current limitations include:
 - card creation extraction only covers currently recognized creation patterns
 - the text resolver is an MVP subset of the game's localization formatter behavior
 - more complex behaviors such as loops, conditionals, runtime-calculated hit counts, and helper-method indirection are only partially represented
+
+## Coverage Audit
+
+`Lab/audits/card_parser_coverage.py` compares decompiled card source against generated card JSON. It is intended to catch parser coverage gaps such as a source `EnergyCost.UpgradeBy(...)` call that has no generated `raw.cost_upgrades` entry.
+
+Run the default hard-mismatch and unsupported-source-pattern audit:
+
+```bash
+python3 Lab/audits/card_parser_coverage.py --version v0.103.2
+```
+
+The default audit exits non-zero for errors. Warnings identify source APIs that may deserve future parser support.
+
+Use the opt-in noisy checks when investigating dynamic variables or localization formatter coverage:
+
+```bash
+python3 Lab/audits/card_parser_coverage.py --version v0.103.2 \
+  --include-dynamic-var-warnings \
+  --include-localization-placeholder-warnings
+```
 
 ## Example Commands
 
