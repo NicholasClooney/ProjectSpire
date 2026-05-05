@@ -79,9 +79,11 @@ Each card JSON currently contains:
 - `class_name`
 - `file`
 - `cost`
+- `energy_cost`
 - `type`
 - `rarity`
 - `target`
+- `card_pool`
 - `localization`
 - `vars`
 - `assets`
@@ -108,9 +110,11 @@ Each state includes title, cost, and description text as both `plain` text and s
 These fields come directly from the decompiled card class:
 
 - `cost`
+- `energy_cost`
 - `type`
 - `rarity`
 - `target`
+- `card_pool`
 - `vars`
 - `assets`
 - `keywords`
@@ -120,9 +124,13 @@ These fields come directly from the decompiled card class:
 
 `vars` uses canonical localization variable identities only. For example, `PowerVar<DexterityPower>` is emitted as `DexterityPower`, not as both `DexterityPower` and a stripped `Dexterity` alias.
 
+`energy_cost` records the app-facing cost shape while preserving the existing numeric `cost` field for compatibility. Non-X cards emit `{"kind": "int", "value": <cost>}`. Cards that override `HasEnergyCostX => true` emit `{"kind": "x", "value": 0}`.
+
+`card_pool` is resolved from decompiled `CardPool` classes. The parser fails if a parsed card cannot be mapped to a source card pool.
+
 `upgrades` uses the same canonical identities as `vars`. When source calls an accessor such as `base.DynamicVars.Vulnerable.UpgradeValueBy(1m)`, the parser resolves that accessor through `DynamicVarSet` and emits `VulnerablePower` so upgraded descriptions apply the delta.
 
-`assets` records discovered packed card portrait files under `Lab/resources/images/packed/card_portraits/`. The parser derives each card pool from decompiled `CardPool` classes, then checks for regular and beta `.webp` portraits in that pool.
+`assets` records discovered packed card portrait files under `Lab/resources/images/packed/card_portraits/`. The parser uses the resolved `card_pool`, then checks for regular and beta `.webp` portraits in that pool.
 
 `cost_upgrades` records source-level `base.EnergyCost.UpgradeBy(...)` calls separately from dynamic variable upgrades. Resolved upgraded card states apply those deltas to `cost`, clamped to zero to match `CardEnergyCost.UpgradeBy`.
 

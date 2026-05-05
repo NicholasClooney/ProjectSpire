@@ -24,8 +24,8 @@ SCRIPT_PATH = Path(__file__).resolve()
 LAB_DIR = SCRIPT_PATH.parent.parent
 DECOMPILED_DIR = LAB_DIR / "decompiled"
 CARDS_SUBDIR = "MegaCrit.Sts2.Core.Models.Cards"
-PARSER_VERSION = "0.2.2"
-SCHEMA_VERSION = "0.2.2"
+PARSER_VERSION = "0.2.3"
+SCHEMA_VERSION = "0.2.3"
 DEFAULT_LANGUAGE = "eng"
 RESOURCES_DIR = LAB_DIR / "resources"
 LOCALIZATION_DIR = RESOURCES_DIR / "localization"
@@ -87,6 +87,12 @@ class CostUpgradeDelta:
 
 
 @dataclass
+class EnergyCostInfo:
+    kind: str
+    value: int
+
+
+@dataclass
 class LocalizationInfo:
     table: str
     title_key: str
@@ -117,6 +123,7 @@ class ResolvedText:
 class ResolvedCardState:
     title: str
     cost: int
+    energy_cost: EnergyCostInfo
     description: ResolvedText
     changed: list[str] | None = None
 
@@ -133,9 +140,11 @@ class RawCardInfo:
     class_name: str
     file: str
     cost: int
+    energy_cost: EnergyCostInfo
     type: str
     rarity: str
     target: str
+    card_pool: str
     localization: LocalizationInfo
     vars: dict[str, int] = field(default_factory=dict)
     assets: list[CardAsset] = field(default_factory=list)
@@ -297,7 +306,7 @@ def load_card_pool_map(version: str | None) -> dict[str, str]:
         return {}
     pool_dir = DECOMPILED_DIR / version / CARD_POOLS_SUBDIR
     if not pool_dir.exists():
-        return {}
+        raise FileNotFoundError(f"Missing card pool source directory for {version}: {pool_dir}")
 
     card_pools: dict[str, str] = {}
     for path in sorted(pool_dir.glob("*CardPool.cs")):
@@ -309,6 +318,10 @@ def load_card_pool_map(version: str | None) -> dict[str, str]:
         for card_match in re.finditer(r"ModelDb\.Card<(\w+)>\(\)", content):
             card_pools[class_name_to_id(card_match.group(1))] = pool_title
     return card_pools
+
+
+def energy_cost_info(cost: int, costs_x: bool) -> EnergyCostInfo:
+    return EnergyCostInfo(kind="x" if costs_x else "int", value=cost)
 
 
 def extract_constructor_fields(content: str) -> tuple[int, str, str, str]:
@@ -323,6 +336,10 @@ def extract_constructor_fields(content: str) -> tuple[int, str, str, str]:
     rarity = CARD_RARITY_NAME.get(match.group(3), match.group(3))
     target = TARGET_TYPE_NAME.get(match.group(4), match.group(4))
     return cost, card_type, rarity, target
+
+
+def extract_costs_x(content: str) -> bool:
+    return bool(re.search(r"HasEnergyCostX\s*=>\s*true", content))
 
 
 def extract_vars(content: str, type_names: dict[str, str] | None = None) -> dict[str, int]:
@@ -639,6 +656,7 @@ def resolve_text(markup: str, vars_by_name: dict[str, int], changed_vars: set[st
 def build_resolved_card(
     card_id: str,
     cost: int,
+    costs_x: bool,
     vars_by_name: dict[str, int],
     upgrades: list[UpgradeDelta],
     cost_upgrades: list[CostUpgradeDelta],
@@ -654,6 +672,7 @@ def build_resolved_card(
     base = ResolvedCardState(
         title=localization[title_key],
         cost=cost,
+        energy_cost=energy_cost_info(cost, costs_x),
         description=base_description,
     )
 
@@ -678,6 +697,7 @@ def build_resolved_card(
     upgraded_state = ResolvedCardState(
         title=f"{localization[title_key]}+",
         cost=upgraded_cost,
+        energy_cost=energy_cost_info(upgraded_cost, costs_x),
         changed=changed,
         description=upgraded_description,
     )
@@ -693,10 +713,14 @@ def parse_card(
     class_name = filepath.stem
     card_id = class_name_to_id(class_name)
     cost, card_type, rarity, target = extract_constructor_fields(content)
+    costs_x = extract_costs_x(content)
     display_path = str(filepath.relative_to(LAB_DIR.parent))
 
     localization = localization or {}
     card_pools = card_pools or {}
+    card_pool = card_pools.get(card_id)
+    if card_pool is None:
+        raise ValueError(f"Could not resolve card pool for {card_id}")
     title_key = f"{card_id}.title"
     description_key = f"{card_id}.description"
     version = source_version(filepath)
@@ -710,7 +734,7 @@ def parse_card(
 
     resolved: ResolvedCard | dict[str, Any] = {}
     if localization:
-        resolved = build_resolved_card(card_id, cost, vars_by_name, upgrades, cost_upgrades, localization)
+        resolved = build_resolved_card(card_id, cost, costs_x, vars_by_name, upgrades, cost_upgrades, localization)
 
     return CardInfo(
         schema_version=SCHEMA_VERSION,
@@ -720,9 +744,11 @@ def parse_card(
             class_name=class_name,
             file=display_path,
             cost=cost,
+            energy_cost=energy_cost_info(cost, costs_x),
             type=card_type,
             rarity=rarity,
             target=target,
+            card_pool=card_pool,
             localization=LocalizationInfo(
                 table="cards",
                 title_key=title_key,

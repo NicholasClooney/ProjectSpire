@@ -22,6 +22,7 @@ SCRIPT_PATH = Path(__file__).resolve()
 LAB_DIR = SCRIPT_PATH.parent.parent
 DECOMPILED_DIR = LAB_DIR / "decompiled"
 CARDS_SUBDIR = "MegaCrit.Sts2.Core.Models.Cards"
+CARD_POOLS_SUBDIR = "MegaCrit.Sts2.Core.Models.CardPools"
 DATA_DIR = LAB_DIR / "data"
 LOCALIZATION_DIR = LAB_DIR / "resources" / "localization"
 DEFAULT_LANGUAGE = "eng"
@@ -97,6 +98,34 @@ def dynamic_var_type_names(version: str) -> dict[str, str]:
 def load_json(path: Path) -> dict[str, Any]:
     with path.open("r", encoding="utf-8") as handle:
         return json.load(handle)
+
+
+def load_card_pool_map(version: str) -> dict[str, str]:
+    pool_dir = DECOMPILED_DIR / version / CARD_POOLS_SUBDIR
+    if not pool_dir.exists():
+        raise FileNotFoundError(f"Missing card pool source directory for {version}: {pool_dir}")
+
+    card_pools: dict[str, str] = {}
+    for path in sorted(pool_dir.glob("*CardPool.cs")):
+        content = path.read_text(encoding="utf-8")
+        title_match = re.search(r'public override string Title => "([^"]+)"', content)
+        if not title_match:
+            continue
+        pool_title = title_match.group(1)
+        for card_match in re.finditer(r"ModelDb\.Card<(\w+)>\(\)", content):
+            card_pools[class_name_to_id(card_match.group(1))] = pool_title
+    return card_pools
+
+
+def extract_constructor_cost(content: str) -> int:
+    match = re.search(r":\s*base\(\s*(-?\d+)\s*,", content)
+    if not match:
+        raise ValueError("Could not locate card base constructor cost")
+    return int(match.group(1))
+
+
+def extract_costs_x(content: str) -> bool:
+    return bool(re.search(r"HasEnergyCostX\s*=>\s*true", content))
 
 
 def extract_source_vars(content: str, type_names: dict[str, str]) -> dict[str, int]:
@@ -252,6 +281,7 @@ def audit_card(
     localization: dict[str, str],
     type_names: dict[str, str],
     accessor_keys: dict[str, str],
+    card_pools: dict[str, str],
     include_dynamic_var_warnings: bool,
     include_localization_placeholder_warnings: bool,
 ) -> list[Finding]:
@@ -267,6 +297,17 @@ def audit_card(
 
     if card_json.get("id") != card_id:
         findings.append(Finding("ERROR", card_id, f"id expected {card_id!r}, found {card_json.get('id')!r}"))
+
+    cost = extract_constructor_cost(content)
+    costs_x = extract_costs_x(content)
+    expected_energy_cost = {"kind": "x" if costs_x else "int", "value": cost}
+    expected_card_pool = card_pools.get(card_id)
+    if expected_card_pool is None:
+        findings.append(Finding("ERROR", card_id, "missing source card pool"))
+    elif raw.get("card_pool") != expected_card_pool:
+        findings.append(Finding("ERROR", card_id, f"raw.card_pool expected {expected_card_pool!r}, found {raw.get('card_pool')!r}"))
+    if raw.get("energy_cost") != expected_energy_cost:
+        findings.append(Finding("ERROR", card_id, f"raw.energy_cost expected {expected_energy_cost!r}, found {raw.get('energy_cost')!r}"))
 
     findings.extend(compare_dicts(card_id, "raw.vars", extract_source_vars(content, type_names), raw.get("vars", {})))
     findings.extend(compare_list(card_id, "raw.upgrades", extract_source_upgrades(content, accessor_keys), raw.get("upgrades", [])))
@@ -322,6 +363,7 @@ def main() -> int:
     localization = load_json(localization_path) if localization_path.exists() else {}
     type_names = dynamic_var_type_names(args.version)
     accessor_keys = dynamic_var_accessor_keys(args.version)
+    card_pools = load_card_pool_map(args.version)
 
     findings: list[Finding] = []
     for source_path in sorted(cards_dir.glob("*.cs")):
@@ -332,6 +374,7 @@ def main() -> int:
                 localization,
                 type_names,
                 accessor_keys,
+                card_pools,
                 args.include_dynamic_var_warnings,
                 args.include_localization_placeholder_warnings,
             )
