@@ -10,6 +10,7 @@ This parser is intentionally conservative:
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import re
 import sys
@@ -299,6 +300,14 @@ def default_output_dir(version: str | None) -> Path:
     if version:
         return LAB_DIR / "data" / version / "cards"
     return LAB_DIR / "data" / "cards"
+
+
+def default_audit_output_dir(version: str | None, card_output_dir: Path) -> Path:
+    if version:
+        return LAB_DIR / "data" / version
+    if card_output_dir.name == "cards":
+        return card_output_dir.parent
+    return card_output_dir
 
 
 def load_card_pool_map(version: str | None) -> dict[str, str]:
@@ -806,6 +815,88 @@ def write_many_cards(cards: list[CardInfo], output_dir: Path) -> list[Path]:
     return [write_card_output(card, output_dir) for card in cards]
 
 
+def unresolved_placeholder_log_path(output_dir: Path) -> Path:
+    return output_dir / "unresolved_placeholders.csv"
+
+
+def unresolved_placeholder_catalog_path(output_dir: Path) -> Path:
+    return output_dir / "unresolved_placeholder_catalog.json"
+
+
+def unresolved_placeholders_for_card(card: CardInfo) -> list[dict[str, str]]:
+    if not isinstance(card.resolved, ResolvedCard):
+        return []
+
+    rows: list[dict[str, str]] = []
+    states = [("base", card.resolved.base)]
+    if card.resolved.upgraded is not None:
+        states.append(("upgraded", card.resolved.upgraded))
+
+    for state_name, state in states:
+        for match in re.finditer(r"\{[^{}]+\}", state.description.plain):
+            rows.append(
+                {
+                    "card_id": card.id,
+                    "state": state_name,
+                    "placeholder": match.group(0),
+                    "resolved_text": state.description.plain,
+                }
+            )
+    return rows
+
+
+def unresolved_placeholder_catalog(rows: list[dict[str, str]]) -> dict[str, Any]:
+    by_placeholder: dict[str, dict[str, Any]] = {}
+    for row in rows:
+        entry = by_placeholder.setdefault(
+            row["placeholder"],
+            {
+                "placeholder": row["placeholder"],
+                "count": 0,
+                "cards": set(),
+                "states": set(),
+            },
+        )
+        entry["count"] += 1
+        entry["cards"].add(row["card_id"])
+        entry["states"].add(row["state"])
+
+    placeholders = []
+    for entry in by_placeholder.values():
+        placeholders.append(
+            {
+                "placeholder": entry["placeholder"],
+                "count": entry["count"],
+                "cards": sorted(entry["cards"]),
+                "states": sorted(entry["states"]),
+            }
+        )
+    placeholders.sort(key=lambda entry: (-entry["count"], entry["placeholder"]))
+
+    return {
+        "generated_from": unresolved_placeholder_log_path(Path(".")).name,
+        "total_occurrences": len(rows),
+        "total_placeholders": len(placeholders),
+        "placeholders": placeholders,
+    }
+
+
+def write_unresolved_placeholder_log(cards: list[CardInfo], output_dir: Path) -> Path:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    log_path = unresolved_placeholder_log_path(output_dir)
+    catalog_path = unresolved_placeholder_catalog_path(output_dir)
+    rows = [row for card in cards for row in unresolved_placeholders_for_card(card)]
+    with log_path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=["card_id", "state", "placeholder", "resolved_text"])
+        writer.writeheader()
+        writer.writerows(rows)
+    catalog_path.write_text(
+        json.dumps(unresolved_placeholder_catalog(rows), indent=2, sort_keys=False) + "\n",
+        encoding="utf-8",
+    )
+    return log_path
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("path", nargs="?", help="Card .cs file or card directory")
@@ -842,6 +933,7 @@ def main() -> None:
     localization = {} if args.raw_only else load_localization(localization_path)
     card_pools = load_card_pool_map(args.version or inferred_version)
     output_dir = args.output_dir.resolve() if args.output_dir else default_output_dir(args.version or inferred_version)
+    audit_output_dir = default_audit_output_dir(args.version or inferred_version, output_dir)
 
     if input_path.is_file():
         card = parse_card(input_path, localization, card_pools)
@@ -849,6 +941,7 @@ def main() -> None:
             print(json.dumps(to_jsonable(card), indent=2, sort_keys=False))
             return
         output_path = write_card_output(card, output_dir)
+        write_unresolved_placeholder_log([card], audit_output_dir)
         print(output_path)
     else:
         started_at = time.perf_counter()
@@ -857,10 +950,11 @@ def main() -> None:
             print(json.dumps(to_jsonable(cards), indent=2, sort_keys=False))
             return
         paths = write_many_cards(cards, output_dir)
+        unresolved_log_path = write_unresolved_placeholder_log(cards, audit_output_dir)
         elapsed_seconds = time.perf_counter() - started_at
         print(
             f"Wrote {len(paths)} card files to {output_dir} "
-            f"in {elapsed_seconds:.3f}s"
+            f"in {elapsed_seconds:.3f}s; unresolved placeholder log: {unresolved_log_path}"
         )
 
 
