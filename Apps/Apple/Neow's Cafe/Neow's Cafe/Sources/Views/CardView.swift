@@ -73,16 +73,16 @@ struct CardView: View {
             .offset(x: -13, y: 14)
     }
 
+    @ViewBuilder
     var portrait: some View {
-        Image(card.portrait)
-            .resizable()
+        cardPortraitImage
             .frame(width: 250, height: 190)
             .offset(x: 25, y: 43)
     }
 
+    @ViewBuilder
     var ancientPortrait: some View {
-        Image(card.portrait)
-            .resizable()
+        cardPortraitImage
             .frame(width: 299, height: 421)
             .mask(alignment: .topLeading) {
                 Image(card.ancientPortraitMask)
@@ -91,6 +91,36 @@ struct CardView: View {
                     .offset(x: 2, y: 4)
             }
             .offset(x: -3, y: -4)
+    }
+
+    @ViewBuilder
+    var cardPortraitImage: some View {
+        if let portraitURL = card.portraitURL {
+            AsyncImage(url: portraitURL) { phase in
+                switch phase {
+                case .success(let image):
+                    image.resizable()
+                case .empty:
+                    portraitPlaceholder
+                case .failure:
+                    portraitPlaceholder
+                @unknown default:
+                    portraitPlaceholder
+                }
+            }
+        } else {
+            portraitPlaceholder
+        }
+    }
+
+    var portraitPlaceholder: some View {
+        Rectangle()
+            .fill(Color.black.opacity(0.35))
+            .overlay {
+                Image(systemName: "photo")
+                    .font(.system(size: 32))
+                    .foregroundStyle(Color.white.opacity(0.45))
+            }
     }
 
     var frame: some View {
@@ -161,7 +191,7 @@ struct CardView: View {
 
     @ViewBuilder
     var energyIcon: some View {
-        if card.energyCost >= 0 {
+        if card.showsEnergyIcon {
             Image(card.energyIcon)
                 .resizable()
                 .frame(width: 64, height: 64)
@@ -229,11 +259,6 @@ private extension Card {
         case .skill, .curse, .quest, .status:
             return .init(name: "ancient_card_text_bg_skill", bundle: .module)
         }
-    }
-
-    /// Decided by `id.lowercased()`
-    var portrait: ImageResource {
-        .init(name: id.lowercased(), bundle: .module)
     }
 
     /// Decided by `rarity`
@@ -324,7 +349,21 @@ private extension Card {
     }
 
     var energyCostText: String {
-        energyCost < 0 ? "" : "\(energyCost)"
+        switch energyCost {
+        case .x:
+            return "X"
+        case .int(let value):
+            return value < 0 ? "" : "\(value)"
+        }
+    }
+
+    var showsEnergyIcon: Bool {
+        switch energyCost {
+        case .x:
+            return true
+        case .int(let value):
+            return value >= 0
+        }
     }
 
     // Decided by `cardPool`

@@ -6,6 +6,7 @@
 //
 
 import DeveloperToolsSupport
+import Foundation
 
 struct Card {
 
@@ -13,10 +14,9 @@ struct Card {
 
     let title: String
     let description: String
-    let energyCost: Int
+    let energyCost: EnergyCost
 
-    // TODO
-    enum EnergyCost {
+    enum EnergyCost: Equatable {
         case x
         case int(Int)
     }
@@ -24,6 +24,7 @@ struct Card {
     let rarity: Rarity // derives banner color, and portrait border & plaque color
     let cardType: CardType // derives portrait boder image
     let cardPool: CardPool // derives frame color
+    let portraitURL: URL?
 }
 
 extension Card {
@@ -42,7 +43,7 @@ extension Card {
      }
      */
 
-    enum CardType: String {
+    enum CardType: String, Decodable {
         case attack
         case skill
         case power
@@ -71,7 +72,7 @@ extension Card {
      - MockCardPool -> card_frame_colorless
 
      */
-    enum CardPool {
+    enum CardPool: String, Decodable {
         case ironclad
         case silent
         case defect
@@ -109,7 +110,7 @@ extension Card {
      }
      ```
      */
-    enum Rarity {
+    enum Rarity: String, Decodable {
 
         case basic
         case common

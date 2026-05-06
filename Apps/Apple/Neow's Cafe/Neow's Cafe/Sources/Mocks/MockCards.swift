@@ -7,10 +7,11 @@ enum MockCards {
             Deal 7 damage.
             Channel 1 Lightning.
             """,
-            energyCost: 1,
+            energyCost: .int(1),
             rarity: .common,
             cardType: .attack,
-            cardPool: .defect
+            cardPool: .defect,
+            portraitURL: nil
         ),
         Card(
             id: "ANGER",
@@ -19,10 +20,11 @@ enum MockCards {
             Deal 6 damage.
             Add a copy into your Discard Pile.
             """,
-            energyCost: 0,
+            energyCost: .int(0),
             rarity: .common,
             cardType: .attack,
-            cardPool: .ironclad
+            cardPool: .ironclad,
+            portraitURL: nil
         ),
         Card(
             id: "CORRUPTION",
@@ -31,10 +33,11 @@ enum MockCards {
             Skills cost 0.
             Whenever you play a Skill, Exhaust it.
             """,
-            energyCost: 3,
+            energyCost: .int(3),
             rarity: .ancient,
             cardType: .power,
-            cardPool: .ironclad
+            cardPool: .ironclad,
+            portraitURL: nil
         ),
         Card(
             id: "ADRENALINE",
@@ -43,10 +46,11 @@ enum MockCards {
             Gain 1 Energy.
             Draw 2 cards.
             """,
-            energyCost: 0,
+            energyCost: .int(0),
             rarity: .rare,
             cardType: .skill,
-            cardPool: .silent
+            cardPool: .silent,
+            portraitURL: nil
         ),
         Card(
             id: "MEMENTO_MORI",
@@ -55,19 +59,21 @@ enum MockCards {
             Deal damage.
             Deals additional damage for each card discarded this turn.
             """,
-            energyCost: 1,
+            energyCost: .int(1),
             rarity: .uncommon,
             cardType: .attack,
-            cardPool: .silent
+            cardPool: .silent,
+            portraitURL: nil
         ),
         Card(
             id: "DEFEND_REGENT",
             title: "Defend",
             description: "Gain 5 Block.",
-            energyCost: 1,
+            energyCost: .int(1),
             rarity: .basic,
             cardType: .skill,
-            cardPool: .regent
+            cardPool: .regent,
+            portraitURL: nil
         ),
         Card(
             id: "DEATHBRINGER",
@@ -75,19 +81,21 @@ enum MockCards {
             description: """
             Apply 21 Doom and 1 Weak to ALL enemies.
             """,
-            energyCost: 2,
+            energyCost: .int(2),
             rarity: .uncommon,
             cardType: .skill,
-            cardPool: .necrobinder
+            cardPool: .necrobinder,
+            portraitURL: nil
         ),
         Card(
             id: "MASTER_OF_STRATEGY",
             title: "Master of Strategy",
             description: "Draw 3 cards.",
-            energyCost: 0,
+            energyCost: .int(0),
             rarity: .rare,
             cardType: .skill,
-            cardPool: .colorless
+            cardPool: .colorless,
+            portraitURL: nil
         ),
         Card(
             id: "DOUBT",
@@ -95,28 +103,31 @@ enum MockCards {
             description: """
             At the end of your turn, if this is in your Hand, gain 1 Weak.
             """,
-            energyCost: -1,
+            energyCost: .int(-1),
             rarity: .curse,
             cardType: .curse,
-            cardPool: .curse
+            cardPool: .curse,
+            portraitURL: nil
         ),
         Card(
             id: "WOUND",
             title: "Wound",
             description: "",
-            energyCost: -1,
+            energyCost: .int(-1),
             rarity: .status,
             cardType: .status,
-            cardPool: .status
+            cardPool: .status,
+            portraitURL: nil
         ),
         Card(
             id: "LANTERN_KEY",
             title: "Lantern Key",
             description: "Unlocks a special event in the next Act.",
-            energyCost: -1,
+            energyCost: .int(-1),
             rarity: .quest,
             cardType: .quest,
-            cardPool: .quest
+            cardPool: .quest,
+            portraitURL: nil
         ),
         Card(
             id: "HELLO_WORLD",
@@ -124,10 +135,11 @@ enum MockCards {
             description: """
             At the start of your turn, add a random Common card into your Hand.
             """,
-            energyCost: 1,
+            energyCost: .int(1),
             rarity: .event,
             cardType: .power,
-            cardPool: .event
+            cardPool: .event,
+            portraitURL: nil
         )
     ]
 }

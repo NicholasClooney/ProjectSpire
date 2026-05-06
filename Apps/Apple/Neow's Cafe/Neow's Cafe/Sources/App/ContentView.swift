@@ -20,12 +20,9 @@ public struct ContentView: View {
         TabView(selection: $selected) {
             Tab("Cards", systemImage: "rectangle.grid.2x2", value: .cards) {
                 NavigationStack {
-                    CardsView(
-                        dependencies: dependencies.cardsView,
-                        searchText: $searchText
-                    )
-                        .navigationTitle("Cards")
-                        .searchable(text: $searchText, prompt: "Search cards, i.e. Ball Lightning, etc.")
+                    cardCatalogContent
+                    .navigationTitle("Cards")
+                    .searchable(text: $searchText, prompt: "Search cards, i.e. Ball Lightning, etc.")
                 }
             }
 
@@ -36,11 +33,63 @@ public struct ContentView: View {
                 }
             }
         }
+        .task {
+            await dependencies.cardCatalogStore.load()
+        }
+    }
+
+    @ViewBuilder
+    private var cardCatalogContent: some View {
+        switch cardCatalogState {
+        case .loading:
+            ProgressView()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+        case .error(let message):
+            ContentUnavailableView(
+                "Cards Unavailable",
+                systemImage: "exclamationmark.triangle",
+                description: Text(message)
+            )
+        case .empty:
+            ContentUnavailableView(
+                "No Cards",
+                systemImage: "rectangle.grid.2x2",
+                description: Text("The card catalog did not return any cards.")
+            )
+        case .loaded:
+            CardsView(
+                dependencies: dependencies.cardsView,
+                searchText: $searchText
+            )
+        }
+    }
+
+    private var cardCatalogState: CardCatalogState {
+        if let errorMessage = dependencies.cardCatalogStore.errorMessage {
+            return .error(errorMessage)
+        }
+
+        if dependencies.cardCatalogStore.isLoading && dependencies.cardCatalogStore.cards.isEmpty {
+            return .loading
+        }
+
+        if dependencies.cardCatalogStore.cards.isEmpty {
+            return .empty
+        }
+
+        return .loaded
+    }
+
+    private enum CardCatalogState: Equatable {
+        case loading
+        case error(String)
+        case empty
+        case loaded
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(dependencies: .live)
+        ContentView(dependencies: .live())
     }
 }

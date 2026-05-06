@@ -1,17 +1,24 @@
+@MainActor
 struct Dependencies {
-    let cards: [Card]
+    let cardCatalogStore: CardCatalogStore
     let filterCards: CardsView.Dependencies.FilterCards
 
-    static let live = Dependencies(
-        cards: MockCards.cards,
-        filterCards: { cards, filters in
-            CardFilter.apply(filters: filters.asCriteria, to: cards)
-        }
-    )
+    static func live() -> Dependencies {
+        live(cardCatalogStore: CardCatalogStore())
+    }
+
+    static func live(cardCatalogStore: CardCatalogStore) -> Dependencies {
+        Dependencies(
+            cardCatalogStore: cardCatalogStore,
+            filterCards: { cards, filters in
+                CardFilter.apply(filters: filters.asCriteria, to: cards)
+            }
+        )
+    }
 
     var cardsView: CardsView.Dependencies {
         CardsView.Dependencies(
-            cards: cards,
+            cards: cardCatalogStore.cards,
             filterCards: filterCards
         )
     }
