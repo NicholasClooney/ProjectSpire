@@ -9,6 +9,11 @@ import SwiftUI
 import UIKit
 
 struct CardView: View {
+    enum Constraints {
+        static let width: CGFloat = 300
+        static let height: CGFloat = 422
+    }
+
     @State private var offset: CGSize = .zero
 
     let card: Card
@@ -35,27 +40,27 @@ struct CardView: View {
             energyText
             description
         }
-        .frame(width: 300, height: 422, alignment: .topLeading)
-        .rotation3DEffect(
-            .degrees(Double(offset.height / 50)),
-            axis: (x: 1, y: 0, z: 0)
-        )
-        .rotation3DEffect(
-            .degrees(Double(-offset.width / 50)),
-            axis: (x: 0, y: 1, z: 0)
-        )
-        .gesture(
-            DragGesture()
-                .onChanged { value in
-                    offset = value.translation
-                }
-                .onEnded { _ in
-                    withAnimation(.spring(response: 0.4, dampingFraction: 0.6)) {
-                        offset = .zero
-                    }
-                }
-        )
-        .animation(.interactiveSpring(), value: offset)
+        .frame(width: Constraints.width, height: Constraints.height, alignment: .topLeading)
+//        .rotation3DEffect(
+//            .degrees(Double(offset.height / 50)),
+//            axis: (x: 1, y: 0, z: 0)
+//        )
+//        .rotation3DEffect(
+//            .degrees(Double(-offset.width / 50)),
+//            axis: (x: 0, y: 1, z: 0)
+//        )
+//        .gesture(
+//            DragGesture()
+//                .onChanged { value in
+//                    offset = value.translation
+//                }
+//                .onEnded { _ in
+//                    withAnimation(.spring(response: 0.4, dampingFraction: 0.6)) {
+//                        offset = .zero
+//                    }
+//                }
+//        )
+//        .animation(.interactiveSpring(), value: offset)
     }
 
     var ancientTitleBanner: some View {

@@ -35,9 +35,9 @@ struct CardsView: View {
                     ForEach(filteredCards, id: \.id) { card in
                         GeometryReader { geo in
                             CardView(card: card)
-                                .scaleEffect(geo.size.width / 300, anchor: .topLeading)
+                                .scaleEffect(geo.size.width / CardView.Constraints.width, anchor: .topLeading)
                         }
-                        .aspectRatio(300 / 422, contentMode: .fit)
+                        .aspectRatio(CardView.Constraints.width / CardView.Constraints.height, contentMode: .fit)
                     }
                 }
             }
