@@ -3,6 +3,7 @@
 ## Repo structure
 
 - `Documentation/` — project-wide records, plans, decisions, and devlogs that span multiple repo areas.
+- `Documentation/Agent Workflows/` — reusable instructions for agent-assisted repository and publishing workflows.
 - `Documentation/Captain Logs/` — per-conversation high-level notes on user-agent collaboration and user steering.
 - `Documentation/Devlogs/` — dated development notes capturing implementation context, issues found, and follow-up lessons.
 - `Documentation/Issues/` — known unsolved or open issues with proposed solutions for future work.

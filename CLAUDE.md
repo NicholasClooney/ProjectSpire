@@ -72,6 +72,10 @@ See `Documentation/Snapshot Tags.md` before creating or reviewing snapshot tags.
 
 See `Documentation/Release Tags and Pages.md` before creating or reviewing release tags or GitHub Release pages.
 
+## Today's work blog summaries
+
+See `Documentation/Agent Workflows/Todays Work Blog Summary.md` when summarizing today's commits and today's changed documentation for blog use. Use the documented Eleventy GitHub shortcode format for source references instead of pasted code blocks.
+
 ## Commits
 
 Conventional commits with a scope are required, e.g. `feat(SpireAPI):`, `feat(SpireRestAPI):`, `docs(Lab):`, `chore:`.
