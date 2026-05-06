@@ -4,6 +4,7 @@
 
 - `Documentation/` — project-wide records, plans, decisions, and devlogs that span multiple repo areas.
 - `Documentation/Devlogs/` — dated development notes capturing implementation context, issues found, and follow-up lessons.
+- `Documentation/Issues/` — known unsolved or open issues with proposed solutions for future work.
 - `Lab/` — research workspace for decompiling and studying STS2 game source. See `Lab/CLAUDE.md`.
 - `Lab/audits/` — source-vs-output audit scripts for generated Lab data.
 - `Lab/scripts/` — local recovery, extraction, and catalog generation helper scripts.
