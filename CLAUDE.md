@@ -72,9 +72,9 @@ See `Documentation/Snapshot Tags.md` before creating or reviewing snapshot tags.
 
 See `Documentation/Release Tags and Pages.md` before creating or reviewing release tags or GitHub Release pages.
 
-## Today's work blog summaries
+## Today's work timeline summaries
 
-See `Documentation/Agent Workflows/Todays Work Blog Summary.md` when summarizing today's commits and today's changed documentation for blog use. Use the documented Eleventy GitHub shortcode format for source references instead of pasted code blocks.
+See `Documentation/Agent Workflows/Todays Work Timeline Summary.md` when summarizing today's commits and today's changed documentation for a timeline entry or thread-style update. Keep the result prose-led, with a few blended Eleventy GitHub shortcode snippets or regular GitHub links instead of a formal source-reference section.
 
 ## Commits
 

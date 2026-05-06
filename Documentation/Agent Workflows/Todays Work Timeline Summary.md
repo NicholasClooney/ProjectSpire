@@ -1,21 +1,25 @@
-# Today's Work Blog Summary
+# Today's Work Timeline Summary
 
 Date: 2026-05-06
 
-Project areas: `Documentation/`, Git history, blog publishing notes
+Project areas: `Documentation/`, Git history, timeline publishing notes
 
-Use this workflow when the user asks for a high-level summary of what happened today, grounded in commits and documentation changes, with source references suitable for the user's Eleventy blog.
+Use this workflow when the user asks for a high-level timeline entry, Twitter-style post, or thread-style summary of what happened today, grounded in commits and documentation changes.
+
+The target is not a formal blog report. Treat it like a concise public timeline update with no strict length limit: readable prose first, source snippets and links blended in only where they add useful texture.
+
+Use `Todays Work Timeline Summary Example.md` as the style reference for tone, flow, embedded snippets, and regular GitHub links.
 
 ## Goal
 
-Produce a concise, blog-ready summary of today's work that covers:
+Produce a timeline-ready summary of today's work that covers:
 
 - commits made today
 - plans, devlogs, Captain Logs, and other files changed under `Documentation/`
 - key technical details worth preserving
-- exact source references using the Eleventy GitHub shortcode
+- a small number of source references or snippets that fit naturally into the text
 
-Keep the narrative high level, but anchor important implementation details to pinned GitHub snippets instead of pasting code blocks.
+Keep the narrative high level and personal enough to read like a timeline entry, not release notes. Prefer one clear arc over a raw changelog.
 
 ## Source Window
 
@@ -49,9 +53,9 @@ Also inspect the commit subjects and file lists for non-documentation changes so
 
 Prefer commit hashes, plan names, durable file paths, and verification commands over implementation minutiae. Preserve specific technical details when they explain architecture, data flow, tooling, risk, or a future maintenance decision.
 
-## GitHub Shortcode References
+## Source References And Snippets
 
-Use this site's Eleventy GitHub shortcode for source references:
+Use this site's Eleventy GitHub shortcode when an embedded snippet should appear inside the timeline entry:
 
 ```njk
 {% github "https://github.com/OWNER/REPO/blob/COMMIT_OR_BRANCH/path/to/file.ext#L10-L42" %}
@@ -61,8 +65,10 @@ Rules:
 
 - Pass a normal GitHub `blob` URL.
 - Include `#Lx-Ly` for the exact line range; omit it only when embedding the whole file.
-- Prefer pinned commit SHAs over `main` so posts do not drift over time.
+- Prefer pinned commit SHAs over `main` so timeline entries do not drift over time.
 - Optional second arg controls chrome theme: `"auto"` default, `"light"`, or `"dark"`.
+- Use only a few embedded snippets. They should be sprinkled into the prose near the sentence they support, not collected in a dense "source references" section.
+- Use regular Markdown links for supporting implementation files, commits, or secondary details that do not need to be visually embedded.
 
 Example:
 
@@ -85,28 +91,23 @@ git show COMMIT:path/to/file.md | nl -ba
 
 ## Summary Shape
 
-Use this output shape unless the user asks for a different format:
+Use this output shape unless the user asks for a different format. Keep it prose-led:
 
 ```md
-## YYYY-MM-DD - Short Title
+I spent today...
 
-One or two paragraphs summarizing the day's main arc.
+{% github "https://github.com/OWNER/REPO/blob/COMMIT/path/to/planning-file.md#Lx-Ly" %}
 
-### Key Work
+That gave the app...
 
-- High-level item with specific technical detail and why it mattered.
-- High-level item with specific technical detail and why it mattered.
+{% github "https://github.com/OWNER/REPO/blob/COMMIT/path/to/planning-file.md#Lx-Ly" %}
 
-### Source References
-
-{% github "https://github.com/OWNER/REPO/blob/COMMIT/path/to/file.md#Lx-Ly" %}
-
-### Notes
-
-- Mention uncommitted work, gaps, skipped verification, or open questions only when relevant.
+On the implementation side, [FileName.swift](https://github.com/OWNER/REPO/blob/COMMIT/path/FileName.swift) now...
 ```
 
-Do not paste long code blocks from the repo into the blog summary. Use short prose plus `{% github ... %}` snippets for exact source evidence.
+Avoid formal sections such as `Key Work`, `Source References`, and `Notes` unless the user explicitly asks for a report. Do not paste long code blocks from the repo into the timeline entry. Use short prose plus a few `{% github ... %}` snippets or normal links for exact source evidence.
+
+For a complete example, read `Documentation/Agent Workflows/Todays Work Timeline Summary Example.md`.
 
 ## Quality Bar
 
@@ -116,4 +117,4 @@ Before handing back the summary:
 - verify every shortcode URL points at a real path and pinned commit
 - verify every line range matches the quoted claim
 - separate committed history from uncommitted local changes
-- keep the summary readable enough for a blog post, not a raw changelog
+- keep the summary readable as a timeline post or thread-style update, not a raw changelog or release note
