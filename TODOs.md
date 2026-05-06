@@ -1,5 +1,10 @@
 # TODOs
 
+## Card Parser Localization
+
+- [ ] #medium Add localized card data versions so generated cards can coexist per l11n language instead of overwriting the default English output.
+- [ ] #medium Update `Lab/parsers/card_parser.py` to walk every available l11n folder, produce card data for each language, and make `cards` a symlink to the `eng` l11n output.
+
 ## DONE
 
 ## Card Parser v0.2.0
