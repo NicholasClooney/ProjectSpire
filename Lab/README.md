@@ -41,7 +41,7 @@ The versioned catalog contains real app-facing `manifest.json` and
 portrait assets. Serve it locally with:
 
 ```sh
-Lab/scripts/serve-card-catalog.sh
+Lab/scripts/serve-card-catalog.py
 ```
 
 By default, the development manifest URL is:
