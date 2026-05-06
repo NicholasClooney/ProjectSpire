@@ -66,11 +66,11 @@ Use raw `xcodebuild` output only when diagnosing a specific issue that needs the
 
 ## Snapshot tags
 
-See `Documentation/Snapshot Tags.md` before creating or reviewing snapshot tags.
+See `Documentation/Agent Workflows/Snapshot Tags.md` before creating or reviewing snapshot tags.
 
 ## Release tags and pages
 
-See `Documentation/Release Tags and Pages.md` before creating or reviewing release tags or GitHub Release pages.
+See `Documentation/Agent Workflows/Release Tags and Pages.md` before creating or reviewing release tags or GitHub Release pages.
 
 ## Today's work timeline summaries
 
