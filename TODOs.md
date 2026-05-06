@@ -1,16 +1,12 @@
 # TODOs
 
+## DONE
+
 ## Card Parser v0.2.0
 
-```
-codex resume 019dde1b-4562-7aa2-84db-be7be1ff292a
-```
-
-- [ ] #easy Add card pool to the parsed card models
-- [ ] #easy Fix parsed card models have duplicated power dynamic vars
-- [ ] #easy Fix card parser handling upgrade energy cost reduction
-
-## DONE
+- [x] #easy Add card pool to the parsed card models
+- [x] #easy Fix parsed card models have duplicated power dynamic vars
+- [x] #easy Fix card parser handling upgrade energy cost reduction
 
 ### Asset Recovery Team v0.1.0
 
