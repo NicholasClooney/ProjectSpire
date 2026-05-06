@@ -22,7 +22,7 @@ Each conversation gets its own numbered markdown file in this folder, using the 
 
 If the current conversation does not already have a Captain Log file, create the next numbered file and add it to the top of `Documentation/Captain Logs/README.md` with a short summary.
 
-At the end of every user-agent interaction, add a concise entry to the top of the current conversation's log file, directly below the introductory text, so newest entries appear first and oldest entries remain at the bottom. This is not a transcript and it is not a replacement for full devlogs in `Documentation/Devlogs/`. Capture the collaboration shape: what the user asked for, how the agent responded, how the agent acted, how the user steered or corrected the work, the outcome, and what future agents should carry forward.
+At the end of every meaningful user-agent interaction, add a concise entry to the top of the current conversation's log file, directly below the introductory text, so newest entries appear first and oldest entries remain at the bottom. Do not add entries for purely appreciative or acknowledgement-only replies, such as "nice", "good", or "well done", unless they include a decision, correction, new constraint, or requested change. This is not a transcript and it is not a replacement for full devlogs in `Documentation/Devlogs/`. Capture the collaboration shape: what the user asked for, how the agent responded, how the agent acted, how the user steered or corrected the work, the outcome, and what future agents should carry forward.
 
 Keep `Documentation/Captain Logs/README.md` as an index of conversation log files. Add new log links at the top of the index, with a short summary, so newest conversations appear first and oldest conversations remain at the bottom.
 

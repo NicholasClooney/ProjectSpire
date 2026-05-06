@@ -4,6 +4,20 @@ This conversation established the Captain Logs workflow for ProjectSpire.
 
 Entries are newest first. This is not a transcript and it is not a replacement for full devlogs in `Documentation/Devlogs/`. Each entry preserves the interaction shape: user direction, agent response, user steering, outcome, and what future agents should carry forward.
 
+## 2026-05-06 - Meaningful Interaction Threshold
+
+**Context:** A purely appreciative follow-up had been logged after the daily blog-summary workflow was accepted.
+
+**User Direction:** The user clarified that Captain Logs are only for meaningful interactions and that purely positive acknowledgements such as "nice" do not need log entries.
+
+**Agent Response:** The agent removed the acknowledgement-only entry and updated the root Captain Logs instruction to skip purely appreciative or acknowledgement-only replies unless they include a decision, correction, new constraint, or requested change.
+
+**User Feedback:** The user explicitly wanted the feedback itself recorded in the original Captain Logs conversation file.
+
+**Outcome:** Captain Logs now have a clearer threshold: record meaningful collaboration, steering, decisions, corrections, constraints, requested changes, and outcomes; do not record empty praise or acknowledgement-only replies.
+
+**Carry Forward:** Future agents should avoid treating every user message as log-worthy. Log only interactions that preserve useful collaboration context.
+
 ## 2026-05-06 - Commit Captain Logs Workflow
 
 **Context:** The Captain Logs documentation flow had been created and the working tree showed documentation changes ready to commit.
