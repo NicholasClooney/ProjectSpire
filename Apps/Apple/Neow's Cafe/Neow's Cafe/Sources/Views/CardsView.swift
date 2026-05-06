@@ -29,12 +29,15 @@ struct CardsView: View {
                 filterPickers
 
                 LazyVGrid(
-                    columns: [GridItem(.adaptive(minimum: 190), spacing: 24)],
+                    columns: [GridItem(.flexible(), spacing: 24), GridItem(.flexible(), spacing: 24)],
                     spacing: 32
                 ) {
                     ForEach(filteredCards, id: \.id) { card in
-                        CardView(card: card)
-                            .scaledToFit()
+                        GeometryReader { geo in
+                            CardView(card: card)
+                                .scaleEffect(geo.size.width / 300, anchor: .topLeading)
+                        }
+                        .aspectRatio(300 / 422, contentMode: .fit)
                     }
                 }
             }
