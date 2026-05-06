@@ -22,7 +22,7 @@ CACHEABLE_EXTENSIONS = {
     ".jpeg",
     ".jpg",
     ".js",
-    ".json",
+    # ".json",
     ".png",
     ".svg",
     ".webp",
