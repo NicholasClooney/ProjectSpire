@@ -1,17 +1,17 @@
 enum CardFilter {
     struct Criteria {
         let searchText: String
-        let displayedCardPool: Card.DisplayedCardPool
-        let displayedCardType: Card.DisplayedCardType
-        let displayedRarity: Card.DisplayedRarity
+        let displayedCardPools: [Card.DisplayedCardPool]
+        let displayedCardTypes: [Card.DisplayedCardType]
+        let displayedRarities: [Card.DisplayedRarity]
     }
 
     static func apply(filters: Criteria, to cards: [Card]) -> [Card] {
         cards.filter { card in
             match(card: card, against: filters.searchText) &&
-            match(card: card, against: filters.displayedCardPool) &&
-            match(card: card, against: filters.displayedCardType) &&
-            match(card: card, against: filters.displayedRarity)
+            match(card: card, against: filters.displayedCardPools) &&
+            match(card: card, against: filters.displayedCardTypes) &&
+            match(card: card, against: filters.displayedRarities)
         }
     }
 
@@ -24,10 +24,12 @@ enum CardFilter {
         card.description.localizedCaseInsensitiveContains(searchText)
     }
 
+    private static func match(card: Card, against pools: [Card.DisplayedCardPool]) -> Bool {
+        pools.contains { match(card: card, against: $0) }
+    }
+
     private static func match(card: Card, against displayedCardPool: Card.DisplayedCardPool) -> Bool {
         switch displayedCardPool {
-        case .all:
-            return true
         case .ironclad:
             return card.cardPool == .ironclad
         case .silent:
@@ -52,10 +54,12 @@ enum CardFilter {
         }
     }
 
+    private static func match(card: Card, against types: [Card.DisplayedCardType]) -> Bool {
+        types.contains { match(card: card, against: $0) }
+    }
+
     private static func match(card: Card, against displayedCardType: Card.DisplayedCardType) -> Bool {
         switch displayedCardType {
-        case .all:
-            return true
         case .attack:
             return card.cardType == .attack
         case .skill:
@@ -72,10 +76,12 @@ enum CardFilter {
         }
     }
 
+    private static func match(card: Card, against rarities: [Card.DisplayedRarity]) -> Bool {
+        rarities.contains { match(card: card, against: $0) }
+    }
+
     private static func match(card: Card, against displayedRarity: Card.DisplayedRarity) -> Bool {
         switch displayedRarity {
-        case .all:
-            return true
         case .common:
             return card.rarity == .common
         case .uncommon:

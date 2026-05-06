@@ -3,9 +3,9 @@ import SwiftUI
 struct CardsView: View {
     struct CardFilters {
         let text: String
-        let pool: Card.DisplayedCardPool
-        let type: Card.DisplayedCardType
-        let rarity: Card.DisplayedRarity
+        let pools: [Card.DisplayedCardPool]
+        let types: [Card.DisplayedCardType]
+        let rarities: [Card.DisplayedRarity]
     }
 
     struct Dependencies {
@@ -19,9 +19,9 @@ struct CardsView: View {
 
     @Binding var searchText: String
 
-    @State private var selectedDisplayedCardPool: Card.DisplayedCardPool = .all
-    @State private var selectedDisplayedCardType: Card.DisplayedCardType = .all
-    @State private var selectedDisplayedRarity: Card.DisplayedRarity = .all
+    @State private var selectedDisplayedCardPool: Card.DisplayedCardPool?
+    @State private var selectedDisplayedCardType: Card.DisplayedCardType?
+    @State private var selectedDisplayedRarity: Card.DisplayedRarity?
 
     var body: some View {
         ScrollView {
@@ -49,9 +49,9 @@ struct CardsView: View {
     private var cardFilters: CardFilters {
         CardFilters(
             text: searchText,
-            pool: selectedDisplayedCardPool,
-            type: selectedDisplayedCardType,
-            rarity: selectedDisplayedRarity
+            pools: selectedDisplayedCardPool.map { [$0] } ?? Card.DisplayedCardPool.allCases,
+            types: selectedDisplayedCardType.map { [$0] } ?? Card.DisplayedCardType.allCases,
+            rarities: selectedDisplayedRarity.map { [$0] } ?? Card.DisplayedRarity.allCases
         )
     }
 
@@ -63,9 +63,9 @@ struct CardsView: View {
                 EnumPicker("Rarity", selection: $selectedDisplayedRarity)
 
                 Button {
-                    selectedDisplayedCardPool = .all
-                    selectedDisplayedCardType = .all
-                    selectedDisplayedRarity = .all
+                    selectedDisplayedCardPool = nil
+                    selectedDisplayedCardType = nil
+                    selectedDisplayedRarity = nil
                 } label: {
                     Image(systemName: "arrow.counterclockwise")
                 }
@@ -75,8 +75,8 @@ struct CardsView: View {
     }
 
     private var areFiltersReset: Bool {
-        selectedDisplayedCardPool == .all &&
-        selectedDisplayedCardType == .all &&
-        selectedDisplayedRarity == .all
+        selectedDisplayedCardPool == nil &&
+        selectedDisplayedCardType == nil &&
+        selectedDisplayedRarity == nil
     }
 }

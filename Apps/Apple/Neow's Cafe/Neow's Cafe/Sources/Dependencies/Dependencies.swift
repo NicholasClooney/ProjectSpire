@@ -28,9 +28,9 @@ private extension CardsView.CardFilters {
     var asCriteria: CardFilter.Criteria {
         CardFilter.Criteria(
             searchText: text,
-            displayedCardPool: pool,
-            displayedCardType: type,
-            displayedRarity: rarity
+            displayedCardPools: pools,
+            displayedCardTypes: types,
+            displayedRarities: rarities
         )
     }
 }
