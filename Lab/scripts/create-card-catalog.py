@@ -81,9 +81,21 @@ def read_card(path: Path) -> dict[str, Any]:
 
 
 def first_portrait_path(card: dict[str, Any], portrait_root: Path) -> str | None:
-    for asset in card.get("raw", {}).get("assets", []):
-        if asset.get("kind") != "portrait":
+    assets = card.get("raw", {}).get("assets", [])
+    if not isinstance(assets, list):
+        return None
+
+    portraits_by_kind = {
+        asset.get("kind"): asset
+        for asset in assets
+        if isinstance(asset, dict) and asset.get("kind") in {"portrait", "beta_portrait"}
+    }
+
+    for kind in ("portrait", "beta_portrait"):
+        asset = portraits_by_kind.get(kind)
+        if asset is None:
             continue
+
         raw_path = asset.get("path")
         if not raw_path:
             continue
