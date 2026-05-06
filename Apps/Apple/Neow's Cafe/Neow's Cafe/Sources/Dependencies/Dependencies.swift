@@ -20,7 +20,9 @@ struct Dependencies {
         CardsView.Dependencies(
             cards: cardCatalogStore.cards,
             filterCards: filterCards
-        )
+        ) {
+            await cardCatalogStore.load()
+        }
     }
 }
 

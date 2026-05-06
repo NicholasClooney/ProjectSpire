@@ -10,9 +10,11 @@ struct CardsView: View {
 
     struct Dependencies {
         typealias FilterCards = ([Card], CardFilters) -> [Card]
+        typealias RefreshCards = () async -> Void
 
         let cards: [Card]
         let filterCards: FilterCards
+        let refreshCards: RefreshCards
     }
 
     let dependencies: Dependencies
@@ -42,6 +44,9 @@ struct CardsView: View {
                 }
             }
             .padding(24)
+        }
+        .refreshable {
+            await dependencies.refreshCards()
         }
     }
 
