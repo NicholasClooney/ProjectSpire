@@ -20,6 +20,36 @@ python3 Lab/audits/card_parser_coverage.py --version v0.103.2
 The audit exits non-zero for hard source-vs-JSON mismatches. Warnings identify
 source API patterns that may deserve parser support.
 
+## Card catalog
+
+Generate a local static catalog for Neow's Cafe from tracked card data and
+resources:
+
+```sh
+Lab/scripts/create-card-catalog.py --clean
+```
+
+The generated serving view is tracked so the app has a stable local catalog to
+consume:
+
+```text
+Lab/catalog/
+```
+
+The versioned catalog contains real app-facing `manifest.json` and
+`cards.index.json` files, plus symlinks back to the tracked source card JSON and
+portrait assets. Serve it locally with:
+
+```sh
+Lab/scripts/serve-card-catalog.sh
+```
+
+By default, the development manifest URL is:
+
+```text
+http://127.0.0.1:8765/v0.103.2/manifest.json
+```
+
 ## Asset recovery
 
 The asset recovery workflow keeps the full recovered game dump out of Git while
