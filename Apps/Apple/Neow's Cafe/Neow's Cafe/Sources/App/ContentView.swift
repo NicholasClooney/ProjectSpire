@@ -19,17 +19,15 @@ public struct ContentView: View {
     public var body: some View {
         TabView(selection: $selected) {
             Tab("Cards", systemImage: "rectangle.grid.2x2", value: .cards) {
-                NavigationStack {
+                tabContent(title: "Cards") {
                     cardCatalogContent
-                    .navigationTitle("Cards")
-                    .searchable(text: $searchText, prompt: "Search cards, i.e. Ball Lightning, etc.")
+                        .searchable(text: $searchText, prompt: "Search cards, i.e. Ball Lightning, etc.")
                 }
             }
 
             Tab("Deck",  systemImage: "square.stack.3d.up", value: .deck) {
-                NavigationStack {
+                tabContent(title: "Deck") {
                     Text("Deck")
-                        .navigationTitle("Deck")
                 }
             }
         }
@@ -61,6 +59,17 @@ public struct ContentView: View {
                 dependencies: dependencies.cardsView,
                 searchText: $searchText
             )
+        }
+    }
+
+    private func tabContent<Content: View>(
+        title: String,
+        @ViewBuilder content: () -> Content
+    ) -> some View {
+        NavigationStack {
+            content()
+                .navigationTitle(title)
+                .navigationBarTitleDisplayMode(.inline)
         }
     }
 
