@@ -6,6 +6,8 @@ Each conversation gets its own numbered log file. This index lists newest conver
 
 ## Logs
 
+- [0007 - Compact Cards Navigation Title](<0007 - Compact Cards Navigation Title.md>) - Confirmed the large `Cards` heading is the SwiftUI navigation title and recommended inline display mode for a compact top bar.
+- [0006 - App UI TODO Capture](<0006 - App UI TODO Capture.md>) - Recorded app UI TODOs for card details, keyword rendering, relics, and Slay the Spire-inspired theme/font investigation.
 - [0005 - Snapshot And Catalog Release Tags](<0005 - Snapshot And Catalog Release Tags.md>) - Created the May 6 snapshot tag and the initial card catalog release tag covering both server script and generated catalog content.
 - [0004 - AI Agent Workflow Blog Post](<0004 - AI Agent Workflow Blog Post.md>) - Explored ProjectSpire's agent instructions, plans, devlogs, Captain Logs, skills, and workflow documents as source material for a technical post.
 - [0003 - Today's Timeline Summary](<0003 - Today's Timeline Summary.md>) - Prepared a timeline/thread-style summary from the 2026-05-06 commit history, documentation changes, and blended GitHub snippets/links.

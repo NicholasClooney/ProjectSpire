@@ -28,6 +28,8 @@ Keep `Documentation/Captain Logs/README.md` as an index of conversation log file
 
 After updating the file, explicitly report back to the user with the prefix `I have updated Captain Log` followed by a short summary of the latest topic, implementation, feedback, or outcome. For example: `I have updated Captain Log on the latest documentation-flow feedback: the confirmation now includes a concise summary.`
 
+When writing `Carry Forward`, prefer durable engineering guidance over narrow restatement. Capture the reusable lesson future agents should preserve, especially where the work revealed a need to encode consistency into code structure. If a behavior, style, naming pattern, workflow, or policy should stay unified, favor shared helpers, wrappers, types, configuration, tests, or documentation that make drift harder instead of relying on individual call sites to remember the convention.
+
 Use this entry shape:
 
 ```md
