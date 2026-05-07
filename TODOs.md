@@ -1,5 +1,15 @@
 # TODOs
 
+## App UI
+
+- [ ] #medium Add a card details view with a `View Upgrades` button.
+- [ ] #medium Add card keyword rendering in the UI, including cases like Ascender's Bane.
+- [ ] #medium Add a relics tab.
+- [ ] #medium Replace character names in the dropdown with icons from the game's card library screen.
+- [ ] #hard Explore visual theme work so the app feels closer to Slay the Spire, including using the game's font where appropriate.
+- [ ] #hard Investigate which fonts Slay the Spire uses, whether they are all Koreon or include other fonts, and whether those fonts are free to use.
+- [ ] #medium Register approved app fonts with SwiftUI so standard `.font(...)` usage can pick up the theme without specifying custom font names everywhere.
+
 ## Card Parser Localization
 
 - [ ] #medium Add localized card data versions so generated cards can coexist per l11n language instead of overwriting the default English output.
