@@ -4,6 +4,48 @@ This conversation records guidance for making the Neow's Cafe card catalog navig
 
 Entries are newest first. This is not a transcript and it is not a replacement for full devlogs in `Documentation/Devlogs/`. Each entry preserves the interaction shape: user direction, agent response, user steering, outcome, and what future agents should carry forward.
 
+## 2026-05-07 - Seed Confirmed User Preferences
+
+**Context:** The agent scanned existing Captain Logs for candidate preferences and asked the user to confirm which should be promoted into the confirmed preference index.
+
+**User Direction:** The user selected the documentation-as-infrastructure preference, the repo-structure-matches-workflow-architecture preference, and the compact-tab-title lesson about using code structure to keep unified behavior from drifting.
+
+**Agent Response:** The agent added only those confirmed preferences as short one-line bullets in `Documentation/Captain Logs/User Preferences.md`.
+
+**User Feedback:** The user explicitly confirmed the selected preferences and added the structural consistency preference from the compact tab title work.
+
+**Outcome:** The confirmed preference index now contains three concise bullets focused on durable taste and craft standards.
+
+**Carry Forward:** When seeding user preferences from logs, present candidates for confirmation first, then add only the confirmed short one-liners. Translate implementation-specific examples into durable craft preferences when the user confirms that broader intent.
+
+## 2026-05-07 - Add Confirmed User Preference Index
+
+**Context:** The user wanted Captain Log instructions to distinguish inferred session intent from confirmed long-term user preferences.
+
+**User Direction:** The user asked for a short, concise preference document that records only confirmed user taste, craft standards, and common feedback patterns. The user clarified that Captain Logs can infer intention, but agents should ask for confirmation before promoting a preference into the durable profile.
+
+**Agent Response:** The agent added `Documentation/Captain Logs/User Preferences.md` as a confirmed-only, one-line-oriented preference index and referenced it from both root agent guidance and the Captain Logs README.
+
+**User Feedback:** The user pushed against structured, verbose preference entries and against duplicating preferences already recorded in other instruction documents.
+
+**Outcome:** The repo now has a dedicated confirmed preference index, with instructions to keep it short and avoid duplicating existing guidance.
+
+**Carry Forward:** Use Captain Logs to capture session-level inferred intent, but only add durable user preferences after confirmation. Keep the preference index terse and focused on taste and craft signals that help future agents match the user's standards.
+
+## 2026-05-07 - Tighten Log And Commit Guidance
+
+**Context:** The user reviewed the Captain Log workflow after a routine split-and-commit operation was logged.
+
+**User Direction:** The user asked to update the instructions so mundane operations, such as git operations without feedback, are not logged. The user also asked to revise commit guidance toward short shorthand area scopes and requested examples to confirm understanding.
+
+**Agent Response:** The agent updated `CLAUDE.md` to exclude routine operational steps from Captain Logs when they do not include feedback, decisions, corrections, or reusable process guidance. The agent also updated commit guidance to prefer short, stable area scopes.
+
+**User Feedback:** The user specifically wanted `area` shorthand examples such as app, cafe, logs, and doc.
+
+**Outcome:** Repo instructions now steer agents away from logging mundane git operations and toward concise conventional commit scopes like `app/cafe`, `logs`, `doc`, `api`, and `lab`.
+
+**Carry Forward:** Captain Logs should preserve meaningful collaboration and reusable guidance, not routine execution bookkeeping. Commit scopes should be short enough to scan quickly while still identifying the affected area.
+
 ## 2026-05-07 - Split And Commit Changes
 
 **Context:** The user reviewed the working tree after the Neow's Cafe and documentation updates.

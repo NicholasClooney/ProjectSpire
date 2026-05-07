@@ -4,6 +4,8 @@ Captain Logs are concise user-agent collaboration records for ProjectSpire.
 
 Each conversation gets its own numbered log file. This index lists newest conversations first and oldest conversations last.
 
+Confirmed durable user preferences live in [User Preferences](<User Preferences.md>). Captain Logs can preserve inferred intent for a conversation, but confirmed user taste and craft preferences belong there as short one-line notes that do not duplicate repo instructions.
+
 ## Logs
 
 - [0007 - Compact Cards Navigation Title](<0007 - Compact Cards Navigation Title.md>) - Confirmed the large `Cards` heading is the SwiftUI navigation title and recommended inline display mode for a compact top bar.

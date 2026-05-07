@@ -22,7 +22,9 @@ Each conversation gets its own numbered markdown file in this folder, using the 
 
 If the current conversation does not already have a Captain Log file, create the next numbered file and add it to the top of `Documentation/Captain Logs/README.md` with a short summary.
 
-At the end of every meaningful user-agent interaction, add a concise entry to the top of the current conversation's log file, directly below the introductory text, so newest entries appear first and oldest entries remain at the bottom. Do not add entries for purely appreciative or acknowledgement-only replies, such as "nice", "good", or "well done", unless they include a decision, correction, new constraint, or requested change. This is not a transcript and it is not a replacement for full devlogs in `Documentation/Devlogs/`. Capture the collaboration shape: what the user asked for, how the agent responded, how the agent acted, how the user steered or corrected the work, the outcome, and what future agents should carry forward.
+At the end of every meaningful user-agent interaction, add a concise entry to the top of the current conversation's log file, directly below the introductory text, so newest entries appear first and oldest entries remain at the bottom. Do not add entries for purely appreciative or acknowledgement-only replies, such as "nice", "good", or "well done", unless they include a decision, correction, new constraint, or requested change. Do not add entries for routine operational steps, such as git status checks, staging, committing, pushing, or splitting commits, when the user provides no feedback, decision, correction, or reusable process guidance. This is not a transcript and it is not a replacement for full devlogs in `Documentation/Devlogs/`. Capture the collaboration shape: what the user asked for, how the agent responded, how the agent acted, how the user steered or corrected the work, the outcome, and what future agents should carry forward.
+
+Confirmed user taste, craft standards, and durable working preferences live in `Documentation/Captain Logs/User Preferences.md`. Captain Logs may infer user intention from corrections or feedback, but agents should ask the user to confirm before adding a preference there. Keep that file short, one-line oriented, confirmed-only, and avoid duplicating instructions already captured elsewhere.
 
 Keep `Documentation/Captain Logs/README.md` as an index of conversation log files. Add new log links at the top of the index, with a short summary, so newest conversations appear first and oldest conversations remain at the bottom.
 
@@ -80,4 +82,4 @@ See `Documentation/Agent Workflows/Todays Work Timeline Summary.md` when summari
 
 ## Commits
 
-Conventional commits with a scope are required, e.g. `feat(SpireAPI):`, `feat(SpireRestAPI):`, `docs(Lab):`, `chore:`.
+Conventional commits with a short, stable area scope are required. Prefer concise shorthand scopes that identify the product area, app, workflow, or documentation family over long module names. Examples: `feat(app/cafe): centralize tab navigation style`, `docs(logs): refine Captain Log guidance`, `docs(doc): update repo structure notes`, `fix(api): handle missing catalog payload`, `chore(lab): refresh generated fixtures`.
