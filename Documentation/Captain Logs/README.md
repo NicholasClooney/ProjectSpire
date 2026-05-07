@@ -8,6 +8,7 @@ Confirmed durable user preferences live in [User Preferences](<User Preferences.
 
 ## Logs
 
+- [0009 - Neow's Cafe Light And Dark Theme](<0009 - Neow's Cafe Light And Dark Theme.md>) - Added shared semantic light/dark theme colors for app chrome and filter controls, then moved the related App UI TODO to DONE.
 - [0008 - Kreon Typography Tiers](<0008 - Kreon Typography Tiers.md>) - Added a shared Neow's Cafe typography layer for bundled Kreon fonts and moved the related TODO to DONE.
 - [0007 - Compact Cards Navigation Title](<0007 - Compact Cards Navigation Title.md>) - Confirmed the large `Cards` heading is the SwiftUI navigation title and recommended inline display mode for a compact top bar.
 - [0006 - App UI TODO Capture](<0006 - App UI TODO Capture.md>) - Recorded app UI TODOs for card details, keyword rendering, relics, and Slay the Spire-inspired theme/font investigation.

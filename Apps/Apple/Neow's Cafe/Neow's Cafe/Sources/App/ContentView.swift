@@ -27,10 +27,15 @@ public struct ContentView: View {
 
             Tab("Deck",  systemImage: "square.stack.3d.up", value: .deck) {
                 tabContent(title: "Deck") {
-                    Text("Deck")
+                    ContentUnavailableView(
+                        "Deck",
+                        systemImage: "square.stack.3d.up",
+                        description: Text("Deck building will live here.")
+                    )
                 }
             }
         }
+        .neowCafeAppTheme()
         .task {
             await dependencies.cardCatalogStore.load()
         }
@@ -41,19 +46,25 @@ public struct ContentView: View {
         switch cardCatalogState {
         case .loading:
             ProgressView()
+                .tint(NeowSCafeTheme.accent)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(NeowSCafeTheme.background)
         case .error(let message):
             ContentUnavailableView(
                 "Cards Unavailable",
                 systemImage: "exclamationmark.triangle",
                 description: Text(message)
             )
+            .foregroundStyle(NeowSCafeTheme.text)
+            .background(NeowSCafeTheme.background)
         case .empty:
             ContentUnavailableView(
                 "No Cards",
                 systemImage: "rectangle.grid.2x2",
                 description: Text("The card catalog did not return any cards.")
             )
+            .foregroundStyle(NeowSCafeTheme.text)
+            .background(NeowSCafeTheme.background)
         case .loaded:
             CardsView(
                 dependencies: dependencies.cardsView,
@@ -68,8 +79,14 @@ public struct ContentView: View {
     ) -> some View {
         NavigationStack {
             content()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(NeowSCafeTheme.background)
                 .navigationTitle(title)
                 .navigationBarTitleDisplayMode(.inline)
+                .toolbarBackground(NeowSCafeTheme.surface, for: .navigationBar)
+                .toolbarBackground(.visible, for: .navigationBar)
+                .toolbarBackground(NeowSCafeTheme.surface, for: .tabBar)
+                .toolbarBackground(.visible, for: .tabBar)
         }
     }
 
@@ -100,5 +117,9 @@ public struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(dependencies: .live())
+            .preferredColorScheme(.light)
+
+        ContentView(dependencies: .live())
+            .preferredColorScheme(.dark)
     }
 }

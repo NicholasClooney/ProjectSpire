@@ -10,6 +10,7 @@ struct NeowSCafeApp: App {
         WindowGroup {
             ContentView(dependencies: .live())
                 .font(.neow(.body))
+                .neowCafeAppTheme()
         }
     }
 }

@@ -45,6 +45,7 @@ struct CardsView: View {
             }
             .padding(24)
         }
+        .background(NeowSCafeTheme.background)
         .refreshable {
             await dependencies.refreshCards()
         }
@@ -78,8 +79,20 @@ struct CardsView: View {
                     Image(systemName: "arrow.counterclockwise")
                 }
                 .disabled(areFiltersReset)
+                .buttonStyle(.bordered)
+            }
+            .padding(.horizontal, 12)
+            .padding(.vertical, 10)
+            .background {
+                RoundedRectangle(cornerRadius: 8, style: .continuous)
+                    .fill(NeowSCafeTheme.surfaceElevated)
+            }
+            .overlay {
+                RoundedRectangle(cornerRadius: 8, style: .continuous)
+                    .stroke(NeowSCafeTheme.separator.opacity(0.55), lineWidth: 1)
             }
         }
+        .scrollIndicators(.hidden)
     }
 
     private var areFiltersReset: Bool {

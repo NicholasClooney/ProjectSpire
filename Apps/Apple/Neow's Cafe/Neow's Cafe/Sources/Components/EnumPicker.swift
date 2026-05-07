@@ -25,5 +25,8 @@ where Value: CaseIterable & Hashable & RawRepresentable,
             }
         }
         .font(.neow(.body))
+        .foregroundStyle(NeowSCafeTheme.text)
+        .pickerStyle(.menu)
+        .buttonStyle(.bordered)
     }
 }
