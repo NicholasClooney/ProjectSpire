@@ -31,7 +31,7 @@ struct BannerText: View {
 #Preview {
     BannerText(
         text: "Ball Lightning",
-        font: NeowSCafeFontFamily.Kreon.regular.font(size: 32),
+        font: .neow(.cardEnergy),
     )
     .padding(32)
     .background(Color(red: 0.55, green: 0.55, blue: 0.58))

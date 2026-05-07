@@ -172,7 +172,7 @@ struct CardView: View {
     var title: some View {
         BannerText(
             text: card.title,
-            font: NeowSCafeFontFamily.Kreon.regular.font(size: 26),
+            font: .neow(.cardTitle),
         )
         .frame(width: 250, height: 54)
         .offset(x: 25, y: 7)
@@ -188,7 +188,7 @@ struct CardView: View {
 
     var typeText: some View {
         Text(card.typeText)
-            .font(NeowSCafeFontFamily.Kreon.bold.swiftUIFont(size: 16))
+            .font(.neow(.cardType, weight: .bold))
             .foregroundStyle(Color.black.opacity(0.75))
             .frame(width: 61, height: 37)
             .offset(x: 119.5, y: 212)
@@ -207,7 +207,7 @@ struct CardView: View {
     var energyText: some View {
         BannerText(
             text: card.energyCostText,
-            font: NeowSCafeFontFamily.Kreon.regular.font(size: 32),
+            font: .neow(.cardEnergy),
         )
         .frame(width: 64, height: 64)
         .offset(x: -16, y: -16)
@@ -215,7 +215,7 @@ struct CardView: View {
 
     var description: some View {
         Text(card.description)
-            .font(NeowSCafeFontFamily.Kreon.regular.swiftUIFont(size: 21))
+            .font(.neow(.cardDescription))
             .foregroundStyle(Color(red: 1, green: 0.965, blue: 0.886))
             .shadow(color: Color.black.opacity(0.55), radius: 0, x: 2, y: 2)
             .multilineTextAlignment(.center)

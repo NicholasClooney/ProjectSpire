@@ -15,10 +15,15 @@ where Value: CaseIterable & Hashable & RawRepresentable,
     var body: some View {
         Picker(text, selection: $selection) {
             // TODO: i18n
-            Text(text).tag(Value?.none)
+            Text(text)
+                .font(.neow(.body))
+                .tag(Value?.none)
             ForEach(Array(Value.allCases), id: \.self) { value in
-                Text(value.rawValue).tag(Value?.some(value))
+                Text(value.rawValue)
+                    .font(.neow(.body))
+                    .tag(Value?.some(value))
             }
         }
+        .font(.neow(.body))
     }
 }

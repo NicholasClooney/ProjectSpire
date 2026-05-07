@@ -4,6 +4,20 @@ This conversation records the work to register and centralize Neow's Cafe font u
 
 Entries are newest first. This is not a transcript and it is not a replacement for full devlogs in `Documentation/Devlogs/`. Each entry preserves the interaction shape: user direction, agent response, user steering, outcome, and what future agents should carry forward.
 
+## 2026-05-07 - Document Typography Work And Picker Limitation
+
+**Context:** After researching whether native SwiftUI `Picker` or `Menu` rows can use custom fonts, the user wanted the completed typography work preserved in a devlog and the picker/menu limitation recorded as an issue.
+
+**User Direction:** The user asked to create a devlog for the work done and leave an issue note for the unresolved picker/menu font styling problem.
+
+**Agent Response:** The agent added a numbered devlog for the Neow's Cafe Kreon typography tier work and a numbered issue explaining why native iOS picker/menu rows still render with system fonts.
+
+**User Feedback:** No correction or follow-up yet.
+
+**Outcome:** `Documentation/Devlogs/0003 - Neow's Cafe Kreon Typography Tiers.md` now records the typography implementation, verification, and future guidance. `Documentation/Issues/0002 - SwiftUI Picker Menu Font Styling.md` tracks the native picker/menu font limitation and custom selector tradeoff.
+
+**Carry Forward:** When platform controls block app-specific styling, document the system limitation separately from the implemented work so future agents can preserve the stable abstraction while evaluating whether a custom control is worth the behavior cost.
+
 ## 2026-05-07 - Apply Font Tier To EnumPicker
 
 **Context:** After seeing the app in the simulator, the user asked whether `EnumPicker.swift` had been updated to use the new font system.
