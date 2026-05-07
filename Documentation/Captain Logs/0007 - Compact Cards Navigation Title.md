@@ -4,6 +4,20 @@ This conversation records guidance for making the Neow's Cafe card catalog navig
 
 Entries are newest first. This is not a transcript and it is not a replacement for full devlogs in `Documentation/Devlogs/`. Each entry preserves the interaction shape: user direction, agent response, user steering, outcome, and what future agents should carry forward.
 
+## 2026-05-07 - Split And Commit Changes
+
+**Context:** The user reviewed the working tree after the Neow's Cafe and documentation updates.
+
+**User Direction:** The user asked to split the current changes and commit them.
+
+**Agent Response:** The agent inspected the diffs, separated the work by intent, and committed the TODO capture, Neow's Cafe navigation helper, and Captain Log guidance updates independently.
+
+**User Feedback:** No correction or follow-up yet.
+
+**Outcome:** The changes were split into `d68c3c4 docs(App): capture UI follow-ups`, `3f47d21 feat(NeowsCafe): centralize tab navigation style`, and `535f27c docs(CaptainLogs): refine carry forward guidance`.
+
+**Carry Forward:** When asked to split commits, inspect the diff by intent first and keep behavioral app changes separate from collaboration-process documentation. If Captain Log updates are required by the interaction, commit them as their own documentation change instead of mixing them into unrelated code commits.
+
 ## 2026-05-07 - Refine Carry Forward Guidance
 
 **Context:** The user reviewed the Captain Log entry after the shared tab navigation helper was added.
