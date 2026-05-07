@@ -6,6 +6,7 @@ Each conversation gets its own numbered log file. This index lists newest conver
 
 ## Logs
 
+- [0005 - Snapshot And Catalog Release Tags](<0005 - Snapshot And Catalog Release Tags.md>) - Created the May 6 snapshot tag and the initial card catalog release tag covering both server script and generated catalog content.
 - [0004 - AI Agent Workflow Blog Post](<0004 - AI Agent Workflow Blog Post.md>) - Explored ProjectSpire's agent instructions, plans, devlogs, Captain Logs, skills, and workflow documents as source material for a technical post.
 - [0003 - Today's Timeline Summary](<0003 - Today's Timeline Summary.md>) - Prepared a timeline/thread-style summary from the 2026-05-06 commit history, documentation changes, and blended GitHub snippets/links.
 - [0002 - Today's Work Blog Summary Workflow](<0002 - Today's Work Blog Summary Workflow.md>) — Added a reusable workflow for summarizing today's commits and documentation changes with Eleventy GitHub shortcode references.
