@@ -108,22 +108,25 @@ def first_portrait_path(card: dict[str, Any], portrait_root: Path) -> str | None
     return None
 
 
-def energy_cost(card: dict[str, Any]) -> dict[str, Any]:
-    raw = card.get("raw", {})
-    cost = raw.get("energy_cost")
+def parse_energy_cost(cost: Any) -> dict[str, Any]:
     if isinstance(cost, dict) and isinstance(cost.get("kind"), str):
         result: dict[str, Any] = {"kind": cost["kind"].lower()}
         if "value" in cost:
             result["value"] = cost["value"]
         return result
-    if isinstance(raw.get("cost"), int):
-        return {"kind": "int", "value": raw["cost"]}
     return {"kind": "unknown"}
 
 
-def card_keywords(card: dict[str, Any]) -> list[dict[str, str]]:
-    base = card.get("resolved", {}).get("base", {})
-    keywords = base.get("keywords", [])
+def energy_cost(card: dict[str, Any]) -> dict[str, Any]:
+    raw = card.get("raw", {})
+    result = parse_energy_cost(raw.get("energy_cost"))
+    if result["kind"] == "unknown" and isinstance(raw.get("cost"), int):
+        return {"kind": "int", "value": raw["cost"]}
+    return result
+
+
+def extract_keywords(section: dict[str, Any]) -> list[dict[str, str]]:
+    keywords = section.get("keywords", [])
     if not isinstance(keywords, list):
         return []
 
@@ -138,14 +141,30 @@ def card_keywords(card: dict[str, Any]) -> list[dict[str, str]]:
         if not all(isinstance(value, str) for value in (keyword_id, placement, title)):
             continue
 
-        summaries.append(
-            {
-                "id": keyword_id,
-                "placement": placement,
-                "title": title,
-            }
-        )
+        summaries.append({"id": keyword_id, "placement": placement, "title": title})
     return summaries
+
+
+def card_keywords(card: dict[str, Any]) -> list[dict[str, str]]:
+    base = card.get("resolved", {}).get("base", {})
+    return extract_keywords(base)
+
+
+def upgrade_summary(card: dict[str, Any]) -> dict[str, Any] | None:
+    upgraded = card.get("resolved", {}).get("upgraded")
+    if not isinstance(upgraded, dict):
+        return None
+    if not upgraded.get("changed"):
+        return None
+    description = upgraded.get("description", {})
+    plain_description = description.get("plain") if isinstance(description, dict) else None
+    return {
+        "title": upgraded.get("title", card["id"]),
+        "description": plain_description or "",
+        "keywords": extract_keywords(upgraded),
+        "keywordPeriod": card.get("resolved", {}).get("keyword_period", "."),
+        "energyCost": parse_energy_cost(upgraded.get("energy_cost")),
+    }
 
 
 def card_summary(path: Path, card: dict[str, Any], portrait_root: Path) -> dict[str, Any]:
@@ -168,6 +187,7 @@ def card_summary(path: Path, card: dict[str, Any], portrait_root: Path) -> dict[
         "pool": str(raw.get("card_pool", "")).lower(),
         "portraitPath": first_portrait_path(card, portrait_root),
         "detailPath": f"cards/{path.name}",
+        "upgrade": upgrade_summary(card),
     }
 
 
