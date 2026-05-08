@@ -1,5 +1,19 @@
 # 0011 - Card Keyword Text Investigation
 
+## 2026-05-08 - Neow's Cafe Keyword Rendering
+
+**Context:** The user asked to add parsed card keywords to Neow's Cafe's Swift card model and card UI.
+
+**User Direction:** The user wanted keyword data carried through `Card.swift` and rendered in `CardView.swift`, with the existing parser work already providing before/after placement.
+
+**Agent Response:** The agent added `Card.Keyword` with placement metadata, decoded keyword summaries from the app catalog, regenerated the tracked catalog index with keyword fields, and rendered before-description and after-description keyword lines around the rules text.
+
+**User Feedback:** No correction during this step.
+
+**Outcome:** Neow's Cafe now receives `keywords` and `keywordPeriod` from `cards.index.json`, preserves keyword placement in the model, and displays localized keyword titles with the period in the card text box. The app build and catalog decoder test pass.
+
+**Carry Forward:** Keep the app-facing catalog summary aligned with the parser's resolved display schema; SwiftUI should render keyword title lines from structured placement metadata instead of concatenating them into the card description upstream.
+
 ## 2026-05-08 - Keyword Parser Schema Implementation
 
 **Context:** The user asked to save the keyword parser schema plan under `Documentation/Plans/` and then implement it.
