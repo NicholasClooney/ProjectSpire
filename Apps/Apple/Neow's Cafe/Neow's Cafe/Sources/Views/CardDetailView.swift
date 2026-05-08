@@ -16,11 +16,17 @@ struct CardDetailView: View {
             energyCost: upgrade.energyCost,
             upgradeLevel: 1,
             maxUpgradeLevel: card.maxUpgradeLevel,
+            energyCostReduced: isReduced(card.energyCost, upgrade.energyCost),
             rarity: card.rarity,
             cardType: card.cardType,
             cardPool: card.cardPool,
             portraitURL: card.portraitURL
         )
+    }
+
+    private func isReduced(_ base: Card.EnergyCost, _ upgraded: Card.EnergyCost) -> Bool {
+        guard case .int(let b) = base, case .int(let u) = upgraded else { return false }
+        return u < b
     }
 
     var body: some View {

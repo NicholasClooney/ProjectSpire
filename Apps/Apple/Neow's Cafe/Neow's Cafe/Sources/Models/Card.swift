@@ -23,8 +23,9 @@ struct Card {
         case int(Int)
     }
 
-    let upgradeLevel: Int      // 0 = not upgraded
-    let maxUpgradeLevel: Int   // most cards: 1; some multi-level cards: >1
+    let upgradeLevel: Int       // 0 = not upgraded
+    let maxUpgradeLevel: Int    // most cards: 1; some multi-level cards: >1
+    let energyCostReduced: Bool // true when the upgraded cost is lower than the base cost
 
     let rarity: Rarity // derives banner color, and portrait border & plaque color
     let cardType: CardType // derives portrait boder image
@@ -41,6 +42,7 @@ struct Card {
         energyCost: EnergyCost,
         upgradeLevel: Int = 0,
         maxUpgradeLevel: Int = 1,
+        energyCostReduced: Bool = false,
         rarity: Rarity,
         cardType: CardType,
         cardPool: CardPool,
@@ -55,6 +57,7 @@ struct Card {
         self.energyCost = energyCost
         self.upgradeLevel = upgradeLevel
         self.maxUpgradeLevel = maxUpgradeLevel
+        self.energyCostReduced = energyCostReduced
         self.rarity = rarity
         self.cardType = cardType
         self.cardPool = cardPool

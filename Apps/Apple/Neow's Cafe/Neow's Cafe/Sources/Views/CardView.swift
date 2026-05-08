@@ -210,6 +210,8 @@ struct CardView: View {
         BannerText(
             text: card.energyCostText,
             font: .neow(.cardEnergy),
+            textColor: card.energyCostTextColor,
+            outlineColor: card.energyCostOutlineColor
         )
         .frame(width: 64, height: 64)
         .offset(x: -16, y: -16)
@@ -245,6 +247,18 @@ private extension Card {
     var titleOutlineColor: UIColor {
         guard upgradeLevel > 0 else { return rarityTitleOutlineColor }
         return StsColors.cardTitleOutlineSpecial
+    }
+
+    var energyCostTextColor: UIColor {
+        energyCostReduced
+            ? StsColors.green
+            : StsColors.cream
+    }
+
+    var energyCostOutlineColor: UIColor {
+        energyCostReduced
+            ? StsColors.energyGreenOutline
+            : StsColors.cardTitleOutlineCommon
     }
 
     private var rarityTitleOutlineColor: UIColor {
