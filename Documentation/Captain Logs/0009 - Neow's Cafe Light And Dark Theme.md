@@ -4,6 +4,20 @@ This conversation records the work to add light and dark app theming to Neow's C
 
 Entries are newest first. This is not a transcript and it is not a replacement for full devlogs in `Documentation/Devlogs/`. Each entry preserves the interaction shape: user direction, agent response, user steering, outcome, and what future agents should carry forward.
 
+## 2026-05-07 - Move Visual Primitives Into Sources Design Folder
+
+**Context:** After clarifying the semantic file organization preference, the user asked to apply it to the theme and typography files, then refined the target location.
+
+**User Direction:** The user asked the agent to move the files into the proposed proper location, then corrected the location to `Sources/Design` rather than under `Sources/App`.
+
+**Agent Response:** The agent moved `NeowSCafeTheme.swift` and `NeowSCafeTypography.swift` into `Sources/Design/` and built the app to confirm Tuist's buildable folder setup picked up the nested files.
+
+**User Feedback:** No correction or follow-up yet.
+
+**Outcome:** Neow's Cafe app-wide theme and typography primitives now live under `Apps/Apple/Neow's Cafe/Neow's Cafe/Sources/Design/`, and the app build succeeded.
+
+**Carry Forward:** Use the semantic `Sources/Design/` folder for app-wide visual primitives in Neow's Cafe unless a future structural change establishes a clearer convention.
+
 ## 2026-05-07 - Generalize File Organization Preference
 
 **Context:** The user revisited the just-recorded preference about app-wide visual primitives living in a design-system-style folder.
