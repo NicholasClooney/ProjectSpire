@@ -12,6 +12,8 @@ struct CardCatalogCard: Decodable {
     let id: String
     let title: String
     let description: String
+    let keywords: [CatalogCardKeyword]?
+    let keywordPeriod: String?
     let energyCost: CatalogEnergyCost
     let type: Card.CardType
     let rarity: Card.Rarity
@@ -23,12 +25,24 @@ struct CardCatalogCard: Decodable {
             id: id,
             title: title,
             description: description,
+            keywords: keywords?.map(\.cardKeyword) ?? [],
+            keywordPeriod: keywordPeriod ?? ".",
             energyCost: energyCost.cardEnergyCost,
             rarity: rarity,
             cardType: type,
             cardPool: pool,
             portraitURL: portraitPath.map { baseURL.appendingPathComponent($0) }
         )
+    }
+}
+
+struct CatalogCardKeyword: Decodable {
+    let id: String
+    let placement: Card.Keyword.Placement
+    let title: String
+
+    var cardKeyword: Card.Keyword {
+        Card.Keyword(id: id, placement: placement, title: title)
     }
 }
 

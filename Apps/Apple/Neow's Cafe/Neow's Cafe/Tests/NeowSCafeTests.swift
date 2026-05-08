@@ -16,6 +16,8 @@ struct NeowSCafeTests {
               "slug": "anger",
               "title": "Anger",
               "description": "Deal 6 damage.",
+              "keywords": [],
+              "keywordPeriod": ".",
               "energyCost": { "kind": "int", "value": 0 },
               "type": "attack",
               "rarity": "common",
@@ -28,6 +30,10 @@ struct NeowSCafeTests {
               "slug": "skewer",
               "title": "Skewer",
               "description": "Deal 7 damage X times.",
+              "keywords": [
+                { "id": "Exhaust", "placement": "afterDescription", "title": "Exhaust" }
+              ],
+              "keywordPeriod": ".",
               "energyCost": { "kind": "x", "value": 0 },
               "type": "attack",
               "rarity": "uncommon",
@@ -52,6 +58,9 @@ struct NeowSCafeTests {
 
         #expect(cards[1].id == "SKEWER")
         #expect(cards[1].energyCost == .x)
+        #expect(cards[1].keywords == [
+            Card.Keyword(id: "Exhaust", placement: .afterDescription, title: "Exhaust")
+        ])
         #expect(cards[1].portraitURL == nil)
     }
 

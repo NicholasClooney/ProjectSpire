@@ -38,7 +38,7 @@ struct CardView: View {
             typeText
             energyIcon
             energyText
-            description
+            rulesText
         }
         .frame(width: Constraints.width, height: Constraints.height, alignment: .topLeading)
 //        .rotation3DEffect(
@@ -213,14 +213,30 @@ struct CardView: View {
         .offset(x: -16, y: -16)
     }
 
-    var description: some View {
-        Text(card.description)
-            .font(.neow(.cardDescription))
-            .foregroundStyle(Color(red: 1, green: 0.965, blue: 0.886))
-            .shadow(color: Color.black.opacity(0.55), radius: 0, x: 2, y: 2)
-            .multilineTextAlignment(.center)
-            .frame(width: 243, height: 136)
-            .offset(x: 28, y: 248)
+    var rulesText: some View {
+        VStack(spacing: 4) {
+            keywordText(for: .beforeDescription)
+            if !card.description.isEmpty {
+                Text(card.description)
+                    .font(.neow(.cardDescription))
+                    .foregroundStyle(Color(red: 1, green: 0.965, blue: 0.886))
+            }
+            keywordText(for: .afterDescription)
+        }
+        .shadow(color: Color.black.opacity(0.55), radius: 0, x: 2, y: 2)
+        .multilineTextAlignment(.center)
+        .frame(width: 243, height: 136)
+        .offset(x: 28, y: 248)
+    }
+
+    @ViewBuilder
+    func keywordText(for placement: Card.Keyword.Placement) -> some View {
+        let text = card.keywordText(for: placement)
+        if !text.isEmpty {
+            Text(text)
+                .font(.neow(.cardDescription, weight: .bold))
+                .foregroundStyle(Color(red: 0.965, green: 0.79, blue: 0.33))
+        }
     }
 }
 
@@ -389,6 +405,13 @@ private extension Card {
         case .colorless, .curse, .status, .event, .token, .deprecated, .mock:
             return .energyColorless
         }
+    }
+
+    func keywordText(for placement: Keyword.Placement) -> String {
+        keywords
+            .filter { $0.placement == placement }
+            .map { "\($0.title)\(keywordPeriod)" }
+            .joined(separator: "\n")
     }
 }
 

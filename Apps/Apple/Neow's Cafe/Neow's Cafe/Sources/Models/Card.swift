@@ -14,6 +14,8 @@ struct Card {
 
     let title: String
     let description: String
+    let keywords: [Keyword]
+    let keywordPeriod: String
     let energyCost: EnergyCost
 
     enum EnergyCost: Equatable {
@@ -25,6 +27,43 @@ struct Card {
     let cardType: CardType // derives portrait boder image
     let cardPool: CardPool // derives frame color
     let portraitURL: URL?
+
+    init(
+        id: String,
+        title: String,
+        description: String,
+        keywords: [Keyword] = [],
+        keywordPeriod: String = ".",
+        energyCost: EnergyCost,
+        rarity: Rarity,
+        cardType: CardType,
+        cardPool: CardPool,
+        portraitURL: URL?
+    ) {
+        self.id = id
+        self.title = title
+        self.description = description
+        self.keywords = keywords
+        self.keywordPeriod = keywordPeriod
+        self.energyCost = energyCost
+        self.rarity = rarity
+        self.cardType = cardType
+        self.cardPool = cardPool
+        self.portraitURL = portraitURL
+    }
+}
+
+extension Card {
+    struct Keyword: Equatable {
+        let id: String
+        let placement: Placement
+        let title: String
+
+        enum Placement: String, Decodable {
+            case beforeDescription
+            case afterDescription
+        }
+    }
 }
 
 extension Card {
