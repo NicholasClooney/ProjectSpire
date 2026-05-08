@@ -8,6 +8,7 @@ Confirmed durable user preferences live in [User Preferences](<User Preferences.
 
 ## Logs
 
+- [0010 - Captain Logs Instruction Split](<0010 - Captain Logs Instruction Split.md>) - Moved detailed Captain Logs agent instructions into the Captain Logs folder while keeping the root guidance explicit.
 - [0009 - Neow's Cafe Light And Dark Theme](<0009 - Neow's Cafe Light And Dark Theme.md>) - Added shared semantic light/dark theme colors for app chrome and filter controls, then moved the related App UI TODO to DONE.
 - [0008 - Kreon Typography Tiers](<0008 - Kreon Typography Tiers.md>) - Added a shared Neow's Cafe typography layer for bundled Kreon fonts and moved the related TODO to DONE.
 - [0007 - Compact Cards Navigation Title](<0007 - Compact Cards Navigation Title.md>) - Confirmed the large `Cards` heading is the SwiftUI navigation title and recommended inline display mode for a compact top bar.

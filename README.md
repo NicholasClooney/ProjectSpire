@@ -5,6 +5,7 @@
 - `Documentation/` — project-wide records, plans, decisions, and devlogs that span multiple repo areas.
 - `Documentation/Agent Workflows/` — reusable instructions for agent-assisted repository and publishing workflows.
 - `Documentation/Captain Logs/` — per-conversation high-level notes on user-agent collaboration and user steering.
+- `Documentation/Captain Logs/AGENTS.md` — folder-local instructions for Captain Log upkeep, with `CLAUDE.md` symlinked to it for Claude Code.
 - `Documentation/Devlogs/` — dated development notes capturing implementation context, issues found, and follow-up lessons.
 - `Documentation/Issues/` — known unsolved or open issues with proposed solutions for future work.
 - `Lab/` — research workspace for decompiling and studying STS2 game source. See `Lab/CLAUDE.md`.
