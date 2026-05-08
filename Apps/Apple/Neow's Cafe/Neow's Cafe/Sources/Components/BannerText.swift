@@ -4,8 +4,8 @@ import UIKit
 struct BannerText: View {
     var text: String
     var font: UIFont
-    var textColor: UIColor = UIColor(red: 0.96, green: 0.96, blue: 0.94, alpha: 1)
-    var outlineColor: UIColor = UIColor(red: 0.30078125, green: 0.29296875, blue: 0.25390625, alpha: 1)
+    var textColor: UIColor = StsColors.cream
+    var outlineColor: UIColor = StsColors.cardTitleOutlineCommon
 
     var body: some View {
         ZStack {
@@ -25,7 +25,7 @@ struct BannerText: View {
                 outlineWidth: 0
             )
         }
-        .shadow(color: .black.opacity(0.5), radius: 3, x: 0, y: 2)
+        .shadow(color: Color(StsColors.halfTransparentBlack), radius: 3, x: 0, y: 2)
         .fixedSize()
     }
 }
@@ -36,5 +36,5 @@ struct BannerText: View {
         font: .neow(.cardEnergy),
     )
     .padding(32)
-    .background(Color(red: 0.55, green: 0.55, blue: 0.58))
+    .background(Color(StsColors.gray))
 }

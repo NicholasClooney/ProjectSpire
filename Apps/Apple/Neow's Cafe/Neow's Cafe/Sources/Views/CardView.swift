@@ -120,11 +120,11 @@ struct CardView: View {
 
     var portraitPlaceholder: some View {
         Rectangle()
-            .fill(Color.black.opacity(0.35))
+            .fill(Color(StsColors.halfTransparentBlack))
             .overlay {
                 Image(systemName: "photo")
                     .font(.system(size: 32))
-                    .foregroundStyle(Color.white.opacity(0.45))
+                    .foregroundStyle(Color(StsColors.halfTransparentWhite))
             }
     }
 
@@ -191,7 +191,7 @@ struct CardView: View {
     var typeText: some View {
         Text(card.typeText)
             .font(.neow(.cardType, weight: .bold))
-            .foregroundStyle(Color.black.opacity(0.75))
+            .foregroundStyle(Color(StsColors.ninetyPercentBlack))
             .frame(width: 61, height: 37)
             .offset(x: 119.5, y: 212)
     }
@@ -217,7 +217,7 @@ struct CardView: View {
 
     var rulesText: some View {
         Text(card.rulesAttributedString)
-            .shadow(color: Color.black.opacity(0.55), radius: 0, x: 2, y: 2)
+            .shadow(color: Color(StsColors.halfTransparentBlack), radius: 0, x: 2, y: 2)
             .multilineTextAlignment(.center)
             .lineLimit(10)
             .minimumScaleFactor(0.55)
@@ -227,10 +227,6 @@ struct CardView: View {
     }
 }
 
-// NOTE: `private extension` makes sense here since this is the only place accessing these values.
-// However, it will make all the properties below inaccessible to testing.
-// But tests still can be done by doing snapshot testing.
-// Just some thoughts.
 private extension Card {
     var isAncient: Bool {
         rarity == .ancient
@@ -240,35 +236,33 @@ private extension Card {
         title
     }
 
-    // StsColors.green (#7FFF00) and cardTitleOutlineSpecial (#1B6131)
     var titleTextColor: UIColor {
         upgradeLevel > 0
-            ? UIColor(red: 0.498, green: 1.0, blue: 0.0, alpha: 1)
-            : UIColor(red: 0.96, green: 0.96, blue: 0.94, alpha: 1)
+            ? StsColors.green
+            : StsColors.cream
     }
 
     var titleOutlineColor: UIColor {
         guard upgradeLevel > 0 else { return rarityTitleOutlineColor }
-        return UIColor(red: 0.106, green: 0.380, blue: 0.192, alpha: 1)
+        return StsColors.cardTitleOutlineSpecial
     }
 
-    /// Rarity-based outline color for the unupgraded title, matching StsColors
     private var rarityTitleOutlineColor: UIColor {
         switch rarity {
         case .uncommon:
-            return UIColor(red: 0.0, green: 0.361, blue: 0.459, alpha: 1)   // #005C75
+            return StsColors.cardTitleOutlineUncommon
         case .rare:
-            return UIColor(red: 0.420, green: 0.294, blue: 0.0, alpha: 1)   // #6B4B00
+            return StsColors.cardTitleOutlineRare
         case .curse:
-            return UIColor(red: 0.333, green: 0.043, blue: 0.620, alpha: 1) // #550B9E
+            return StsColors.cardTitleOutlineCurse
         case .quest:
-            return UIColor(red: 0.494, green: 0.243, blue: 0.082, alpha: 1) // #7E3E15
+            return StsColors.cardTitleOutlineQuest
         case .status:
-            return UIColor(red: 0.310, green: 0.322, blue: 0.184, alpha: 1) // #4F522F
+            return StsColors.cardTitleOutlineStatus
         case .event:
-            return UIColor(red: 0.106, green: 0.380, blue: 0.192, alpha: 1) // #1B6131
+            return StsColors.cardTitleOutlineSpecial
         default:
-            return UIColor(red: 0.302, green: 0.294, blue: 0.251, alpha: 1) // #4D4B40
+            return StsColors.cardTitleOutlineCommon
         }
     }
 
@@ -479,9 +473,9 @@ private enum RulesTextStyle {
     var color: Color {
         switch self {
         case .description:
-            return Color(red: 1, green: 0.965, blue: 0.886)
+            return Color(StsColors.cream)
         case .keyword:
-            return Color(red: 0.965, green: 0.79, blue: 0.33)
+            return Color(StsColors.gold)
         }
     }
 }
