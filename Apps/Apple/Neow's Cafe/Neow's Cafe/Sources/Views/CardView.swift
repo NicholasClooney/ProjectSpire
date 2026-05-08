@@ -171,8 +171,10 @@ struct CardView: View {
 
     var title: some View {
         BannerText(
-            text: card.title,
+            text: card.displayTitle,
             font: .neow(.cardTitle),
+            textColor: card.titleTextColor,
+            outlineColor: card.titleOutlineColor
         )
         .frame(width: 250, height: 54)
         .offset(x: 25, y: 7)
@@ -232,6 +234,43 @@ struct CardView: View {
 private extension Card {
     var isAncient: Bool {
         rarity == .ancient
+    }
+
+    var displayTitle: String {
+        guard upgradeLevel > 0 else { return title }
+        return maxUpgradeLevel > 1 ? "\(title)+\(upgradeLevel)" : "\(title)+"
+    }
+
+    // StsColors.green (#7FFF00) and cardTitleOutlineSpecial (#1B6131)
+    var titleTextColor: UIColor {
+        upgradeLevel > 0
+            ? UIColor(red: 0.498, green: 1.0, blue: 0.0, alpha: 1)
+            : UIColor(red: 0.96, green: 0.96, blue: 0.94, alpha: 1)
+    }
+
+    var titleOutlineColor: UIColor {
+        guard upgradeLevel > 0 else { return rarityTitleOutlineColor }
+        return UIColor(red: 0.106, green: 0.380, blue: 0.192, alpha: 1)
+    }
+
+    /// Rarity-based outline color for the unupgraded title, matching StsColors
+    private var rarityTitleOutlineColor: UIColor {
+        switch rarity {
+        case .uncommon:
+            return UIColor(red: 0.0, green: 0.361, blue: 0.459, alpha: 1)   // #005C75
+        case .rare:
+            return UIColor(red: 0.420, green: 0.294, blue: 0.0, alpha: 1)   // #6B4B00
+        case .curse:
+            return UIColor(red: 0.333, green: 0.043, blue: 0.620, alpha: 1) // #550B9E
+        case .quest:
+            return UIColor(red: 0.494, green: 0.243, blue: 0.082, alpha: 1) // #7E3E15
+        case .status:
+            return UIColor(red: 0.310, green: 0.322, blue: 0.184, alpha: 1) // #4F522F
+        case .event:
+            return UIColor(red: 0.106, green: 0.380, blue: 0.192, alpha: 1) // #1B6131
+        default:
+            return UIColor(red: 0.302, green: 0.294, blue: 0.251, alpha: 1) // #4D4B40
+        }
     }
 
     /// Decided by `rarity`

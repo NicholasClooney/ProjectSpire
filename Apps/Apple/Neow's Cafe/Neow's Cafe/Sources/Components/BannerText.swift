@@ -4,6 +4,8 @@ import UIKit
 struct BannerText: View {
     var text: String
     var font: UIFont
+    var textColor: UIColor = UIColor(red: 0.96, green: 0.96, blue: 0.94, alpha: 1)
+    var outlineColor: UIColor = UIColor(red: 0.30078125, green: 0.29296875, blue: 0.25390625, alpha: 1)
 
     var body: some View {
         ZStack {
@@ -11,14 +13,14 @@ struct BannerText: View {
                 text: text,
                 font: font,
                 textColor: .clear,
-                outlineColor: UIColor(red: 0.30078125, green: 0.29296875, blue: 0.25390625, alpha: 1),
+                outlineColor: outlineColor,
                 outlineWidth: 5
             )
 
             OutlinedLabelView(
                 text: text,
                 font: font,
-                textColor: UIColor(red: 0.96, green: 0.96, blue: 0.94, alpha: 1),
+                textColor: textColor,
                 outlineColor: .clear,
                 outlineWidth: 0
             )
