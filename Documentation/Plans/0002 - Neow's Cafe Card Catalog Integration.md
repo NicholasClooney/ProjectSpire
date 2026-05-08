@@ -35,18 +35,20 @@ images/card_portraits -> ../../../resources/images/packed/card_portraits
 - asset base path
 - checksums
 
-`cards.index.json` is the grid, search, and filter payload. It contains all card summaries needed by the app:
+`cards.index.json` is the grid, search, and filter payload. The catalog generator (`Lab/scripts/create-card-catalog.py`) resolves all fields from the raw card JSON and writes them as a flat, app-ready structure. The app decodes this directly - it does not read or parse the raw per-card JSON for the grid. Fields written per card summary:
 
-- id
-- slug
-- title
-- description
-- energy cost
-- type
-- rarity
-- pool
-- portrait path
-- optional detail path
+- `id` - from `card.id`
+- `slug` - filename stem (e.g. `anger`)
+- `title` - from `resolved.base.title`
+- `description` - from `resolved.base.description.plain`
+- `keywords` - from `resolved.base.keywords` (id, placement, title per keyword)
+- `keywordPeriod` - from `resolved.keyword_period`
+- `energyCost` - from `raw.energy_cost` (kind + optional value)
+- `type` - from `raw.type` (lowercased)
+- `rarity` - from `raw.rarity` (lowercased)
+- `pool` - from `raw.card_pool` (lowercased)
+- `portraitPath` - catalog-relative path resolved from `raw.assets`
+- `detailPath` - catalog-relative path to the raw card JSON (for detail/debug views only)
 
 Keep individual card JSON files for detail and debug views, not for the main grid. In local development, these files are reached through the `cards` symlink in `Lab/catalog/v0.103.2/`.
 
