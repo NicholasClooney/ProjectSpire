@@ -35,11 +35,16 @@ struct CardsView: View {
                     spacing: 32
                 ) {
                     ForEach(filteredCards, id: \.id) { card in
-                        GeometryReader { geo in
-                            CardView(card: card)
-                                .scaleEffect(geo.size.width / CardView.Constraints.width, anchor: .topLeading)
+                        NavigationLink {
+                            CardDetailView(card: card)
+                        } label: {
+                            GeometryReader { geo in
+                                CardView(card: card)
+                                    .scaleEffect(geo.size.width / CardView.Constraints.width, anchor: .topLeading)
+                            }
+                            .aspectRatio(CardView.Constraints.width / CardView.Constraints.height, contentMode: .fit)
                         }
-                        .aspectRatio(CardView.Constraints.width / CardView.Constraints.height, contentMode: .fit)
+                        .buttonStyle(.plain)
                     }
                 }
             }
