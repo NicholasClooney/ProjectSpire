@@ -214,29 +214,14 @@ struct CardView: View {
     }
 
     var rulesText: some View {
-        VStack(spacing: 4) {
-            keywordText(for: .beforeDescription)
-            if !card.description.isEmpty {
-                Text(card.description)
-                    .font(.neow(.cardDescription))
-                    .foregroundStyle(Color(red: 1, green: 0.965, blue: 0.886))
-            }
-            keywordText(for: .afterDescription)
-        }
-        .shadow(color: Color.black.opacity(0.55), radius: 0, x: 2, y: 2)
-        .multilineTextAlignment(.center)
-        .frame(width: 243, height: 136)
-        .offset(x: 28, y: 248)
-    }
-
-    @ViewBuilder
-    func keywordText(for placement: Card.Keyword.Placement) -> some View {
-        let text = card.keywordText(for: placement)
-        if !text.isEmpty {
-            Text(text)
-                .font(.neow(.cardDescription, weight: .bold))
-                .foregroundStyle(Color(red: 0.965, green: 0.79, blue: 0.33))
-        }
+        Text(card.rulesAttributedString)
+            .shadow(color: Color.black.opacity(0.55), radius: 0, x: 2, y: 2)
+            .multilineTextAlignment(.center)
+            .lineLimit(10)
+            .minimumScaleFactor(0.55)
+            .allowsTightening(true)
+            .frame(width: 243, height: 136)
+            .offset(x: 28, y: 248)
     }
 }
 
@@ -413,8 +398,55 @@ private extension Card {
             .map { "\($0.title)\(keywordPeriod)" }
             .joined(separator: "\n")
     }
+
+    var rulesAttributedString: AttributedString {
+        var result = AttributedString()
+
+        appendRulesText(keywordText(for: .beforeDescription), style: .keyword, to: &result)
+        appendRulesText(description, style: .description, to: &result)
+        appendRulesText(keywordText(for: .afterDescription), style: .keyword, to: &result)
+
+        return result
+    }
+
+    private func appendRulesText(_ text: String, style: RulesTextStyle, to result: inout AttributedString) {
+        guard !text.isEmpty else {
+            return
+        }
+
+        if !result.characters.isEmpty {
+            result += AttributedString("\n")
+        }
+
+        var segment = AttributedString(text)
+        segment.font = style.font
+        segment.foregroundColor = style.color
+        result += segment
+    }
 }
 
+private enum RulesTextStyle {
+    case description
+    case keyword
+
+    var font: Font {
+        switch self {
+        case .description:
+            return .neow(.cardDescription)
+        case .keyword:
+            return .neow(.cardDescription, weight: .bold)
+        }
+    }
+
+    var color: Color {
+        switch self {
+        case .description:
+            return Color(red: 1, green: 0.965, blue: 0.886)
+        case .keyword:
+            return Color(red: 0.965, green: 0.79, blue: 0.33)
+        }
+    }
+}
 
 private extension Image {
     func cardAssetColor(_ approximation: CardAssetColor) -> some View {

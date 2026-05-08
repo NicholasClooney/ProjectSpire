@@ -64,4 +64,44 @@ struct NeowSCafeTests {
         #expect(cards[1].portraitURL == nil)
     }
 
+    @Test func filtersCatalogCardsByKeywordText() {
+        let cards = [
+            Card(
+                id: "BOMBARDMENT",
+                title: "Bombardment",
+                description: "Deal 18 damage.",
+                keywords: [
+                    Card.Keyword(id: "Exhaust", placement: .afterDescription, title: "Exhaust")
+                ],
+                energyCost: .int(3),
+                rarity: .common,
+                cardType: .attack,
+                cardPool: .ironclad,
+                portraitURL: nil
+            ),
+            Card(
+                id: "ANGER",
+                title: "Anger",
+                description: "Deal 6 damage.",
+                energyCost: .int(0),
+                rarity: .common,
+                cardType: .attack,
+                cardPool: .ironclad,
+                portraitURL: nil
+            )
+        ]
+
+        let filtered = CardFilter.apply(
+            filters: CardFilter.Criteria(
+                searchText: "exhaust",
+                displayedCardPools: Card.DisplayedCardPool.allCases,
+                displayedCardTypes: Card.DisplayedCardType.allCases,
+                displayedRarities: Card.DisplayedRarity.allCases
+            ),
+            to: cards
+        )
+
+        #expect(filtered.map(\.id) == ["BOMBARDMENT"])
+    }
+
 }

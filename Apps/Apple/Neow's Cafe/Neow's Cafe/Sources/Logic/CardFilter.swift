@@ -21,7 +21,11 @@ enum CardFilter {
         }
 
         return card.title.localizedCaseInsensitiveContains(searchText) ||
-        card.description.localizedCaseInsensitiveContains(searchText)
+        card.description.localizedCaseInsensitiveContains(searchText) ||
+        card.keywords.contains { keyword in
+            keyword.id.localizedCaseInsensitiveContains(searchText) ||
+            keyword.title.localizedCaseInsensitiveContains(searchText)
+        }
     }
 
     private static func match(card: Card, against pools: [Card.DisplayedCardPool]) -> Bool {
