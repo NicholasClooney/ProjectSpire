@@ -19,9 +19,20 @@ struct CardCatalogCard: Decodable {
     let rarity: Card.Rarity
     let pool: Card.CardPool
     let portraitPath: String?
+    let upgrade: CatalogCardUpgrade?
 
     func card(baseURL: URL) -> Card {
-        Card(
+        let portrait = portraitPath.map { baseURL.appendingPathComponent($0) }
+        let upgradeSummary: Card.UpgradeSummary? = upgrade.map {
+            Card.UpgradeSummary(
+                title: $0.title,
+                description: $0.description,
+                keywords: $0.keywords?.map(\.cardKeyword) ?? [],
+                keywordPeriod: $0.keywordPeriod ?? ".",
+                energyCost: $0.energyCost.cardEnergyCost
+            )
+        }
+        return Card(
             id: id,
             title: title,
             description: description,
@@ -31,9 +42,18 @@ struct CardCatalogCard: Decodable {
             rarity: rarity,
             cardType: type,
             cardPool: pool,
-            portraitURL: portraitPath.map { baseURL.appendingPathComponent($0) }
+            portraitURL: portrait,
+            upgradeSummary: upgradeSummary
         )
     }
+}
+
+struct CatalogCardUpgrade: Decodable {
+    let title: String
+    let description: String
+    let keywords: [CatalogCardKeyword]?
+    let keywordPeriod: String?
+    let energyCost: CatalogEnergyCost
 }
 
 struct CatalogCardKeyword: Decodable {

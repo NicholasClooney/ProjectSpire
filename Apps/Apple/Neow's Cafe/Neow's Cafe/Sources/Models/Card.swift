@@ -30,6 +30,7 @@ struct Card {
     let cardType: CardType // derives portrait boder image
     let cardPool: CardPool // derives frame color
     let portraitURL: URL?
+    let upgradeSummary: UpgradeSummary?
 
     init(
         id: String,
@@ -43,7 +44,8 @@ struct Card {
         rarity: Rarity,
         cardType: CardType,
         cardPool: CardPool,
-        portraitURL: URL?
+        portraitURL: URL?,
+        upgradeSummary: UpgradeSummary? = nil
     ) {
         self.id = id
         self.title = title
@@ -57,6 +59,17 @@ struct Card {
         self.cardType = cardType
         self.cardPool = cardPool
         self.portraitURL = portraitURL
+        self.upgradeSummary = upgradeSummary
+    }
+}
+
+extension Card {
+    struct UpgradeSummary {
+        let title: String
+        let description: String
+        let keywords: [Keyword]
+        let keywordPeriod: String
+        let energyCost: EnergyCost
     }
 }
 
