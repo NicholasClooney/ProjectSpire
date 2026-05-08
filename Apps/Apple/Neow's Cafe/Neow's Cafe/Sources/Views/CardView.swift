@@ -237,8 +237,7 @@ private extension Card {
     }
 
     var displayTitle: String {
-        guard upgradeLevel > 0 else { return title }
-        return maxUpgradeLevel > 1 ? "\(title)+\(upgradeLevel)" : "\(title)+"
+        title
     }
 
     // StsColors.green (#7FFF00) and cardTitleOutlineSpecial (#1B6131)

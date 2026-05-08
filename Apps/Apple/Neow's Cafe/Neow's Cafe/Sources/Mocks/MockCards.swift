@@ -24,7 +24,17 @@ enum MockCards {
             rarity: .common,
             cardType: .attack,
             cardPool: .ironclad,
-            portraitURL: nil
+            portraitURL: nil,
+            upgradeSummary: Card.UpgradeSummary(
+                title: "Anger+",
+                description: """
+                Deal 8 damage.
+                Add a copy into your Discard Pile.
+                """,
+                keywords: [],
+                keywordPeriod: ".",
+                energyCost: .int(0)
+            )
         ),
         Card(
             id: "CORRUPTION",
@@ -37,7 +47,17 @@ enum MockCards {
             rarity: .ancient,
             cardType: .power,
             cardPool: .ironclad,
-            portraitURL: nil
+            portraitURL: nil,
+            upgradeSummary: Card.UpgradeSummary(
+                title: "Corruption+",
+                description: """
+                Skills cost 0.
+                Whenever you play a Skill, Exhaust it.
+                """,
+                keywords: [],
+                keywordPeriod: ".",
+                energyCost: .int(2)
+            )
         ),
         Card(
             id: "ADRENALINE",
@@ -50,7 +70,17 @@ enum MockCards {
             rarity: .rare,
             cardType: .skill,
             cardPool: .silent,
-            portraitURL: nil
+            portraitURL: nil,
+            upgradeSummary: Card.UpgradeSummary(
+                title: "Adrenaline+",
+                description: """
+                Gain 1 Energy.
+                Draw 3 cards.
+                """,
+                keywords: [],
+                keywordPeriod: ".",
+                energyCost: .int(0)
+            )
         ),
         Card(
             id: "MEMENTO_MORI",
