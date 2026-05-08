@@ -121,8 +121,36 @@ def energy_cost(card: dict[str, Any]) -> dict[str, Any]:
     return {"kind": "unknown"}
 
 
+def card_keywords(card: dict[str, Any]) -> list[dict[str, str]]:
+    base = card.get("resolved", {}).get("base", {})
+    keywords = base.get("keywords", [])
+    if not isinstance(keywords, list):
+        return []
+
+    summaries = []
+    for keyword in keywords:
+        if not isinstance(keyword, dict):
+            continue
+
+        keyword_id = keyword.get("id")
+        placement = keyword.get("placement")
+        title = keyword.get("title")
+        if not all(isinstance(value, str) for value in (keyword_id, placement, title)):
+            continue
+
+        summaries.append(
+            {
+                "id": keyword_id,
+                "placement": placement,
+                "title": title,
+            }
+        )
+    return summaries
+
+
 def card_summary(path: Path, card: dict[str, Any], portrait_root: Path) -> dict[str, Any]:
     raw = card.get("raw", {})
+    resolved = card.get("resolved", {})
     base = card.get("resolved", {}).get("base", {})
     description = base.get("description", {})
     plain_description = description.get("plain") if isinstance(description, dict) else None
@@ -132,6 +160,8 @@ def card_summary(path: Path, card: dict[str, Any], portrait_root: Path) -> dict[
         "slug": path.stem,
         "title": base.get("title", card["id"]),
         "description": plain_description or "",
+        "keywords": card_keywords(card),
+        "keywordPeriod": resolved.get("keyword_period", "."),
         "energyCost": energy_cost(card),
         "type": str(raw.get("type", "")).lower(),
         "rarity": str(raw.get("rarity", "")).lower(),

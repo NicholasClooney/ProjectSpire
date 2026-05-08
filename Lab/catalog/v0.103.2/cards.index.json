@@ -1,13 +1,21 @@
 {
   "schemaVersion": "neows-cafe-card-catalog.v1",
   "gameVersion": "v0.103.2",
-  "generatedAt": "2026-05-06T10:47:48.422585+00:00",
+  "generatedAt": "2026-05-08T10:26:32.652261+00:00",
   "cards": [
     {
       "id": "ABRASIVE",
       "slug": "abrasive",
       "title": "Abrasive",
       "description": "Gain 1 Dexterity.\nGain 4 Thorns.",
+      "keywords": [
+        {
+          "id": "Sly",
+          "placement": "beforeDescription",
+          "title": "Sly"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -23,6 +31,8 @@
       "slug": "accelerant",
       "title": "Accelerant",
       "description": "Poison is triggered 1 additional time.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -38,6 +48,8 @@
       "slug": "accuracy",
       "title": "Accuracy",
       "description": "Shivs deal 4 additional damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -53,6 +65,8 @@
       "slug": "acrobatics",
       "title": "Acrobatics",
       "description": "Draw 3 cards.\nDiscard 1 card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -68,6 +82,8 @@
       "slug": "adaptive_strike",
       "title": "Adaptive Strike",
       "description": "Deal 18 damage.\nAdd a 0 copy of this card into your Discard Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -83,6 +99,14 @@
       "slug": "adrenaline",
       "title": "Adrenaline",
       "description": "Gain 1.\nDraw 2 cards.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -98,6 +122,8 @@
       "slug": "afterimage",
       "title": "Afterimage",
       "description": "Whenever you play a card, gain 1 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -113,6 +139,14 @@
       "slug": "afterlife",
       "title": "Afterlife",
       "description": "Summon 6.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -128,6 +162,8 @@
       "slug": "aggression",
       "title": "Aggression",
       "description": "At the start of your turn, put a random Attack from your Discard Pile into your Hand and Upgrade it.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -143,6 +179,14 @@
       "slug": "alchemize",
       "title": "Alchemize",
       "description": "Procure a random potion.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -158,6 +202,8 @@
       "slug": "alignment",
       "title": "Alignment",
       "description": "Gain 2.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -173,6 +219,8 @@
       "slug": "all_for_one",
       "title": "All for One",
       "description": "Deal 10 damage.\nPut ALL 0 cards from your Discard Pile into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -188,6 +236,8 @@
       "slug": "anger",
       "title": "Anger",
       "description": "Deal 6 damage.\nAdd a copy of this card into your Discard Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -203,6 +253,14 @@
       "slug": "anointed",
       "title": "Anointed",
       "description": "Put every Rare card from your Draw Pile into your Hand.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -218,6 +276,8 @@
       "slug": "anticipate",
       "title": "Anticipate",
       "description": "Gain 2 Dexterity this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -233,6 +293,19 @@
       "slug": "apotheosis",
       "title": "Apotheosis",
       "description": "Upgrade ALL your cards.",
+      "keywords": [
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate"
+        },
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -248,6 +321,19 @@
       "slug": "apparition",
       "title": "Apparition",
       "description": "Gain 1 Intangible.",
+      "keywords": [
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal"
+        },
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -263,6 +349,8 @@
       "slug": "armaments",
       "title": "Armaments",
       "description": "Gain 5 Block.\nUpgrade a card in your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -278,6 +366,8 @@
       "slug": "arsenal",
       "title": "Arsenal",
       "description": "Whenever you create a card, gain 1 Strength.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -293,6 +383,24 @@
       "slug": "ascenders_bane",
       "title": "Ascender's Bane",
       "description": "",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        },
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal"
+        },
+        {
+          "id": "Eternal",
+          "placement": "afterDescription",
+          "title": "Eternal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -308,6 +416,8 @@
       "slug": "ashen_strike",
       "title": "Ashen Strike",
       "description": "Deal 6 damage.\nDeals 3 additional damage for each card in your Exhaust Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -323,6 +433,19 @@
       "slug": "assassinate",
       "title": "Assassinate",
       "description": "Deal 10 damage.\nApply 1 Vulnerable.",
+      "keywords": [
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate"
+        },
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -338,6 +461,8 @@
       "slug": "astral_pulse",
       "title": "Astral Pulse",
       "description": "Deal 14 damage to ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -353,6 +478,8 @@
       "slug": "automation",
       "title": "Automation",
       "description": "Every 10 cards you draw, gain 1.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -368,6 +495,8 @@
       "slug": "backflip",
       "title": "Backflip",
       "description": "Gain 5 Block.\nDraw 2 cards.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -383,6 +512,19 @@
       "slug": "backstab",
       "title": "Backstab",
       "description": "Deal 11 damage.",
+      "keywords": [
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate"
+        },
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -398,6 +540,19 @@
       "slug": "bad_luck",
       "title": "Bad Luck",
       "description": "At the end of your turn, if this is in your Hand, lose 13 HP.",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        },
+        {
+          "id": "Eternal",
+          "placement": "afterDescription",
+          "title": "Eternal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -413,6 +568,8 @@
       "slug": "ball_lightning",
       "title": "Ball Lightning",
       "description": "Deal 7 damage.\nChannel 1 Lightning.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -428,6 +585,8 @@
       "slug": "banshees_cry",
       "title": "Banshee's Cry",
       "description": "Deal 33 damage to ALL enemies.\nCosts 2 less for each Ethereal card played this combat.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 9
@@ -443,6 +602,8 @@
       "slug": "barrage",
       "title": "Barrage",
       "description": "Deal 5 damage for each Channeled Orb.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -458,6 +619,8 @@
       "slug": "barricade",
       "title": "Barricade",
       "description": "Block is not removed at the start of your turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -473,6 +636,8 @@
       "slug": "bash",
       "title": "Bash",
       "description": "Deal 8 damage.\nApply 2 Vulnerable.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -488,6 +653,8 @@
       "slug": "battle_trance",
       "title": "Battle Trance",
       "description": "Draw 3 cards.\nYou cannot draw additional cards this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -503,6 +670,8 @@
       "slug": "beacon_of_hope",
       "title": "Beacon of Hope",
       "description": "Whenever you gain Block on your turn, other players gain half that much Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -518,6 +687,8 @@
       "slug": "beam_cell",
       "title": "Beam Cell",
       "description": "Deal 3 damage.\nApply 1 Vulnerable.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -533,6 +704,8 @@
       "slug": "beat_down",
       "title": "Beat Down",
       "description": "Play 3 random Attacks from your Discard Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -548,6 +721,8 @@
       "slug": "beat_into_shape",
       "title": "Beat into Shape",
       "description": "Deal 5 damage.\nForge 5.\nForges an additional 5 for every other time you've hit the enemy this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -563,6 +738,8 @@
       "slug": "beckon",
       "title": "Beckon",
       "description": "At the end of your turn, if this is in your Hand,\n lose 6 HP.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -578,6 +755,8 @@
       "slug": "begone",
       "title": "BEGONE!",
       "description": "Choose a card in your Hand to Transform into Minion Strike.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -593,6 +772,8 @@
       "slug": "believe_in_you",
       "title": "Believe in You",
       "description": "Another player gains 2.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -608,6 +789,8 @@
       "slug": "biased_cognition",
       "title": "Biased Cognition",
       "description": "Gain 4 Focus.\nAt the start of your turn, lose 1 Focus.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -623,6 +806,14 @@
       "slug": "big_bang",
       "title": "Big Bang",
       "description": "Draw 1 card.\nGain 1.\nGain 1.\nForge 5.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -638,6 +829,8 @@
       "slug": "black_hole",
       "title": "Black Hole",
       "description": "Whenever you spend or gain *, deal 3 damage to ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -653,6 +846,14 @@
       "slug": "blade_dance",
       "title": "Blade Dance",
       "description": "Add 3 Shivs into your Hand.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -668,6 +869,8 @@
       "slug": "blade_of_ink",
       "title": "Blade of Ink",
       "description": "Add 2 Inky Shivs into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -683,6 +886,8 @@
       "slug": "blight_strike",
       "title": "Blight Strike",
       "description": "Deal 8 damage.\nApply Doom equal to damage dealt.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -698,6 +903,8 @@
       "slug": "blood_wall",
       "title": "Blood Wall",
       "description": "Lose 2 HP.\nGain 16 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -713,6 +920,8 @@
       "slug": "bloodletting",
       "title": "Bloodletting",
       "description": "Lose 3 HP.\nGain 2.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -728,6 +937,8 @@
       "slug": "bludgeon",
       "title": "Bludgeon",
       "description": "Deal 32 damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -743,6 +954,8 @@
       "slug": "blur",
       "title": "Blur",
       "description": "Gain 5 Block.\nBlock is not removed at the start of your next turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -758,6 +971,8 @@
       "slug": "body_slam",
       "title": "Body Slam",
       "description": "Deal damage equal to your Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -773,6 +988,8 @@
       "slug": "bodyguard",
       "title": "Bodyguard",
       "description": "Summon 5.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -788,6 +1005,8 @@
       "slug": "bolas",
       "title": "Bolas",
       "description": "Deal 3 damage.\nAt the start of your next turn, return this to your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -803,6 +1022,14 @@
       "slug": "bombardment",
       "title": "Bombardment",
       "description": "Deal 18 damage.\nAt the start of your turn, if this is in your Exhaust Pile, play it.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -818,6 +1045,8 @@
       "slug": "bone_shards",
       "title": "Bone Shards",
       "description": "If Osty is alive, he deals 9 damage to ALL enemies and you gain 9 Block.\nOsty dies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -833,6 +1062,8 @@
       "slug": "boost_away",
       "title": "Boost Away",
       "description": "Gain 6 Block.\nAdd a Dazed into your Discard Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -848,6 +1079,19 @@
       "slug": "boot_sequence",
       "title": "Boot Sequence",
       "description": "Gain 10 Block.",
+      "keywords": [
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate"
+        },
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -863,6 +1107,8 @@
       "slug": "borrowed_time",
       "title": "Borrowed Time",
       "description": "Gain 4.\nCards cost an additional 1 this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -878,6 +1124,8 @@
       "slug": "bouncing_flask",
       "title": "Bouncing Flask",
       "description": "Apply 3 Poison to a random enemy 3 times.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -893,6 +1141,8 @@
       "slug": "brand",
       "title": "Brand",
       "description": "Lose 1 HP.\nExhaust 1 card.\nGain 1 Strength.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -908,6 +1158,8 @@
       "slug": "break",
       "title": "Break",
       "description": "Deal 20 damage.\nApply 5 Vulnerable.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -923,6 +1175,8 @@
       "slug": "breakthrough",
       "title": "Breakthrough",
       "description": "Lose 1 HP.\nDeal 9 damage to ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -938,6 +1192,8 @@
       "slug": "brightest_flame",
       "title": "Brightest Flame",
       "description": "Gain 2.\nDraw 2 cards.\nLose 1 Max HP.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -953,6 +1209,8 @@
       "slug": "bubble_bubble",
       "title": "Bubble Bubble",
       "description": "If the enemy has Poison, apply 9 Poison.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -968,6 +1226,8 @@
       "slug": "buffer",
       "title": "Buffer",
       "description": "Prevent the next time you would lose HP.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -983,6 +1243,8 @@
       "slug": "bulk_up",
       "title": "Bulk Up",
       "description": "Lose 1 Orb Slot.\nGain 2 Strength.\nGain 2 Dexterity.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -998,6 +1260,8 @@
       "slug": "bullet_time",
       "title": "Bullet Time",
       "description": "You cannot draw additional cards this turn. ALL cards in your Hand are free to play this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -1013,6 +1277,8 @@
       "slug": "bully",
       "title": "Bully",
       "description": "Deal 4 damage.\nDeals 2 additional damage for each Vulnerable on the enemy.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -1028,6 +1294,8 @@
       "slug": "bulwark",
       "title": "Bulwark",
       "description": "Gain 13 Block.\nForge 10.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -1043,6 +1311,14 @@
       "slug": "bundle_of_joy",
       "title": "Bundle of Joy",
       "description": "Add 3 random Colorless cards into your Hand.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1058,6 +1334,14 @@
       "slug": "burn",
       "title": "Burn",
       "description": "At the end of your turn, if this is in your Hand, take 2 damage.",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -1073,6 +1357,8 @@
       "slug": "burning_pact",
       "title": "Burning Pact",
       "description": "Exhaust 1 card.\nDraw 2 cards.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1088,6 +1374,8 @@
       "slug": "burst",
       "title": "Burst",
       "description": "This turn, your next Skill is played an extra time.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1103,6 +1391,8 @@
       "slug": "bury",
       "title": "Bury",
       "description": "Deal 52 damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 4
@@ -1118,6 +1408,8 @@
       "slug": "byrd_swoop",
       "title": "Byrd Swoop",
       "description": "Deal 14 damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -1133,6 +1425,14 @@
       "slug": "byrdonis_egg",
       "title": "Byrdonis Egg",
       "description": "Can be hatched at a Rest Site.",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -1148,6 +1448,8 @@
       "slug": "calamity",
       "title": "Calamity",
       "description": "Whenever you play an Attack, add a random Attack into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -1163,6 +1465,8 @@
       "slug": "calcify",
       "title": "Calcify",
       "description": "Osty's attacks deal 4 additional damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1178,6 +1482,14 @@
       "slug": "calculated_gamble",
       "title": "Calculated Gamble",
       "description": "Discard your Hand,\nthen draw that many cards.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -1193,6 +1505,8 @@
       "slug": "call_of_the_void",
       "title": "Call of the Void",
       "description": "At the start of your turn, add 1 random card into your Hand. It gains Ethereal.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1208,6 +1522,8 @@
       "slug": "caltrops",
       "title": "Caltrops",
       "description": "Whenever you are attacked, deal 3 damage back.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1223,6 +1539,8 @@
       "slug": "capacitor",
       "title": "Capacitor",
       "description": "Gain 2 Orb Slots.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1238,6 +1556,8 @@
       "slug": "capture_spirit",
       "title": "Capture Spirit",
       "description": "Enemy loses 3 HP.\nAdd 3 Souls into your Draw Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1253,6 +1573,8 @@
       "slug": "cascade",
       "title": "Cascade",
       "description": "Play the top X cards of your Draw Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "x",
         "value": -1
@@ -1268,6 +1590,8 @@
       "slug": "catastrophe",
       "title": "Catastrophe",
       "description": "Play 2 random cards from your Draw Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -1283,6 +1607,8 @@
       "slug": "celestial_might",
       "title": "Celestial Might",
       "description": "Deal 6 damage 3 times.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -1298,6 +1624,8 @@
       "slug": "chaos",
       "title": "Chaos",
       "description": "Channel 1 random Orb.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1313,6 +1641,8 @@
       "slug": "charge",
       "title": "CHARGE!!",
       "description": "Choose 2 cards in your Draw Pile to Transform into\nMinion Dive Bombs.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1328,6 +1658,8 @@
       "slug": "charge_battery",
       "title": "Charge Battery",
       "description": "Gain 7 Block.\nNext turn, gain 1.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1343,6 +1675,8 @@
       "slug": "child_of_the_stars",
       "title": "Child of the Stars",
       "description": "Whenever you spend *, gain 2 Block for each * spent.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1358,6 +1692,14 @@
       "slug": "chill",
       "title": "Chill",
       "description": "Channel 1 Frost for each enemy.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -1373,6 +1715,8 @@
       "slug": "cinder",
       "title": "Cinder",
       "description": "Deal 18 damage.\nExhaust 1 card at random.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -1388,6 +1732,8 @@
       "slug": "clash",
       "title": "Clash",
       "description": "Can only be played if every card in your Hand is an Attack.\nDeal 14 damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -1403,6 +1749,8 @@
       "slug": "claw",
       "title": "Claw",
       "description": "Deal 3 damage.\nIncrease the damage of ALL Claw cards by 2 this combat.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -1418,6 +1766,8 @@
       "slug": "cleanse",
       "title": "Cleanse",
       "description": "Summon 3.\nExhaust 1 card from your Draw Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1433,6 +1783,8 @@
       "slug": "cloak_and_dagger",
       "title": "Cloak and Dagger",
       "description": "Gain 6 Block.\nAdd 1 Shiv into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1448,6 +1800,8 @@
       "slug": "cloak_of_stars",
       "title": "Cloak of Stars",
       "description": "Gain 7 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -1463,6 +1817,19 @@
       "slug": "clumsy",
       "title": "Clumsy",
       "description": "",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        },
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -1478,6 +1845,8 @@
       "slug": "cold_snap",
       "title": "Cold Snap",
       "description": "Deal 6 damage.\nChannel 1 Frost.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1493,6 +1862,8 @@
       "slug": "collision_course",
       "title": "Collision Course",
       "description": "Deal 11 damage.\nAdd a Debris into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -1508,6 +1879,8 @@
       "slug": "colossus",
       "title": "Colossus",
       "description": "Gain 5 Block.\nYou receive 50% less damage from Vulnerable enemies this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1523,6 +1896,8 @@
       "slug": "comet",
       "title": "Comet",
       "description": "Deal 33 damage.\nApply 3 Weak.\nApply 3 Vulnerable.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -1538,6 +1913,8 @@
       "slug": "compact",
       "title": "Compact",
       "description": "Gain 6 Block.\nTransform all Status cards in your Hand into Fuel.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1553,6 +1930,8 @@
       "slug": "compile_driver",
       "title": "Compile Driver",
       "description": "Deal 7 damage.\nDraw 1 card for each unique Orb you have.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1568,6 +1947,8 @@
       "slug": "conflagration",
       "title": "Conflagration",
       "description": "Deal 8 damage to ALL enemies.\nDeals 2 additional damage for each other Attack you've played this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1583,6 +1964,8 @@
       "slug": "conqueror",
       "title": "Conqueror",
       "description": "Forge 3.\nSovereign Blade deals double damage to the enemy this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1598,6 +1981,8 @@
       "slug": "consuming_shadow",
       "title": "Consuming Shadow",
       "description": "Channel 2 Dark.\nAt the end of your turn, Evoke your leftmost Orb.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -1613,6 +1998,8 @@
       "slug": "convergence",
       "title": "Convergence",
       "description": "Next turn,\ngain 1 and 1.\nRetain your Hand this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1628,6 +2015,8 @@
       "slug": "coolant",
       "title": "Coolant",
       "description": "At the start of your turn, gain 2 Block for each unique Orb you have.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1643,6 +2032,8 @@
       "slug": "coolheaded",
       "title": "Coolheaded",
       "description": "Channel 1 Frost.\nDraw 1 card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1658,6 +2049,8 @@
       "slug": "coordinate",
       "title": "Coordinate",
       "description": "Give another player 5 Strength this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1673,6 +2066,8 @@
       "slug": "corrosive_wave",
       "title": "Corrosive Wave",
       "description": "Whenever you draw a card this turn, apply 2 Poison to ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1688,6 +2083,8 @@
       "slug": "corruption",
       "title": "Corruption",
       "description": "Skills cost 0 .\nWhenever you play a Skill, Exhaust it.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -1703,6 +2100,8 @@
       "slug": "cosmic_indifference",
       "title": "Cosmic Indifference",
       "description": "Gain 6 Block.\nPut a card from your Discard Pile on top of your Draw Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1718,6 +2117,8 @@
       "slug": "countdown",
       "title": "Countdown",
       "description": "At the start of your turn, apply 6 Doom to a random enemy.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1733,6 +2134,8 @@
       "slug": "crash_landing",
       "title": "Crash Landing",
       "description": "Deal 21 damage to ALL enemies.\nFill your Hand with Debris.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1748,6 +2151,8 @@
       "slug": "creative_ai",
       "title": "Creative AI",
       "description": "At the start of your turn, add a random Power into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -1763,6 +2168,8 @@
       "slug": "crescent_spear",
       "title": "Crescent Spear",
       "description": "Deal 6 damage.\nDeals 2 additional damage for ALL your cards that have a * cost.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1778,6 +2185,8 @@
       "slug": "crimson_mantle",
       "title": "Crimson Mantle",
       "description": "At the start of your turn, lose 1 HP and gain 8 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1793,6 +2202,8 @@
       "slug": "cruelty",
       "title": "Cruelty",
       "description": "Vulnerable enemies take an additional 25% damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1808,6 +2219,8 @@
       "slug": "crush_under",
       "title": "Crush Under",
       "description": "Deal 7 damage to ALL enemies. All enemies lose 1 Strength this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1823,6 +2236,19 @@
       "slug": "curse_of_the_bell",
       "title": "Curse of the Bell",
       "description": "",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        },
+        {
+          "id": "Eternal",
+          "placement": "afterDescription",
+          "title": "Eternal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -1838,6 +2264,8 @@
       "slug": "dagger_spray",
       "title": "Dagger Spray",
       "description": "Deal 4 damage to ALL enemies twice.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1853,6 +2281,8 @@
       "slug": "dagger_throw",
       "title": "Dagger Throw",
       "description": "Deal 9 damage.\nDraw 1 card.\nDiscard 1 card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1868,6 +2298,8 @@
       "slug": "danse_macabre",
       "title": "Danse Macabre",
       "description": "Whenever you play a card that costs 2 or more, gain 4 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1883,6 +2315,8 @@
       "slug": "dark_embrace",
       "title": "Dark Embrace",
       "description": "Whenever a card is Exhausted,\ndraw 1 card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -1898,6 +2332,14 @@
       "slug": "dark_shackles",
       "title": "Dark Shackles",
       "description": "Enemy loses 9 Strength this turn.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -1913,6 +2355,8 @@
       "slug": "darkness",
       "title": "Darkness",
       "description": "Channel 1 Dark.\nTrigger the passive ability of all Dark Orbs.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1928,6 +2372,8 @@
       "slug": "dash",
       "title": "Dash",
       "description": "Gain 10 Block.\nDeal 10 damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -1943,6 +2389,19 @@
       "slug": "dazed",
       "title": "Dazed",
       "description": "",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        },
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -1958,6 +2417,8 @@
       "slug": "deadly_poison",
       "title": "Deadly Poison",
       "description": "Apply 5 Poison.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1973,6 +2434,8 @@
       "slug": "death_march",
       "title": "Death March",
       "description": "Deal 8 damage.\nDeals 3 additional damage for each card drawn during your turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -1988,6 +2451,8 @@
       "slug": "deathbringer",
       "title": "Deathbringer",
       "description": "Apply 21 Doom and 1 Weak to ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -2003,6 +2468,8 @@
       "slug": "deaths_door",
       "title": "Death's Door",
       "description": "Gain 6 Block.\nIf you applied Doom this turn, gain Block 2 additional times.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2018,6 +2485,8 @@
       "slug": "debilitate",
       "title": "Debilitate",
       "description": "Deal 10 damage.\nVulnerable and Weak are twice as effective against the enemy for the next 3 turns.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2033,6 +2502,14 @@
       "slug": "debris",
       "title": "Debris",
       "description": "",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2048,6 +2525,14 @@
       "slug": "debt",
       "title": "Debt",
       "description": "At the end of your turn, if this is in your Hand, lose 10 Gold.",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -2063,6 +2548,14 @@
       "slug": "decay",
       "title": "Decay",
       "description": "At the end of your turn, if this is in your Hand, take 2 damage.",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -2078,6 +2571,14 @@
       "slug": "decisions_decisions",
       "title": "Decisions, Decisions",
       "description": "Draw 3 cards.\nChoose a Skill in your Hand and play it 3 times.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -2093,6 +2594,8 @@
       "slug": "defend_defect",
       "title": "Defend",
       "description": "Gain 5 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2108,6 +2611,8 @@
       "slug": "defend_ironclad",
       "title": "Defend",
       "description": "Gain 5 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2123,6 +2628,8 @@
       "slug": "defend_necrobinder",
       "title": "Defend",
       "description": "Gain 5 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2138,6 +2645,8 @@
       "slug": "defend_regent",
       "title": "Defend",
       "description": "Gain 5 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2153,6 +2662,8 @@
       "slug": "defend_silent",
       "title": "Defend",
       "description": "Gain 5 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2168,6 +2679,14 @@
       "slug": "defile",
       "title": "Defile",
       "description": "Deal 13 damage.",
+      "keywords": [
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2183,6 +2702,8 @@
       "slug": "deflect",
       "title": "Deflect",
       "description": "Gain 4 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -2198,6 +2719,8 @@
       "slug": "defragment",
       "title": "Defragment",
       "description": "Gain 1 Focus.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2213,6 +2736,14 @@
       "slug": "defy",
       "title": "Defy",
       "description": "Gain 6 Block.\nApply 1 Weak.",
+      "keywords": [
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2228,6 +2759,8 @@
       "slug": "delay",
       "title": "Delay",
       "description": "Gain 11 Block.\nNext turn,\ngain 1.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -2243,6 +2776,14 @@
       "slug": "demesne",
       "title": "Demesne",
       "description": "At the start of your turn, gain 1 and draw 1 additional card.",
+      "keywords": [
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -2258,6 +2799,8 @@
       "slug": "demon_form",
       "title": "Demon Form",
       "description": "At the start of your turn, gain 2 Strength.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -2273,6 +2816,14 @@
       "slug": "demonic_shield",
       "title": "Demonic Shield",
       "description": "Lose 1 HP.\nGive another player Block equal to your Block.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -2288,6 +2839,14 @@
       "slug": "deprecated_card",
       "title": "Deprecated Card",
       "description": "This card was removed in a recent update.\nDraw 1 card.\nRemove this from your Deck.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -2303,6 +2862,8 @@
       "slug": "devastate",
       "title": "Devastate",
       "description": "Deal 30 damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2318,6 +2879,8 @@
       "slug": "devour_life",
       "title": "Devour Life",
       "description": "Whenever you play a Soul, Summon 1.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2333,6 +2896,14 @@
       "slug": "dirge",
       "title": "Dirge",
       "description": "Summon 3 X times.\nAdd X Souls into your Draw Pile.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "x",
         "value": 0
@@ -2348,6 +2919,14 @@
       "slug": "discovery",
       "title": "Discovery",
       "description": "Choose 1 of 3 random cards to add into your Hand. It's free to play this turn.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2363,6 +2942,8 @@
       "slug": "disintegration",
       "title": "Disintegration",
       "description": "At the end of your turn, take 6 damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -2378,6 +2959,8 @@
       "slug": "dismantle",
       "title": "Dismantle",
       "description": "Deal 8 damage.\nIf the enemy is Vulnerable, hits twice.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2393,6 +2976,14 @@
       "slug": "distraction",
       "title": "Distraction",
       "description": "Add a random Skill into your Hand. It's free to play this turn.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2408,6 +2999,8 @@
       "slug": "dodge_and_roll",
       "title": "Dodge and Roll",
       "description": "Gain 4 Block.\nNext turn, gain 4 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2423,6 +3016,14 @@
       "slug": "dominate",
       "title": "Dominate",
       "description": "Apply 1 Vulnerable.\nGain 1 Strength for each Vulnerable on the enemy.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2438,6 +3039,14 @@
       "slug": "double_energy",
       "title": "Double Energy",
       "description": "Double your Energy.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2453,6 +3062,14 @@
       "slug": "doubt",
       "title": "Doubt",
       "description": "At the end of your turn, if this is in your Hand, gain 1 Weak.",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -2468,6 +3085,8 @@
       "slug": "drain_power",
       "title": "Drain Power",
       "description": "Deal 10 damage.\nUpgrade 2 random cards in your Discard Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2483,6 +3102,19 @@
       "slug": "dramatic_entrance",
       "title": "Dramatic Entrance",
       "description": "Deal 11 damage to ALL enemies.",
+      "keywords": [
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate"
+        },
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -2498,6 +3130,14 @@
       "slug": "dredge",
       "title": "Dredge",
       "description": "Put 3 cards from your Discard Pile into your Hand.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2513,6 +3153,8 @@
       "slug": "drum_of_battle",
       "title": "Drum of Battle",
       "description": "Draw 2 cards.\nAt the start of your turn, Exhaust the top card of your Draw Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -2528,6 +3170,8 @@
       "slug": "dual_wield",
       "title": "Dual Wield",
       "description": "Choose an Attack or Power card. Add a copy of that card into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2543,6 +3187,8 @@
       "slug": "dualcast",
       "title": "Dualcast",
       "description": "Evoke your rightmost Orb twice.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2558,6 +3204,14 @@
       "slug": "dying_star",
       "title": "Dying Star",
       "description": "Deal 9 damage to ALL enemies. ALL enemies lose 9 Strength this turn.",
+      "keywords": [
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2573,6 +3227,14 @@
       "slug": "echo_form",
       "title": "Echo Form",
       "description": "The first card you play each turn is played an extra time.",
+      "keywords": [
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -2588,6 +3250,8 @@
       "slug": "echoing_slash",
       "title": "Echoing Slash",
       "description": "Deal 10 damage to ALL enemies.\nRepeat this effect for each enemy killed.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2603,6 +3267,8 @@
       "slug": "eidolon",
       "title": "Eidolon",
       "description": "Exhaust your Hand.\nIf 9 cards were Exhausted this way, gain 1 Intangible.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -2618,6 +3284,8 @@
       "slug": "end_of_days",
       "title": "End of Days",
       "description": "Apply 29 Doom to ALL enemies.\nKill enemies with at least as much Doom as HP.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -2633,6 +3301,14 @@
       "slug": "energy_surge",
       "title": "Energy Surge",
       "description": "ALL players gain 2.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2648,6 +3324,14 @@
       "slug": "enfeebling_touch",
       "title": "Enfeebling Touch",
       "description": "Enemy loses 8 Strength this turn.",
+      "keywords": [
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2663,6 +3347,14 @@
       "slug": "enlightenment",
       "title": "Enlightenment",
       "description": "Reduce the cost of ALL cards in your Hand to 1 this turn.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -2678,6 +3370,14 @@
       "slug": "enthralled",
       "title": "Enthralled",
       "description": "If this is in your Hand, it must be played before other cards.",
+      "keywords": [
+        {
+          "id": "Eternal",
+          "placement": "afterDescription",
+          "title": "Eternal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -2693,6 +3393,8 @@
       "slug": "entrench",
       "title": "Entrench",
       "description": "Double your Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -2708,6 +3410,8 @@
       "slug": "entropy",
       "title": "Entropy",
       "description": "At the start of your turn, Transform 1 card in your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2723,6 +3427,8 @@
       "slug": "envenom",
       "title": "Envenom",
       "description": "Whenever an Attack deals unblocked damage, apply 1 Poison.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -2738,6 +3444,8 @@
       "slug": "equilibrium",
       "title": "Equilibrium",
       "description": "Gain 13 Block.\nRetain your Hand this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -2753,6 +3461,14 @@
       "slug": "eradicate",
       "title": "Eradicate",
       "description": "Deal 11 damage X times.",
+      "keywords": [
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "x",
         "value": 0
@@ -2768,6 +3484,8 @@
       "slug": "escape_plan",
       "title": "Escape Plan",
       "description": "Draw 1 card.\nIf you draw a Skill, gain 3 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -2783,6 +3501,8 @@
       "slug": "eternal_armor",
       "title": "Eternal Armor",
       "description": "Gain 9 Plating.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -2798,6 +3518,8 @@
       "slug": "evil_eye",
       "title": "Evil Eye",
       "description": "Gain 8 Block.\nGain another 8 Block if you have Exhausted a card this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2813,6 +3535,8 @@
       "slug": "expect_a_fight",
       "title": "Expect a Fight",
       "description": "Gain  for each Attack in your Hand.\nYou cannot gain\nadditional  this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -2828,6 +3552,8 @@
       "slug": "expertise",
       "title": "Expertise",
       "description": "Draw cards until you have 6 in your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2843,6 +3569,14 @@
       "slug": "expose",
       "title": "Expose",
       "description": "Remove all Artifact and Block from the enemy.\nApply 2 Vulnerable.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -2858,6 +3592,8 @@
       "slug": "exterminate",
       "title": "Exterminate",
       "description": "Deal 3 damage 4 times to ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2873,6 +3609,8 @@
       "slug": "falling_star",
       "title": "Falling Star",
       "description": "Deal 8 damage.\nApply 1 Weak.\nApply 1 Vulnerable.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -2888,6 +3626,8 @@
       "slug": "fan_of_knives",
       "title": "Fan of Knives",
       "description": "Shivs now hit ALL enemies.\nAdd 4 Shivs into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -2903,6 +3643,8 @@
       "slug": "fasten",
       "title": "Fasten",
       "description": "Gain an additional 5 Block from Defend cards.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2918,6 +3660,14 @@
       "slug": "fear",
       "title": "Fear",
       "description": "Deal 7 damage.\nApply 1 Vulnerable.",
+      "keywords": [
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2933,6 +3683,14 @@
       "slug": "feed",
       "title": "Feed",
       "description": "Deal 10 damage.\nIf Fatal, raise your Max HP by 3.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2948,6 +3706,8 @@
       "slug": "feeding_frenzy",
       "title": "Feeding Frenzy",
       "description": "Gain 5 Strength this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -2963,6 +3723,8 @@
       "slug": "feel_no_pain",
       "title": "Feel No Pain",
       "description": "Whenever a card is Exhausted, gain 3 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -2978,6 +3740,8 @@
       "slug": "feral",
       "title": "Feral",
       "description": "The first time you play a\n0 Attack each turn,\nreturn it to your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -2993,6 +3757,8 @@
       "slug": "fetch",
       "title": "Fetch",
       "description": "Osty deals 3 damage.\nIf this is the first time this card has been played this turn, draw 1 card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -3008,6 +3774,14 @@
       "slug": "fiend_fire",
       "title": "Fiend Fire",
       "description": "Exhaust your Hand.\nDeal 7 damage for each card Exhausted.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -3023,6 +3797,8 @@
       "slug": "fight_me",
       "title": "Fight Me!",
       "description": "Deal 5 damage twice.\nGain 3 Strength.\nThe enemy gains 1 Strength.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -3038,6 +3814,8 @@
       "slug": "fight_through",
       "title": "Fight Through",
       "description": "Gain 13 Block.\nAdd 2 Wounds into your Discard Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3053,6 +3831,8 @@
       "slug": "finesse",
       "title": "Finesse",
       "description": "Gain 4 Block.\nDraw 1 card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -3068,6 +3848,8 @@
       "slug": "finisher",
       "title": "Finisher",
       "description": "Deal 6 damage for each Attack already played this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3083,6 +3865,8 @@
       "slug": "fisticuffs",
       "title": "Fisticuffs",
       "description": "Deal 7 damage.\nGain Block equal to damage dealt.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3098,6 +3882,8 @@
       "slug": "flak_cannon",
       "title": "Flak Cannon",
       "description": "Exhaust ALL your Status cards.\nDeal 8 damage to a random enemy for each card Exhausted.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -3113,6 +3899,8 @@
       "slug": "flame_barrier",
       "title": "Flame Barrier",
       "description": "Gain 12 Block.\nWhenever you are attacked this turn, deal 4 damage back.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -3128,6 +3916,8 @@
       "slug": "flanking",
       "title": "Flanking",
       "description": "The enemy takes double attack damage from other players this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -3143,6 +3933,8 @@
       "slug": "flash_of_steel",
       "title": "Flash of Steel",
       "description": "Deal 5 damage.\nDraw 1 card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -3158,6 +3950,8 @@
       "slug": "flatten",
       "title": "Flatten",
       "description": "Osty deals 12 damage.\nThis card costs 0  if Osty has attacked this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -3173,6 +3967,8 @@
       "slug": "flechettes",
       "title": "Flechettes",
       "description": "Deal 5 damage for each Skill in your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3188,6 +3984,14 @@
       "slug": "flick_flack",
       "title": "Flick-Flack",
       "description": "Deal 6 damage to ALL enemies.",
+      "keywords": [
+        {
+          "id": "Sly",
+          "placement": "beforeDescription",
+          "title": "Sly"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3203,6 +4007,8 @@
       "slug": "focused_strike",
       "title": "Focused Strike",
       "description": "Deal 9 damage.\nGain 1 Focus this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3218,6 +4024,8 @@
       "slug": "follow_through",
       "title": "Follow Through",
       "description": "Deal 7 damage.\nIf you have 5 or more other cards in your Hand, hits an additional time.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3233,6 +4041,29 @@
       "slug": "folly",
       "title": "Folly",
       "description": "",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        },
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate"
+        },
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal"
+        },
+        {
+          "id": "Eternal",
+          "placement": "afterDescription",
+          "title": "Eternal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -3248,6 +4079,8 @@
       "slug": "footwork",
       "title": "Footwork",
       "description": "Gain 2 Dexterity.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3263,6 +4096,14 @@
       "slug": "forbidden_grimoire",
       "title": "Forbidden Grimoire",
       "description": "At the end of combat, you may remove a card from your Deck.",
+      "keywords": [
+        {
+          "id": "Eternal",
+          "placement": "afterDescription",
+          "title": "Eternal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -3278,6 +4119,8 @@
       "slug": "foregone_conclusion",
       "title": "Foregone Conclusion",
       "description": "Next turn, put 2 cards from your Draw Pile into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3293,6 +4136,14 @@
       "slug": "forgotten_ritual",
       "title": "Forgotten Ritual",
       "description": "If you Exhausted a card this turn, gain 3.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3308,6 +4159,8 @@
       "slug": "frantic_escape",
       "title": "Frantic Escape",
       "description": "Get farther away.\nIncrease Sandpit by 1.\nIncrease the cost of this card by 1.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3323,6 +4176,8 @@
       "slug": "friendship",
       "title": "Friendship",
       "description": "Lose 2 Strength.\nGain 1 at the start of each turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3338,6 +4193,8 @@
       "slug": "ftl",
       "title": "FTL",
       "description": "Deal 5 damage.\nIf you have played fewer than 3 cards this turn, draw 1 card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -3353,6 +4210,14 @@
       "slug": "fuel",
       "title": "Fuel",
       "description": "Gain 1.\nDraw 1 card.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -3368,6 +4233,8 @@
       "slug": "furnace",
       "title": "Furnace",
       "description": "At the start of your turn, Forge 4.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3383,6 +4250,8 @@
       "slug": "fusion",
       "title": "Fusion",
       "description": "Channel 1 Plasma.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -3398,6 +4267,8 @@
       "slug": "gamma_blast",
       "title": "Gamma Blast",
       "description": "Deal 13 damage.\nApply 2 Weak.\nApply 2 Vulnerable.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -3413,6 +4284,8 @@
       "slug": "gang_up",
       "title": "Gang Up",
       "description": "Deal 5 damage.\nDeals 5 additional damage for each time another player has attacked the enemy this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3428,6 +4301,8 @@
       "slug": "gather_light",
       "title": "Gather Light",
       "description": "Gain 8 Block.\nGain 1.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3443,6 +4318,8 @@
       "slug": "genesis",
       "title": "Genesis",
       "description": "At the start of your turn, gain 2.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -3458,6 +4335,14 @@
       "slug": "genetic_algorithm",
       "title": "Genetic Algorithm",
       "description": "Gain 1 Block.\nPermanently increase this card's Block by 3.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3473,6 +4358,8 @@
       "slug": "giant_rock",
       "title": "Giant Rock",
       "description": "Deal 16 damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3488,6 +4375,8 @@
       "slug": "glacier",
       "title": "Glacier",
       "description": "Gain 6 Block.\nChannel 2 Frost.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -3503,6 +4392,8 @@
       "slug": "glasswork",
       "title": "Glasswork",
       "description": "Gain 5 Block.\nChannel 1 Glass.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3518,6 +4409,8 @@
       "slug": "glimmer",
       "title": "Glimmer",
       "description": "Draw 3 cards.\nPut 1 card from your Hand on top of your Draw Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3533,6 +4426,14 @@
       "slug": "glimpse_beyond",
       "title": "Glimpse Beyond",
       "description": "ALL players add 3 Souls into their Draw Pile.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3548,6 +4449,8 @@
       "slug": "glitterstream",
       "title": "Glitterstream",
       "description": "Gain 11 Block.\nNext turn, gain 5 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -3563,6 +4466,8 @@
       "slug": "glow",
       "title": "Glow",
       "description": "Gain 1.\nDraw 1 card.\nNext turn, draw 1 card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3578,6 +4483,8 @@
       "slug": "go_for_the_eyes",
       "title": "Go for the Eyes",
       "description": "Deal 3 damage.\nIf the enemy intends to attack, apply 1 Weak.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -3593,6 +4500,8 @@
       "slug": "gold_axe",
       "title": "Gold Axe",
       "description": "Deal damage equal to the number of cards played this combat.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3608,6 +4517,8 @@
       "slug": "grand_finale",
       "title": "Grand Finale",
       "description": "Can only be played if there are no cards in your Draw Pile. Deal 60 damage to ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -3623,6 +4534,8 @@
       "slug": "grave_warden",
       "title": "Grave Warden",
       "description": "Gain 8 Block.\nAdd a Soul into your Draw Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3638,6 +4551,14 @@
       "slug": "graveblast",
       "title": "Graveblast",
       "description": "Deal 4 damage.\nPut a card from your Discard Pile into your Hand.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3653,6 +4574,19 @@
       "slug": "greed",
       "title": "Greed",
       "description": "",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        },
+        {
+          "id": "Eternal",
+          "placement": "afterDescription",
+          "title": "Eternal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -3668,6 +4602,14 @@
       "slug": "guards",
       "title": "GUARDS!!!",
       "description": "Transform any number of cards in your Hand into Minion Sacrifice.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -3683,6 +4625,8 @@
       "slug": "guiding_star",
       "title": "Guiding Star",
       "description": "Deal 12 damage.\nDraw 2 cards.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3698,6 +4642,14 @@
       "slug": "guilty",
       "title": "Guilty",
       "description": "Removed from your Deck after 5 combats.",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -3713,6 +4665,8 @@
       "slug": "gunk_up",
       "title": "Gunk Up",
       "description": "Deal 4 damage 3 times.\nAdd a Slimed into your Discard Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3728,6 +4682,8 @@
       "slug": "hailstorm",
       "title": "Hailstorm",
       "description": "At the end of your turn, if you have Frost, deal 6 damage to ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3743,6 +4699,8 @@
       "slug": "hammer_time",
       "title": "Hammer Time",
       "description": "Whenever you Forge, all allies Forge as well.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -3758,6 +4716,8 @@
       "slug": "hand_of_greed",
       "title": "Hand of Greed",
       "description": "Deal 20 damage.\nIf Fatal, gain 20 Gold.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -3773,6 +4733,8 @@
       "slug": "hand_trick",
       "title": "Hand Trick",
       "description": "Gain 7 Block.\nAdd Sly to a Skill in your Hand this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3788,6 +4750,8 @@
       "slug": "hang",
       "title": "Hang",
       "description": "Deal 10 damage.\nDouble the damage ALL Hang cards deal to this enemy.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3803,6 +4767,8 @@
       "slug": "haunt",
       "title": "Haunt",
       "description": "Whenever you play a Soul, a random enemy loses 6 HP.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3818,6 +4784,8 @@
       "slug": "havoc",
       "title": "Havoc",
       "description": "Play the top card of your Draw Pile and Exhaust it.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3833,6 +4801,14 @@
       "slug": "haze",
       "title": "Haze",
       "description": "Apply 4 Poison to ALL enemies.",
+      "keywords": [
+        {
+          "id": "Sly",
+          "placement": "beforeDescription",
+          "title": "Sly"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -3848,6 +4824,8 @@
       "slug": "headbutt",
       "title": "Headbutt",
       "description": "Deal 9 damage.\nPut a card from your Discard Pile on top of your Draw Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3863,6 +4841,8 @@
       "slug": "heavenly_drill",
       "title": "Heavenly Drill",
       "description": "Deal 8 damage X times.\nDouble X if it's 4 or more.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "x",
         "value": 0
@@ -3878,6 +4858,8 @@
       "slug": "hegemony",
       "title": "Hegemony",
       "description": "Deal 15 damage.\nNext turn, gain 2.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -3893,6 +4875,8 @@
       "slug": "heirloom_hammer",
       "title": "Heirloom Hammer",
       "description": "Deal 20 damage.\nChoose a Colorless card in your Hand. Add a copy of that card into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -3908,6 +4892,8 @@
       "slug": "helix_drill",
       "title": "Helix Drill",
       "description": "Deal 3 damage for each  previously spent this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -3923,6 +4909,8 @@
       "slug": "hello_world",
       "title": "Hello World",
       "description": "At the start of your turn, add a random Common card into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3938,6 +4926,8 @@
       "slug": "hellraiser",
       "title": "Hellraiser",
       "description": "Whenever you draw a card containing \u201cStrike\u201d, it is played against a random enemy.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -3953,6 +4943,8 @@
       "slug": "hemokinesis",
       "title": "Hemokinesis",
       "description": "Lose 2 HP.\nDeal 15 damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3968,6 +4960,8 @@
       "slug": "hidden_cache",
       "title": "Hidden Cache",
       "description": "Gain 1.\nNext turn, gain 3.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -3983,6 +4977,8 @@
       "slug": "hidden_daggers",
       "title": "Hidden Daggers",
       "description": "Discard 2 cards.\nAdd 2 Shivs into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -3998,6 +4994,8 @@
       "slug": "hidden_gem",
       "title": "Hidden Gem",
       "description": "A random card without Replay in your Draw Pile gains Replay 2.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4013,6 +5011,8 @@
       "slug": "high_five",
       "title": "High Five",
       "description": "Osty deals 11 damage\nand applies 2 Vulnerable\nto ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -4028,6 +5028,14 @@
       "slug": "hologram",
       "title": "Hologram",
       "description": "Gain 3 Block.\nPut a card from your Discard Pile into your Hand.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4043,6 +5051,14 @@
       "slug": "hotfix",
       "title": "Hotfix",
       "description": "Gain 2 Focus this turn.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -4058,6 +5074,8 @@
       "slug": "howl_from_beyond",
       "title": "Howl from Beyond",
       "description": "Deal 16 damage to ALL enemies.\nAt the start of your turn, if this is in your Exhaust Pile, play it.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -4073,6 +5091,14 @@
       "slug": "huddle_up",
       "title": "Huddle Up",
       "description": "ALL players draw 2 cards.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4088,6 +5114,8 @@
       "slug": "hyperbeam",
       "title": "Hyperbeam",
       "description": "Deal 26 damage to ALL enemies.\nLose 3 Focus.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -4103,6 +5131,8 @@
       "slug": "i_am_invincible",
       "title": "I Am Invincible",
       "description": "Gain 10 Block.\nAt the end of your turn, if this is on top of your Draw Pile, play it.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4118,6 +5148,8 @@
       "slug": "ice_lance",
       "title": "Ice Lance",
       "description": "Deal 19 damage.\nChannel 3 Frost.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -4133,6 +5165,14 @@
       "slug": "ignition",
       "title": "Ignition",
       "description": "Another player Channels Plasma.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4148,6 +5188,8 @@
       "slug": "impatience",
       "title": "Impatience",
       "description": "If you have no Attacks in your Hand, draw 2 cards.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -4163,6 +5205,14 @@
       "slug": "impervious",
       "title": "Impervious",
       "description": "Gain 30 Block.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -4178,6 +5228,14 @@
       "slug": "infection",
       "title": "Infection",
       "description": "At the end of your turn, if this is in your Hand, take 3 damage.",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -4193,6 +5251,14 @@
       "slug": "infernal_blade",
       "title": "Infernal Blade",
       "description": "Add a random Attack into your Hand. It's free to play this turn.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4208,6 +5274,8 @@
       "slug": "inferno",
       "title": "Inferno",
       "description": "At the start of your turn, lose 1 HP.\nWhenever you lose HP on your turn, deal 6 damage to ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4223,6 +5291,8 @@
       "slug": "infinite_blades",
       "title": "Infinite Blades",
       "description": "At the start of your turn, add 1 Shiv into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4238,6 +5308,8 @@
       "slug": "inflame",
       "title": "Inflame",
       "description": "Gain 2 Strength.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4253,6 +5325,14 @@
       "slug": "injury",
       "title": "Injury",
       "description": "",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -4268,6 +5348,8 @@
       "slug": "intercept",
       "title": "Intercept",
       "description": "Gain 9 Block.\nRedirect all incoming attacks that would be dealt to another player this turn to you.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4283,6 +5365,8 @@
       "slug": "invoke",
       "title": "Invoke",
       "description": "Next turn, Summon 2 and gain 2.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4298,6 +5382,8 @@
       "slug": "iron_wave",
       "title": "Iron Wave",
       "description": "Gain 5 Block.\nDeal 5 damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4313,6 +5399,8 @@
       "slug": "iteration",
       "title": "Iteration",
       "description": "The first time you draw a Status each turn, draw 2 cards.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4328,6 +5416,14 @@
       "slug": "jack_of_all_trades",
       "title": "Jack of All Trades",
       "description": "Add 1 random Colorless card into your Hand.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -4343,6 +5439,8 @@
       "slug": "jackpot",
       "title": "Jackpot",
       "description": "Deal 25 damage.\nAdd 3 random 0 cards into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -4358,6 +5456,8 @@
       "slug": "juggernaut",
       "title": "Juggernaut",
       "description": "Whenever you gain Block, deal 5 damage to a random enemy.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -4373,6 +5473,8 @@
       "slug": "juggling",
       "title": "Juggling",
       "description": "Add a copy of the third Attack you play each turn into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4388,6 +5490,8 @@
       "slug": "kingly_kick",
       "title": "Kingly Kick",
       "description": "Deal 27 damage.\nWhenever you draw this card, reduce its cost by 1.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 4
@@ -4403,6 +5507,8 @@
       "slug": "kingly_punch",
       "title": "Kingly Punch",
       "description": "Deal 8 damage.\nWhenever you draw this card, increase its damage by 4 this combat.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4418,6 +5524,8 @@
       "slug": "knife_trap",
       "title": "Knife Trap",
       "description": "Play every Shiv in your Exhaust Pile on the enemy.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -4433,6 +5541,8 @@
       "slug": "knockdown",
       "title": "Knockdown",
       "description": "Deal 10 damage.\nThe enemy takes double damage from other players this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -4448,6 +5558,8 @@
       "slug": "knockout_blow",
       "title": "Knockout Blow",
       "description": "Deal 30 damage.\nIf this kills an enemy, gain 5.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -4463,6 +5575,14 @@
       "slug": "know_thy_place",
       "title": "Know Thy Place",
       "description": "Apply 1 Weak.\nApply 1 Vulnerable.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -4478,6 +5598,14 @@
       "slug": "lantern_key",
       "title": "Lantern Key",
       "description": "Unlocks a special event in the next Act.",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -4493,6 +5621,8 @@
       "slug": "largesse",
       "title": "Largesse",
       "description": "Another player adds 1 random Colorless card to their Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -4508,6 +5638,8 @@
       "slug": "leading_strike",
       "title": "Leading Strike",
       "description": "Deal 3 damage.\nAdd 2 Shivs into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4523,6 +5655,8 @@
       "slug": "leap",
       "title": "Leap",
       "description": "Gain 9 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4538,6 +5672,8 @@
       "slug": "leg_sweep",
       "title": "Leg Sweep",
       "description": "Apply 2 Weak.\nGain 11 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -4553,6 +5689,14 @@
       "slug": "legion_of_bone",
       "title": "Legion of Bone",
       "description": "ALL players Summon 6.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -4568,6 +5712,14 @@
       "slug": "lethality",
       "title": "Lethality",
       "description": "The first Attack each turn deals 50% additional damage.",
+      "keywords": [
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4583,6 +5735,8 @@
       "slug": "lift",
       "title": "Lift",
       "description": "Give another player 11 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4598,6 +5752,8 @@
       "slug": "lightning_rod",
       "title": "Lightning Rod",
       "description": "Gain 4 Block.\nAt the start of the next 2 turns, Channel 1 Lightning.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4613,6 +5769,8 @@
       "slug": "loop",
       "title": "Loop",
       "description": "At the start of your turn, trigger the passive ability of your rightmost Orb.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4628,6 +5786,19 @@
       "slug": "luminesce",
       "title": "Luminesce",
       "description": "Gain 2.",
+      "keywords": [
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain"
+        },
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -4643,6 +5814,8 @@
       "slug": "lunar_blast",
       "title": "Lunar Blast",
       "description": "Deal 4 damage for each Skill already played this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -4658,6 +5831,8 @@
       "slug": "machine_learning",
       "title": "Machine Learning",
       "description": "At the start of your turn, draw 1 additional card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4673,6 +5848,8 @@
       "slug": "mad_science",
       "title": "Mad Science",
       "description": "Deal 12 damage.\n???",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4688,6 +5865,8 @@
       "slug": "make_it_so",
       "title": "Make It So",
       "description": "Deal 6 damage.\nEvery 3 Skills you play in a turn, put this into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -4703,6 +5882,14 @@
       "slug": "malaise",
       "title": "Malaise",
       "description": "Enemy loses X Strength. Apply X Weak.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "x",
         "value": 0
@@ -4718,6 +5905,8 @@
       "slug": "mangle",
       "title": "Mangle",
       "description": "Deal 15 damage.\nEnemy loses 10 Strength this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -4733,6 +5922,8 @@
       "slug": "manifest_authority",
       "title": "Manifest Authority",
       "description": "Gain 7 Block.\nAdd 1 random Colorless card into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4748,6 +5939,14 @@
       "slug": "master_of_strategy",
       "title": "Master of Strategy",
       "description": "Draw 3 cards.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -4763,6 +5962,8 @@
       "slug": "master_planner",
       "title": "Master Planner",
       "description": "When you play a Skill, it gains Sly.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -4778,6 +5979,8 @@
       "slug": "maul",
       "title": "Maul",
       "description": "Deal 5 damage twice.\nIncrease the damage of ALL Maul cards by 1 this combat.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4793,6 +5996,8 @@
       "slug": "mayhem",
       "title": "Mayhem",
       "description": "At the start of your turn, play the top card of your Draw Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -4808,6 +6013,8 @@
       "slug": "melancholy",
       "title": "Melancholy",
       "description": "Gain 13 Block.\nReduce this card's cost by 1 whenever ANYONE dies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -4823,6 +6030,8 @@
       "slug": "memento_mori",
       "title": "Memento Mori",
       "description": "Deal 9 damage.\nDeals 4 additional damage for each card discarded this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4838,6 +6047,14 @@
       "slug": "metamorphosis",
       "title": "Metamorphosis",
       "description": "Add 3 random Attacks into your Draw Pile. They're free to play this combat.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -4853,6 +6070,8 @@
       "slug": "meteor_shower",
       "title": "Meteor Shower",
       "description": "Deal 14 damage to ALL enemies.\nApply 2 Weak and Vulnerable to ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -4868,6 +6087,8 @@
       "slug": "meteor_strike",
       "title": "Meteor Strike",
       "description": "Deal 24 damage.\nChannel 3 Plasma.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 5
@@ -4883,6 +6104,14 @@
       "slug": "mimic",
       "title": "Mimic",
       "description": "Gain Block equal to the Block on another player.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4898,6 +6127,14 @@
       "slug": "mind_blast",
       "title": "Mind Blast",
       "description": "Deal damage equal to the number of cards in your Draw Pile.",
+      "keywords": [
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4913,6 +6150,8 @@
       "slug": "mind_rot",
       "title": "Mind Rot",
       "description": "Draw 1 fewer card each turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -4928,6 +6167,14 @@
       "slug": "minion_dive_bomb",
       "title": "Minion Dive Bomb",
       "description": "Deal 13 damage.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -4943,6 +6190,14 @@
       "slug": "minion_sacrifice",
       "title": "Minion Sacrifice",
       "description": "Gain 9 Block.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -4958,6 +6213,14 @@
       "slug": "minion_strike",
       "title": "Minion Strike",
       "description": "Deal 6 damage.\nDraw 1 card.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -4973,6 +6236,14 @@
       "slug": "mirage",
       "title": "Mirage",
       "description": "Gain Block equal to Poison on ALL enemies.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -4988,6 +6259,8 @@
       "slug": "misery",
       "title": "Misery",
       "description": "Deal 7 damage.\nApply any debuffs on the enemy to ALL other enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -5003,6 +6276,8 @@
       "slug": "modded",
       "title": "Modded",
       "description": "Gain 1 Orb Slot.\nDraw 1 card. Increase this card's cost by 1.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -5018,6 +6293,14 @@
       "slug": "molten_fist",
       "title": "Molten Fist",
       "description": "Deal 10 damage.\nDouble the enemy's Vulnerable.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5033,6 +6316,8 @@
       "slug": "momentum_strike",
       "title": "Momentum Strike",
       "description": "Deal 10 damage.\nReduce this card's cost to 0 .",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5048,6 +6333,8 @@
       "slug": "monarchs_gaze",
       "title": "Monarch's Gaze",
       "description": "Whenever you attack an enemy, it loses 1 Strength this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -5063,6 +6350,8 @@
       "slug": "monologue",
       "title": "Monologue",
       "description": "Whenever you play a card this turn, gain 1 Strength this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -5078,6 +6367,8 @@
       "slug": "multi_cast",
       "title": "Multi-Cast",
       "description": "Evoke your rightmost Orb X times.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "x",
         "value": 0
@@ -5093,6 +6384,8 @@
       "slug": "murder",
       "title": "Murder",
       "description": "Deal 1 damage.\nDeals 1 additional damage for each card drawn this combat.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -5108,6 +6401,8 @@
       "slug": "necro_mastery",
       "title": "Necro Mastery",
       "description": "Summon 5.\nWhenever Osty loses HP,\nALL enemies lose that much HP as well.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -5123,6 +6418,8 @@
       "slug": "negative_pulse",
       "title": "Negative Pulse",
       "description": "Gain 5 Block.\nApply 7 Doom to ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5138,6 +6435,14 @@
       "slug": "neows_fury",
       "title": "Neow's Fury",
       "description": "Deal 10 damage.\nPut 2 random cards from your Discard Pile into your Hand.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5153,6 +6458,8 @@
       "slug": "neurosurge",
       "title": "Neurosurge",
       "description": "Gain 3.\nDraw 2 cards.\nAt the start of your turn, apply 3 Doom to yourself.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -5168,6 +6475,8 @@
       "slug": "neutralize",
       "title": "Neutralize",
       "description": "Deal 3 damage.\nApply 1 Weak.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -5183,6 +6492,8 @@
       "slug": "neutron_aegis",
       "title": "Neutron Aegis",
       "description": "Gain 8 Plating.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5198,6 +6509,14 @@
       "slug": "nightmare",
       "title": "Nightmare",
       "description": "Choose a card.\nNext turn, add 3 copies of that card into your Hand.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -5213,6 +6532,8 @@
       "slug": "no_escape",
       "title": "No Escape",
       "description": "Apply 10 Doom, plus an additional 5 Doom for every 10 Doom already on this enemy.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5228,6 +6549,14 @@
       "slug": "normality",
       "title": "Normality",
       "description": "You cannot play more than 3 cards this turn.",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -5243,6 +6572,8 @@
       "slug": "nostalgia",
       "title": "Nostalgia",
       "description": "The first Attack or Skill you play each turn is placed on top of your Draw Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5258,6 +6589,14 @@
       "slug": "not_yet",
       "title": "Not Yet",
       "description": "Heal 10 HP.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -5273,6 +6612,8 @@
       "slug": "noxious_fumes",
       "title": "Noxious Fumes",
       "description": "At the start of your turn, apply 2 Poison to ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5288,6 +6629,8 @@
       "slug": "null",
       "title": "Null",
       "description": "Deal 10 damage.\nApply 2 Weak.\nChannel 1 Dark.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -5303,6 +6646,8 @@
       "slug": "oblivion",
       "title": "Oblivion",
       "description": "Whenever you play a card this turn, apply 3 Doom to the enemy.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -5318,6 +6663,14 @@
       "slug": "offering",
       "title": "Offering",
       "description": "Lose 6 HP.\nGain 2.\nDraw 3 cards.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -5333,6 +6686,8 @@
       "slug": "omnislice",
       "title": "Omnislice",
       "description": "Deal 8 damage.\nDamage ALL other enemies equal to the damage dealt.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -5348,6 +6703,8 @@
       "slug": "one_two_punch",
       "title": "One-Two Punch",
       "description": "This turn, your next Attack is played an extra time.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5363,6 +6720,8 @@
       "slug": "orbit",
       "title": "Orbit",
       "description": "Every  you spend,\ngain 1.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -5378,6 +6737,8 @@
       "slug": "outbreak",
       "title": "Outbreak",
       "description": "Every 3 times you apply Poison, deal 11 damage to ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5393,6 +6754,8 @@
       "slug": "outmaneuver",
       "title": "Outmaneuver",
       "description": "Next turn, gain 2.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5408,6 +6771,8 @@
       "slug": "overclock",
       "title": "Overclock",
       "description": "Draw 2 cards.\nAdd a Burn into your Discard Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -5423,6 +6788,8 @@
       "slug": "pacts_end",
       "title": "Pact's End",
       "description": "Can only be played if you have 3 or more cards in your Exhaust Pile.\nDeal 17 damage to ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -5438,6 +6805,8 @@
       "slug": "pagestorm",
       "title": "Pagestorm",
       "description": "Whenever you draw an Ethereal card, draw 1 card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5453,6 +6822,8 @@
       "slug": "pale_blue_dot",
       "title": "Pale Blue Dot",
       "description": "If you play 5 or more cards in a turn, draw 1 card at the start of your next turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5468,6 +6839,8 @@
       "slug": "panache",
       "title": "Panache",
       "description": "Every time you play 5 cards in a single turn, deal 10 damage to ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -5483,6 +6856,14 @@
       "slug": "panic_button",
       "title": "Panic Button",
       "description": "Gain 30 Block.\nYou cannot gain Block from cards for 2 turns.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -5498,6 +6879,8 @@
       "slug": "parry",
       "title": "Parry",
       "description": "Whenever you play Sovereign Blade, gain 10 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5513,6 +6896,14 @@
       "slug": "parse",
       "title": "Parse",
       "description": "Draw 3 cards.",
+      "keywords": [
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5528,6 +6919,8 @@
       "slug": "particle_wall",
       "title": "Particle Wall",
       "description": "Gain 9 Block.\nReturn this card to your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -5543,6 +6936,8 @@
       "slug": "patter",
       "title": "Patter",
       "description": "Gain 9 Block.\nGain 2 Vigor.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5558,6 +6953,8 @@
       "slug": "peck",
       "title": "Peck",
       "description": "Deal 2 damage 3 times.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5573,6 +6970,8 @@
       "slug": "perfected_strike",
       "title": "Perfected Strike",
       "description": "Deal 6 damage.\nDeals 2 additional damage for ALL your cards containing \u201cStrike\u201d.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -5588,6 +6987,8 @@
       "slug": "phantom_blades",
       "title": "Phantom Blades",
       "description": "Shivs gain Retain.\nThe first Shiv you play each turn deals 9 additional damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5603,6 +7004,8 @@
       "slug": "photon_cut",
       "title": "Photon Cut",
       "description": "Deal 10 damage.\nDraw 1 card.\nPut 1 card from your Hand on top of your Draw Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5618,6 +7021,14 @@
       "slug": "piercing_wail",
       "title": "Piercing Wail",
       "description": "ALL enemies lose 6 Strength this turn.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5633,6 +7044,8 @@
       "slug": "pillage",
       "title": "Pillage",
       "description": "Deal 6 damage.\nDraw cards until you draw a non-Attack card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5648,6 +7061,8 @@
       "slug": "pillar_of_creation",
       "title": "Pillar of Creation",
       "description": "Whenever you create a card, gain 3 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5663,6 +7078,8 @@
       "slug": "pinpoint",
       "title": "Pinpoint",
       "description": "Deal 15 damage.\nCosts 1 less  for each Skill played this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -5678,6 +7095,8 @@
       "slug": "poisoned_stab",
       "title": "Poisoned Stab",
       "description": "Deal 6 damage.\nApply 3 Poison.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5693,6 +7112,8 @@
       "slug": "poke",
       "title": "Poke",
       "description": "Osty deals 6 damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -5708,6 +7129,8 @@
       "slug": "pommel_strike",
       "title": "Pommel Strike",
       "description": "Deal 9 damage.\nDraw 1 card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5723,6 +7146,19 @@
       "slug": "poor_sleep",
       "title": "Poor Sleep",
       "description": "",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        },
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -5738,6 +7174,8 @@
       "slug": "pounce",
       "title": "Pounce",
       "description": "Deal 12 damage.\nThe next Skill you play costs 0 .",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -5753,6 +7191,8 @@
       "slug": "precise_cut",
       "title": "Precise Cut",
       "description": "Deal 13 damage.\nDeals 2 less damage for each other card in your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -5768,6 +7208,8 @@
       "slug": "predator",
       "title": "Predator",
       "description": "Deal 15 damage.\nNext turn, draw 2 cards.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -5783,6 +7225,8 @@
       "slug": "prep_time",
       "title": "Prep Time",
       "description": "At the start of your turn, gain 4 Vigor.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5798,6 +7242,8 @@
       "slug": "prepared",
       "title": "Prepared",
       "description": "Draw 1 card.\nDiscard 1 card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -5813,6 +7259,8 @@
       "slug": "primal_force",
       "title": "Primal Force",
       "description": "Transform all Attacks in your Hand into Giant Rock.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -5828,6 +7276,14 @@
       "slug": "production",
       "title": "Production",
       "description": "Gain 2.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -5843,6 +7299,14 @@
       "slug": "prolong",
       "title": "Prolong",
       "description": "Next turn, gain Block equal to your current Block.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -5858,6 +7322,8 @@
       "slug": "prophesize",
       "title": "Prophesize",
       "description": "Draw 6 cards.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -5873,6 +7339,8 @@
       "slug": "protector",
       "title": "Protector",
       "description": "Osty deals 10 damage.\nDeals additional damage equal to Osty's Max HP.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5888,6 +7356,8 @@
       "slug": "prowess",
       "title": "Prowess",
       "description": "Gain 1 Strength.\nGain 1 Dexterity.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5903,6 +7373,8 @@
       "slug": "pull_aggro",
       "title": "Pull Aggro",
       "description": "Summon 4.\nGain 7 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -5918,6 +7390,8 @@
       "slug": "pull_from_below",
       "title": "Pull from Below",
       "description": "Deal 5 damage for each Ethereal card played this combat.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5933,6 +7407,19 @@
       "slug": "purity",
       "title": "Purity",
       "description": "Exhaust up to 3 cards in your Hand.",
+      "keywords": [
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain"
+        },
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -5948,6 +7435,14 @@
       "slug": "putrefy",
       "title": "Putrefy",
       "description": "Apply 2 Weak.\nApply 2 Vulnerable.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5963,6 +7458,8 @@
       "slug": "pyre",
       "title": "Pyre",
       "description": "Gain 1 at the start of each turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -5978,6 +7475,8 @@
       "slug": "quadcast",
       "title": "Quadcast",
       "description": "Evoke your rightmost Orb 4 times.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -5993,6 +7492,8 @@
       "slug": "quasar",
       "title": "Quasar",
       "description": "Choose 1 of 3 random Colorless cards to add into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -6008,6 +7509,8 @@
       "slug": "radiate",
       "title": "Radiate",
       "description": "Deal 3 damage to ALL enemies for each 1 gained this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -6023,6 +7526,8 @@
       "slug": "rage",
       "title": "Rage",
       "description": "Whenever you play an Attack this turn, gain 3 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -6038,6 +7543,14 @@
       "slug": "rainbow",
       "title": "Rainbow",
       "description": "Channel 1 Lightning.\nChannel 1 Frost.\nChannel 1 Dark.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -6053,6 +7566,8 @@
       "slug": "rally",
       "title": "Rally",
       "description": "ALL players gain 12 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -6068,6 +7583,8 @@
       "slug": "rampage",
       "title": "Rampage",
       "description": "Deal 9 damage.\nIncrease this card's damage by 5 this combat.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6083,6 +7600,8 @@
       "slug": "rattle",
       "title": "Rattle",
       "description": "Osty deals 7 damage.\nHits an additional time for each other time he has attacked this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6098,6 +7617,14 @@
       "slug": "reanimate",
       "title": "Reanimate",
       "description": "Summon 20.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -6113,6 +7640,14 @@
       "slug": "reap",
       "title": "Reap",
       "description": "Deal 27 damage.",
+      "keywords": [
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -6128,6 +7663,8 @@
       "slug": "reaper_form",
       "title": "Reaper Form",
       "description": "Whenever Attacks deal damage, they also apply that much Doom.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -6143,6 +7680,8 @@
       "slug": "reave",
       "title": "Reave",
       "description": "Deal 9 damage.\nAdd a Soul into your Draw Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6158,6 +7697,14 @@
       "slug": "reboot",
       "title": "Reboot",
       "description": "Shuffle ALL your cards into your Draw Pile.\nDraw 4 cards.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -6173,6 +7720,8 @@
       "slug": "rebound",
       "title": "Rebound",
       "description": "Deal 9 damage.\nPut the next card you play this turn on top of your Draw Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6188,6 +7737,8 @@
       "slug": "refine_blade",
       "title": "Refine Blade",
       "description": "Forge 9.\nNext turn, gain 1.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6203,6 +7754,8 @@
       "slug": "reflect",
       "title": "Reflect",
       "description": "Gain 17 Block.\nBlocked attack damage is reflected to your attacker this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6218,6 +7771,14 @@
       "slug": "reflex",
       "title": "Reflex",
       "description": "Draw 2 cards.",
+      "keywords": [
+        {
+          "id": "Sly",
+          "placement": "beforeDescription",
+          "title": "Sly"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -6233,6 +7794,8 @@
       "slug": "refract",
       "title": "Refract",
       "description": "Deal 9 damage twice.\nChannel 2 Glass.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -6248,6 +7811,14 @@
       "slug": "regret",
       "title": "Regret",
       "description": "At the end of your turn, if this is in your Hand, lose 1 HP for each card in your Hand.",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -6263,6 +7834,14 @@
       "slug": "relax",
       "title": "Relax",
       "description": "Gain 15 Block.\nNext turn, draw 2 cards and gain 2.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -6278,6 +7857,8 @@
       "slug": "rend",
       "title": "Rend",
       "description": "Deal 15 damage.\nDeals 5 additional damage for each unique debuff on the enemy.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -6293,6 +7874,8 @@
       "slug": "resonance",
       "title": "Resonance",
       "description": "Gain 1 Strength. ALL enemies lose 1 Strength.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6308,6 +7891,14 @@
       "slug": "restlessness",
       "title": "Restlessness",
       "description": "If your Hand is empty, draw 2 cards and gain 2.",
+      "keywords": [
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -6323,6 +7914,14 @@
       "slug": "ricochet",
       "title": "Ricochet",
       "description": "Deal 3 damage to a random enemy 4 times.",
+      "keywords": [
+        {
+          "id": "Sly",
+          "placement": "beforeDescription",
+          "title": "Sly"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -6338,6 +7937,8 @@
       "slug": "right_hand_hand",
       "title": "Right Hand Hand",
       "description": "Osty deals 4 damage.\nWhenever you play a card that costs 2 or more, return this to your Hand from the Discard Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -6353,6 +7954,8 @@
       "slug": "rip_and_tear",
       "title": "Rip and Tear",
       "description": "Deal 7 damage to a random enemy twice.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6368,6 +7971,8 @@
       "slug": "rocket_punch",
       "title": "Rocket Punch",
       "description": "Deal 13 damage.\nDraw 1 card.\nWhenever you create a Status, reduce this card's cost to 0  until played.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -6383,6 +7988,8 @@
       "slug": "rolling_boulder",
       "title": "Rolling Boulder",
       "description": "At the start of your turn, deal 5 damage to ALL enemies and increase this damage by 5.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -6398,6 +8005,14 @@
       "slug": "royal_gamble",
       "title": "Royal Gamble",
       "description": "Gain 9 *.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -6413,6 +8028,8 @@
       "slug": "royalties",
       "title": "Royalties",
       "description": "At the end of combat, gain 30 Gold.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6428,6 +8045,8 @@
       "slug": "rupture",
       "title": "Rupture",
       "description": "Whenever you lose HP on your turn, gain 1 Strength.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6443,6 +8062,14 @@
       "slug": "sacrifice",
       "title": "Sacrifice",
       "description": "If Osty is alive, he dies and you gain Block equal to double his Max HP.",
+      "keywords": [
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6458,6 +8085,8 @@
       "slug": "salvo",
       "title": "Salvo",
       "description": "Deal 12 damage.\nRetain your Hand this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6473,6 +8102,8 @@
       "slug": "scavenge",
       "title": "Scavenge",
       "description": "Exhaust a card.\nNext turn, gain 2.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6488,6 +8119,8 @@
       "slug": "scourge",
       "title": "Scourge",
       "description": "Apply 13 Doom.\nDraw 1 card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6503,6 +8136,8 @@
       "slug": "scrape",
       "title": "Scrape",
       "description": "Deal 7 damage.\nDraw 4 cards.\nDiscard all cards drawn this way that do not cost 0 .",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6518,6 +8153,14 @@
       "slug": "scrawl",
       "title": "Scrawl",
       "description": "Draw cards until your Hand is full.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6533,6 +8176,8 @@
       "slug": "sculpting_strike",
       "title": "Sculpting Strike",
       "description": "Deal 9 damage.\nAdd Ethereal to a card in your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6548,6 +8193,14 @@
       "slug": "seance",
       "title": "Seance",
       "description": "Transform a card in your Draw Pile into Soul.",
+      "keywords": [
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6563,6 +8216,8 @@
       "slug": "second_wind",
       "title": "Second Wind",
       "description": "Exhaust all non-Attack cards in your Hand. Gain 5 Block for each card Exhausted.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6578,6 +8233,14 @@
       "slug": "secret_technique",
       "title": "Secret Technique",
       "description": "Put a Skill from your Draw Pile into your Hand.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -6593,6 +8256,14 @@
       "slug": "secret_weapon",
       "title": "Secret Weapon",
       "description": "Put an Attack from your Draw Pile into your Hand.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -6608,6 +8279,8 @@
       "slug": "seeker_strike",
       "title": "Seeker Strike",
       "description": "Deal 9 damage.\nChoose 1 of 3 cards in your Draw Pile to add into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6623,6 +8296,8 @@
       "slug": "seeking_edge",
       "title": "Seeking Edge",
       "description": "Forge 7.\nSovereign Blade now deals damage to ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6638,6 +8313,8 @@
       "slug": "sentry_mode",
       "title": "Sentry Mode",
       "description": "At the start of your turn, add 1 Sweeping Gaze into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -6653,6 +8330,8 @@
       "slug": "serpent_form",
       "title": "Serpent Form",
       "description": "Whenever you play a card, deal 4 damage to a random enemy.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -6668,6 +8347,8 @@
       "slug": "setup_strike",
       "title": "Setup Strike",
       "description": "Deal 7 damage.\nGain 2 Strength this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6683,6 +8364,8 @@
       "slug": "seven_stars",
       "title": "Seven Stars",
       "description": "Deal 7 damage to ALL enemies 7 times.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -6698,6 +8381,8 @@
       "slug": "severance",
       "title": "Severance",
       "description": "Deal 13 damage.\nAdd a Soul into your Draw Pile, Hand, and Discard Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -6713,6 +8398,8 @@
       "slug": "shadow_shield",
       "title": "Shadow Shield",
       "description": "Gain 11 Block.\nChannel 1 Dark.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -6728,6 +8415,8 @@
       "slug": "shadow_step",
       "title": "Shadow Step",
       "description": "Discard your Hand.\nNext turn, Attacks deal double damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6743,6 +8432,8 @@
       "slug": "shadowmeld",
       "title": "Shadowmeld",
       "description": "Double your Block gain this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6758,6 +8449,14 @@
       "slug": "shame",
       "title": "Shame",
       "description": "At the end of your turn, if this is in your Hand, gain 1 Frail.",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -6773,6 +8472,14 @@
       "slug": "shared_fate",
       "title": "Shared Fate",
       "description": "Lose 2 Strength.\nEnemy loses 2 Strength.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -6788,6 +8495,8 @@
       "slug": "shatter",
       "title": "Shatter",
       "description": "Deal 11 damage to ALL enemies.\nEvoke all of your Orbs.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6803,6 +8512,8 @@
       "slug": "shining_strike",
       "title": "Shining Strike",
       "description": "Deal 8 damage.\nGain 2.\nPut this card on top of your Draw Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6818,6 +8529,14 @@
       "slug": "shiv",
       "title": "Shiv",
       "description": "Deal 4 damage.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -6833,6 +8552,14 @@
       "slug": "shockwave",
       "title": "Shockwave",
       "description": "Apply 3 Weak and Vulnerable to ALL enemies.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -6848,6 +8575,8 @@
       "slug": "shroud",
       "title": "Shroud",
       "description": "Whenever you apply Doom, gain 2 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6863,6 +8592,8 @@
       "slug": "shrug_it_off",
       "title": "Shrug It Off",
       "description": "Gain 8 Block.\nDraw 1 card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6878,6 +8609,8 @@
       "slug": "sic_em",
       "title": "Sic 'Em",
       "description": "Osty deals 5 damage.\nWhenever Osty hits this enemy this turn, Summon 2.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6893,6 +8626,14 @@
       "slug": "signal_boost",
       "title": "Signal Boost",
       "description": "The next Power you play is played an additional time.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6908,6 +8649,8 @@
       "slug": "skewer",
       "title": "Skewer",
       "description": "Deal 8 damage X times.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "x",
         "value": 0
@@ -6923,6 +8666,8 @@
       "slug": "skim",
       "title": "Skim",
       "description": "Draw 3 cards.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6938,6 +8683,8 @@
       "slug": "sleight_of_flesh",
       "title": "Sleight of Flesh",
       "description": "Whenever you apply a debuff to an enemy, they take 9 damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -6953,6 +8700,8 @@
       "slug": "slice",
       "title": "Slice",
       "description": "Deal 6 damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -6968,6 +8717,14 @@
       "slug": "slimed",
       "title": "Slimed",
       "description": "Draw 1 card.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -6983,6 +8740,8 @@
       "slug": "sloth",
       "title": "Sloth",
       "description": "You cannot play more than 3 cards each turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -6998,6 +8757,8 @@
       "slug": "smokestack",
       "title": "Smokestack",
       "description": "Whenever you create a Status, deal 5 damage to ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7013,6 +8774,14 @@
       "slug": "snakebite",
       "title": "Snakebite",
       "description": "Apply 7 Poison.",
+      "keywords": [
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -7028,6 +8797,8 @@
       "slug": "snap",
       "title": "Snap",
       "description": "Osty deals 7 damage.\nAdd Retain to a card in your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7043,6 +8814,14 @@
       "slug": "sneaky",
       "title": "Sneaky",
       "description": "Whenever another player attacks an enemy, gain 1 Block.",
+      "keywords": [
+        {
+          "id": "Sly",
+          "placement": "beforeDescription",
+          "title": "Sly"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -7058,6 +8837,8 @@
       "slug": "solar_strike",
       "title": "Solar Strike",
       "description": "Deal 9 damage.\nGain 1.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7073,6 +8854,14 @@
       "slug": "soot",
       "title": "Soot",
       "description": "",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -7088,6 +8877,14 @@
       "slug": "soul",
       "title": "Soul",
       "description": "Draw 2 cards.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -7103,6 +8900,8 @@
       "slug": "soul_storm",
       "title": "Soul Storm",
       "description": "Deal 9 damage.\nDeals 2 additional damage for each Soul in your Exhaust Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7118,6 +8917,14 @@
       "slug": "sovereign_blade",
       "title": "Sovereign Blade",
       "description": "Deal 10 damage.",
+      "keywords": [
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -7133,6 +8940,14 @@
       "slug": "sow",
       "title": "Sow",
       "description": "Deal 8 damage to ALL enemies.",
+      "keywords": [
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7148,6 +8963,8 @@
       "slug": "spectrum_shift",
       "title": "Spectrum Shift",
       "description": "At the start of your turn, add 1 random Colorless card into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -7163,6 +8980,8 @@
       "slug": "speedster",
       "title": "Speedster",
       "description": "Whenever you draw a card during your turn, deal 2 damage to ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -7178,6 +8997,8 @@
       "slug": "spinner",
       "title": "Spinner",
       "description": "At the start of your turn, Channel 1 Glass.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7193,6 +9014,8 @@
       "slug": "spirit_of_ash",
       "title": "Spirit of Ash",
       "description": "Whenever you play an Ethereal card, gain 4 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7208,6 +9031,8 @@
       "slug": "spite",
       "title": "Spite",
       "description": "Deal 5 damage.\nIf you lost HP this turn,\nhits 2 times.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -7223,6 +9048,8 @@
       "slug": "splash",
       "title": "Splash",
       "description": "Choose 1 of 3 random Attacks from another character to add into your Hand. It's free to play this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7238,6 +9065,14 @@
       "slug": "spoils_map",
       "title": "Spoils Map",
       "description": "Marks a site of 600 extra Gold in the next Act.",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -7253,6 +9088,8 @@
       "slug": "spoils_of_battle",
       "title": "Spoils of Battle",
       "description": "Forge 5.\nDraw 2 cards.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7268,6 +9105,14 @@
       "slug": "spore_mind",
       "title": "Spore Mind",
       "description": "",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7283,6 +9128,14 @@
       "slug": "spur",
       "title": "Spur",
       "description": "Summon 3.\nOsty heals 5 HP.",
+      "keywords": [
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7298,6 +9151,8 @@
       "slug": "squash",
       "title": "Squash",
       "description": "Deal 10 damage.\nApply 2 Vulnerable.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7313,6 +9168,8 @@
       "slug": "squeeze",
       "title": "Squeeze",
       "description": "Osty deals 25 damage.\nDeals 5 additional damage for ALL your other Osty Attacks.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -7328,6 +9185,8 @@
       "slug": "stack",
       "title": "Stack",
       "description": "Gain Block equal to the number of cards in your Discard Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7343,6 +9202,8 @@
       "slug": "stampede",
       "title": "Stampede",
       "description": "At the end of your turn, 1 random Attack in your Hand is played against a random enemy.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -7358,6 +9219,8 @@
       "slug": "stardust",
       "title": "Stardust",
       "description": "Deal 5 damage to a random enemy X times.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -7373,6 +9236,8 @@
       "slug": "stoke",
       "title": "Stoke",
       "description": "Exhaust your Hand.\nAdd 1 random card into your Hand for each card Exhausted.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7388,6 +9253,8 @@
       "slug": "stomp",
       "title": "Stomp",
       "description": "Deal 12 damage to ALL enemies.\nCosts 1 less  for each Attack played this turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -7403,6 +9270,8 @@
       "slug": "stone_armor",
       "title": "Stone Armor",
       "description": "Gain 4 Plating.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7418,6 +9287,8 @@
       "slug": "storm",
       "title": "Storm",
       "description": "Whenever you play a Power, Channel 1 Lightning.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7433,6 +9304,8 @@
       "slug": "storm_of_steel",
       "title": "Storm of Steel",
       "description": "Discard your Hand.\nAdd 1 Shiv into your Hand for each card discarded.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7448,6 +9321,8 @@
       "slug": "strangle",
       "title": "Strangle",
       "description": "Deal 8 damage.\nWhenever you play a card this turn, the enemy loses 2 HP.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7463,6 +9338,8 @@
       "slug": "stratagem",
       "title": "Stratagem",
       "description": "Whenever you shuffle your Draw Pile, choose a card from it to put into your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7478,6 +9355,8 @@
       "slug": "strike_defect",
       "title": "Strike",
       "description": "Deal 6 damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7493,6 +9372,8 @@
       "slug": "strike_ironclad",
       "title": "Strike",
       "description": "Deal 6 damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7508,6 +9389,8 @@
       "slug": "strike_necrobinder",
       "title": "Strike",
       "description": "Deal 6 damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7523,6 +9406,8 @@
       "slug": "strike_regent",
       "title": "Strike",
       "description": "Deal 6 damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7538,6 +9423,8 @@
       "slug": "strike_silent",
       "title": "Strike",
       "description": "Deal 6 damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7553,6 +9440,8 @@
       "slug": "subroutine",
       "title": "Subroutine",
       "description": "Whenever you play a Power, gain .",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7568,6 +9457,8 @@
       "slug": "sucker_punch",
       "title": "Sucker Punch",
       "description": "Deal 8 damage.\nApply 1 Weak.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7583,6 +9474,8 @@
       "slug": "summon_forth",
       "title": "Summon Forth",
       "description": "Forge 8.\nPut Sovereign Blade into your Hand from anywhere.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7598,6 +9491,8 @@
       "slug": "sunder",
       "title": "Sunder",
       "description": "Deal 24 damage.\nIf this kills an enemy, gain 3.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -7613,6 +9508,14 @@
       "slug": "supercritical",
       "title": "Supercritical",
       "description": "Gain 4.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -7628,6 +9531,8 @@
       "slug": "supermassive",
       "title": "Supermassive",
       "description": "Deal 5 damage.\nDeals 3 additional damage for each card you created this combat.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7643,6 +9548,14 @@
       "slug": "suppress",
       "title": "Suppress",
       "description": "Deal 11 damage.\nApply 3 Weak.",
+      "keywords": [
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -7658,6 +9571,8 @@
       "slug": "survivor",
       "title": "Survivor",
       "description": "Gain 8 Block.\nDiscard 1 card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7673,6 +9588,8 @@
       "slug": "sweeping_beam",
       "title": "Sweeping Beam",
       "description": "Deal 6 damage to ALL enemies.\nDraw 1 card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7688,6 +9605,19 @@
       "slug": "sweeping_gaze",
       "title": "Sweeping Gaze",
       "description": "Osty deals 10 damage to a random enemy.",
+      "keywords": [
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal"
+        },
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -7703,6 +9633,8 @@
       "slug": "sword_boomerang",
       "title": "Sword Boomerang",
       "description": "Deal 3 damage to a random enemy 3 times.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7718,6 +9650,8 @@
       "slug": "sword_sage",
       "title": "Sword Sage",
       "description": "Sovereign Blade now hits an additional time.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -7733,6 +9667,14 @@
       "slug": "synchronize",
       "title": "Synchronize",
       "description": "Gain 2 Focus this turn for each unique Orb you have.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7748,6 +9690,8 @@
       "slug": "synthesis",
       "title": "Synthesis",
       "description": "Deal 12 damage.\nThe next Power you play costs 0 .",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -7763,6 +9707,14 @@
       "slug": "tactician",
       "title": "Tactician",
       "description": "Gain 1.",
+      "keywords": [
+        {
+          "id": "Sly",
+          "placement": "beforeDescription",
+          "title": "Sly"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -7778,6 +9730,8 @@
       "slug": "tag_team",
       "title": "Tag Team",
       "description": "Deal 11 damage.\nThe next Attack another player plays on the enemy is played an extra time.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -7793,6 +9747,8 @@
       "slug": "tank",
       "title": "Tank",
       "description": "Take double damage from enemies.\nAllies take half damage from enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7808,6 +9764,8 @@
       "slug": "taunt",
       "title": "Taunt",
       "description": "Gain 7 Block.\nApply 1 Vulnerable.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7823,6 +9781,8 @@
       "slug": "tear_asunder",
       "title": "Tear Asunder",
       "description": "Deal 5 damage.\nHits an additional time for each time you lost HP this combat.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -7838,6 +9798,8 @@
       "slug": "tempest",
       "title": "Tempest",
       "description": "Channel X Lightning.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "x",
         "value": 0
@@ -7853,6 +9815,8 @@
       "slug": "terraforming",
       "title": "Terraforming",
       "description": "Gain 6 Vigor.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7868,6 +9832,8 @@
       "slug": "tesla_coil",
       "title": "Tesla Coil",
       "description": "Deal 3 damage.\nTrigger all Lightning against the enemy.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -7883,6 +9849,8 @@
       "slug": "the_bomb",
       "title": "The Bomb",
       "description": "At the end of 3 turns, deal 40 damage to ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -7898,6 +9866,8 @@
       "slug": "the_gambit",
       "title": "The Gambit",
       "description": "Gain 50 Block.\nIf you take unblocked attack damage this combat, die.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -7913,6 +9883,14 @@
       "slug": "the_hunt",
       "title": "The Hunt",
       "description": "Deal 10 damage.\nIf Fatal, gain an additional card reward.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7928,6 +9906,14 @@
       "slug": "the_scythe",
       "title": "The Scythe",
       "description": "Deal 13 damage.\nPermanently increase this card's damage by 3.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -7943,6 +9929,8 @@
       "slug": "the_sealed_throne",
       "title": "The Sealed Throne",
       "description": "Whenever you play a card, gain *.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7958,6 +9946,8 @@
       "slug": "the_smith",
       "title": "The Smith",
       "description": "Forge 30.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -7973,6 +9963,14 @@
       "slug": "thinking_ahead",
       "title": "Thinking Ahead",
       "description": "Draw 2 cards.\nPut 1 card from your Hand on top of your Draw Pile.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -7988,6 +9986,8 @@
       "slug": "thrash",
       "title": "Thrash",
       "description": "Deal 4 damage twice.\nExhaust a random Attack in your Hand and add its damage to this card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8003,6 +10003,8 @@
       "slug": "thrumming_hatchet",
       "title": "Thrumming Hatchet",
       "description": "Deal 11 damage.\nAt the start of your next turn, return this to your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8018,6 +10020,8 @@
       "slug": "thunder",
       "title": "Thunder",
       "description": "Whenever you Evoke Lightning, deal 6 damage to each enemy hit.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8033,6 +10037,8 @@
       "slug": "thunderclap",
       "title": "Thunderclap",
       "description": "Deal 4 damage and apply 1 Vulnerable to ALL enemies.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8048,6 +10054,14 @@
       "slug": "times_up",
       "title": "Time's Up",
       "description": "Deal damage equal to the enemy's Doom.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -8063,6 +10077,8 @@
       "slug": "tools_of_the_trade",
       "title": "Tools of the Trade",
       "description": "At the start of your turn, draw 1 card and discard 1 card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8078,6 +10094,8 @@
       "slug": "toric_toughness",
       "title": "Toric Toughness",
       "description": "Gain 5 Block.\nGain 5 Block at the start of the next 2 turns.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -8093,6 +10111,14 @@
       "slug": "toxic",
       "title": "Toxic",
       "description": "At the end of your turn, if this is in your Hand, take 5 damage.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8108,6 +10134,8 @@
       "slug": "tracking",
       "title": "Tracking",
       "description": "Weak enemies take double damage from Attacks.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -8123,6 +10151,14 @@
       "slug": "transfigure",
       "title": "Transfigure",
       "description": "Add Replay to a card in your Hand.\nIt costs an extra 1.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8138,6 +10174,8 @@
       "slug": "trash_to_treasure",
       "title": "Trash to Treasure",
       "description": "Whenever you create a Status, Channel 1 random Orb.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8153,6 +10191,14 @@
       "slug": "tremble",
       "title": "Tremble",
       "description": "Apply 3 Vulnerable.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8168,6 +10214,8 @@
       "slug": "true_grit",
       "title": "True Grit",
       "description": "Gain 7 Block.\nExhaust 1 card at random.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8183,6 +10231,8 @@
       "slug": "turbo",
       "title": "TURBO",
       "description": "Gain 2.\nAdd a Void into your Discard Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -8198,6 +10248,8 @@
       "slug": "twin_strike",
       "title": "Twin Strike",
       "description": "Deal 5 damage twice.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8213,6 +10265,8 @@
       "slug": "tyranny",
       "title": "Tyranny",
       "description": "At the start of your turn, draw 1 card and Exhaust 1 card from your Hand.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8228,6 +10282,8 @@
       "slug": "ultimate_defend",
       "title": "Ultimate Defend",
       "description": "Gain 11 Block.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8243,6 +10299,8 @@
       "slug": "ultimate_strike",
       "title": "Ultimate Strike",
       "description": "Deal 14 damage.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8258,6 +10316,8 @@
       "slug": "undeath",
       "title": "Undeath",
       "description": "Gain 7 Block.\nAdd a copy of this card into your Discard Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -8273,6 +10333,8 @@
       "slug": "unleash",
       "title": "Unleash",
       "description": "Osty deals 6 damage.\nDeals additional damage equal to Osty's current HP.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8288,6 +10350,8 @@
       "slug": "unmovable",
       "title": "Unmovable",
       "description": "The first time you gain Block from a card each turn, double the amount gained.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -8303,6 +10367,8 @@
       "slug": "unrelenting",
       "title": "Unrelenting",
       "description": "Deal 12 damage.\nThe next Attack you play costs 0 .",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -8318,6 +10384,14 @@
       "slug": "untouchable",
       "title": "Untouchable",
       "description": "Gain 6 Block.",
+      "keywords": [
+        {
+          "id": "Sly",
+          "placement": "beforeDescription",
+          "title": "Sly"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -8333,6 +10407,8 @@
       "slug": "up_my_sleeve",
       "title": "Up My Sleeve",
       "description": "Add 3 Shivs into your Hand.\nReduce this card's cost by 1.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -8348,6 +10424,8 @@
       "slug": "uppercut",
       "title": "Uppercut",
       "description": "Deal 13 damage.\nApply 1 Weak.\nApply 1 Vulnerable.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -8363,6 +10441,8 @@
       "slug": "uproar",
       "title": "Uproar",
       "description": "Deal 5 damage twice.\nPlay a random Attack from your Draw Pile.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 2
@@ -8378,6 +10458,8 @@
       "slug": "veilpiercer",
       "title": "Veilpiercer",
       "description": "Deal 10 damage.\nThe next Ethereal card you play costs 0 .",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8393,6 +10475,8 @@
       "slug": "venerate",
       "title": "Venerate",
       "description": "Gain 2.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8408,6 +10492,8 @@
       "slug": "vicious",
       "title": "Vicious",
       "description": "Whenever you apply Vulnerable, draw 1 card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8423,6 +10509,19 @@
       "slug": "void",
       "title": "Void",
       "description": "Whenever you draw this card, lose 1.",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        },
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -8438,6 +10537,14 @@
       "slug": "void_form",
       "title": "Void Form",
       "description": "End your turn.\nThe first 2 cards you play each turn are free to play.",
+      "keywords": [
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -8453,6 +10560,8 @@
       "slug": "volley",
       "title": "Volley",
       "description": "Deal 10 damage to a random enemy X times.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "x",
         "value": 0
@@ -8468,6 +10577,14 @@
       "slug": "voltaic",
       "title": "Voltaic",
       "description": "Channel Lightning equal to the Lightning already Channeled this combat.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -8483,6 +10600,8 @@
       "slug": "waste_away",
       "title": "Waste Away",
       "description": "Gain 1 less  per turn.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -8498,6 +10617,8 @@
       "slug": "well_laid_plans",
       "title": "Well-Laid Plans",
       "description": "At the end of your turn, Retain up to 1 card.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8513,6 +10634,8 @@
       "slug": "whirlwind",
       "title": "Whirlwind",
       "description": "Deal 5 damage to ALL enemies X times.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "x",
         "value": 0
@@ -8528,6 +10651,14 @@
       "slug": "whistle",
       "title": "Whistle",
       "description": "Deal 33 damage.\nStun the enemy.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -8543,6 +10674,14 @@
       "slug": "white_noise",
       "title": "White Noise",
       "description": "Add a random Power into your Hand. It's free to play this turn.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8558,6 +10697,14 @@
       "slug": "wish",
       "title": "Wish",
       "description": "Put a card from your Draw Pile into your Hand.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -8573,6 +10720,14 @@
       "slug": "wisp",
       "title": "Wisp",
       "description": "Gain 1.",
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 0
@@ -8588,6 +10743,14 @@
       "slug": "wound",
       "title": "Wound",
       "description": "",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -8603,6 +10766,8 @@
       "slug": "wraith_form",
       "title": "Wraith Form",
       "description": "Gain 2 Intangible.\nAt the start of your turn, lose 1 Dexterity.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 3
@@ -8618,6 +10783,19 @@
       "slug": "writhe",
       "title": "Writhe",
       "description": "",
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable"
+        },
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate"
+        }
+      ],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": -1
@@ -8633,6 +10811,8 @@
       "slug": "wrought_in_war",
       "title": "Wrought in War",
       "description": "Deal 7 damage.\nForge 7.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
@@ -8648,6 +10828,8 @@
       "slug": "zap",
       "title": "Zap",
       "description": "Channel 1 Lightning.",
+      "keywords": [],
+      "keywordPeriod": ".",
       "energyCost": {
         "kind": "int",
         "value": 1
