@@ -1,5 +1,19 @@
 # 0011 - Card Keyword Text Investigation
 
+## 2026-05-08 - Keyword Release Tags
+
+**Context:** The user pushed the keyword parser and Neow's Cafe keyword-rendering work, then asked for releases covering the parser update and app support.
+
+**User Direction:** The user wanted a card parser release and a Neow's Cafe app release starting at `v0.1.0`.
+
+**Agent Response:** The agent followed the release tag workflow, created annotated release tags, pushed them to origin, and created GitHub Release pages.
+
+**User Feedback:** No correction during this step.
+
+**Outcome:** GitHub Releases now exist for `release/card-parser/v0.2.4` and `release/neows-cafe/v0.1.0`, covering parser keyword metadata and app keyword rendering/search support respectively.
+
+**Carry Forward:** Use component-scoped release tags for monorepo releases; parser releases should track parser schema SemVer, while Neow's Cafe app releases use their own app version line.
+
 ## 2026-05-08 - Keyword Pipeline Devlog
 
 **Context:** The user asked for a devlog covering work from the session that had not yet been documented in the devlog history.
