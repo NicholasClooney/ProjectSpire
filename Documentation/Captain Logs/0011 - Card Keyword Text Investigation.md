@@ -1,5 +1,33 @@
 # 0011 - Card Keyword Text Investigation
 
+## 2026-05-08 - Keyword Pipeline Devlog
+
+**Context:** The user asked for a devlog covering work from the session that had not yet been documented in the devlog history.
+
+**User Direction:** The user wanted durable documentation for anything worked on but not documented elsewhere yet.
+
+**Agent Response:** The agent reviewed existing devlogs and added a new devlog for the card keyword pipeline from source/parser through catalog, Swift rendering, text fitting, and keyword search.
+
+**User Feedback:** No correction during this step.
+
+**Outcome:** `Documentation/Devlogs/0005 - Card Keyword Pipeline And Neows Cafe Rendering.md` now records the source findings, parser/catalog/app commits, verification, and future work notes for keyword rendering.
+
+**Carry Forward:** When a feature spans parser output, generated catalog data, and app rendering, keep a human-readable devlog that ties source findings, schema shape, app paths, commits, and verification together.
+
+## 2026-05-08 - Card Text Scaling And Keyword Search
+
+**Context:** The user showed a Bombardment render where long rules text was truncated and asked to include keywords in card search.
+
+**User Direction:** The user wanted long descriptions to fit better in the fixed card text box and wanted `CardFilter` to match keyword text.
+
+**Agent Response:** The agent changed the card rules render to one styled, scalable `AttributedString` text block and extended search matching to keyword `id` and `title`.
+
+**User Feedback:** No correction during this step.
+
+**Outcome:** Longer card rules can shrink within the card text area while preserving keyword coloring, and searching for a keyword such as `exhaust` matches cards that carry that keyword. Build and tests pass.
+
+**Carry Forward:** Keep rules text as a single scalable rendered block when fitting within the in-game card frame; splitting description and keywords into independent text views makes truncation harder to control.
+
 ## 2026-05-08 - Neow's Cafe Keyword Rendering
 
 **Context:** The user asked to add parsed card keywords to Neow's Cafe's Swift card model and card UI.
