@@ -5,6 +5,9 @@ from __future__ import annotations
 
 import argparse
 import functools
+import gzip
+import hashlib
+import io
 import os
 import sys
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
@@ -22,11 +25,26 @@ CACHEABLE_EXTENSIONS = {
     ".jpeg",
     ".jpg",
     ".js",
-    # ".json",
     ".png",
     ".svg",
     ".webp",
 }
+
+# In-memory ETag cache: maps (absolute_path, mtime) -> etag string.
+# Recomputed only when a file's mtime changes.
+_etag_cache: dict[tuple[str, float], str] = {}
+
+
+def etag_for(path: Path) -> str | None:
+    try:
+        mtime = path.stat().st_mtime
+    except OSError:
+        return None
+    key = (str(path), mtime)
+    if key not in _etag_cache:
+        digest = hashlib.sha256(path.read_bytes()).hexdigest()[:16]
+        _etag_cache[key] = f'"{digest}"'
+    return _etag_cache[key]
 
 
 def parse_args() -> argparse.Namespace:
@@ -58,10 +76,51 @@ def parse_args() -> argparse.Namespace:
 
 
 class CardCatalogHandler(SimpleHTTPRequestHandler):
+    def do_GET(self) -> None:
+        if path_extension(self.path) != ".json":
+            super().do_GET()
+            return
+
+        resolved = self._resolved_path()
+        try:
+            raw = resolved.read_bytes()
+        except OSError:
+            self.send_error(404, "File not found")
+            return
+
+        accept = self.headers.get("Accept-Encoding", "")
+        if "gzip" in accept:
+            buf = io.BytesIO()
+            with gzip.GzipFile(fileobj=buf, mode="wb") as gz:
+                gz.write(raw)
+            body = buf.getvalue()
+            encoding = "gzip"
+        else:
+            body = raw
+            encoding = None
+
+        self.send_response(200)
+        self.send_header("Content-Type", "application/json")
+        self.send_header("Content-Length", str(len(body)))
+        if encoding:
+            self.send_header("Content-Encoding", encoding)
+        self.end_headers()
+        self.wfile.write(body)
+
     def end_headers(self) -> None:
-        if path_extension(self.path) in CACHEABLE_EXTENSIONS:
+        ext = path_extension(self.path)
+        if ext in CACHEABLE_EXTENSIONS:
             self.send_header("Cache-Control", "public, max-age=31536000, immutable")
+        elif ext == ".json":
+            self.send_header("Cache-Control", "no-store")
+            etag = etag_for(self._resolved_path())
+            if etag:
+                self.send_header("ETag", etag)
         super().end_headers()
+
+    def _resolved_path(self) -> Path:
+        clean = self.path.split("?", 1)[0].split("#", 1)[0]
+        return Path(self.directory) / clean.lstrip("/")  # type: ignore[attr-defined]
 
 
 def path_extension(path: str) -> str:
