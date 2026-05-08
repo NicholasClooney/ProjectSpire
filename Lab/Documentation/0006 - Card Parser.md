@@ -91,6 +91,7 @@ Each card JSON currently contains:
 - `tags`
 - `upgrades`
 - `cost_upgrades`
+- `keyword_upgrades`
 - `tips`
 - `applies_powers`
 - `relations`
@@ -98,10 +99,11 @@ Each card JSON currently contains:
 
 `resolved` currently contains app-friendly display states:
 
+- `keyword_period`
 - `base`
 - `upgraded`
 
-Each state includes title, cost, and description text as both `plain` text and styled `runs`.
+Each state includes title, cost, description text as both `plain` text and styled `runs`, and localized keyword display metadata.
 
 ## Field Semantics
 
@@ -121,6 +123,7 @@ These fields come directly from the decompiled card class:
 - `tags`
 - `upgrades`
 - `cost_upgrades`
+- `keyword_upgrades`
 
 `vars` uses canonical localization variable identities only. For example, `PowerVar<DexterityPower>` is emitted as `DexterityPower`, not as both `DexterityPower` and a stripped `Dexterity` alias.
 
@@ -132,7 +135,11 @@ These fields come directly from the decompiled card class:
 
 `assets` records discovered packed card portrait files under `Lab/resources/images/packed/card_portraits/`. The parser uses the resolved `card_pool`, then checks for regular and beta `.webp` portraits in that pool.
 
+`keywords` records base source keyword membership parsed from `CanonicalKeywords` and legacy boolean keyword properties.
+
 `cost_upgrades` records source-level `base.EnergyCost.UpgradeBy(...)` calls separately from dynamic variable upgrades. Resolved upgraded card states apply those deltas to `cost`, clamped to zero to match `CardEnergyCost.UpgradeBy`.
+
+`keyword_upgrades` records direct `AddKeyword(CardKeyword.X)` and `RemoveKeyword(CardKeyword.X)` calls inside `OnUpgrade()`. Resolved upgraded card states apply these deltas to `resolved.upgraded.keywords`.
 
 ### Behavior-derived fields
 
@@ -171,9 +178,13 @@ If localization data is loaded, it populates the second-pass `resolved` display 
 - `resolved.base.title`
 - `resolved.base.description.plain`
 - `resolved.base.description.runs`
+- `resolved.base.keywords`
 - `resolved.upgraded.title`
 - `resolved.upgraded.description.plain`
 - `resolved.upgraded.description.runs`
+- `resolved.upgraded.keywords`
+
+`resolved.keyword_period` comes from `card_keywords.json` key `PERIOD`. `resolved.*.keywords` contains localized keyword objects with `id`, `placement`, `title`, and `description`. Keyword placement is source-derived from `CardKeywordOrder.cs`, using `beforeDescription` and `afterDescription`; see `Lab/Documentation/0014 - Card Keywords.md`.
 
 If required localization keys are missing during resolution, the parser fails instead of emitting partial display data. Use `--raw-only` when localization is intentionally unavailable.
 
@@ -228,7 +239,7 @@ Current limitations include:
 
 - only recognized constructor patterns are parsed
 - variable extraction is pattern-based and incomplete
-- keyword extraction is partial
+- keyword extraction is pattern-based and only covers canonical card keywords plus direct `OnUpgrade()` keyword mutations
 - tag extraction is text-pattern based
 - power application extraction only covers recognized `PowerCmd.Apply<...>` forms
 - card creation extraction only covers currently recognized creation patterns

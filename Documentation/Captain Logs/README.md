@@ -8,6 +8,7 @@ Confirmed durable user preferences live in [User Preferences](<User Preferences.
 
 ## Logs
 
+- [0011 - Card Keyword Text Investigation](<0011 - Card Keyword Text Investigation.md>) - Traced game keyword-only card text through decompiled models, parser output, catalog summaries, and Neow's Cafe rendering.
 - [0010 - Captain Logs Instruction Split](<0010 - Captain Logs Instruction Split.md>) - Moved detailed Captain Logs agent instructions into the Captain Logs folder while keeping the root guidance explicit.
 - [0009 - Neow's Cafe Light And Dark Theme](<0009 - Neow's Cafe Light And Dark Theme.md>) - Added shared semantic light/dark theme colors for app chrome and filter controls, then moved the related App UI TODO to DONE.
 - [0008 - Kreon Typography Tiers](<0008 - Kreon Typography Tiers.md>) - Added a shared Neow's Cafe typography layer for bundled Kreon fonts and moved the related TODO to DONE.
