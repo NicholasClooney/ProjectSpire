@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "WISH",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "Wish",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Wish.cs",
     "cost": 0,
@@ -27,11 +27,18 @@
       }
     ],
     "keywords": [
-      "Exhaust",
-      "Retain"
+      "Exhaust"
+    ],
+    "keyword_upgrades": [
+      {
+        "operation": "add",
+        "keyword": "Retain",
+        "source": "OnUpgrade"
+      }
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Wish",
       "cost": 0,
@@ -60,7 +67,22 @@
             "text": "."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust",
+          "description": {
+            "plain": "Removed until the end of combat.",
+            "runs": [
+              {
+                "text": "Removed until the end of combat."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Wish+",
@@ -90,7 +112,38 @@
             "text": "."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain",
+          "description": {
+            "plain": "Retained cards are not discarded at the end of turn.",
+            "runs": [
+              {
+                "text": "Retained cards are not discarded at the end of turn."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust",
+          "description": {
+            "plain": "Removed until the end of combat.",
+            "runs": [
+              {
+                "text": "Removed until the end of combat."
+              }
+            ]
+          }
+        }
+      ],
+      "changed": [
+        "keywords"
+      ]
     }
   }
 }

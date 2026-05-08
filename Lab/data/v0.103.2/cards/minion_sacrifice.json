@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "MINION_SACRIFICE",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "MinionSacrifice",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MinionSacrifice.cs",
     "cost": 0,
@@ -48,6 +48,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Minion Sacrifice",
       "cost": 0,
@@ -76,7 +77,22 @@
             "text": "."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust",
+          "description": {
+            "plain": "Removed until the end of combat.",
+            "runs": [
+              {
+                "text": "Removed until the end of combat."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Minion Sacrifice+",
@@ -108,6 +124,21 @@
           }
         ]
       },
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust",
+          "description": {
+            "plain": "Removed until the end of combat.",
+            "runs": [
+              {
+                "text": "Removed until the end of combat."
+              }
+            ]
+          }
+        }
+      ],
       "changed": [
         "description"
       ]

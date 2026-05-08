@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "RESTLESSNESS",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "Restlessness",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Restlessness.cs",
     "cost": 0,
@@ -45,6 +45,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Restlessness",
       "cost": 0,
@@ -80,7 +81,22 @@
             "text": "."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain",
+          "description": {
+            "plain": "Retained cards are not discarded at the end of turn.",
+            "runs": [
+              {
+                "text": "Retained cards are not discarded at the end of turn."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Restlessness+",
@@ -119,6 +135,21 @@
           }
         ]
       },
+      "keywords": [
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain",
+          "description": {
+            "plain": "Retained cards are not discarded at the end of turn.",
+            "runs": [
+              {
+                "text": "Retained cards are not discarded at the end of turn."
+              }
+            ]
+          }
+        }
+      ],
       "changed": [
         "description"
       ]

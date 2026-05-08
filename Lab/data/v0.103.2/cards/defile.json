@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "DEFILE",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "Defile",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Defile.cs",
     "cost": 1,
@@ -45,6 +45,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Defile",
       "cost": 1,
@@ -66,7 +67,36 @@
             "text": " damage."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal",
+          "description": {
+            "plain": "If this card is in your Hand at the end of this turn, it is Exhausted.",
+            "runs": [
+              {
+                "text": "If this card is in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": " at the end of this turn, it is "
+              },
+              {
+                "text": "Exhausted",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Defile+",
@@ -91,6 +121,35 @@
           }
         ]
       },
+      "keywords": [
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal",
+          "description": {
+            "plain": "If this card is in your Hand at the end of this turn, it is Exhausted.",
+            "runs": [
+              {
+                "text": "If this card is in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": " at the end of this turn, it is "
+              },
+              {
+                "text": "Exhausted",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        }
+      ],
       "changed": [
         "description"
       ]

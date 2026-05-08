@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "FEEL_NO_PAIN",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "FeelNoPain",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FeelNoPain.cs",
     "cost": 1,
@@ -29,9 +29,6 @@
         "source": "Lab.resources.images.packed.card_portraits"
       }
     ],
-    "keywords": [
-      "Exhaust"
-    ],
     "upgrades": [
       {
         "var": "Power",
@@ -54,6 +51,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Feel No Pain",
       "cost": 1,

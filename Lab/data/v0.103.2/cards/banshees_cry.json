@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "BANSHEES_CRY",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "BansheesCry",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BansheesCry.cs",
     "cost": 9,
@@ -35,9 +35,6 @@
         "source": "Lab.resources.images.packed.card_portraits"
       }
     ],
-    "keywords": [
-      "Ethereal"
-    ],
     "cost_upgrades": [
       {
         "target": "cost",
@@ -47,6 +44,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Banshee's Cry",
       "cost": 9,

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "REAPER_FORM",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "ReaperForm",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ReaperForm.cs",
     "cost": 3,
@@ -31,8 +31,12 @@
         "source": "Lab.resources.images.packed.card_portraits"
       }
     ],
-    "keywords": [
-      "Retain"
+    "keyword_upgrades": [
+      {
+        "operation": "add",
+        "keyword": "Retain",
+        "source": "OnUpgrade"
+      }
     ],
     "tips": [
       {
@@ -50,6 +54,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Reaper Form",
       "cost": 3,
@@ -94,7 +99,25 @@
             "text": "."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain",
+          "description": {
+            "plain": "Retained cards are not discarded at the end of turn.",
+            "runs": [
+              {
+                "text": "Retained cards are not discarded at the end of turn."
+              }
+            ]
+          }
+        }
+      ],
+      "changed": [
+        "keywords"
+      ]
     }
   }
 }

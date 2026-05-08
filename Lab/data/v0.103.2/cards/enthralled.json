@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "ENTHRALLED",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "Enthralled",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Enthralled.cs",
     "cost": 2,
@@ -36,6 +36,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Enthralled",
       "cost": 2,
@@ -57,7 +58,29 @@
             "text": ", it must be played before other cards."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Eternal",
+          "placement": "afterDescription",
+          "title": "Eternal",
+          "description": {
+            "plain": "Cannot be removed or transformed from your Deck.",
+            "runs": [
+              {
+                "text": "Cannot be removed or transformed from your "
+              },
+              {
+                "text": "Deck",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Enthralled+",
@@ -80,7 +103,29 @@
             "text": ", it must be played before other cards."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Eternal",
+          "placement": "afterDescription",
+          "title": "Eternal",
+          "description": {
+            "plain": "Cannot be removed or transformed from your Deck.",
+            "runs": [
+              {
+                "text": "Cannot be removed or transformed from your "
+              },
+              {
+                "text": "Deck",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        }
+      ]
     }
   }
 }

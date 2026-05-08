@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "THE_HUNT",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "TheHunt",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TheHunt.cs",
     "cost": 1,
@@ -59,6 +59,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "The Hunt",
       "cost": 1,
@@ -87,7 +88,22 @@
             "text": ", gain an additional card reward."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust",
+          "description": {
+            "plain": "Removed until the end of combat.",
+            "runs": [
+              {
+                "text": "Removed until the end of combat."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "The Hunt+",
@@ -119,6 +135,21 @@
           }
         ]
       },
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust",
+          "description": {
+            "plain": "Removed until the end of combat.",
+            "runs": [
+              {
+                "text": "Removed until the end of combat."
+              }
+            ]
+          }
+        }
+      ],
       "changed": [
         "description"
       ]

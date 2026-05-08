@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "DRAMATIC_ENTRANCE",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "DramaticEntrance",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/DramaticEntrance.cs",
     "cost": 0,
@@ -41,6 +41,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Dramatic Entrance",
       "cost": 0,
@@ -62,7 +63,42 @@
             "text": " damage to ALL enemies."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate",
+          "description": {
+            "plain": "Start each combat with this card in your Hand.",
+            "runs": [
+              {
+                "text": "Start each combat with this card in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust",
+          "description": {
+            "plain": "Removed until the end of combat.",
+            "runs": [
+              {
+                "text": "Removed until the end of combat."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Dramatic Entrance+",
@@ -87,6 +123,41 @@
           }
         ]
       },
+      "keywords": [
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate",
+          "description": {
+            "plain": "Start each combat with this card in your Hand.",
+            "runs": [
+              {
+                "text": "Start each combat with this card in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust",
+          "description": {
+            "plain": "Removed until the end of combat.",
+            "runs": [
+              {
+                "text": "Removed until the end of combat."
+              }
+            ]
+          }
+        }
+      ],
       "changed": [
         "description"
       ]

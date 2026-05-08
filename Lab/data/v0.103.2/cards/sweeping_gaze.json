@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "SWEEPING_GAZE",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "SweepingGaze",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/SweepingGaze.cs",
     "cost": 0,
@@ -35,8 +35,8 @@
       }
     ],
     "keywords": [
-      "Exhaust",
-      "Ethereal"
+      "Ethereal",
+      "Exhaust"
     ],
     "tags": [
       "OstyAttack"
@@ -49,6 +49,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Sweeping Gaze",
       "cost": 0,
@@ -74,7 +75,49 @@
             "text": " damage to a random enemy."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal",
+          "description": {
+            "plain": "If this card is in your Hand at the end of this turn, it is Exhausted.",
+            "runs": [
+              {
+                "text": "If this card is in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": " at the end of this turn, it is "
+              },
+              {
+                "text": "Exhausted",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust",
+          "description": {
+            "plain": "Removed until the end of combat.",
+            "runs": [
+              {
+                "text": "Removed until the end of combat."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Sweeping Gaze+",
@@ -103,6 +146,48 @@
           }
         ]
       },
+      "keywords": [
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal",
+          "description": {
+            "plain": "If this card is in your Hand at the end of this turn, it is Exhausted.",
+            "runs": [
+              {
+                "text": "If this card is in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": " at the end of this turn, it is "
+              },
+              {
+                "text": "Exhausted",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust",
+          "description": {
+            "plain": "Removed until the end of combat.",
+            "runs": [
+              {
+                "text": "Removed until the end of combat."
+              }
+            ]
+          }
+        }
+      ],
       "changed": [
         "description"
       ]

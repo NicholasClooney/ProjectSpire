@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "GOLD_AXE",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "GoldAxe",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/GoldAxe.cs",
     "cost": 1,
@@ -31,11 +31,16 @@
         "source": "Lab.resources.images.packed.card_portraits"
       }
     ],
-    "keywords": [
-      "Retain"
+    "keyword_upgrades": [
+      {
+        "operation": "add",
+        "keyword": "Retain",
+        "source": "OnUpgrade"
+      }
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Gold Axe",
       "cost": 1,
@@ -66,7 +71,25 @@
             "text": "Deal damage equal to the number of cards played this combat."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain",
+          "description": {
+            "plain": "Retained cards are not discarded at the end of turn.",
+            "runs": [
+              {
+                "text": "Retained cards are not discarded at the end of turn."
+              }
+            ]
+          }
+        }
+      ],
+      "changed": [
+        "keywords"
+      ]
     }
   }
 }

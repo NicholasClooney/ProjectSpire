@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "BIG_BANG",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "BigBang",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/BigBang.cs",
     "cost": 0,
@@ -38,11 +38,18 @@
       }
     ],
     "keywords": [
-      "Exhaust",
-      "Innate"
+      "Exhaust"
+    ],
+    "keyword_upgrades": [
+      {
+        "operation": "add",
+        "keyword": "Innate",
+        "source": "OnUpgrade"
+      }
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Big Bang",
       "cost": 0,
@@ -92,7 +99,22 @@
             "text": "."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust",
+          "description": {
+            "plain": "Removed until the end of combat.",
+            "runs": [
+              {
+                "text": "Removed until the end of combat."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Big Bang+",
@@ -143,7 +165,45 @@
             "text": "."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate",
+          "description": {
+            "plain": "Start each combat with this card in your Hand.",
+            "runs": [
+              {
+                "text": "Start each combat with this card in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust",
+          "description": {
+            "plain": "Removed until the end of combat.",
+            "runs": [
+              {
+                "text": "Removed until the end of combat."
+              }
+            ]
+          }
+        }
+      ],
+      "changed": [
+        "keywords"
+      ]
     }
   }
 }

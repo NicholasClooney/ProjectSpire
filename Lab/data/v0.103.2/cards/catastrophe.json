@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "CATASTROPHE",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "Catastrophe",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Catastrophe.cs",
     "cost": 2,
@@ -34,9 +34,6 @@
         "source": "Lab.resources.images.packed.card_portraits"
       }
     ],
-    "keywords": [
-      "Unplayable"
-    ],
     "upgrades": [
       {
         "var": "Cards",
@@ -45,6 +42,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Catastrophe",
       "cost": 2,

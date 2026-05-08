@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "KNOW_THY_PLACE",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "KnowThyPlace",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/KnowThyPlace.cs",
     "cost": 0,
@@ -38,6 +38,13 @@
     "keywords": [
       "Exhaust"
     ],
+    "keyword_upgrades": [
+      {
+        "operation": "remove",
+        "keyword": "Exhaust",
+        "source": "OnUpgrade"
+      }
+    ],
     "tips": [
       {
         "kind": "hover_tip_power",
@@ -64,6 +71,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Know Thy Place",
       "cost": 0,
@@ -106,7 +114,22 @@
             "text": "."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust",
+          "description": {
+            "plain": "Removed until the end of combat.",
+            "runs": [
+              {
+                "text": "Removed until the end of combat."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Know Thy Place+",
@@ -150,7 +173,10 @@
             "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "keywords"
+      ]
     }
   }
 }

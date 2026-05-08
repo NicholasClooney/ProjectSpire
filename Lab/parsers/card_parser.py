@@ -25,14 +25,15 @@ SCRIPT_PATH = Path(__file__).resolve()
 LAB_DIR = SCRIPT_PATH.parent.parent
 DECOMPILED_DIR = LAB_DIR / "decompiled"
 CARDS_SUBDIR = "MegaCrit.Sts2.Core.Models.Cards"
-PARSER_VERSION = "0.2.3"
-SCHEMA_VERSION = "0.2.3"
+PARSER_VERSION = "0.2.4"
+SCHEMA_VERSION = "0.2.4"
 DEFAULT_LANGUAGE = "eng"
 RESOURCES_DIR = LAB_DIR / "resources"
 LOCALIZATION_DIR = RESOURCES_DIR / "localization"
 IMAGE_DIR = RESOURCES_DIR / "images"
 PACKED_CARD_PORTRAITS_DIR = IMAGE_DIR / "packed" / "card_portraits"
 CARD_POOLS_SUBDIR = "MegaCrit.Sts2.Core.Models.CardPools"
+CARD_ENTITIES_SUBDIR = "MegaCrit.Sts2.Core.Entities.Cards"
 
 CARD_TYPE_NAME = {
     "Attack": "Attack",
@@ -88,6 +89,13 @@ class CostUpgradeDelta:
 
 
 @dataclass
+class KeywordUpgrade:
+    operation: str
+    keyword: str
+    source: str
+
+
+@dataclass
 class EnergyCostInfo:
     kind: str
     value: int
@@ -121,16 +129,26 @@ class ResolvedText:
 
 
 @dataclass
+class ResolvedKeyword:
+    id: str
+    placement: str
+    title: str
+    description: ResolvedText
+
+
+@dataclass
 class ResolvedCardState:
     title: str
     cost: int
     energy_cost: EnergyCostInfo
     description: ResolvedText
+    keywords: list[ResolvedKeyword] = field(default_factory=list)
     changed: list[str] | None = None
 
 
 @dataclass
 class ResolvedCard:
+    keyword_period: str
     base: ResolvedCardState
     upgraded: ResolvedCardState | None = None
 
@@ -153,6 +171,7 @@ class RawCardInfo:
     tags: list[str] = field(default_factory=list)
     upgrades: list[UpgradeDelta] = field(default_factory=list)
     cost_upgrades: list[CostUpgradeDelta] = field(default_factory=list)
+    keyword_upgrades: list[KeywordUpgrade] = field(default_factory=list)
     tips: list[CardRelation] = field(default_factory=list)
     applies_powers: list[AppliedPower] = field(default_factory=list)
     relations: list[CardRelation] = field(default_factory=list)
@@ -173,6 +192,10 @@ def class_name_to_id(class_name: str) -> str:
 
 def default_localization_path(language: str) -> Path:
     return LOCALIZATION_DIR / language / "cards.json"
+
+
+def default_keyword_localization_path(language: str) -> Path:
+    return LOCALIZATION_DIR / language / "card_keywords.json"
 
 
 def load_localization(path: Path) -> dict[str, str]:
@@ -329,6 +352,56 @@ def load_card_pool_map(version: str | None) -> dict[str, str]:
     return card_pools
 
 
+@lru_cache(maxsize=None)
+def card_keyword_order(version: str) -> tuple[list[str], list[str], dict[str, str]]:
+    keyword_dir = DECOMPILED_DIR / version / CARD_ENTITIES_SUBDIR
+    enum_path = keyword_dir / "CardKeyword.cs"
+    order_path = keyword_dir / "CardKeywordOrder.cs"
+    if not enum_path.exists():
+        raise FileNotFoundError(f"Missing CardKeyword source for {version}: {enum_path}")
+    if not order_path.exists():
+        raise FileNotFoundError(f"Missing CardKeywordOrder source for {version}: {order_path}")
+
+    enum_content = enum_path.read_text(encoding="utf-8")
+    order_content = order_path.read_text(encoding="utf-8")
+    enum_match = re.search(r"public enum CardKeyword\s*\{(?P<body>.*?)\}", enum_content, re.DOTALL)
+    if not enum_match:
+        raise ValueError(f"Could not parse CardKeyword enum for {version}: {enum_path}")
+
+    keyword_names = [
+        line.strip().rstrip(",")
+        for line in enum_match.group("body").splitlines()
+        if line.strip() and not line.strip().startswith("//")
+    ]
+
+    def extract_order_array(name: str) -> list[str]:
+        match = re.search(
+            rf"{name}\s*=\s*new CardKeyword\[\d+\]\s*\{{(?P<body>.*?)\}};",
+            order_content,
+            re.DOTALL,
+        )
+        if not match:
+            raise ValueError(f"Could not parse CardKeywordOrder.{name} for {version}: {order_path}")
+        return re.findall(r"CardKeyword\.([A-Za-z0-9_]+)", match.group("body"))
+
+    before = extract_order_array("beforeDescription")
+    after = extract_order_array("afterDescription")
+    before_set = set(before)
+    after_set = set(after)
+    overlap = sorted(before_set & after_set)
+    if overlap:
+        raise ValueError(f"Card keywords appear in both display placement arrays for {version}: {', '.join(overlap)}")
+
+    displayed_keywords = [keyword for keyword in keyword_names if keyword != "None"]
+    missing = sorted(keyword for keyword in displayed_keywords if keyword not in before_set and keyword not in after_set)
+    if missing:
+        raise ValueError(f"Card keywords are missing display placement for {version}: {', '.join(missing)}")
+
+    placement = {keyword: "beforeDescription" for keyword in before}
+    placement.update({keyword: "afterDescription" for keyword in after})
+    return before, after, placement
+
+
 def energy_cost_info(cost: int, costs_x: bool) -> EnergyCostInfo:
     return EnergyCostInfo(kind="x" if costs_x else "int", value=cost)
 
@@ -422,18 +495,11 @@ def extract_assets(card_id: str, pool: str | None) -> list[CardAsset]:
 
 def extract_keywords(content: str) -> list[str]:
     found: list[str] = []
-    keyword_names = [
-        "Exhaust",
-        "Innate",
-        "Ethereal",
-        "Retain",
-        "Unplayable",
-        "Sly",
-        "Eternal",
-    ]
-    for keyword in keyword_names:
-        if re.search(rf"CardKeyword\.{keyword}", content):
+    canonical_match = re.search(r"CanonicalKeywords\s*=>\s*(.*?);", content, re.DOTALL)
+    if canonical_match:
+        for keyword in re.findall(r"CardKeyword\.(\w+)", canonical_match.group(1)):
             found.append(keyword)
+
     for keyword, pattern in [
         ("Ethereal", r"IsEthereal\s*=>\s*true"),
         ("Innate", r"IsInnate\s*=>\s*true"),
@@ -443,6 +509,48 @@ def extract_keywords(content: str) -> list[str]:
         if keyword not in found and re.search(pattern, content):
             found.append(keyword)
     return found
+
+
+def extract_method_body(content: str, method_name: str) -> str:
+    match = re.search(rf"\b{method_name}\s*\([^)]*\)\s*\{{", content)
+    if not match:
+        return ""
+
+    body_start = match.end()
+    depth = 1
+    index = body_start
+    while index < len(content):
+        char = content[index]
+        if char == "{":
+            depth += 1
+        elif char == "}":
+            depth -= 1
+            if depth == 0:
+                return content[body_start:index]
+        index += 1
+    return ""
+
+
+def extract_keyword_upgrades(content: str) -> list[KeywordUpgrade]:
+    body = extract_method_body(content, "OnUpgrade")
+    if not body:
+        return []
+
+    upgrades: list[KeywordUpgrade] = []
+    for match in re.finditer(r"\b(AddKeyword|RemoveKeyword)\(\s*CardKeyword\.(\w+)\s*\)", body):
+        operation = "add" if match.group(1) == "AddKeyword" else "remove"
+        upgrades.append(KeywordUpgrade(operation=operation, keyword=match.group(2), source="OnUpgrade"))
+    return upgrades
+
+
+def apply_keyword_upgrades(keywords: list[str], keyword_upgrades: list[KeywordUpgrade]) -> list[str]:
+    upgraded_keywords = list(keywords)
+    for upgrade in keyword_upgrades:
+        if upgrade.operation == "add" and upgrade.keyword not in upgraded_keywords:
+            upgraded_keywords.append(upgrade.keyword)
+        elif upgrade.operation == "remove" and upgrade.keyword in upgraded_keywords:
+            upgraded_keywords.remove(upgrade.keyword)
+    return upgraded_keywords
 
 
 def extract_tags(content: str) -> list[str]:
@@ -731,6 +839,48 @@ def resolve_text(markup: str, vars_by_name: dict[str, Any], changed_vars: set[st
     return ResolvedText(plain=text_plain(runs), runs=runs)
 
 
+def keyword_loc_key(keyword: str, suffix: str) -> str:
+    return f"{re.sub(r'(?<!^)(?=[A-Z])', '_', keyword).upper()}.{suffix}"
+
+
+def ordered_keywords(keywords: list[str], before_keywords: list[str], after_keywords: list[str]) -> list[str]:
+    keyword_set = set(keywords)
+    before_visible = [keyword for keyword in reversed(before_keywords) if keyword in keyword_set]
+    after_visible = [keyword for keyword in after_keywords if keyword in keyword_set]
+    return before_visible + after_visible
+
+
+def resolve_keywords(
+    keywords: list[str],
+    keyword_localization: dict[str, str],
+    before_keywords: list[str],
+    after_keywords: list[str],
+    keyword_placements: dict[str, str],
+) -> list[ResolvedKeyword]:
+    resolved: list[ResolvedKeyword] = []
+    missing_keys: list[str] = []
+    for keyword in ordered_keywords(keywords, before_keywords, after_keywords):
+        title_key = keyword_loc_key(keyword, "title")
+        description_key = keyword_loc_key(keyword, "description")
+        for key in (title_key, description_key):
+            if key not in keyword_localization:
+                missing_keys.append(key)
+        if missing_keys:
+            continue
+        resolved.append(
+            ResolvedKeyword(
+                id=keyword,
+                placement=keyword_placements[keyword],
+                title=keyword_localization[title_key],
+                description=resolve_text(keyword_localization[description_key], {}, set(), upgraded=False),
+            )
+        )
+
+    if missing_keys:
+        raise ValueError(f"Missing required card keyword localization keys: {', '.join(sorted(set(missing_keys)))}")
+    return resolved
+
+
 def build_resolved_card(
     card_id: str,
     cost: int,
@@ -740,14 +890,22 @@ def build_resolved_card(
     vars_by_name: dict[str, int],
     upgrades: list[UpgradeDelta],
     cost_upgrades: list[CostUpgradeDelta],
+    keywords: list[str],
+    keyword_upgrades: list[KeywordUpgrade],
     localization: dict[str, str],
+    keyword_localization: dict[str, str],
+    keyword_version: str,
 ) -> ResolvedCard:
     title_key = f"{card_id}.title"
     description_key = f"{card_id}.description"
     missing_keys = [key for key in (title_key, description_key) if key not in localization]
+    if "PERIOD" not in keyword_localization:
+        missing_keys.append("card_keywords.PERIOD")
     if missing_keys:
         raise ValueError(f"Missing required localization keys for {card_id}: {', '.join(missing_keys)}")
 
+    before_keywords, after_keywords, keyword_placements = card_keyword_order(keyword_version)
+    base_keywords = resolve_keywords(keywords, keyword_localization, before_keywords, after_keywords, keyword_placements)
     base_display_vars: dict[str, Any] = {
         **vars_by_name,
         "CardType": card_type,
@@ -770,6 +928,7 @@ def build_resolved_card(
         cost=cost,
         energy_cost=energy_cost_info(cost, costs_x),
         description=base_description,
+        keywords=base_keywords,
     )
 
     upgraded_vars = dict(vars_by_name)
@@ -806,24 +965,35 @@ def build_resolved_card(
         "Violence": False,
     }
     upgraded_description = resolve_text(localization[description_key], upgraded_display_vars, changed_vars, upgraded=True)
+    upgraded_keywords = resolve_keywords(
+        apply_keyword_upgrades(keywords, keyword_upgrades),
+        keyword_localization,
+        before_keywords,
+        after_keywords,
+        keyword_placements,
+    )
     changed: list[str] = []
     if upgraded_cost != cost:
         changed.append("cost")
     if upgraded_description.plain != base_description.plain:
         changed.append("description")
+    if [keyword.id for keyword in upgraded_keywords] != [keyword.id for keyword in base_keywords]:
+        changed.append("keywords")
     upgraded_state = ResolvedCardState(
         title=f"{localization[title_key]}+",
         cost=upgraded_cost,
         energy_cost=energy_cost_info(upgraded_cost, costs_x),
         changed=changed,
         description=upgraded_description,
+        keywords=upgraded_keywords,
     )
-    return ResolvedCard(base=base, upgraded=upgraded_state)
+    return ResolvedCard(keyword_period=keyword_localization["PERIOD"], base=base, upgraded=upgraded_state)
 
 
 def parse_card(
     filepath: Path,
     localization: dict[str, str] | None = None,
+    keyword_localization: dict[str, str] | None = None,
     card_pools: dict[str, str] | None = None,
 ) -> CardInfo:
     content = filepath.read_text(encoding="utf-8")
@@ -834,6 +1004,7 @@ def parse_card(
     display_path = str(filepath.relative_to(LAB_DIR.parent))
 
     localization = localization or {}
+    keyword_localization = keyword_localization or {}
     card_pools = card_pools or {}
     card_pool = card_pools.get(card_id)
     if card_pool is None:
@@ -844,6 +1015,8 @@ def parse_card(
     vars_by_name = extract_vars(content, dynamic_var_type_names(version) if version else {})
     upgrades = extract_upgrades(content, dynamic_var_accessor_keys(version) if version else {})
     cost_upgrades = extract_cost_upgrades(content)
+    keywords = extract_keywords(content)
+    keyword_upgrades = extract_keyword_upgrades(content)
 
     notes: list[str] = []
     if localization and description_key not in localization:
@@ -851,7 +1024,21 @@ def parse_card(
 
     resolved: ResolvedCard | dict[str, Any] = {}
     if localization:
-        resolved = build_resolved_card(card_id, cost, costs_x, card_type, target, vars_by_name, upgrades, cost_upgrades, localization)
+        resolved = build_resolved_card(
+            card_id,
+            cost,
+            costs_x,
+            card_type,
+            target,
+            vars_by_name,
+            upgrades,
+            cost_upgrades,
+            keywords,
+            keyword_upgrades,
+            localization,
+            keyword_localization,
+            version or latest_decompiled_version(),
+        )
 
     return CardInfo(
         schema_version=SCHEMA_VERSION,
@@ -873,10 +1060,11 @@ def parse_card(
             ),
             vars=vars_by_name,
             assets=extract_assets(card_id, card_pools.get(card_id)),
-            keywords=extract_keywords(content),
+            keywords=keywords,
             tags=extract_tags(content),
             upgrades=upgrades,
             cost_upgrades=cost_upgrades,
+            keyword_upgrades=keyword_upgrades,
             tips=extract_tips(content),
             applies_powers=extract_applied_powers(content),
             relations=extract_relations(content),
@@ -889,9 +1077,10 @@ def parse_card(
 def parse_many(
     card_dir: Path,
     localization: dict[str, str] | None = None,
+    keyword_localization: dict[str, str] | None = None,
     card_pools: dict[str, str] | None = None,
 ) -> list[CardInfo]:
-    return [parse_card(path, localization, card_pools) for path in sorted(card_dir.glob("*.cs"))]
+    return [parse_card(path, localization, keyword_localization, card_pools) for path in sorted(card_dir.glob("*.cs"))]
 
 
 def to_jsonable(value: Any) -> Any:
@@ -1039,12 +1228,13 @@ def main() -> None:
     input_path, inferred_version = resolve_cards_dir(args.path, args.version)
     localization_path = args.localization or default_localization_path(args.language)
     localization = {} if args.raw_only else load_localization(localization_path)
+    keyword_localization = {} if args.raw_only else load_localization(default_keyword_localization_path(args.language))
     card_pools = load_card_pool_map(args.version or inferred_version)
     output_dir = args.output_dir.resolve() if args.output_dir else default_output_dir(args.version or inferred_version)
     audit_output_dir = default_audit_output_dir(args.version or inferred_version, output_dir)
 
     if input_path.is_file():
-        card = parse_card(input_path, localization, card_pools)
+        card = parse_card(input_path, localization, keyword_localization, card_pools)
         if args.stdout:
             print(json.dumps(to_jsonable(card), indent=2, sort_keys=False))
             return
@@ -1053,7 +1243,7 @@ def main() -> None:
         print(output_path)
     else:
         started_at = time.perf_counter()
-        cards = parse_many(input_path, localization, card_pools)
+        cards = parse_many(input_path, localization, keyword_localization, card_pools)
         if args.stdout:
             print(json.dumps(to_jsonable(cards), indent=2, sort_keys=False))
             return

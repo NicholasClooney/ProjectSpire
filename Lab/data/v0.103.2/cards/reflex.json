@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "REFLEX",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "Reflex",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Reflex.cs",
     "cost": 3,
@@ -40,6 +40,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Reflex",
       "cost": 3,
@@ -61,7 +62,29 @@
             "text": " cards."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Sly",
+          "placement": "beforeDescription",
+          "title": "Sly",
+          "description": {
+            "plain": "If this card is discarded from your Hand before the end of your turn, play it for free.",
+            "runs": [
+              {
+                "text": "If this card is discarded from your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": " before the end of your turn, play it for free."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Reflex+",
@@ -86,6 +109,28 @@
           }
         ]
       },
+      "keywords": [
+        {
+          "id": "Sly",
+          "placement": "beforeDescription",
+          "title": "Sly",
+          "description": {
+            "plain": "If this card is discarded from your Hand before the end of your turn, play it for free.",
+            "runs": [
+              {
+                "text": "If this card is discarded from your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": " before the end of your turn, play it for free."
+              }
+            ]
+          }
+        }
+      ],
       "changed": [
         "description"
       ]

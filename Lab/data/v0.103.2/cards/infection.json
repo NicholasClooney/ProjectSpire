@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "INFECTION",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "Infection",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Infection.cs",
     "cost": -1,
@@ -39,6 +39,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Infection",
       "cost": -1,
@@ -67,7 +68,22 @@
             "text": " damage."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable",
+          "description": {
+            "plain": "Unplayable cards cannot be played.",
+            "runs": [
+              {
+                "text": "Unplayable cards cannot be played."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Infection+",
@@ -97,7 +113,22 @@
             "text": " damage."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable",
+          "description": {
+            "plain": "Unplayable cards cannot be played.",
+            "runs": [
+              {
+                "text": "Unplayable cards cannot be played."
+              }
+            ]
+          }
+        }
+      ]
     }
   }
 }

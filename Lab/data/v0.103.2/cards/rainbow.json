@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "RAINBOW",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "Rainbow",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Rainbow.cs",
     "cost": 2,
@@ -29,6 +29,13 @@
     "keywords": [
       "Exhaust"
     ],
+    "keyword_upgrades": [
+      {
+        "operation": "remove",
+        "keyword": "Exhaust",
+        "source": "OnUpgrade"
+      }
+    ],
     "tips": [
       {
         "kind": "hover_tip_static",
@@ -53,6 +60,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Rainbow",
       "cost": 2,
@@ -106,7 +114,22 @@
             "text": "."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust",
+          "description": {
+            "plain": "Removed until the end of combat.",
+            "runs": [
+              {
+                "text": "Removed until the end of combat."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Rainbow+",
@@ -161,7 +184,10 @@
             "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "keywords"
+      ]
     }
   }
 }

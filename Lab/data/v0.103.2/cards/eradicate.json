@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "ERADICATE",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "Eradicate",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Eradicate.cs",
     "cost": 0,
@@ -40,6 +40,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Eradicate",
       "cost": 0,
@@ -61,7 +62,22 @@
             "text": " damage X times."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain",
+          "description": {
+            "plain": "Retained cards are not discarded at the end of turn.",
+            "runs": [
+              {
+                "text": "Retained cards are not discarded at the end of turn."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Eradicate+",
@@ -86,6 +102,21 @@
           }
         ]
       },
+      "keywords": [
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain",
+          "description": {
+            "plain": "Retained cards are not discarded at the end of turn.",
+            "runs": [
+              {
+                "text": "Retained cards are not discarded at the end of turn."
+              }
+            ]
+          }
+        }
+      ],
       "changed": [
         "description"
       ]

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "FLAK_CANNON",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "FlakCannon",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/FlakCannon.cs",
     "cost": 2,
@@ -37,9 +37,6 @@
         "source": "Lab.resources.images.packed.card_portraits"
       }
     ],
-    "keywords": [
-      "Exhaust"
-    ],
     "upgrades": [
       {
         "var": "Damage",
@@ -48,6 +45,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Flak Cannon",
       "cost": 2,

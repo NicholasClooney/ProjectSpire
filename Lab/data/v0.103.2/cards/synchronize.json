@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "SYNCHRONIZE",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "Synchronize",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Synchronize.cs",
     "cost": 1,
@@ -34,6 +34,13 @@
     "keywords": [
       "Exhaust"
     ],
+    "keyword_upgrades": [
+      {
+        "operation": "remove",
+        "keyword": "Exhaust",
+        "source": "OnUpgrade"
+      }
+    ],
     "tips": [
       {
         "kind": "hover_tip_power",
@@ -50,6 +57,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Synchronize",
       "cost": 1,
@@ -78,7 +86,22 @@
             "text": " this turn for each unique Orb you have."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust",
+          "description": {
+            "plain": "Removed until the end of combat.",
+            "runs": [
+              {
+                "text": "Removed until the end of combat."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Synchronize+",
@@ -108,7 +131,10 @@
             "text": " this turn for each unique Orb you have."
           }
         ]
-      }
+      },
+      "changed": [
+        "keywords"
+      ]
     }
   }
 }

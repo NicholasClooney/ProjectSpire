@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "POOR_SLEEP",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "PoorSleep",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/PoorSleep.cs",
     "cost": -1,
@@ -32,11 +32,12 @@
       }
     ],
     "keywords": [
-      "Retain",
-      "Unplayable"
+      "Unplayable",
+      "Retain"
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Poor Sleep",
       "cost": -1,
@@ -46,7 +47,35 @@
       },
       "description": {
         "plain": ""
-      }
+      },
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable",
+          "description": {
+            "plain": "Unplayable cards cannot be played.",
+            "runs": [
+              {
+                "text": "Unplayable cards cannot be played."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain",
+          "description": {
+            "plain": "Retained cards are not discarded at the end of turn.",
+            "runs": [
+              {
+                "text": "Retained cards are not discarded at the end of turn."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Poor Sleep+",
@@ -57,7 +86,35 @@
       },
       "description": {
         "plain": ""
-      }
+      },
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable",
+          "description": {
+            "plain": "Unplayable cards cannot be played.",
+            "runs": [
+              {
+                "text": "Unplayable cards cannot be played."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain",
+          "description": {
+            "plain": "Retained cards are not discarded at the end of turn.",
+            "runs": [
+              {
+                "text": "Retained cards are not discarded at the end of turn."
+              }
+            ]
+          }
+        }
+      ]
     }
   }
 }

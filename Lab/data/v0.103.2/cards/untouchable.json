@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "UNTOUCHABLE",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "Untouchable",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Untouchable.cs",
     "cost": 2,
@@ -40,6 +40,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Untouchable",
       "cost": 2,
@@ -68,7 +69,29 @@
             "text": "."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Sly",
+          "placement": "beforeDescription",
+          "title": "Sly",
+          "description": {
+            "plain": "If this card is discarded from your Hand before the end of your turn, play it for free.",
+            "runs": [
+              {
+                "text": "If this card is discarded from your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": " before the end of your turn, play it for free."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Untouchable+",
@@ -100,6 +123,28 @@
           }
         ]
       },
+      "keywords": [
+        {
+          "id": "Sly",
+          "placement": "beforeDescription",
+          "title": "Sly",
+          "description": {
+            "plain": "If this card is discarded from your Hand before the end of your turn, play it for free.",
+            "runs": [
+              {
+                "text": "If this card is discarded from your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": " before the end of your turn, play it for free."
+              }
+            ]
+          }
+        }
+      ],
       "changed": [
         "description"
       ]

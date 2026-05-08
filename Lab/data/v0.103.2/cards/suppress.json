@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "SUPPRESS",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "Suppress",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Suppress.cs",
     "cost": 0,
@@ -59,6 +59,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Suppress",
       "cost": 0,
@@ -94,7 +95,29 @@
             "text": "."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate",
+          "description": {
+            "plain": "Start each combat with this card in your Hand.",
+            "runs": [
+              {
+                "text": "Start each combat with this card in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Suppress+",
@@ -134,6 +157,28 @@
           }
         ]
       },
+      "keywords": [
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate",
+          "description": {
+            "plain": "Start each combat with this card in your Hand.",
+            "runs": [
+              {
+                "text": "Start each combat with this card in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        }
+      ],
       "changed": [
         "description"
       ]

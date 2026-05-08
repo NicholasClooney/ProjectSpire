@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "FOLLY",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "Folly",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Folly.cs",
     "cost": -1,
@@ -27,13 +27,14 @@
       }
     ],
     "keywords": [
-      "Innate",
-      "Ethereal",
       "Unplayable",
-      "Eternal"
+      "Eternal",
+      "Innate",
+      "Ethereal"
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Folly",
       "cost": -1,
@@ -43,7 +44,89 @@
       },
       "description": {
         "plain": ""
-      }
+      },
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable",
+          "description": {
+            "plain": "Unplayable cards cannot be played.",
+            "runs": [
+              {
+                "text": "Unplayable cards cannot be played."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate",
+          "description": {
+            "plain": "Start each combat with this card in your Hand.",
+            "runs": [
+              {
+                "text": "Start each combat with this card in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal",
+          "description": {
+            "plain": "If this card is in your Hand at the end of this turn, it is Exhausted.",
+            "runs": [
+              {
+                "text": "If this card is in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": " at the end of this turn, it is "
+              },
+              {
+                "text": "Exhausted",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Eternal",
+          "placement": "afterDescription",
+          "title": "Eternal",
+          "description": {
+            "plain": "Cannot be removed or transformed from your Deck.",
+            "runs": [
+              {
+                "text": "Cannot be removed or transformed from your "
+              },
+              {
+                "text": "Deck",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Folly+",
@@ -54,7 +137,89 @@
       },
       "description": {
         "plain": ""
-      }
+      },
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable",
+          "description": {
+            "plain": "Unplayable cards cannot be played.",
+            "runs": [
+              {
+                "text": "Unplayable cards cannot be played."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate",
+          "description": {
+            "plain": "Start each combat with this card in your Hand.",
+            "runs": [
+              {
+                "text": "Start each combat with this card in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal",
+          "description": {
+            "plain": "If this card is in your Hand at the end of this turn, it is Exhausted.",
+            "runs": [
+              {
+                "text": "If this card is in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": " at the end of this turn, it is "
+              },
+              {
+                "text": "Exhausted",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Eternal",
+          "placement": "afterDescription",
+          "title": "Eternal",
+          "description": {
+            "plain": "Cannot be removed or transformed from your Deck.",
+            "runs": [
+              {
+                "text": "Cannot be removed or transformed from your "
+              },
+              {
+                "text": "Deck",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        }
+      ]
     }
   }
 }

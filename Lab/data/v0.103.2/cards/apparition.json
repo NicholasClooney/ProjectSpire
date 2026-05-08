@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "APPARITION",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "Apparition",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Apparition.cs",
     "cost": 1,
@@ -30,8 +30,15 @@
       }
     ],
     "keywords": [
-      "Exhaust",
-      "Ethereal"
+      "Ethereal",
+      "Exhaust"
+    ],
+    "keyword_upgrades": [
+      {
+        "operation": "remove",
+        "keyword": "Ethereal",
+        "source": "OnUpgrade"
+      }
     ],
     "tips": [
       {
@@ -49,6 +56,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Apparition",
       "cost": 1,
@@ -77,7 +85,49 @@
             "text": "."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal",
+          "description": {
+            "plain": "If this card is in your Hand at the end of this turn, it is Exhausted.",
+            "runs": [
+              {
+                "text": "If this card is in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": " at the end of this turn, it is "
+              },
+              {
+                "text": "Exhausted",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust",
+          "description": {
+            "plain": "Removed until the end of combat.",
+            "runs": [
+              {
+                "text": "Removed until the end of combat."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Apparition+",
@@ -107,7 +157,25 @@
             "text": "."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust",
+          "description": {
+            "plain": "Removed until the end of combat.",
+            "runs": [
+              {
+                "text": "Removed until the end of combat."
+              }
+            ]
+          }
+        }
+      ],
+      "changed": [
+        "keywords"
+      ]
     }
   }
 }

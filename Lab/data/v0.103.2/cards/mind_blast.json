@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "MIND_BLAST",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "MindBlast",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/MindBlast.cs",
     "cost": 1,
@@ -43,6 +43,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Mind Blast",
       "cost": 1,
@@ -64,7 +65,29 @@
             "text": "."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate",
+          "description": {
+            "plain": "Start each combat with this card in your Hand.",
+            "runs": [
+              {
+                "text": "Start each combat with this card in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Mind Blast+",
@@ -88,6 +111,28 @@
           }
         ]
       },
+      "keywords": [
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate",
+          "description": {
+            "plain": "Start each combat with this card in your Hand.",
+            "runs": [
+              {
+                "text": "Start each combat with this card in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        }
+      ],
       "changed": [
         "cost"
       ]

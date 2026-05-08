@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "WRITHE",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "Writhe",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Writhe.cs",
     "cost": -1,
@@ -32,6 +32,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Writhe",
       "cost": -1,
@@ -41,7 +42,42 @@
       },
       "description": {
         "plain": ""
-      }
+      },
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable",
+          "description": {
+            "plain": "Unplayable cards cannot be played.",
+            "runs": [
+              {
+                "text": "Unplayable cards cannot be played."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate",
+          "description": {
+            "plain": "Start each combat with this card in your Hand.",
+            "runs": [
+              {
+                "text": "Start each combat with this card in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Writhe+",
@@ -52,7 +88,42 @@
       },
       "description": {
         "plain": ""
-      }
+      },
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable",
+          "description": {
+            "plain": "Unplayable cards cannot be played.",
+            "runs": [
+              {
+                "text": "Unplayable cards cannot be played."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate",
+          "description": {
+            "plain": "Start each combat with this card in your Hand.",
+            "runs": [
+              {
+                "text": "Start each combat with this card in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        }
+      ]
     }
   }
 }

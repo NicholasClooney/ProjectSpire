@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "CURSE_OF_THE_BELL",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "CurseOfTheBell",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/CurseOfTheBell.cs",
     "cost": -1,
@@ -27,11 +27,12 @@
       }
     ],
     "keywords": [
-      "Unplayable",
-      "Eternal"
+      "Eternal",
+      "Unplayable"
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Curse of the Bell",
       "cost": -1,
@@ -41,7 +42,42 @@
       },
       "description": {
         "plain": ""
-      }
+      },
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable",
+          "description": {
+            "plain": "Unplayable cards cannot be played.",
+            "runs": [
+              {
+                "text": "Unplayable cards cannot be played."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Eternal",
+          "placement": "afterDescription",
+          "title": "Eternal",
+          "description": {
+            "plain": "Cannot be removed or transformed from your Deck.",
+            "runs": [
+              {
+                "text": "Cannot be removed or transformed from your "
+              },
+              {
+                "text": "Deck",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Curse of the Bell+",
@@ -52,7 +88,42 @@
       },
       "description": {
         "plain": ""
-      }
+      },
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable",
+          "description": {
+            "plain": "Unplayable cards cannot be played.",
+            "runs": [
+              {
+                "text": "Unplayable cards cannot be played."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Eternal",
+          "placement": "afterDescription",
+          "title": "Eternal",
+          "description": {
+            "plain": "Cannot be removed or transformed from your Deck.",
+            "runs": [
+              {
+                "text": "Cannot be removed or transformed from your "
+              },
+              {
+                "text": "Deck",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        }
+      ]
     }
   }
 }

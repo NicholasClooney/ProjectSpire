@@ -187,6 +187,71 @@ def extract_source_cost_upgrades(content: str) -> list[dict[str, Any]]:
     ]
 
 
+def extract_source_keywords(content: str) -> list[str]:
+    keywords: list[str] = []
+    canonical_match = re.search(r"CanonicalKeywords\s*=>\s*(.*?);", content, re.DOTALL)
+    if canonical_match:
+        keywords.extend(re.findall(r"CardKeyword\.(\w+)", canonical_match.group(1)))
+
+    for keyword, pattern in [
+        ("Ethereal", r"IsEthereal\s*=>\s*true"),
+        ("Innate", r"IsInnate\s*=>\s*true"),
+        ("Retain", r"IsRetain(?:able)?\s*=>\s*true"),
+        ("Unplayable", r"IsUnplayable\s*=>\s*true"),
+    ]:
+        if keyword not in keywords and re.search(pattern, content):
+            keywords.append(keyword)
+    return keywords
+
+
+def compare_scalar_list(card_id: str, label: str, source_items: list[str], json_items: list[str]) -> list[Finding]:
+    findings: list[Finding] = []
+    source_set = set(source_items)
+    json_set = set(json_items)
+    for missing in sorted(source_set - json_set):
+        findings.append(Finding("ERROR", card_id, f"missing {label} {missing!r}"))
+    for extra in sorted(json_set - source_set):
+        findings.append(Finding("WARN", card_id, f"extra {label} {extra!r}"))
+    return findings
+
+
+def extract_method_body(content: str, method_name: str) -> str:
+    match = re.search(rf"\b{method_name}\s*\([^)]*\)\s*\{{", content)
+    if not match:
+        return ""
+
+    body_start = match.end()
+    depth = 1
+    index = body_start
+    while index < len(content):
+        char = content[index]
+        if char == "{":
+            depth += 1
+        elif char == "}":
+            depth -= 1
+            if depth == 0:
+                return content[body_start:index]
+        index += 1
+    return ""
+
+
+def extract_source_keyword_upgrades(content: str) -> list[dict[str, Any]]:
+    body = extract_method_body(content, "OnUpgrade")
+    if not body:
+        return []
+
+    upgrades: list[dict[str, Any]] = []
+    for match in re.finditer(r"\b(AddKeyword|RemoveKeyword)\(\s*CardKeyword\.(\w+)\s*\)", body):
+        upgrades.append(
+            {
+                "operation": "add" if match.group(1) == "AddKeyword" else "remove",
+                "keyword": match.group(2),
+                "source": "OnUpgrade",
+            }
+        )
+    return upgrades
+
+
 def extract_source_tips(content: str) -> list[dict[str, str]]:
     tips: list[dict[str, str]] = []
     for match in re.finditer(r"HoverTipFactory\.Static\(StaticHoverTip\.(\w+)\)", content):
@@ -337,8 +402,10 @@ def audit_card(
         findings.append(Finding("ERROR", card_id, f"raw.energy_cost expected {expected_energy_cost!r}, found {raw.get('energy_cost')!r}"))
 
     findings.extend(compare_dicts(card_id, "raw.vars", extract_source_vars(content, type_names), raw.get("vars", {})))
+    findings.extend(compare_scalar_list(card_id, "raw.keywords", extract_source_keywords(content), raw.get("keywords", [])))
     findings.extend(compare_list(card_id, "raw.upgrades", extract_source_upgrades(content, accessor_keys), raw.get("upgrades", [])))
     findings.extend(compare_list(card_id, "raw.cost_upgrades", extract_source_cost_upgrades(content), raw.get("cost_upgrades", [])))
+    findings.extend(compare_list(card_id, "raw.keyword_upgrades", extract_source_keyword_upgrades(content), raw.get("keyword_upgrades", [])))
     findings.extend(compare_list(card_id, "raw.tips", extract_source_tips(content), raw.get("tips", [])))
     findings.extend(compare_list(card_id, "raw.relations", extract_source_relations(content), raw.get("relations", [])))
 

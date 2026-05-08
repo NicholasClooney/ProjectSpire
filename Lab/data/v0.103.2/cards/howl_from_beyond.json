@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "HOWL_FROM_BEYOND",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "HowlFromBeyond",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/HowlFromBeyond.cs",
     "cost": 3,
@@ -29,9 +29,6 @@
         "source": "Lab.resources.images.packed.card_portraits"
       }
     ],
-    "keywords": [
-      "Exhaust"
-    ],
     "upgrades": [
       {
         "var": "Damage",
@@ -40,6 +37,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Howl from Beyond",
       "cost": 3,

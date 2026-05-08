@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "THE_SEALED_THRONE",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "TheSealedThrone",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/TheSealedThrone.cs",
     "cost": 1,
@@ -31,8 +31,12 @@
         "source": "Lab.resources.images.packed.card_portraits"
       }
     ],
-    "keywords": [
-      "Innate"
+    "keyword_upgrades": [
+      {
+        "operation": "add",
+        "keyword": "Innate",
+        "source": "OnUpgrade"
+      }
     ],
     "applies_powers": [
       {
@@ -43,6 +47,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "The Sealed Throne",
       "cost": 1,
@@ -73,7 +78,32 @@
             "text": "Whenever you play a card, gain *."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Innate",
+          "placement": "beforeDescription",
+          "title": "Innate",
+          "description": {
+            "plain": "Start each combat with this card in your Hand.",
+            "runs": [
+              {
+                "text": "Start each combat with this card in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        }
+      ],
+      "changed": [
+        "keywords"
+      ]
     }
   }
 }

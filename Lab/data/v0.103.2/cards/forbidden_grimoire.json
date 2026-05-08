@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "FORBIDDEN_GRIMOIRE",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "ForbiddenGrimoire",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/ForbiddenGrimoire.cs",
     "cost": 2,
@@ -50,6 +50,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Forbidden Grimoire",
       "cost": 2,
@@ -71,7 +72,29 @@
             "text": "."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Eternal",
+          "placement": "afterDescription",
+          "title": "Eternal",
+          "description": {
+            "plain": "Cannot be removed or transformed from your Deck.",
+            "runs": [
+              {
+                "text": "Cannot be removed or transformed from your "
+              },
+              {
+                "text": "Deck",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Forbidden Grimoire+",
@@ -95,6 +118,28 @@
           }
         ]
       },
+      "keywords": [
+        {
+          "id": "Eternal",
+          "placement": "afterDescription",
+          "title": "Eternal",
+          "description": {
+            "plain": "Cannot be removed or transformed from your Deck.",
+            "runs": [
+              {
+                "text": "Cannot be removed or transformed from your "
+              },
+              {
+                "text": "Deck",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        }
+      ],
       "changed": [
         "cost"
       ]

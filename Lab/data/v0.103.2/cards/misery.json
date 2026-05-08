@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "MISERY",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "Misery",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Misery.cs",
     "cost": 0,
@@ -34,17 +34,22 @@
         "source": "Lab.resources.images.packed.card_portraits"
       }
     ],
-    "keywords": [
-      "Retain"
-    ],
     "upgrades": [
       {
         "var": "Damage",
         "delta": 2
       }
+    ],
+    "keyword_upgrades": [
+      {
+        "operation": "add",
+        "keyword": "Retain",
+        "source": "OnUpgrade"
+      }
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Misery",
       "cost": 0,
@@ -91,8 +96,24 @@
           }
         ]
       },
+      "keywords": [
+        {
+          "id": "Retain",
+          "placement": "beforeDescription",
+          "title": "Retain",
+          "description": {
+            "plain": "Retained cards are not discarded at the end of turn.",
+            "runs": [
+              {
+                "text": "Retained cards are not discarded at the end of turn."
+              }
+            ]
+          }
+        }
+      ],
       "changed": [
-        "description"
+        "description",
+        "keywords"
       ]
     }
   }

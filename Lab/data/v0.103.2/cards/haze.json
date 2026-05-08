@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "HAZE",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "Haze",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Haze.cs",
     "cost": 3,
@@ -59,6 +59,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Haze",
       "cost": 3,
@@ -87,7 +88,29 @@
             "text": " to ALL enemies."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Sly",
+          "placement": "beforeDescription",
+          "title": "Sly",
+          "description": {
+            "plain": "If this card is discarded from your Hand before the end of your turn, play it for free.",
+            "runs": [
+              {
+                "text": "If this card is discarded from your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": " before the end of your turn, play it for free."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Haze+",
@@ -119,6 +142,28 @@
           }
         ]
       },
+      "keywords": [
+        {
+          "id": "Sly",
+          "placement": "beforeDescription",
+          "title": "Sly",
+          "description": {
+            "plain": "If this card is discarded from your Hand before the end of your turn, play it for free.",
+            "runs": [
+              {
+                "text": "If this card is discarded from your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": " before the end of your turn, play it for free."
+              }
+            ]
+          }
+        }
+      ],
       "changed": [
         "description"
       ]

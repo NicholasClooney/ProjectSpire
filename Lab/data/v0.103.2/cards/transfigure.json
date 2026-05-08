@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "TRANSFIGURE",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "Transfigure",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Transfigure.cs",
     "cost": 1,
@@ -37,6 +37,13 @@
     "keywords": [
       "Exhaust"
     ],
+    "keyword_upgrades": [
+      {
+        "operation": "remove",
+        "keyword": "Exhaust",
+        "source": "OnUpgrade"
+      }
+    ],
     "tips": [
       {
         "kind": "hover_tip_static",
@@ -46,6 +53,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Transfigure",
       "cost": 1,
@@ -81,7 +89,22 @@
             "text": "."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Exhaust",
+          "placement": "afterDescription",
+          "title": "Exhaust",
+          "description": {
+            "plain": "Removed until the end of combat.",
+            "runs": [
+              {
+                "text": "Removed until the end of combat."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Transfigure+",
@@ -118,7 +141,10 @@
             "text": "."
           }
         ]
-      }
+      },
+      "changed": [
+        "keywords"
+      ]
     }
   }
 }

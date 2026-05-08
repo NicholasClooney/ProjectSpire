@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "ASCENDERS_BANE",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "AscendersBane",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/AscendersBane.cs",
     "cost": -1,
@@ -32,12 +32,13 @@
       }
     ],
     "keywords": [
-      "Ethereal",
+      "Eternal",
       "Unplayable",
-      "Eternal"
+      "Ethereal"
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Ascender's Bane",
       "cost": -1,
@@ -47,7 +48,69 @@
       },
       "description": {
         "plain": ""
-      }
+      },
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable",
+          "description": {
+            "plain": "Unplayable cards cannot be played.",
+            "runs": [
+              {
+                "text": "Unplayable cards cannot be played."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal",
+          "description": {
+            "plain": "If this card is in your Hand at the end of this turn, it is Exhausted.",
+            "runs": [
+              {
+                "text": "If this card is in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": " at the end of this turn, it is "
+              },
+              {
+                "text": "Exhausted",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Eternal",
+          "placement": "afterDescription",
+          "title": "Eternal",
+          "description": {
+            "plain": "Cannot be removed or transformed from your Deck.",
+            "runs": [
+              {
+                "text": "Cannot be removed or transformed from your "
+              },
+              {
+                "text": "Deck",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Ascender's Bane+",
@@ -58,7 +121,69 @@
       },
       "description": {
         "plain": ""
-      }
+      },
+      "keywords": [
+        {
+          "id": "Unplayable",
+          "placement": "beforeDescription",
+          "title": "Unplayable",
+          "description": {
+            "plain": "Unplayable cards cannot be played.",
+            "runs": [
+              {
+                "text": "Unplayable cards cannot be played."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Ethereal",
+          "placement": "beforeDescription",
+          "title": "Ethereal",
+          "description": {
+            "plain": "If this card is in your Hand at the end of this turn, it is Exhausted.",
+            "runs": [
+              {
+                "text": "If this card is in your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": " at the end of this turn, it is "
+              },
+              {
+                "text": "Exhausted",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        },
+        {
+          "id": "Eternal",
+          "placement": "afterDescription",
+          "title": "Eternal",
+          "description": {
+            "plain": "Cannot be removed or transformed from your Deck.",
+            "runs": [
+              {
+                "text": "Cannot be removed or transformed from your "
+              },
+              {
+                "text": "Deck",
+                "style": "gold"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        }
+      ]
     }
   }
 }

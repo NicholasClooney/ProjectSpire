@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.3",
+  "schema_version": "0.2.4",
   "id": "RICOCHET",
   "raw": {
-    "parser_version": "0.2.3",
+    "parser_version": "0.2.4",
     "class_name": "Ricochet",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Cards/Ricochet.cs",
     "cost": 2,
@@ -46,6 +46,7 @@
     ]
   },
   "resolved": {
+    "keyword_period": ".",
     "base": {
       "title": "Ricochet",
       "cost": 2,
@@ -74,7 +75,29 @@
             "text": " times."
           }
         ]
-      }
+      },
+      "keywords": [
+        {
+          "id": "Sly",
+          "placement": "beforeDescription",
+          "title": "Sly",
+          "description": {
+            "plain": "If this card is discarded from your Hand before the end of your turn, play it for free.",
+            "runs": [
+              {
+                "text": "If this card is discarded from your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": " before the end of your turn, play it for free."
+              }
+            ]
+          }
+        }
+      ]
     },
     "upgraded": {
       "title": "Ricochet+",
@@ -106,6 +129,28 @@
           }
         ]
       },
+      "keywords": [
+        {
+          "id": "Sly",
+          "placement": "beforeDescription",
+          "title": "Sly",
+          "description": {
+            "plain": "If this card is discarded from your Hand before the end of your turn, play it for free.",
+            "runs": [
+              {
+                "text": "If this card is discarded from your "
+              },
+              {
+                "text": "Hand",
+                "style": "gold"
+              },
+              {
+                "text": " before the end of your turn, play it for free."
+              }
+            ]
+          }
+        }
+      ],
       "changed": [
         "description"
       ]
