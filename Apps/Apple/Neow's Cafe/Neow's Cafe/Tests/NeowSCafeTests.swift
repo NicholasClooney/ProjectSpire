@@ -18,6 +18,7 @@ struct NeowSCafeTests {
               "description": "Deal 6 damage.",
               "descriptionRuns": [
                 { "text": "Deal " },
+                { "text": "purple ", "style": "purple" },
                 { "text": "6", "sourceVar": "Damage", "style": "green" },
                 { "text": " damage." }
               ],
@@ -61,6 +62,7 @@ struct NeowSCafeTests {
         #expect(cards[0].cardPool == .ironclad)
         #expect(cards[0].descriptionRuns == [
             Card.DescriptionRun(text: "Deal ", sourceVar: nil, style: nil),
+            Card.DescriptionRun(text: "purple ", sourceVar: nil, style: .purple),
             Card.DescriptionRun(text: "6", sourceVar: "Damage", style: .green),
             Card.DescriptionRun(text: " damage.", sourceVar: nil, style: nil)
         ])

@@ -501,6 +501,8 @@ private extension Card.DescriptionRun.Style {
             return StsColors.red
         case .blue:
             return StsColors.blue
+        case .purple:
+            return StsColors.purple
         case .unknown:
             return StsColors.cream
         }

@@ -2,6 +2,34 @@
 
 This conversation records the work to carry structured card description runs through the Neow's Cafe catalog and renderer.
 
+## 2026-05-09 - Description Run Style Provenance
+
+**Context:** The app model now has a typed `Card.DescriptionRun.Style` enum, and the user wanted to know where the style values came from.
+
+**User Direction:** The user asked about the description run style values in `Apps/Apple/Neow's Cafe/Neow's Cafe/Sources/Models/Card.swift`.
+
+**Agent Response:** The agent traced the values through parser-resolved card JSON, `Lab/scripts/create-card-catalog.py`, `Lab/catalog/v0.103.2/cards.index.json`, Swift decoding, and the private `CardView.swift` style-to-color mapping.
+
+**User Feedback:** No correction yet.
+
+**Outcome:** The style values are understood as catalog/parser display metadata: markup tags such as `[gold]`, parser-generated upgrade diff colors such as `green`/`red`, observed catalog tags such as `blue` and `purple`, and a Swift `.unknown(String)` fallback for forward compatibility.
+
+**Carry Forward:** When adding or pruning style enum cases, base the app model on parser/catalog output and keep unknown catalog tags non-fatal until the view layer intentionally supports or maps them.
+
+## 2026-05-09 - Purple Description Run Style
+
+**Context:** The catalog already emitted `purple` style runs, but the Swift enum did not include a typed purple case.
+
+**User Direction:** The user pointed out the missed `purple` style, asked what would happen if the style enum used raw values without an unknown fallback, then chose to keep the unknown fallback with a development assertion.
+
+**Agent Response:** The agent added `purple` to `Card.DescriptionRun.Style`, mapped it to `StsColors.purple`, added a catalog decoder assertion for `.purple`, and added `assertionFailure` when decoding an unrecognized style before preserving it as `.unknown(String)`.
+
+**User Feedback:** The user chose to run tests manually and redirected the agent to answer the raw-value enum tradeoff.
+
+**Outcome:** Purple is now represented as a first-class style locally. Unknown future styles remain non-fatal but now raise a debug assertion so developers notice catalog/app style drift.
+
+**Carry Forward:** Keep description style decoding resilient at the data boundary, but assert on unknown values in development so catalog/app style drift is visible without breaking release catalog loading.
+
 ## 2026-05-09 - App And Catalog v0.3.0 Releases
 
 **Context:** The catalog description run implementation and Captain Log documentation had been split into commits.

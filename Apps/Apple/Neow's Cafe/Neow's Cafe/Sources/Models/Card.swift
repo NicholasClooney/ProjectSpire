@@ -91,6 +91,7 @@ extension Card {
             case green
             case red
             case blue
+            case purple
             case unknown(String)
 
             init(from decoder: Decoder) throws {
@@ -105,7 +106,10 @@ extension Card {
                     self = .red
                 case "blue":
                     self = .blue
+                case "purple":
+                    self = .purple
                 default:
+                    assertionFailure("Unknown card description run style: \(rawValue)")
                     self = .unknown(rawValue)
                 }
             }
