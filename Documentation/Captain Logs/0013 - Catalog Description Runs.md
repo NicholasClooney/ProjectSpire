@@ -2,6 +2,20 @@
 
 This conversation records the work to carry structured card description runs through the Neow's Cafe catalog and renderer.
 
+## 2026-05-09 - Neow's Cafe v0.3.1 Fix Release
+
+**Context:** Purple description run style support had been added locally after the catalog was found to emit `purple` style values.
+
+**User Direction:** The user asked to commit, push, and create a fix release.
+
+**Agent Response:** The agent committed the app-side purple style support and unknown-style assertion as `fix(app/cafe): support purple description run style`, pushed `main`, created annotated tag `release/neows-cafe/v0.3.1`, pushed the tag, and created the GitHub Release page.
+
+**User Feedback:** No correction during release creation.
+
+**Outcome:** Neow's Cafe v0.3.1 is published as a patch release for purple catalog description run rendering. No catalog release was created because the generated catalog content did not change.
+
+**Carry Forward:** For catalog-display fixes where the catalog data is already correct and only the app renderer/decoder changes, release the app component only unless catalog artifacts are regenerated or schema behavior changes.
+
 ## 2026-05-09 - Description Run Style Provenance
 
 **Context:** The app model now has a typed `Card.DescriptionRun.Style` enum, and the user wanted to know where the style values came from.
