@@ -449,10 +449,25 @@ private extension Card {
         var result = AttributedString()
 
         appendRulesText(keywordText(for: .beforeDescription), style: .keyword, to: &result)
-        appendRulesText(description, style: .description, to: &result)
+        appendDescriptionRuns(to: &result)
         appendRulesText(keywordText(for: .afterDescription), style: .keyword, to: &result)
 
         return result
+    }
+
+    private func appendDescriptionRuns(to result: inout AttributedString) {
+        if descriptionRuns.isEmpty {
+            appendRulesText(description, style: .description, to: &result)
+            return
+        }
+
+        appendRunSeparatorIfNeeded(to: &result)
+        for run in descriptionRuns {
+            var segment = AttributedString(run.text)
+            segment.font = RulesTextStyle.description.font
+            segment.foregroundColor = Color(run.style?.descriptionTextColor ?? StsColors.cream)
+            result += segment
+        }
     }
 
     private func appendRulesText(_ text: String, style: RulesTextStyle, to result: inout AttributedString) {
@@ -460,14 +475,35 @@ private extension Card {
             return
         }
 
-        if !result.characters.isEmpty {
-            result += AttributedString("\n")
-        }
+        appendRunSeparatorIfNeeded(to: &result)
 
         var segment = AttributedString(text)
         segment.font = style.font
         segment.foregroundColor = style.color
         result += segment
+    }
+
+    private func appendRunSeparatorIfNeeded(to result: inout AttributedString) {
+        if !result.characters.isEmpty {
+            result += AttributedString("\n")
+        }
+    }
+}
+
+private extension Card.DescriptionRun.Style {
+    var descriptionTextColor: UIColor {
+        switch self {
+        case .gold:
+            return StsColors.gold
+        case .green:
+            return StsColors.green
+        case .red:
+            return StsColors.red
+        case .blue:
+            return StsColors.blue
+        case .unknown:
+            return StsColors.cream
+        }
     }
 }
 

@@ -11,6 +11,7 @@ struct CardDetailView: View {
             id: card.id,
             title: upgrade.title,
             description: upgrade.description,
+            descriptionRuns: upgrade.descriptionRuns,
             keywords: upgrade.keywords,
             keywordPeriod: upgrade.keywordPeriod,
             energyCost: upgrade.energyCost,

@@ -14,6 +14,7 @@ struct Card {
 
     let title: String
     let description: String
+    let descriptionRuns: [DescriptionRun]
     let keywords: [Keyword]
     let keywordPeriod: String
     let energyCost: EnergyCost
@@ -37,6 +38,7 @@ struct Card {
         id: String,
         title: String,
         description: String,
+        descriptionRuns: [DescriptionRun] = [],
         keywords: [Keyword] = [],
         keywordPeriod: String = ".",
         energyCost: EnergyCost,
@@ -52,6 +54,7 @@ struct Card {
         self.id = id
         self.title = title
         self.description = description
+        self.descriptionRuns = descriptionRuns
         self.keywords = keywords
         self.keywordPeriod = keywordPeriod
         self.energyCost = energyCost
@@ -70,9 +73,43 @@ extension Card {
     struct UpgradeSummary {
         let title: String
         let description: String
+        let descriptionRuns: [DescriptionRun]
         let keywords: [Keyword]
         let keywordPeriod: String
         let energyCost: EnergyCost
+    }
+}
+
+extension Card {
+    struct DescriptionRun: Equatable {
+        let text: String
+        let sourceVar: String?
+        let style: Style?
+
+        enum Style: Equatable, Decodable {
+            case gold
+            case green
+            case red
+            case blue
+            case unknown(String)
+
+            init(from decoder: Decoder) throws {
+                let container = try decoder.singleValueContainer()
+                let rawValue = try container.decode(String.self)
+                switch rawValue {
+                case "gold":
+                    self = .gold
+                case "green":
+                    self = .green
+                case "red":
+                    self = .red
+                case "blue":
+                    self = .blue
+                default:
+                    self = .unknown(rawValue)
+                }
+            }
+        }
     }
 }
 

@@ -31,6 +31,7 @@ enum MockCards {
                 Deal 8 damage.
                 Add a copy into your Discard Pile.
                 """,
+                descriptionRuns: [],
                 keywords: [],
                 keywordPeriod: ".",
                 energyCost: .int(0)
@@ -54,6 +55,7 @@ enum MockCards {
                 Skills cost 0.
                 Whenever you play a Skill, Exhaust it.
                 """,
+                descriptionRuns: [],
                 keywords: [],
                 keywordPeriod: ".",
                 energyCost: .int(2)
@@ -77,6 +79,7 @@ enum MockCards {
                 Gain 1 Energy.
                 Draw 3 cards.
                 """,
+                descriptionRuns: [],
                 keywords: [],
                 keywordPeriod: ".",
                 energyCost: .int(0)

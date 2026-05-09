@@ -16,6 +16,11 @@ struct NeowSCafeTests {
               "slug": "anger",
               "title": "Anger",
               "description": "Deal 6 damage.",
+              "descriptionRuns": [
+                { "text": "Deal " },
+                { "text": "6", "sourceVar": "Damage", "style": "green" },
+                { "text": " damage." }
+              ],
               "keywords": [],
               "keywordPeriod": ".",
               "energyCost": { "kind": "int", "value": 0 },
@@ -54,6 +59,11 @@ struct NeowSCafeTests {
         #expect(cards[0].id == "ANGER")
         #expect(cards[0].energyCost == .int(0))
         #expect(cards[0].cardPool == .ironclad)
+        #expect(cards[0].descriptionRuns == [
+            Card.DescriptionRun(text: "Deal ", sourceVar: nil, style: nil),
+            Card.DescriptionRun(text: "6", sourceVar: "Damage", style: .green),
+            Card.DescriptionRun(text: " damage.", sourceVar: nil, style: nil)
+        ])
         #expect(cards[0].portraitURL?.absoluteString == "http://127.0.0.1:8765/v0.103.2/images/card_portraits/ironclad/anger.webp")
 
         #expect(cards[1].id == "SKEWER")

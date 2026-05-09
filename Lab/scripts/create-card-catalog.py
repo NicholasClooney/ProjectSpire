@@ -145,6 +145,31 @@ def extract_keywords(section: dict[str, Any]) -> list[dict[str, str]]:
     return summaries
 
 
+def extract_description_runs(description: dict[str, Any]) -> list[dict[str, str]]:
+    runs = description.get("runs", [])
+    if not isinstance(runs, list):
+        return []
+
+    summaries = []
+    for run in runs:
+        if not isinstance(run, dict):
+            continue
+
+        text = run.get("text")
+        if not isinstance(text, str):
+            continue
+
+        summary: dict[str, str] = {"text": text}
+        source_var = run.get("source_var")
+        style = run.get("style")
+        if isinstance(source_var, str):
+            summary["sourceVar"] = source_var
+        if isinstance(style, str):
+            summary["style"] = style
+        summaries.append(summary)
+    return summaries
+
+
 def card_keywords(card: dict[str, Any]) -> list[dict[str, str]]:
     base = card.get("resolved", {}).get("base", {})
     return extract_keywords(base)
@@ -161,6 +186,7 @@ def upgrade_summary(card: dict[str, Any]) -> dict[str, Any] | None:
     return {
         "title": upgraded.get("title", card["id"]),
         "description": plain_description or "",
+        "descriptionRuns": extract_description_runs(description),
         "keywords": extract_keywords(upgraded),
         "keywordPeriod": card.get("resolved", {}).get("keyword_period", "."),
         "energyCost": parse_energy_cost(upgraded.get("energy_cost")),
@@ -179,6 +205,7 @@ def card_summary(path: Path, card: dict[str, Any], portrait_root: Path) -> dict[
         "slug": path.stem,
         "title": base.get("title", card["id"]),
         "description": plain_description or "",
+        "descriptionRuns": extract_description_runs(description),
         "keywords": card_keywords(card),
         "keywordPeriod": resolved.get("keyword_period", "."),
         "energyCost": energy_cost(card),
