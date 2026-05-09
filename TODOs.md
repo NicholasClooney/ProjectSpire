@@ -2,8 +2,6 @@
 
 ## App UI
 
-- [ ] #medium Add a card details view with a `View Upgrades` button.
-- [ ] #medium Add card keyword rendering in the UI, including cases like Ascender's Bane.
 - [ ] #medium Add a relics tab.
 - [ ] #medium Replace character names in the dropdown with icons from the game's card library screen.
 - [ ] #hard Investigate which fonts Slay the Spire uses, whether they are all Koreon or include other fonts, and whether those fonts are free to use.
@@ -17,6 +15,8 @@
 
 ## App UI
 
+- [x] #medium Add a card details view with a `View Upgrades` button.
+- [x] #medium Add card keyword rendering in the UI, including cases like Ascender's Bane.
 - [x] #medium Register approved app fonts with SwiftUI so standard `.font(...)` usage can pick up the theme without specifying custom font names everywhere.
 - [x] #hard Add light and dark app themes inspired by Slay the Spire, with shared semantic colors for app chrome and filter controls.
 
