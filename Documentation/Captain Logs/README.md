@@ -8,6 +8,7 @@ Confirmed durable user preferences live in [User Preferences](<User Preferences.
 
 ## Logs
 
+- [0013 - Catalog Description Runs](<0013 - Catalog Description Runs.md>) - Added structured description run data to the card catalog and Neow's Cafe rendering path.
 - [0012 - Neows Cafe STS Colors](<0012 - Neows Cafe STS Colors.md>) - Ported the decompiled STS color palette into Neow's Cafe design code and centralized card/banner color references.
 - [0011 - Card Keyword Text Investigation](<0011 - Card Keyword Text Investigation.md>) - Traced game keyword-only card text through decompiled models, parser output, catalog summaries, and Neow's Cafe rendering.
 - [0010 - Captain Logs Instruction Split](<0010 - Captain Logs Instruction Split.md>) - Moved detailed Captain Logs agent instructions into the Captain Logs folder while keeping the root guidance explicit.
