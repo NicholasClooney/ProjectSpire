@@ -2,6 +2,20 @@
 
 This conversation records the work to carry structured card description runs through the Neow's Cafe catalog and renderer.
 
+## 2026-05-09 - App And Catalog v0.3.0 Releases
+
+**Context:** The catalog description run implementation and Captain Log documentation had been split into commits.
+
+**User Direction:** The user asked to create new releases for both the app and the catalog.
+
+**Agent Response:** The agent followed the release tag workflow, selected the next minor version after existing `v0.2.0` releases, created annotated tags `release/card-catalog/v0.3.0` and `release/neows-cafe/v0.3.0` at the current `HEAD`, pushed `main` and both tags, and created GitHub Release pages for each component.
+
+**User Feedback:** No corrections during release creation.
+
+**Outcome:** Card Catalog v0.3.0 and Neow's Cafe v0.3.0 releases are published on GitHub, covering catalog `descriptionRuns` and app-side colored description rendering.
+
+**Carry Forward:** When paired catalog/app changes ship together, keep separate component release tags and pages, but point them at the same commit when the app and catalog are intentionally released as one coordinated unit.
+
 ## 2026-05-09 - Description Run Style Enum
 
 **Context:** After catalog description runs were added, run styles were still represented as raw optional strings in Swift.
