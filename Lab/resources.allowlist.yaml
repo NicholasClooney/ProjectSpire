@@ -21,3 +21,13 @@ entries:
       - ".DS_Store"
       - "**/*.import"
     transform: webp-q85
+
+  - name: relic_images
+    from: images/relics
+    to: images/relics
+    include:
+      - "**/*.png"
+    exclude:
+      - ".DS_Store"
+      - "**/*.import"
+    transform: webp-q85
