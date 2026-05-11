@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "AXEBOT",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "Axebot",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Axebot.cs",
     "hp": {
@@ -21,19 +21,81 @@
     "moves": [
       {
         "id": "BOOT_UP",
-        "title": "Boot Up"
+        "title": "Boot Up",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Defend"
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "block": 10,
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 1
+            }
+          ]
+        }
       },
       {
         "id": "HAMMER_UPPERCUT",
-        "title": "Hammer Uppercut"
+        "title": "Hammer Uppercut",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 8,
+              "damage_ascension": 10
+            },
+            {
+              "kind": "Debuff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Weak",
+              "amount": 1
+            },
+            {
+              "name": "Frail",
+              "amount": 1
+            }
+          ]
+        }
       },
       {
         "id": "ONE_TWO",
-        "title": "The One-Two"
+        "title": "The One-Two",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 5,
+              "damage_ascension": 6,
+              "times": 2
+            }
+          ]
+        }
       },
       {
         "id": "SHARPEN",
-        "title": "Sharpen"
+        "title": "Sharpen",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 4
+            }
+          ]
+        }
       }
     ]
   }

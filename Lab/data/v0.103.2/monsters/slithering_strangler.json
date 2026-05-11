@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "SLITHERING_STRANGLER",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "SlitheringStrangler",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/SlitheringStrangler.cs",
     "hp": {
@@ -21,11 +21,33 @@
     "moves": [
       {
         "id": "CONSTRICT",
-        "title": "Constrict"
+        "title": "Constrict",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Debuff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Constrict",
+              "amount": 3
+            }
+          ]
+        }
       },
       {
         "id": "LASH",
-        "title": "Lash"
+        "title": "Lash",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 12,
+              "damage_ascension": 13
+            }
+          ]
+        }
       },
       {
         "id": "THWACK",

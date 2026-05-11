@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "KNOWLEDGE_DEMON",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "KnowledgeDemon",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/KnowledgeDemon.cs",
     "hp": {
@@ -25,7 +25,14 @@
       },
       {
         "id": "CURSE_OF_KNOWLEDGE",
-        "title": "Curse of Knowledge"
+        "title": "Curse of Knowledge",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Debuff"
+            }
+          ]
+        }
       },
       {
         "id": "HAVE_A_TASTE",
@@ -33,11 +40,44 @@
       },
       {
         "id": "KNOWLEDGE_OVERWHELMING",
-        "title": "Knowledge Overwhelming"
+        "title": "Knowledge Overwhelming",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 8,
+              "damage_ascension": 9,
+              "times": 3
+            }
+          ]
+        }
       },
       {
         "id": "PONDER",
-        "title": "Ponder"
+        "title": "Ponder",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 11,
+              "damage_ascension": 13
+            },
+            {
+              "kind": "Heal"
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 2,
+              "amount_ascension": 3
+            }
+          ],
+          "heal": 30
+        }
       }
     ]
   }

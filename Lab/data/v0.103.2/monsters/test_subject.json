@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "TEST_SUBJECT",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "TestSubject",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/TestSubject.cs",
     "localization": {
@@ -18,23 +18,84 @@
     "moves": [
       {
         "id": "BIG_POUNCE_MOVE",
-        "title": "Big Pounce"
+        "title": "Big Pounce",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 45
+            }
+          ]
+        }
       },
       {
         "id": "BITE_MOVE",
-        "title": "Bite"
+        "title": "Bite",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 20,
+              "damage_ascension": 22
+            }
+          ]
+        }
       },
       {
         "id": "BURNING_GROWL_MOVE",
-        "title": "Burning Growl"
+        "title": "Burning Growl",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Status",
+              "times": 3
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 2,
+              "amount_ascension": 3
+            }
+          ],
+          "status_cards": [
+            {
+              "card": "Burn",
+              "count": 3,
+              "pile": "Discard"
+            }
+          ]
+        }
       },
       {
         "id": "MULTI_CLAW_MOVE",
-        "title": "Multi-Claw"
+        "title": "Multi-Claw",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 10,
+              "damage_ascension": 11
+            }
+          ]
+        }
       },
       {
         "id": "PHASE3_LACERATE_MOVE",
-        "title": "Lacerate"
+        "title": "Lacerate",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 10,
+              "damage_ascension": 11,
+              "times": 3
+            }
+          ]
+        }
       },
       {
         "id": "POUNCE_MOVE",
@@ -42,11 +103,49 @@
       },
       {
         "id": "RESPAWN_MOVE",
-        "title": "Respawn"
+        "title": "Respawn",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Heal"
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "PainfulStabs",
+              "amount": 1
+            },
+            {
+              "name": "Nemesis",
+              "amount": 1
+            }
+          ]
+        }
       },
       {
         "id": "SKULL_BASH_MOVE",
-        "title": "Skull Bash"
+        "title": "Skull Bash",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 14,
+              "damage_ascension": 16
+            },
+            {
+              "kind": "Debuff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Vulnerable",
+              "amount": 1
+            }
+          ]
+        }
       }
     ]
   }

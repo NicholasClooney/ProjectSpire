@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "NIBBIT",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "Nibbit",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Nibbit.cs",
     "hp": {
@@ -21,7 +21,16 @@
     "moves": [
       {
         "id": "BUTT",
-        "title": "Butt"
+        "title": "Butt",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 12,
+              "damage_ascension": 13
+            }
+          ]
+        }
       },
       {
         "id": "HESITANT_SLICE",
@@ -29,7 +38,21 @@
       },
       {
         "id": "HISS",
-        "title": "Hiss"
+        "title": "Hiss",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 2,
+              "amount_ascension": 3
+            }
+          ]
+        }
       }
     ]
   }

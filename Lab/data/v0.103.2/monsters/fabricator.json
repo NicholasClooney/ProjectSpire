@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "FABRICATOR",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "Fabricator",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Fabricator.cs",
     "hp": {
@@ -21,11 +21,27 @@
     "moves": [
       {
         "id": "DISINTEGRATE",
-        "title": "Disintegrate"
+        "title": "Disintegrate",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 11,
+              "damage_ascension": 13
+            }
+          ]
+        }
       },
       {
         "id": "FABRICATE",
-        "title": "Fabricate"
+        "title": "Fabricate",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Summon"
+            }
+          ]
+        }
       }
     ]
   }

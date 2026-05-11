@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "GUARDBOT",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "Guardbot",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Guardbot.cs",
     "hp": {
@@ -21,7 +21,15 @@
     "moves": [
       {
         "id": "GUARD",
-        "title": "Guard"
+        "title": "Guard",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Defend"
+            }
+          ],
+          "block": 15
+        }
       }
     ]
   }

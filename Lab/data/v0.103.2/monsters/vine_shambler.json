@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "VINE_SHAMBLER",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "VineShambler",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/VineShambler.cs",
     "hp": {
@@ -21,15 +21,52 @@
     "moves": [
       {
         "id": "CHOMP",
-        "title": "Chomp"
+        "title": "Chomp",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 16,
+              "damage_ascension": 18
+            }
+          ]
+        }
       },
       {
         "id": "GRASPING_VINES",
-        "title": "Grasping Vines"
+        "title": "Grasping Vines",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 8,
+              "damage_ascension": 9
+            },
+            {
+              "kind": "CardDebuff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Tangled",
+              "amount": 1
+            }
+          ]
+        }
       },
       {
         "id": "SWIPE",
-        "title": "Swipe"
+        "title": "Swipe",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 6,
+              "damage_ascension": 7,
+              "times": 2
+            }
+          ]
+        }
       }
     ]
   }

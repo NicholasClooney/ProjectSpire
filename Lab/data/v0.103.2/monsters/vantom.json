@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "VANTOM",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "Vantom",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Vantom.cs",
     "hp": {
@@ -21,19 +21,71 @@
     "moves": [
       {
         "id": "DISMEMBER",
-        "title": "Dismember"
+        "title": "Dismember",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 27,
+              "damage_ascension": 30
+            },
+            {
+              "kind": "Status",
+              "times": 3
+            }
+          ],
+          "status_cards": [
+            {
+              "card": "Wound",
+              "count": 3,
+              "pile": "Discard"
+            }
+          ]
+        }
       },
       {
         "id": "INKY_LANCE",
-        "title": "Inky Lance"
+        "title": "Inky Lance",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 6,
+              "damage_ascension": 7,
+              "times": 2
+            }
+          ]
+        }
       },
       {
         "id": "INK_BLOT",
-        "title": "Ink Blot"
+        "title": "Ink Blot",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 7,
+              "damage_ascension": 8
+            }
+          ]
+        }
       },
       {
         "id": "PREPARE",
-        "title": "Prepare"
+        "title": "Prepare",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 2
+            }
+          ]
+        }
       }
     ]
   }

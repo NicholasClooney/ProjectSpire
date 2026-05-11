@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "QUEEN",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "Queen",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Queen.cs",
     "hp": {
@@ -25,11 +25,36 @@
       },
       {
         "id": "BURN_BRIGHT_FOR_ME",
-        "title": "Burn Bright for Me"
+        "title": "Burn Bright for Me",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            },
+            {
+              "kind": "Defend"
+            }
+          ],
+          "block": 20,
+          "powers": [
+            {
+              "name": "Strength"
+            }
+          ]
+        }
       },
       {
         "id": "EXECUTION",
-        "title": "Execution"
+        "title": "Execution",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 15,
+              "damage_ascension": 18
+            }
+          ]
+        }
       },
       {
         "id": "IMPOSSIBLE",
@@ -37,7 +62,17 @@
       },
       {
         "id": "OFF_WITH_YOUR_HEAD",
-        "title": "Off with Your Head"
+        "title": "Off with Your Head",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 3,
+              "damage_ascension": 4,
+              "times": 5
+            }
+          ]
+        }
       },
       {
         "id": "SUMMON_1",

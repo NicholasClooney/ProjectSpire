@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "CROSSBOW_RUBY_RAIDER",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "CrossbowRubyRaider",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/CrossbowRubyRaider.cs",
     "hp": {
@@ -21,11 +21,28 @@
     "moves": [
       {
         "id": "FIRE",
-        "title": "Fire!"
+        "title": "Fire!",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 14,
+              "damage_ascension": 16
+            }
+          ]
+        }
       },
       {
         "id": "RELOAD",
-        "title": "Reload"
+        "title": "Reload",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Defend"
+            }
+          ],
+          "block": 3
+        }
       }
     ]
   }

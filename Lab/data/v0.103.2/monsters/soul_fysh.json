@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "SOUL_FYSH",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "SoulFysh",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/SoulFysh.cs",
     "hp": {
@@ -25,11 +25,38 @@
       },
       {
         "id": "DE_GAS",
-        "title": "De-Gas"
+        "title": "De-Gas",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 16,
+              "damage_ascension": 17
+            }
+          ]
+        }
       },
       {
         "id": "SCREAM",
-        "title": "Scream"
+        "title": "Scream",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 11,
+              "damage_ascension": 12
+            },
+            {
+              "kind": "Debuff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Vulnerable",
+              "amount": 3
+            }
+          ]
+        }
       }
     ]
   }

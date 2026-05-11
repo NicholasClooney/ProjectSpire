@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "MYTE",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "Myte",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Myte.cs",
     "hp": {
@@ -25,15 +25,58 @@
       },
       {
         "id": "BITE",
-        "title": "Bite"
+        "title": "Bite",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 13,
+              "damage_ascension": 15
+            }
+          ]
+        }
       },
       {
         "id": "SUCK",
-        "title": "Suck"
+        "title": "Suck",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 4,
+              "damage_ascension": 6
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 2,
+              "amount_ascension": 3
+            }
+          ]
+        }
       },
       {
         "id": "TOXIC",
-        "title": "Toxic Cornucopia"
+        "title": "Toxic Cornucopia",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Status",
+              "times": 2
+            }
+          ],
+          "status_cards": [
+            {
+              "card": "Toxic",
+              "count": 2,
+              "pile": "Hand"
+            }
+          ]
+        }
       }
     ]
   }

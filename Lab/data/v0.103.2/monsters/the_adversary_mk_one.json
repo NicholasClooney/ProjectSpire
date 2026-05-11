@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "THE_ADVERSARY_MK_ONE",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "TheAdversaryMkOne",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/TheAdversaryMkOne.cs",
     "hp": {
@@ -19,15 +19,49 @@
     "moves": [
       {
         "id": "BARRAGE",
-        "title": "Barrage"
+        "title": "Barrage",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 8,
+              "times": 2
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 2
+            }
+          ]
+        }
       },
       {
         "id": "BEAM",
-        "title": "Beam"
+        "title": "Beam",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 15
+            }
+          ]
+        }
       },
       {
         "id": "SMASH",
-        "title": "Smash"
+        "title": "Smash",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 12
+            }
+          ]
+        }
       }
     ]
   }

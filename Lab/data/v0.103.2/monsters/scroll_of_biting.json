@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "SCROLL_OF_BITING",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "ScrollOfBiting",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/ScrollOfBiting.cs",
     "hp": {
@@ -21,15 +21,47 @@
     "moves": [
       {
         "id": "CHEW",
-        "title": "Chew"
+        "title": "Chew",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 5,
+              "damage_ascension": 6,
+              "times": 2
+            }
+          ]
+        }
       },
       {
         "id": "CHOMP",
-        "title": "Chomp"
+        "title": "Chomp",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 14,
+              "damage_ascension": 16
+            }
+          ]
+        }
       },
       {
         "id": "MORE_TEETH",
-        "title": "More Teeth"
+        "title": "More Teeth",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 2
+            }
+          ]
+        }
       }
     ]
   }

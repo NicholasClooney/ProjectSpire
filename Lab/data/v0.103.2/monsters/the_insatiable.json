@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "THE_INSATIABLE",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "TheInsatiable",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/TheInsatiable.cs",
     "hp": {
@@ -21,15 +21,49 @@
     "moves": [
       {
         "id": "LIQUIFY_GROUND",
-        "title": "Liquify Ground"
+        "title": "Liquify Ground",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            },
+            {
+              "kind": "Status",
+              "times": 6
+            }
+          ]
+        }
       },
       {
         "id": "LUNGING_BITE",
-        "title": "Lunging Bite"
+        "title": "Lunging Bite",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 28,
+              "damage_ascension": 31
+            }
+          ]
+        }
       },
       {
         "id": "SALIVATE",
-        "title": "Salivate"
+        "title": "Salivate",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 2,
+              "amount_ascension": 3
+            }
+          ]
+        }
       },
       {
         "id": "THRASH",

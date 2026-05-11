@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "EXOSKELETON",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "Exoskeleton",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Exoskeleton.cs",
     "hp": {
@@ -21,7 +21,20 @@
     "moves": [
       {
         "id": "ENRAGE",
-        "title": "Enrage"
+        "title": "Enrage",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 2
+            }
+          ]
+        }
       },
       {
         "id": "MANDIBLES",
@@ -29,7 +42,16 @@
       },
       {
         "id": "SKITTER",
-        "title": "Skitter"
+        "title": "Skitter",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 1,
+              "times": 3
+            }
+          ]
+        }
       }
     ]
   }

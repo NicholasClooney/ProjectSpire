@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "HAUNTED_SHIP",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "HauntedShip",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/HauntedShip.cs",
     "hp": {
@@ -21,19 +21,71 @@
     "moves": [
       {
         "id": "HAUNT",
-        "title": "Haunt"
+        "title": "Haunt",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Status",
+              "times": 5
+            }
+          ],
+          "status_cards": [
+            {
+              "card": "Dazed",
+              "count": 5,
+              "pile": "Discard"
+            }
+          ]
+        }
       },
       {
         "id": "RAMMING_SPEED",
-        "title": "Ramming Speed"
+        "title": "Ramming Speed",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 10,
+              "damage_ascension": 11
+            },
+            {
+              "kind": "Debuff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Weak",
+              "amount": 1
+            }
+          ]
+        }
       },
       {
         "id": "STOMP",
-        "title": "Stomp"
+        "title": "Stomp",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 4,
+              "damage_ascension": 5,
+              "times": 3
+            }
+          ]
+        }
       },
       {
         "id": "SWIPE",
-        "title": "Swipe"
+        "title": "Swipe",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 13,
+              "damage_ascension": 14
+            }
+          ]
+        }
       }
     ]
   }

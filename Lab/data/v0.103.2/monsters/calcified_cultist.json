@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "CALCIFIED_CULTIST",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "CalcifiedCultist",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/CalcifiedCultist.cs",
     "hp": {
@@ -21,11 +21,33 @@
     "moves": [
       {
         "id": "DARK_STRIKE",
-        "title": "Dark Strike"
+        "title": "Dark Strike",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 9,
+              "damage_ascension": 11
+            }
+          ]
+        }
       },
       {
         "id": "INCANTATION",
-        "title": "Incantation"
+        "title": "Incantation",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Ritual",
+              "amount": 2
+            }
+          ]
+        }
       }
     ]
   }

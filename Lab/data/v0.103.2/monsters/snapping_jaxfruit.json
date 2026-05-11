@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "SNAPPING_JAXFRUIT",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "SnappingJaxfruit",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/SnappingJaxfruit.cs",
     "hp": {
@@ -25,7 +25,25 @@
       },
       {
         "id": "ENERGY_ORB",
-        "title": "Energy Orb"
+        "title": "Energy Orb",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 3,
+              "damage_ascension": 4
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 2
+            }
+          ]
+        }
       }
     ]
   }

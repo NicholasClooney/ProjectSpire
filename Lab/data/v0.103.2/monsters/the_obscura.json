@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "THE_OBSCURA",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "TheObscura",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/TheObscura.cs",
     "hp": {
@@ -21,15 +21,45 @@
     "moves": [
       {
         "id": "HARDENING_STRIKE",
-        "title": "Hardening Strike"
+        "title": "Hardening Strike",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 6,
+              "damage_ascension": 7
+            },
+            {
+              "kind": "Defend"
+            }
+          ],
+          "block": 6,
+          "block_ascension": 7
+        }
       },
       {
         "id": "ILLUSION",
-        "title": "Illusion"
+        "title": "Illusion",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Summon"
+            }
+          ]
+        }
       },
       {
         "id": "PIERCING_GAZE",
-        "title": "Piercing Gaze"
+        "title": "Piercing Gaze",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 10,
+              "damage_ascension": 11
+            }
+          ]
+        }
       },
       {
         "id": "WAIL",

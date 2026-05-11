@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "DOORMAKER",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "Doormaker",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Doormaker.cs",
     "hp": {
@@ -21,15 +21,53 @@
     "moves": [
       {
         "id": "GRASP_MOVE",
-        "title": "Grasp"
+        "title": "Grasp",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 10,
+              "damage_ascension": 11,
+              "times": 2
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 3,
+              "amount_ascension": 4
+            }
+          ]
+        }
       },
       {
         "id": "HUNGER_MOVE",
-        "title": "Hunger"
+        "title": "Hunger",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 30,
+              "damage_ascension": 35
+            }
+          ]
+        }
       },
       {
         "id": "SCRUTINY_MOVE",
-        "title": "Scrutiny"
+        "title": "Scrutiny",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 24,
+              "damage_ascension": 26
+            }
+          ]
+        }
       }
     ]
   }

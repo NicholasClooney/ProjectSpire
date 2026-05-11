@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "SLUDGE_SPINNER",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "SludgeSpinner",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/SludgeSpinner.cs",
     "hp": {
@@ -21,15 +21,60 @@
     "moves": [
       {
         "id": "OIL_SPRAY",
-        "title": "Oil Spray"
+        "title": "Oil Spray",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 8,
+              "damage_ascension": 9
+            },
+            {
+              "kind": "Debuff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Weak",
+              "amount": 1
+            }
+          ]
+        }
       },
       {
         "id": "RAGE",
-        "title": "Rage"
+        "title": "Rage",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 6,
+              "damage_ascension": 7
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 3
+            }
+          ]
+        }
       },
       {
         "id": "SLAM",
-        "title": "Slam"
+        "title": "Slam",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 11,
+              "damage_ascension": 12
+            }
+          ]
+        }
       }
     ]
   }

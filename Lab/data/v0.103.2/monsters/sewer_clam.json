@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "SEWER_CLAM",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "SewerClam",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/SewerClam.cs",
     "hp": {
@@ -21,11 +21,33 @@
     "moves": [
       {
         "id": "JET",
-        "title": "Jet"
+        "title": "Jet",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 10,
+              "damage_ascension": 11
+            }
+          ]
+        }
       },
       {
         "id": "PRESSURIZE",
-        "title": "Pressurize"
+        "title": "Pressurize",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 4
+            }
+          ]
+        }
       }
     ]
   }

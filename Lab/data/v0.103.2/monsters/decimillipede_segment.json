@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "DECIMILLIPEDE_SEGMENT",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "DecimillipedeSegment",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/DecimillipedeSegment.cs",
     "hp": {
@@ -21,7 +21,25 @@
     "moves": [
       {
         "id": "BULK",
-        "title": "Bulk"
+        "title": "Bulk",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 6,
+              "damage_ascension": 7
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 2
+            }
+          ]
+        }
       },
       {
         "id": "DEAD",
@@ -33,7 +51,14 @@
       },
       {
         "id": "REATTACH",
-        "title": "Reattach"
+        "title": "Reattach",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Heal"
+            }
+          ]
+        }
       },
       {
         "id": "TACKLE",
@@ -41,7 +66,17 @@
       },
       {
         "id": "WRITHE",
-        "title": "Writhe"
+        "title": "Writhe",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 5,
+              "damage_ascension": 6,
+              "times": 2
+            }
+          ]
+        }
       }
     ]
   }

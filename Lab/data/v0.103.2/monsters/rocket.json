@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "ROCKET",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "Rocket",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Rocket.cs",
     "hp": {
@@ -21,23 +21,71 @@
     "moves": [
       {
         "id": "CHARGE_UP",
-        "title": "Charge Up"
+        "title": "Charge Up",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 2,
+              "amount_ascension": 3
+            }
+          ]
+        }
       },
       {
         "id": "LASER",
-        "title": "Laser"
+        "title": "Laser",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 31,
+              "damage_ascension": 35
+            }
+          ]
+        }
       },
       {
         "id": "PRECISION_BEAM",
-        "title": "Precision Beam"
+        "title": "Precision Beam",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 18,
+              "damage_ascension": 20
+            }
+          ]
+        }
       },
       {
         "id": "RECHARGE",
-        "title": "Recharge"
+        "title": "Recharge",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Sleep"
+            }
+          ]
+        }
       },
       {
         "id": "TARGETING_RETICLE",
-        "title": "Targeting Reticle"
+        "title": "Targeting Reticle",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 3,
+              "damage_ascension": 4
+            }
+          ]
+        }
       }
     ]
   }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "TWIG_SLIME_M",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "TwigSlimeM",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/TwigSlimeM.cs",
     "hp": {
@@ -29,7 +29,22 @@
       },
       {
         "id": "STICKY_SHOT",
-        "title": "Sticky Shot"
+        "title": "Sticky Shot",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Status",
+              "times": 1
+            }
+          ],
+          "status_cards": [
+            {
+              "card": "Slimed",
+              "count": 1,
+              "pile": "Discard"
+            }
+          ]
+        }
       }
     ]
   }

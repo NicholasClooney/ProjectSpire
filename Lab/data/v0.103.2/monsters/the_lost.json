@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "THE_LOST",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "TheLost",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/TheLost.cs",
     "hp": {
@@ -21,11 +21,41 @@
     "moves": [
       {
         "id": "DEBILITATING_SMOG",
-        "title": "Debilitating Smog"
+        "title": "Debilitating Smog",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Debuff"
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength"
+            },
+            {
+              "name": "Strength",
+              "amount": 2,
+              "amount_ascension": 2
+            }
+          ]
+        }
       },
       {
         "id": "EYE_LASERS",
-        "title": "Eye Lasers"
+        "title": "Eye Lasers",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 4,
+              "damage_ascension": 5,
+              "times": 2
+            }
+          ]
+        }
       }
     ]
   }

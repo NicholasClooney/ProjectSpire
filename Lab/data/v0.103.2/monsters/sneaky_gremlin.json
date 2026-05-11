@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "SNEAKY_GREMLIN",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "SneakyGremlin",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/SneakyGremlin.cs",
     "hp": {
@@ -21,7 +21,16 @@
     "moves": [
       {
         "id": "TACKLE",
-        "title": "Tackle"
+        "title": "Tackle",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 9,
+              "damage_ascension": 10
+            }
+          ]
+        }
       }
     ]
   }

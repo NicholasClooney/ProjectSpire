@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "SEAPUNK",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "Seapunk",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Seapunk.cs",
     "hp": {
@@ -21,15 +21,52 @@
     "moves": [
       {
         "id": "BUBBLE_BURP",
-        "title": "Bubble Burp"
+        "title": "Bubble Burp",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            },
+            {
+              "kind": "Defend"
+            }
+          ],
+          "block": 7,
+          "block_ascension": 8,
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 1,
+              "amount_ascension": 2
+            }
+          ]
+        }
       },
       {
         "id": "SEA_KICK",
-        "title": "Sea Kick"
+        "title": "Sea Kick",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 11,
+              "damage_ascension": 13
+            }
+          ]
+        }
       },
       {
         "id": "SPINNING_KICK",
-        "title": "Spinning Kick"
+        "title": "Spinning Kick",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 2,
+              "times": 4
+            }
+          ]
+        }
       }
     ]
   }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "LAGAVULIN_MATRIARCH",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "LagavulinMatriarch",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/LagavulinMatriarch.cs",
     "hp": {
@@ -21,19 +21,69 @@
     "moves": [
       {
         "id": "DISEMBOWEL",
-        "title": "Disembowel"
+        "title": "Disembowel",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 9,
+              "damage_ascension": 10,
+              "times": 2
+            }
+          ]
+        }
       },
       {
         "id": "SLASH",
-        "title": "Slash"
+        "title": "Slash",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 19,
+              "damage_ascension": 21
+            }
+          ]
+        }
       },
       {
         "id": "SLEEP",
-        "title": "Sleep"
+        "title": "Sleep",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Sleep"
+            }
+          ]
+        }
       },
       {
         "id": "SOUL_SIPHON",
-        "title": "Soul Siphon"
+        "title": "Soul Siphon",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Debuff"
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": -2
+            },
+            {
+              "name": "Dexterity",
+              "amount": -2
+            },
+            {
+              "name": "Strength",
+              "amount": 2
+            }
+          ]
+        }
       }
     ]
   }

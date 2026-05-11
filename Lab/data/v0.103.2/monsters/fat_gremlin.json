@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "FAT_GREMLIN",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "FatGremlin",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/FatGremlin.cs",
     "hp": {
@@ -21,7 +21,14 @@
     "moves": [
       {
         "id": "FLEE",
-        "title": "Flee"
+        "title": "Flee",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Escape"
+            }
+          ]
+        }
       }
     ]
   }

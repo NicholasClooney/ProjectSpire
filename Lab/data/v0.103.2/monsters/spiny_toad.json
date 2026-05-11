@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "SPINY_TOAD",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "SpinyToad",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/SpinyToad.cs",
     "hp": {
@@ -21,15 +21,52 @@
     "moves": [
       {
         "id": "PROTRUDING_SPIKES",
-        "title": "Protruding Spikes"
+        "title": "Protruding Spikes",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Thorns",
+              "amount": 5
+            }
+          ]
+        }
       },
       {
         "id": "SPIKE_EXPLOSION",
-        "title": "Spike Explosion"
+        "title": "Spike Explosion",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 23,
+              "damage_ascension": 25
+            }
+          ],
+          "powers": [
+            {
+              "name": "Thorns",
+              "amount": -5
+            }
+          ]
+        }
       },
       {
         "id": "TONGUE_LASH",
-        "title": "Tongue Lash"
+        "title": "Tongue Lash",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 17,
+              "damage_ascension": 19
+            }
+          ]
+        }
       }
     ]
   }

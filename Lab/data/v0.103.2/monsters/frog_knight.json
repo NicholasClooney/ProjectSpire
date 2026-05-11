@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "FROG_KNIGHT",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "FrogKnight",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/FrogKnight.cs",
     "hp": {
@@ -21,19 +21,68 @@
     "moves": [
       {
         "id": "BEETLE_CHARGE",
-        "title": "Beetle Charge"
+        "title": "Beetle Charge",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 35,
+              "damage_ascension": 40
+            }
+          ]
+        }
       },
       {
         "id": "FOR_THE_QUEEN",
-        "title": "For the Queen"
+        "title": "For the Queen",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 5
+            }
+          ]
+        }
       },
       {
         "id": "STRIKE_DOWN_EVIL",
-        "title": "Strike Down Evil"
+        "title": "Strike Down Evil",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 21,
+              "damage_ascension": 23
+            }
+          ]
+        }
       },
       {
         "id": "TONGUE_LASH",
-        "title": "Tongue Lash"
+        "title": "Tongue Lash",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 13,
+              "damage_ascension": 14
+            },
+            {
+              "kind": "Debuff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Frail",
+              "amount": 2
+            }
+          ]
+        }
       }
     ]
   }

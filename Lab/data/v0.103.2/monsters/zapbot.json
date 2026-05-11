@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "ZAPBOT",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "Zapbot",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Zapbot.cs",
     "hp": {
@@ -21,7 +21,16 @@
     "moves": [
       {
         "id": "ZAP",
-        "title": "Zap"
+        "title": "Zap",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 14,
+              "damage_ascension": 15
+            }
+          ]
+        }
       }
     ]
   }

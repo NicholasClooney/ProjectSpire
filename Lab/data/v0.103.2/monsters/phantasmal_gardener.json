@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "PHANTASMAL_GARDENER",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "PhantasmalGardener",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/PhantasmalGardener.cs",
     "hp": {
@@ -21,19 +21,60 @@
     "moves": [
       {
         "id": "BITE",
-        "title": "Bite"
+        "title": "Bite",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 5,
+              "damage_ascension": 5
+            }
+          ]
+        }
       },
       {
         "id": "ENLARGE",
-        "title": "Enlarge"
+        "title": "Enlarge",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 2,
+              "amount_ascension": 3
+            }
+          ]
+        }
       },
       {
         "id": "FLAIL",
-        "title": "Flail"
+        "title": "Flail",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 1,
+              "times": 3
+            }
+          ]
+        }
       },
       {
         "id": "LASH",
-        "title": "Lash"
+        "title": "Lash",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 7,
+              "damage_ascension": 7
+            }
+          ]
+        }
       }
     ]
   }

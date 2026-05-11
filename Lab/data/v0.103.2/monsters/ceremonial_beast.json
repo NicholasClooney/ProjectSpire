@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "CEREMONIAL_BEAST",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "CeremonialBeast",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/CeremonialBeast.cs",
     "hp": {
@@ -21,23 +21,96 @@
     "moves": [
       {
         "id": "BEAST_CRY",
-        "title": "Beast Cry"
+        "title": "Beast Cry",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Debuff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Ringing",
+              "amount": 1
+            }
+          ]
+        }
       },
       {
         "id": "CRUSH",
-        "title": "Crush"
+        "title": "Crush",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 17,
+              "damage_ascension": 19
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 3,
+              "amount_ascension": 4
+            }
+          ]
+        }
       },
       {
         "id": "PLOW",
-        "title": "Plow"
+        "title": "Plow",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 18,
+              "damage_ascension": 20
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 2
+            }
+          ]
+        }
       },
       {
         "id": "STAMP",
-        "title": "Stamp"
+        "title": "Stamp",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Plow",
+              "amount": 150,
+              "amount_ascension": 160
+            }
+          ]
+        }
       },
       {
         "id": "STOMP",
-        "title": "Stomp"
+        "title": "Stomp",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 15,
+              "damage_ascension": 17
+            }
+          ]
+        }
       }
     ]
   }

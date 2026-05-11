@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "ASSASSIN_RUBY_RAIDER",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "AssassinRubyRaider",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/AssassinRubyRaider.cs",
     "hp": {
@@ -21,7 +21,16 @@
     "moves": [
       {
         "id": "KILLSHOT",
-        "title": "Killshot"
+        "title": "Killshot",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 11,
+              "damage_ascension": 12
+            }
+          ]
+        }
       }
     ]
   }

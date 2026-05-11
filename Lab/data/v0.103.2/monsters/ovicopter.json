@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "OVICOPTER",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "Ovicopter",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Ovicopter.cs",
     "hp": {
@@ -21,19 +21,72 @@
     "moves": [
       {
         "id": "LAY_EGGS",
-        "title": "Lay Eggs"
+        "title": "Lay Eggs",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Summon"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Minion"
+            }
+          ]
+        }
       },
       {
         "id": "NUTRITIONAL_PASTE",
-        "title": "Nutritional Paste"
+        "title": "Nutritional Paste",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 3,
+              "amount_ascension": 4
+            }
+          ]
+        }
       },
       {
         "id": "SMASH",
-        "title": "Smash"
+        "title": "Smash",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 16,
+              "damage_ascension": 17
+            }
+          ]
+        }
       },
       {
         "id": "TENDERIZER",
-        "title": "Tenderizer"
+        "title": "Tenderizer",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 7,
+              "damage_ascension": 8
+            },
+            {
+              "kind": "Debuff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Vulnerable",
+              "amount": 2
+            }
+          ]
+        }
       }
     ]
   }

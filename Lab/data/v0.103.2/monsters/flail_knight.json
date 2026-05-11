@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "FLAIL_KNIGHT",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "FlailKnight",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/FlailKnight.cs",
     "hp": {
@@ -25,11 +25,30 @@
       },
       {
         "id": "FLAIL",
-        "title": "Flail"
+        "title": "Flail",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 9,
+              "damage_ascension": 10,
+              "times": 2
+            }
+          ]
+        }
       },
       {
         "id": "RAM",
-        "title": "Ram"
+        "title": "Ram",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 15,
+              "damage_ascension": 17
+            }
+          ]
+        }
       }
     ]
   }

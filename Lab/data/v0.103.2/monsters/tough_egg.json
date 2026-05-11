@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "TOUGH_EGG",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "ToughEgg",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/ToughEgg.cs",
     "hp": {
@@ -21,7 +21,14 @@
     "moves": [
       {
         "id": "HATCH",
-        "title": "HATCH"
+        "title": "HATCH",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Summon"
+            }
+          ]
+        }
       }
     ]
   }

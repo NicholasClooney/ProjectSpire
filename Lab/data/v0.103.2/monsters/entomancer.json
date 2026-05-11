@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "ENTOMANCER",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "Entomancer",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Entomancer.cs",
     "hp": {
@@ -25,15 +25,55 @@
       },
       {
         "id": "BEES",
-        "title": "Beeeees!"
+        "title": "Beeeees!",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 3,
+              "damage_ascension": 3,
+              "times": 7
+            }
+          ]
+        }
       },
       {
         "id": "PHEROMONE_SPIT",
-        "title": "Pheromone Spit"
+        "title": "Pheromone Spit",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "PersonalHive",
+              "amount": 1
+            },
+            {
+              "name": "Strength",
+              "amount": 1
+            },
+            {
+              "name": "Strength",
+              "amount": 2
+            }
+          ]
+        }
       },
       {
         "id": "SPEAR",
-        "title": "Spear!"
+        "title": "Spear!",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 18,
+              "damage_ascension": 20
+            }
+          ]
+        }
       }
     ]
   }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "TUNNELER",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "Tunneler",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Tunneler.cs",
     "hp": {
@@ -25,11 +25,38 @@
       },
       {
         "id": "BITE",
-        "title": "Bite"
+        "title": "Bite",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 13,
+              "damage_ascension": 15
+            }
+          ]
+        }
       },
       {
         "id": "BURROW",
-        "title": "Burrow"
+        "title": "Burrow",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            },
+            {
+              "kind": "Defend"
+            }
+          ],
+          "block": 32,
+          "block_ascension": 37,
+          "powers": [
+            {
+              "name": "Burrowed",
+              "amount": 1
+            }
+          ]
+        }
       },
       {
         "id": "STRIKE",

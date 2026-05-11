@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "THIEVING_HOPPER",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "ThievingHopper",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/ThievingHopper.cs",
     "hp": {
@@ -21,23 +21,73 @@
     "moves": [
       {
         "id": "ESCAPE",
-        "title": "Escape"
+        "title": "Escape",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Escape"
+            }
+          ]
+        }
       },
       {
         "id": "FLUTTER",
-        "title": "Flutter"
+        "title": "Flutter",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Flutter",
+              "amount": 5
+            }
+          ]
+        }
       },
       {
         "id": "HAT_TRICK",
-        "title": "Hat Trick"
+        "title": "Hat Trick",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 21,
+              "damage_ascension": 23
+            }
+          ]
+        }
       },
       {
         "id": "NAB",
-        "title": "Nab"
+        "title": "Nab",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 14,
+              "damage_ascension": 16
+            }
+          ]
+        }
       },
       {
         "id": "THIEVERY",
-        "title": "Thievery"
+        "title": "Thievery",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 17,
+              "damage_ascension": 19
+            },
+            {
+              "kind": "CardDebuff"
+            }
+          ]
+        }
       }
     ]
   }

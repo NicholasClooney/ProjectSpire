@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "INFESTED_PRISM",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "InfestedPrism",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/InfestedPrism.cs",
     "hp": {
@@ -21,19 +21,71 @@
     "moves": [
       {
         "id": "JAB",
-        "title": "Jab"
+        "title": "Jab",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 22,
+              "damage_ascension": 24
+            }
+          ]
+        }
       },
       {
         "id": "PULSATE",
-        "title": "Pulsate"
+        "title": "Pulsate",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            },
+            {
+              "kind": "Defend"
+            }
+          ],
+          "block": 20,
+          "block_ascension": 22,
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 4,
+              "amount_ascension": 5
+            }
+          ]
+        }
       },
       {
         "id": "RADIATE",
-        "title": "Radiate"
+        "title": "Radiate",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 16,
+              "damage_ascension": 18
+            },
+            {
+              "kind": "Defend"
+            }
+          ],
+          "block": 16,
+          "block_ascension": 18
+        }
       },
       {
         "id": "WHIRLWIND",
-        "title": "Whirlwind"
+        "title": "Whirlwind",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 9,
+              "damage_ascension": 10,
+              "times": 3
+            }
+          ]
+        }
       }
     ]
   }

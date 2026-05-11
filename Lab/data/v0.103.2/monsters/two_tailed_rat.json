@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "TWO_TAILED_RAT",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "TwoTailedRat",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/TwoTailedRat.cs",
     "hp": {
@@ -21,19 +21,57 @@
     "moves": [
       {
         "id": "CALL_FOR_BACKUP",
-        "title": "Call for Backup"
+        "title": "Call for Backup",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Summon"
+            }
+          ]
+        }
       },
       {
         "id": "DISEASE_BITE",
-        "title": "Disease Bite"
+        "title": "Disease Bite",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 6,
+              "damage_ascension": 7
+            }
+          ]
+        }
       },
       {
         "id": "SCRATCH",
-        "title": "Scratch"
+        "title": "Scratch",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 8,
+              "damage_ascension": 9
+            }
+          ]
+        }
       },
       {
         "id": "SCREECH",
-        "title": "Screech"
+        "title": "Screech",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Debuff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Frail",
+              "amount": 1
+            }
+          ]
+        }
       }
     ]
   }

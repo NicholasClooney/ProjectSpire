@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "GREMLIN_MERC",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "GremlinMerc",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/GremlinMerc.cs",
     "hp": {
@@ -21,15 +21,62 @@
     "moves": [
       {
         "id": "DOUBLE_SMASH",
-        "title": "Double Smash"
+        "title": "Double Smash",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 6,
+              "damage_ascension": 7,
+              "times": 2
+            },
+            {
+              "kind": "Debuff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Weak",
+              "amount": 2
+            }
+          ]
+        }
       },
       {
         "id": "GIMME",
-        "title": "Gimme"
+        "title": "Gimme",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 7,
+              "damage_ascension": 8,
+              "times": 2
+            }
+          ]
+        }
       },
       {
         "id": "HEHE",
-        "title": "Hehe"
+        "title": "Hehe",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 8,
+              "damage_ascension": 9
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 2
+            }
+          ]
+        }
       }
     ]
   }

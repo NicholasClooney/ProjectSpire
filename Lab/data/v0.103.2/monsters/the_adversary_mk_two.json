@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "THE_ADVERSARY_MK_TWO",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "TheAdversaryMkTwo",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/TheAdversaryMkTwo.cs",
     "hp": {
@@ -21,15 +21,49 @@
     "moves": [
       {
         "id": "BARRAGE",
-        "title": "Barrage"
+        "title": "Barrage",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 9,
+              "times": 2
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 3
+            }
+          ]
+        }
       },
       {
         "id": "BASH",
-        "title": "Bash"
+        "title": "Bash",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 13
+            }
+          ]
+        }
       },
       {
         "id": "FLAME_BEAM",
-        "title": "Flame Beam"
+        "title": "Flame Beam",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 16
+            }
+          ]
+        }
       }
     ]
   }

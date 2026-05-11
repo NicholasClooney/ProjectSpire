@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "MAGI_KNIGHT",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "MagiKnight",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/MagiKnight.cs",
     "hp": {
@@ -21,7 +21,16 @@
     "moves": [
       {
         "id": "MAGIC_BOMB",
-        "title": "Magic Bomb"
+        "title": "Magic Bomb",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 35,
+              "damage_ascension": 40
+            }
+          ]
+        }
       },
       {
         "id": "POWER_SHIELD",
@@ -29,7 +38,16 @@
       },
       {
         "id": "RAM",
-        "title": "Ram"
+        "title": "Ram",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 10,
+              "damage_ascension": 11
+            }
+          ]
+        }
       }
     ]
   }

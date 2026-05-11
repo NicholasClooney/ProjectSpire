@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "SKULKING_COLONY",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "SkulkingColony",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/SkulkingColony.cs",
     "hp": {
@@ -21,15 +21,58 @@
     "moves": [
       {
         "id": "INERTIA",
-        "title": "Inertia"
+        "title": "Inertia",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 9,
+              "damage_ascension": 11
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 2,
+              "amount_ascension": 3
+            }
+          ]
+        }
       },
       {
         "id": "PIERCING_STABS",
-        "title": "Piercing Stabs"
+        "title": "Piercing Stabs",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 7,
+              "damage_ascension": 8,
+              "times": 2
+            }
+          ]
+        }
       },
       {
         "id": "ZOOM",
-        "title": "Zoom"
+        "title": "Zoom",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 14,
+              "damage_ascension": 16
+            },
+            {
+              "kind": "Defend"
+            }
+          ],
+          "block": 10,
+          "block_ascension": 13
+        }
       }
     ]
   }

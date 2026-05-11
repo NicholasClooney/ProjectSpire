@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "GLOBE_HEAD",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "GlobeHead",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/GlobeHead.cs",
     "hp": {
@@ -29,7 +29,25 @@
       },
       {
         "id": "SHOCKING_SLAP",
-        "title": "Shocking Slap"
+        "title": "Shocking Slap",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 13,
+              "damage_ascension": 14
+            },
+            {
+              "kind": "Debuff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Frail",
+              "amount": 2
+            }
+          ]
+        }
       }
     ]
   }

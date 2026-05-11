@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "FOSSIL_STALKER",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "FossilStalker",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/FossilStalker.cs",
     "hp": {
@@ -21,15 +21,52 @@
     "moves": [
       {
         "id": "LASH",
-        "title": "Lash"
+        "title": "Lash",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 3,
+              "damage_ascension": 4,
+              "times": 2
+            }
+          ]
+        }
       },
       {
         "id": "LATCH",
-        "title": "Latch"
+        "title": "Latch",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 12,
+              "damage_ascension": 14
+            }
+          ]
+        }
       },
       {
         "id": "TACKLE",
-        "title": "Tackle"
+        "title": "Tackle",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 9,
+              "damage_ascension": 11
+            },
+            {
+              "kind": "Debuff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Frail",
+              "amount": 1
+            }
+          ]
+        }
       }
     ]
   }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "SLUMBERING_BEETLE",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "SlumberingBeetle",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/SlumberingBeetle.cs",
     "hp": {
@@ -29,11 +29,36 @@
       },
       {
         "id": "ROLL_OUT",
-        "title": "Roll Out"
+        "title": "Roll Out",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 16,
+              "damage_ascension": 18
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 2
+            }
+          ]
+        }
       },
       {
         "id": "SNORE",
-        "title": "Snore"
+        "title": "Snore",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Sleep"
+            }
+          ]
+        }
       }
     ]
   }

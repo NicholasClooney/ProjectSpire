@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "CRUSHER",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "Crusher",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Crusher.cs",
     "hp": {
@@ -21,23 +21,91 @@
     "moves": [
       {
         "id": "ADAPT",
-        "title": "Adapt"
+        "title": "Adapt",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 2,
+              "amount_ascension": 3
+            }
+          ]
+        }
       },
       {
         "id": "BUG_STING",
-        "title": "Bug Sting"
+        "title": "Bug Sting",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 6,
+              "damage_ascension": 7,
+              "times": 2
+            },
+            {
+              "kind": "Debuff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Weak",
+              "amount": 2
+            },
+            {
+              "name": "Frail",
+              "amount": 2
+            }
+          ]
+        }
       },
       {
         "id": "ENLARGING_STRIKE",
-        "title": "Enlarging Strike"
+        "title": "Enlarging Strike",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 4,
+              "damage_ascension": 4
+            }
+          ]
+        }
       },
       {
         "id": "GUARDED_STRIKE",
-        "title": "Guarded Strike"
+        "title": "Guarded Strike",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 12,
+              "damage_ascension": 14
+            },
+            {
+              "kind": "Defend"
+            }
+          ],
+          "block": 18
+        }
       },
       {
         "id": "THRASH",
-        "title": "Thrash"
+        "title": "Thrash",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 12,
+              "damage_ascension": 14
+            }
+          ]
+        }
       }
     ]
   }

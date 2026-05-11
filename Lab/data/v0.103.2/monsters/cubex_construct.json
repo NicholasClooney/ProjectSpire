@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "CUBEX_CONSTRUCT",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "CubexConstruct",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/CubexConstruct.cs",
     "hp": {
@@ -21,7 +21,20 @@
     "moves": [
       {
         "id": "CHARGE_UP",
-        "title": "Charge Up"
+        "title": "Charge Up",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 2
+            }
+          ]
+        }
       },
       {
         "id": "REPEATER_BLAST",
@@ -29,7 +42,15 @@
       },
       {
         "id": "SUBMERGE",
-        "title": "Submerge"
+        "title": "Submerge",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Defend"
+            }
+          ],
+          "block": 15
+        }
       }
     ]
   }

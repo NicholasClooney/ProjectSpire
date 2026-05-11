@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "KIN_FOLLOWER",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "KinFollower",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/KinFollower.cs",
     "hp": {
@@ -21,15 +21,48 @@
     "moves": [
       {
         "id": "BOOMERANG_MOVE",
-        "title": "Boomerang"
+        "title": "Boomerang",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 2,
+              "damage_ascension": 2,
+              "times": 2
+            }
+          ]
+        }
       },
       {
         "id": "POWER_DANCE_MOVE",
-        "title": "Power Dance"
+        "title": "Power Dance",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Strength",
+              "amount": 2,
+              "amount_ascension": 3
+            }
+          ]
+        }
       },
       {
         "id": "QUICK_SLASH_MOVE",
-        "title": "Quick Slash"
+        "title": "Quick Slash",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 5,
+              "damage_ascension": 5
+            }
+          ]
+        }
       }
     ]
   }

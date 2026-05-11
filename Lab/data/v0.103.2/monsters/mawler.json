@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "MAWLER",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "Mawler",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Mawler.cs",
     "hp": {
@@ -21,15 +21,47 @@
     "moves": [
       {
         "id": "CLAW",
-        "title": "Claw"
+        "title": "Claw",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 4,
+              "damage_ascension": 5,
+              "times": 2
+            }
+          ]
+        }
       },
       {
         "id": "RIP_AND_TEAR",
-        "title": "Rip and Tear"
+        "title": "Rip and Tear",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 14,
+              "damage_ascension": 16
+            }
+          ]
+        }
       },
       {
         "id": "ROAR",
-        "title": "Roar"
+        "title": "Roar",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Debuff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Vulnerable",
+              "amount": 3
+            }
+          ]
+        }
       }
     ]
   }

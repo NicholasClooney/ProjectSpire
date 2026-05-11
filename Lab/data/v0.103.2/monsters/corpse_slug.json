@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "CORPSE_SLUG",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "CorpseSlug",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/CorpseSlug.cs",
     "hp": {
@@ -25,7 +25,16 @@
       },
       {
         "id": "WHIP_SLAP",
-        "title": "Whip Slap"
+        "title": "Whip Slap",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 3,
+              "times": 2
+            }
+          ]
+        }
       }
     ]
   }

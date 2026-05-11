@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "CHOMPER",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "Chomper",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Chomper.cs",
     "hp": {
@@ -21,11 +21,36 @@
     "moves": [
       {
         "id": "CLAMP",
-        "title": "Clamp"
+        "title": "Clamp",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 8,
+              "damage_ascension": 9,
+              "times": 2
+            }
+          ]
+        }
       },
       {
         "id": "SCREECH",
-        "title": "Screech"
+        "title": "Screech",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Status",
+              "times": 3
+            }
+          ],
+          "status_cards": [
+            {
+              "card": "Dazed",
+              "count": 3,
+              "pile": "Discard"
+            }
+          ]
+        }
       },
       {
         "id": "THRASH",

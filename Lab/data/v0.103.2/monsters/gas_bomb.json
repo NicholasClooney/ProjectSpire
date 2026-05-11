@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "GAS_BOMB",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "GasBomb",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/GasBomb.cs",
     "hp": {
@@ -21,7 +21,16 @@
     "moves": [
       {
         "id": "EXPLODE",
-        "title": "Explode"
+        "title": "Explode",
+        "effects": {
+          "intents": [
+            {
+              "kind": "DeathBlow",
+              "damage": 8,
+              "damage_ascension": 9
+            }
+          ]
+        }
       }
     ]
   }

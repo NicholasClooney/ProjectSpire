@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "FLYCONID",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "Flyconid",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Flyconid.cs",
     "hp": {
@@ -21,11 +21,38 @@
     "moves": [
       {
         "id": "FRAIL_SPORES",
-        "title": "Frail Spores"
+        "title": "Frail Spores",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 8,
+              "damage_ascension": 9
+            },
+            {
+              "kind": "Debuff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Frail",
+              "amount": 2
+            }
+          ]
+        }
       },
       {
         "id": "SMASH",
-        "title": "Smash"
+        "title": "Smash",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 11,
+              "damage_ascension": 12
+            }
+          ]
+        }
       },
       {
         "id": "TACKLE.WEAKENING_SPORES",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "THE_FORGOTTEN",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "TheForgotten",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/TheForgotten.cs",
     "hp": {
@@ -21,11 +21,42 @@
     "moves": [
       {
         "id": "DREAD",
-        "title": "Dread"
+        "title": "Dread",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack"
+            }
+          ]
+        }
       },
       {
         "id": "MIASMA",
-        "title": "Miasma"
+        "title": "Miasma",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Debuff"
+            },
+            {
+              "kind": "Defend"
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "block": 8,
+          "powers": [
+            {
+              "name": "Dexterity"
+            },
+            {
+              "name": "Dexterity",
+              "amount": 2,
+              "amount_ascension": 2
+            }
+          ]
+        }
       }
     ]
   }

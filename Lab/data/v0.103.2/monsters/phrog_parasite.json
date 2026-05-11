@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "PHROG_PARASITE",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "PhrogParasite",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/PhrogParasite.cs",
     "hp": {
@@ -21,11 +21,36 @@
     "moves": [
       {
         "id": "INFECT",
-        "title": "Infect"
+        "title": "Infect",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Status",
+              "times": 3
+            }
+          ],
+          "status_cards": [
+            {
+              "card": "Infection",
+              "count": 3,
+              "pile": "Discard"
+            }
+          ]
+        }
       },
       {
         "id": "LASH",
-        "title": "Lash"
+        "title": "Lash",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 4,
+              "damage_ascension": 5,
+              "times": 4
+            }
+          ]
+        }
       },
       {
         "id": "LEAP_SLAM",

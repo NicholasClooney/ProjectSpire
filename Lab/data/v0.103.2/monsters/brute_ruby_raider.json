@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "BRUTE_RUBY_RAIDER",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "BruteRubyRaider",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/BruteRubyRaider.cs",
     "hp": {
@@ -21,7 +21,16 @@
     "moves": [
       {
         "id": "BEAT",
-        "title": "Beat"
+        "title": "Beat",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 7,
+              "damage_ascension": 8
+            }
+          ]
+        }
       },
       {
         "id": "CLAP",

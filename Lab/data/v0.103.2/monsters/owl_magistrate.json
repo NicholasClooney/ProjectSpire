@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "OWL_MAGISTRATE",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "OwlMagistrate",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/OwlMagistrate.cs",
     "hp": {
@@ -21,19 +21,69 @@
     "moves": [
       {
         "id": "JUDICIAL_FLIGHT",
-        "title": "Judicial Flight"
+        "title": "Judicial Flight",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Soar",
+              "amount": 1
+            }
+          ]
+        }
       },
       {
         "id": "MAGISTRATE_SCRUTINY",
-        "title": "Magistrate Scrutiny"
+        "title": "Magistrate Scrutiny",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 16,
+              "damage_ascension": 17
+            }
+          ]
+        }
       },
       {
         "id": "PECK_ASSAULT",
-        "title": "Peck Assault"
+        "title": "Peck Assault",
+        "effects": {
+          "intents": [
+            {
+              "kind": "MultiAttack",
+              "damage": 4,
+              "damage_ascension": 4,
+              "times": 6
+            }
+          ]
+        }
       },
       {
         "id": "VERDICT",
-        "title": "Verdict"
+        "title": "Verdict",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 33,
+              "damage_ascension": 36
+            },
+            {
+              "kind": "Debuff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Vulnerable",
+              "amount": 4
+            }
+          ]
+        }
       }
     ]
   }

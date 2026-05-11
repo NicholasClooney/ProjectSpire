@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "EYE_WITH_TEETH",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "EyeWithTeeth",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/EyeWithTeeth.cs",
     "hp": {
@@ -19,7 +19,22 @@
     "moves": [
       {
         "id": "DISTRACT",
-        "title": "Distract"
+        "title": "Distract",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Status",
+              "times": 3
+            }
+          ],
+          "status_cards": [
+            {
+              "card": "Dazed",
+              "count": 3,
+              "pile": "Discard"
+            }
+          ]
+        }
       },
       {
         "id": "STARTLE",

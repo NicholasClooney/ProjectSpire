@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "id": "WATERFALL_GIANT",
   "raw": {
-    "parser_version": "0.1.0",
+    "parser_version": "0.2.0",
     "class_name": "WaterfallGiant",
     "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/WaterfallGiant.cs",
     "hp": {
@@ -21,23 +21,113 @@
     "moves": [
       {
         "id": "PRESSURE_GUN",
-        "title": "Pressure Gun"
+        "title": "Pressure Gun",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack"
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "SteamEruption",
+              "amount": 3
+            }
+          ]
+        }
       },
       {
         "id": "PRESSURIZE",
-        "title": "Pressurize"
+        "title": "Pressurize",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "SteamEruption",
+              "amount": 15,
+              "amount_ascension": 20
+            }
+          ]
+        }
       },
       {
         "id": "RAM",
-        "title": "Ram"
+        "title": "Ram",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 10,
+              "damage_ascension": 11
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "SteamEruption",
+              "amount": 3
+            }
+          ]
+        }
       },
       {
         "id": "SIPHON",
-        "title": "Siphon"
+        "title": "Siphon",
+        "effects": {
+          "intents": [
+            {
+              "kind": "Heal"
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "SteamEruption",
+              "amount": 3
+            }
+          ],
+          "heal": 15
+        }
       },
       {
         "id": "STOMP",
-        "title": "Stomp"
+        "title": "Stomp",
+        "effects": {
+          "intents": [
+            {
+              "kind": "SingleAttack",
+              "damage": 15,
+              "damage_ascension": 16
+            },
+            {
+              "kind": "Debuff"
+            },
+            {
+              "kind": "Buff"
+            }
+          ],
+          "powers": [
+            {
+              "name": "Weak",
+              "amount": 1
+            },
+            {
+              "name": "SteamEruption",
+              "amount": 3
+            }
+          ]
+        }
       }
     ]
   }
