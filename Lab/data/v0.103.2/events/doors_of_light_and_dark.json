@@ -1,0 +1,163 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DOORS_OF_LIGHT_AND_DARK",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DoorsOfLightAndDark",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/DoorsOfLightAndDark.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "DOORS_OF_LIGHT_AND_DARK.title"
+    },
+    "vars": {
+      "Cards": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/doors_of_light_and_dark.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Doors of Light and Dark",
+    "pages": {
+      "DARK": {
+        "description": {
+          "plain": "Into the darkness...\n\nYou see nothing.\nBut this helps you think... You shed pointless thoughts.\n\nYou're back in the Underdocks.\nHow did you? Huh...?",
+          "runs": [
+            {
+              "text": "Into the darkness...",
+              "style": "purple"
+            },
+            {
+              "text": "\n\nYou see nothing.\nBut this helps you think... You shed "
+            },
+            {
+              "text": "pointless thoughts",
+              "style": "red"
+            },
+            {
+              "text": ".\n\nYou're back in the "
+            },
+            {
+              "text": "Underdocks",
+              "style": "blue"
+            },
+            {
+              "text": ".\nHow did you? Huh...?"
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "A doorway existed where none existed moments before...\n\nYou enter to find two shimmering doorways and a well-dressed doorman.\n\u201cFinally, a visitor! Please please! Choose a door, any door!\u201d\n\nAre we still in the Spire? How is this place so clean?",
+          "runs": [
+            {
+              "text": "A doorway existed where none existed moments before...\n\nYou enter to find two shimmering doorways and a "
+            },
+            {
+              "text": "well-dressed doorman",
+              "style": "gold"
+            },
+            {
+              "text": ".\n\u201cFinally, a visitor! Please please! Choose a door, any door!\u201d\n\n"
+            },
+            {
+              "text": "Are we still in the Spire? How is this place so clean?",
+              "style": "blue"
+            }
+          ]
+        },
+        "options": {
+          "DARK": {
+            "title": "Dark Door",
+            "description": {
+              "plain": "Remove 1 card from your Deck.",
+              "runs": [
+                {
+                  "text": "Remove "
+                },
+                {
+                  "text": "1",
+                  "style": "blue"
+                },
+                {
+                  "text": " card from your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "LIGHT": {
+            "title": "Light Door",
+            "description": {
+              "plain": "Upgrade 2 random cards.",
+              "runs": [
+                {
+                  "text": "Upgrade",
+                  "style": "gold"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "2",
+                  "source_var": "Cards",
+                  "style": "blue"
+                },
+                {
+                  "text": " random cards."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "LIGHT": {
+        "description": {
+          "plain": "Into the light...\n\nIt's blinding!! But the light strengthens you.\n\nYou're back in the Underdocks.\nHow did you? Huh...?",
+          "runs": [
+            {
+              "text": "Into the light...",
+              "style": "gold"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "text": "It's blinding!!",
+              "style": "jitter"
+            },
+            {
+              "text": " But the light "
+            },
+            {
+              "text": "strengthens",
+              "style": "gold"
+            },
+            {
+              "text": " you.\n\nYou're back in the "
+            },
+            {
+              "text": "Underdocks",
+              "style": "blue"
+            },
+            {
+              "text": ".\nHow did you? Huh...?"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

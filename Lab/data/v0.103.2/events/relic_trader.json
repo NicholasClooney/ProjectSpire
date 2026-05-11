@@ -1,0 +1,130 @@
+{
+  "schema_version": "0.1.0",
+  "id": "RELIC_TRADER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "RelicTrader",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/RelicTrader.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "RELIC_TRADER.title"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/relic_trader.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Relic Trader",
+    "pages": {
+      "DONE": {
+        "description": {
+          "plain": "\u201cHehehe Heh... Thank you!\u201d",
+          "runs": [
+            {
+              "text": "\u201cHehehe Heh... Thank you!\u201d"
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "You turn a corner and suddenly, a shadowy figure is just standing there. He pivots to face you.\n\n\u201cWelcome! What're ya trading?\u201d\nThe figure inquires as he flares open his cloak to reveal a slew of suspicious wares.",
+          "runs": [
+            {
+              "text": "You turn a corner and suddenly, a shadowy figure is just standing there. He pivots to face you.\n\n\u201cWelcome! What're ya trading?\u201d\nThe figure inquires as he flares open his cloak to reveal a slew of "
+            },
+            {
+              "text": "suspicious wares",
+              "style": "purple"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        "options": {
+          "BOTTOM": {
+            "title": "Take the Bottom One",
+            "description": {
+              "plain": "Trade {BottomRelicOwned} for {BottomRelicNew}.",
+              "runs": [
+                {
+                  "text": "Trade "
+                },
+                {
+                  "text": "{BottomRelicOwned}",
+                  "style": "gold"
+                },
+                {
+                  "text": " for "
+                },
+                {
+                  "text": "{BottomRelicNew}",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "MIDDLE": {
+            "title": "Take the Middle One",
+            "description": {
+              "plain": "Trade {MiddleRelicOwned} for {MiddleRelicNew}.",
+              "runs": [
+                {
+                  "text": "Trade "
+                },
+                {
+                  "text": "{MiddleRelicOwned}",
+                  "style": "gold"
+                },
+                {
+                  "text": " for "
+                },
+                {
+                  "text": "{MiddleRelicNew}",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "TOP": {
+            "title": "Take the Top One",
+            "description": {
+              "plain": "Trade {TopRelicOwned} for {TopRelicNew}.",
+              "runs": [
+                {
+                  "text": "Trade "
+                },
+                {
+                  "text": "{TopRelicOwned}",
+                  "style": "gold"
+                },
+                {
+                  "text": " for "
+                },
+                {
+                  "text": "{TopRelicNew}",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

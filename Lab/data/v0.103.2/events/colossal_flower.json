@@ -1,0 +1,373 @@
+{
+  "schema_version": "0.1.0",
+  "id": "COLOSSAL_FLOWER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ColossalFlower",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/ColossalFlower.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "COLOSSAL_FLOWER.title"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/colossal_flower.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Colossal Flower",
+    "loss": {
+      "plain": "{character} reached too deep into the {event}.",
+      "runs": [
+        {
+          "text": "{character} reached too deep into the "
+        },
+        {
+          "text": "{event}",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "pages": {
+      "EXTRACT_CURRENT_PRIZE": {
+        "description": {
+          "plain": "You carefully gather some nectar from the flower's flesh.\nThe petals shimmer angrily.",
+          "runs": [
+            {
+              "text": "You carefully gather some "
+            },
+            {
+              "text": "nectar",
+              "style": "gold"
+            },
+            {
+              "text": " from the flower's flesh.\nThe petals shimmer angrily."
+            }
+          ]
+        }
+      },
+      "EXTRACT_INSTEAD": {
+        "description": {
+          "plain": "Your whole body is numb and messed up from the toxins, barbs, and leaves.\nEnough is enough.\n\nYou stow away a glob of high-quality nectar and retreat.",
+          "runs": [
+            {
+              "text": "Your whole body is numb and messed up from the "
+            },
+            {
+              "text": "toxins",
+              "style": "purple"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "barbs",
+              "style": "red"
+            },
+            {
+              "text": ", and "
+            },
+            {
+              "text": "leaves",
+              "style": "green"
+            },
+            {
+              "text": ".\nEnough is enough.\n\nYou stow away a glob of "
+            },
+            {
+              "text": "high-quality nectar",
+              "style": "gold"
+            },
+            {
+              "text": " and retreat."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "There is a colossal flower growing atop a mountain of bones.\n\nAs its [rainbow freq=0.3 sat=0.8 val=1]color-shifting petals pulsate, you sense there is a Powerful Cluster of Pollen in the center but the undulating petals are razor sharp and unpredictable.\n\nYou could grab some of the golden nectar, but reaching the prize in the center is so tempting...",
+          "runs": [
+            {
+              "text": "There is a "
+            },
+            {
+              "text": "colossal flower",
+              "style": "green"
+            },
+            {
+              "text": " growing atop a "
+            },
+            {
+              "text": "mountain of bones",
+              "style": "jitter"
+            },
+            {
+              "text": ".\n\nAs its "
+            },
+            {
+              "text": "[rainbow freq=0.3 sat=0.8 val=1]color-shifting petals",
+              "style": "sine"
+            },
+            {
+              "text": " pulsate, you sense there is a "
+            },
+            {
+              "text": "Powerful Cluster of Pollen",
+              "style": "aqua"
+            },
+            {
+              "text": " in the center but the undulating petals are "
+            },
+            {
+              "text": "razor sharp",
+              "style": "red"
+            },
+            {
+              "text": " and unpredictable.\n\nYou could grab some of the "
+            },
+            {
+              "text": "golden nectar",
+              "style": "gold"
+            },
+            {
+              "text": ", but reaching the prize in the center is so tempting..."
+            }
+          ]
+        },
+        "options": {
+          "EXTRACT_CURRENT_PRIZE_1": {
+            "title": "Extract Nectar",
+            "description": {
+              "plain": "Gain {Prize1} Gold.",
+              "runs": [
+                {
+                  "text": "Gain "
+                },
+                {
+                  "text": "{Prize1}",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "REACH_DEEPER_1": {
+            "title": "Reach Deeper",
+            "description": {
+              "plain": "Enter deeper. Lose 5 HP.",
+              "runs": [
+                {
+                  "text": "Enter deeper. Lose "
+                },
+                {
+                  "text": "5",
+                  "style": "red"
+                },
+                {
+                  "text": " HP."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "POLLINOUS_CORE": {
+        "description": {
+          "plain": "With a final lunge you grab hold of the pollinous core!\nThe plant shudders violently; its petals go dull, and the tingling stops.\n\nThe golden nectar becomes worthless muck.\nYou killed it.",
+          "runs": [
+            {
+              "text": "With a final lunge you grab hold of the "
+            },
+            {
+              "text": "pollinous core",
+              "style": "aqua"
+            },
+            {
+              "text": "!\nThe plant shudders violently; its petals go dull, and the "
+            },
+            {
+              "text": "tingling",
+              "style": "jitter"
+            },
+            {
+              "text": " stops.\n\nThe "
+            },
+            {
+              "text": "golden nectar",
+              "style": "gold"
+            },
+            {
+              "text": " becomes worthless muck.\nYou killed it."
+            }
+          ]
+        }
+      },
+      "REACH_DEEPER_1": {
+        "description": {
+          "plain": "You push past a layer of razor-sharp petals, they're coated with a substance that makes your skin tingle. This seems to numb the pain?\n\nMaybe this is why there is a pile of bones here...",
+          "runs": [
+            {
+              "text": "You push past a layer of "
+            },
+            {
+              "text": "razor-sharp",
+              "style": "red"
+            },
+            {
+              "text": " petals, they're coated with a "
+            },
+            {
+              "text": "substance",
+              "style": "purple"
+            },
+            {
+              "text": " that makes your skin "
+            },
+            {
+              "text": "tingle",
+              "style": "jitter"
+            },
+            {
+              "text": ". This seems to numb the pain?\n\nMaybe this is why there is a pile of bones here..."
+            }
+          ]
+        },
+        "options": {
+          "EXTRACT_CURRENT_PRIZE_2": {
+            "title": "Extract Nectar",
+            "description": {
+              "plain": "Gain {Prize2} Gold.",
+              "runs": [
+                {
+                  "text": "Gain "
+                },
+                {
+                  "text": "{Prize2}",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "REACH_DEEPER_2": {
+            "title": "Reach Deeper",
+            "description": {
+              "plain": "Enter even deeper. Lose 6 HP.",
+              "runs": [
+                {
+                  "text": "Enter even deeper. Lose "
+                },
+                {
+                  "text": "6",
+                  "style": "red"
+                },
+                {
+                  "text": " HP."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "REACH_DEEPER_2": {
+        "description": {
+          "plain": "The tingling turns into a throbbing weakness as you push onwards...\n\nThis flower wants to eat me. Why did I go into it?",
+          "runs": [
+            {
+              "text": "The tingling turns into a "
+            },
+            {
+              "text": "throbbing weakness",
+              "style": "red"
+            },
+            {
+              "text": " as you push onwards...\n\n"
+            },
+            {
+              "text": "This flower wants to eat me. Why did I go into it?",
+              "style": "purple"
+            }
+          ]
+        },
+        "options": {
+          "EXTRACT_INSTEAD": {
+            "title": "Extract Nectar",
+            "description": {
+              "plain": "Gain {Prize3} Gold.",
+              "runs": [
+                {
+                  "text": "Gain "
+                },
+                {
+                  "text": "{Prize3}",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "POLLINOUS_CORE": {
+            "title": "Enter the Center",
+            "description": {
+              "plain": "Lose 7 HP. Obtain Pollinous Core.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "7",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. Obtain "
+                },
+                {
+                  "text": "Pollinous Core",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

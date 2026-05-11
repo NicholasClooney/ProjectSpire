@@ -1,0 +1,116 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SYMBIOTE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Symbiote",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/Symbiote.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "SYMBIOTE.title"
+    },
+    "vars": {
+      "Cards": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/symbiote.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Symbiote",
+    "pages": {
+      "APPROACH": {
+        "description": {
+          "plain": "It suddenly jumps onto you. You feel a searing pain as it latches onto your arm, but in an instant it is gone.\n\n...? Where did it go?",
+          "runs": [
+            {
+              "text": "It suddenly jumps onto you. You feel a searing pain as it latches onto your arm, but in an instant it is gone.\n\n...? Where did it go?"
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "Along your travels, you stumble upon a dark, amorphous polyp. You can sense that it is very old, and very evil.\n\nApproach...",
+          "runs": [
+            {
+              "text": "Along your travels, you stumble upon a dark, amorphous polyp. You can sense that it is very old, and very evil.\n\n"
+            },
+            {
+              "text": "Approach...",
+              "style": "sine"
+            }
+          ]
+        },
+        "options": {
+          "APPROACH": {
+            "title": "Approach",
+            "description": {
+              "plain": "Enchant an Attack with {Enchantment}.",
+              "runs": [
+                {
+                  "text": "Enchant",
+                  "style": "gold"
+                },
+                {
+                  "text": " an Attack with "
+                },
+                {
+                  "text": "{Enchantment}",
+                  "style": "purple"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "APPROACH_LOCKED": {
+            "title": "Locked",
+            "description": {
+              "plain": "None of your Attacks can be Enchanted.",
+              "runs": [
+                {
+                  "text": "None of your Attacks can be Enchanted."
+                }
+              ]
+            }
+          },
+          "KILL_WITH_FIRE": {
+            "title": "Kill with Fire",
+            "description": {
+              "plain": "Choose a card to Transform.",
+              "runs": [
+                {
+                  "text": "Choose a card to "
+                },
+                {
+                  "text": "Transform",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "KILL_WITH_FIRE": {
+        "description": {
+          "plain": "You torch the dark polyp. As it screeches and burns into ashes, your head pulses painfully but you manage not to faint.\nWhat was that thing?",
+          "runs": [
+            {
+              "text": "You torch the dark polyp. As it screeches and burns into ashes, your head pulses painfully but you manage not to faint.\nWhat was that thing?"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

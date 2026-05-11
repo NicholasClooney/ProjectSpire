@@ -1,0 +1,404 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TINKER_TIME",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TinkerTime",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/TinkerTime.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "TINKER_TIME.title"
+    },
+    "vars": {
+      "Damage": 12,
+      "Block": 8,
+      "SappingWeak": 2,
+      "SappingVulnerable": 2,
+      "ViolenceHits": 3,
+      "ChokingDamage": 6,
+      "EnergizedEnergy": 2,
+      "WisdomCards": 3,
+      "ExpertiseStrength": 2,
+      "ExpertiseDexterity": 2,
+      "CuriousReduction": 1,
+      "energyPrefix": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/tinker_time.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Tinker Time",
+    "pages": {
+      "CHOOSE_CARD_TYPE": {
+        "description": {
+          "plain": "\u201cWhat kind of tool will help you kill everyone?\u201d",
+          "runs": [
+            {
+              "text": "\u201cWhat kind of tool will help you "
+            },
+            {
+              "text": "kill everyone",
+              "style": "jitter"
+            },
+            {
+              "text": "?\u201d"
+            }
+          ]
+        },
+        "options": {
+          "ATTACK": {
+            "title": "Weapon",
+            "description": {
+              "plain": "Make an Attack.",
+              "runs": [
+                {
+                  "text": "Make an Attack."
+                }
+              ]
+            }
+          },
+          "POWER": {
+            "title": "Gadget",
+            "description": {
+              "plain": "Make a Power.",
+              "runs": [
+                {
+                  "text": "Make a Power."
+                }
+              ]
+            }
+          },
+          "SKILL": {
+            "title": "Protector",
+            "description": {
+              "plain": "Make a Skill.",
+              "runs": [
+                {
+                  "text": "Make a Skill."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "CHOOSE_RIDER": {
+        "description": {
+          "plain": "\u201cExcellent choice! Now what should it DO?\u201d\nThe scientist rubs her hands together with glee.",
+          "runs": [
+            {
+              "text": "\u201cExcellent choice! Now what should it "
+            },
+            {
+              "text": "DO",
+              "style": "sine"
+            },
+            {
+              "text": "?\u201d\nThe "
+            },
+            {
+              "text": "scientist",
+              "style": "orange"
+            },
+            {
+              "text": " rubs her hands together with glee."
+            }
+          ]
+        },
+        "options": {
+          "CHAOS": {
+            "title": "Chaos",
+            "description": {
+              "plain": "Add a random card into your Hand. It's free to play this turn.",
+              "runs": [
+                {
+                  "text": "Add a random card into your "
+                },
+                {
+                  "text": "Hand",
+                  "style": "gold"
+                },
+                {
+                  "text": ". It's free to play this turn."
+                }
+              ]
+            }
+          },
+          "CHOKING": {
+            "title": "Choking",
+            "description": {
+              "plain": "Whenever you play a card this turn, the enemy loses 6 HP.",
+              "runs": [
+                {
+                  "text": "Whenever you play a card this turn, the enemy loses "
+                },
+                {
+                  "text": "6",
+                  "source_var": "ChokingDamage",
+                  "style": "blue"
+                },
+                {
+                  "text": " HP."
+                }
+              ]
+            }
+          },
+          "CURIOUS": {
+            "title": "Curious",
+            "description": {
+              "plain": "Powers cost 1  less.",
+              "runs": [
+                {
+                  "text": "Powers cost "
+                },
+                {
+                  "text": "1",
+                  "source_var": "CuriousReduction",
+                  "style": "blue"
+                },
+                {
+                  "text": "  less."
+                }
+              ]
+            }
+          },
+          "ENERGIZED": {
+            "title": "Energized",
+            "description": {
+              "plain": "Gain 2.",
+              "runs": [
+                {
+                  "text": "Gain "
+                },
+                {
+                  "text": "2",
+                  "source_var": "EnergizedEnergy"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "EXPERTISE": {
+            "title": "Expertise",
+            "description": {
+              "plain": "Gain 2 Strength. Gain 2 Dexterity.",
+              "runs": [
+                {
+                  "text": "Gain "
+                },
+                {
+                  "text": "2",
+                  "source_var": "ExpertiseStrength",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Strength",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Gain "
+                },
+                {
+                  "text": "2",
+                  "source_var": "ExpertiseDexterity",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Dexterity",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "IMPROVEMENT": {
+            "title": "Improvement",
+            "description": {
+              "plain": "At the end of combat, Upgrade a random card.",
+              "runs": [
+                {
+                  "text": "At the end of combat, "
+                },
+                {
+                  "text": "Upgrade",
+                  "style": "gold"
+                },
+                {
+                  "text": " a random card."
+                }
+              ]
+            }
+          },
+          "SAPPING": {
+            "title": "Sapping",
+            "description": {
+              "plain": "Apply 2 Weak. Apply 2 Vulnerable.",
+              "runs": [
+                {
+                  "text": "Apply "
+                },
+                {
+                  "text": "2",
+                  "source_var": "SappingWeak",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Weak",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Apply "
+                },
+                {
+                  "text": "2",
+                  "source_var": "SappingVulnerable",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Vulnerable",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "VIOLENCE": {
+            "title": "Violence",
+            "description": {
+              "plain": "Hits 2 additional times.",
+              "runs": [
+                {
+                  "text": "Hits "
+                },
+                {
+                  "text": "2",
+                  "style": "blue"
+                },
+                {
+                  "text": " additional times."
+                }
+              ]
+            }
+          },
+          "WISDOM": {
+            "title": "Wisdom",
+            "description": {
+              "plain": "Draw 3 cards.",
+              "runs": [
+                {
+                  "text": "Draw "
+                },
+                {
+                  "text": "3",
+                  "source_var": "WisdomCards",
+                  "style": "blue"
+                },
+                {
+                  "text": " cards."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "DONE": {
+        "description": {
+          "plain": "\u201cWhew! All done. This is for you! Now get out there and slaughter!!\u201d\n\nLittle did you know, that scientist went on to create hundreds of weapons, resulting in several thousand deaths within the Spire.",
+          "runs": [
+            {
+              "text": "\u201cWhew! All done. This is for you! Now get out there and "
+            },
+            {
+              "text": "slaughter",
+              "style": "jitter"
+            },
+            {
+              "text": "!!\u201d\n\nLittle did you know, that "
+            },
+            {
+              "text": "scientist",
+              "style": "orange"
+            },
+            {
+              "text": " went on to create hundreds of weapons, resulting in several thousand deaths within the Spire."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "Navigating through an endless sea of corpses, you find a mad scientist scavenging for various scraps.\n\n\u201cYes. Hi, hello! You look like a capable fighter... I need a tester for my next atrocity device! How about it?\u201d",
+          "runs": [
+            {
+              "text": "Navigating through an "
+            },
+            {
+              "text": "endless sea of corpses",
+              "style": "sine"
+            },
+            {
+              "text": ", you find a "
+            },
+            {
+              "text": "mad scientist",
+              "style": "orange"
+            },
+            {
+              "text": " scavenging for various scraps.\n\n\u201cYes. Hi, hello! You look like a capable fighter... I need a tester for my next "
+            },
+            {
+              "text": "atrocity device",
+              "style": "green"
+            },
+            {
+              "text": "! How about it?\u201d"
+            }
+          ]
+        },
+        "options": {
+          "CHOOSE_CARD_TYPE": {
+            "title": "Accept",
+            "description": {
+              "plain": "Create a custom card to add to your Deck.",
+              "runs": [
+                {
+                  "text": "Create a custom card to add to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

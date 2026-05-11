@@ -1,0 +1,284 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DOLL_ROOM",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DollRoom",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/DollRoom.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "DOLL_ROOM.title"
+    },
+    "vars": {
+      "TakeTimeHpLoss": 5,
+      "ExamineHpLoss": 15
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/doll_room.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Doll Room",
+    "loss": {
+      "plain": "{character} was driven mad by the whispers of the {event}.",
+      "runs": [
+        {
+          "text": "{character} was driven mad by the whispers of the "
+        },
+        {
+          "text": "{event}",
+          "style": "b"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "pages": {
+      "DAUGHTER_OF_WIND": {
+        "description": {
+          "plain": "\u201cYou should be happy I chose you!\u201d\nThe doll proclaims triumphantly.",
+          "runs": [
+            {
+              "text": "\u201cYou should be happy I chose you!\u201d",
+              "style": "blue"
+            },
+            {
+              "text": "\nThe doll proclaims triumphantly."
+            }
+          ]
+        }
+      },
+      "EXAMINE": {
+        "description": {
+          "plain": "You examine each and every doll before you make your choice.\n\nThe shouting has reached a piercing crescendo but you manage to make a choice before going completely mad!",
+          "runs": [
+            {
+              "text": "You examine each and every doll before you make your choice.\n\nThe shouting has reached a "
+            },
+            {
+              "text": "piercing crescendo",
+              "style": "jitter"
+            },
+            {
+              "text": " but you manage to make a choice before going completely mad!"
+            }
+          ]
+        }
+      },
+      "FABLE": {
+        "description": {
+          "plain": "A warm voice happily fills your head.\n\u201cWe are going to uncover the most delightful stories together!\u201d",
+          "runs": [
+            {
+              "text": "A warm voice happily fills your head.\n"
+            },
+            {
+              "text": "\u201cWe are going to uncover the most delightful stories together!\u201d",
+              "style": "sine"
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "You enter a hidden room...\n\nIt's packed with an array of dolls. Each are unique, their expressions ranging from joy to sorrow, their attire spanning centuries and realms beyond your own.\n\nA chorus of whispers grows louder and louder until the dolls are shouting over each other and calling for you...\n\nYou must choose one and leave immediately.",
+          "runs": [
+            {
+              "text": "You enter a hidden room...\n\nIt's packed with an array of dolls. Each are unique, their expressions ranging from "
+            },
+            {
+              "text": "joy",
+              "style": "green"
+            },
+            {
+              "text": " to "
+            },
+            {
+              "text": "sorrow",
+              "style": "purple"
+            },
+            {
+              "text": ", their attire spanning centuries and realms beyond your own.\n\nA "
+            },
+            {
+              "text": "chorus of whispers",
+              "style": "blue"
+            },
+            {
+              "text": " grows louder and louder until "
+            },
+            {
+              "text": "the dolls are shouting",
+              "style": "red"
+            },
+            {
+              "text": " over each other and calling for you...\n\nYou must choose one and leave immediately."
+            }
+          ]
+        },
+        "options": {
+          "EXAMINE": {
+            "title": "Examine Each and Make the Best Choice",
+            "description": {
+              "plain": "Lose 15 HP. Choose 1 of 3 Doll Relics.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "15",
+                  "source_var": "ExamineHpLoss",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. Choose "
+                },
+                {
+                  "text": "1",
+                  "style": "blue"
+                },
+                {
+                  "text": " of "
+                },
+                {
+                  "text": "3",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Doll Relics",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "RANDOM": {
+            "title": "Pick at Random",
+            "description": {
+              "plain": "Obtain a random Doll Relic.",
+              "runs": [
+                {
+                  "text": "Obtain a random "
+                },
+                {
+                  "text": "Doll Relic",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "TAKE_SOME_TIME": {
+            "title": "Take Some Time",
+            "description": {
+              "plain": "Lose 5 HP. Choose 1 of 2 Doll Relics.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "5",
+                  "source_var": "TakeTimeHpLoss",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. Choose "
+                },
+                {
+                  "text": "1",
+                  "style": "blue"
+                },
+                {
+                  "text": " of "
+                },
+                {
+                  "text": "2",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Doll Relics",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "MR_STRUGGLES": {
+        "description": {
+          "plain": "As you pick up the worn-looking doll, all of the voices go silent.\nThis one doesn't speak.",
+          "runs": [
+            {
+              "text": "As you pick up the "
+            },
+            {
+              "text": "worn-looking doll",
+              "style": "purple"
+            },
+            {
+              "text": ", all of the voices go silent.\nThis one doesn't speak."
+            }
+          ]
+        }
+      },
+      "TAKE": {
+        "options": {
+          "TAKE": {
+            "title": "",
+            "description": {
+              "plain": "Receive {RelicName}.",
+              "runs": [
+                {
+                  "text": "Receive "
+                },
+                {
+                  "text": "{RelicName}",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "TAKE_SOME_TIME": {
+        "description": {
+          "plain": "Amid the shouting, you quickly examine the dolls.\n\nOne of these two may be good?\nIt's hard to concentrate through the mental anguish.",
+          "runs": [
+            {
+              "text": "Amid the shouting, you quickly examine the dolls.\n\nOne of these two may be good?\nIt's hard to concentrate through the "
+            },
+            {
+              "text": "mental anguish",
+              "style": "red"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

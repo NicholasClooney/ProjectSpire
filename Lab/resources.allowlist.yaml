@@ -41,3 +41,13 @@ entries:
       - ".DS_Store"
       - "**/*.import"
     transform: webp-q85
+
+  - name: event_images
+    from: images/events
+    to: images/events
+    include:
+      - "**/*.png"
+    exclude:
+      - ".DS_Store"
+      - "**/*.import"
+    transform: webp-q85

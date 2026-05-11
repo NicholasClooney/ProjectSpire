@@ -1,0 +1,210 @@
+{
+  "schema_version": "0.1.0",
+  "id": "UNREST_SITE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "UnrestSite",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/UnrestSite.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "UNREST_SITE.title"
+    },
+    "vars": {
+      "Heal": 0,
+      "MaxHpLoss": 8
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/unrest_site.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Unrest Site",
+    "loss": {
+      "plain": "{character} was burned by the {event}.",
+      "runs": [
+        {
+          "text": "{character} was burned by the "
+        },
+        {
+          "text": "{event}",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "pages": {
+      "INITIAL": {
+        "description": {
+          "plain": "You find a secluded Rest Site and start a fire to get some rest.\nOr so you thought.\n\nOnce the fire is started, it begins to swell, reaching not upwards but sideways towards a grove of oil-seeping trees.\n\nShould you try resting anyways?",
+          "runs": [
+            {
+              "text": "You find a secluded "
+            },
+            {
+              "text": "Rest Site",
+              "style": "gold"
+            },
+            {
+              "text": " and start a "
+            },
+            {
+              "text": "fire",
+              "style": "orange"
+            },
+            {
+              "text": " to get some rest.\nOr so you thought.\n\nOnce the fire is started, it begins to swell, reaching not upwards but "
+            },
+            {
+              "text": "sideways",
+              "style": "sine"
+            },
+            {
+              "text": " towards a grove of "
+            },
+            {
+              "text": "oil-seeping trees",
+              "style": "purple"
+            },
+            {
+              "text": ".\n\nShould you try resting anyways?"
+            }
+          ]
+        },
+        "options": {
+          "KILL": {
+            "title": "Kill the Trees",
+            "description": {
+              "plain": "Lose 8 Max HP. Obtain a random Relic.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "8",
+                  "source_var": "MaxHpLoss",
+                  "style": "red"
+                },
+                {
+                  "text": " Max HP. Obtain a random "
+                },
+                {
+                  "text": "Relic",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "REST": {
+            "title": "Rest Anyways",
+            "description": {
+              "plain": "Heal to full HP. Receive Poor Sleep.",
+              "runs": [
+                {
+                  "text": "Heal to full HP.",
+                  "style": "green"
+                },
+                {
+                  "text": " Receive "
+                },
+                {
+                  "text": "Poor Sleep",
+                  "style": "red"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "KILL": {
+        "description": {
+          "plain": "These trees are clearly malicious so you decide to get rid of them.\nDays later, you're covered in ash and oily goop.\n\nA massive flock of little byrd spirits rise from the slain trees and drop a small box at your feet.\n\u201cThank you for freeing us from those trees... cheep cheep!\u201d\n\nYou should really sleep more.",
+          "runs": [
+            {
+              "text": "These trees are "
+            },
+            {
+              "text": "clearly malicious",
+              "style": "purple"
+            },
+            {
+              "text": " so you decide to get rid of them.\nDays later, you're covered in "
+            },
+            {
+              "text": "ash",
+              "style": "red"
+            },
+            {
+              "text": " and "
+            },
+            {
+              "text": "oily goop",
+              "style": "purple"
+            },
+            {
+              "text": ".\n\nA massive flock of little byrd spirits rise from the slain trees and drop a "
+            },
+            {
+              "text": "small box",
+              "style": "gold"
+            },
+            {
+              "text": " at your feet.\n"
+            },
+            {
+              "text": "\u201cThank you for freeing us from those trees... ",
+              "style": "green"
+            },
+            {
+              "text": "cheep cheep",
+              "style": "sine"
+            },
+            {
+              "text": "!\u201d",
+              "style": "green"
+            },
+            {
+              "text": "\n\nYou should really sleep more."
+            }
+          ]
+        }
+      },
+      "REST": {
+        "description": {
+          "plain": "All this adventuring has left you exhausted, and despite the oddities, you decide to sleep.\n\nYou toss and turn as the fire roars and crackles through the night. The disgusting trees give off a wretched scent from their pitch-black sap.\n\nYou wake up, recovered, but not replenished.",
+          "runs": [
+            {
+              "text": "All this adventuring has left you exhausted, and despite the oddities, you decide to sleep.\n\nYou toss and turn as the "
+            },
+            {
+              "text": "fire",
+              "style": "orange"
+            },
+            {
+              "text": " roars and crackles through the night. The "
+            },
+            {
+              "text": "disgusting trees",
+              "style": "purple"
+            },
+            {
+              "text": " give off a wretched scent from their pitch-black sap.\n\nYou wake up, recovered, but not replenished."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

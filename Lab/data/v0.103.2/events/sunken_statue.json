@@ -1,0 +1,203 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SUNKEN_STATUE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SunkenStatue",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/SunkenStatue.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "SUNKEN_STATUE.title"
+    },
+    "vars": {
+      "Gold": 111,
+      "HpLoss": 7
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/sunken_statue.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "The Sunken Statue",
+    "loss": {
+      "plain": "{character} drowned near {event}.",
+      "runs": [
+        {
+          "text": "{character} drowned near "
+        },
+        {
+          "text": "{event}",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "pages": {
+      "DIVE_INTO_WATER": {
+        "description": {
+          "plain": "You plunge deep into the water!\n\nWhile collecting the offerings you hear a dull echo and you're struck by stones!\n\nOnce you surface, you see that the old statue had crumbled due to your disturbance; physical and spiritual.",
+          "runs": [
+            {
+              "text": "You plunge deep into the water!\n\nWhile collecting the "
+            },
+            {
+              "text": "offerings",
+              "style": "gold"
+            },
+            {
+              "text": " you hear a "
+            },
+            {
+              "text": "dull echo",
+              "style": "blue"
+            },
+            {
+              "text": " and you're struck by stones!\n\nOnce you surface, you see that the old statue had crumbled due to your disturbance; "
+            },
+            {
+              "text": "physical",
+              "style": "red"
+            },
+            {
+              "text": " and "
+            },
+            {
+              "text": "spiritual",
+              "style": "purple"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      },
+      "GRAB_SWORD": {
+        "description": {
+          "plain": "You wrest the sword out of the statue's hands and the whole thing crumbles apart!\n\nIt's too dangerous to pick up whatever was glittering at the bottom of the pond now...\n\nInspecting the sword, you sense an incredible dormant power within.",
+          "runs": [
+            {
+              "text": "You "
+            },
+            {
+              "text": "wrest",
+              "style": "jitter"
+            },
+            {
+              "text": " the "
+            },
+            {
+              "text": "sword",
+              "style": "blue"
+            },
+            {
+              "text": " out of the statue's hands and the whole thing crumbles apart!\n\nIt's too dangerous to pick up whatever was "
+            },
+            {
+              "text": "glittering",
+              "style": "jitter"
+            },
+            {
+              "text": " at the bottom of the pond now...\n\nInspecting the "
+            },
+            {
+              "text": "sword",
+              "style": "blue"
+            },
+            {
+              "text": ", you sense an incredible "
+            },
+            {
+              "text": "dormant power",
+              "style": "green"
+            },
+            {
+              "text": " within."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "You spot an aged statue half submerged in a pond; its hands gently rest atop a stone sword.\n\nSomething is also glittering at the bottom of the pond.\nVotive offerings perhaps?\n\nYou could really use some money...",
+          "runs": [
+            {
+              "text": "You spot an aged statue half submerged in a pond; its hands gently rest atop a "
+            },
+            {
+              "text": "stone sword",
+              "style": "blue"
+            },
+            {
+              "text": ".\n\nSomething is also "
+            },
+            {
+              "text": "glittering",
+              "style": "sine"
+            },
+            {
+              "text": " at the bottom of the pond.\nVotive offerings perhaps?\n\nYou could really use some money..."
+            }
+          ]
+        },
+        "options": {
+          "DIVE_INTO_WATER": {
+            "title": "Dive into the Water",
+            "description": {
+              "plain": "Gain 111 Gold. Lose 7 HP.",
+              "runs": [
+                {
+                  "text": "Gain "
+                },
+                {
+                  "text": "111",
+                  "source_var": "Gold",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Lose "
+                },
+                {
+                  "text": "7",
+                  "source_var": "HpLoss",
+                  "style": "red"
+                },
+                {
+                  "text": " HP."
+                }
+              ]
+            }
+          },
+          "GRAB_SWORD": {
+            "title": "Grab the Sword",
+            "description": {
+              "plain": "Obtain the {Relic}.",
+              "runs": [
+                {
+                  "text": "Obtain the "
+                },
+                {
+                  "text": "{Relic}.",
+                  "style": "gold"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PAEL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Pael",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/Pael.cs",
+    "kind": "ancient",
+    "localization": {
+      "table": "events",
+      "title_key": "PAEL.title"
+    }
+  },
+  "resolved": {
+    "title": "Melting Dragon"
+  }
+}

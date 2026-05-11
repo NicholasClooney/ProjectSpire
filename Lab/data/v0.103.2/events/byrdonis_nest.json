@@ -1,0 +1,137 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BYRDONIS_NEST",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ByrdonisNest",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/ByrdonisNest.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "BYRDONIS_NEST.title"
+    },
+    "vars": {
+      "MaxHp": 7
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/byrdonis_nest.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Byrdonis Nest",
+    "pages": {
+      "EAT": {
+        "description": {
+          "plain": "You crack the egg open and gobble it up.\nGood breakfast.",
+          "runs": [
+            {
+              "text": "You crack the egg open and gobble it up.\nGood breakfast."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "You spot an enormous Shambling Beast chase off an injured Green Byrd.\n\nIn the alcove the byrd fled from, a single unguarded egg lies abandoned.\n\nYour stomach gurgles...",
+          "runs": [
+            {
+              "text": "You spot an enormous "
+            },
+            {
+              "text": "Shambling Beast",
+              "style": "red"
+            },
+            {
+              "text": " chase off an injured "
+            },
+            {
+              "text": "Green Byrd",
+              "style": "sine"
+            },
+            {
+              "text": ".\n\nIn the alcove the byrd fled from, a "
+            },
+            {
+              "text": "single unguarded egg",
+              "style": "gold"
+            },
+            {
+              "text": " lies abandoned.\n\n"
+            },
+            {
+              "text": "Your stomach gurgles...",
+              "style": "sine"
+            }
+          ]
+        },
+        "options": {
+          "EAT": {
+            "title": "Eat the Egg",
+            "description": {
+              "plain": "Gain 7 Max HP.",
+              "runs": [
+                {
+                  "text": "Gain "
+                },
+                {
+                  "text": "7",
+                  "source_var": "MaxHp",
+                  "style": "blue"
+                },
+                {
+                  "text": " Max HP."
+                }
+              ]
+            }
+          },
+          "TAKE": {
+            "title": "Take the Egg",
+            "description": {
+              "plain": "Add {Card} to your Deck.",
+              "runs": [
+                {
+                  "text": "Add "
+                },
+                {
+                  "text": "{Card}",
+                  "style": "gold"
+                },
+                {
+                  "text": " to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "TAKE": {
+        "description": {
+          "plain": "You gently scoop up the egg and stow it, thinking it may hatch into something useful later.",
+          "runs": [
+            {
+              "text": "You gently scoop up the egg and stow it, thinking it may "
+            },
+            {
+              "text": "hatch",
+              "style": "green"
+            },
+            {
+              "text": " into something useful later."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

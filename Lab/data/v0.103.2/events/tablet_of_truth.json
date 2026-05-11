@@ -1,0 +1,405 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TABLET_OF_TRUTH",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TabletOfTruth",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/TabletOfTruth.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "TABLET_OF_TRUTH.title"
+    },
+    "vars": {
+      "SmashHPGain": 20,
+      "DecipherMaxHpLoss": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/tablet_of_truth.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Tablet of Truth",
+    "loss": {
+      "plain": "{character} could not decipher the {event}.",
+      "runs": [
+        {
+          "text": "{character} could not decipher the "
+        },
+        {
+          "text": "{event}",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "pages": {
+      "DECIPHER": {
+        "options": {
+          "GIVE_UP": {
+            "title": "Give Up",
+            "description": {
+              "plain": "Stop reading the text and leave.",
+              "runs": [
+                {
+                  "text": "Stop reading the text and leave."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "DECIPHER_1": {
+        "description": {
+          "plain": "As you begin deciphering the tablet, the Kin's Mantra speaks to you.\n\n\u201cThe Truth is everything...\u201d",
+          "runs": [
+            {
+              "text": "As you begin deciphering the tablet, the "
+            },
+            {
+              "text": "Kin's Mantra",
+              "style": "blue"
+            },
+            {
+              "text": " speaks to you.\n\n\u201cThe "
+            },
+            {
+              "text": "Truth",
+              "style": "gold"
+            },
+            {
+              "text": " is everything...\u201d"
+            }
+          ]
+        },
+        "options": {
+          "DECIPHER": {
+            "title": "Continue Deciphering",
+            "description": {
+              "plain": "Lose 3 Max HP. Upgrade a random card.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "3",
+                  "source_var": "DecipherMaxHpLoss",
+                  "style": "red"
+                },
+                {
+                  "text": " Max HP. "
+                },
+                {
+                  "text": "Upgrade",
+                  "style": "gold"
+                },
+                {
+                  "text": " a random card."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "DECIPHER_2": {
+        "description": {
+          "plain": "You feel faint from all this reading!\n\nHeroes weren't meant to read for such an extended period of time...",
+          "runs": [
+            {
+              "text": "You feel faint from all this reading!\n\n"
+            },
+            {
+              "text": "Heroes weren't meant to read for such an extended period of time...",
+              "style": "sine"
+            }
+          ]
+        },
+        "options": {
+          "DECIPHER": {
+            "title": "Keep Deciphering",
+            "description": {
+              "plain": "Lose 3 Max HP. Upgrade a random card.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "3",
+                  "source_var": "DecipherMaxHpLoss",
+                  "style": "red"
+                },
+                {
+                  "text": " Max HP. "
+                },
+                {
+                  "text": "Upgrade",
+                  "style": "gold"
+                },
+                {
+                  "text": " a random card."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "DECIPHER_3": {
+        "description": {
+          "plain": "You're barely holding on...\nThe tablet is nearly deciphered. The Mantra holds the truth... \n\nTHE TRUTH!! WHAT IS THE TRUTH!?",
+          "runs": [
+            {
+              "text": "You're barely holding on...",
+              "style": "red"
+            },
+            {
+              "text": "\nThe tablet is nearly deciphered. The "
+            },
+            {
+              "text": "Mantra",
+              "style": "blue"
+            },
+            {
+              "text": " holds the truth... \n\n"
+            },
+            {
+              "text": "THE TRUTH!! WHAT IS THE TRUTH!?",
+              "style": "jitter"
+            }
+          ]
+        },
+        "options": {
+          "DECIPHER": {
+            "title": "KEEP DECIPHERING",
+            "description": {
+              "plain": "Lose 3 Max HP. Upgrade a random card.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "3",
+                  "source_var": "DecipherMaxHpLoss",
+                  "style": "red"
+                },
+                {
+                  "text": " Max HP. "
+                },
+                {
+                  "text": "Upgrade",
+                  "style": "gold"
+                },
+                {
+                  "text": " a random card."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "DECIPHER_4": {
+        "description": {
+          "plain": "In a trance, you decipher the remaining text, abandoning mind and body. The spiritual pursuit of the Truth is all that matters.\n\nOr does it? One final word remains...\nIt will cost everything.",
+          "runs": [
+            {
+              "text": "In a trance, you decipher the remaining text, abandoning mind and body. "
+            },
+            {
+              "text": "The spiritual pursuit of the ",
+              "style": "sine"
+            },
+            {
+              "text": "Truth",
+              "style": "gold"
+            },
+            {
+              "text": " is all that matters.",
+              "style": "sine"
+            },
+            {
+              "text": "\n\nOr does it? One final word remains...\n"
+            },
+            {
+              "text": "It will cost everything.",
+              "style": "jitter"
+            }
+          ]
+        },
+        "options": {
+          "DECIPHER": {
+            "title": "Lose Everything",
+            "description": {
+              "plain": "Lose 3 Max HP. Upgrade ALL of your cards.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "3",
+                  "source_var": "DecipherMaxHpLoss",
+                  "style": "red"
+                },
+                {
+                  "text": " Max HP. "
+                },
+                {
+                  "text": "Upgrade",
+                  "style": "gold"
+                },
+                {
+                  "text": " ALL of your cards."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "DECIPHER_5": {
+        "description": {
+          "plain": "Everything was spent to decipher the Final Word and you black out...\nWhen you come to, you realize something is etched into the floor.\n\n\u201cAir\u201d",
+          "runs": [
+            {
+              "text": "Everything was spent",
+              "style": "jitter"
+            },
+            {
+              "text": " to decipher the "
+            },
+            {
+              "text": "Final Word",
+              "style": "gold"
+            },
+            {
+              "text": " and you black out...\nWhen you come to, you realize something is etched into the floor.\n\n"
+            },
+            {
+              "text": "\u201cAir\u201d",
+              "style": "b"
+            }
+          ]
+        }
+      },
+      "GIVE_UP": {
+        "description": {
+          "plain": "You stop all this reading and deciphering. Your body normalizes, though you can't help but wonder what the Truth was.",
+          "runs": [
+            {
+              "text": "You stop all this reading and deciphering. Your body normalizes, though you can't help but wonder what the "
+            },
+            {
+              "text": "Truth",
+              "style": "gold"
+            },
+            {
+              "text": " was."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "You defeat a pair of Guardian Kin and make your way into a protected vault.\n\nInside is a tablet with familiar inscriptions. Your intuition tells you that this language can be deciphered rather easily... However, once you begin deciphering you'll be locked in.\n\nThe tablet gives off a soothing energy and you can smash it to receive its healing energies instead.",
+          "runs": [
+            {
+              "text": "You defeat a pair of "
+            },
+            {
+              "text": "Guardian Kin",
+              "style": "blue"
+            },
+            {
+              "text": " and make your way into a protected vault.\n\nInside is a "
+            },
+            {
+              "text": "tablet with familiar inscriptions",
+              "style": "sine"
+            },
+            {
+              "text": ". Your intuition tells you that this language can be deciphered rather easily... However, once you begin deciphering you'll be locked in.\n\nThe tablet gives off a soothing energy and you can smash it to receive its "
+            },
+            {
+              "text": "healing energies",
+              "style": "green"
+            },
+            {
+              "text": " instead."
+            }
+          ]
+        },
+        "options": {
+          "DECIPHER_1": {
+            "title": "Decipher",
+            "description": {
+              "plain": "Lose 3 Max HP. Upgrade a random card.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "3",
+                  "source_var": "DecipherMaxHpLoss",
+                  "style": "red"
+                },
+                {
+                  "text": " Max HP. "
+                },
+                {
+                  "text": "Upgrade",
+                  "style": "gold"
+                },
+                {
+                  "text": " a random card."
+                }
+              ]
+            }
+          },
+          "SMASH": {
+            "title": "Smash",
+            "description": {
+              "plain": "Heal 20 HP.",
+              "runs": [
+                {
+                  "text": "Heal "
+                },
+                {
+                  "text": "20",
+                  "source_var": "SmashHPGain",
+                  "style": "green"
+                },
+                {
+                  "text": " HP."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "SMASH": {
+        "description": {
+          "plain": "The tablet is smashed to pieces, energy expelled from the tablet seeps into your body.\n\nYou feel refreshed!",
+          "runs": [
+            {
+              "text": "The tablet is "
+            },
+            {
+              "text": "smashed to pieces",
+              "style": "red"
+            },
+            {
+              "text": ", energy expelled from the tablet seeps into your body.\n\n"
+            },
+            {
+              "text": "You feel refreshed!",
+              "style": "green"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

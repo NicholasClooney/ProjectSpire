@@ -1,0 +1,211 @@
+{
+  "schema_version": "0.1.0",
+  "id": "GRAVE_OF_THE_FORGOTTEN",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "GraveOfTheForgotten",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/GraveOfTheForgotten.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "GRAVE_OF_THE_FORGOTTEN.title"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/grave_of_the_forgotten.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Grave of the Forgotten",
+    "loss": {
+      "plain": "PLACEHOLDER: {character} mysteriously died at the {event}.",
+      "runs": [
+        {
+          "text": "PLACEHOLDER: {character} mysteriously died at the "
+        },
+        {
+          "text": "{event}",
+          "style": "b"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "pages": {
+      "ACCEPT": {
+        "description": {
+          "plain": "You place your hand on the grave and whisper...\n\n\u201cAscend with me...\u201d\n\nIn response, the flames draw out from the grave and coalesce into a burning soul and hover around you loyally.\nIt knows what you are, and wishes to escort you to your final destination.",
+          "runs": [
+            {
+              "text": "You place your hand on the grave and whisper...\n\n"
+            },
+            {
+              "text": "\u201cAscend with me...\u201d",
+              "style": "sine"
+            },
+            {
+              "text": "\n\nIn response, the flames draw out from the grave and coalesce into a "
+            },
+            {
+              "text": "burning soul",
+              "style": "aqua"
+            },
+            {
+              "text": " and hover around you loyally.\nIt knows what you are, and wishes to escort you to your final destination."
+            }
+          ]
+        }
+      },
+      "CONFRONT": {
+        "description": {
+          "plain": "You place your hand on the grave and whisper...\n\n\u201cYour fight is over...\u201d\n\nIn response, the soul crashes into yours and a SOUL FIGHT ensues!\nStunned by the countless battles you have endured, it concedes.",
+          "runs": [
+            {
+              "text": "You place your hand on the grave and whisper...\n\n"
+            },
+            {
+              "text": "\u201cYour fight is over...\u201d",
+              "style": "sine"
+            },
+            {
+              "text": "\n\nIn response, the soul crashes into yours and a "
+            },
+            {
+              "text": "SOUL FIGHT",
+              "style": "aqua"
+            },
+            {
+              "text": " ensues!\nStunned by the countless battles you have endured, it concedes."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "There is a single grave with a roiling blue flame...\n\nA prideful warrior died in battle but its soul is restless. It wants to keep fighting, you feel it begging to journey with you.\n\nBut perhaps it's better for it to face the truth?",
+          "runs": [
+            {
+              "text": "There is a single grave with a "
+            },
+            {
+              "text": "roiling blue flame",
+              "style": "aqua"
+            },
+            {
+              "text": "...\n\nA prideful warrior died in battle but its soul is restless. It wants to keep fighting, you feel it "
+            },
+            {
+              "text": "begging",
+              "style": "sine"
+            },
+            {
+              "text": " to journey with you.\n\nBut perhaps it's better for it to face the "
+            },
+            {
+              "text": "truth",
+              "style": "red"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        "options": {
+          "ACCEPT": {
+            "title": "Accept the {Relic}",
+            "description": {
+              "plain": "Obtain {Relic}.",
+              "runs": [
+                {
+                  "text": "Obtain "
+                },
+                {
+                  "text": "{Relic}",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "CONFRONT": {
+            "title": "Confront with Truth",
+            "description": {
+              "plain": "Add {Curse} to your Deck. Enchant a card that Exhausts with {Enchantment}.",
+              "runs": [
+                {
+                  "text": "Add "
+                },
+                {
+                  "text": "{Curse}",
+                  "style": "red"
+                },
+                {
+                  "text": " to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": ". "
+                },
+                {
+                  "text": "Enchant",
+                  "style": "gold"
+                },
+                {
+                  "text": " a card that "
+                },
+                {
+                  "text": "Exhausts",
+                  "style": "gold"
+                },
+                {
+                  "text": " with "
+                },
+                {
+                  "text": "{Enchantment}",
+                  "style": "purple"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "CONFRONT_LOCKED": {
+            "title": "Locked",
+            "description": {
+              "plain": "You have no cards with Exhaust that can be Enchanted.",
+              "runs": [
+                {
+                  "text": "You have no cards with "
+                },
+                {
+                  "text": "Exhaust",
+                  "style": "gold"
+                },
+                {
+                  "text": " that can be "
+                },
+                {
+                  "text": "Enchanted",
+                  "style": "purple"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

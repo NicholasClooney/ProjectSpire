@@ -1,0 +1,152 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PUNCH_OFF",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PunchOff",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/PunchOff.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "PUNCH_OFF.title"
+    },
+    "vars": {
+      "Gold": 0
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/punch_off.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Punch Off",
+    "loss": {
+      "plain": "PLACEHOLDER: {character} was Punched Off the Spire.",
+      "runs": [
+        {
+          "text": "PLACEHOLDER: {character} was "
+        },
+        {
+          "text": "Punched Off",
+          "style": "gold"
+        },
+        {
+          "text": " the Spire."
+        }
+      ]
+    },
+    "pages": {
+      "INITIAL": {
+        "description": {
+          "plain": "Two Punch Constructs are duking it out and you see some treasure in between them...\n\nShould you try to nab it?",
+          "runs": [
+            {
+              "text": "Two "
+            },
+            {
+              "text": "Punch Constructs",
+              "style": "gold"
+            },
+            {
+              "text": " are duking it out and you see some treasure in between them...\n\nShould you try to nab it?"
+            }
+          ]
+        },
+        "options": {
+          "I_CAN_TAKE_THEM": {
+            "title": "I Can Take Them",
+            "description": {
+              "plain": "Fight them for Greater Rewards.",
+              "runs": [
+                {
+                  "text": "Fight them for "
+                },
+                {
+                  "text": "Greater Rewards",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "NAB": {
+            "title": "Nab",
+            "description": {
+              "plain": "Add Injury to your Deck. Obtain a random Relic.",
+              "runs": [
+                {
+                  "text": "Add "
+                },
+                {
+                  "text": "Injury",
+                  "style": "red"
+                },
+                {
+                  "text": " to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Obtain a random "
+                },
+                {
+                  "text": "Relic",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "I_CAN_TAKE_THEM": {
+        "description": {
+          "plain": "The Constructs turn to you menacingly!\n\nYou put your dukes up.",
+          "runs": [
+            {
+              "text": "The "
+            },
+            {
+              "text": "Constructs",
+              "style": "gold"
+            },
+            {
+              "text": " turn to you menacingly!\n\nYou put your dukes up."
+            }
+          ]
+        },
+        "options": {
+          "FIGHT": {
+            "title": "Fight"
+          }
+        }
+      },
+      "NAB": {
+        "description": {
+          "plain": "You successfully nab the relic!\n\n...or so you thought. A right-hook clocks you in the face.",
+          "runs": [
+            {
+              "text": "You successfully nab the relic!\n\n...or so you thought. A right-hook "
+            },
+            {
+              "text": "clocks you in the face",
+              "style": "red"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

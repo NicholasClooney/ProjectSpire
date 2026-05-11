@@ -1,0 +1,415 @@
+{
+  "schema_version": "0.1.0",
+  "id": "WELCOME_TO_WONGOS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "WelcomeToWongos",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/WelcomeToWongos.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "WELCOME_TO_WONGOS.title"
+    },
+    "vars": {
+      "BargainBinCost": 100,
+      "MysteryBoxCost": 300,
+      "FeaturedItemCost": 200,
+      "MysteryBoxRelicCount": 3,
+      "MysteryBoxCombatCount": 5,
+      "WongoPointAmount": 0,
+      "RemainingWongoPointAmount": 0,
+      "TotalWongoBadgeAmount": 0
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/welcome_to_wongos.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Welcome to Wongo's",
+    "pages": {
+      "AFTER_BUY": {
+        "description": {
+          "plain": "\u201cWe are Wongo-wow'd by your generosity... Wonderful patron, you now have 0 Wongo Points. With just 0 more points, you will receive our exclusive Wongo Customer Appreciation Badge. Have a Wongtastic day.\u201d\n\nYou have no clue what they are talking about and vow to never return to a Wongo's.",
+          "runs": [
+            {
+              "text": "\u201cWe are Wongo-wow'd by your generosity... Wonderful patron, you now have "
+            },
+            {
+              "text": "0",
+              "source_var": "WongoPointAmount",
+              "style": "blue"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "Wongo Points",
+              "style": "gold"
+            },
+            {
+              "text": ". With just "
+            },
+            {
+              "text": "0",
+              "source_var": "RemainingWongoPointAmount",
+              "style": "blue"
+            },
+            {
+              "text": " more points, you will receive our exclusive "
+            },
+            {
+              "text": "Wongo Customer Appreciation Badge",
+              "style": "gold"
+            },
+            {
+              "text": ". Have a Wongtastic day.\u201d\n\nYou have no clue what they are talking about and vow to never return to a Wongo's."
+            }
+          ]
+        }
+      },
+      "AFTER_BUY_BADGE_COUNTER": {
+        "description": {
+          "plain": "\u201cWe are Wongo-wow'd by your generosity... Wonderful patron, you now have 0 Wongo Points. With just 0 more points, you will receive our exclusive Wongo Customer Appreciation Badge. Have a Wongtastic day.\u201d\n\nYou have already received 0 of these worthless badges. You vow to never return to a Wongo's.",
+          "runs": [
+            {
+              "text": "\u201cWe are Wongo-wow'd by your generosity... Wonderful patron, you now have "
+            },
+            {
+              "text": "0",
+              "source_var": "WongoPointAmount",
+              "style": "blue"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "Wongo Points",
+              "style": "gold"
+            },
+            {
+              "text": ". With just "
+            },
+            {
+              "text": "0",
+              "source_var": "RemainingWongoPointAmount",
+              "style": "blue"
+            },
+            {
+              "text": " more points, you will receive our exclusive "
+            },
+            {
+              "text": "Wongo Customer Appreciation Badge",
+              "style": "gold"
+            },
+            {
+              "text": ". Have a Wongtastic day.\u201d\n\nYou have already received "
+            },
+            {
+              "text": "0",
+              "source_var": "TotalWongoBadgeAmount",
+              "style": "blue"
+            },
+            {
+              "text": " of these worthless badges. You vow to never return to a Wongo's."
+            }
+          ]
+        }
+      },
+      "AFTER_BUY_RECEIVE_BADGE": {
+        "description": {
+          "plain": "\u201cWe are Wongo-wow'd by your generosity... Wonderful patron, you now have 0 Wongo Points. Your points have earned you a Wongo Customer Appreciation Badge.\u201d\nThe clerk hands you a cheaply made badge. \u201cHave a Wongtastic day.\u201d\n\nYou have now received 0 badges. You vow to never return to a Wongo's.",
+          "runs": [
+            {
+              "text": "\u201cWe are Wongo-wow'd by your generosity... Wonderful patron, you now have "
+            },
+            {
+              "text": "0",
+              "source_var": "WongoPointAmount",
+              "style": "blue"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "Wongo Points",
+              "style": "gold"
+            },
+            {
+              "text": ". Your points have earned you a "
+            },
+            {
+              "text": "Wongo Customer Appreciation Badge",
+              "style": "gold"
+            },
+            {
+              "text": ".\u201d\nThe clerk hands you a cheaply made badge. \u201cHave a Wongtastic day.\u201d\n\nYou have now received "
+            },
+            {
+              "text": "0",
+              "source_var": "TotalWongoBadgeAmount",
+              "style": "blue"
+            },
+            {
+              "text": " badges. You vow to never return to a Wongo's."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "\u201cWelcome to Wongo's. We have what you want at Wongtastic prices.\u201d says the least enthusiastic clerk you have ever met.\n\n\u201cPeruse our wares and enjoy your time at Wongo's,\u201d they continue, without even looking up.",
+          "runs": [
+            {
+              "text": "\u201cWelcome to Wongo's. We have what you want at Wongtastic prices.\u201d says the least enthusiastic clerk you have ever met.\n\n\u201cPeruse our wares and enjoy your time at Wongo's,\u201d they continue, without even looking up."
+            }
+          ]
+        },
+        "options": {
+          "BARGAIN_BIN": {
+            "title": "Wongo's Bargain Bin",
+            "description": {
+              "plain": "Pay 100 Gold. Obtain 1 random Common Relic.",
+              "runs": [
+                {
+                  "text": "Pay "
+                },
+                {
+                  "text": "100",
+                  "source_var": "BargainBinCost",
+                  "style": "red"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Obtain "
+                },
+                {
+                  "text": "1",
+                  "style": "blue"
+                },
+                {
+                  "text": " random "
+                },
+                {
+                  "text": "Common Relic",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "BARGAIN_BIN_LOCKED": {
+            "title": "Locked",
+            "description": {
+              "plain": "Requires 100 Gold.",
+              "runs": [
+                {
+                  "text": "Requires "
+                },
+                {
+                  "text": "100",
+                  "source_var": "BargainBinCost",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "FEATURED_ITEM": {
+            "title": "Wongo's Featured Item",
+            "description": {
+              "plain": "Pay 200 Gold. Obtain {RandomRelic}.",
+              "runs": [
+                {
+                  "text": "Pay "
+                },
+                {
+                  "text": "200",
+                  "source_var": "FeaturedItemCost",
+                  "style": "red"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Obtain "
+                },
+                {
+                  "text": "{RandomRelic}",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "FEATURED_ITEM_LOCKED": {
+            "title": "Locked",
+            "description": {
+              "plain": "Requires 200 Gold.",
+              "runs": [
+                {
+                  "text": "Requires "
+                },
+                {
+                  "text": "200",
+                  "source_var": "FeaturedItemCost",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "LEAVE": {
+            "title": "Leave",
+            "description": {
+              "plain": "Downgrade a random card.",
+              "runs": [
+                {
+                  "text": "Downgrade",
+                  "style": "red"
+                },
+                {
+                  "text": " a random card."
+                }
+              ]
+            }
+          },
+          "MYSTERY_BOX": {
+            "title": "Wongo's Mystery Box",
+            "description": {
+              "plain": "Pay 300 Gold. Obtain 3 random Relics after 5 combats.",
+              "runs": [
+                {
+                  "text": "Pay "
+                },
+                {
+                  "text": "300",
+                  "source_var": "MysteryBoxCost",
+                  "style": "red"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Obtain "
+                },
+                {
+                  "text": "3",
+                  "source_var": "MysteryBoxRelicCount",
+                  "style": "blue"
+                },
+                {
+                  "text": " random "
+                },
+                {
+                  "text": "Relics",
+                  "style": "gold"
+                },
+                {
+                  "text": " after "
+                },
+                {
+                  "text": "5",
+                  "source_var": "MysteryBoxCombatCount",
+                  "style": "blue"
+                },
+                {
+                  "text": " combats."
+                }
+              ]
+            }
+          },
+          "MYSTERY_BOX_LOCKED": {
+            "title": "Locked",
+            "description": {
+              "plain": "Requires 300 Gold.",
+              "runs": [
+                {
+                  "text": "Requires "
+                },
+                {
+                  "text": "300",
+                  "source_var": "MysteryBoxCost",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "LEAVE": {
+        "description": {
+          "plain": "\u201cUm... excuse me you can't just leave without buying something at Wongo's,\u201d says the clerk with an irritated tone.\n\nYou have a heated debate over customer choice and it leaves you mentally drained.",
+          "runs": [
+            {
+              "text": "\u201cUm... excuse me you can't just leave without buying something at Wongo's,\u201d says the clerk with an irritated tone.\n\nYou have a "
+            },
+            {
+              "text": "heated",
+              "style": "red"
+            },
+            {
+              "text": " debate over customer choice and it leaves you "
+            },
+            {
+              "text": "mentally drained",
+              "style": "purple"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

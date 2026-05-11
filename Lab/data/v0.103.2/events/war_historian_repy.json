@@ -1,0 +1,231 @@
+{
+  "schema_version": "0.1.0",
+  "id": "WAR_HISTORIAN_REPY",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "WarHistorianRepy",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/WarHistorianRepy.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "WAR_HISTORIAN_REPY.title"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/war_historian_repy.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "War Historian, Repy",
+    "pages": {
+      "INITIAL": {
+        "description": {
+          "plain": "An academic is trapped in a hanging cage next to a treasure chest.\n\nThe academic is muttering about \u201cOne-Time-Use Keys\u201d while furiously writing something.\n\nLooks like you can unlock the cage or the chest.",
+          "runs": [
+            {
+              "text": "An academic is trapped in a "
+            },
+            {
+              "text": "hanging cage",
+              "style": "purple"
+            },
+            {
+              "text": " next to a "
+            },
+            {
+              "text": "treasure chest",
+              "style": "gold"
+            },
+            {
+              "text": ".\n\nThe academic is muttering about "
+            },
+            {
+              "text": "\u201cOne-Time-Use Keys\u201d",
+              "style": "orange"
+            },
+            {
+              "text": " while furiously writing something.\n\nLooks like you can unlock the "
+            },
+            {
+              "text": "cage",
+              "style": "purple"
+            },
+            {
+              "text": " or the "
+            },
+            {
+              "text": "chest",
+              "style": "gold"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        "options": {
+          "UNLOCK_CAGE": {
+            "title": "Unlock the Cage",
+            "description": {
+              "plain": "Lose Lantern Key. Obtain History Course.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "Lantern Key",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Obtain "
+                },
+                {
+                  "text": "History Course",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "UNLOCK_CHEST": {
+            "title": "Unlock the Chest",
+            "description": {
+              "plain": "Lose Lantern Key. Procure 2 random Potions. Obtain 2 random Relics.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "Lantern Key",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Procure "
+                },
+                {
+                  "text": "2",
+                  "style": "blue"
+                },
+                {
+                  "text": " random "
+                },
+                {
+                  "text": "Potions",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Obtain "
+                },
+                {
+                  "text": "2",
+                  "style": "blue"
+                },
+                {
+                  "text": " random "
+                },
+                {
+                  "text": "Relics",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "UNLOCK_CAGE": {
+        "description": {
+          "plain": "Repy bows in appreciation as you open the cage. He hands you a thick leather tome.\n\n\u201cThose who know not of history are doomed to repeat it. But you seem to know a thing or two about repeats don't you?\u201d",
+          "runs": [
+            {
+              "text": "Repy",
+              "style": "green"
+            },
+            {
+              "text": " bows in appreciation as you open the cage. He hands you a "
+            },
+            {
+              "text": "thick leather tome",
+              "style": "gold"
+            },
+            {
+              "text": ".\n\n\u201cThose who know not of history are doomed to repeat it. But you seem to know a thing or two about repeats don't you?\u201d"
+            }
+          ]
+        }
+      },
+      "UNLOCK_CHEST": {
+        "description": {
+          "plain": "\u201cNot going to free the scholar, Repy? Based on classic philosophy, you would be considered a moral failure. That's right, maybe consider the LIVING PERSON that is locked up next time! It is not as if there is a valuable member of society in a DIRE PREDICAMENT or anything!!\u201d\n\n\u201cLook, okay, see how small this cage is!? Why am I complaining? You've already made your unscholarly decision... oh, what's inside there? Some potions and relics? Isn't that just great. Just great. Really great for you...\u201d\n\nRepy's eyes follow you with disdain as you walk away.",
+          "runs": [
+            {
+              "text": "\u201cNot going to free the scholar, "
+            },
+            {
+              "text": "Repy",
+              "style": "green"
+            },
+            {
+              "text": "? Based on classic philosophy, you would be considered a "
+            },
+            {
+              "text": "moral failure",
+              "style": "red"
+            },
+            {
+              "text": ". That's right, maybe consider the "
+            },
+            {
+              "text": "LIVING PERSON",
+              "style": "jitter"
+            },
+            {
+              "text": " that is locked up next time! It is not as if there is a valuable member of society in a "
+            },
+            {
+              "text": "DIRE PREDICAMENT",
+              "style": "jitter"
+            },
+            {
+              "text": " or anything!!\u201d\n\n\u201cLook, okay, see how small this cage is!? Why am I complaining? You've already made your unscholarly decision... oh, what's inside there? Some "
+            },
+            {
+              "text": "potions",
+              "style": "gold"
+            },
+            {
+              "text": " and "
+            },
+            {
+              "text": "relics",
+              "style": "gold"
+            },
+            {
+              "text": "? Isn't that just great. "
+            },
+            {
+              "text": "Just great. Really great for you...",
+              "style": "sine"
+            },
+            {
+              "text": "\u201d\n\n"
+            },
+            {
+              "text": "Repy's",
+              "style": "green"
+            },
+            {
+              "text": " eyes follow you with disdain as you walk away."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BUGSLAYER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Bugslayer",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/Bugslayer.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "BUGSLAYER.title"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/bugslayer.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Bugslayer",
+    "pages": {
+      "DONE": {
+        "description": {
+          "plain": "Silently the figure nods at you, and then walks away.",
+          "runs": [
+            {
+              "text": "Silently the figure nods at you, and then walks away."
+            }
+          ]
+        }
+      },
+      "EXTERMINATION": {
+        "description": {
+          "plain": "\u201cI see... you wish to learn the Extermination Technique. Very good...\u201d\n\nHe pauses briefly, thinking how best to endow you with this maneuver...\n\n\u201cTHIS IS THE TECHNIQUE! BEHOLD!!\u201d\nHe boasts while holding up a can of Insecticide.",
+          "runs": [
+            {
+              "text": "\u201cI see... you wish to learn the "
+            },
+            {
+              "text": "Extermination Technique",
+              "style": "gold"
+            },
+            {
+              "text": ". Very good...\u201d\n\nHe pauses briefly, thinking how best to endow you with this maneuver...\n\n"
+            },
+            {
+              "text": "\u201cTHIS IS THE TECHNIQUE! BEHOLD!!\u201d",
+              "style": "jitter"
+            },
+            {
+              "text": "\nHe boasts while holding up a can of "
+            },
+            {
+              "text": "Insecticide",
+              "style": "green"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "As you're fending off a swarm of aggressive insects you suddenly notice a Mighty Rugged Warrior-Man fighting beside you this whole time!\n\nThe insects, sensing defeat, scatter. You turn to your fellow fighter.\n\u201cWould you like any tips on exterminating these pests?\u201d\n\nHow polite. You nod and accept his offer.",
+          "runs": [
+            {
+              "text": "As you're fending off a "
+            },
+            {
+              "text": "swarm of aggressive insects",
+              "style": "red"
+            },
+            {
+              "text": " you suddenly notice a "
+            },
+            {
+              "text": "Mighty Rugged Warrior-Man",
+              "style": "gold"
+            },
+            {
+              "text": " fighting beside you this whole time!\n\nThe insects, sensing defeat, scatter. You turn to your fellow fighter.\n\u201cWould you like any tips on exterminating these pests?\u201d\n\nHow polite. You nod and accept his offer."
+            }
+          ]
+        },
+        "options": {
+          "EXTERMINATION": {
+            "title": "Learn Extermination Technique",
+            "description": {
+              "plain": "Add {Card1} to your Deck.",
+              "runs": [
+                {
+                  "text": "Add "
+                },
+                {
+                  "text": "{Card1}",
+                  "style": "gold"
+                },
+                {
+                  "text": " to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "SQUASH": {
+            "title": "Learn Squash Technique",
+            "description": {
+              "plain": "Add {Card2} to your Deck.",
+              "runs": [
+                {
+                  "text": "Add "
+                },
+                {
+                  "text": "{Card2}",
+                  "style": "gold"
+                },
+                {
+                  "text": " to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "SQUASH": {
+        "description": {
+          "plain": "\u201cI see... you wish to learn the Squash Technique. Very good...\u201d\n\nHe pauses briefly, thinking how best to endow you with this maneuver...\n\n\u201cTHIS IS THE TECHNIQUE! BEHOLD!!\u201d\nHe boasts while stepping on a giant bug.",
+          "runs": [
+            {
+              "text": "\u201cI see... you wish to learn the "
+            },
+            {
+              "text": "Squash Technique",
+              "style": "gold"
+            },
+            {
+              "text": ". Very good...\u201d\n\nHe pauses briefly, thinking how best to endow you with this maneuver...\n\n"
+            },
+            {
+              "text": "\u201cTHIS IS THE TECHNIQUE! BEHOLD!!\u201d",
+              "style": "jitter"
+            },
+            {
+              "text": "\nHe boasts while stepping on a giant bug."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

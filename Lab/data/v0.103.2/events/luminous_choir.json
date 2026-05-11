@@ -1,0 +1,180 @@
+{
+  "schema_version": "0.1.0",
+  "id": "LUMINOUS_CHOIR",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "LuminousChoir",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/LuminousChoir.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "LUMINOUS_CHOIR.title"
+    },
+    "vars": {
+      "Gold": 149
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/luminous_choir.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Luminous Choir",
+    "pages": {
+      "INITIAL": {
+        "description": {
+          "plain": "You stumble upon a clearing bathed in an unnatural blue glow. Towering mushrooms pulse with bioluminescence, their caps swollen and glistening. As you approach, the fungi begin to emit haunting, melodic tones that reverberate throughout your chest.\n\nYou notice something gleaming, embedded within the largest mushroom's flesh, pulsing in rhythm with the fungal song.",
+          "runs": [
+            {
+              "text": "You stumble upon a clearing bathed in an unnatural blue glow. Towering mushrooms pulse with bioluminescence, their caps swollen and glistening. As you approach, the fungi begin to emit "
+            },
+            {
+              "text": "haunting, melodic tones",
+              "style": "purple"
+            },
+            {
+              "text": " that reverberate throughout your chest.\n\nYou notice something gleaming, embedded within the largest mushroom's flesh, "
+            },
+            {
+              "text": "pulsing",
+              "style": "sine"
+            },
+            {
+              "text": " in rhythm with the fungal song."
+            }
+          ]
+        },
+        "options": {
+          "OFFER_TRIBUTE": {
+            "title": "Offer Tribute",
+            "description": {
+              "plain": "Pay 149 Gold. Obtain a random Relic.",
+              "runs": [
+                {
+                  "text": "Pay "
+                },
+                {
+                  "text": "149",
+                  "source_var": "Gold",
+                  "style": "red"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Obtain a random "
+                },
+                {
+                  "text": "Relic",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "OFFER_TRIBUTE_LOCKED": {
+            "title": "Locked",
+            "description": {
+              "plain": "Requires 149 Gold.",
+              "runs": [
+                {
+                  "text": "Requires "
+                },
+                {
+                  "text": "149",
+                  "source_var": "Gold",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "REACH_INTO_THE_FLESH": {
+            "title": "Reach into the Flesh",
+            "description": {
+              "plain": "Remove 2 cards from your Deck. Add Spore Mind to your Deck.",
+              "runs": [
+                {
+                  "text": "Remove "
+                },
+                {
+                  "text": "2",
+                  "style": "blue"
+                },
+                {
+                  "text": " cards from your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Add "
+                },
+                {
+                  "text": "Spore Mind",
+                  "style": "red"
+                },
+                {
+                  "text": " to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "OFFER_TRIBUTE": {
+        "description": {
+          "plain": "Placing gold upon the spongy ground. The coins slowly sink as tendrils gently push the relic to the surface, allowing a clean retrieval.",
+          "runs": [
+            {
+              "text": "Placing gold upon the spongy ground. The coins slowly sink as tendrils gently push the relic to the surface, allowing a clean retrieval."
+            }
+          ]
+        }
+      },
+      "REACH_INTO_THE_FLESH": {
+        "description": {
+          "plain": "You plunge your hand directly into the spongy tissue of the dominant mushroom to extract the relic within. The fungal network shudders at your intrusion, and your mind quivers in response.",
+          "runs": [
+            {
+              "text": "You plunge your hand directly into the spongy tissue of the dominant mushroom to extract the relic within. The fungal network shudders at your intrusion, and your mind "
+            },
+            {
+              "text": "quivers",
+              "style": "sine"
+            },
+            {
+              "text": " in response."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "schema_version": "0.1.0",
+  "id": "REFLECTIONS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Reflections",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/Reflections.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "REFLECTIONS.title"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/reflections.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Reflections snoitcelfeR",
+    "pages": {
+      "INITIAL": {
+        "description": {
+          "plain": "What is this? Something feels wrong here...\n...ereh gnorw sleef gnihtemoS ?siht si tahW",
+          "runs": [
+            {
+              "text": "What is this? Something feels wrong here...\n"
+            },
+            {
+              "text": "...ereh gnorw sleef gnihtemoS ?siht si tahW",
+              "style": "sine"
+            }
+          ]
+        },
+        "options": {
+          "SHATTER": {
+            "title": "Shatter",
+            "description": {
+              "plain": "Duplicate your Deck. Receive Bad Luck.",
+              "runs": [
+                {
+                  "text": "Duplicate your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Receive "
+                },
+                {
+                  "text": "Bad Luck",
+                  "style": "purple"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "TOUCH_A_MIRROR": {
+            "title": "Touch a Mirror",
+            "description": {
+              "plain": "Downgrade 2 random cards. Upgrade 4 random cards.",
+              "runs": [
+                {
+                  "text": "Downgrade",
+                  "style": "red"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "2",
+                  "style": "blue"
+                },
+                {
+                  "text": " random cards. "
+                },
+                {
+                  "text": "Upgrade",
+                  "style": "green"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "4",
+                  "style": "blue"
+                },
+                {
+                  "text": " random cards."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "SHATTER": {
+        "description": {
+          "plain": "You concentrate and identify a giant seamless mirror in front of you.\nWith a swift kick you SHATTER the giant mirror!\nRight as you shatter the mirror your reflection braces {pronounObject}self as {pronounSubject} becomes a thousand beautiful glittering shards.\n\nHow can a place like this exist?",
+          "runs": [
+            {
+              "text": "You concentrate and identify a giant seamless mirror in front of you.\nWith a swift kick you "
+            },
+            {
+              "text": "SHATTER",
+              "style": "jitter"
+            },
+            {
+              "text": " the giant mirror!\nRight as you shatter the mirror your reflection braces {pronounObject}self as {pronounSubject} becomes a thousand beautiful glittering shards.\n\nHow can a place like this exist?"
+            }
+          ]
+        }
+      },
+      "TOUCH_A_MIRROR": {
+        "description": {
+          "plain": "You reach forth and meld into the reflection in front of you.\nWhich one am I?",
+          "runs": [
+            {
+              "text": "You reach forth and meld into the reflection in front of you.\n"
+            },
+            {
+              "text": "Which one am I?",
+              "style": "sine"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

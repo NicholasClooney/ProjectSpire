@@ -1,0 +1,211 @@
+{
+  "schema_version": "0.1.0",
+  "id": "RANWID_THE_ELDER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "RanwidTheElder",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/RanwidTheElder.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "RANWID_THE_ELDER.title"
+    },
+    "vars": {
+      "Gold": 100
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/ranwid_the_elder.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Ranwid the Elder",
+    "pages": {
+      "GOLD": {
+        "description": {
+          "plain": "\u201cMag.. nificent...\u201d\n\nRanwid mumbles while chewing the gold.",
+          "runs": [
+            {
+              "text": "\u201cMag.. nificent...\u201d",
+              "style": "sine"
+            },
+            {
+              "text": "\n\nRanwid mumbles while chewing the "
+            },
+            {
+              "text": "gold",
+              "style": "gold"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "You are approached by the oldest person you have ever seen.\n\u201cWe meet once more... it's me, Ranwid!\u201d\n\nYou do not know this man.",
+          "runs": [
+            {
+              "text": "You are approached by the "
+            },
+            {
+              "text": "oldest person you have ever seen",
+              "style": "purple"
+            },
+            {
+              "text": ".\n"
+            },
+            {
+              "text": "\u201cWe meet once more... it's me, Ranwid!\u201d",
+              "style": "sine"
+            },
+            {
+              "text": "\n\nYou do not know this man."
+            }
+          ]
+        },
+        "options": {
+          "GOLD": {
+            "title": "Give {Gold} Gold",
+            "description": {
+              "plain": "Obtain a random Relic.",
+              "runs": [
+                {
+                  "text": "Obtain a random "
+                },
+                {
+                  "text": "Relic",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "POTION": {
+            "title": "Give {Potion}",
+            "description": {
+              "plain": "Obtain a random Relic.",
+              "runs": [
+                {
+                  "text": "Obtain a random "
+                },
+                {
+                  "text": "Relic",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "POTION_LOCKED": {
+            "title": "Locked",
+            "description": {
+              "plain": "You don't have any Potions that can be given.",
+              "runs": [
+                {
+                  "text": "You don't have any Potions that can be given."
+                }
+              ]
+            }
+          },
+          "RELIC": {
+            "title": "Give {Relic}",
+            "description": {
+              "plain": "Obtain 2 random Relics.",
+              "runs": [
+                {
+                  "text": "Obtain "
+                },
+                {
+                  "text": "2",
+                  "style": "blue"
+                },
+                {
+                  "text": " random "
+                },
+                {
+                  "text": "Relics",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "RELIC_LOCKED": {
+            "title": "Locked",
+            "description": {
+              "plain": "You don't have any Relics that can be given.",
+              "runs": [
+                {
+                  "text": "You don't have any Relics that can be given."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "POTION": {
+        "description": {
+          "plain": "\u201cExquisite...\u201d\n\nGlup glup glup\n\nHe downs the {Potion} in one go.",
+          "runs": [
+            {
+              "text": "\u201c"
+            },
+            {
+              "text": "Exquisite...\u201d",
+              "style": "sine"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "text": "Glup glup glup",
+              "style": "blue"
+            },
+            {
+              "text": "\n\nHe downs the "
+            },
+            {
+              "text": "{Potion}",
+              "style": "gold"
+            },
+            {
+              "text": " in one go."
+            }
+          ]
+        }
+      },
+      "RELIC": {
+        "description": {
+          "plain": "\u201cExemplary...\u201d\n\nRanwid observes the relic studiously for several minutes...\n\nThen eats the {Relic}.",
+          "runs": [
+            {
+              "text": "\u201cExemplary...\u201d",
+              "style": "sine"
+            },
+            {
+              "text": "\n\nRanwid observes the relic studiously for several minutes...\n\nThen eats the "
+            },
+            {
+              "text": "{Relic}",
+              "style": "gold"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

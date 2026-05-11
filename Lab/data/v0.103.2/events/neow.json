@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.1.0",
+  "id": "NEOW",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Neow",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/Neow.cs",
+    "kind": "ancient",
+    "localization": {
+      "table": "events",
+      "title_key": "NEOW.title"
+    }
+  },
+  "resolved": {
+    "title": "Mother of Resurrection (Exiled)"
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SLIPPERY_BRIDGE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SlipperyBridge",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/SlipperyBridge.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "SLIPPERY_BRIDGE.title"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/slippery_bridge.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Slippery Bridge",
+    "loss": {
+      "plain": "{character} fell off of a {event}.",
+      "runs": [
+        {
+          "text": "{character} fell off of a "
+        },
+        {
+          "text": "{event}",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "pages": {
+      "HOLD_ON_0": {
+        "description": {
+          "plain": "You're holding on!",
+          "runs": [
+            {
+              "text": "You're holding on!",
+              "style": "jitter"
+            }
+          ]
+        },
+        "options": {
+          "HOLD_ON_1": {
+            "title": "Hold On",
+            "description": {
+              "plain": "Lose {HpLoss} HP. The card in the above option is randomized.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "{HpLoss}",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. The card in the above option is randomized."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "HOLD_ON_1": {
+        "description": {
+          "plain": "Still... Holding... ooOOONN!!!!",
+          "runs": [
+            {
+              "text": "Still... Holding... "
+            },
+            {
+              "text": "ooOOONN!!!!",
+              "style": "jitter"
+            }
+          ]
+        },
+        "options": {
+          "HOLD_ON_2": {
+            "title": "Hold On",
+            "description": {
+              "plain": "Lose {HpLoss} HP. The card in the above option is randomized.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "{HpLoss}",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. The card in the above option is randomized."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "HOLD_ON_2": {
+        "description": {
+          "plain": "AHHHH!?!!!",
+          "runs": [
+            {
+              "text": "AHHHH!?!!!",
+              "style": "sine"
+            }
+          ]
+        },
+        "options": {
+          "HOLD_ON_3": {
+            "title": "Hold On",
+            "description": {
+              "plain": "Lose {HpLoss} HP. The card in the above option is randomized.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "{HpLoss}",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. The card in the above option is randomized."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "HOLD_ON_3": {
+        "description": {
+          "plain": "I CAN DO THIS!!!",
+          "runs": [
+            {
+              "text": "I CAN DO THIS!!!",
+              "style": "b"
+            }
+          ]
+        },
+        "options": {
+          "HOLD_ON_4": {
+            "title": "Hold On",
+            "description": {
+              "plain": "Lose {HpLoss} HP. The card in the above option is randomized.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "{HpLoss}",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. The card in the above option is randomized."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "HOLD_ON_4": {
+        "description": {
+          "plain": "NOOOOOooo",
+          "runs": [
+            {
+              "text": "NOOOOOooo",
+              "style": "b"
+            }
+          ]
+        },
+        "options": {
+          "HOLD_ON_5": {
+            "title": "Hold On",
+            "description": {
+              "plain": "Lose {HpLoss} HP. The card in the above option is randomized.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "{HpLoss}",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. The card in the above option is randomized."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "HOLD_ON_5": {
+        "description": {
+          "plain": "WHAT AM I DOING!?",
+          "runs": [
+            {
+              "text": "WHAT AM I DOING!?",
+              "style": "b"
+            }
+          ]
+        },
+        "options": {
+          "HOLD_ON_6": {
+            "title": "Hold On",
+            "description": {
+              "plain": "Lose {HpLoss} HP. The card in the above option is randomized.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "{HpLoss}",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. The card in the above option is randomized."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "HOLD_ON_6": {
+        "description": {
+          "plain": "!!!!!!!!!!!!!... !!!\n\n!!!!!!!! !!!!!!!!!!!?? !!!!!!!!!",
+          "runs": [
+            {
+              "text": "!!!!!!!!!!!!!... !!!\n\n!!!!!!!! !!!!!!!!!!!?? !!!!!!!!!",
+              "style": "b"
+            }
+          ]
+        },
+        "options": {
+          "HOLD_ON_LOOP": {
+            "title": "Hold On",
+            "description": {
+              "plain": "Lose {HpLoss} HP. The card in the above option is randomized.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "{HpLoss}",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. The card in the above option is randomized."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "HOLD_ON_LOOP": {
+        "description": {
+          "plain": "The developer would like to inform you that there is no additional text for players who have held on this long. We apologize for the inconvenience.",
+          "runs": [
+            {
+              "text": "The developer would like to inform you that there is no additional text for players who have held on this long. We apologize for the inconvenience."
+            }
+          ]
+        },
+        "options": {
+          "HOLD_ON_LOOP": {
+            "title": "Hold On",
+            "description": {
+              "plain": "Lose {HpLoss} HP. The card in the above option is randomized.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "{HpLoss}",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. The card in the above option is randomized."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "While crossing a rickety wooden bridge, there is a sudden torrent of rain. Massive gusts of wind buffet you, threatening to end your journey.",
+          "runs": [
+            {
+              "text": "While crossing a rickety wooden bridge, there is a sudden "
+            },
+            {
+              "text": "torrent of rain",
+              "style": "jitter"
+            },
+            {
+              "text": ". "
+            },
+            {
+              "text": "Massive gusts of wind",
+              "style": "sine"
+            },
+            {
+              "text": " buffet you, threatening to end your journey."
+            }
+          ]
+        },
+        "options": {
+          "HOLD_ON_0": {
+            "title": "Hold On",
+            "description": {
+              "plain": "Lose {HpLoss} HP. The card in the above option is randomized.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "{HpLoss}",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. The card in the above option is randomized."
+                }
+              ]
+            }
+          },
+          "OVERCOME": {
+            "title": "Overcome",
+            "description": {
+              "plain": "{RandomCard} is removed from your Deck.",
+              "runs": [
+                {
+                  "text": "{RandomCard}",
+                  "style": "red"
+                },
+                {
+                  "text": " is removed from your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "OVERCOME": {
+        "description": {
+          "plain": "I hate bridges.",
+          "runs": [
+            {
+              "text": "I hate bridges."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

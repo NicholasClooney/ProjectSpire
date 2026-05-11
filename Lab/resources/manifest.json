@@ -2,7 +2,7 @@
   "version": 1,
   "source_root": "/Users/nicholasclooney/Source/Projects/ProjectSpire/Lab/unpacked",
   "output_root": "/Users/nicholasclooney/Source/Projects/ProjectSpire/Lab/resources",
-  "generated_at": "2026-05-11T12:35:43.338001+00:00",
+  "generated_at": "2026-05-11T15:30:52.653161+00:00",
   "entries": [
     {
       "entry": "localization",
@@ -18354,6 +18354,796 @@
       "output_bytes": 15436,
       "quality": 85,
       "ratio": 0.3284
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/abyssal_baths.png",
+      "output": "images/events/abyssal_baths.webp",
+      "source_bytes": 745349,
+      "output_bytes": 67738,
+      "quality": 85,
+      "ratio": 0.0909
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/amalgamator.png",
+      "output": "images/events/amalgamator.webp",
+      "source_bytes": 758942,
+      "output_bytes": 106546,
+      "quality": 85,
+      "ratio": 0.1404
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/aroma_of_chaos.png",
+      "output": "images/events/aroma_of_chaos.webp",
+      "source_bytes": 858312,
+      "output_bytes": 103488,
+      "quality": 85,
+      "ratio": 0.1206
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/battleworn_dummy.png",
+      "output": "images/events/battleworn_dummy.webp",
+      "source_bytes": 1113121,
+      "output_bytes": 78220,
+      "quality": 85,
+      "ratio": 0.0703
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/brain_leech.png",
+      "output": "images/events/brain_leech.webp",
+      "source_bytes": 668670,
+      "output_bytes": 58178,
+      "quality": 85,
+      "ratio": 0.087
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/bugslayer.png",
+      "output": "images/events/bugslayer.webp",
+      "source_bytes": 871762,
+      "output_bytes": 93534,
+      "quality": 85,
+      "ratio": 0.1073
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/byrdonis_nest.png",
+      "output": "images/events/byrdonis_nest.webp",
+      "source_bytes": 526594,
+      "output_bytes": 52722,
+      "quality": 85,
+      "ratio": 0.1001
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/colorful_philosophers.png",
+      "output": "images/events/colorful_philosophers.webp",
+      "source_bytes": 515505,
+      "output_bytes": 53222,
+      "quality": 85,
+      "ratio": 0.1032
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/colossal_flower.png",
+      "output": "images/events/colossal_flower.webp",
+      "source_bytes": 1463621,
+      "output_bytes": 130446,
+      "quality": 85,
+      "ratio": 0.0891
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere/big_divination_icon.png",
+      "output": "images/events/crystal_sphere/big_divination_icon.webp",
+      "source_bytes": 2101,
+      "output_bytes": 1600,
+      "quality": 85,
+      "ratio": 0.7615
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere/crystal_ball_five_square_ui.png",
+      "output": "images/events/crystal_sphere/crystal_ball_five_square_ui.webp",
+      "source_bytes": 16530,
+      "output_bytes": 5198,
+      "quality": 85,
+      "ratio": 0.3145
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere/crystal_ball_single_square_ui.png",
+      "output": "images/events/crystal_sphere/crystal_ball_single_square_ui.webp",
+      "source_bytes": 4471,
+      "output_bytes": 1614,
+      "quality": 85,
+      "ratio": 0.361
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere/crystal_sphere_big_gold.png",
+      "output": "images/events/crystal_sphere/crystal_sphere_big_gold.webp",
+      "source_bytes": 17524,
+      "output_bytes": 4412,
+      "quality": 85,
+      "ratio": 0.2518
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere/crystal_sphere_card_back.png",
+      "output": "images/events/crystal_sphere/crystal_sphere_card_back.webp",
+      "source_bytes": 9555,
+      "output_bytes": 3452,
+      "quality": 85,
+      "ratio": 0.3613
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere/crystal_sphere_card_banner.png",
+      "output": "images/events/crystal_sphere/crystal_sphere_card_banner.webp",
+      "source_bytes": 9855,
+      "output_bytes": 2754,
+      "quality": 85,
+      "ratio": 0.2795
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere/crystal_sphere_card_outline.png",
+      "output": "images/events/crystal_sphere/crystal_sphere_card_outline.webp",
+      "source_bytes": 3739,
+      "output_bytes": 1842,
+      "quality": 85,
+      "ratio": 0.4926
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere/crystal_sphere_common_card_reward.png",
+      "output": "images/events/crystal_sphere/crystal_sphere_common_card_reward.webp",
+      "source_bytes": 28134,
+      "output_bytes": 7914,
+      "quality": 85,
+      "ratio": 0.2813
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere/crystal_sphere_common_potion.png",
+      "output": "images/events/crystal_sphere/crystal_sphere_common_potion.webp",
+      "source_bytes": 23781,
+      "output_bytes": 7556,
+      "quality": 85,
+      "ratio": 0.3177
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere/crystal_sphere_curse.png",
+      "output": "images/events/crystal_sphere/crystal_sphere_curse.webp",
+      "source_bytes": 29555,
+      "output_bytes": 8228,
+      "quality": 85,
+      "ratio": 0.2784
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere/crystal_sphere_gold.png",
+      "output": "images/events/crystal_sphere/crystal_sphere_gold.webp",
+      "source_bytes": 12447,
+      "output_bytes": 3572,
+      "quality": 85,
+      "ratio": 0.287
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere/crystal_sphere_minigame_bg.png",
+      "output": "images/events/crystal_sphere/crystal_sphere_minigame_bg.webp",
+      "source_bytes": 1733709,
+      "output_bytes": 219480,
+      "quality": 85,
+      "ratio": 0.1266
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere/crystal_sphere_rare_card_reward.png",
+      "output": "images/events/crystal_sphere/crystal_sphere_rare_card_reward.webp",
+      "source_bytes": 28815,
+      "output_bytes": 8590,
+      "quality": 85,
+      "ratio": 0.2981
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere/crystal_sphere_rare_potion.png",
+      "output": "images/events/crystal_sphere/crystal_sphere_rare_potion.webp",
+      "source_bytes": 40158,
+      "output_bytes": 12258,
+      "quality": 85,
+      "ratio": 0.3052
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere/crystal_sphere_relic.png",
+      "output": "images/events/crystal_sphere/crystal_sphere_relic.webp",
+      "source_bytes": 30189,
+      "output_bytes": 6526,
+      "quality": 85,
+      "ratio": 0.2162
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere/crystal_sphere_uncommon_card_reward.png",
+      "output": "images/events/crystal_sphere/crystal_sphere_uncommon_card_reward.webp",
+      "source_bytes": 26364,
+      "output_bytes": 8058,
+      "quality": 85,
+      "ratio": 0.3056
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere/crystal_sphere_uncommon_potion.png",
+      "output": "images/events/crystal_sphere/crystal_sphere_uncommon_potion.webp",
+      "source_bytes": 23781,
+      "output_bytes": 7556,
+      "quality": 85,
+      "ratio": 0.3177
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere/divine_button.png",
+      "output": "images/events/crystal_sphere/divine_button.webp",
+      "source_bytes": 28789,
+      "output_bytes": 1992,
+      "quality": 85,
+      "ratio": 0.0692
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere/divine_button_outline.png",
+      "output": "images/events/crystal_sphere/divine_button_outline.webp",
+      "source_bytes": 12642,
+      "output_bytes": 7528,
+      "quality": 85,
+      "ratio": 0.5955
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere/small_divination_icon.png",
+      "output": "images/events/crystal_sphere/small_divination_icon.webp",
+      "source_bytes": 2682,
+      "output_bytes": 2208,
+      "quality": 85,
+      "ratio": 0.8233
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/crystal_sphere.png",
+      "output": "images/events/crystal_sphere.webp",
+      "source_bytes": 896282,
+      "output_bytes": 85306,
+      "quality": 85,
+      "ratio": 0.0952
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/custom/fake_merchant_rug.png",
+      "output": "images/events/custom/fake_merchant_rug.webp",
+      "source_bytes": 1197594,
+      "output_bytes": 79176,
+      "quality": 85,
+      "ratio": 0.0661
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/dense_vegetation.png",
+      "output": "images/events/dense_vegetation.webp",
+      "source_bytes": 1753844,
+      "output_bytes": 167958,
+      "quality": 85,
+      "ratio": 0.0958
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/dense_vegetation_foreground.png",
+      "output": "images/events/dense_vegetation_foreground.webp",
+      "source_bytes": 336687,
+      "output_bytes": 150184,
+      "quality": 85,
+      "ratio": 0.4461
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/doll_room.png",
+      "output": "images/events/doll_room.webp",
+      "source_bytes": 792322,
+      "output_bytes": 64188,
+      "quality": 85,
+      "ratio": 0.081
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/doors_of_light_and_dark.png",
+      "output": "images/events/doors_of_light_and_dark.webp",
+      "source_bytes": 1359444,
+      "output_bytes": 141472,
+      "quality": 85,
+      "ratio": 0.1041
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/drowning_beacon.png",
+      "output": "images/events/drowning_beacon.webp",
+      "source_bytes": 934625,
+      "output_bytes": 81742,
+      "quality": 85,
+      "ratio": 0.0875
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/endless_conveyor.png",
+      "output": "images/events/endless_conveyor.webp",
+      "source_bytes": 641952,
+      "output_bytes": 58976,
+      "quality": 85,
+      "ratio": 0.0919
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/field_of_man_sized_holes.png",
+      "output": "images/events/field_of_man_sized_holes.webp",
+      "source_bytes": 624538,
+      "output_bytes": 71476,
+      "quality": 85,
+      "ratio": 0.1144
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/grave_of_the_forgotten.png",
+      "output": "images/events/grave_of_the_forgotten.webp",
+      "source_bytes": 649689,
+      "output_bytes": 61986,
+      "quality": 85,
+      "ratio": 0.0954
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/hungry_for_mushrooms.png",
+      "output": "images/events/hungry_for_mushrooms.webp",
+      "source_bytes": 532436,
+      "output_bytes": 60390,
+      "quality": 85,
+      "ratio": 0.1134
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/infested_automaton.png",
+      "output": "images/events/infested_automaton.webp",
+      "source_bytes": 736651,
+      "output_bytes": 62626,
+      "quality": 85,
+      "ratio": 0.085
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/jungle_maze_adventure.png",
+      "output": "images/events/jungle_maze_adventure.webp",
+      "source_bytes": 710041,
+      "output_bytes": 74686,
+      "quality": 85,
+      "ratio": 0.1052
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/lost_wisp.png",
+      "output": "images/events/lost_wisp.webp",
+      "source_bytes": 568576,
+      "output_bytes": 60430,
+      "quality": 85,
+      "ratio": 0.1063
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/luminous_choir.png",
+      "output": "images/events/luminous_choir.webp",
+      "source_bytes": 1060306,
+      "output_bytes": 150858,
+      "quality": 85,
+      "ratio": 0.1423
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/mirror_mask3.png",
+      "output": "images/events/mirror_mask3.webp",
+      "source_bytes": 84042,
+      "output_bytes": 41482,
+      "quality": 85,
+      "ratio": 0.4936
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/morphic_grove.png",
+      "output": "images/events/morphic_grove.webp",
+      "source_bytes": 955816,
+      "output_bytes": 104258,
+      "quality": 85,
+      "ratio": 0.1091
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/potion_courier.png",
+      "output": "images/events/potion_courier.webp",
+      "source_bytes": 746821,
+      "output_bytes": 63466,
+      "quality": 85,
+      "ratio": 0.085
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/punch_off.png",
+      "output": "images/events/punch_off.webp",
+      "source_bytes": 1198312,
+      "output_bytes": 79250,
+      "quality": 85,
+      "ratio": 0.0661
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/ranwid_the_elder.png",
+      "output": "images/events/ranwid_the_elder.webp",
+      "source_bytes": 1387093,
+      "output_bytes": 103592,
+      "quality": 85,
+      "ratio": 0.0747
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/reflections.png",
+      "output": "images/events/reflections.webp",
+      "source_bytes": 704275,
+      "output_bytes": 78036,
+      "quality": 85,
+      "ratio": 0.1108
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/relic_trader.png",
+      "output": "images/events/relic_trader.webp",
+      "source_bytes": 439910,
+      "output_bytes": 48694,
+      "quality": 85,
+      "ratio": 0.1107
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/room_full_of_cheese.png",
+      "output": "images/events/room_full_of_cheese.webp",
+      "source_bytes": 479952,
+      "output_bytes": 51628,
+      "quality": 85,
+      "ratio": 0.1076
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/round_tea_party.png",
+      "output": "images/events/round_tea_party.webp",
+      "source_bytes": 629995,
+      "output_bytes": 60242,
+      "quality": 85,
+      "ratio": 0.0956
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/sapphire_seed.png",
+      "output": "images/events/sapphire_seed.webp",
+      "source_bytes": 825247,
+      "output_bytes": 72960,
+      "quality": 85,
+      "ratio": 0.0884
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/self_help_book.png",
+      "output": "images/events/self_help_book.webp",
+      "source_bytes": 769912,
+      "output_bytes": 76330,
+      "quality": 85,
+      "ratio": 0.0991
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/slippery_bridge.png",
+      "output": "images/events/slippery_bridge.webp",
+      "source_bytes": 932017,
+      "output_bytes": 91810,
+      "quality": 85,
+      "ratio": 0.0985
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/spiraling_whirlpool.png",
+      "output": "images/events/spiraling_whirlpool.webp",
+      "source_bytes": 707036,
+      "output_bytes": 72422,
+      "quality": 85,
+      "ratio": 0.1024
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/spirit_grafter.png",
+      "output": "images/events/spirit_grafter.webp",
+      "source_bytes": 749573,
+      "output_bytes": 70924,
+      "quality": 85,
+      "ratio": 0.0946
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/stone_of_all_time.png",
+      "output": "images/events/stone_of_all_time.webp",
+      "source_bytes": 482249,
+      "output_bytes": 40336,
+      "quality": 85,
+      "ratio": 0.0836
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/sunken_statue.png",
+      "output": "images/events/sunken_statue.webp",
+      "source_bytes": 1441000,
+      "output_bytes": 112494,
+      "quality": 85,
+      "ratio": 0.0781
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/sunken_treasury.png",
+      "output": "images/events/sunken_treasury.webp",
+      "source_bytes": 809676,
+      "output_bytes": 77140,
+      "quality": 85,
+      "ratio": 0.0953
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/symbiote.png",
+      "output": "images/events/symbiote.webp",
+      "source_bytes": 1393901,
+      "output_bytes": 101894,
+      "quality": 85,
+      "ratio": 0.0731
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/tablet_of_truth.png",
+      "output": "images/events/tablet_of_truth.webp",
+      "source_bytes": 1010024,
+      "output_bytes": 66506,
+      "quality": 85,
+      "ratio": 0.0658
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/tea_master.png",
+      "output": "images/events/tea_master.webp",
+      "source_bytes": 775973,
+      "output_bytes": 70736,
+      "quality": 85,
+      "ratio": 0.0912
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/the_future_of_potions.png",
+      "output": "images/events/the_future_of_potions.webp",
+      "source_bytes": 213326,
+      "output_bytes": 18694,
+      "quality": 85,
+      "ratio": 0.0876
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/the_legends_were_true.png",
+      "output": "images/events/the_legends_were_true.webp",
+      "source_bytes": 617759,
+      "output_bytes": 51946,
+      "quality": 85,
+      "ratio": 0.0841
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/this_or_that.png",
+      "output": "images/events/this_or_that.webp",
+      "source_bytes": 590120,
+      "output_bytes": 56138,
+      "quality": 85,
+      "ratio": 0.0951
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/tinker_time.png",
+      "output": "images/events/tinker_time.webp",
+      "source_bytes": 586681,
+      "output_bytes": 50034,
+      "quality": 85,
+      "ratio": 0.0853
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/trash_heap.png",
+      "output": "images/events/trash_heap.webp",
+      "source_bytes": 784841,
+      "output_bytes": 86620,
+      "quality": 85,
+      "ratio": 0.1104
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/trial.png",
+      "output": "images/events/trial.webp",
+      "source_bytes": 197000,
+      "output_bytes": 16268,
+      "quality": 85,
+      "ratio": 0.0826
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/trial_started.png",
+      "output": "images/events/trial_started.webp",
+      "source_bytes": 673177,
+      "output_bytes": 40504,
+      "quality": 85,
+      "ratio": 0.0602
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/unrest_site.png",
+      "output": "images/events/unrest_site.webp",
+      "source_bytes": 1147880,
+      "output_bytes": 115536,
+      "quality": 85,
+      "ratio": 0.1007
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/war_historian_repy.png",
+      "output": "images/events/war_historian_repy.webp",
+      "source_bytes": 919666,
+      "output_bytes": 81076,
+      "quality": 85,
+      "ratio": 0.0882
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/waterlogged_scriptorium.png",
+      "output": "images/events/waterlogged_scriptorium.webp",
+      "source_bytes": 844450,
+      "output_bytes": 75498,
+      "quality": 85,
+      "ratio": 0.0894
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/welcome_to_wongos.png",
+      "output": "images/events/welcome_to_wongos.webp",
+      "source_bytes": 937441,
+      "output_bytes": 104290,
+      "quality": 85,
+      "ratio": 0.1112
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/wellspring.png",
+      "output": "images/events/wellspring.webp",
+      "source_bytes": 887654,
+      "output_bytes": 57470,
+      "quality": 85,
+      "ratio": 0.0647
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/whispering_hollow.png",
+      "output": "images/events/whispering_hollow.webp",
+      "source_bytes": 1378160,
+      "output_bytes": 116948,
+      "quality": 85,
+      "ratio": 0.0849
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/wood_carvings.png",
+      "output": "images/events/wood_carvings.webp",
+      "source_bytes": 787446,
+      "output_bytes": 85994,
+      "quality": 85,
+      "ratio": 0.1092
+    },
+    {
+      "entry": "event_images",
+      "transform": "webp-q85",
+      "source": "images/events/zen_weaver.png",
+      "output": "images/events/zen_weaver.webp",
+      "source_bytes": 1234664,
+      "output_bytes": 98036,
+      "quality": 85,
+      "ratio": 0.0794
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TANX",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Tanx",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/Tanx.cs",
+    "kind": "ancient",
+    "localization": {
+      "table": "events",
+      "title_key": "TANX.title"
+    }
+  },
+  "resolved": {
+    "title": "Khimera King"
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SPIRALING_WHIRLPOOL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SpiralingWhirlpool",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/SpiralingWhirlpool.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "SPIRALING_WHIRLPOOL.title"
+    },
+    "vars": {
+      "Heal": 0
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/spiraling_whirlpool.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Spiraling Whirlpool",
+    "pages": {
+      "DRINK": {
+        "description": {
+          "plain": "You cup your hands and dip it into the Spiraling Whirlpool.\n\nIts waters fill your hands at a gentle rate as you take small sips with your eyes closed.\n\nDelicious water spirals through you to your Center, washing away harmful thoughts and physical ailments...",
+          "runs": [
+            {
+              "text": "You cup your hands and dip it into the "
+            },
+            {
+              "text": "Spiraling Whirlpool",
+              "style": "aqua"
+            },
+            {
+              "text": ".\n\nIts waters fill your hands at a gentle rate as you take small sips with your eyes closed.\n\nDelicious water "
+            },
+            {
+              "text": "spirals",
+              "style": "sine"
+            },
+            {
+              "text": " through you to your "
+            },
+            {
+              "text": "Center",
+              "style": "gold"
+            },
+            {
+              "text": ", washing away harmful thoughts and physical ailments..."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "You happen upon a Massive Spiraling Whirlpool. The water swirls with beautiful precision and its surrounding walls are adorned with spiral patterns.\n\nAround and around... around...\n....and around.... what a sight......\n\nWhat do you do?",
+          "runs": [
+            {
+              "text": "You happen upon a "
+            },
+            {
+              "text": "Massive Spiraling Whirlpool",
+              "style": "sine"
+            },
+            {
+              "text": ". The water swirls with beautiful precision and its surrounding walls are adorned with spiral patterns.\n\n"
+            },
+            {
+              "text": "Around and around... around...\n....and around.... what a sight......",
+              "style": "sine"
+            },
+            {
+              "text": "\n\nWhat do you do?"
+            }
+          ]
+        },
+        "options": {
+          "DRINK": {
+            "title": "Drink",
+            "description": {
+              "plain": "Heal 0 HP.",
+              "runs": [
+                {
+                  "text": "Heal "
+                },
+                {
+                  "text": "0",
+                  "source_var": "Heal",
+                  "style": "green"
+                },
+                {
+                  "text": " HP."
+                }
+              ]
+            }
+          },
+          "OBSERVE": {
+            "title": "Observe",
+            "description": {
+              "plain": "Enchant a Basic Strike or Defend with Spiral.",
+              "runs": [
+                {
+                  "text": "Enchant",
+                  "style": "gold"
+                },
+                {
+                  "text": " a Basic "
+                },
+                {
+                  "text": "Strike",
+                  "style": "gold"
+                },
+                {
+                  "text": " or "
+                },
+                {
+                  "text": "Defend",
+                  "style": "gold"
+                },
+                {
+                  "text": " with "
+                },
+                {
+                  "text": "Spiral",
+                  "style": "purple"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "REACH_IN": {
+            "title": "Reach In",
+            "description": {
+              "plain": "Obtain a random Relic. Add Writhe to your Deck.",
+              "runs": [
+                {
+                  "text": "Obtain a random "
+                },
+                {
+                  "text": "Relic",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Add "
+                },
+                {
+                  "text": "Writhe",
+                  "style": "red"
+                },
+                {
+                  "text": " to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "OBSERVE": {
+        "description": {
+          "plain": "...ah-   so beautiful.....\nSo it spins... still spinning around. Yes...\nOh! Was that..... a little splash...?\n....of course. You deserve some fun, too Mr. Spiral... haha...\n... .......   ...\n\nIt's time to go now.\nYou whisper something as you take your leave.\n\n\u201cThank you, Spiral.\u201d",
+          "runs": [
+            {
+              "text": "...ah-   so beautiful.....\nSo it spins... still spinning around. Yes...\nOh! Was that..... a little splash...?\n....of course. You deserve some fun, too",
+              "style": "purple"
+            },
+            {
+              "text": " ",
+              "style": "sine"
+            },
+            {
+              "text": "Mr. Spiral",
+              "style": "aqua"
+            },
+            {
+              "text": "... haha...\n... .......   ...",
+              "style": "purple"
+            },
+            {
+              "text": "\n\nIt's time to go now.\nYou whisper something as you take your leave.\n\n"
+            },
+            {
+              "text": "\u201cThank you, Spiral.\u201d",
+              "style": "gold"
+            }
+          ]
+        }
+      },
+      "REACH_IN": {
+        "description": {
+          "plain": "Foolishly, you plunge your arm into the center of the Spiraling Whirlpool, disrupting the equilibrium. The water becomes frigid and grasps you, carving Invisible Spirals into your arm.\n\nYour fingers brush against something solid, and you grasp around in pain to finally wrestle a Relic out of there!",
+          "runs": [
+            {
+              "text": "Foolishly, you plunge your arm into the center of the "
+            },
+            {
+              "text": "Spiraling Whirlpool",
+              "style": "sine"
+            },
+            {
+              "text": ", disrupting the equilibrium. The water becomes "
+            },
+            {
+              "text": "frigid",
+              "style": "jitter"
+            },
+            {
+              "text": " and grasps you, carving "
+            },
+            {
+              "text": "Invisible Spirals",
+              "style": "red"
+            },
+            {
+              "text": " into your arm.\n\nYour fingers brush against something solid, and you grasp around in pain to finally wrestle a "
+            },
+            {
+              "text": "Relic",
+              "style": "gold"
+            },
+            {
+              "text": " out of there!"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

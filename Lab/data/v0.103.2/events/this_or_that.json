@@ -1,0 +1,199 @@
+{
+  "schema_version": "0.1.0",
+  "id": "THIS_OR_THAT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ThisOrThat",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/ThisOrThat.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "THIS_OR_THAT.title"
+    },
+    "vars": {
+      "HpLoss": 6,
+      "Gold": 0
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/this_or_that.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "This or That?",
+    "loss": {
+      "plain": "{character} was pulled under... {pronounSubject} could not decide between {event}.",
+      "runs": [
+        {
+          "text": "{character} was pulled under... {pronounSubject} could not decide between "
+        },
+        {
+          "text": "{event}",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "pages": {
+      "INITIAL": {
+        "description": {
+          "plain": "Arms suddenly jut out from a nearby hole, clutching a suspicious bag of riches and a clearly cursed relic.\n\n\u201cThis... or That?\u201d\na scratched-up voice whispers from below.",
+          "runs": [
+            {
+              "text": "Arms suddenly jut out from a nearby hole, clutching a "
+            },
+            {
+              "text": "suspicious bag of riches",
+              "style": "gold"
+            },
+            {
+              "text": " and a clearly "
+            },
+            {
+              "text": "cursed relic",
+              "style": "purple"
+            },
+            {
+              "text": ".\n\n"
+            },
+            {
+              "text": "\u201cThis... or That?\u201d",
+              "style": "blue"
+            },
+            {
+              "text": "\na scratched-up voice whispers from below."
+            }
+          ]
+        },
+        "options": {
+          "ORNATE": {
+            "title": "That",
+            "description": {
+              "plain": "Add {Curse} to your Deck. Obtain a random Relic.",
+              "runs": [
+                {
+                  "text": "Add "
+                },
+                {
+                  "text": "{Curse}",
+                  "style": "red"
+                },
+                {
+                  "text": " to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Obtain a random "
+                },
+                {
+                  "text": "Relic",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "PLAIN": {
+            "title": "This",
+            "description": {
+              "plain": "Lose 6 HP. Gain 0 Gold.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "6",
+                  "source_var": "HpLoss",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. Gain "
+                },
+                {
+                  "text": "0",
+                  "source_var": "Gold",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "ORNATE": {
+        "description": {
+          "plain": "You grab the Cursed Relic. As soon as you grasp it, shackles materialize on your wrists.\n\nYou hear a ghostly laughter and a bright plume of fire fills your vision!\n\nThe hole and arms are gone.",
+          "runs": [
+            {
+              "text": "You grab the "
+            },
+            {
+              "text": "Cursed Relic",
+              "style": "purple"
+            },
+            {
+              "text": ". As soon as you grasp it, shackles materialize on your wrists.\n\nYou hear a "
+            },
+            {
+              "text": "ghostly laughter",
+              "style": "sine"
+            },
+            {
+              "text": " and a bright "
+            },
+            {
+              "text": "plume of fire",
+              "style": "orange"
+            },
+            {
+              "text": " fills your vision!\n\nThe hole and arms are gone."
+            }
+          ]
+        }
+      },
+      "PLAIN": {
+        "description": {
+          "plain": "You grab the bag and as soon as you do, a THIRD hand appears and clutches at you!!\n\nAfter a frantic struggle, it releases\u2014the arms and the hole have vanished.",
+          "runs": [
+            {
+              "text": "You grab the bag and as soon as you do, a "
+            },
+            {
+              "text": "THIRD hand",
+              "style": "jitter"
+            },
+            {
+              "text": " appears and clutches at you!!\n\nAfter a "
+            },
+            {
+              "text": "frantic struggle",
+              "style": "jitter"
+            },
+            {
+              "text": ", it releases\u2014the arms and the hole have vanished."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

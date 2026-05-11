@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FAKE_MERCHANT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "FakeMerchant",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/FakeMerchant.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "FAKE_MERCHANT.title"
+    }
+  },
+  "resolved": {
+    "title": "The Merchant???",
+    "loss": {
+      "plain": "{character} faced the wrath of {event}.",
+      "runs": [
+        {
+          "text": "{character} faced the wrath of "
+        },
+        {
+          "text": "{event}",
+          "style": "b"
+        },
+        {
+          "text": ".",
+          "style": "gold"
+        }
+      ]
+    },
+    "pages": {
+      "INITIAL": {
+        "description": {
+          "plain": "Placeholder",
+          "runs": [
+            {
+              "text": "Placeholder"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

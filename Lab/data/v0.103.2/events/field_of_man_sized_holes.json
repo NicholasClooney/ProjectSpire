@@ -1,0 +1,167 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FIELD_OF_MAN_SIZED_HOLES",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "FieldOfManSizedHoles",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/FieldOfManSizedHoles.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "FIELD_OF_MAN_SIZED_HOLES.title"
+    },
+    "vars": {
+      "Gold": 75,
+      "Cards": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/field_of_man_sized_holes.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Field of Man-Sized Holes",
+    "pages": {
+      "ENTER_YOUR_HOLE": {
+        "description": {
+          "plain": "It's a snug fit, but you squeeze yourself into the hole...\n\nThe further you go, the darker it becomes.\nEventually, you see a faint light grow brighter and reveal the other side.\n\nYou step out unchanged, but now understand the intimate secrets of life.",
+          "runs": [
+            {
+              "text": "It's a snug fit, but you squeeze yourself into the hole...\n\nThe further you go, the "
+            },
+            {
+              "text": "darker it becomes",
+              "style": "purple"
+            },
+            {
+              "text": ".\nEventually, you see a "
+            },
+            {
+              "text": "faint light",
+              "style": "gold"
+            },
+            {
+              "text": " grow brighter and reveal the other side.\n\nYou step out unchanged, but now understand the "
+            },
+            {
+              "text": "intimate secrets of life",
+              "style": "green"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "The sudden sight of a massive field, gouged with large outlines of bodies, stops you in your tracks.\n\nOne of these outlines matches your own.\n\nIt's perfect...",
+          "runs": [
+            {
+              "text": "The sudden sight of a massive field, "
+            },
+            {
+              "text": "gouged with large outlines of bodies",
+              "style": "jitter"
+            },
+            {
+              "text": ", stops you in your tracks.\n\nOne of these outlines matches your own.\n\n"
+            },
+            {
+              "text": "It's perfect...",
+              "style": "orange"
+            }
+          ]
+        },
+        "options": {
+          "ENTER_YOUR_HOLE": {
+            "title": "Enter Your Hole",
+            "description": {
+              "plain": "Enchant a card with {Enchantment}.",
+              "runs": [
+                {
+                  "text": "Enchant",
+                  "style": "gold"
+                },
+                {
+                  "text": " a card with "
+                },
+                {
+                  "text": "{Enchantment}",
+                  "style": "purple"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "RESIST": {
+            "title": "Resist",
+            "description": {
+              "plain": "Remove 2 cards from your Deck. Add {ResistCurse} to your Deck.",
+              "runs": [
+                {
+                  "text": "Remove "
+                },
+                {
+                  "text": "2",
+                  "source_var": "Cards",
+                  "style": "blue"
+                },
+                {
+                  "text": " cards from your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Add "
+                },
+                {
+                  "text": "{ResistCurse}",
+                  "style": "red"
+                },
+                {
+                  "text": " to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "RESIST": {
+        "description": {
+          "plain": "You walk past all the holes, even the one carved perfectly in your shape...\n\nWhy didn't I go inside? What would have happened? Have I been in that hole before? Who made these holes?\n\nWhat is... who... where?",
+          "runs": [
+            {
+              "text": "You walk past all the holes, even the one carved "
+            },
+            {
+              "text": "perfectly in your shape...",
+              "style": "orange"
+            },
+            {
+              "text": "\n\nWhy didn't I go inside? What would have happened? Have I been in that hole before? Who made these holes?\n\n"
+            },
+            {
+              "text": "What is... who... where?",
+              "style": "red"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

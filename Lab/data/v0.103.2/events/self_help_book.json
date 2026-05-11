@@ -1,0 +1,268 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SELF_HELP_BOOK",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SelfHelpBook",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/SelfHelpBook.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "SELF_HELP_BOOK.title"
+    },
+    "vars": {
+      "Enchantment1Amount": 2,
+      "Enchantment2Amount": 2,
+      "Enchantment3Amount": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/self_help_book.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Self-Help Book",
+    "pages": {
+      "INITIAL": {
+        "description": {
+          "plain": "On the floor lies a tome,\n\u201cTop 3 Ways to Conquer the Spire\u201d\n\nThe book is encrusted with blood so you find this manuscript highly suspicious.\n\nWill you read it?",
+          "runs": [
+            {
+              "text": "On the floor lies a tome,\n\u201cTop 3 Ways to Conquer the Spire\u201d\n\nThe book is "
+            },
+            {
+              "text": "encrusted with blood",
+              "style": "red"
+            },
+            {
+              "text": " so you find this manuscript highly suspicious.\n\nWill you read it?"
+            }
+          ]
+        },
+        "options": {
+          "NO_OPTIONS": {
+            "title": "Move On",
+            "description": {
+              "plain": "You don't have any cards that can be Enchanted.",
+              "runs": [
+                {
+                  "text": "You don't have any cards that can be Enchanted."
+                }
+              ]
+            }
+          },
+          "READ_ENTIRE_BOOK": {
+            "title": "Read the Entire Book",
+            "description": {
+              "plain": "Choose a Power to Enchant with {Enchantment3} 2.",
+              "runs": [
+                {
+                  "text": "Choose a Power to "
+                },
+                {
+                  "text": "Enchant",
+                  "style": "gold"
+                },
+                {
+                  "text": " with "
+                },
+                {
+                  "text": "{Enchantment3}",
+                  "style": "purple"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "2",
+                  "source_var": "Enchantment3Amount",
+                  "style": "blue"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "READ_ENTIRE_BOOK_LOCKED": {
+            "title": "Locked",
+            "description": {
+              "plain": "You don't have any Powers that can be Enchanted.",
+              "runs": [
+                {
+                  "text": "You don't have any Powers that can be "
+                },
+                {
+                  "text": "Enchanted",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "READ_PASSAGE": {
+            "title": "Read a Random Passage",
+            "description": {
+              "plain": "Choose a Skill to Enchant with {Enchantment2} 2.",
+              "runs": [
+                {
+                  "text": "Choose a Skill to "
+                },
+                {
+                  "text": "Enchant",
+                  "style": "gold"
+                },
+                {
+                  "text": " with "
+                },
+                {
+                  "text": "{Enchantment2}",
+                  "style": "purple"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "2",
+                  "source_var": "Enchantment2Amount",
+                  "style": "blue"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "READ_PASSAGE_LOCKED": {
+            "title": "Locked",
+            "description": {
+              "plain": "You don't have any Skills that can be Enchanted.",
+              "runs": [
+                {
+                  "text": "You don't have any Skills that can be "
+                },
+                {
+                  "text": "Enchanted",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "READ_THE_BACK": {
+            "title": "Read the Back",
+            "description": {
+              "plain": "Choose an Attack to Enchant with {Enchantment1} 2.",
+              "runs": [
+                {
+                  "text": "Choose an Attack to "
+                },
+                {
+                  "text": "Enchant",
+                  "style": "gold"
+                },
+                {
+                  "text": " with "
+                },
+                {
+                  "text": "{Enchantment1}",
+                  "style": "purple"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "2",
+                  "source_var": "Enchantment1Amount",
+                  "style": "blue"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "READ_THE_BACK_LOCKED": {
+            "title": "Locked",
+            "description": {
+              "plain": "You don't have any Attacks that can be Enchanted.",
+              "runs": [
+                {
+                  "text": "You don't have any Attacks that can be "
+                },
+                {
+                  "text": "Enchanted",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "NO_OPTIONS": {
+        "description": {
+          "plain": "You don't particularly care for books, let alone blood-encrusted ones.",
+          "runs": [
+            {
+              "text": "You don't particularly care for books, let alone blood-encrusted ones."
+            }
+          ]
+        }
+      },
+      "READ_ENTIRE_BOOK": {
+        "description": {
+          "plain": "What an engrossing read! Some choice quotes remain fresh in your mind:\n\u201cAvoid big monsters.\u201d\n\u201cTake every card.\u201d\n\u201cBlocking is for cowards.\u201d\n\nYour hands are covered in blood.",
+          "runs": [
+            {
+              "text": "What an engrossing read! Some choice quotes remain fresh in your mind:\n\u201cAvoid big monsters.\u201d\n\u201cTake every card.\u201d\n\u201cBlocking is for cowards.\u201d\n\nYour hands are covered in "
+            },
+            {
+              "text": "blood",
+              "style": "red"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      },
+      "READ_PASSAGE": {
+        "description": {
+          "plain": "You flip to a random page:\n\u201cDefense 101: Don't get hit!\u201d\n\nYou read the rest of the passage and it's surprisingly illuminating. You incorporate these ideas into your battle tactics.",
+          "runs": [
+            {
+              "text": "You flip to a random page:\n\u201cDefense 101: Don't get hit!\u201d\n\nYou read the rest of the passage and it's surprisingly illuminating. You incorporate these ideas into your battle tactics."
+            }
+          ]
+        }
+      },
+      "READ_THE_BACK": {
+        "description": {
+          "plain": "You flip the book over and read the summary:\n\u201cCritics and Cultists agree that sharp and pointy weapons are the best way to inflict damage!\u201d\n\nThere's a price sticker on the back of the book, crossed out and marked with a greatly reduced price.",
+          "runs": [
+            {
+              "text": "You flip the book over and read the summary:\n"
+            },
+            {
+              "text": "\u201cCritics and Cultists agree that sharp and pointy weapons are the best way to inflict damage!\u201d",
+              "style": "blue"
+            },
+            {
+              "text": "\n\nThere's a price sticker on the back of the book, crossed out and marked with a greatly reduced price."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "schema_version": "0.1.0",
+  "id": "AROMA_OF_CHAOS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "AromaOfChaos",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/AromaOfChaos.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "AROMA_OF_CHAOS.title"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/aroma_of_chaos.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Aroma of Chaos",
+    "pages": {
+      "INITIAL": {
+        "description": {
+          "plain": "Upon trudging through a thick underbrush and making it into a clearing, you're hit with an unplaceable nostalgia.\n\nA mix of floral scents, putrid decay, and something else entirely. The scent grows stronger with each step, and you feel as though the world around you is warping and twisting.\n\nOvercome with a sense of [rainbow freq=0.3 sat=0.8 val=1]shifting chaos, you begin to lose your sense of self.",
+          "runs": [
+            {
+              "text": "Upon trudging through a thick underbrush and making it into a clearing, you're hit with an unplaceable nostalgia.\n\nA mix of "
+            },
+            {
+              "text": "floral scents",
+              "style": "purple"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "putrid decay",
+              "style": "green"
+            },
+            {
+              "text": ", and "
+            },
+            {
+              "text": "something else entirely",
+              "style": "orange"
+            },
+            {
+              "text": ". The scent grows stronger with each step, and you feel as though the world around you is "
+            },
+            {
+              "text": "warping and twisting",
+              "style": "sine"
+            },
+            {
+              "text": ".\n\nOvercome with a sense of "
+            },
+            {
+              "text": "[rainbow freq=0.3 sat=0.8 val=1]shifting chaos",
+              "style": "sine"
+            },
+            {
+              "text": ", you begin to lose your sense of self."
+            }
+          ]
+        },
+        "options": {
+          "LET_GO": {
+            "title": "Let Go",
+            "description": {
+              "plain": "Transform a card in your Deck.",
+              "runs": [
+                {
+                  "text": "Transform",
+                  "style": "gold"
+                },
+                {
+                  "text": " a card in your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "MAINTAIN_CONTROL": {
+            "title": "Maintain Control",
+            "description": {
+              "plain": "Upgrade a card in your Deck.",
+              "runs": [
+                {
+                  "text": "Upgrade",
+                  "style": "gold"
+                },
+                {
+                  "text": " a card in your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "LET_GO": {
+        "description": {
+          "plain": "You give in and your mind drifts...\nYou see yourself communing with friends, fighting as a team, and dueling great foes. Is this a dream? Reality? Somehow both? Many sets of eyes perceive you and your dreams. Who are they...?\n\nYou awaken after an unknown amount of time.\nThe aroma weakens and its effects fade as you regain clarity. Upon restabilizing, you're more clearheaded than ever.\n\nWhat were those eyes?",
+          "runs": [
+            {
+              "text": "You give in and your mind "
+            },
+            {
+              "text": "drifts...",
+              "style": "purple"
+            },
+            {
+              "text": "\nYou see yourself "
+            },
+            {
+              "text": "communing with friends",
+              "style": "blue"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "fighting as a team",
+              "style": "green"
+            },
+            {
+              "text": ", and "
+            },
+            {
+              "text": "dueling great foes",
+              "style": "gold"
+            },
+            {
+              "text": ". Is this a dream? Reality? Somehow both? Many sets of eyes perceive you and your dreams. Who are they...?\n\nYou awaken after an unknown amount of time.\nThe aroma weakens and its effects fade as you regain clarity. Upon restabilizing, you're more clearheaded than ever.\n\n"
+            },
+            {
+              "text": "What were those eyes?",
+              "style": "red"
+            }
+          ]
+        }
+      },
+      "MAINTAIN_CONTROL": {
+        "description": {
+          "plain": "Resisting the temptation to give in, you climb atop a tree where the aroma doesn't reach but its effects claw at your mind.\n\nMaintaining control is difficult; you tether your thoughts to your Core Principles.\n\n{AromaPrinciple}\n{AromaPrinciple}\n{AromaPrinciple}\n\nThe aroma subsides.",
+          "runs": [
+            {
+              "text": "Resisting the temptation to give in, you climb atop a tree where the aroma doesn't reach but its effects claw at your mind.\n\nMaintaining control is difficult; you tether your thoughts to your "
+            },
+            {
+              "text": "Core Principles",
+              "style": "blue"
+            },
+            {
+              "text": ".\n\n{AromaPrinciple}\n{AromaPrinciple}\n{AromaPrinciple}\n\nThe aroma subsides."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

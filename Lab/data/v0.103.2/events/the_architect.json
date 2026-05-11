@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1.0",
+  "id": "THE_ARCHITECT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TheArchitect",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/TheArchitect.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "THE_ARCHITECT.title"
+    },
+    "notes": [
+      "Localization keys not found; event may be deprecated or unreleased."
+    ]
+  },
+  "resolved": {}
+}

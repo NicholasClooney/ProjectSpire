@@ -1,0 +1,229 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ROOM_FULL_OF_CHEESE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "RoomFullOfCheese",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/RoomFullOfCheese.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "ROOM_FULL_OF_CHEESE.title"
+    },
+    "vars": {
+      "Damage": 14
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/room_full_of_cheese.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Room Full of Cheese",
+    "loss": {
+      "plain": "{character} ate too much in the {event}.",
+      "runs": [
+        {
+          "text": "{character} ate too much in the "
+        },
+        {
+          "text": "{event}",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "pages": {
+      "GORGE": {
+        "description": {
+          "plain": "You take a little nibble of cheese but this fuels you to eat even more cheese.\n\nTime passes...\n\n You have eaten an awe-inspiring amount of cheese.\nTonight, dreams will be cheese.",
+          "runs": [
+            {
+              "text": "You take a little nibble of "
+            },
+            {
+              "text": "cheese",
+              "style": "b"
+            },
+            {
+              "text": " but this fuels you to eat even more "
+            },
+            {
+              "text": "cheese",
+              "style": "b"
+            },
+            {
+              "text": ".\n\n"
+            },
+            {
+              "text": "Time passes...",
+              "style": "sine"
+            },
+            {
+              "text": "\n\n You have eaten an awe-inspiring amount of "
+            },
+            {
+              "text": "cheese",
+              "style": "b"
+            },
+            {
+              "text": ".\nTonight, dreams will be "
+            },
+            {
+              "text": "cheese",
+              "style": "b"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "This room is full of cheese!!!\n\nYou look around to see if there are any traps and above you is... more cheese. The candles in this room appear to be made of cheese. The furniture is also cheese.\nSuddenly, the door behind you slams shut.\n\nIt is made of cheese.",
+          "runs": [
+            {
+              "text": "This room is full of "
+            },
+            {
+              "text": "cheese!!!",
+              "style": "jitter"
+            },
+            {
+              "text": "\n\nYou look around to see if there are any traps and above you is... more "
+            },
+            {
+              "text": "cheese",
+              "style": "b"
+            },
+            {
+              "text": ". The candles in this room appear to be made of "
+            },
+            {
+              "text": "cheese",
+              "style": "b"
+            },
+            {
+              "text": ". The furniture is also "
+            },
+            {
+              "text": "cheese",
+              "style": "b"
+            },
+            {
+              "text": ".\nSuddenly, the door behind you slams shut.\n\nIt is made of "
+            },
+            {
+              "text": "cheese",
+              "style": "b"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        "options": {
+          "GORGE": {
+            "title": "Gorge",
+            "description": {
+              "plain": "Choose 2 of 8 random Common cards to add to your Deck.",
+              "runs": [
+                {
+                  "text": "Choose "
+                },
+                {
+                  "text": "2",
+                  "style": "blue"
+                },
+                {
+                  "text": " of "
+                },
+                {
+                  "text": "8",
+                  "style": "blue"
+                },
+                {
+                  "text": " random "
+                },
+                {
+                  "text": "Common",
+                  "style": "gold"
+                },
+                {
+                  "text": " cards to add to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "SEARCH": {
+            "title": "Search",
+            "description": {
+              "plain": "Lose 14 HP. Obtain the Chosen Cheese.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "14",
+                  "source_var": "Damage",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. Obtain the "
+                },
+                {
+                  "text": "Chosen Cheese",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "SEARCH": {
+        "description": {
+          "plain": "You scrounge about for hours and hours...\n\nTime slips by as your mind travels to strange places from the sheer presence of all this cheese, and you fade into a stupor....\nYou snap awake and realize you're holding something.\n\nThe Chosen Cheese.",
+          "runs": [
+            {
+              "text": "You scrounge about for "
+            },
+            {
+              "text": "hours and hours...",
+              "style": "sine"
+            },
+            {
+              "text": "\n\nTime slips by as your mind travels to strange places from the sheer presence of all this "
+            },
+            {
+              "text": "cheese",
+              "style": "b"
+            },
+            {
+              "text": ", and you fade into a stupor....\nYou snap awake and realize you're holding something.\n\n"
+            },
+            {
+              "text": "The Chosen Cheese.",
+              "style": "b"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

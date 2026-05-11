@@ -1,0 +1,213 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SUNKEN_TREASURY",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SunkenTreasury",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/SunkenTreasury.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "SUNKEN_TREASURY.title"
+    },
+    "vars": {
+      "SmallChestGold": 60,
+      "LargeChestGold": 333
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/sunken_treasury.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Sunken Treasury",
+    "pages": {
+      "FIRST_CHEST": {
+        "description": {
+          "plain": "Yup, there was gold in it.",
+          "runs": [
+            {
+              "text": "Yup, there was "
+            },
+            {
+              "text": "gold",
+              "style": "gold"
+            },
+            {
+              "text": " in it."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "A path leads you into a partially submerged vault.\nThere are 2 chests but only 1 brittle key.\n\nThe First Chest: Shaking it, you get jingly-jangly noises. Bit of gold.\nThe Second Chest: Enormous, ornate, and clearly cursed. Lots of gold!",
+          "runs": [
+            {
+              "text": "A path leads you into a partially submerged vault.\nThere are "
+            },
+            {
+              "text": "2",
+              "style": "blue"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "chests",
+              "style": "gold"
+            },
+            {
+              "text": " but only "
+            },
+            {
+              "text": "1",
+              "style": "blue"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "brittle key",
+              "style": "purple"
+            },
+            {
+              "text": ".\n\n"
+            },
+            {
+              "text": "The First Chest:",
+              "style": "gold"
+            },
+            {
+              "text": " Shaking it, you get jingly-jangly noises. Bit of gold.\n"
+            },
+            {
+              "text": "The Second Chest:",
+              "style": "gold"
+            },
+            {
+              "text": " Enormous, ornate, and clearly "
+            },
+            {
+              "text": "cursed",
+              "style": "red"
+            },
+            {
+              "text": ". Lots of gold!"
+            }
+          ]
+        },
+        "options": {
+          "FIRST_CHEST": {
+            "title": "First Chest",
+            "description": {
+              "plain": "Gain 60 Gold.",
+              "runs": [
+                {
+                  "text": "Gain "
+                },
+                {
+                  "text": "60",
+                  "source_var": "SmallChestGold",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "SECOND_CHEST": {
+            "title": "Second Chest",
+            "description": {
+              "plain": "Gain 333 Gold. Receive Greed.",
+              "runs": [
+                {
+                  "text": "Gain "
+                },
+                {
+                  "text": "333",
+                  "source_var": "LargeChestGold",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Receive "
+                },
+                {
+                  "text": "Greed",
+                  "style": "red"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "SECOND_CHEST": {
+        "description": {
+          "plain": "You've never seen so much gold in one place!\n\nAll of the Merchant's wares can be bought...\n{Monologue}\nDangerous thugs can be paid off...\n\nThe feverishly greedy thoughts stay with you forever...",
+          "runs": [
+            {
+              "text": "You've never seen so much "
+            },
+            {
+              "text": "gold",
+              "style": "gold"
+            },
+            {
+              "text": " in one place!\n\n"
+            },
+            {
+              "text": "All of the ",
+              "style": "sine"
+            },
+            {
+              "text": "Merchant's",
+              "style": "blue"
+            },
+            {
+              "text": " wares can be bought...",
+              "style": "sine"
+            },
+            {
+              "text": "\n{Monologue}\n"
+            },
+            {
+              "text": "Dangerous thugs can be paid off...",
+              "style": "sine"
+            },
+            {
+              "text": "\n\nThe "
+            },
+            {
+              "text": "feverishly greedy",
+              "style": "sine"
+            },
+            {
+              "text": " thoughts stay with you forever..."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

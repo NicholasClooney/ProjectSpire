@@ -1,0 +1,176 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DROWNING_BEACON",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DrowningBeacon",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/DrowningBeacon.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "DROWNING_BEACON.title"
+    },
+    "vars": {
+      "HpLoss": 13
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/drowning_beacon.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Drowning Beacon",
+    "loss": {
+      "plain": "{character} was blinded by the {event}.",
+      "runs": [
+        {
+          "text": "{character} was blinded by the "
+        },
+        {
+          "text": "{event}",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "pages": {
+      "BOTTLE": {
+        "description": {
+          "plain": "Using a nearby bottle, you calmly scoop up the glowing liquid as the lighthouse peacefully sinks into the mud.\n\nGood thing you weren't in there.",
+          "runs": [
+            {
+              "text": "Using a nearby bottle, you calmly scoop up the "
+            },
+            {
+              "text": "glowing liquid",
+              "style": "aqua"
+            },
+            {
+              "text": " as the lighthouse peacefully sinks into the mud.\n\nGood thing you weren't in there."
+            }
+          ]
+        }
+      },
+      "CLIMB": {
+        "description": {
+          "plain": "You climb to the top of the lighthouse, unnerved by its steady sinking.\n\nUpon reaching the lanthorn room, you start prying off the lens as the anti-light saps your vitality!\n\nFinally, you wring it free; the lighthouse stops sinking.",
+          "runs": [
+            {
+              "text": "You climb to the top of the lighthouse, unnerved by its steady sinking.\n\nUpon reaching the "
+            },
+            {
+              "text": "lanthorn room",
+              "style": "gold"
+            },
+            {
+              "text": ", you start prying off the lens as the "
+            },
+            {
+              "text": "anti-light",
+              "style": "purple"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "saps your vitality",
+              "style": "red"
+            },
+            {
+              "text": "!\n\nFinally, you wring it free; the lighthouse stops sinking."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "Crossing a dreamscape of rocks and still waters, you emerge to face a sinking lighthouse emitting anti-light.\n\nYou can bottle up the eerily-glowing water that has pooled here or climb up the dilapidated structure to retrieve the lens.",
+          "runs": [
+            {
+              "text": "Crossing a dreamscape of rocks and still waters, you emerge to face a "
+            },
+            {
+              "text": "sinking lighthouse",
+              "style": "sine"
+            },
+            {
+              "text": " emitting "
+            },
+            {
+              "text": "anti-light",
+              "style": "purple"
+            },
+            {
+              "text": ".\n\nYou can bottle up the "
+            },
+            {
+              "text": "eerily-glowing water",
+              "style": "sine"
+            },
+            {
+              "text": " that has pooled here or climb up the dilapidated structure to retrieve the "
+            },
+            {
+              "text": "lens",
+              "style": "gold"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        "options": {
+          "BOTTLE": {
+            "title": "Bottle",
+            "description": {
+              "plain": "Procure {Potion}.",
+              "runs": [
+                {
+                  "text": "Procure "
+                },
+                {
+                  "text": "{Potion}",
+                  "style": "aqua"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "CLIMB": {
+            "title": "Climb",
+            "description": {
+              "plain": "Obtain {Relic}. Lose 13 Max HP.",
+              "runs": [
+                {
+                  "text": "Obtain "
+                },
+                {
+                  "text": "{Relic}",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Lose "
+                },
+                {
+                  "text": "13",
+                  "source_var": "HpLoss",
+                  "style": "red"
+                },
+                {
+                  "text": " Max HP."
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

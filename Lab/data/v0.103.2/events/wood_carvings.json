@@ -1,0 +1,186 @@
+{
+  "schema_version": "0.1.0",
+  "id": "WOOD_CARVINGS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "WoodCarvings",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/WoodCarvings.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "WOOD_CARVINGS.title"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/wood_carvings.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Wood Carvings",
+    "pages": {
+      "BIRD": {
+        "description": {
+          "plain": "You place the bird carving on the pedestal and the statue's EYES LIGHT UP and you hear a faint ringing within your mind.\n\n...caw.... caw caaaawww...\n\nThe pedestal opens and a strange fluid begins to pour out.\nNaturally, you drink it all.",
+          "runs": [
+            {
+              "text": "You place the bird carving on the pedestal and the statue's EYES LIGHT UP and you hear a faint ringing within your mind.\n\n"
+            },
+            {
+              "text": "...caw.... caw caaaawww...",
+              "style": "sine"
+            },
+            {
+              "text": "\n\nThe pedestal opens and a strange fluid begins to pour out.\nNaturally, you drink it all."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "You open a dusty box to find a set of 3 elaborate wood carvings:\n\nA bird, snake, and... a torus?\n\nA nearby pedestal has indentations which match the bottom of the carvings. Which carving will you place on the pedestal?",
+          "runs": [
+            {
+              "text": "You open a dusty box to find a set of 3 elaborate wood carvings:\n\nA bird, snake, and... a torus?\n\nA nearby pedestal has indentations which match the bottom of the carvings. Which carving will you place on the pedestal?"
+            }
+          ]
+        },
+        "options": {
+          "BIRD": {
+            "title": "Bird",
+            "description": {
+              "plain": "Choose 1 starter card to Transform into {BirdCard}.",
+              "runs": [
+                {
+                  "text": "Choose "
+                },
+                {
+                  "text": "1",
+                  "style": "blue"
+                },
+                {
+                  "text": " starter card to "
+                },
+                {
+                  "text": "Transform",
+                  "style": "gold"
+                },
+                {
+                  "text": " into "
+                },
+                {
+                  "text": "{BirdCard}",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "SNAKE": {
+            "title": "Snake",
+            "description": {
+              "plain": "Enchant 1 card with {SnakeEnchantment}.",
+              "runs": [
+                {
+                  "text": "Enchant",
+                  "style": "gold"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "1",
+                  "style": "blue"
+                },
+                {
+                  "text": " card with "
+                },
+                {
+                  "text": "{SnakeEnchantment}",
+                  "style": "purple"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "SNAKE_LOCKED": {
+            "title": "Locked",
+            "description": {
+              "plain": "None of your cards can be Enchanted with Slither.",
+              "runs": [
+                {
+                  "text": "None of your cards can be Enchanted with "
+                },
+                {
+                  "text": "Slither",
+                  "style": "purple"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "TORUS": {
+            "title": "Torus",
+            "description": {
+              "plain": "Choose 1 starter card to Transform into {ToricCard}.",
+              "runs": [
+                {
+                  "text": "Choose "
+                },
+                {
+                  "text": "1",
+                  "style": "blue"
+                },
+                {
+                  "text": " starter card to "
+                },
+                {
+                  "text": "Transform",
+                  "style": "gold"
+                },
+                {
+                  "text": " into "
+                },
+                {
+                  "text": "{ToricCard}",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "SNAKE": {
+        "description": {
+          "plain": "You place the snake carving on the pedestal and the statue's SCALES LIGHT UP! You feel a bit warm, comfortable, and wobbly.",
+          "runs": [
+            {
+              "text": "You place the snake carving on the pedestal and the statue's SCALES LIGHT UP! You feel a bit warm, comfortable, and wobbly."
+            }
+          ]
+        }
+      },
+      "TORUS": {
+        "description": {
+          "plain": "You place the torus carving on the pedestal and your STOMACH LIGHTS UP as the statue transforms into a piping hot fried confection. An insatiable hunger takes over and you quickly consume the donut.\n\nYou feel tougher, but slower.",
+          "runs": [
+            {
+              "text": "You place the torus carving on the pedestal and your STOMACH LIGHTS UP as the statue transforms into a piping hot fried confection. An insatiable hunger takes over and you quickly consume the donut.\n\nYou feel tougher, but slower."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

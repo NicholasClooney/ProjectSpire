@@ -1,0 +1,454 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ENDLESS_CONVEYOR",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "EndlessConveyor",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/EndlessConveyor.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "ENDLESS_CONVEYOR.title"
+    },
+    "vars": {
+      "Gold": 40,
+      "GoldenFyshGold": 75,
+      "ClamRollHeal": 10,
+      "CaviarMaxHp": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/endless_conveyor.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Endless Conveyor",
+    "pages": {
+      "ALL": {
+        "options": {
+          "CAVIAR": {
+            "title": "Grab Caviar off the Belt",
+            "description": {
+              "plain": "Pay 40 Gold. Gain 4 Max HP. Continue feasting!",
+              "runs": [
+                {
+                  "text": "Pay "
+                },
+                {
+                  "text": "40",
+                  "source_var": "Gold",
+                  "style": "red"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Gain "
+                },
+                {
+                  "text": "4",
+                  "source_var": "CaviarMaxHp",
+                  "style": "green"
+                },
+                {
+                  "text": " Max HP. Continue feasting!"
+                }
+              ]
+            }
+          },
+          "CLAM_ROLL": {
+            "title": "Grab Clam Roll off the Belt",
+            "description": {
+              "plain": "Pay 40 Gold. Heal 10 HP. Continue feasting!",
+              "runs": [
+                {
+                  "text": "Pay "
+                },
+                {
+                  "text": "40",
+                  "source_var": "Gold",
+                  "style": "red"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Heal "
+                },
+                {
+                  "text": "10",
+                  "source_var": "ClamRollHeal",
+                  "style": "green"
+                },
+                {
+                  "text": " HP. Continue feasting!"
+                }
+              ]
+            }
+          },
+          "FRIED_EEL": {
+            "title": "Grab Fried Eel off the Belt",
+            "description": {
+              "plain": "Pay 40 Gold. Add a random Colorless Card to your Deck. Continue feasting!",
+              "runs": [
+                {
+                  "text": "Pay "
+                },
+                {
+                  "text": "40",
+                  "source_var": "Gold",
+                  "style": "red"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Add a random Colorless Card to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Continue feasting!"
+                }
+              ]
+            }
+          },
+          "GOLDEN_FYSH": {
+            "title": "Grab Golden Fysh off the Belt",
+            "description": {
+              "plain": "LUCKY WINNER! Gain 75 Gold.",
+              "runs": [
+                {
+                  "text": "LUCKY WINNER!",
+                  "style": "green"
+                },
+                {
+                  "text": " Gain "
+                },
+                {
+                  "text": "75",
+                  "source_var": "GoldenFyshGold",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "JELLY_LIVER": {
+            "title": "Grab Jelly Liver off the Belt",
+            "description": {
+              "plain": "Pay 40 Gold. Transform a card. Continue feasting!",
+              "runs": [
+                {
+                  "text": "Pay "
+                },
+                {
+                  "text": "40",
+                  "source_var": "Gold",
+                  "style": "red"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". "
+                },
+                {
+                  "text": "Transform",
+                  "style": "gold"
+                },
+                {
+                  "text": " a card. Continue feasting!"
+                }
+              ]
+            }
+          },
+          "LOCKED": {
+            "title": "Broke",
+            "description": {
+              "plain": "You could eat more but you are out of Gold.",
+              "runs": [
+                {
+                  "text": "You could eat more but you are out of "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "SEAPUNK_SALAD": {
+            "title": "Grab Seapunk Salad off the Belt",
+            "description": {
+              "plain": "Pay 40 Gold. Add Feeding Frenzy to your Deck. Continue feasting!",
+              "runs": [
+                {
+                  "text": "Pay "
+                },
+                {
+                  "text": "40",
+                  "source_var": "Gold",
+                  "style": "red"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Add "
+                },
+                {
+                  "text": "Feeding Frenzy",
+                  "style": "gold"
+                },
+                {
+                  "text": " to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Continue feasting!"
+                }
+              ]
+            }
+          },
+          "SPICY_SNAPPY": {
+            "title": "Grab Spicy Snappy off the Belt",
+            "description": {
+              "plain": "Pay 40 Gold. Upgrade a random card. Continue feasting!",
+              "runs": [
+                {
+                  "text": "Pay "
+                },
+                {
+                  "text": "40",
+                  "source_var": "Gold",
+                  "style": "red"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". "
+                },
+                {
+                  "text": "Upgrade",
+                  "style": "gold"
+                },
+                {
+                  "text": " a random card. Continue feasting!"
+                }
+              ]
+            }
+          },
+          "SUSPICIOUS_CONDIMENT": {
+            "title": "Grab Suspicious Condiment off the Belt",
+            "description": {
+              "plain": "Pay 40 Gold. Procure a random Potion. Continue feasting!",
+              "runs": [
+                {
+                  "text": "Pay "
+                },
+                {
+                  "text": "40",
+                  "source_var": "Gold",
+                  "style": "red"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Procure a random "
+                },
+                {
+                  "text": "Potion",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Continue feasting!"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "GRAB_SOMETHING_OFF_THE_BELT": {
+        "description": {
+          "plain": "You grab the {LastDishTitle} from the belt and scarf it down.\nTasty!",
+          "runs": [
+            {
+              "text": "You grab the "
+            },
+            {
+              "text": "{LastDishTitle}",
+              "style": "gold"
+            },
+            {
+              "text": " from the belt and scarf it down.\n"
+            },
+            {
+              "text": "Tasty!",
+              "style": "green"
+            }
+          ]
+        },
+        "options": {
+          "LEAVE": {
+            "title": "Leave"
+          }
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "You lumber into a shack with a bright but crooked sign that reads:\n\u201cENDLESS FEAST - PAY WHAT YOU HUNGER!\u201d\n\nInside, a willowy multi-armed chef is deftly preparing bites of food and placing them onto a winding chitinous belt.\n\nOne of the chef's arms point to a sign:\n40 Gold each",
+          "runs": [
+            {
+              "text": "You lumber into a shack with a bright but crooked sign that reads:\n"
+            },
+            {
+              "text": "\u201cENDLESS FEAST - PAY WHAT YOU HUNGER!\u201d",
+              "style": "aqua"
+            },
+            {
+              "text": "\n\nInside, a "
+            },
+            {
+              "text": "willowy multi-armed chef",
+              "style": "orange"
+            },
+            {
+              "text": " is deftly preparing "
+            },
+            {
+              "text": "bites of food",
+              "style": "green"
+            },
+            {
+              "text": " and placing them onto a "
+            },
+            {
+              "text": "winding chitinous belt",
+              "style": "sine"
+            },
+            {
+              "text": ".\n\nOne of the chef's arms point to a sign:\n"
+            },
+            {
+              "text": "40",
+              "source_var": "Gold",
+              "style": "blue"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "Gold",
+              "style": "gold"
+            },
+            {
+              "text": " each"
+            }
+          ]
+        },
+        "options": {
+          "OBSERVE_CHEF": {
+            "title": "Observe the Chef",
+            "description": {
+              "plain": "Upgrade a random card in your Deck.",
+              "runs": [
+                {
+                  "text": "Upgrade",
+                  "style": "gold"
+                },
+                {
+                  "text": " a random card in your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "LEAVE": {
+        "description": {
+          "plain": "Now that you've had your fill, you continue on your way.",
+          "runs": [
+            {
+              "text": "Now that you've had your fill, you continue on your way."
+            }
+          ]
+        }
+      },
+      "OBSERVE_CHEF": {
+        "description": {
+          "plain": "Keeping your distance from a seat, you loiter in the shadows of the establishment's entrance.\n\nThe chef, unfazed, continues working. Studying this behavior and discipline, you seek to minimize unnecessary movement and emotion during combat.",
+          "runs": [
+            {
+              "text": "Keeping your distance from a seat, you loiter in the shadows of the establishment's entrance.\n\n"
+            },
+            {
+              "text": "The chef",
+              "style": "orange"
+            },
+            {
+              "text": ", unfazed, continues working. Studying this behavior and discipline, you seek to minimize unnecessary movement and emotion during combat."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

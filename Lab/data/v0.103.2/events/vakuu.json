@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "id": "VAKUU",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Vakuu",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/Vakuu.cs",
+    "kind": "ancient",
+    "localization": {
+      "table": "events",
+      "title_key": "VAKUU.title"
+    }
+  },
+  "resolved": {
+    "title": "The First Demon",
+    "loss": {
+      "plain": "{character} took a bad deal from Vakuu.",
+      "runs": [
+        {
+          "text": "{character} took a bad deal from "
+        },
+        {
+          "text": "Vakuu",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

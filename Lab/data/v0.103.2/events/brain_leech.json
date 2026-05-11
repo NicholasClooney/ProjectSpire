@@ -1,0 +1,165 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BRAIN_LEECH",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BrainLeech",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/BrainLeech.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "BRAIN_LEECH.title"
+    },
+    "vars": {
+      "RipHpLoss": 5,
+      "RewardCount": 1,
+      "CardChoiceCount": 1,
+      "FromCardChoiceCount": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/brain_leech.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Brain Leech",
+    "loss": {
+      "plain": "{character} was consumed by the {event}.",
+      "runs": [
+        {
+          "text": "{character} was consumed by the "
+        },
+        {
+          "text": "{event}",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "pages": {
+      "INITIAL": {
+        "description": {
+          "plain": "*thunk*\n\nA sharp pain is felt atop your head and a thought stabs into your mind.\n\n\u201cSHARE KNOWLEDGE???\u201d\n\nYou are unsure how to proceed...",
+          "runs": [
+            {
+              "text": "*thunk*",
+              "style": "jitter"
+            },
+            {
+              "text": "\n\nA sharp pain is felt atop your head and a thought stabs into your mind.\n\n"
+            },
+            {
+              "text": "\u201cSHARE KNOWLEDGE???\u201d",
+              "style": "sine"
+            },
+            {
+              "text": "\n\nYou are unsure how to proceed..."
+            }
+          ]
+        },
+        "options": {
+          "RIP": {
+            "title": "Rip the Leech Off",
+            "description": {
+              "plain": "Lose 5 HP. Gain a Colorless card reward.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "5",
+                  "source_var": "RipHpLoss",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. Gain a Colorless card reward."
+                }
+              ]
+            }
+          },
+          "SHARE_KNOWLEDGE": {
+            "title": "Share Knowledge",
+            "description": {
+              "plain": "Choose 1 of 5 random cards to add to your Deck.",
+              "runs": [
+                {
+                  "text": "Choose "
+                },
+                {
+                  "text": "1",
+                  "source_var": "CardChoiceCount",
+                  "style": "blue"
+                },
+                {
+                  "text": " of "
+                },
+                {
+                  "text": "5",
+                  "source_var": "FromCardChoiceCount",
+                  "style": "blue"
+                },
+                {
+                  "text": " random cards to add to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "RIP": {
+        "description": {
+          "plain": "You violently rip the leech off your head and chuck it far far away!\n\nThere's a voice in your head:\n\u201cNOOOOOOoOoooooOOOOoooo....\u201d",
+          "runs": [
+            {
+              "text": "You violently "
+            },
+            {
+              "text": "rip the leech off your head",
+              "style": "jitter"
+            },
+            {
+              "text": " and chuck it far far away!\n\nThere's a voice in your head:\n"
+            },
+            {
+              "text": "\u201cNOOOOOOoOoooooOOOOoooo....\u201d",
+              "style": "sine"
+            }
+          ]
+        }
+      },
+      "SHARE_KNOWLEDGE": {
+        "description": {
+          "plain": "\u201cHOW OSTENTATIOUSLY SCHOLASTIC OF A LABYRINTHINE MIND!\nA VERITABLE CORNUCOPIA OF CEREBRAL SUSTENANCE TO DIGEST!\u201d.\n\nSatisfied, the creature pops off and crawls away.\nYou are flabbergasted.",
+          "runs": [
+            {
+              "text": "\u201cHOW OSTENTATIOUSLY SCHOLASTIC OF A LABYRINTHINE MIND!\nA VERITABLE CORNUCOPIA OF CEREBRAL SUSTENANCE TO DIGEST!\u201d",
+              "style": "sine"
+            },
+            {
+              "text": ".\n\nSatisfied, the creature pops off and crawls away.\nYou are "
+            },
+            {
+              "text": "flabbergasted",
+              "style": "blue"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TRASH_HEAP",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TrashHeap",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/TrashHeap.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "TRASH_HEAP.title"
+    },
+    "vars": {
+      "HpLoss": 8,
+      "Gold": 100
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/trash_heap.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Trash Heap",
+    "loss": {
+      "plain": "{character} dove too deep into the {event}.",
+      "runs": [
+        {
+          "text": "{character} dove too deep into the "
+        },
+        {
+          "text": "{event}",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "pages": {
+      "DIVE_IN": {
+        "description": {
+          "plain": "You spend a decent amount of time wading through the dangerous garbage and find a relic of the past!\n\nWhy was this thrown out?",
+          "runs": [
+            {
+              "text": "You spend a decent amount of time wading through the "
+            },
+            {
+              "text": "dangerous garbage",
+              "style": "sine"
+            },
+            {
+              "text": " and find a "
+            },
+            {
+              "text": "relic of the past",
+              "style": "gold"
+            },
+            {
+              "text": "!\n\nWhy was this thrown out?"
+            }
+          ]
+        }
+      },
+      "GRAB": {
+        "description": {
+          "plain": "You walk around the pile from a safe distance and pick up some forgotten valuables and oddities here and there.\n\nWhy were these created in the first place?",
+          "runs": [
+            {
+              "text": "You walk around the pile from a safe distance and pick up some "
+            },
+            {
+              "text": "forgotten valuables",
+              "style": "gold"
+            },
+            {
+              "text": " and "
+            },
+            {
+              "text": "oddities",
+              "style": "sine"
+            },
+            {
+              "text": " here and there.\n\nWhy were these created in the first place?"
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "You discover a towering pile of scrapped weapons, discarded trinkets, and other oddities. The massive pile shifts and rumbles, as if growing from within...\n\nIf you scavenge from the surface, you may find some decent things. But if you really get in there, you may find some exotic treasures.",
+          "runs": [
+            {
+              "text": "You discover a towering pile of "
+            },
+            {
+              "text": "scrapped weapons",
+              "style": "jitter"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "discarded trinkets",
+              "style": "orange"
+            },
+            {
+              "text": ", and "
+            },
+            {
+              "text": "other oddities",
+              "style": "sine"
+            },
+            {
+              "text": ". The massive pile shifts and rumbles, as if growing from within...\n\nIf you scavenge from the surface, you may find some decent things. But if you really get in there, you may find some "
+            },
+            {
+              "text": "exotic treasures",
+              "style": "gold"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        "options": {
+          "DIVE_IN": {
+            "title": "Dive In",
+            "description": {
+              "plain": "Lose 8 HP. Obtain a random forgotten Relic from the past.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "8",
+                  "source_var": "HpLoss",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. Obtain a random forgotten "
+                },
+                {
+                  "text": "Relic",
+                  "style": "gold"
+                },
+                {
+                  "text": " from the past."
+                }
+              ]
+            }
+          },
+          "GRAB": {
+            "title": "Grab Random Junk",
+            "description": {
+              "plain": "Gain 100 Gold. Obtain a random forgotten card from the past.",
+              "runs": [
+                {
+                  "text": "Gain "
+                },
+                {
+                  "text": "100",
+                  "source_var": "Gold",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Obtain a random forgotten card from the past."
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

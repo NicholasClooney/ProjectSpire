@@ -1,0 +1,220 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DENSE_VEGETATION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DenseVegetation",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/DenseVegetation.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "DENSE_VEGETATION.title"
+    },
+    "vars": {
+      "Gold": 0,
+      "Heal": 0,
+      "HpLoss": 8
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/dense_vegetation.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Dense Vegetation",
+    "loss": {
+      "plain": "{character} never escaped the {event}.",
+      "runs": [
+        {
+          "text": "{character} never escaped the "
+        },
+        {
+          "text": "{event}",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "pages": {
+      "INITIAL": {
+        "description": {
+          "plain": "Having taken the wrong path for a good while, you find yourself in a thick jungle of ferns, shrubs, and vines. Especially vines. Exhaustion sets in, and a dark thought comes to mind:\n\n\u201cYou are lost, unprepared, and the inevitability of death is approaching.\u201d\n\nWhat do you do?",
+          "runs": [
+            {
+              "text": "Having taken the wrong path for a good while, you find yourself in a thick jungle of "
+            },
+            {
+              "text": "ferns",
+              "style": "green"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "shrubs",
+              "style": "green"
+            },
+            {
+              "text": ", and "
+            },
+            {
+              "text": "vines",
+              "style": "green"
+            },
+            {
+              "text": ". Especially "
+            },
+            {
+              "text": "vines",
+              "style": "green"
+            },
+            {
+              "text": ". Exhaustion sets in, and a dark thought comes to mind:\n\n"
+            },
+            {
+              "text": "\u201cYou are lost, unprepared, and the inevitability of death is approaching.\u201d",
+              "style": "purple"
+            },
+            {
+              "text": "\n\nWhat do you do?"
+            }
+          ]
+        },
+        "options": {
+          "REST": {
+            "title": "Rest",
+            "description": {
+              "plain": "Heal 0 HP. Fight some enemies.",
+              "runs": [
+                {
+                  "text": "Heal "
+                },
+                {
+                  "text": "0",
+                  "source_var": "Heal",
+                  "style": "green"
+                },
+                {
+                  "text": " HP. Fight some "
+                },
+                {
+                  "text": "enemies",
+                  "style": "red"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "TRUDGE_ON": {
+            "title": "Trudge On",
+            "description": {
+              "plain": "Gain 0 Gold. Lose 8 HP.",
+              "runs": [
+                {
+                  "text": "Gain "
+                },
+                {
+                  "text": "0",
+                  "source_var": "Gold",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Lose "
+                },
+                {
+                  "text": "8",
+                  "source_var": "HpLoss",
+                  "style": "red"
+                },
+                {
+                  "text": " HP."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "REST": {
+        "description": {
+          "plain": "You're dead tired and take a nap...\n\n...only to be awoken by something wriggling around on top of you!",
+          "runs": [
+            {
+              "text": "You're dead tired and take a nap...\n\n...only to be awoken by "
+            },
+            {
+              "text": "something wriggling around",
+              "style": "jitter"
+            },
+            {
+              "text": " on top of you!"
+            }
+          ]
+        },
+        "options": {
+          "FIGHT": {
+            "title": "Fight!"
+          }
+        }
+      },
+      "TRUDGE_ON": {
+        "description": {
+          "plain": "You hack and slash your way through the jungle but it goes on and on...\n\nYou sustain yourself on strange fruits, crunchy bugs, and drink the nectar of glowing plants but you start feeling paranoid...\n\nBut then you find a clearing, a trail, and some Gold coins scattered on the ground. Amongst the coins are some crudely-drawn maps!\nProblem solved.",
+          "runs": [
+            {
+              "text": "You hack and slash your way through the jungle but it goes on and on...\n\nYou sustain yourself on "
+            },
+            {
+              "text": "strange fruits",
+              "style": "green"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "crunchy bugs",
+              "style": "orange"
+            },
+            {
+              "text": ", and drink the nectar of "
+            },
+            {
+              "text": "glowing plants",
+              "style": "aqua"
+            },
+            {
+              "text": " but you start feeling "
+            },
+            {
+              "text": "paranoid...",
+              "style": "red"
+            },
+            {
+              "text": "\n\nBut then you find a clearing, a trail, and some "
+            },
+            {
+              "text": "Gold",
+              "style": "gold"
+            },
+            {
+              "text": " coins scattered on the ground. Amongst the coins are some crudely-drawn maps!\nProblem solved."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

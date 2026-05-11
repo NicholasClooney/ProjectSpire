@@ -1,0 +1,157 @@
+{
+  "schema_version": "0.1.0",
+  "id": "HUNGRY_FOR_MUSHROOMS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "HungryForMushrooms",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/HungryForMushrooms.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "HUNGRY_FOR_MUSHROOMS.title"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/hungry_for_mushrooms.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Hungry for Mushrooms",
+    "loss": {
+      "plain": "{character} was too {event} and ate something {pronounSubject} shouldn't have.",
+      "runs": [
+        {
+          "text": "{character} was too "
+        },
+        {
+          "text": "{event}",
+          "style": "gold"
+        },
+        {
+          "text": " and ate something {pronounSubject} shouldn't have."
+        }
+      ]
+    },
+    "pages": {
+      "BIG_MUSHROOM": {
+        "description": {
+          "plain": "You bite into the Big Mushroom. Its flesh is firm, starchy, and satisfying. The more you eat, the hungrier you become, as if the mushroom is feeding on your hunger.\n\nSo yummy... you enter a food coma.\nThis gluttony will cost you.",
+          "runs": [
+            {
+              "text": "You bite into the "
+            },
+            {
+              "text": "Big Mushroom",
+              "style": "orange"
+            },
+            {
+              "text": ". Its flesh is firm, starchy, and satisfying. The more you eat, the hungrier you become, as if the mushroom is feeding on your hunger.\n\n"
+            },
+            {
+              "text": "So yummy... you enter a ",
+              "style": "sine"
+            },
+            {
+              "text": "food coma",
+              "style": "red"
+            },
+            {
+              "text": ".",
+              "style": "sine"
+            },
+            {
+              "text": "\nThis gluttony will cost you."
+            }
+          ]
+        }
+      },
+      "FRAGRANT_MUSHROOM": {
+        "description": {
+          "plain": "You sample the Fragrant One, a small woody mushroom with a delicate scent of shellfish...\n\nA burst of energy spurs you to run, jump, and rigorously train!\nThen, a sudden stabbing pain hits you as the living fungi struggles within you during its brief final moments.",
+          "runs": [
+            {
+              "text": "You sample the "
+            },
+            {
+              "text": "Fragrant One",
+              "style": "green"
+            },
+            {
+              "text": ", a small woody mushroom with a delicate scent of shellfish...\n\nA burst of energy spurs you to run, jump, and "
+            },
+            {
+              "text": "rigorously train",
+              "style": "gold"
+            },
+            {
+              "text": "!\nThen, a sudden "
+            },
+            {
+              "text": "stabbing pain",
+              "style": "jitter"
+            },
+            {
+              "text": " hits you as the living fungi struggles within you during its brief final moments."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "How long has it been since you ate?\n...wait, what's that fantastic smell?\n\nFollowing the scent, you reach a cozy campground with all manner of tasty mushrooms being cooked! You don't consider the safety of eating these mushrooms because you are so hungry.\n(So hungry that you don't notice the dead adventurer)",
+          "runs": [
+            {
+              "text": "How long has it been since you ate?\n...wait, what's that fantastic smell?",
+              "style": "sine"
+            },
+            {
+              "text": "\n\nFollowing the scent, you reach a cozy campground with all manner of "
+            },
+            {
+              "text": "tasty mushrooms",
+              "style": "green"
+            },
+            {
+              "text": " being cooked! You don't consider the safety of eating these mushrooms because you are so hungry.\n(So hungry that you don't notice the dead adventurer)"
+            }
+          ]
+        },
+        "options": {
+          "BIG_MUSHROOM": {
+            "title": "Big Mushroom"
+          },
+          "FRAGRANT_MUSHROOM": {
+            "title": "Fragrant Mushroom"
+          }
+        }
+      },
+      "MEDLEY": {
+        "description": {
+          "plain": "The medley of mushrooms looks the most appetizing so you go for that.\n\n\u201cMY MUSHROOMS!!\u201d\n\nThe adventurer, presumably dead, attacks you! You knock them out, and with a seasoning of guilt, finish the rest of the fine meal.",
+          "runs": [
+            {
+              "text": "The "
+            },
+            {
+              "text": "medley of mushrooms",
+              "style": "green"
+            },
+            {
+              "text": " looks the most appetizing so you go for that.\n\n"
+            },
+            {
+              "text": "\u201cMY MUSHROOMS!!\u201d",
+              "style": "jitter"
+            },
+            {
+              "text": "\n\nThe adventurer, presumably dead, attacks you! You knock them out, and with a seasoning of guilt, finish the rest of the fine meal."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

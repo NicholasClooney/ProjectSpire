@@ -1,0 +1,204 @@
+{
+  "schema_version": "0.1.0",
+  "id": "MORPHIC_GROVE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "MorphicGrove",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/MorphicGrove.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "MORPHIC_GROVE.title"
+    },
+    "vars": {
+      "MaxHp": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/morphic_grove.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Morphic Grove",
+    "pages": {
+      "GROUP": {
+        "description": {
+          "plain": "You greet the chittering Morphics and they embrace you into their crystally arms.\n\nThey share their combined knowledge and inject you with Morphic Magic, changing your nature... Such lovely creatures, these Morphics.\n\nOne of them stole your gold.",
+          "runs": [
+            {
+              "text": "You greet the chittering "
+            },
+            {
+              "text": "Morphics",
+              "style": "aqua"
+            },
+            {
+              "text": " and they embrace you into their crystally arms.\n\nThey share their combined knowledge and inject you with "
+            },
+            {
+              "text": "Morphic Magic",
+              "style": "sine"
+            },
+            {
+              "text": ", changing your nature... Such lovely creatures, these "
+            },
+            {
+              "text": "Morphics",
+              "style": "aqua"
+            },
+            {
+              "text": ".\n\n"
+            },
+            {
+              "text": "One of them stole your",
+              "style": "red"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "gold",
+              "style": "gold"
+            },
+            {
+              "text": ".",
+              "style": "red"
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "You enter a grove of crystalline trees, and they begin to quiver excitedly!\nA chorus of hellos and welcomes bombard you as a group of Morphics burst forth from trees.\n\nOne of the Morphics is fidgeting in the corner, clearly not as sociable as the others.\n\nApproach the group or the loner?",
+          "runs": [
+            {
+              "text": "You enter a grove of "
+            },
+            {
+              "text": "crystalline trees",
+              "style": "green"
+            },
+            {
+              "text": ", and they begin to "
+            },
+            {
+              "text": "quiver excitedly",
+              "style": "jitter"
+            },
+            {
+              "text": "!\nA chorus of "
+            },
+            {
+              "text": "hellos and welcomes",
+              "style": "sine"
+            },
+            {
+              "text": " bombard you as a group of "
+            },
+            {
+              "text": "Morphics",
+              "style": "aqua"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "burst",
+              "style": "jitter"
+            },
+            {
+              "text": " forth from trees.\n\nOne of the "
+            },
+            {
+              "text": "Morphics",
+              "style": "aqua"
+            },
+            {
+              "text": " is fidgeting in the corner, clearly not as sociable as the others.\n\nApproach the group or the loner?"
+            }
+          ]
+        },
+        "options": {
+          "GROUP": {
+            "title": "Group",
+            "description": {
+              "plain": "{IsMultiplayer:Everyone loses|Lose} ALL of {IsMultiplayer:their|your} Gold. Transform 2 cards.",
+              "runs": [
+                {
+                  "text": "{IsMultiplayer:Everyone loses|Lose} "
+                },
+                {
+                  "text": "ALL",
+                  "style": "red"
+                },
+                {
+                  "text": " of {IsMultiplayer:their|your} "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". "
+                },
+                {
+                  "text": "Transform",
+                  "style": "gold"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "2",
+                  "style": "blue"
+                },
+                {
+                  "text": " cards."
+                }
+              ]
+            }
+          },
+          "LONER": {
+            "title": "Loner",
+            "description": {
+              "plain": "Gain 5 Max HP.",
+              "runs": [
+                {
+                  "text": "Gain "
+                },
+                {
+                  "text": "5",
+                  "source_var": "MaxHp",
+                  "style": "green"
+                },
+                {
+                  "text": " Max HP."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "LONER": {
+        "description": {
+          "plain": "You reach out a hand to the lone Morphic, sympathizing with its nature.\nIt gifts you a tiny crystal fruit, and you consume it, as is custom.\n\nThe fruit clarifies your mind and purpose. You give thanks, then make your way onwards.",
+          "runs": [
+            {
+              "text": "You reach out a hand to the lone "
+            },
+            {
+              "text": "Morphic",
+              "style": "aqua"
+            },
+            {
+              "text": ", sympathizing with its nature.\nIt gifts you a tiny crystal fruit, and you consume it, as is custom.\n\nThe fruit clarifies your mind and purpose. You give thanks, then make your way onwards."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

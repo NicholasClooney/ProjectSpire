@@ -1,0 +1,215 @@
+{
+  "schema_version": "0.1.0",
+  "id": "JUNGLE_MAZE_ADVENTURE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "JungleMazeAdventure",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/JungleMazeAdventure.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "JUNGLE_MAZE_ADVENTURE.title"
+    },
+    "vars": {
+      "SoloGold": 150,
+      "SoloHp": 18,
+      "JoinForcesGold": 50
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/jungle_maze_adventure.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Jungle Maze Adventure",
+    "loss": {
+      "plain": "{character} got lost on {possessiveAdjective} {event}.",
+      "runs": [
+        {
+          "text": "{character} got lost on {possessiveAdjective} "
+        },
+        {
+          "text": "{event}",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "pages": {
+      "INITIAL": {
+        "description": {
+          "plain": "In a clearing, you run into a Ragtag Group of Adventurers looking down and gesturing at a gigantic maze.\n\nThey offer to join forces with you in an Epic Quest to loot the riches of this maze. As an experienced adventurer yourself, it's clear this maze is filled with deadly traps and guardians.\n\nIt would be easier if you work together, but then you would have to split the loot.",
+          "runs": [
+            {
+              "text": "In a clearing, you run into a "
+            },
+            {
+              "text": "Ragtag Group of Adventurers",
+              "style": "green"
+            },
+            {
+              "text": " looking down and gesturing at a "
+            },
+            {
+              "text": "gigantic maze",
+              "style": "purple"
+            },
+            {
+              "text": ".\n\nThey offer to join forces with you in an "
+            },
+            {
+              "text": "Epic Quest",
+              "style": "b"
+            },
+            {
+              "text": " to loot the riches of this maze. As an experienced adventurer yourself, it's clear this maze is filled with "
+            },
+            {
+              "text": "deadly traps",
+              "style": "jitter"
+            },
+            {
+              "text": " and "
+            },
+            {
+              "text": "guardians",
+              "style": "sine"
+            },
+            {
+              "text": ".\n\nIt would be easier if you work together, but then you would have to split the loot."
+            }
+          ]
+        },
+        "options": {
+          "JOIN_FORCES": {
+            "title": "Join Forces",
+            "description": {
+              "plain": "Gain 50 Gold.",
+              "runs": [
+                {
+                  "text": "Gain "
+                },
+                {
+                  "text": "50",
+                  "source_var": "JoinForcesGold",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "SOLO_QUEST": {
+            "title": "Solo Quest",
+            "description": {
+              "plain": "Gain 150 Gold. Lose 18 HP.",
+              "runs": [
+                {
+                  "text": "Gain "
+                },
+                {
+                  "text": "150",
+                  "source_var": "SoloGold",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Lose "
+                },
+                {
+                  "text": "18",
+                  "source_var": "SoloHp",
+                  "style": "red"
+                },
+                {
+                  "text": " HP."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "JOIN_FORCES": {
+        "description": {
+          "plain": "Everyone's face immediately lights up, including {IsMultiplayer:yours and your friends'|your own}!\n\nOne of the adventurers turns out to be a bard!\nYou merrily waltz into the maze as Aquid the squid wizard effortlessly disarms traps, while you and the Grathorian fighter take out the spiky club-wielding guards with ease.\n\nThis was the most joyous adventure of your life and you've made some truly Great Memories.",
+          "runs": [
+            {
+              "text": "Everyone's face immediately lights up, including {IsMultiplayer:yours and your friends'|your own}!\n\nOne of the adventurers turns out to be a bard!\nYou merrily waltz into the maze as "
+            },
+            {
+              "text": "Aquid the squid wizard",
+              "style": "aqua"
+            },
+            {
+              "text": " effortlessly disarms traps, while you and the "
+            },
+            {
+              "text": "Grathorian fighter",
+              "style": "red"
+            },
+            {
+              "text": " take out the "
+            },
+            {
+              "text": "spiky club-wielding guards",
+              "style": "orange"
+            },
+            {
+              "text": " with ease.\n\nThis was the most joyous adventure of your life and you've made some truly "
+            },
+            {
+              "text": "Great Memories",
+              "style": "sine"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      },
+      "SOLO_QUEST": {
+        "description": {
+          "plain": "Feeling misanthropic, you {IsMultiplayer:and your friends |}wordlessly walk past their now-frowning faces. One of them even shakes their fist at you.\n\nThe maze is not welcoming. You fall into a spike trap, you are struck by a massive log with spikes, and feisty creatures with spiky clubs fight you along the entire journey.\n\nYou are sick of spikes, and consider teamwork for the next adventure.",
+          "runs": [
+            {
+              "text": "Feeling misanthropic, you {IsMultiplayer:and your friends |}wordlessly walk past their now-frowning faces. One of them even "
+            },
+            {
+              "text": "shakes their fist",
+              "style": "purple"
+            },
+            {
+              "text": " at you.\n\nThe maze is not welcoming. You fall into a spike trap, you are struck by a massive log with spikes, and "
+            },
+            {
+              "text": "feisty creatures with spiky clubs",
+              "style": "orange"
+            },
+            {
+              "text": " fight you along the entire journey.\n\nYou are sick of spikes, and consider teamwork for the next adventure."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

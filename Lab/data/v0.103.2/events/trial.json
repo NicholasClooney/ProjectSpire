@@ -1,0 +1,577 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TRIAL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Trial",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/Trial.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "TRIAL.title"
+    },
+    "vars": {
+      "EntrantNumber": -1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/trial.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "The Trial",
+    "loss": {
+      "plain": "{character} refused to be a Decider.",
+      "runs": [
+        {
+          "text": "{character} refused to be a Decider."
+        }
+      ]
+    },
+    "pages": {
+      "INITIAL": {
+        "description": {
+          "plain": "You join a line of people entering a massive building.\n\nAs you pass under a golden archway, horns blare, confetti explodes, and streamers glide down from the ceiling!\n\n\u201cEntrant -1, you are the DECIDER for today's Trial.\u201d",
+          "runs": [
+            {
+              "text": "You join a line of people entering a massive building.\n\nAs you pass under a "
+            },
+            {
+              "text": "golden archway",
+              "style": "gold"
+            },
+            {
+              "text": ", horns blare, "
+            },
+            {
+              "text": "confetti explodes",
+              "style": "jitter"
+            },
+            {
+              "text": ", and "
+            },
+            {
+              "text": "streamers glide",
+              "style": "sine"
+            },
+            {
+              "text": " down from the ceiling!\n\n\u201cEntrant "
+            },
+            {
+              "text": "-1",
+              "source_var": "EntrantNumber",
+              "style": "blue"
+            },
+            {
+              "text": ", you are the "
+            },
+            {
+              "text": "DECIDER",
+              "style": "green"
+            },
+            {
+              "text": " for today's "
+            },
+            {
+              "text": "Trial",
+              "style": "gold"
+            },
+            {
+              "text": ".\u201d"
+            }
+          ]
+        },
+        "options": {
+          "ACCEPT": {
+            "title": "Accept",
+            "description": {
+              "plain": "Serve as today's Decider.",
+              "runs": [
+                {
+                  "text": "Serve as today's Decider."
+                }
+              ]
+            }
+          },
+          "REJECT": {
+            "title": "Reject",
+            "description": {
+              "plain": "You are not allowed to Reject.",
+              "runs": [
+                {
+                  "text": "You are not allowed to Reject.",
+                  "style": "red"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "MERCHANT": {
+        "description": {
+          "plain": "A wealthy-looking merchant, presents his case. He is accused of murder by one of his rivals. The evidence is thin, and you have a feeling that the man is innocent, but the onlookers seem out for blood.",
+          "runs": [
+            {
+              "text": "A "
+            },
+            {
+              "text": "wealthy-looking merchant",
+              "style": "green"
+            },
+            {
+              "text": ", presents his case. He is accused of "
+            },
+            {
+              "text": "murder",
+              "style": "red"
+            },
+            {
+              "text": " by one of his rivals. The evidence is thin, and you have a feeling that the man is innocent, but the onlookers seem out for blood."
+            }
+          ]
+        },
+        "options": {
+          "GUILTY": {
+            "title": "DECIDE: Guilty",
+            "description": {
+              "plain": "Add Regret to your Deck. Obtain 2 random Relics.",
+              "runs": [
+                {
+                  "text": "Add "
+                },
+                {
+                  "text": "Regret",
+                  "style": "red"
+                },
+                {
+                  "text": " to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Obtain "
+                },
+                {
+                  "text": "2",
+                  "style": "blue"
+                },
+                {
+                  "text": " random "
+                },
+                {
+                  "text": "Relics",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "INNOCENT": {
+            "title": "DECIDE: Innocent",
+            "description": {
+              "plain": "Add Shame to your Deck. Upgrade 2 cards.",
+              "runs": [
+                {
+                  "text": "Add "
+                },
+                {
+                  "text": "Shame",
+                  "style": "red"
+                },
+                {
+                  "text": " to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": ". "
+                },
+                {
+                  "text": "Upgrade",
+                  "style": "gold"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "2",
+                  "style": "blue"
+                },
+                {
+                  "text": " cards."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "MERCHANT_GUILTY": {
+        "description": {
+          "plain": "You rule that all of the man's possessions are to be taken and given as processing fees for the court.\nThe crowd howls in glee!",
+          "runs": [
+            {
+              "text": "You rule that all of the man's possessions are to be taken and given as processing fees for the court.\nThe crowd howls in glee!"
+            }
+          ]
+        }
+      },
+      "MERCHANT_INNOCENT": {
+        "description": {
+          "plain": "You go with your conscience and rule that the man is innocent.\nDespite the boos and accusations of being a \u201cpaid-off judge\u201d you feel like you did the right thing.",
+          "runs": [
+            {
+              "text": "You go with your conscience and rule that the man is innocent.\nDespite the boos and accusations of being a "
+            },
+            {
+              "text": "\u201cpaid-off judge\u201d",
+              "style": "purple"
+            },
+            {
+              "text": " you feel like you did the right thing."
+            }
+          ]
+        }
+      },
+      "NOBLE": {
+        "description": {
+          "plain": "A powerful noble steps forward. You find a note in your pocket indicating that if you decide innocence you will be handsomely rewarded. The noble barely argues against the corruption charges and gives you a knowing smirk.\nYou can't stop corruption but you can pocket some gold...",
+          "runs": [
+            {
+              "text": "A "
+            },
+            {
+              "text": "powerful noble",
+              "style": "gold"
+            },
+            {
+              "text": " steps forward. You find a note in your pocket indicating that if you decide innocence you will be handsomely rewarded. The "
+            },
+            {
+              "text": "noble",
+              "style": "gold"
+            },
+            {
+              "text": " barely argues against the "
+            },
+            {
+              "text": "corruption charges",
+              "style": "purple"
+            },
+            {
+              "text": " and gives you a knowing smirk.\nYou can't stop corruption but you can pocket some "
+            },
+            {
+              "text": "gold...",
+              "style": "gold"
+            }
+          ]
+        },
+        "options": {
+          "GUILTY": {
+            "title": "DECIDE: Guilty",
+            "description": {
+              "plain": "Heal 10 HP.",
+              "runs": [
+                {
+                  "text": "Heal "
+                },
+                {
+                  "text": "10",
+                  "style": "green"
+                },
+                {
+                  "text": " HP."
+                }
+              ]
+            }
+          },
+          "INNOCENT": {
+            "title": "DECIDE: Innocent",
+            "description": {
+              "plain": "Add Regret to your Deck. Obtain 300 Gold.",
+              "runs": [
+                {
+                  "text": "Add "
+                },
+                {
+                  "text": "Regret",
+                  "style": "red"
+                },
+                {
+                  "text": " to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Obtain "
+                },
+                {
+                  "text": "300",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "NOBLE_GUILTY": {
+        "description": {
+          "plain": "The powerful noble was beheaded.\nOne less corrupt noble.",
+          "runs": [
+            {
+              "text": "The "
+            },
+            {
+              "text": "powerful noble",
+              "style": "gold"
+            },
+            {
+              "text": " was "
+            },
+            {
+              "text": "beheaded",
+              "style": "red"
+            },
+            {
+              "text": ".\nOne less "
+            },
+            {
+              "text": "corrupt noble",
+              "style": "purple"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      },
+      "NOBLE_INNOCENT": {
+        "description": {
+          "plain": "You don't really know that he's guilty... Yeah, that's it!\nThe bribe has nothing to do with the outcome here. Nope.",
+          "runs": [
+            {
+              "text": "You don't "
+            },
+            {
+              "text": "really",
+              "style": "purple"
+            },
+            {
+              "text": " know that he's guilty... Yeah, that's it!\nThe "
+            },
+            {
+              "text": "bribe",
+              "style": "gold"
+            },
+            {
+              "text": " has nothing to do with the outcome here. Nope."
+            }
+          ]
+        }
+      },
+      "NONDESCRIPT": {
+        "description": {
+          "plain": "A nondescript woman with a hard-to-read face steps forward. She is charged with the crime of theft and con-artistry. When the woman speaks, you believe her, but ample witnesses attest to her misdeeds.\nBoth sides of the story are compelling!",
+          "runs": [
+            {
+              "text": "A "
+            },
+            {
+              "text": "nondescript woman with a hard-to-read face",
+              "style": "orange"
+            },
+            {
+              "text": " steps forward. She is charged with the crime of "
+            },
+            {
+              "text": "theft",
+              "style": "red"
+            },
+            {
+              "text": " and "
+            },
+            {
+              "text": "con-artistry",
+              "style": "purple"
+            },
+            {
+              "text": ". When the woman speaks, you believe her, but ample witnesses attest to her misdeeds.\nBoth sides of the story are compelling!"
+            }
+          ]
+        },
+        "options": {
+          "GUILTY": {
+            "title": "DECIDE: Guilty",
+            "description": {
+              "plain": "Add Doubt to your Deck. Gain 2 card rewards.",
+              "runs": [
+                {
+                  "text": "Add "
+                },
+                {
+                  "text": "Doubt",
+                  "style": "red"
+                },
+                {
+                  "text": " to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Gain "
+                },
+                {
+                  "text": "2",
+                  "style": "blue"
+                },
+                {
+                  "text": " card rewards."
+                }
+              ]
+            }
+          },
+          "INNOCENT": {
+            "title": "DECIDE: Innocent",
+            "description": {
+              "plain": "Add Doubt to your Deck. Transform 2 cards.",
+              "runs": [
+                {
+                  "text": "Add "
+                },
+                {
+                  "text": "Doubt",
+                  "style": "red"
+                },
+                {
+                  "text": " to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": ". "
+                },
+                {
+                  "text": "Transform",
+                  "style": "gold"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "2",
+                  "style": "blue"
+                },
+                {
+                  "text": " cards."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "NONDESCRIPT_GUILTY": {
+        "description": {
+          "plain": "You aren't totally sure, but making the hard choice, you think the evidence is adequate.\nDid you really make the right call?",
+          "runs": [
+            {
+              "text": "You aren't totally sure, but making the hard choice, you think the evidence is adequate.\nDid you really make the right call?"
+            }
+          ]
+        }
+      },
+      "NONDESCRIPT_INNOCENT": {
+        "description": {
+          "plain": "You aren't totally sure, but you have a reasonable doubt.\nYou don't know if you made the right call, but innocence seems like the better choice.",
+          "runs": [
+            {
+              "text": "You aren't totally sure, but you have a reasonable doubt.\nYou don't know if you made the right call, but innocence seems like the better choice."
+            }
+          ]
+        }
+      },
+      "REJECT": {
+        "description": {
+          "plain": "\u201cYOU CANNOT REFUSE!!\u201d\n\nShouts the Grand Arbiter of the Courts.\n\n\u201cThose who reject this privilege are penalized with DEATH. Do you still defy!?\u201d",
+          "runs": [
+            {
+              "text": "\u201cYOU CANNOT REFUSE!!\u201d",
+              "style": "jitter"
+            },
+            {
+              "text": "\n\nShouts the "
+            },
+            {
+              "text": "Grand Arbiter of the Courts",
+              "style": "gold"
+            },
+            {
+              "text": ".\n\n"
+            },
+            {
+              "text": "\u201cThose who reject this privilege are penalized with ",
+              "style": "jitter"
+            },
+            {
+              "text": "DEATH",
+              "style": "red"
+            },
+            {
+              "text": ". Do you still defy!?\u201d",
+              "style": "jitter"
+            }
+          ]
+        },
+        "options": {
+          "ACCEPT": {
+            "title": "Accept",
+            "description": {
+              "plain": "Give in. Serve as today's Decider.",
+              "runs": [
+                {
+                  "text": "Give in. Serve as today's Decider."
+                }
+              ]
+            }
+          },
+          "DOUBLE_DOWN": {
+            "title": "Double Down",
+            "description": {
+              "plain": "Face lethal repercussions.",
+              "runs": [
+                {
+                  "text": "Face lethal repercussions.",
+                  "style": "red"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

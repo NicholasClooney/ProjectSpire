@@ -1,0 +1,202 @@
+{
+  "schema_version": "0.1.0",
+  "id": "STONE_OF_ALL_TIME",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "StoneOfAllTime",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/StoneOfAllTime.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "STONE_OF_ALL_TIME.title"
+    },
+    "vars": {
+      "DrinkMaxHpGain": 10,
+      "PushHpLoss": 6,
+      "PushVigorousAmount": 8
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/stone_of_all_time.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Stone of All Time",
+    "loss": {
+      "plain": "{character} was crushed by the {event}.",
+      "runs": [
+        {
+          "text": "{character} was crushed by the "
+        },
+        {
+          "text": "{event}",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "pages": {
+      "INITIAL": {
+        "description": {
+          "plain": "A massive boulder sits in the middle of an abandoned courtyard.\n\nA plaque reads:\nStone of All Time.\n\nIts presence, shape, and adornments indicate that this courtyard was built around this Stone and that it has never moved from this spot.",
+          "runs": [
+            {
+              "text": "A massive boulder sits in the middle of an abandoned courtyard.\n\nA plaque reads:\n"
+            },
+            {
+              "text": "Stone of All Time",
+              "style": "b"
+            },
+            {
+              "text": ".\n\nIts presence, shape, and adornments indicate that this courtyard was built around this "
+            },
+            {
+              "text": "Stone",
+              "style": "blue"
+            },
+            {
+              "text": " and that it has never moved from this spot."
+            }
+          ]
+        },
+        "options": {
+          "LIFT": {
+            "title": "Drink and Lift",
+            "description": {
+              "plain": "Lose {DrinkRandomPotion}. Gain 10 Max HP.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "{DrinkRandomPotion}",
+                  "style": "red"
+                },
+                {
+                  "text": ". Gain "
+                },
+                {
+                  "text": "10",
+                  "source_var": "DrinkMaxHpGain",
+                  "style": "blue"
+                },
+                {
+                  "text": " Max HP."
+                }
+              ]
+            }
+          },
+          "LIFT_LOCKED": {
+            "title": "Locked",
+            "description": {
+              "plain": "Requires a Potion.",
+              "runs": [
+                {
+                  "text": "Requires a Potion."
+                }
+              ]
+            }
+          },
+          "PUSH": {
+            "title": "Push",
+            "description": {
+              "plain": "Lose 6 HP. Enchant an Attack with Vigorous 8.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "6",
+                  "source_var": "PushHpLoss",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. "
+                },
+                {
+                  "text": "Enchant",
+                  "style": "gold"
+                },
+                {
+                  "text": " an Attack with "
+                },
+                {
+                  "text": "Vigorous",
+                  "style": "purple"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "8",
+                  "source_var": "PushVigorousAmount",
+                  "style": "blue"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "PUSH_LOCKED": {
+            "title": "Locked",
+            "description": {
+              "plain": "Requires an Attack.",
+              "runs": [
+                {
+                  "text": "Requires an Attack."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "LIFT": {
+        "description": {
+          "plain": "You slam the {DrinkRandomPotion} down and lift with all your might!!\n\nNothing happens.",
+          "runs": [
+            {
+              "text": "You slam the "
+            },
+            {
+              "text": "{DrinkRandomPotion}",
+              "style": "gold"
+            },
+            {
+              "text": " down and "
+            },
+            {
+              "text": "lift with all your might",
+              "style": "jitter"
+            },
+            {
+              "text": "!!\n\nNothing happens."
+            }
+          ]
+        }
+      },
+      "PUSH": {
+        "description": {
+          "plain": "You push and push with everything you've got!!\n\nNothing happens.",
+          "runs": [
+            {
+              "text": "You "
+            },
+            {
+              "text": "push and push",
+              "style": "jitter"
+            },
+            {
+              "text": " with everything you've got!!\n\nNothing happens."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

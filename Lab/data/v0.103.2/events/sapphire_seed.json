@@ -1,0 +1,207 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SAPPHIRE_SEED",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SapphireSeed",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/SapphireSeed.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "SAPPHIRE_SEED.title"
+    },
+    "vars": {
+      "Heal": 9
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/sapphire_seed.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Sapphire Seed",
+    "pages": {
+      "EAT": {
+        "description": {
+          "plain": "You ingest the Sapphire Seed and within moments your limbs feel more agile, colors sharpen, and you sense the souls of nearby foes.\n\nGood thing you didn't step on it.",
+          "runs": [
+            {
+              "text": "You ingest the "
+            },
+            {
+              "text": "Sapphire Seed",
+              "style": "aqua"
+            },
+            {
+              "text": " and within moments your "
+            },
+            {
+              "text": "limbs feel more agile",
+              "style": "blue"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "colors sharpen",
+              "style": "gold"
+            },
+            {
+              "text": ", and you "
+            },
+            {
+              "text": "sense the souls of nearby foes",
+              "style": "sine"
+            },
+            {
+              "text": ".\n\nGood thing you didn't step on it."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "You narrowly avoid stepping on a bright, sharp... seed? Its unmistakable color gives away that it's a Sapphire Seed! Weren't these incredible seeds supposed to be extinct!?\n\nLegends say that consuming one can greatly amplify your endurance, but what if you plant and nourish it instead?",
+          "runs": [
+            {
+              "text": "You narrowly avoid stepping on a bright, sharp... seed? Its unmistakable color gives away that it's a "
+            },
+            {
+              "text": "Sapphire Seed",
+              "style": "aqua"
+            },
+            {
+              "text": "! Weren't these incredible seeds supposed to be extinct!?\n\nLegends say that consuming one can greatly "
+            },
+            {
+              "text": "amplify your endurance",
+              "style": "gold"
+            },
+            {
+              "text": ", but what if you plant and nourish it instead?"
+            }
+          ]
+        },
+        "options": {
+          "EAT": {
+            "title": "Consume",
+            "description": {
+              "plain": "Heal 9 HP. Upgrade a card in your Deck.",
+              "runs": [
+                {
+                  "text": "Heal "
+                },
+                {
+                  "text": "9",
+                  "source_var": "Heal",
+                  "style": "green"
+                },
+                {
+                  "text": " HP. "
+                },
+                {
+                  "text": "Upgrade",
+                  "style": "gold"
+                },
+                {
+                  "text": " a card in your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "PLANT": {
+            "title": "Plant and Nourish",
+            "description": {
+              "plain": "Enchant a card with {Enchantment}.",
+              "runs": [
+                {
+                  "text": "Enchant",
+                  "style": "gold"
+                },
+                {
+                  "text": " a card with "
+                },
+                {
+                  "text": "{Enchantment}",
+                  "style": "purple"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "PLANT": {
+        "description": {
+          "plain": "You scour the Overgrowth and find a pot with good aeration. Then, you trek around, searching for an untouched spot where light peeks through a cracked wall. Carefully, you reinforce the pot with bark and vine to camouflage it, fill it with loamy, nutrient-rich soil, and nestle the seed just beneath the surface.\n\nFinally, you gather dew from nearby plants and pour it over the soil.\n\nGrow big, little seed...\nUnknowingly, the Sapphire Seed attaches to you spiritually.\nThankful of your hard work.",
+          "runs": [
+            {
+              "text": "You scour the "
+            },
+            {
+              "text": "Overgrowth",
+              "style": "green"
+            },
+            {
+              "text": " and find a pot with "
+            },
+            {
+              "text": "good aeration",
+              "style": "blue"
+            },
+            {
+              "text": ". Then, you trek around, searching for an untouched spot where "
+            },
+            {
+              "text": "light peeks through a cracked wall",
+              "style": "orange"
+            },
+            {
+              "text": ". Carefully, you reinforce the pot with bark and vine to "
+            },
+            {
+              "text": "camouflage",
+              "style": "green"
+            },
+            {
+              "text": " it, fill it with loamy, nutrient-rich soil, and nestle the "
+            },
+            {
+              "text": "seed",
+              "style": "aqua"
+            },
+            {
+              "text": " just beneath the surface.\n\nFinally, you gather dew from nearby plants and pour it over the soil.\n\n"
+            },
+            {
+              "text": "Grow big, little seed...",
+              "style": "sine"
+            },
+            {
+              "text": "\nUnknowingly, the "
+            },
+            {
+              "text": "Sapphire Seed",
+              "style": "aqua"
+            },
+            {
+              "text": " attaches to you spiritually.\nThankful of your hard work."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

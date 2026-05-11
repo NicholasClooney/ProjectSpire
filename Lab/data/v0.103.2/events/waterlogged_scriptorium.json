@@ -1,0 +1,337 @@
+{
+  "schema_version": "0.1.0",
+  "id": "WATERLOGGED_SCRIPTORIUM",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "WaterloggedScriptorium",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/WaterloggedScriptorium.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "WATERLOGGED_SCRIPTORIUM.title"
+    },
+    "vars": {
+      "MaxHp": 6,
+      "Gold": 55,
+      "PricklySpongeGold": 99,
+      "Cards": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/waterlogged_scriptorium.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Waterlogged Scriptorium",
+    "pages": {
+      "BLOODY_INK": {
+        "description": {
+          "plain": "The scribe carefully picks up the vial filled with a bright red ink and gives it a shake, then gestures with their own hand a dipping motion.\n\nYou dip your fingers into the ink and a jolt of vitality courses through you!\n\nPleased with your reaction, the scribe gives a polite bow and waves you goodbye.",
+          "runs": [
+            {
+              "text": "The "
+            },
+            {
+              "text": "scribe",
+              "style": "aqua"
+            },
+            {
+              "text": " carefully picks up the vial filled with a "
+            },
+            {
+              "text": "bright red ink",
+              "style": "red"
+            },
+            {
+              "text": " and gives it a shake, then gestures with their own hand a dipping motion.\n\nYou dip your fingers into the ink and a "
+            },
+            {
+              "text": "jolt of vitality",
+              "style": "jitter"
+            },
+            {
+              "text": " courses through you!\n\nPleased with your reaction, the "
+            },
+            {
+              "text": "scribe",
+              "style": "aqua"
+            },
+            {
+              "text": " gives a polite bow and waves you goodbye."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "Navigating the murky passages, you stumble upon a withered figure working a small shop. The multitude of shelves are stuffed full of damp scrolls and parchment.\n\nNoticing a patron has entered, the scribe-shopkeeper snaps to attention and gestures at some implements arranged on a desk.",
+          "runs": [
+            {
+              "text": "Navigating the murky passages, you stumble upon a "
+            },
+            {
+              "text": "withered figure",
+              "style": "aqua"
+            },
+            {
+              "text": " working a small shop. The multitude of shelves are "
+            },
+            {
+              "text": "stuffed",
+              "style": "sine"
+            },
+            {
+              "text": " full of damp scrolls and parchment.\n\nNoticing a patron has entered, the "
+            },
+            {
+              "text": "scribe-shopkeeper",
+              "style": "aqua"
+            },
+            {
+              "text": " snaps to attention and gestures at some "
+            },
+            {
+              "text": "implements",
+              "style": "gold"
+            },
+            {
+              "text": " arranged on a desk."
+            }
+          ]
+        },
+        "options": {
+          "BLOODY_INK": {
+            "title": "Bloody Ink",
+            "description": {
+              "plain": "Gain 6 Max HP.",
+              "runs": [
+                {
+                  "text": "Gain "
+                },
+                {
+                  "text": "6",
+                  "style": "green"
+                },
+                {
+                  "text": " Max HP."
+                }
+              ]
+            }
+          },
+          "PRICKLY_SPONGE": {
+            "title": "Prickly Sponge",
+            "description": {
+              "plain": "Pay 99 Gold. Enchant 2 cards with Steady.",
+              "runs": [
+                {
+                  "text": "Pay "
+                },
+                {
+                  "text": "99",
+                  "source_var": "PricklySpongeGold",
+                  "style": "red"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". "
+                },
+                {
+                  "text": "Enchant",
+                  "style": "gold"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "2",
+                  "source_var": "Cards",
+                  "style": "blue"
+                },
+                {
+                  "text": " cards with "
+                },
+                {
+                  "text": "Steady",
+                  "style": "purple"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "PRICKLY_SPONGE_LOCKED": {
+            "title": "Locked",
+            "description": {
+              "plain": "Requires 99 Gold.",
+              "runs": [
+                {
+                  "text": "Requires "
+                },
+                {
+                  "text": "99",
+                  "source_var": "PricklySpongeGold",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "TENTACLE_QUILL": {
+            "title": "Tentacle Quill",
+            "description": {
+              "plain": "Pay 55 Gold. Enchant a card with Steady.",
+              "runs": [
+                {
+                  "text": "Pay "
+                },
+                {
+                  "text": "55",
+                  "source_var": "Gold",
+                  "style": "red"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". "
+                },
+                {
+                  "text": "Enchant",
+                  "style": "gold"
+                },
+                {
+                  "text": " a card with "
+                },
+                {
+                  "text": "Steady",
+                  "style": "purple"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "TENTACLE_QUILL_LOCKED": {
+            "title": "Locked",
+            "description": {
+              "plain": "Requires 55 Gold.",
+              "runs": [
+                {
+                  "text": "Requires "
+                },
+                {
+                  "text": "55",
+                  "source_var": "Gold",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "PRICKLY_SPONGE": {
+        "description": {
+          "plain": "The scribe grabs the prickly sponge (it squeaks) and dabs it across your scrolls.\n\n*squeak squeak squeak*\n\nThe prickly texture leaves behind shimmering marks that seem to stabilize the ink...",
+          "runs": [
+            {
+              "text": "The "
+            },
+            {
+              "text": "scribe",
+              "style": "aqua"
+            },
+            {
+              "text": " grabs the "
+            },
+            {
+              "text": "prickly sponge",
+              "style": "gold"
+            },
+            {
+              "text": " (it squeaks) and dabs it across your scrolls.\n\n"
+            },
+            {
+              "text": "*squeak squeak squeak*",
+              "style": "blue"
+            },
+            {
+              "text": "\n\nThe prickly texture leaves behind "
+            },
+            {
+              "text": "shimmering marks",
+              "style": "sine"
+            },
+            {
+              "text": " that seem to stabilize the ink..."
+            }
+          ]
+        }
+      },
+      "TENTACLE_QUILL": {
+        "description": {
+          "plain": "The scribe lifts the wriggly quill and with swift, practiced movements, etches a strange mark unto your head.\n\nThe mark glows bright, then vanishes...",
+          "runs": [
+            {
+              "text": "The "
+            },
+            {
+              "text": "scribe",
+              "style": "aqua"
+            },
+            {
+              "text": " lifts the "
+            },
+            {
+              "text": "wriggly quill",
+              "style": "gold"
+            },
+            {
+              "text": " and with swift, practiced movements, etches a strange mark unto your head.\n\nThe mark "
+            },
+            {
+              "text": "glows bright",
+              "style": "sine"
+            },
+            {
+              "text": ", then vanishes..."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.1.0",
+  "id": "NONUPEIPE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Nonupeipe",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/Nonupeipe.cs",
+    "kind": "ancient",
+    "localization": {
+      "table": "events",
+      "title_key": "NONUPEIPE.title"
+    }
+  },
+  "resolved": {
+    "title": "Serendipity Incarnate"
+  }
+}

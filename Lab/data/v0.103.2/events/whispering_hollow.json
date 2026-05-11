@@ -1,0 +1,207 @@
+{
+  "schema_version": "0.1.0",
+  "id": "WHISPERING_HOLLOW",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "WhisperingHollow",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/WhisperingHollow.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "WHISPERING_HOLLOW.title"
+    },
+    "vars": {
+      "Gold": 35,
+      "HpLoss": 9
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/whispering_hollow.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Whispering Hollow",
+    "loss": {
+      "plain": "{character} fell to their own greed in the Whispering Hollow.",
+      "runs": [
+        {
+          "text": "{character} fell to their own greed in the Whispering Hollow."
+        }
+      ]
+    },
+    "pages": {
+      "GOLD": {
+        "description": {
+          "plain": "You scatter some gold at the base of the tree and two of the clay vessels drop to the floor soundlessly.\n\nThey break open, and contain perfectly intact potions within.\n\nYou nab the potions and flee.",
+          "runs": [
+            {
+              "text": "You scatter some "
+            },
+            {
+              "text": "gold",
+              "style": "gold"
+            },
+            {
+              "text": " at the base of the tree and two of the clay vessels drop to the floor soundlessly.\n\nThey break open, and contain "
+            },
+            {
+              "text": "perfectly intact potions",
+              "style": "green"
+            },
+            {
+              "text": " within.\n\nYou nab the potions and flee."
+            }
+          ]
+        }
+      },
+      "HUG": {
+        "description": {
+          "plain": "The whispering compels you to give it gold but you resist and give the tree a big hug instead!\n\nIt thrashes about, scratching you with its branches, but eventually calms down. The tree-hugging experience transforms you.\n\n...make hug.....?",
+          "runs": [
+            {
+              "text": "The "
+            },
+            {
+              "text": "whispering",
+              "style": "sine"
+            },
+            {
+              "text": " compels you to give it "
+            },
+            {
+              "text": "gold",
+              "style": "gold"
+            },
+            {
+              "text": " but you resist and give the tree a big hug instead!\n\nIt "
+            },
+            {
+              "text": "thrashes about",
+              "style": "jitter"
+            },
+            {
+              "text": ", scratching you with its branches, but eventually calms down. The "
+            },
+            {
+              "text": "tree-hugging experience",
+              "style": "green"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "transforms",
+              "style": "gold"
+            },
+            {
+              "text": " you.\n\n"
+            },
+            {
+              "text": "...make hug.....?",
+              "style": "sine"
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "Making your way through a hollow of dead trees you happen upon a single bone-white tree. Clay baubles hang off its branches, which curve inward like protective ribs.\n\nSuch a creepy tree. It whispers.\n\n...make exchange.....",
+          "runs": [
+            {
+              "text": "Making your way through a "
+            },
+            {
+              "text": "hollow of dead trees",
+              "style": "red"
+            },
+            {
+              "text": " you happen upon a single bone-white tree. Clay baubles hang off its branches, which curve inward like protective ribs.\n\nSuch a "
+            },
+            {
+              "text": "creepy tree",
+              "style": "purple"
+            },
+            {
+              "text": ". It whispers.\n\n"
+            },
+            {
+              "text": "...make exchange.....",
+              "style": "blue"
+            }
+          ]
+        },
+        "options": {
+          "GOLD": {
+            "title": "Exchange Gold",
+            "description": {
+              "plain": "Lose 35 Gold. Procure 2 random Potions.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "35",
+                  "source_var": "Gold",
+                  "style": "red"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Procure "
+                },
+                {
+                  "text": "2",
+                  "style": "blue"
+                },
+                {
+                  "text": " random "
+                },
+                {
+                  "text": "Potions",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "HUG": {
+            "title": "Hug the Tree",
+            "description": {
+              "plain": "Lose 9 HP. Choose a card to Transform.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "9",
+                  "source_var": "HpLoss",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. Choose a card to "
+                },
+                {
+                  "text": "Transform",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

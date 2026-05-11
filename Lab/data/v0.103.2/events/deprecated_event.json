@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DEPRECATED_EVENT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DeprecatedEvent",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/DeprecatedEvent.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "DEPRECATED_EVENT.title"
+    }
+  },
+  "resolved": {
+    "title": "Deprecated Event",
+    "pages": {
+      "INITIAL": {
+        "description": {
+          "plain": "This event has been removed from the game.",
+          "runs": [
+            {
+              "text": "This event has been removed from the game."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "schema_version": "0.1.0",
+  "id": "POTION_COURIER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PotionCourier",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/PotionCourier.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "POTION_COURIER.title"
+    },
+    "vars": {
+      "FoulPotions": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/potion_courier.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Potion Courier",
+    "pages": {
+      "GRAB_POTIONS": {
+        "description": {
+          "plain": "What could the Merchant want with these potions?",
+          "runs": [
+            {
+              "text": "What could the "
+            },
+            {
+              "text": "Merchant",
+              "style": "blue"
+            },
+            {
+              "text": " want with these potions?"
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "There is a sour smell in the air and shortly after, you find a Potion Courier collapsed on the ground.\nUnmoving. Lifeless. Dead!?\nWhile their belongings have been ransacked, there is a batch of Foul Smelling Potions with a note: \"Recipient: Merchant\".",
+          "runs": [
+            {
+              "text": "There is a "
+            },
+            {
+              "text": "sour",
+              "style": "sine"
+            },
+            {
+              "text": " smell in the air and shortly after, you find a "
+            },
+            {
+              "text": "Potion Courier",
+              "style": "gold"
+            },
+            {
+              "text": " collapsed on the ground.\nUnmoving. Lifeless. "
+            },
+            {
+              "text": "Dead!?",
+              "style": "jitter"
+            },
+            {
+              "text": "\nWhile their belongings have been ransacked, there is a batch of "
+            },
+            {
+              "text": "Foul Smelling Potions",
+              "style": "sine"
+            },
+            {
+              "text": " with a note: \"Recipient: Merchant\"."
+            }
+          ]
+        },
+        "options": {
+          "GRAB_POTIONS": {
+            "title": "Grab Potions",
+            "description": {
+              "plain": "Procure 3 Foul Potions.",
+              "runs": [
+                {
+                  "text": "Procure "
+                },
+                {
+                  "text": "3",
+                  "source_var": "FoulPotions",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Foul Potions",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "RANSACK": {
+            "title": "Ransack",
+            "description": {
+              "plain": "Procure 1 random Uncommon Potion.",
+              "runs": [
+                {
+                  "text": "Procure "
+                },
+                {
+                  "text": "1",
+                  "style": "blue"
+                },
+                {
+                  "text": " random "
+                },
+                {
+                  "text": "Uncommon Potion",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "RANSACK": {
+        "description": {
+          "plain": "Only a single potion was intact.",
+          "runs": [
+            {
+              "text": "Only a single potion was intact."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

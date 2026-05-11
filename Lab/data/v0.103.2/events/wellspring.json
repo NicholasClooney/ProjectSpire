@@ -1,0 +1,168 @@
+{
+  "schema_version": "0.1.0",
+  "id": "WELLSPRING",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Wellspring",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/Wellspring.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "WELLSPRING.title"
+    },
+    "vars": {
+      "BatheCurses": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/wellspring.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Wellspring",
+    "pages": {
+      "BATHE": {
+        "description": {
+          "plain": "You emerge from the pool with a slight feeling of unease.\n\nHowever, you feel surprisingly refreshed.",
+          "runs": [
+            {
+              "text": "You emerge from the pool with a slight "
+            },
+            {
+              "text": "feeling of unease",
+              "style": "sine"
+            },
+            {
+              "text": ".\n\nHowever, you feel surprisingly refreshed."
+            }
+          ]
+        }
+      },
+      "BOTTLE": {
+        "description": {
+          "plain": "Bathing in the beautiful water seems suspicious... you decide to bottle some up instead.\n\nThis will come in handy.",
+          "runs": [
+            {
+              "text": "Bathing in the "
+            },
+            {
+              "text": "beautiful water",
+              "style": "aqua"
+            },
+            {
+              "text": " seems suspicious... you decide to bottle some up instead.\n\nThis will come in handy."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "You trace a low rumble to its source and find yourself captivated by a tranquil wellspring. The water is an emerald green with clusters of glowing motes.\n\nIt looks inviting. What can possibly go wrong?",
+          "runs": [
+            {
+              "text": "You trace a "
+            },
+            {
+              "text": "low rumble",
+              "style": "jitter"
+            },
+            {
+              "text": " to its source and find yourself captivated by a tranquil wellspring. The water is an "
+            },
+            {
+              "text": "emerald green",
+              "style": "aqua"
+            },
+            {
+              "text": " with clusters of "
+            },
+            {
+              "text": "glowing motes",
+              "style": "gold"
+            },
+            {
+              "text": ".\n\nIt looks inviting. What can possibly go wrong?"
+            }
+          ]
+        },
+        "options": {
+          "BATHE": {
+            "title": "Bathe",
+            "description": {
+              "plain": "Remove 1 card from your Deck. Add 1 Guilty to your Deck.",
+              "runs": [
+                {
+                  "text": "Remove "
+                },
+                {
+                  "text": "1",
+                  "style": "blue"
+                },
+                {
+                  "text": " card from your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Add "
+                },
+                {
+                  "text": "1",
+                  "source_var": "BatheCurses",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Guilty",
+                  "style": "red"
+                },
+                {
+                  "text": " to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "BOTTLE": {
+            "title": "Bottle",
+            "description": {
+              "plain": "Procure 1 random Potion.",
+              "runs": [
+                {
+                  "text": "Procure "
+                },
+                {
+                  "text": "1",
+                  "style": "blue"
+                },
+                {
+                  "text": " random "
+                },
+                {
+                  "text": "Potion",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

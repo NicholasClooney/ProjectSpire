@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DARV",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Darv",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/Darv.cs",
+    "kind": "ancient",
+    "localization": {
+      "table": "events",
+      "title_key": "DARV.title"
+    }
+  },
+  "resolved": {
+    "title": "The Hoarder"
+  }
+}

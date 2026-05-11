@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.1.0",
+  "id": "THE_FUTURE_OF_POTIONS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TheFutureOfPotions",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/TheFutureOfPotions.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "THE_FUTURE_OF_POTIONS.title"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/the_future_of_potions.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "The Future of Potions?",
+    "pages": {
+      "DONE": {
+        "description": {
+          "plain": "The tablet was disgusting. There is no hope for the future.",
+          "runs": [
+            {
+              "text": "The tablet was disgusting. There is no hope for the future."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "You feel a faint rumbling as you round the corner to discover a gigantic spinning apparatus!\nIt has several slots which appear to convert liquids into a highly compressed digestible tablet.\n\nThe idea of turning these health tonics into a tiny morsel is uncomfortable but perhaps it's good to try new things?",
+          "runs": [
+            {
+              "text": "You feel a faint rumbling as you round the corner to discover a gigantic spinning apparatus!\nIt has several slots which appear to convert liquids into a highly compressed digestible tablet.\n\nThe idea of turning these health tonics into a tiny morsel is uncomfortable but perhaps it's good to try new things?"
+            }
+          ]
+        },
+        "options": {
+          "POTION": {
+            "title": "Insert {Rarity} Potion",
+            "description": {
+              "plain": "Lose {Potion}. Obtain an Upgraded {Rarity} {Type}.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "{Potion}",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Obtain an "
+                },
+                {
+                  "text": "Upgraded",
+                  "style": "gold"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "{Rarity} {Type}",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "schema_version": "0.1.0",
+  "id": "THE_LANTERN_KEY",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TheLanternKey",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/TheLanternKey.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "THE_LANTERN_KEY.title"
+    },
+    "vars": {
+      "Gold": 100
+    }
+  },
+  "resolved": {
+    "title": "The Lantern Key",
+    "loss": {
+      "plain": "PLACEHOLDER: {character} learned never to talk to strangers.",
+      "runs": [
+        {
+          "text": "PLACEHOLDER: {character} learned never to talk to strangers."
+        }
+      ]
+    },
+    "pages": {
+      "DONE": {
+        "options": {
+          "RETURN_THE_KEY": {
+            "title": "",
+            "description": {
+              "plain": "The stranger thanks you for your help, and rewards you handsomely.",
+              "runs": [
+                {
+                  "text": "The stranger thanks you for your help, and rewards you handsomely."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "You come upon a faintly glowing key and go to pick it up.\n\n\u201cBeen looking all over for that key! Now if you don't mind...\u201d\n\n This person looks like bad news but maybe it's not good to be judgy.",
+          "runs": [
+            {
+              "text": "You come upon a faintly glowing key and go to pick it up.\n\n\u201cBeen looking all over for that key! Now if you don't mind...\u201d\n\n This person looks like bad news but maybe it's not good to be judgy."
+            }
+          ]
+        },
+        "options": {
+          "KEEP_THE_KEY": {
+            "title": "Keep the Key",
+            "description": {
+              "plain": "Fight to obtain the Key.",
+              "runs": [
+                {
+                  "text": "Fight to obtain the Key."
+                }
+              ]
+            }
+          },
+          "RETURN_THE_KEY": {
+            "title": "Return the Key",
+            "description": {
+              "plain": "Gain 100 Gold.",
+              "runs": [
+                {
+                  "text": "Gain "
+                },
+                {
+                  "text": "100",
+                  "source_var": "Gold",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "KEEP_THE_KEY": {
+        "description": {
+          "plain": "The stranger looks at you menacingly. It seems like only one of you is making it out of here with the key.",
+          "runs": [
+            {
+              "text": "The stranger looks at you menacingly. It seems like only one of you is making it out of here with the key."
+            }
+          ]
+        },
+        "options": {
+          "FIGHT": {
+            "title": "Fight"
+          }
+        }
+      }
+    }
+  }
+}

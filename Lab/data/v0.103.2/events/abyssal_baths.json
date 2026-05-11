@@ -1,0 +1,312 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ABYSSAL_BATHS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "AbyssalBaths",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/AbyssalBaths.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "ABYSSAL_BATHS.title"
+    },
+    "vars": {
+      "MaxHp": 2,
+      "Damage": 3,
+      "Heal": 10
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/abyssal_baths.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Abyssal Baths",
+    "loss": {
+      "plain": "{character} died in the {event}.",
+      "runs": [
+        {
+          "text": "{character} died in the "
+        },
+        {
+          "text": "{event}",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "pages": {
+      "ABSTAIN": {
+        "description": {
+          "plain": "You decline the temptation of the waters, instead gathering crystalline salts that have formed along the edges. As you apply them to your skin, the pools churn and froth agitatedly. The ambient temperature drops noticeably, and for a moment all reflective surfaces in the room show a version of you that seems hollow-eyed and diminished. You can't shake the feeling of having missed something transformative.",
+          "runs": [
+            {
+              "text": "You decline the temptation of the waters, instead gathering crystalline salts that have formed along the edges. As you apply them to your skin, the pools churn and froth agitatedly. The ambient temperature drops noticeably, and for a moment all reflective surfaces in the room show a version of you that seems hollow-eyed and diminished. You can't shake the feeling of having missed something transformative."
+            }
+          ]
+        }
+      },
+      "ALL": {
+        "options": {
+          "EXIT_BATHS": {
+            "title": "Exit Baths"
+          },
+          "LINGER": {
+            "title": "Linger",
+            "description": {
+              "plain": "Gain 2 Max HP. Take 3 damage.",
+              "runs": [
+                {
+                  "text": "Gain "
+                },
+                {
+                  "text": "2",
+                  "source_var": "MaxHp",
+                  "style": "green"
+                },
+                {
+                  "text": " Max HP. Take "
+                },
+                {
+                  "text": "3",
+                  "source_var": "Damage",
+                  "style": "red"
+                },
+                {
+                  "text": " damage."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "DEATH_WARNING": {
+        "description": {
+          "plain": "If you bathe any longer you will die.",
+          "runs": [
+            {
+              "text": "If you bathe any longer you will die.",
+              "style": "red"
+            }
+          ]
+        }
+      },
+      "EXIT_BATHS": {
+        "description": {
+          "plain": "The heat finally gets to you, and you hop out of the bath.",
+          "runs": [
+            {
+              "text": "The heat finally gets to you, and you hop out of the bath."
+            }
+          ]
+        }
+      },
+      "IMMERSE": {
+        "description": {
+          "plain": "The liquid burns against your skin, simultaneously freezing and scalding.\n\nBeneath the surface, something brushes against your legs\u2014tendrils? Currents with purpose? But when the pain subsides, you feel... denser somehow. More substantial. The waters seem to hum with satisfaction.",
+          "runs": [
+            {
+              "text": "The liquid burns against your skin, simultaneously "
+            },
+            {
+              "text": "freezing",
+              "style": "jitter"
+            },
+            {
+              "text": " and "
+            },
+            {
+              "text": "scalding",
+              "style": "jitter"
+            },
+            {
+              "text": ".\n\nBeneath the surface, something brushes against your legs\u2014tendrils? Currents with purpose? But when the pain subsides, you feel... denser somehow. More substantial. The waters seem to hum with satisfaction."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "You discover a secluded chamber.\n\nSteam rises from bubbling pools of hot liquid that shifts colors with hypnotic rhythm. Barnacled growths hang from the ceiling, dripping viscous fluid that hisses and writhes when it touches the surface. The air feels heavy, laden with salt and something unmistakably organic.\n\nAs you approach the edge of the largest pool, the liquid ripples. The waters bubble more intensely as if anticipating your entry.",
+          "runs": [
+            {
+              "text": "You discover a secluded chamber.\n\nSteam rises from bubbling pools of hot liquid that shifts colors with hypnotic rhythm. Barnacled growths hang from the ceiling, dripping viscous fluid that hisses and writhes when it touches the surface. The air feels heavy, laden with "
+            },
+            {
+              "text": "salt",
+              "style": "blue"
+            },
+            {
+              "text": " and something "
+            },
+            {
+              "text": "unmistakably organic",
+              "style": "green"
+            },
+            {
+              "text": ".\n\nAs you approach the edge of the largest pool, the liquid ripples. The waters bubble more intensely as if anticipating your entry."
+            }
+          ]
+        },
+        "options": {
+          "ABSTAIN": {
+            "title": "Abstain",
+            "description": {
+              "plain": "Heal 10 HP.",
+              "runs": [
+                {
+                  "text": "Heal "
+                },
+                {
+                  "text": "10",
+                  "source_var": "Heal",
+                  "style": "green"
+                },
+                {
+                  "text": " HP."
+                }
+              ]
+            }
+          },
+          "IMMERSE": {
+            "title": "Immerse",
+            "description": {
+              "plain": "Gain 2 Max HP. Take 3 damage.",
+              "runs": [
+                {
+                  "text": "Gain "
+                },
+                {
+                  "text": "2",
+                  "source_var": "MaxHp",
+                  "style": "green"
+                },
+                {
+                  "text": " Max HP. Take "
+                },
+                {
+                  "text": "3",
+                  "source_var": "Damage",
+                  "style": "red"
+                },
+                {
+                  "text": " damage."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "LINGER1": {
+        "description": {
+          "plain": "The temperature keeps rising!\n\nHow long can you endure before the steam cooks you from within?",
+          "runs": [
+            {
+              "text": "The temperature keeps rising!",
+              "style": "jitter"
+            },
+            {
+              "text": "\n\nHow long can you endure before the steam cooks you from within?"
+            }
+          ]
+        }
+      },
+      "LINGER2": {
+        "description": {
+          "plain": "It keeps getting hotter!\n\nThe pool's bubbling sounds like laughter.",
+          "runs": [
+            {
+              "text": "It keeps getting hotter!",
+              "style": "orange"
+            },
+            {
+              "text": "\n\nThe pool's bubbling sounds like laughter."
+            }
+          ]
+        }
+      },
+      "LINGER3": {
+        "description": {
+          "plain": "IT'S SO HOT!\n\nYou wonder if this is what it's like to live in the Village of Demons?",
+          "runs": [
+            {
+              "text": "IT'S SO HOT!",
+              "style": "red"
+            },
+            {
+              "text": "\n\nYou wonder if this is what it's like to live in the Village of Demons?"
+            }
+          ]
+        }
+      },
+      "LINGER4": {
+        "description": {
+          "plain": "You have bathed so long you have lost track of time and your mind...",
+          "runs": [
+            {
+              "text": "You have bathed so long you have lost track of time and your mind...",
+              "style": "purple"
+            }
+          ]
+        }
+      },
+      "LINGER5": {
+        "description": {
+          "plain": "It's nice in here.",
+          "runs": [
+            {
+              "text": "It's nice in here."
+            }
+          ]
+        }
+      },
+      "LINGER6": {
+        "description": {
+          "plain": "Really fantastic.",
+          "runs": [
+            {
+              "text": "Really fantastic."
+            }
+          ]
+        }
+      },
+      "LINGER7": {
+        "description": {
+          "plain": "You feel great",
+          "runs": [
+            {
+              "text": "You feel great"
+            }
+          ]
+        }
+      },
+      "LINGER8": {
+        "description": {
+          "plain": "Mmm...",
+          "runs": [
+            {
+              "text": "Mmm...",
+              "style": "sine"
+            }
+          ]
+        }
+      },
+      "LINGER9": {
+        "description": {
+          "plain": "Zzz...\n..zzzz....",
+          "runs": [
+            {
+              "text": "Zzz...\n..zzzz....",
+              "style": "sine"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

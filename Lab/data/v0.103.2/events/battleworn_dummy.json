@@ -1,0 +1,204 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BATTLEWORN_DUMMY",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BattlewornDummy",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/BattlewornDummy.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "BATTLEWORN_DUMMY.title"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/battleworn_dummy.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Battleworn Dummy",
+    "loss": {
+      "plain": "{character} somehow lost to the {event}.",
+      "runs": [
+        {
+          "text": "{character} somehow lost to the "
+        },
+        {
+          "text": "{event}",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "pages": {
+      "DEFEAT": {
+        "description": {
+          "plain": "\u201cYOU ARE WEAK!!\nHUMILIATION HAS BEEN ADMINISTERED!\u201d\n\nThe dummy is silent for a moment and\u2014\n\n\u201cChoose a lower setting next time. Have a nice day.\u201d",
+          "runs": [
+            {
+              "text": "\u201c"
+            },
+            {
+              "text": "YOU ARE WEAK!!",
+              "style": "red"
+            },
+            {
+              "text": "\nHUMILIATION HAS BEEN ADMINISTERED!\u201d\n\nThe dummy is silent for a moment and\u2014\n\n\u201cChoose a lower setting next time. Have a nice day.\u201d"
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "As you approach, it begins to rumble and fizzle and lights up brilliantly!\n\n\u201cBZZZT! TIME TO TRAIN!!! YOU HAVE 3 TURNS TO DEFEAT ME!\nCHOOSE A SETTING OR FACE LETHAL HUMILIATION.\nHere are the options:\u201d\n\nAfter the terrifying message, the dummy carefully reads out detailed instructions.\n\nWhat do you choose?",
+          "runs": [
+            {
+              "text": "As you approach, it begins to rumble and fizzle and lights up brilliantly!\n\n\u201c"
+            },
+            {
+              "text": "BZZZT!",
+              "style": "jitter"
+            },
+            {
+              "text": " TIME TO TRAIN!!! YOU HAVE "
+            },
+            {
+              "text": "3 TURNS",
+              "style": "blue"
+            },
+            {
+              "text": " TO DEFEAT ME!\nCHOOSE A SETTING OR FACE "
+            },
+            {
+              "text": "LETHAL HUMILIATION",
+              "style": "red"
+            },
+            {
+              "text": ".\nHere are the options:\u201d\n\nAfter the terrifying message, the dummy carefully reads out detailed instructions.\n\nWhat do you choose?"
+            }
+          ]
+        },
+        "options": {
+          "SETTING_1": {
+            "title": "Setting 1",
+            "description": {
+              "plain": "Fight a {Setting1Hp} HP dummy. Procure 1 random Potion.",
+              "runs": [
+                {
+                  "text": "Fight a "
+                },
+                {
+                  "text": "{Setting1Hp}",
+                  "style": "blue"
+                },
+                {
+                  "text": " HP dummy. Procure "
+                },
+                {
+                  "text": "1",
+                  "style": "blue"
+                },
+                {
+                  "text": " random "
+                },
+                {
+                  "text": "Potion",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "SETTING_2": {
+            "title": "Setting 2",
+            "description": {
+              "plain": "Fight a {Setting2Hp} HP dummy. Upgrade 2 random cards.",
+              "runs": [
+                {
+                  "text": "Fight a "
+                },
+                {
+                  "text": "{Setting2Hp}",
+                  "style": "blue"
+                },
+                {
+                  "text": " HP dummy. "
+                },
+                {
+                  "text": "Upgrade",
+                  "style": "gold"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "2",
+                  "style": "blue"
+                },
+                {
+                  "text": " random cards."
+                }
+              ]
+            }
+          },
+          "SETTING_3": {
+            "title": "Setting 3",
+            "description": {
+              "plain": "Fight a {Setting3Hp} HP dummy. Obtain a random Relic.",
+              "runs": [
+                {
+                  "text": "Fight a "
+                },
+                {
+                  "text": "{Setting3Hp}",
+                  "style": "blue"
+                },
+                {
+                  "text": " HP dummy. Obtain a random "
+                },
+                {
+                  "text": "Relic",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "VICTORY": {
+        "description": {
+          "plain": "\u201cYOU PASS THE TRAINING!\nYOU ARE NOW EQUIPPED TO DEFEND THIS FACTORY AGAINST INTRUDERS!! BE SURE TO HYDRATE AFTER TRAINING SESSIONS!\u201d",
+          "runs": [
+            {
+              "text": "\u201c"
+            },
+            {
+              "text": "YOU PASS THE TRAINING!",
+              "style": "jitter"
+            },
+            {
+              "text": "\nYOU ARE NOW EQUIPPED TO DEFEND THIS "
+            },
+            {
+              "text": "FACTORY",
+              "style": "gold"
+            },
+            {
+              "text": " AGAINST INTRUDERS!! BE SURE TO HYDRATE AFTER TRAINING SESSIONS!\u201d"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

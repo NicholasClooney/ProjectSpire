@@ -1,0 +1,120 @@
+{
+  "schema_version": "0.1.0",
+  "id": "THE_LEGENDS_WERE_TRUE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TheLegendsWereTrue",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/TheLegendsWereTrue.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "THE_LEGENDS_WERE_TRUE.title"
+    },
+    "vars": {
+      "Damage": 8
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/the_legends_were_true.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "The Legends Were True",
+    "loss": {
+      "plain": "{character} was killed trying to escape a collapsing room.",
+      "runs": [
+        {
+          "text": "{character} was killed trying to escape a collapsing room."
+        }
+      ]
+    },
+    "pages": {
+      "INITIAL": {
+        "description": {
+          "plain": "Entering into a pitch dark chamber, a sudden light pierces the darkness from above, just as the door slams behind you.\n\nIlluminated before you appears to be a podium with a map on it. You feel compelled to take it.\n\nSuspicious.",
+          "runs": [
+            {
+              "text": "Entering into a pitch dark chamber, a sudden light pierces the darkness from above, just as the door slams behind you.\n\nIlluminated before you appears to be a podium with a map on it. You feel compelled to take it.\n\nSuspicious."
+            }
+          ]
+        },
+        "options": {
+          "NAB_THE_MAP": {
+            "title": "Nab the Map",
+            "description": {
+              "plain": "Receive the Spoils Map.",
+              "runs": [
+                {
+                  "text": "Receive the "
+                },
+                {
+                  "text": "Spoils Map",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "SLOWLY_FIND_AN_EXIT": {
+            "title": "Slowly Find an Exit",
+            "description": {
+              "plain": "Lose 8 HP. Procure 1 random Potion.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "8",
+                  "source_var": "Damage",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. Procure "
+                },
+                {
+                  "text": "1",
+                  "style": "blue"
+                },
+                {
+                  "text": " random "
+                },
+                {
+                  "text": "Potion",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "NAB_THE_MAP": {
+        "description": {
+          "plain": "What's the worst that could happen? As you grab the map, an opening appears before you on the other side of the room.",
+          "runs": [
+            {
+              "text": "What's the worst that could happen? As you grab the map, an opening appears before you on the other side of the room."
+            }
+          ]
+        }
+      },
+      "SLOWLY_FIND_AN_EXIT": {
+        "description": {
+          "plain": "As you sneak around the dark, looking for a way out the room starts to violently shake. With a sudden crash, the entire chamber collapses around you.\n\nBarely making it out of the rubble, you find a vial of something useful that must have been hidden in the room.",
+          "runs": [
+            {
+              "text": "As you sneak around the dark, looking for a way out the room starts to violently shake. With a sudden crash, the entire chamber collapses around you.\n\nBarely making it out of the rubble, you find a vial of something useful that must have been hidden in the room."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

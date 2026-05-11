@@ -1,0 +1,291 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ROUND_TEA_PARTY",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "RoundTeaParty",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/RoundTeaParty.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "ROUND_TEA_PARTY.title"
+    },
+    "vars": {
+      "Damage": 11
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/round_tea_party.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "The Round Tea Party",
+    "loss": {
+      "plain": "{character} beat up by {event}.",
+      "runs": [
+        {
+          "text": "{character} beat up by "
+        },
+        {
+          "text": "{event}",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "pages": {
+      "CONTINUE_FIGHT": {
+        "description": {
+          "plain": "The patrons stare wide-eyed at the corpse of one of their regulars... then bursts into applause!?\n\n\u201cWe were wondering how to rid of Sir Wygore, incredible work!\u201d\n\nThey dump out your poisoned tea and you discuss tactics and secrets all night. A most excellent tea party.",
+          "runs": [
+            {
+              "text": "The patrons stare wide-eyed at the corpse of one of their regulars... then "
+            },
+            {
+              "text": "bursts into applause!?",
+              "style": "jitter"
+            },
+            {
+              "text": "\n\n\u201cWe were wondering how to rid of "
+            },
+            {
+              "text": "Sir Wygore",
+              "style": "red"
+            },
+            {
+              "text": ", incredible work!\u201d\n\nThey dump out your "
+            },
+            {
+              "text": "poisoned tea",
+              "style": "green"
+            },
+            {
+              "text": " and you discuss "
+            },
+            {
+              "text": "tactics",
+              "style": "orange"
+            },
+            {
+              "text": " and "
+            },
+            {
+              "text": "secrets",
+              "style": "purple"
+            },
+            {
+              "text": " all night. A most excellent tea party."
+            }
+          ]
+        }
+      },
+      "ENJOY_TEA": {
+        "description": {
+          "plain": "You grab a teacup and down it one go.\nIt's SCALDING HOT but you don't change your expression. The patrons are stunned by your lack of self preservation.\n\n\u201cWe meant no offense, Sir Galalot. our sincerest apologies.\u201d\n\nYou enjoy some tea and crumpets, unaware of the poison you've ingested.",
+          "runs": [
+            {
+              "text": "You grab a teacup and down it one go.\nIt's "
+            },
+            {
+              "text": "SCALDING HOT",
+              "style": "red"
+            },
+            {
+              "text": " but you don't change your expression. The patrons are stunned by your lack of self preservation.\n\n\u201cWe meant no offense, "
+            },
+            {
+              "text": "Sir Galalot",
+              "style": "blue"
+            },
+            {
+              "text": ". our sincerest apologies.\u201d\n\nYou enjoy some tea and crumpets, unaware of the "
+            },
+            {
+              "text": "poison",
+              "style": "green"
+            },
+            {
+              "text": " you've ingested."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "You find an invitation for a \u201cSir Galalot\u201d to a tea party and decide to show up in his stead.\n\nUpon entering an unassuming rotunda, you find yourself in the midst of commanders, generals, warlords, and mercenaries having... tea?\nThe gigantic knight donning a golden crown speaks.\n\n\u201cThou art late for Tea?!\u201d",
+          "runs": [
+            {
+              "text": "You find an "
+            },
+            {
+              "text": "invitation",
+              "style": "orange"
+            },
+            {
+              "text": " for a "
+            },
+            {
+              "text": "\u201cSir Galalot\u201d",
+              "style": "blue"
+            },
+            {
+              "text": " to a tea party and decide to show up in his stead.\n\nUpon entering an unassuming rotunda, you find yourself in the midst of "
+            },
+            {
+              "text": "commanders",
+              "style": "gold"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "generals",
+              "style": "aqua"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "warlords",
+              "style": "red"
+            },
+            {
+              "text": ", and "
+            },
+            {
+              "text": "mercenaries",
+              "style": "blue"
+            },
+            {
+              "text": " having... tea?\nThe gigantic knight donning a "
+            },
+            {
+              "text": "golden crown",
+              "style": "gold"
+            },
+            {
+              "text": " speaks.\n\n"
+            },
+            {
+              "text": "\u201cThou art late for ",
+              "style": "jitter"
+            },
+            {
+              "text": "Tea",
+              "style": "b"
+            },
+            {
+              "text": "?!\u201d",
+              "style": "jitter"
+            }
+          ]
+        },
+        "options": {
+          "ENJOY_TEA": {
+            "title": "Enjoy Your Tea",
+            "description": {
+              "plain": "Obtain {Relic}. Heal to full HP.",
+              "runs": [
+                {
+                  "text": "Obtain "
+                },
+                {
+                  "text": "{Relic}",
+                  "style": "red"
+                },
+                {
+                  "text": ". "
+                },
+                {
+                  "text": "Heal to full HP.",
+                  "style": "green"
+                }
+              ]
+            }
+          },
+          "PICK_FIGHT": {
+            "title": "Pick a Fight",
+            "description": {
+              "plain": "Lose 11 HP. Obtain a random Relic.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "11",
+                  "source_var": "Damage",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. Obtain a random "
+                },
+                {
+                  "text": "Relic",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "NOPE": {
+        "description": {
+          "plain": "They all point their weapons at you-\n\n\u201cAt least pay the entrance fee if you want to live.\u201d",
+          "runs": [
+            {
+              "text": "They all point their weapons at you-\n\n\u201cAt least pay the "
+            },
+            {
+              "text": "entrance fee",
+              "style": "gold"
+            },
+            {
+              "text": " if you want to live.\u201d"
+            }
+          ]
+        }
+      },
+      "PICK_FIGHT": {
+        "description": {
+          "plain": "You jump onto the table and kick the warlord knight in the face!\n The knight lets out a haunting shriek and keels over.\n\n*everyone gasps*",
+          "runs": [
+            {
+              "text": "You jump onto the table and "
+            },
+            {
+              "text": "kick",
+              "style": "jitter"
+            },
+            {
+              "text": " the "
+            },
+            {
+              "text": "warlord knight",
+              "style": "red"
+            },
+            {
+              "text": " in the face!\n The knight lets out a haunting shriek and keels over.\n\n"
+            },
+            {
+              "text": "*everyone gasps*",
+              "style": "purple"
+            }
+          ]
+        },
+        "options": {
+          "CONTINUE_FIGHT": {
+            "title": "Continue"
+          }
+        }
+      }
+    }
+  }
+}

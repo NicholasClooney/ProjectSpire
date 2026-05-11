@@ -1,0 +1,147 @@
+{
+  "schema_version": "0.1.0",
+  "id": "INFESTED_AUTOMATON",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "InfestedAutomaton",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/InfestedAutomaton.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "INFESTED_AUTOMATON.title"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/infested_automaton.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Infested Automaton",
+    "pages": {
+      "INITIAL": {
+        "description": {
+          "plain": "There's a chamber filled with dead robots.\n\nA lone automaton still has a faintly glowing core but it's engulfed by a grotesque, organic growth and doesn't respond.",
+          "runs": [
+            {
+              "text": "There's a chamber filled with "
+            },
+            {
+              "text": "dead robots",
+              "style": "red"
+            },
+            {
+              "text": ".\n\nA lone automaton still has a "
+            },
+            {
+              "text": "faintly glowing core",
+              "style": "aqua"
+            },
+            {
+              "text": " but it's engulfed by a grotesque, organic growth and doesn't respond."
+            }
+          ]
+        },
+        "options": {
+          "STUDY": {
+            "title": "Study",
+            "description": {
+              "plain": "Obtain a random Power.",
+              "runs": [
+                {
+                  "text": "Obtain a random "
+                },
+                {
+                  "text": "Power",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "TOUCH_CORE": {
+            "title": "Touch the Core",
+            "description": {
+              "plain": "Obtain a random 0 cost card.",
+              "runs": [
+                {
+                  "text": "Obtain a random "
+                },
+                {
+                  "text": "0 cost card",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "STUDY": {
+        "description": {
+          "plain": "By studying the Glowing Automaton and how its inner workings are laid out, you realize that specific metals and their arrangements resist various ailments!\n\nYou apply this Technology to yourself.",
+          "runs": [
+            {
+              "text": "By studying the "
+            },
+            {
+              "text": "Glowing Automaton",
+              "style": "aqua"
+            },
+            {
+              "text": " and how its inner workings are laid out, you realize that specific metals and their arrangements resist various ailments!\n\nYou apply this "
+            },
+            {
+              "text": "Technology",
+              "style": "blue"
+            },
+            {
+              "text": " to yourself."
+            }
+          ]
+        }
+      },
+      "TOUCH_CORE": {
+        "description": {
+          "plain": "At the slightest touch of the core, you are jolted by electricity.\n\nYou scamper away, feeling altered from the experience.",
+          "runs": [
+            {
+              "text": "At the slightest touch of the "
+            },
+            {
+              "text": "core",
+              "style": "aqua"
+            },
+            {
+              "text": ", you are "
+            },
+            {
+              "text": "jolted by ",
+              "style": "jitter"
+            },
+            {
+              "text": "electricity",
+              "style": "gold"
+            },
+            {
+              "text": ".\n\nYou scamper away, feeling "
+            },
+            {
+              "text": "altered",
+              "style": "purple"
+            },
+            {
+              "text": " from the experience."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

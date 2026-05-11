@@ -1,0 +1,179 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CRYSTAL_SPHERE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "CrystalSphere",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/CrystalSphere.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "CRYSTAL_SPHERE.title"
+    },
+    "vars": {
+      "UncoverFutureCost": 50,
+      "UncoverFutureProphesizeCount": 3,
+      "PaymentPlanCount": 6
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/crystal_sphere.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Crystal Sphere",
+    "pages": {
+      "FINISH": {
+        "description": {
+          "plain": "I'm done pondering",
+          "runs": [
+            {
+              "text": "I'm done pondering"
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "\u201cI predicted you'd enter...!\u201d\n\nA raspy voice calls out as you enter a mystic hut.\n\n\u201cYour destiny has brought you here. We must uncover your future and fortunes so you can SAVE US ALL!!\u201d\n\u201cOkay, here are the options for the Crystal Sphere reading. Be sure to sign this waiver as well,\u201d she says while bringing out pen and parchment.",
+          "runs": [
+            {
+              "text": "\u201cI predicted you'd enter...!\u201d",
+              "style": "blue"
+            },
+            {
+              "text": "\n\nA "
+            },
+            {
+              "text": "raspy",
+              "style": "jitter"
+            },
+            {
+              "text": " voice calls out as you enter a "
+            },
+            {
+              "text": "mystic hut",
+              "style": "purple"
+            },
+            {
+              "text": ".\n\n"
+            },
+            {
+              "text": "\u201cYour destiny has brought you here. We must uncover your future and fortunes so you can SAVE US ALL!!\u201d",
+              "style": "blue"
+            },
+            {
+              "text": "\n\u201cOkay, here are the options for the "
+            },
+            {
+              "text": "Crystal Sphere reading",
+              "style": "gold"
+            },
+            {
+              "text": ". Be sure to sign this waiver as well,\u201d she says while bringing out pen and parchment."
+            }
+          ]
+        },
+        "options": {
+          "PAYMENT_PLAN": {
+            "title": "Payment Plan",
+            "description": {
+              "plain": "Gain a {CurseTitle}. Divine 6 times.",
+              "runs": [
+                {
+                  "text": "Gain a "
+                },
+                {
+                  "text": "{CurseTitle}",
+                  "style": "red"
+                },
+                {
+                  "text": ". "
+                },
+                {
+                  "text": "Divine",
+                  "style": "purple"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "6",
+                  "source_var": "PaymentPlanCount",
+                  "style": "blue"
+                },
+                {
+                  "text": " times."
+                }
+              ]
+            }
+          },
+          "UNCOVER_FUTURE": {
+            "title": "Uncover Future",
+            "description": {
+              "plain": "Pay 50 Gold. Divine 3 times.",
+              "runs": [
+                {
+                  "text": "Pay "
+                },
+                {
+                  "text": "50",
+                  "source_var": "UncoverFutureCost",
+                  "style": "red"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Gold",
+                  "style": "gold"
+                },
+                {
+                  "text": ". "
+                },
+                {
+                  "text": "Divine",
+                  "style": "purple"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "3",
+                  "source_var": "UncoverFutureProphesizeCount",
+                  "style": "blue"
+                },
+                {
+                  "text": " times."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "PAYMENT_PLAN": {
+        "description": {
+          "plain": "Payment Plan",
+          "runs": [
+            {
+              "text": "Payment Plan"
+            }
+          ]
+        }
+      },
+      "UNCOVER_FUTURE": {
+        "description": {
+          "plain": "Uncover Future",
+          "runs": [
+            {
+              "text": "Uncover Future"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

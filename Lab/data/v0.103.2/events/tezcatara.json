@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TEZCATARA",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Tezcatara",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/Tezcatara.cs",
+    "kind": "ancient",
+    "localization": {
+      "table": "events",
+      "title_key": "TEZCATARA.title"
+    }
+  },
+  "resolved": {
+    "title": "It Which Feeds the Fire"
+  }
+}

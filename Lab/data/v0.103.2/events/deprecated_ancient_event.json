@@ -1,0 +1,15 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DEPRECATED_ANCIENT_EVENT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DeprecatedAncientEvent",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/DeprecatedAncientEvent.cs",
+    "kind": "ancient",
+    "localization": {
+      "table": "events",
+      "title_key": "DEPRECATED_ANCIENT_EVENT.title"
+    }
+  },
+  "resolved": {}
+}

@@ -1,0 +1,178 @@
+{
+  "schema_version": "0.1.0",
+  "id": "COLORFUL_PHILOSOPHERS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ColorfulPhilosophers",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/ColorfulPhilosophers.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "COLORFUL_PHILOSOPHERS.title"
+    },
+    "vars": {
+      "Cards": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/colorful_philosophers.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Colorful Philosophers",
+    "pages": {
+      "DONE": {
+        "description": {
+          "plain": "Your opinion doesn't seem welcome, and the statues resume their unending debate.",
+          "runs": [
+            {
+              "text": "Your opinion doesn't seem welcome, and the statues resume their unending debate."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "Before you is a rather epic sight.\nYou see 3 different colored statues towering over a dais, having a heated debate over the philosophical implications of color.\n\nAs you listen in, you get a sense that the most important question at hand is which color truly is THE BEST.\n\nYou chime in with your thoughts.",
+          "runs": [
+            {
+              "text": "Before you is a rather epic sight.\nYou see 3 different colored statues towering over a dais, having a "
+            },
+            {
+              "text": "heated debate",
+              "style": "red"
+            },
+            {
+              "text": " over the philosophical implications of color.\n\nAs you listen in, you get a sense that the most important question at hand is which color truly is "
+            },
+            {
+              "text": "THE BEST",
+              "style": "gold"
+            },
+            {
+              "text": ".\n\nYou chime in with your thoughts."
+            }
+          ]
+        },
+        "options": {
+          "DEFECT": {
+            "title": "Blue",
+            "description": {
+              "plain": "Obtain 3 Defect cards.",
+              "runs": [
+                {
+                  "text": "Obtain "
+                },
+                {
+                  "text": "3",
+                  "source_var": "Cards",
+                  "style": "blue"
+                },
+                {
+                  "text": " Defect cards."
+                }
+              ]
+            }
+          },
+          "EQUALITY": {
+            "title": "Equality",
+            "description": {
+              "plain": "Obtain Prismatic Shard.",
+              "runs": [
+                {
+                  "text": "Obtain "
+                },
+                {
+                  "text": "Prismatic Shard",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "IRONCLAD": {
+            "title": "Red",
+            "description": {
+              "plain": "Obtain 3 Ironclad cards.",
+              "runs": [
+                {
+                  "text": "Obtain "
+                },
+                {
+                  "text": "3",
+                  "source_var": "Cards",
+                  "style": "blue"
+                },
+                {
+                  "text": " Ironclad cards."
+                }
+              ]
+            }
+          },
+          "NECROBINDER": {
+            "title": "Pink",
+            "description": {
+              "plain": "Obtain 3 Necrobinder cards.",
+              "runs": [
+                {
+                  "text": "Obtain "
+                },
+                {
+                  "text": "3",
+                  "source_var": "Cards",
+                  "style": "blue"
+                },
+                {
+                  "text": " Necrobinder cards."
+                }
+              ]
+            }
+          },
+          "REGENT": {
+            "title": "Orange",
+            "description": {
+              "plain": "Obtain 3 Regent cards.",
+              "runs": [
+                {
+                  "text": "Obtain "
+                },
+                {
+                  "text": "3",
+                  "source_var": "Cards",
+                  "style": "blue"
+                },
+                {
+                  "text": " Regent cards."
+                }
+              ]
+            }
+          },
+          "SILENT": {
+            "title": "Green",
+            "description": {
+              "plain": "Obtain 3 Silent cards.",
+              "runs": [
+                {
+                  "text": "Obtain "
+                },
+                {
+                  "text": "3",
+                  "source_var": "Cards",
+                  "style": "blue"
+                },
+                {
+                  "text": " Silent cards."
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

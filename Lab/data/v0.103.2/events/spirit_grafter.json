@@ -1,0 +1,217 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SPIRIT_GRAFTER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SpiritGrafter",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/SpiritGrafter.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "SPIRIT_GRAFTER.title"
+    },
+    "vars": {
+      "RejectionHpLoss": 10,
+      "LetItInHealAmount": 25
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/spirit_grafter.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Spirit Grafter",
+    "loss": {
+      "plain": "{character} could not reject the {event}.",
+      "runs": [
+        {
+          "text": "{character} could not reject the "
+        },
+        {
+          "text": "{event}",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "pages": {
+      "INITIAL": {
+        "description": {
+          "plain": "Above, a cocoon is shaking and wriggling, about to burst forth!\n\n...it stops wriggling. The cocoon ignites! What is going on?\nIn a flash of light and flame, a Spirit Grafter rushes into you, threatening to merge with your being to become complete.",
+          "runs": [
+            {
+              "text": "Above, a cocoon is "
+            },
+            {
+              "text": "shaking and wriggling",
+              "style": "jitter"
+            },
+            {
+              "text": ", about to burst forth!\n\n...it stops wriggling. "
+            },
+            {
+              "text": "The cocoon ignites",
+              "style": "sine"
+            },
+            {
+              "text": "! "
+            },
+            {
+              "text": "What is going on?",
+              "style": "jitter"
+            },
+            {
+              "text": "\nIn a flash of "
+            },
+            {
+              "text": "light",
+              "style": "gold"
+            },
+            {
+              "text": " and "
+            },
+            {
+              "text": "flame",
+              "style": "red"
+            },
+            {
+              "text": ", a "
+            },
+            {
+              "text": "Spirit Grafter",
+              "style": "orange"
+            },
+            {
+              "text": " rushes into you, threatening to merge with your being to become complete."
+            }
+          ]
+        },
+        "options": {
+          "LET_IT_IN": {
+            "title": "Let It In",
+            "description": {
+              "plain": "Heal 25 HP. Add Metamorphosis to your Deck.",
+              "runs": [
+                {
+                  "text": "Heal "
+                },
+                {
+                  "text": "25",
+                  "source_var": "LetItInHealAmount",
+                  "style": "green"
+                },
+                {
+                  "text": " HP. Add "
+                },
+                {
+                  "text": "Metamorphosis",
+                  "style": "gold"
+                },
+                {
+                  "text": " to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "REJECTION": {
+            "title": "Rejection",
+            "description": {
+              "plain": "Lose 10 HP. Upgrade a card.",
+              "runs": [
+                {
+                  "text": "Lose "
+                },
+                {
+                  "text": "10",
+                  "source_var": "RejectionHpLoss",
+                  "style": "red"
+                },
+                {
+                  "text": " HP. "
+                },
+                {
+                  "text": "Upgrade",
+                  "style": "gold"
+                },
+                {
+                  "text": " a card."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "LET_IT_IN": {
+        "description": {
+          "plain": "The Spirit Grafter merges with you. The vital kindred spirit swiftly heals you up.\n\nYou are reborn.",
+          "runs": [
+            {
+              "text": "The "
+            },
+            {
+              "text": "Spirit Grafter",
+              "style": "orange"
+            },
+            {
+              "text": " merges with you. The vital kindred spirit swiftly "
+            },
+            {
+              "text": "heals",
+              "style": "green"
+            },
+            {
+              "text": " you up.\n\nYou are "
+            },
+            {
+              "text": "reborn",
+              "style": "blue"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      },
+      "REJECTION": {
+        "description": {
+          "plain": "The Spirit Grafter is easily stopped by your will.\n\nHowever, it repeatedly flies into you, desperate for a host. Its strength runs out and it dissolves with a poof.\n\nA fleeting spirit.",
+          "runs": [
+            {
+              "text": "The "
+            },
+            {
+              "text": "Spirit Grafter",
+              "style": "orange"
+            },
+            {
+              "text": " is easily stopped by your will.\n\nHowever, it repeatedly flies into you, desperate for a host. Its strength runs out and it dissolves with a "
+            },
+            {
+              "text": "poof",
+              "style": "sine"
+            },
+            {
+              "text": ".\n\n"
+            },
+            {
+              "text": "A fleeting spirit.",
+              "style": "sine"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "schema_version": "0.1.0",
+  "id": "AMALGAMATOR",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Amalgamator",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Events/Amalgamator.cs",
+    "kind": "event",
+    "localization": {
+      "table": "events",
+      "title_key": "AMALGAMATOR.title"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/events/amalgamator.webp",
+        "source": "Lab.resources.images.events"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Amalgamator",
+    "pages": {
+      "COMBINE_DEFENDS": {
+        "description": {
+          "plain": "CLANG! CLANG!!!\n\nThe Amalgamator strikes its Bone Anvil.\n\nMemories of combat, protecting, and defensive strategies sharpen with each blow.\nYour most ultimate technique returns to you.",
+          "runs": [
+            {
+              "text": "CLANG! CLANG!!!",
+              "style": "jitter"
+            },
+            {
+              "text": "\n\nThe "
+            },
+            {
+              "text": "Amalgamator",
+              "style": "orange"
+            },
+            {
+              "text": " strikes its Bone Anvil.\n\nMemories of combat, protecting, and defensive strategies sharpen with each blow.\nYour most ultimate technique returns to you."
+            }
+          ]
+        }
+      },
+      "COMBINE_STRIKES": {
+        "description": {
+          "plain": "CLANG! CLANG!!!\n\nThe Amalgamator strikes its Bone Anvil.\n\nMemories of combat, attacking, and offensive strategies sharpen with each blow.\nYour most ultimate technique returns to you.",
+          "runs": [
+            {
+              "text": "CLANG! CLANG!!!",
+              "style": "jitter"
+            },
+            {
+              "text": "\n\nThe "
+            },
+            {
+              "text": "Amalgamator",
+              "style": "orange"
+            },
+            {
+              "text": " strikes its Bone Anvil.\n\nMemories of combat, attacking, and offensive strategies sharpen with each blow.\nYour most ultimate technique returns to you."
+            }
+          ]
+        }
+      },
+      "INITIAL": {
+        "description": {
+          "plain": "CLANG! CLANG!!!\n\nYou hear the echoes of metal upon metal on the otherside of a wall...\n\nAs you press your head against the wall to listen in\u2014the wall opens up, revealing a hulking six-armed figure toiling away.\nIts \u201cface\u201d is a swirling vortex of glowing sigils that shift about.\n\n\u201cOne with an Ascending Spirit has found my workshop? Let's get COMBINING!\u201d",
+          "runs": [
+            {
+              "text": "CLANG! CLANG!!!",
+              "style": "jitter"
+            },
+            {
+              "text": "\n\nYou hear the echoes of metal upon metal on the otherside of a wall...\n\nAs you press your head against the wall to listen in\u2014the wall opens up, revealing a "
+            },
+            {
+              "text": "hulking six-armed figure",
+              "style": "orange"
+            },
+            {
+              "text": " toiling away.\nIts \u201cface\u201d is a "
+            },
+            {
+              "text": "swirling vortex of glowing sigils",
+              "style": "sine"
+            },
+            {
+              "text": " that shift about.\n\n\u201cOne with an "
+            },
+            {
+              "text": "Ascending Spirit",
+              "style": "aqua"
+            },
+            {
+              "text": " has found my workshop? Let's get "
+            },
+            {
+              "text": "COMBINING",
+              "style": "jitter"
+            },
+            {
+              "text": "!\u201d"
+            }
+          ]
+        },
+        "options": {
+          "COMBINE_DEFENDS": {
+            "title": "Combine Defends",
+            "description": {
+              "plain": "Remove 2 Defends. Add {Card2} to your Deck.",
+              "runs": [
+                {
+                  "text": "Remove "
+                },
+                {
+                  "text": "2",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Defends",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Add "
+                },
+                {
+                  "text": "{Card2}",
+                  "style": "gold"
+                },
+                {
+                  "text": " to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          },
+          "COMBINE_STRIKES": {
+            "title": "Combine Strikes",
+            "description": {
+              "plain": "Remove 2 Strikes. Add {Card1} to your Deck.",
+              "runs": [
+                {
+                  "text": "Remove "
+                },
+                {
+                  "text": "2",
+                  "style": "blue"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Strikes",
+                  "style": "gold"
+                },
+                {
+                  "text": ". Add "
+                },
+                {
+                  "text": "{Card1}",
+                  "style": "gold"
+                },
+                {
+                  "text": " to your "
+                },
+                {
+                  "text": "Deck",
+                  "style": "gold"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
