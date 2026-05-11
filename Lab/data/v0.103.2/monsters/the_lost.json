@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "id": "THE_LOST",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TheLost",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/TheLost.cs",
+    "hp": {
+      "min": 93,
+      "max": 93,
+      "min_ascension": 99,
+      "max_ascension": 99
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "THE_LOST.name"
+    }
+  },
+  "resolved": {
+    "name": "The Lost",
+    "moves": [
+      {
+        "id": "DEBILITATING_SMOG",
+        "title": "Debilitating Smog"
+      },
+      {
+        "id": "EYE_LASERS",
+        "title": "Eye Lasers"
+      }
+    ]
+  }
+}

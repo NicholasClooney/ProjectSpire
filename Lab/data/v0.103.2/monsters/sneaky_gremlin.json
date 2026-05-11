@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SNEAKY_GREMLIN",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SneakyGremlin",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/SneakyGremlin.cs",
+    "hp": {
+      "min": 10,
+      "max": 14,
+      "min_ascension": 11,
+      "max_ascension": 15
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "SNEAKY_GREMLIN.name"
+    }
+  },
+  "resolved": {
+    "name": "Sneaky Gremlin",
+    "moves": [
+      {
+        "id": "TACKLE",
+        "title": "Tackle"
+      }
+    ]
+  }
+}

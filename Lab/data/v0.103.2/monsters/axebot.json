@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1.0",
+  "id": "AXEBOT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Axebot",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Axebot.cs",
+    "hp": {
+      "min": 40,
+      "max": 44,
+      "min_ascension": 42,
+      "max_ascension": 46
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "AXEBOT.name"
+    }
+  },
+  "resolved": {
+    "name": "Axebot",
+    "moves": [
+      {
+        "id": "BOOT_UP",
+        "title": "Boot Up"
+      },
+      {
+        "id": "HAMMER_UPPERCUT",
+        "title": "Hammer Uppercut"
+      },
+      {
+        "id": "ONE_TWO",
+        "title": "The One-Two"
+      },
+      {
+        "id": "SHARPEN",
+        "title": "Sharpen"
+      }
+    ]
+  }
+}

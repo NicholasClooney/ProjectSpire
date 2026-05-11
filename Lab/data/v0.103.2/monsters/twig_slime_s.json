@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TWIG_SLIME_S",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TwigSlimeS",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/TwigSlimeS.cs",
+    "hp": {
+      "min": 7,
+      "max": 11,
+      "min_ascension": 8,
+      "max_ascension": 12
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "TWIG_SLIME_S.name"
+    }
+  },
+  "resolved": {
+    "name": "Twig Slime (S)",
+    "moves": [
+      {
+        "id": "GOOP",
+        "title": "Goop"
+      },
+      {
+        "id": "TACKLE",
+        "title": "Tackle"
+      }
+    ]
+  }
+}

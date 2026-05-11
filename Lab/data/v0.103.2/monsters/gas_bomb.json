@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "id": "GAS_BOMB",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "GasBomb",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/GasBomb.cs",
+    "hp": {
+      "min": 7,
+      "max": 7,
+      "min_ascension": 8,
+      "max_ascension": 8
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "GAS_BOMB.name"
+    }
+  },
+  "resolved": {
+    "name": "Gas Bomb",
+    "moves": [
+      {
+        "id": "EXPLODE",
+        "title": "Explode"
+      }
+    ]
+  }
+}

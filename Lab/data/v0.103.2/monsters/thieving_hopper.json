@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1.0",
+  "id": "THIEVING_HOPPER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ThievingHopper",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/ThievingHopper.cs",
+    "hp": {
+      "min": 79,
+      "max": 79,
+      "min_ascension": 84,
+      "max_ascension": 84
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "THIEVING_HOPPER.name"
+    }
+  },
+  "resolved": {
+    "name": "Thieving Hopper",
+    "moves": [
+      {
+        "id": "ESCAPE",
+        "title": "Escape"
+      },
+      {
+        "id": "FLUTTER",
+        "title": "Flutter"
+      },
+      {
+        "id": "HAT_TRICK",
+        "title": "Hat Trick"
+      },
+      {
+        "id": "NAB",
+        "title": "Nab"
+      },
+      {
+        "id": "THIEVERY",
+        "title": "Thievery"
+      }
+    ]
+  }
+}

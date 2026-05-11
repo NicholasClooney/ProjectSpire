@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "id": "NOISEBOT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Noisebot",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Noisebot.cs",
+    "hp": {
+      "min": 18,
+      "max": 23,
+      "min_ascension": 19,
+      "max_ascension": 24
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "NOISEBOT.name"
+    }
+  },
+  "resolved": {
+    "name": "Noisebot",
+    "moves": [
+      {
+        "id": "NOISE",
+        "title": "Noise"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "0.1.0",
+  "id": "EYE_WITH_TEETH",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "EyeWithTeeth",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/EyeWithTeeth.cs",
+    "hp": {
+      "min": 6,
+      "max": 6
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "EYE_WITH_TEETH.name"
+    }
+  },
+  "resolved": {
+    "name": "Eye With Teeth",
+    "moves": [
+      {
+        "id": "DISTRACT",
+        "title": "Distract"
+      },
+      {
+        "id": "STARTLE",
+        "title": "Startle"
+      }
+    ]
+  }
+}

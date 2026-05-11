@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FOGMOG",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Fogmog",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Fogmog.cs",
+    "hp": {
+      "min": 74,
+      "max": 74,
+      "min_ascension": 78,
+      "max_ascension": 78
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "FOGMOG.name"
+    }
+  },
+  "resolved": {
+    "name": "Fogmog",
+    "moves": [
+      {
+        "id": "ILLUSORY_SPORES",
+        "title": "Illusory Spores"
+      },
+      {
+        "id": "THWACK",
+        "title": "Thwack"
+      }
+    ]
+  }
+}

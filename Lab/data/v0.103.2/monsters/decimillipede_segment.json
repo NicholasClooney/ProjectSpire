@@ -1,0 +1,48 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DECIMILLIPEDE_SEGMENT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DecimillipedeSegment",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/DecimillipedeSegment.cs",
+    "hp": {
+      "min": 40,
+      "max": 46,
+      "min_ascension": 46,
+      "max_ascension": 52
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "DECIMILLIPEDE_SEGMENT.name"
+    }
+  },
+  "resolved": {
+    "name": "Decimillipede",
+    "moves": [
+      {
+        "id": "BULK",
+        "title": "Bulk"
+      },
+      {
+        "id": "DEAD",
+        "title": "Dead"
+      },
+      {
+        "id": "OUTGAS",
+        "title": "Outgas"
+      },
+      {
+        "id": "REATTACH",
+        "title": "Reattach"
+      },
+      {
+        "id": "TACKLE",
+        "title": "Tackle"
+      },
+      {
+        "id": "WRITHE",
+        "title": "Writhe"
+      }
+    ]
+  }
+}

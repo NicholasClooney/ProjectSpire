@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TOUGH_EGG",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ToughEgg",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/ToughEgg.cs",
+    "hp": {
+      "min": 14,
+      "max": 18,
+      "min_ascension": 15,
+      "max_ascension": 19
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "TOUGH_EGG.name"
+    }
+  },
+  "resolved": {
+    "name": "Tough Egg",
+    "moves": [
+      {
+        "id": "HATCH",
+        "title": "HATCH"
+      }
+    ]
+  }
+}

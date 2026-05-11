@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "id": "STABBOT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Stabbot",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Stabbot.cs",
+    "hp": {
+      "min": 18,
+      "max": 23,
+      "min_ascension": 19,
+      "max_ascension": 24
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "STABBOT.name"
+    }
+  },
+  "resolved": {
+    "name": "Stabbot",
+    "moves": [
+      {
+        "id": "STAB",
+        "title": "Stab"
+      }
+    ]
+  }
+}

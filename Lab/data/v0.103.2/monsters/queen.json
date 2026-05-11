@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "QUEEN",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Queen",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Queen.cs",
+    "hp": {
+      "min": 400,
+      "max": 400,
+      "min_ascension": 419,
+      "max_ascension": 419
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "QUEEN.name"
+    }
+  },
+  "resolved": {
+    "name": "Queen",
+    "moves": [
+      {
+        "id": "BARRIER",
+        "title": "Barrier"
+      },
+      {
+        "id": "BURN_BRIGHT_FOR_ME",
+        "title": "Burn Bright for Me"
+      },
+      {
+        "id": "EXECUTION",
+        "title": "Execution"
+      },
+      {
+        "id": "IMPOSSIBLE",
+        "title": "Impossible"
+      },
+      {
+        "id": "OFF_WITH_YOUR_HEAD",
+        "title": "Off with Your Head"
+      },
+      {
+        "id": "SUMMON_1",
+        "title": "Summon"
+      },
+      {
+        "id": "SUMMON_2",
+        "title": "Summon"
+      },
+      {
+        "id": "YOURE_MINE",
+        "title": "You're Mine"
+      }
+    ]
+  }
+}

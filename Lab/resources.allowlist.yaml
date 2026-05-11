@@ -51,3 +51,13 @@ entries:
       - ".DS_Store"
       - "**/*.import"
     transform: webp-q85
+
+  - name: monster_images
+    from: images/monsters
+    to: images/monsters
+    include:
+      - "**/*.png"
+    exclude:
+      - ".DS_Store"
+      - "**/*.import"
+    transform: webp-q85

@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "id": "WRIGGLER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Wriggler",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Wriggler.cs",
+    "hp": {
+      "min": 17,
+      "max": 21,
+      "min_ascension": 18,
+      "max_ascension": 22
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "WRIGGLER.name"
+    }
+  },
+  "resolved": {
+    "name": "Wriggler",
+    "moves": [
+      {
+        "id": "PARASITIZE_PLAYER",
+        "title": "Parasitize Player"
+      },
+      {
+        "id": "WRIGGLE_STRIKE",
+        "title": "Wriggle Strike"
+      }
+    ]
+  }
+}

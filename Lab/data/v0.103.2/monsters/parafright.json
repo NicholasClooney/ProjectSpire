@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PARAFRIGHT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Parafright",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Parafright.cs",
+    "hp": {
+      "min": 21,
+      "max": 21
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "PARAFRIGHT.name"
+    }
+  },
+  "resolved": {
+    "name": "Parafright",
+    "moves": [
+      {
+        "id": "SLAM",
+        "title": "Slam"
+      }
+    ]
+  }
+}

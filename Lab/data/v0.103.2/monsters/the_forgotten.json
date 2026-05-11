@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "id": "THE_FORGOTTEN",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TheForgotten",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/TheForgotten.cs",
+    "hp": {
+      "min": 106,
+      "max": 106,
+      "min_ascension": 111,
+      "max_ascension": 111
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "THE_FORGOTTEN.name"
+    }
+  },
+  "resolved": {
+    "name": "The Forgotten",
+    "moves": [
+      {
+        "id": "DREAD",
+        "title": "Dread"
+      },
+      {
+        "id": "MIASMA",
+        "title": "Miasma"
+      }
+    ]
+  }
+}

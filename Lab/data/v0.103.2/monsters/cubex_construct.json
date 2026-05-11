@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CUBEX_CONSTRUCT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "CubexConstruct",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/CubexConstruct.cs",
+    "hp": {
+      "min": 65,
+      "max": 65,
+      "min_ascension": 70,
+      "max_ascension": 70
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "CUBEX_CONSTRUCT.name"
+    }
+  },
+  "resolved": {
+    "name": "Cubex Construct",
+    "moves": [
+      {
+        "id": "CHARGE_UP",
+        "title": "Charge Up"
+      },
+      {
+        "id": "REPEATER_BLAST",
+        "title": "Repeater Blast"
+      },
+      {
+        "id": "SUBMERGE",
+        "title": "Submerge"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DEVOTED_SCULPTOR",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DevotedSculptor",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/DevotedSculptor.cs",
+    "hp": {
+      "min": 162,
+      "max": 162,
+      "min_ascension": 172,
+      "max_ascension": 172
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "DEVOTED_SCULPTOR.name"
+    }
+  },
+  "resolved": {
+    "name": "Devoted Sculptor"
+  }
+}

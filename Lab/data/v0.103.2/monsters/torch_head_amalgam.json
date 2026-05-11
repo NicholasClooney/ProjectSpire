@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TORCH_HEAD_AMALGAM",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TorchHeadAmalgam",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/TorchHeadAmalgam.cs",
+    "hp": {
+      "min": 199,
+      "max": 199,
+      "min_ascension": 211,
+      "max_ascension": 211
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "TORCH_HEAD_AMALGAM.name"
+    }
+  },
+  "resolved": {
+    "name": "Torch Head Amalgam",
+    "moves": [
+      {
+        "id": "TACKLE",
+        "title": "Tackle"
+      }
+    ]
+  }
+}

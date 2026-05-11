@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TWIG_SLIME_M",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TwigSlimeM",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/TwigSlimeM.cs",
+    "hp": {
+      "min": 26,
+      "max": 28,
+      "min_ascension": 27,
+      "max_ascension": 29
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "TWIG_SLIME_M.name"
+    }
+  },
+  "resolved": {
+    "name": "Twig Slime (M)",
+    "moves": [
+      {
+        "id": "CHOMP",
+        "title": "Chomp"
+      },
+      {
+        "id": "POKEY_POUNCE",
+        "title": "Pokey Pounce"
+      },
+      {
+        "id": "STICKY_SHOT",
+        "title": "Sticky Shot"
+      }
+    ]
+  }
+}

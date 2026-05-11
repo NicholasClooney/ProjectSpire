@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SLUDGE_SPINNER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SludgeSpinner",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/SludgeSpinner.cs",
+    "hp": {
+      "min": 37,
+      "max": 39,
+      "min_ascension": 41,
+      "max_ascension": 42
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "SLUDGE_SPINNER.name"
+    }
+  },
+  "resolved": {
+    "name": "Sludge Spinner",
+    "moves": [
+      {
+        "id": "OIL_SPRAY",
+        "title": "Oil Spray"
+      },
+      {
+        "id": "RAGE",
+        "title": "Rage"
+      },
+      {
+        "id": "SLAM",
+        "title": "Slam"
+      }
+    ]
+  }
+}

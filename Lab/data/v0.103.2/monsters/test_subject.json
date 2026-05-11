@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TEST_SUBJECT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TestSubject",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/TestSubject.cs",
+    "localization": {
+      "table": "monsters",
+      "name_key": "TEST_SUBJECT.name"
+    },
+    "notes": [
+      "Could not parse HP values from source."
+    ]
+  },
+  "resolved": {
+    "name": "Test Subject #C{Count}",
+    "moves": [
+      {
+        "id": "BIG_POUNCE_MOVE",
+        "title": "Big Pounce"
+      },
+      {
+        "id": "BITE_MOVE",
+        "title": "Bite"
+      },
+      {
+        "id": "BURNING_GROWL_MOVE",
+        "title": "Burning Growl"
+      },
+      {
+        "id": "MULTI_CLAW_MOVE",
+        "title": "Multi-Claw"
+      },
+      {
+        "id": "PHASE3_LACERATE_MOVE",
+        "title": "Lacerate"
+      },
+      {
+        "id": "POUNCE_MOVE",
+        "title": "Pounce"
+      },
+      {
+        "id": "RESPAWN_MOVE",
+        "title": "Respawn"
+      },
+      {
+        "id": "SKULL_BASH_MOVE",
+        "title": "Skull Bash"
+      }
+    ]
+  }
+}

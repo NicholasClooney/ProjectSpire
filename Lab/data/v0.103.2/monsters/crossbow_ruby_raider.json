@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CROSSBOW_RUBY_RAIDER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "CrossbowRubyRaider",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/CrossbowRubyRaider.cs",
+    "hp": {
+      "min": 18,
+      "max": 21,
+      "min_ascension": 19,
+      "max_ascension": 22
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "CROSSBOW_RUBY_RAIDER.name"
+    }
+  },
+  "resolved": {
+    "name": "Crossbow Raider",
+    "moves": [
+      {
+        "id": "FIRE",
+        "title": "Fire!"
+      },
+      {
+        "id": "RELOAD",
+        "title": "Reload"
+      }
+    ]
+  }
+}

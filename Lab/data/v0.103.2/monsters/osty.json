@@ -1,0 +1,20 @@
+{
+  "schema_version": "0.1.0",
+  "id": "OSTY",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Osty",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Osty.cs",
+    "hp": {
+      "min": 1,
+      "max": 1
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "OSTY.name"
+    }
+  },
+  "resolved": {
+    "name": "Osty"
+  }
+}

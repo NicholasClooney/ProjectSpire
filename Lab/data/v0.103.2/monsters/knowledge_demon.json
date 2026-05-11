@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1.0",
+  "id": "KNOWLEDGE_DEMON",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "KnowledgeDemon",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/KnowledgeDemon.cs",
+    "hp": {
+      "min": 379,
+      "max": 379,
+      "min_ascension": 399,
+      "max_ascension": 399
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "KNOWLEDGE_DEMON.name"
+    }
+  },
+  "resolved": {
+    "name": "Knowledge Demon",
+    "moves": [
+      {
+        "id": "BLUE_FLAME",
+        "title": "Blue Flame"
+      },
+      {
+        "id": "CURSE_OF_KNOWLEDGE",
+        "title": "Curse of Knowledge"
+      },
+      {
+        "id": "HAVE_A_TASTE",
+        "title": "Have a Taste"
+      },
+      {
+        "id": "KNOWLEDGE_OVERWHELMING",
+        "title": "Knowledge Overwhelming"
+      },
+      {
+        "id": "PONDER",
+        "title": "Ponder"
+      }
+    ]
+  }
+}

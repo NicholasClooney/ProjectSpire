@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FOSSIL_STALKER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "FossilStalker",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/FossilStalker.cs",
+    "hp": {
+      "min": 51,
+      "max": 53,
+      "min_ascension": 54,
+      "max_ascension": 56
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "FOSSIL_STALKER.name"
+    }
+  },
+  "resolved": {
+    "name": "Fossil Stalker",
+    "moves": [
+      {
+        "id": "LASH",
+        "title": "Lash"
+      },
+      {
+        "id": "LATCH",
+        "title": "Latch"
+      },
+      {
+        "id": "TACKLE",
+        "title": "Tackle"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ROCKET",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Rocket",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Rocket.cs",
+    "hp": {
+      "min": 199,
+      "max": 199,
+      "min_ascension": 209,
+      "max_ascension": 209
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "ROCKET.name"
+    }
+  },
+  "resolved": {
+    "name": "Rocket",
+    "moves": [
+      {
+        "id": "CHARGE_UP",
+        "title": "Charge Up"
+      },
+      {
+        "id": "LASER",
+        "title": "Laser"
+      },
+      {
+        "id": "PRECISION_BEAM",
+        "title": "Precision Beam"
+      },
+      {
+        "id": "RECHARGE",
+        "title": "Recharge"
+      },
+      {
+        "id": "TARGETING_RETICLE",
+        "title": "Targeting Reticle"
+      }
+    ]
+  }
+}

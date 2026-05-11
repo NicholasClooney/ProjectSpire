@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SNAPPING_JAXFRUIT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SnappingJaxfruit",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/SnappingJaxfruit.cs",
+    "hp": {
+      "min": 31,
+      "max": 33,
+      "min_ascension": 34,
+      "max_ascension": 36
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "SNAPPING_JAXFRUIT.name"
+    }
+  },
+  "resolved": {
+    "name": "Snapping Jaxfruit",
+    "moves": [
+      {
+        "id": "COLLECT_POWER",
+        "title": "Collect Power"
+      },
+      {
+        "id": "ENERGY_ORB",
+        "title": "Energy Orb"
+      }
+    ]
+  }
+}

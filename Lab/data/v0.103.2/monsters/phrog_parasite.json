@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PHROG_PARASITE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PhrogParasite",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/PhrogParasite.cs",
+    "hp": {
+      "min": 61,
+      "max": 64,
+      "min_ascension": 66,
+      "max_ascension": 68
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "PHROG_PARASITE.name"
+    }
+  },
+  "resolved": {
+    "name": "Phrog Parasite",
+    "moves": [
+      {
+        "id": "INFECT",
+        "title": "Infect"
+      },
+      {
+        "id": "LASH",
+        "title": "Lash"
+      },
+      {
+        "id": "LEAP_SLAM",
+        "title": "Leap Slam"
+      }
+    ]
+  }
+}

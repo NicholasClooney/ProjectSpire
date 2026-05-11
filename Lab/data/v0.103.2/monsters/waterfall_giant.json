@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1.0",
+  "id": "WATERFALL_GIANT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "WaterfallGiant",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/WaterfallGiant.cs",
+    "hp": {
+      "min": 240,
+      "max": 240,
+      "min_ascension": 250,
+      "max_ascension": 250
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "WATERFALL_GIANT.name"
+    }
+  },
+  "resolved": {
+    "name": "Waterfall Giant",
+    "moves": [
+      {
+        "id": "PRESSURE_GUN",
+        "title": "Pressure Gun"
+      },
+      {
+        "id": "PRESSURIZE",
+        "title": "Pressurize"
+      },
+      {
+        "id": "RAM",
+        "title": "Ram"
+      },
+      {
+        "id": "SIPHON",
+        "title": "Siphon"
+      },
+      {
+        "id": "STOMP",
+        "title": "Stomp"
+      }
+    ]
+  }
+}

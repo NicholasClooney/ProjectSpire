@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1.0",
+  "id": "MYTE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Myte",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Myte.cs",
+    "hp": {
+      "min": 61,
+      "max": 67,
+      "min_ascension": 64,
+      "max_ascension": 69
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "MYTE.name"
+    }
+  },
+  "resolved": {
+    "name": "Myte",
+    "moves": [
+      {
+        "id": "BIG_SUCK",
+        "title": "Big Suck"
+      },
+      {
+        "id": "BITE",
+        "title": "Bite"
+      },
+      {
+        "id": "SUCK",
+        "title": "Suck"
+      },
+      {
+        "id": "TOXIC",
+        "title": "Toxic Cornucopia"
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1.0",
+  "id": "THE_INSATIABLE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TheInsatiable",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/TheInsatiable.cs",
+    "hp": {
+      "min": 321,
+      "max": 321,
+      "min_ascension": 341,
+      "max_ascension": 341
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "THE_INSATIABLE.name"
+    }
+  },
+  "resolved": {
+    "name": "The Insatiable",
+    "moves": [
+      {
+        "id": "LIQUIFY_GROUND",
+        "title": "Liquify Ground"
+      },
+      {
+        "id": "LUNGING_BITE",
+        "title": "Lunging Bite"
+      },
+      {
+        "id": "SALIVATE",
+        "title": "Salivate"
+      },
+      {
+        "id": "THRASH",
+        "title": "Thrash"
+      }
+    ]
+  }
+}

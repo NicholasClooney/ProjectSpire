@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BOWLBUG_EGG",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BowlbugEgg",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/BowlbugEgg.cs",
+    "hp": {
+      "min": 21,
+      "max": 22,
+      "min_ascension": 23,
+      "max_ascension": 24
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "BOWLBUG_EGG.name"
+    }
+  },
+  "resolved": {
+    "name": "Bowlbug (Egg)",
+    "moves": [
+      {
+        "id": "BITE",
+        "title": "Bite"
+      },
+      {
+        "id": "PROTECT",
+        "title": "Protect"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CEREMONIAL_BEAST",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "CeremonialBeast",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/CeremonialBeast.cs",
+    "hp": {
+      "min": 252,
+      "max": 252,
+      "min_ascension": 262,
+      "max_ascension": 262
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "CEREMONIAL_BEAST.name"
+    }
+  },
+  "resolved": {
+    "name": "Ceremonial Beast",
+    "moves": [
+      {
+        "id": "BEAST_CRY",
+        "title": "Beast Cry"
+      },
+      {
+        "id": "CRUSH",
+        "title": "Crush"
+      },
+      {
+        "id": "PLOW",
+        "title": "Plow"
+      },
+      {
+        "id": "STAMP",
+        "title": "Stamp"
+      },
+      {
+        "id": "STOMP",
+        "title": "Stomp"
+      }
+    ]
+  }
+}

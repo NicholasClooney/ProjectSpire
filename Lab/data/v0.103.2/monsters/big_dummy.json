@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BIG_DUMMY",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BigDummy",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/BigDummy.cs",
+    "hp": {
+      "min": 9999,
+      "max": 9999
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "BIG_DUMMY.name"
+    }
+  },
+  "resolved": {
+    "name": "Big Dummy",
+    "moves": [
+      {
+        "id": "NOTHING",
+        "title": "Nothing"
+      }
+    ]
+  }
+}

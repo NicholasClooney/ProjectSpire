@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1.0",
+  "id": "MECHA_KNIGHT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "MechaKnight",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/MechaKnight.cs",
+    "hp": {
+      "min": 300,
+      "max": 300,
+      "min_ascension": 320,
+      "max_ascension": 320
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "MECHA_KNIGHT.name"
+    }
+  },
+  "resolved": {
+    "name": "Mecha Knight",
+    "moves": [
+      {
+        "id": "CHARGE",
+        "title": "Charge"
+      },
+      {
+        "id": "FLAMETHROWER",
+        "title": "Flamethrower"
+      },
+      {
+        "id": "HEAVY_CLEAVE",
+        "title": "Heavy Cleave"
+      },
+      {
+        "id": "WINDUP",
+        "title": "Windup"
+      }
+    ]
+  }
+}

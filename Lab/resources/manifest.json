@@ -2,7 +2,7 @@
   "version": 1,
   "source_root": "/Users/nicholasclooney/Source/Projects/ProjectSpire/Lab/unpacked",
   "output_root": "/Users/nicholasclooney/Source/Projects/ProjectSpire/Lab/resources",
-  "generated_at": "2026-05-11T15:30:52.653161+00:00",
+  "generated_at": "2026-05-11T16:15:33.024759+00:00",
   "entries": [
     {
       "entry": "localization",
@@ -19144,6 +19144,276 @@
       "output_bytes": 98036,
       "quality": 85,
       "ratio": 0.0794
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/battle_friend_v1.png",
+      "output": "images/monsters/battle_friend_v1.webp",
+      "source_bytes": 9475,
+      "output_bytes": 3906,
+      "quality": 85,
+      "ratio": 0.4122
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/battle_friend_v2.png",
+      "output": "images/monsters/battle_friend_v2.webp",
+      "source_bytes": 9898,
+      "output_bytes": 4146,
+      "quality": 85,
+      "ratio": 0.4189
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/battle_friend_v3.png",
+      "output": "images/monsters/battle_friend_v3.webp",
+      "source_bytes": 11655,
+      "output_bytes": 5034,
+      "quality": 85,
+      "ratio": 0.4319
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/beta/door.png",
+      "output": "images/monsters/beta/door.webp",
+      "source_bytes": 446148,
+      "output_bytes": 66096,
+      "quality": 85,
+      "ratio": 0.1481
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/beta/door_maker_placeholder_1.png",
+      "output": "images/monsters/beta/door_maker_placeholder_1.webp",
+      "source_bytes": 812722,
+      "output_bytes": 345558,
+      "quality": 85,
+      "ratio": 0.4252
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/beta/door_maker_placeholder_2.png",
+      "output": "images/monsters/beta/door_maker_placeholder_2.webp",
+      "source_bytes": 2053798,
+      "output_bytes": 552908,
+      "quality": 85,
+      "ratio": 0.2692
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/beta/door_maker_placeholder_3.png",
+      "output": "images/monsters/beta/door_maker_placeholder_3.webp",
+      "source_bytes": 2129431,
+      "output_bytes": 544568,
+      "quality": 85,
+      "ratio": 0.2557
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/beta/door_maker_placeholder_4.png",
+      "output": "images/monsters/beta/door_maker_placeholder_4.webp",
+      "source_bytes": 2160256,
+      "output_bytes": 419746,
+      "quality": 85,
+      "ratio": 0.1943
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/beta/door_open.png",
+      "output": "images/monsters/beta/door_open.webp",
+      "source_bytes": 279609,
+      "output_bytes": 49440,
+      "quality": 85,
+      "ratio": 0.1768
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/beta/paels_legion.png",
+      "output": "images/monsters/beta/paels_legion.webp",
+      "source_bytes": 74694,
+      "output_bytes": 27054,
+      "quality": 85,
+      "ratio": 0.3622
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/beta/paels_legion_sleeping.png",
+      "output": "images/monsters/beta/paels_legion_sleeping.webp",
+      "source_bytes": 85198,
+      "output_bytes": 29688,
+      "quality": 85,
+      "ratio": 0.3485
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/beta/the_spear.png",
+      "output": "images/monsters/beta/the_spear.webp",
+      "source_bytes": 76418,
+      "output_bytes": 41644,
+      "quality": 85,
+      "ratio": 0.545
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/error.png",
+      "output": "images/monsters/error.webp",
+      "source_bytes": 14406,
+      "output_bytes": 6730,
+      "quality": 85,
+      "ratio": 0.4672
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/mad_crab.png",
+      "output": "images/monsters/mad_crab.webp",
+      "source_bytes": 26744,
+      "output_bytes": 4926,
+      "quality": 85,
+      "ratio": 0.1842
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/phobia_mode/decimillipede_segment_back_phobia.png",
+      "output": "images/monsters/phobia_mode/decimillipede_segment_back_phobia.webp",
+      "source_bytes": 400179,
+      "output_bytes": 73586,
+      "quality": 85,
+      "ratio": 0.1839
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/phobia_mode/decimillipede_segment_back_shriveled_phobia.png",
+      "output": "images/monsters/phobia_mode/decimillipede_segment_back_shriveled_phobia.webp",
+      "source_bytes": 395566,
+      "output_bytes": 47628,
+      "quality": 85,
+      "ratio": 0.1204
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/phobia_mode/decimillipede_segment_front_phobia.png",
+      "output": "images/monsters/phobia_mode/decimillipede_segment_front_phobia.webp",
+      "source_bytes": 421238,
+      "output_bytes": 71758,
+      "quality": 85,
+      "ratio": 0.1704
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/phobia_mode/decimillipede_segment_front_shriveled_phobia.png",
+      "output": "images/monsters/phobia_mode/decimillipede_segment_front_shriveled_phobia.webp",
+      "source_bytes": 387506,
+      "output_bytes": 71072,
+      "quality": 85,
+      "ratio": 0.1834
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/phobia_mode/decimillipede_segment_middle_phobia.png",
+      "output": "images/monsters/phobia_mode/decimillipede_segment_middle_phobia.webp",
+      "source_bytes": 382561,
+      "output_bytes": 74582,
+      "quality": 85,
+      "ratio": 0.195
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/phobia_mode/decimillipede_segment_middle_shriveled_phobia.png",
+      "output": "images/monsters/phobia_mode/decimillipede_segment_middle_shriveled_phobia.webp",
+      "source_bytes": 363721,
+      "output_bytes": 75912,
+      "quality": 85,
+      "ratio": 0.2087
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/phobia_mode/phobia_entomancer.png",
+      "output": "images/monsters/phobia_mode/phobia_entomancer.webp",
+      "source_bytes": 586830,
+      "output_bytes": 102676,
+      "quality": 85,
+      "ratio": 0.175
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/phobia_mode/phrog_parasite_phobia.png",
+      "output": "images/monsters/phobia_mode/phrog_parasite_phobia.webp",
+      "source_bytes": 1264791,
+      "output_bytes": 233386,
+      "quality": 85,
+      "ratio": 0.1845
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/phobia_mode/terror_eel_phobia.png",
+      "output": "images/monsters/phobia_mode/terror_eel_phobia.webp",
+      "source_bytes": 2581481,
+      "output_bytes": 286984,
+      "quality": 85,
+      "ratio": 0.1112
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/phobia_mode/the_insatiable_phobia.png",
+      "output": "images/monsters/phobia_mode/the_insatiable_phobia.webp",
+      "source_bytes": 956510,
+      "output_bytes": 91564,
+      "quality": 85,
+      "ratio": 0.0957
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/phobia_mode/wriggler_phobia.png",
+      "output": "images/monsters/phobia_mode/wriggler_phobia.webp",
+      "source_bytes": 261063,
+      "output_bytes": 68670,
+      "quality": 85,
+      "ratio": 0.263
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/skulkling_colomy.png",
+      "output": "images/monsters/skulkling_colomy.webp",
+      "source_bytes": 348982,
+      "output_bytes": 74750,
+      "quality": 85,
+      "ratio": 0.2142
+    },
+    {
+      "entry": "monster_images",
+      "transform": "webp-q85",
+      "source": "images/monsters/the_adversary_placeholder.png",
+      "output": "images/monsters/the_adversary_placeholder.webp",
+      "source_bytes": 12268,
+      "output_bytes": 6694,
+      "quality": 85,
+      "ratio": 0.5456
     }
   ]
 }

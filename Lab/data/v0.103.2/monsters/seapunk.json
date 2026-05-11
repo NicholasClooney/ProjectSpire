@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SEAPUNK",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Seapunk",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Seapunk.cs",
+    "hp": {
+      "min": 44,
+      "max": 46,
+      "min_ascension": 47,
+      "max_ascension": 49
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "SEAPUNK.name"
+    }
+  },
+  "resolved": {
+    "name": "Seapunk",
+    "moves": [
+      {
+        "id": "BUBBLE_BURP",
+        "title": "Bubble Burp"
+      },
+      {
+        "id": "SEA_KICK",
+        "title": "Sea Kick"
+      },
+      {
+        "id": "SPINNING_KICK",
+        "title": "Spinning Kick"
+      }
+    ]
+  }
+}

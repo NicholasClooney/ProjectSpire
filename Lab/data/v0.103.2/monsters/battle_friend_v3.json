@@ -1,0 +1,33 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BATTLE_FRIEND_V3",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BattleFriendV3",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/BattleFriendV3.cs",
+    "hp": {
+      "min": 300,
+      "max": 300
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "BATTLE_FRIEND_V3.name"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/monsters/battle_friend_v3.webp",
+        "source": "Lab.resources.images.monsters"
+      }
+    ]
+  },
+  "resolved": {
+    "name": "Battle Friend V3.0",
+    "moves": [
+      {
+        "id": "NOTHING",
+        "title": "Nothing"
+      }
+    ]
+  }
+}

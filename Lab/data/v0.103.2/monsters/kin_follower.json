@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "id": "KIN_FOLLOWER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "KinFollower",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/KinFollower.cs",
+    "hp": {
+      "min": 58,
+      "max": 59,
+      "min_ascension": 62,
+      "max_ascension": 63
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "KIN_FOLLOWER.name"
+    }
+  },
+  "resolved": {
+    "name": "Kin Follower",
+    "moves": [
+      {
+        "id": "BOOMERANG_MOVE",
+        "title": "Boomerang"
+      },
+      {
+        "id": "POWER_DANCE_MOVE",
+        "title": "Power Dance"
+      },
+      {
+        "id": "QUICK_SLASH_MOVE",
+        "title": "Quick Slash"
+      }
+    ]
+  }
+}

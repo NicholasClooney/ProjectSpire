@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CALCIFIED_CULTIST",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "CalcifiedCultist",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/CalcifiedCultist.cs",
+    "hp": {
+      "min": 38,
+      "max": 41,
+      "min_ascension": 39,
+      "max_ascension": 42
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "CALCIFIED_CULTIST.name"
+    }
+  },
+  "resolved": {
+    "name": "Calcified Cultist",
+    "moves": [
+      {
+        "id": "DARK_STRIKE",
+        "title": "Dark Strike"
+      },
+      {
+        "id": "INCANTATION",
+        "title": "Incantation"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SPINY_TOAD",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SpinyToad",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/SpinyToad.cs",
+    "hp": {
+      "min": 116,
+      "max": 119,
+      "min_ascension": 121,
+      "max_ascension": 124
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "SPINY_TOAD.name"
+    }
+  },
+  "resolved": {
+    "name": "Spiny Toad",
+    "moves": [
+      {
+        "id": "PROTRUDING_SPIKES",
+        "title": "Protruding Spikes"
+      },
+      {
+        "id": "SPIKE_EXPLOSION",
+        "title": "Spike Explosion"
+      },
+      {
+        "id": "TONGUE_LASH",
+        "title": "Tongue Lash"
+      }
+    ]
+  }
+}

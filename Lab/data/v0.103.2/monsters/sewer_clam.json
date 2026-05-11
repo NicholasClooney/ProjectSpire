@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SEWER_CLAM",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SewerClam",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/SewerClam.cs",
+    "hp": {
+      "min": 56,
+      "max": 56,
+      "min_ascension": 58,
+      "max_ascension": 58
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "SEWER_CLAM.name"
+    }
+  },
+  "resolved": {
+    "name": "Sewer Clam",
+    "moves": [
+      {
+        "id": "JET",
+        "title": "Jet"
+      },
+      {
+        "id": "PRESSURIZE",
+        "title": "Pressurize"
+      }
+    ]
+  }
+}

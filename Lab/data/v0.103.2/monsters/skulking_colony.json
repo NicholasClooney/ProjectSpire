@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SKULKING_COLONY",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SkulkingColony",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/SkulkingColony.cs",
+    "hp": {
+      "min": 70,
+      "max": 70,
+      "min_ascension": 75,
+      "max_ascension": 75
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "SKULKING_COLONY.name"
+    }
+  },
+  "resolved": {
+    "name": "Skulking Colony",
+    "moves": [
+      {
+        "id": "INERTIA",
+        "title": "Inertia"
+      },
+      {
+        "id": "PIERCING_STABS",
+        "title": "Piercing Stabs"
+      },
+      {
+        "id": "ZOOM",
+        "title": "Zoom"
+      }
+    ]
+  }
+}

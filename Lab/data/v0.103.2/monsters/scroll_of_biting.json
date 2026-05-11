@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SCROLL_OF_BITING",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ScrollOfBiting",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/ScrollOfBiting.cs",
+    "hp": {
+      "min": 31,
+      "max": 38,
+      "min_ascension": 32,
+      "max_ascension": 39
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "SCROLL_OF_BITING.name"
+    }
+  },
+  "resolved": {
+    "name": "Scroll of Biting",
+    "moves": [
+      {
+        "id": "CHEW",
+        "title": "Chew"
+      },
+      {
+        "id": "CHOMP",
+        "title": "Chomp"
+      },
+      {
+        "id": "MORE_TEETH",
+        "title": "More Teeth"
+      }
+    ]
+  }
+}

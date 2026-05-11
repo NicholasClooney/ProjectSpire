@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BYRDONIS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Byrdonis",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Byrdonis.cs",
+    "hp": {
+      "min": 81,
+      "max": 84,
+      "min_ascension": 90,
+      "max_ascension": 90
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "BYRDONIS.name"
+    }
+  },
+  "resolved": {
+    "name": "Byrdonis",
+    "moves": [
+      {
+        "id": "BITE",
+        "title": "Bite"
+      },
+      {
+        "id": "PECK",
+        "title": "Peck"
+      },
+      {
+        "id": "PROTECT",
+        "title": "Protect"
+      }
+    ]
+  }
+}

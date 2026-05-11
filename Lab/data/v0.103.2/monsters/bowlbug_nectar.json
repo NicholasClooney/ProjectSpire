@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BOWLBUG_NECTAR",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BowlbugNectar",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/BowlbugNectar.cs",
+    "hp": {
+      "min": 35,
+      "max": 38,
+      "min_ascension": 36,
+      "max_ascension": 39
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "BOWLBUG_NECTAR.name"
+    }
+  },
+  "resolved": {
+    "name": "Bowlbug (Nectar)",
+    "moves": [
+      {
+        "id": "BUFF",
+        "title": "Buff"
+      },
+      {
+        "id": "THRASH",
+        "title": "Thrash"
+      },
+      {
+        "id": "THRASH2",
+        "title": "Thrash"
+      }
+    ]
+  }
+}

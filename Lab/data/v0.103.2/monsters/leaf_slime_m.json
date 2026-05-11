@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "id": "LEAF_SLIME_M",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "LeafSlimeM",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/LeafSlimeM.cs",
+    "hp": {
+      "min": 32,
+      "max": 35,
+      "min_ascension": 33,
+      "max_ascension": 36
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "LEAF_SLIME_M.name"
+    }
+  },
+  "resolved": {
+    "name": "Leaf Slime (M)",
+    "moves": [
+      {
+        "id": "CLUMP_SHOT",
+        "title": "Clump Shot"
+      },
+      {
+        "id": "STICKY_SHOT",
+        "title": "Sticky Shot"
+      }
+    ]
+  }
+}

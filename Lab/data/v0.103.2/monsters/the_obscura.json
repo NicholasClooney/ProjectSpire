@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1.0",
+  "id": "THE_OBSCURA",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TheObscura",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/TheObscura.cs",
+    "hp": {
+      "min": 123,
+      "max": 123,
+      "min_ascension": 129,
+      "max_ascension": 129
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "THE_OBSCURA.name"
+    }
+  },
+  "resolved": {
+    "name": "The Obscura",
+    "moves": [
+      {
+        "id": "HARDENING_STRIKE",
+        "title": "Hardening Strike"
+      },
+      {
+        "id": "ILLUSION",
+        "title": "Illusion"
+      },
+      {
+        "id": "PIERCING_GAZE",
+        "title": "Piercing Gaze"
+      },
+      {
+        "id": "WAIL",
+        "title": "Wail"
+      }
+    ]
+  }
+}

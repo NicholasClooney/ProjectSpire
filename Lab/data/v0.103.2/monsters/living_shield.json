@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "id": "LIVING_SHIELD",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "LivingShield",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/LivingShield.cs",
+    "hp": {
+      "min": 55,
+      "max": 55,
+      "min_ascension": 65,
+      "max_ascension": 65
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "LIVING_SHIELD.name"
+    }
+  },
+  "resolved": {
+    "name": "Living Shield",
+    "moves": [
+      {
+        "id": "SHIELD_SLAM",
+        "title": "Shield Slam"
+      }
+    ]
+  }
+}

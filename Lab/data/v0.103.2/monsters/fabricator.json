@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FABRICATOR",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Fabricator",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Fabricator.cs",
+    "hp": {
+      "min": 150,
+      "max": 150,
+      "min_ascension": 155,
+      "max_ascension": 155
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "FABRICATOR.name"
+    }
+  },
+  "resolved": {
+    "name": "Fabricator",
+    "moves": [
+      {
+        "id": "DISINTEGRATE",
+        "title": "Disintegrate"
+      },
+      {
+        "id": "FABRICATE",
+        "title": "Fabricate"
+      }
+    ]
+  }
+}

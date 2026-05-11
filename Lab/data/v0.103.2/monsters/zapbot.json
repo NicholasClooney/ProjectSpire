@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ZAPBOT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Zapbot",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Zapbot.cs",
+    "hp": {
+      "min": 18,
+      "max": 23,
+      "min_ascension": 19,
+      "max_ascension": 24
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "ZAPBOT.name"
+    }
+  },
+  "resolved": {
+    "name": "Zapbot",
+    "moves": [
+      {
+        "id": "ZAP",
+        "title": "Zap"
+      }
+    ]
+  }
+}

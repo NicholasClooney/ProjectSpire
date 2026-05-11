@@ -1,0 +1,33 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PAELS_LEGION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PaelsLegion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/PaelsLegion.cs",
+    "hp": {
+      "min": 9999,
+      "max": 9999
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "PAELS_LEGION.name"
+    },
+    "assets": [
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/monsters/beta/paels_legion.webp",
+        "source": "Lab.resources.images.monsters"
+      }
+    ]
+  },
+  "resolved": {
+    "name": "Pael's Legion",
+    "moves": [
+      {
+        "id": "NOTHING",
+        "title": "Nothing"
+      }
+    ]
+  }
+}

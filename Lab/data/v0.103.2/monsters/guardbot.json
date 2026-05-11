@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "id": "GUARDBOT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Guardbot",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Guardbot.cs",
+    "hp": {
+      "min": 16,
+      "max": 20,
+      "min_ascension": 17,
+      "max_ascension": 21
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "GUARDBOT.name"
+    }
+  },
+  "resolved": {
+    "name": "Guardbot",
+    "moves": [
+      {
+        "id": "GUARD",
+        "title": "Guard"
+      }
+    ]
+  }
+}

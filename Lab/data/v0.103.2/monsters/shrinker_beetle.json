@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SHRINKER_BEETLE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ShrinkerBeetle",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/ShrinkerBeetle.cs",
+    "hp": {
+      "min": 38,
+      "max": 40,
+      "min_ascension": 40,
+      "max_ascension": 42
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "SHRINKER_BEETLE.name"
+    }
+  },
+  "resolved": {
+    "name": "Shrinker Beetle",
+    "moves": [
+      {
+        "id": "CHOMP",
+        "title": "Chomp"
+      },
+      {
+        "id": "SHRINKER",
+        "title": "Shrinker"
+      },
+      {
+        "id": "STOMP",
+        "title": "Stomp"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SLIMED_BERSERKER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SlimedBerserker",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/SlimedBerserker.cs",
+    "hp": {
+      "min": 266,
+      "max": 266,
+      "min_ascension": 276,
+      "max_ascension": 276
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "SLIMED_BERSERKER.name"
+    }
+  },
+  "resolved": {
+    "name": "Slimed Berserker"
+  }
+}

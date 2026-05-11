@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FLYCONID",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Flyconid",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Flyconid.cs",
+    "hp": {
+      "min": 47,
+      "max": 49,
+      "min_ascension": 51,
+      "max_ascension": 53
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "FLYCONID.name"
+    }
+  },
+  "resolved": {
+    "name": "Flyconid",
+    "moves": [
+      {
+        "id": "FRAIL_SPORES",
+        "title": "Frail Spores"
+      },
+      {
+        "id": "SMASH",
+        "title": "Smash"
+      },
+      {
+        "id": "TACKLE.WEAKENING_SPORES",
+        "title": "Weakening Spores"
+      }
+    ]
+  }
+}

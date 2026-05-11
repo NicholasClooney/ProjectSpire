@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BRUTE_RUBY_RAIDER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BruteRubyRaider",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/BruteRubyRaider.cs",
+    "hp": {
+      "min": 30,
+      "max": 33,
+      "min_ascension": 31,
+      "max_ascension": 34
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "BRUTE_RUBY_RAIDER.name"
+    }
+  },
+  "resolved": {
+    "name": "Brute Raider",
+    "moves": [
+      {
+        "id": "BEAT",
+        "title": "Beat"
+      },
+      {
+        "id": "CLAP",
+        "title": "Clap"
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1.0",
+  "id": "KIN_PRIEST",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "KinPriest",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/KinPriest.cs",
+    "hp": {
+      "min": 190,
+      "max": 190,
+      "min_ascension": 199,
+      "max_ascension": 199
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "KIN_PRIEST.name"
+    }
+  },
+  "resolved": {
+    "name": "Kin Priest",
+    "moves": [
+      {
+        "id": "BEAM_MOVE",
+        "title": "Soul Beam"
+      },
+      {
+        "id": "OR_OF_FRAILTY_MOVE",
+        "title": "Orb of Frailty"
+      },
+      {
+        "id": "OR_OF_WEAKNESS_MOVE",
+        "title": "Orb of Weakness"
+      },
+      {
+        "id": "RITUAL_MOVE",
+        "title": "Dark Ritual"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DEPRECATED_MONSTER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DeprecatedMonster",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/DeprecatedMonster.cs",
+    "hp": {
+      "min": 0,
+      "max": 0
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "DEPRECATED_MONSTER.name"
+    }
+  },
+  "resolved": {
+    "name": "Deprecated Monster"
+  }
+}

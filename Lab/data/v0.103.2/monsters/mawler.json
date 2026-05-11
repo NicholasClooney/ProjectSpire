@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "id": "MAWLER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Mawler",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Mawler.cs",
+    "hp": {
+      "min": 72,
+      "max": 72,
+      "min_ascension": 76,
+      "max_ascension": 76
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "MAWLER.name"
+    }
+  },
+  "resolved": {
+    "name": "Mawler",
+    "moves": [
+      {
+        "id": "CLAW",
+        "title": "Claw"
+      },
+      {
+        "id": "RIP_AND_TEAR",
+        "title": "Rip and Tear"
+      },
+      {
+        "id": "ROAR",
+        "title": "Roar"
+      }
+    ]
+  }
+}

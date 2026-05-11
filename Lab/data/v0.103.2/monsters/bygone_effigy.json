@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BYGONE_EFFIGY",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BygoneEffigy",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/BygoneEffigy.cs",
+    "hp": {
+      "min": 127,
+      "max": 127,
+      "min_ascension": 132,
+      "max_ascension": 132
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "BYGONE_EFFIGY.name"
+    }
+  },
+  "resolved": {
+    "name": "Bygone Effigy",
+    "moves": [
+      {
+        "id": "SLASHES",
+        "title": "Slashes"
+      },
+      {
+        "id": "SLEEP",
+        "title": "Sleep"
+      }
+    ]
+  }
+}

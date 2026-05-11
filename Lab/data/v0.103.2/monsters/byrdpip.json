@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BYRDPIP",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Byrdpip",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Byrdpip.cs",
+    "hp": {
+      "min": 9999,
+      "max": 9999
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "BYRDPIP.name"
+    }
+  },
+  "resolved": {
+    "name": "Byrdpip",
+    "moves": [
+      {
+        "id": "NOTHING",
+        "title": "Nothing"
+      }
+    ]
+  }
+}

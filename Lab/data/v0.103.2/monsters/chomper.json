@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CHOMPER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Chomper",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Monsters/Chomper.cs",
+    "hp": {
+      "min": 60,
+      "max": 64,
+      "min_ascension": 63,
+      "max_ascension": 67
+    },
+    "localization": {
+      "table": "monsters",
+      "name_key": "CHOMPER.name"
+    }
+  },
+  "resolved": {
+    "name": "Chomper",
+    "moves": [
+      {
+        "id": "CLAMP",
+        "title": "Clamp"
+      },
+      {
+        "id": "SCREECH",
+        "title": "Screech"
+      },
+      {
+        "id": "THRASH",
+        "title": "Thrash"
+      }
+    ]
+  }
+}
