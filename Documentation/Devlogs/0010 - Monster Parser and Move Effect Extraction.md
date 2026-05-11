@@ -39,6 +39,8 @@ The C# state machine is now parsed to extract per-move effect data. The approach
 
 **Intent kinds recognized:** `SingleAttack`, `MultiAttack`, `Defend`, `Buff`, `Debuff`, `Status`, `Heal`, `Hidden`, `Stun`, `Escape`, `Summon`, `Sleep`, `CardDebuff`, `DeathBlow`.
 
+**Why intents and powers are separate fields.** Intents come from the `MoveState` constructor — they are the UI indicators the game shows above the monster to telegraph what it will do. Powers (block, applied powers, status cards, heal) come from parsing the handler method body — they are the actual mechanical effects. These are structurally distinct sources and have different semantics: intents are the display layer, handler effects are the mechanics layer. Merging them would require inferring which intent corresponds to which effect by position, which can be wrong. For example, a move with `[SingleAttack, Debuff, Buff]` intents and `[WeakPower(1), SteamEruptionPower(3)]` powers has no structural guarantee that `Debuff` maps to `Weak` and `Buff` maps to `SteamEruption` — it's true for that monster, but the C# enforces nothing. Keeping them separate preserves fidelity to the source.
+
 **Images** are sparse. Most monster visuals are Spine animations stored as atlas PNGs, not standalone images. Only 4 monsters have portrait WebP files; 18 have beta portrait files.
 
 **Resources allowlist** gained a `monster_images` entry.
