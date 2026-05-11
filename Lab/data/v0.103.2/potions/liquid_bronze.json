@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "LIQUID_BRONZE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "LiquidBronze",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/LiquidBronze.cs",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "LIQUID_BRONZE.title",
+      "description_key": "LIQUID_BRONZE.description"
+    },
+    "vars": {
+      "ThornsPower": 3
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "ThornsPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/liquid_bronze.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Liquid Bronze",
+    "description": {
+      "plain": "Gain 3 Thorns.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "3",
+          "source_var": "ThornsPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Thorns",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

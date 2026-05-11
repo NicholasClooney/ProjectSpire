@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BLOCK_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BlockPotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/BlockPotion.cs",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "BLOCK_POTION.title",
+      "description_key": "BLOCK_POTION.description"
+    },
+    "vars": {
+      "Block": 12
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/block_potion.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Block Potion",
+    "description": {
+      "plain": "Gain 12 Block.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "12",
+          "source_var": "Block",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

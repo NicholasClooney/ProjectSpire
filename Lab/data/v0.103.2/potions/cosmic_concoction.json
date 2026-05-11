@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "COSMIC_CONCOCTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "CosmicConcoction",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/CosmicConcoction.cs",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target_type": "Self",
+    "pools": [
+      "regent"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "COSMIC_CONCOCTION.title",
+      "description_key": "COSMIC_CONCOCTION.description"
+    },
+    "vars": {
+      "Cards": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/cosmic_concoction.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Cosmic Concoction",
+    "description": {
+      "plain": "Add 3 Upgraded Colorless cards into your Hand.",
+      "runs": [
+        {
+          "text": "Add "
+        },
+        {
+          "text": "3",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Upgraded",
+          "style": "gold"
+        },
+        {
+          "text": " Colorless cards into your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

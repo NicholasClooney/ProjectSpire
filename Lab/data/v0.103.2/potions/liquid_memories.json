@@ -1,0 +1,60 @@
+{
+  "schema_version": "0.1.0",
+  "id": "LIQUID_MEMORIES",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "LiquidMemories",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/LiquidMemories.cs",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target_type": "Self",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "LIQUID_MEMORIES.title",
+      "description_key": "LIQUID_MEMORIES.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/liquid_memories.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Liquid Memories",
+    "description": {
+      "plain": "Put a card from your Discard Pile into your Hand. It's free to play this turn.",
+      "runs": [
+        {
+          "text": "Put a card from your "
+        },
+        {
+          "text": "Discard Pile",
+          "style": "gold"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": ". It's free to play this turn."
+        }
+      ]
+    },
+    "selection_screen_prompt": {
+      "plain": "Choose a card to put into your Hand.",
+      "runs": [
+        {
+          "text": "Choose a card to put into your Hand."
+        }
+      ]
+    }
+  }
+}

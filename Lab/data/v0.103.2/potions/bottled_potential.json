@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BOTTLED_POTENTIAL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BottledPotential",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/BottledPotential.cs",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "BOTTLED_POTENTIAL.title",
+      "description_key": "BOTTLED_POTENTIAL.description"
+    },
+    "vars": {
+      "Cards": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/bottled_potential.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Bottled Potential",
+    "description": {
+      "plain": "Shuffle ALL your cards into your Draw Pile. Draw 5 cards.",
+      "runs": [
+        {
+          "text": "Shuffle ALL your cards into your "
+        },
+        {
+          "text": "Draw Pile",
+          "style": "gold"
+        },
+        {
+          "text": ". Draw "
+        },
+        {
+          "text": "5",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards."
+        }
+      ]
+    }
+  }
+}

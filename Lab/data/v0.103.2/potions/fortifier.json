@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FORTIFIER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Fortifier",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/Fortifier.cs",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "FORTIFIER.title",
+      "description_key": "FORTIFIER.description"
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/fortifier.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Fortifier",
+    "description": {
+      "plain": "Triple your Block.",
+      "runs": [
+        {
+          "text": "Triple your "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

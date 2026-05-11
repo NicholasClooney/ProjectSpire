@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "STRENGTH_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "StrengthPotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/StrengthPotion.cs",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "STRENGTH_POTION.title",
+      "description_key": "STRENGTH_POTION.description"
+    },
+    "vars": {
+      "StrengthPower": 2
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/strength_potion.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Strength Potion",
+    "description": {
+      "plain": "Gain 2 Strength.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "2",
+          "source_var": "StrengthPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

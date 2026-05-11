@@ -1,0 +1,68 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ESSENCE_OF_DARKNESS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "EssenceOfDarkness",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/EssenceOfDarkness.cs",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target_type": "Self",
+    "pools": [
+      "defect"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "ESSENCE_OF_DARKNESS.title",
+      "description_key": "ESSENCE_OF_DARKNESS.description"
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Channeling",
+        "source": "HoverTipFactory.Static"
+      },
+      {
+        "kind": "hover_tip_orb",
+        "target": "DarkOrb",
+        "source": "HoverTipFactory.FromOrb"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/essence_of_darkness.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Essence of Darkness",
+    "description": {
+      "plain": "Channel a Dark for each of your Orb Slots.",
+      "runs": [
+        {
+          "text": "Channel",
+          "style": "gold"
+        },
+        {
+          "text": " a "
+        },
+        {
+          "text": "Dark",
+          "style": "gold"
+        },
+        {
+          "text": " for each of your "
+        },
+        {
+          "text": "Orb Slots",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

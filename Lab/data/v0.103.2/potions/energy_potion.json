@@ -1,0 +1,55 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ENERGY_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "EnergyPotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/EnergyPotion.cs",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "ENERGY_POTION.title",
+      "description_key": "ENERGY_POTION.description"
+    },
+    "vars": {
+      "Energy": 2
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_energy",
+        "target": "Energy",
+        "source": "HoverTipFactory.ForEnergy"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/energy_potion.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Energy Potion",
+    "description": {
+      "plain": "Gain 2.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "2",
+          "source_var": "Energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

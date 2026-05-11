@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "REGEN_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "RegenPotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/RegenPotion.cs",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "REGEN_POTION.title",
+      "description_key": "REGEN_POTION.description"
+    },
+    "vars": {
+      "RegenPower": 5
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "RegenPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/regen_potion.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Regen Potion",
+    "description": {
+      "plain": "Gain 5 Regen.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "5",
+          "source_var": "RegenPower",
+          "style": "green"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Regen",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

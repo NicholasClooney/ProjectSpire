@@ -1,0 +1,62 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BEETLE_JUICE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BeetleJuice",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/BeetleJuice.cs",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target_type": "AnyEnemy",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "BEETLE_JUICE.title",
+      "description_key": "BEETLE_JUICE.description"
+    },
+    "vars": {
+      "DamageDecrease": 30,
+      "Repeat": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/beetle_juice.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Beetle Juice",
+    "description": {
+      "plain": "Enemy's attacks deal 30% less damage for the next 4 turns.",
+      "runs": [
+        {
+          "text": "Enemy's attacks deal "
+        },
+        {
+          "text": "30",
+          "source_var": "DamageDecrease",
+          "style": "blue"
+        },
+        {
+          "text": "%",
+          "style": "blue"
+        },
+        {
+          "text": " less damage for the next "
+        },
+        {
+          "text": "4",
+          "source_var": "Repeat",
+          "style": "blue"
+        },
+        {
+          "text": " turns."
+        }
+      ]
+    }
+  }
+}

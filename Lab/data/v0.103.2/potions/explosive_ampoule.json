@@ -1,0 +1,49 @@
+{
+  "schema_version": "0.1.0",
+  "id": "EXPLOSIVE_AMPOULE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ExplosiveAmpoule",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/ExplosiveAmpoule.cs",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target_type": "AllEnemies",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "EXPLOSIVE_AMPOULE.title",
+      "description_key": "EXPLOSIVE_AMPOULE.description"
+    },
+    "vars": {
+      "Damage": 10
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/explosive_ampoule.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Explosive Ampoule",
+    "description": {
+      "plain": "Deal 10 damage to ALL enemies.",
+      "runs": [
+        {
+          "text": "Deal "
+        },
+        {
+          "text": "10",
+          "source_var": "Damage",
+          "style": "blue"
+        },
+        {
+          "text": " damage to ALL enemies."
+        }
+      ]
+    }
+  }
+}

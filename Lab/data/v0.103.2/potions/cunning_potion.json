@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CUNNING_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "CunningPotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/CunningPotion.cs",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target_type": "Self",
+    "pools": [
+      "silent"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "CUNNING_POTION.title",
+      "description_key": "CUNNING_POTION.description"
+    },
+    "vars": {
+      "Cards": 3
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "SHIV",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/cunning_potion.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Cunning Potion",
+    "description": {
+      "plain": "Add 3 Upgraded Shivs into your Hand.",
+      "runs": [
+        {
+          "text": "Add "
+        },
+        {
+          "text": "3",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Upgraded Shivs",
+          "style": "gold"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BONE_BREW",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BoneBrew",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/BoneBrew.cs",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target_type": "Self",
+    "pools": [
+      "necrobinder"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "BONE_BREW.title",
+      "description_key": "BONE_BREW.description"
+    },
+    "vars": {
+      "Summon": 15
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/bone_brew.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Bone Brew",
+    "description": {
+      "plain": "Summon 15.",
+      "runs": [
+        {
+          "text": "Summon",
+          "style": "gold"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "15",
+          "source_var": "Summon",
+          "style": "blue"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

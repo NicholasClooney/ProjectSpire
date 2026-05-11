@@ -1,0 +1,38 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ENTROPIC_BREW",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "EntropicBrew",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/EntropicBrew.cs",
+    "rarity": "Rare",
+    "usage": "AnyTime",
+    "target_type": "Self",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "ENTROPIC_BREW.title",
+      "description_key": "ENTROPIC_BREW.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/entropic_brew.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Entropic Brew",
+    "description": {
+      "plain": "Fill all your empty potion slots with random potions.",
+      "runs": [
+        {
+          "text": "Fill all your empty potion slots with random potions."
+        }
+      ]
+    }
+  }
+}

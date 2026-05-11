@@ -2,7 +2,7 @@
   "version": 1,
   "source_root": "/Users/nicholasclooney/Source/Projects/ProjectSpire/Lab/unpacked",
   "output_root": "/Users/nicholasclooney/Source/Projects/ProjectSpire/Lab/resources",
-  "generated_at": "2026-05-11T12:18:45.316375+00:00",
+  "generated_at": "2026-05-11T12:35:43.338001+00:00",
   "entries": [
     {
       "entry": "localization",
@@ -17694,6 +17694,666 @@
       "output_bytes": 10116,
       "quality": 85,
       "ratio": 0.2167
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/ashwater.png",
+      "output": "images/potions/ashwater.webp",
+      "source_bytes": 56793,
+      "output_bytes": 11014,
+      "quality": 85,
+      "ratio": 0.1939
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/attack_potion.png",
+      "output": "images/potions/attack_potion.webp",
+      "source_bytes": 52685,
+      "output_bytes": 15648,
+      "quality": 85,
+      "ratio": 0.297
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/beetle_juice.png",
+      "output": "images/potions/beetle_juice.webp",
+      "source_bytes": 39114,
+      "output_bytes": 10700,
+      "quality": 85,
+      "ratio": 0.2736
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/blessing_of_the_forge.png",
+      "output": "images/potions/blessing_of_the_forge.webp",
+      "source_bytes": 41187,
+      "output_bytes": 15254,
+      "quality": 85,
+      "ratio": 0.3704
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/block_potion.png",
+      "output": "images/potions/block_potion.webp",
+      "source_bytes": 42969,
+      "output_bytes": 14186,
+      "quality": 85,
+      "ratio": 0.3301
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/blood_potion.png",
+      "output": "images/potions/blood_potion.webp",
+      "source_bytes": 58568,
+      "output_bytes": 14102,
+      "quality": 85,
+      "ratio": 0.2408
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/bone_brew.png",
+      "output": "images/potions/bone_brew.webp",
+      "source_bytes": 37937,
+      "output_bytes": 12072,
+      "quality": 85,
+      "ratio": 0.3182
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/bottled_potential.png",
+      "output": "images/potions/bottled_potential.webp",
+      "source_bytes": 62809,
+      "output_bytes": 16732,
+      "quality": 85,
+      "ratio": 0.2664
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/clarity.png",
+      "output": "images/potions/clarity.webp",
+      "source_bytes": 46303,
+      "output_bytes": 13756,
+      "quality": 85,
+      "ratio": 0.2971
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/colorless_potion.png",
+      "output": "images/potions/colorless_potion.webp",
+      "source_bytes": 46150,
+      "output_bytes": 14090,
+      "quality": 85,
+      "ratio": 0.3053
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/cosmic_concoction.png",
+      "output": "images/potions/cosmic_concoction.webp",
+      "source_bytes": 46994,
+      "output_bytes": 14694,
+      "quality": 85,
+      "ratio": 0.3127
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/cunning_potion.png",
+      "output": "images/potions/cunning_potion.webp",
+      "source_bytes": 30302,
+      "output_bytes": 9942,
+      "quality": 85,
+      "ratio": 0.3281
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/cure_all.png",
+      "output": "images/potions/cure_all.webp",
+      "source_bytes": 52058,
+      "output_bytes": 18156,
+      "quality": 85,
+      "ratio": 0.3488
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/dexterity_potion.png",
+      "output": "images/potions/dexterity_potion.webp",
+      "source_bytes": 41400,
+      "output_bytes": 15312,
+      "quality": 85,
+      "ratio": 0.3699
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/distilled_chaos.png",
+      "output": "images/potions/distilled_chaos.webp",
+      "source_bytes": 44760,
+      "output_bytes": 12938,
+      "quality": 85,
+      "ratio": 0.2891
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/droplet_of_precognition.png",
+      "output": "images/potions/droplet_of_precognition.webp",
+      "source_bytes": 42042,
+      "output_bytes": 13874,
+      "quality": 85,
+      "ratio": 0.33
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/duplicator.png",
+      "output": "images/potions/duplicator.webp",
+      "source_bytes": 40421,
+      "output_bytes": 16226,
+      "quality": 85,
+      "ratio": 0.4014
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/energy_potion.png",
+      "output": "images/potions/energy_potion.webp",
+      "source_bytes": 48386,
+      "output_bytes": 16322,
+      "quality": 85,
+      "ratio": 0.3373
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/entropic_brew.png",
+      "output": "images/potions/entropic_brew.webp",
+      "source_bytes": 45141,
+      "output_bytes": 14724,
+      "quality": 85,
+      "ratio": 0.3262
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/essence_of_darkness.png",
+      "output": "images/potions/essence_of_darkness.webp",
+      "source_bytes": 50452,
+      "output_bytes": 14186,
+      "quality": 85,
+      "ratio": 0.2812
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/explosive_ampoule.png",
+      "output": "images/potions/explosive_ampoule.webp",
+      "source_bytes": 34077,
+      "output_bytes": 14064,
+      "quality": 85,
+      "ratio": 0.4127
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/fairy_in_a_bottle.png",
+      "output": "images/potions/fairy_in_a_bottle.webp",
+      "source_bytes": 53433,
+      "output_bytes": 20996,
+      "quality": 85,
+      "ratio": 0.3929
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/fire_potion.png",
+      "output": "images/potions/fire_potion.webp",
+      "source_bytes": 47517,
+      "output_bytes": 15800,
+      "quality": 85,
+      "ratio": 0.3325
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/flex_potion.png",
+      "output": "images/potions/flex_potion.webp",
+      "source_bytes": 50444,
+      "output_bytes": 19584,
+      "quality": 85,
+      "ratio": 0.3882
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/focus_potion.png",
+      "output": "images/potions/focus_potion.webp",
+      "source_bytes": 34415,
+      "output_bytes": 12086,
+      "quality": 85,
+      "ratio": 0.3512
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/fortifier.png",
+      "output": "images/potions/fortifier.webp",
+      "source_bytes": 39315,
+      "output_bytes": 11212,
+      "quality": 85,
+      "ratio": 0.2852
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/foul_potion.png",
+      "output": "images/potions/foul_potion.webp",
+      "source_bytes": 36261,
+      "output_bytes": 11470,
+      "quality": 85,
+      "ratio": 0.3163
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/fruit_juice.png",
+      "output": "images/potions/fruit_juice.webp",
+      "source_bytes": 45924,
+      "output_bytes": 14188,
+      "quality": 85,
+      "ratio": 0.3089
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/fysh_oil.png",
+      "output": "images/potions/fysh_oil.webp",
+      "source_bytes": 46097,
+      "output_bytes": 16074,
+      "quality": 85,
+      "ratio": 0.3487
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/gamblers_brew.png",
+      "output": "images/potions/gamblers_brew.webp",
+      "source_bytes": 53233,
+      "output_bytes": 16270,
+      "quality": 85,
+      "ratio": 0.3056
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/ghost_in_a_jar.png",
+      "output": "images/potions/ghost_in_a_jar.webp",
+      "source_bytes": 62135,
+      "output_bytes": 18458,
+      "quality": 85,
+      "ratio": 0.2971
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/gigantification_potion.png",
+      "output": "images/potions/gigantification_potion.webp",
+      "source_bytes": 58065,
+      "output_bytes": 18536,
+      "quality": 85,
+      "ratio": 0.3192
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/glowwater_potion.png",
+      "output": "images/potions/glowwater_potion.webp",
+      "source_bytes": 57410,
+      "output_bytes": 17622,
+      "quality": 85,
+      "ratio": 0.307
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/heart_of_iron.png",
+      "output": "images/potions/heart_of_iron.webp",
+      "source_bytes": 36183,
+      "output_bytes": 12268,
+      "quality": 85,
+      "ratio": 0.3391
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/kings_courage.png",
+      "output": "images/potions/kings_courage.webp",
+      "source_bytes": 47311,
+      "output_bytes": 14392,
+      "quality": 85,
+      "ratio": 0.3042
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/liquid_bronze.png",
+      "output": "images/potions/liquid_bronze.webp",
+      "source_bytes": 46672,
+      "output_bytes": 16906,
+      "quality": 85,
+      "ratio": 0.3622
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/liquid_memories.png",
+      "output": "images/potions/liquid_memories.webp",
+      "source_bytes": 47106,
+      "output_bytes": 13478,
+      "quality": 85,
+      "ratio": 0.2861
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/lucky_tonic.png",
+      "output": "images/potions/lucky_tonic.webp",
+      "source_bytes": 46640,
+      "output_bytes": 15604,
+      "quality": 85,
+      "ratio": 0.3346
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/mazaleths_gift.png",
+      "output": "images/potions/mazaleths_gift.webp",
+      "source_bytes": 60875,
+      "output_bytes": 15768,
+      "quality": 85,
+      "ratio": 0.259
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/orobic_acid.png",
+      "output": "images/potions/orobic_acid.webp",
+      "source_bytes": 48075,
+      "output_bytes": 15022,
+      "quality": 85,
+      "ratio": 0.3125
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/poison_potion.png",
+      "output": "images/potions/poison_potion.webp",
+      "source_bytes": 33002,
+      "output_bytes": 12162,
+      "quality": 85,
+      "ratio": 0.3685
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/pot_of_ghouls.png",
+      "output": "images/potions/pot_of_ghouls.webp",
+      "source_bytes": 54824,
+      "output_bytes": 11356,
+      "quality": 85,
+      "ratio": 0.2071
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/potion_of_binding.png",
+      "output": "images/potions/potion_of_binding.webp",
+      "source_bytes": 60676,
+      "output_bytes": 15240,
+      "quality": 85,
+      "ratio": 0.2512
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/potion_of_capacity.png",
+      "output": "images/potions/potion_of_capacity.webp",
+      "source_bytes": 43742,
+      "output_bytes": 13790,
+      "quality": 85,
+      "ratio": 0.3153
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/potion_of_doom.png",
+      "output": "images/potions/potion_of_doom.webp",
+      "source_bytes": 41528,
+      "output_bytes": 14286,
+      "quality": 85,
+      "ratio": 0.344
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/potion_pop_up/potion_popup.png",
+      "output": "images/potions/potion_pop_up/potion_popup.webp",
+      "source_bytes": 56186,
+      "output_bytes": 10022,
+      "quality": 85,
+      "ratio": 0.1784
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/potion_pop_up/potion_popup_bottom.png",
+      "output": "images/potions/potion_pop_up/potion_popup_bottom.webp",
+      "source_bytes": 4233,
+      "output_bytes": 1770,
+      "quality": 85,
+      "ratio": 0.4181
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/potion_pop_up/potion_popup_top.png",
+      "output": "images/potions/potion_pop_up/potion_popup_top.webp",
+      "source_bytes": 8130,
+      "output_bytes": 3314,
+      "quality": 85,
+      "ratio": 0.4076
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/potion_shaped_rock.png",
+      "output": "images/potions/potion_shaped_rock.webp",
+      "source_bytes": 23455,
+      "output_bytes": 6384,
+      "quality": 85,
+      "ratio": 0.2722
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/powdered_demise.png",
+      "output": "images/potions/powdered_demise.webp",
+      "source_bytes": 47788,
+      "output_bytes": 13818,
+      "quality": 85,
+      "ratio": 0.2892
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/power_potion.png",
+      "output": "images/potions/power_potion.webp",
+      "source_bytes": 50045,
+      "output_bytes": 15058,
+      "quality": 85,
+      "ratio": 0.3009
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/radiant_tincture.png",
+      "output": "images/potions/radiant_tincture.webp",
+      "source_bytes": 30314,
+      "output_bytes": 8292,
+      "quality": 85,
+      "ratio": 0.2735
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/regen_potion.png",
+      "output": "images/potions/regen_potion.webp",
+      "source_bytes": 42174,
+      "output_bytes": 14332,
+      "quality": 85,
+      "ratio": 0.3398
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/shackling_potion.png",
+      "output": "images/potions/shackling_potion.webp",
+      "source_bytes": 75119,
+      "output_bytes": 18580,
+      "quality": 85,
+      "ratio": 0.2473
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/ship_in_a_bottle.png",
+      "output": "images/potions/ship_in_a_bottle.webp",
+      "source_bytes": 55847,
+      "output_bytes": 18542,
+      "quality": 85,
+      "ratio": 0.332
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/skill_potion.png",
+      "output": "images/potions/skill_potion.webp",
+      "source_bytes": 48837,
+      "output_bytes": 14380,
+      "quality": 85,
+      "ratio": 0.2944
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/snecko_oil.png",
+      "output": "images/potions/snecko_oil.webp",
+      "source_bytes": 52662,
+      "output_bytes": 17052,
+      "quality": 85,
+      "ratio": 0.3238
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/soldiers_stew.png",
+      "output": "images/potions/soldiers_stew.webp",
+      "source_bytes": 42627,
+      "output_bytes": 11966,
+      "quality": 85,
+      "ratio": 0.2807
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/speed_potion.png",
+      "output": "images/potions/speed_potion.webp",
+      "source_bytes": 43990,
+      "output_bytes": 15378,
+      "quality": 85,
+      "ratio": 0.3496
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/stable_serum.png",
+      "output": "images/potions/stable_serum.webp",
+      "source_bytes": 40071,
+      "output_bytes": 12192,
+      "quality": 85,
+      "ratio": 0.3043
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/star_potion.png",
+      "output": "images/potions/star_potion.webp",
+      "source_bytes": 37560,
+      "output_bytes": 14382,
+      "quality": 85,
+      "ratio": 0.3829
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/strength_potion.png",
+      "output": "images/potions/strength_potion.webp",
+      "source_bytes": 50679,
+      "output_bytes": 16816,
+      "quality": 85,
+      "ratio": 0.3318
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/swift_potion.png",
+      "output": "images/potions/swift_potion.webp",
+      "source_bytes": 60450,
+      "output_bytes": 17020,
+      "quality": 85,
+      "ratio": 0.2816
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/touch_of_insanity.png",
+      "output": "images/potions/touch_of_insanity.webp",
+      "source_bytes": 35324,
+      "output_bytes": 11192,
+      "quality": 85,
+      "ratio": 0.3168
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/vulnerable_potion.png",
+      "output": "images/potions/vulnerable_potion.webp",
+      "source_bytes": 45080,
+      "output_bytes": 16342,
+      "quality": 85,
+      "ratio": 0.3625
+    },
+    {
+      "entry": "potion_images",
+      "transform": "webp-q85",
+      "source": "images/potions/weak_potion.png",
+      "output": "images/potions/weak_potion.webp",
+      "source_bytes": 46999,
+      "output_bytes": 15436,
+      "quality": 85,
+      "ratio": 0.3284
     }
   ]
 }

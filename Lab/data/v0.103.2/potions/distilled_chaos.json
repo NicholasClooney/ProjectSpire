@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DISTILLED_CHAOS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DistilledChaos",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/DistilledChaos.cs",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target_type": "Self",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "DISTILLED_CHAOS.title",
+      "description_key": "DISTILLED_CHAOS.description"
+    },
+    "vars": {
+      "Repeat": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/distilled_chaos.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Distilled Chaos",
+    "description": {
+      "plain": "Play the top 3 cards of your Draw Pile.",
+      "runs": [
+        {
+          "text": "Play the top "
+        },
+        {
+          "text": "3",
+          "source_var": "Repeat",
+          "style": "blue"
+        },
+        {
+          "text": " cards of your "
+        },
+        {
+          "text": "Draw Pile",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

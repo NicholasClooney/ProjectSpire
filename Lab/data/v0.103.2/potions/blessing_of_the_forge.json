@@ -1,0 +1,49 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BLESSING_OF_THE_FORGE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BlessingOfTheForge",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/BlessingOfTheForge.cs",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target_type": "Self",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "BLESSING_OF_THE_FORGE.title",
+      "description_key": "BLESSING_OF_THE_FORGE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/blessing_of_the_forge.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Blessing of the Forge",
+    "description": {
+      "plain": "Upgrade all cards in your Hand for the rest of combat.",
+      "runs": [
+        {
+          "text": "Upgrade",
+          "style": "gold"
+        },
+        {
+          "text": " all cards in your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": " for the rest of combat."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CURE_ALL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "CureAll",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/CureAll.cs",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "CURE_ALL.title",
+      "description_key": "CURE_ALL.description"
+    },
+    "vars": {
+      "Energy": 1,
+      "Cards": 2
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_energy",
+        "target": "Energy",
+        "source": "HoverTipFactory.ForEnergy"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/cure_all.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Cure All",
+    "description": {
+      "plain": "Gain 1. Draw 2 cards.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "1",
+          "source_var": "Energy"
+        },
+        {
+          "text": ". Draw "
+        },
+        {
+          "text": "2",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DEXTERITY_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DexterityPotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/DexterityPotion.cs",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "DEXTERITY_POTION.title",
+      "description_key": "DEXTERITY_POTION.description"
+    },
+    "vars": {
+      "DexterityPower": 2
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "DexterityPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/dexterity_potion.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Dexterity Potion",
+    "description": {
+      "plain": "Gain 2 Dexterity.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "2",
+          "source_var": "DexterityPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dexterity",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

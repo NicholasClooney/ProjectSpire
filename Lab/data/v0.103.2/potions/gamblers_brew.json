@@ -1,0 +1,46 @@
+{
+  "schema_version": "0.1.0",
+  "id": "GAMBLERS_BREW",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "GamblersBrew",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/GamblersBrew.cs",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target_type": "Self",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "GAMBLERS_BREW.title",
+      "description_key": "GAMBLERS_BREW.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/gamblers_brew.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Gambler's Brew",
+    "description": {
+      "plain": "Discard any number of cards, then draw that many.",
+      "runs": [
+        {
+          "text": "Discard any number of cards, then draw that many."
+        }
+      ]
+    },
+    "selection_screen_prompt": {
+      "plain": "Choose any number of cards to replace.",
+      "runs": [
+        {
+          "text": "Choose any number of cards to replace."
+        }
+      ]
+    }
+  }
+}

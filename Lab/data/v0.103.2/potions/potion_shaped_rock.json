@@ -1,0 +1,49 @@
+{
+  "schema_version": "0.1.0",
+  "id": "POTION_SHAPED_ROCK",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PotionShapedRock",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/PotionShapedRock.cs",
+    "rarity": "Token",
+    "usage": "CombatOnly",
+    "target_type": "AnyEnemy",
+    "pools": [
+      "token"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "POTION_SHAPED_ROCK.title",
+      "description_key": "POTION_SHAPED_ROCK.description"
+    },
+    "vars": {
+      "Damage": 15
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/potion_shaped_rock.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Potion-Shaped Rock",
+    "description": {
+      "plain": "Deal 15 damage.",
+      "runs": [
+        {
+          "text": "Deal "
+        },
+        {
+          "text": "15",
+          "source_var": "Damage",
+          "style": "blue"
+        },
+        {
+          "text": " damage."
+        }
+      ]
+    }
+  }
+}

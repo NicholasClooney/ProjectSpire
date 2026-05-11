@@ -1,0 +1,60 @@
+{
+  "schema_version": "0.1.0",
+  "id": "KINGS_COURAGE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "KingsCourage",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/KingsCourage.cs",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "regent"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "KINGS_COURAGE.title",
+      "description_key": "KINGS_COURAGE.description"
+    },
+    "vars": {
+      "Forge": 15
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_forge",
+        "target": "Forge",
+        "source": "HoverTipFactory.FromForge"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/kings_courage.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "King's Courage",
+    "description": {
+      "plain": "Forge 15.",
+      "runs": [
+        {
+          "text": "Forge",
+          "style": "gold"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "15",
+          "source_var": "Forge",
+          "style": "blue"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

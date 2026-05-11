@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "POT_OF_GHOULS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PotOfGhouls",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/PotOfGhouls.cs",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target_type": "Self",
+    "pools": [
+      "necrobinder"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "POT_OF_GHOULS.title",
+      "description_key": "POT_OF_GHOULS.description"
+    },
+    "vars": {
+      "Cards": 2
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "SOUL",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/pot_of_ghouls.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Pot of Ghouls",
+    "description": {
+      "plain": "Add 2 Souls into your Hand.",
+      "runs": [
+        {
+          "text": "Add "
+        },
+        {
+          "text": "2",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Souls",
+          "style": "gold"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

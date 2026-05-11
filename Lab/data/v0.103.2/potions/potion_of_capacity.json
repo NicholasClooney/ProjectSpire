@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "POTION_OF_CAPACITY",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PotionOfCapacity",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/PotionOfCapacity.cs",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target_type": "Self",
+    "pools": [
+      "defect"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "POTION_OF_CAPACITY.title",
+      "description_key": "POTION_OF_CAPACITY.description"
+    },
+    "vars": {
+      "Repeat": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/potion_of_capacity.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Potion of Capacity",
+    "description": {
+      "plain": "Gain 2 Orb Slots.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "2",
+          "source_var": "Repeat",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Orb Slots",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

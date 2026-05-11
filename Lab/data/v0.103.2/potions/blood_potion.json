@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BLOOD_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BloodPotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/BloodPotion.cs",
+    "rarity": "Common",
+    "usage": "AnyTime",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "ironclad"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "BLOOD_POTION.title",
+      "description_key": "BLOOD_POTION.description"
+    },
+    "vars": {
+      "HealPercent": 20
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/blood_potion.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Blood Potion",
+    "description": {
+      "plain": "Heal for 20% of your Max HP.",
+      "runs": [
+        {
+          "text": "Heal for "
+        },
+        {
+          "text": "20",
+          "source_var": "HealPercent",
+          "style": "green"
+        },
+        {
+          "text": "%",
+          "style": "green"
+        },
+        {
+          "text": " of your Max HP."
+        }
+      ]
+    }
+  }
+}

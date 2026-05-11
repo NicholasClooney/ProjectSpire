@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SKILL_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SkillPotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/SkillPotion.cs",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target_type": "Self",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "SKILL_POTION.title",
+      "description_key": "SKILL_POTION.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/skill_potion.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Skill Potion",
+    "description": {
+      "plain": "Choose 1 of 3 random Skill cards to add into your Hand. It's free to play this turn.",
+      "runs": [
+        {
+          "text": "Choose "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "3",
+          "style": "blue"
+        },
+        {
+          "text": " random Skill cards to add into your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": ". It's free to play this turn."
+        }
+      ]
+    }
+  }
+}

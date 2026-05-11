@@ -1,0 +1,66 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SOLDIERS_STEW",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SoldiersStew",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/SoldiersStew.cs",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "ironclad"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "SOLDIERS_STEW.title",
+      "description_key": "SOLDIERS_STEW.description"
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "ReplayStatic",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/soldiers_stew.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Soldier's Stew",
+    "description": {
+      "plain": "All cards containing Strike gain 1 Replay this combat.",
+      "runs": [
+        {
+          "text": "All cards containing "
+        },
+        {
+          "text": "Strike",
+          "style": "gold"
+        },
+        {
+          "text": " gain "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Replay",
+          "style": "gold"
+        },
+        {
+          "text": " this combat."
+        }
+      ]
+    }
+  }
+}

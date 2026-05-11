@@ -1,0 +1,67 @@
+{
+  "schema_version": "0.1.0",
+  "id": "STABLE_SERUM",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "StableSerum",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/StableSerum.cs",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "STABLE_SERUM.title",
+      "description_key": "STABLE_SERUM.description"
+    },
+    "vars": {
+      "Repeat": 2
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_keyword",
+        "target": "Retain",
+        "source": "HoverTipFactory.FromKeyword"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/stable_serum.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Stable Serum",
+    "description": {
+      "plain": "Retain your Hand for 2 turns.",
+      "runs": [
+        {
+          "text": "Retain",
+          "style": "gold"
+        },
+        {
+          "text": " your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "2",
+          "source_var": "Repeat",
+          "style": "blue"
+        },
+        {
+          "text": " turns."
+        }
+      ]
+    }
+  }
+}

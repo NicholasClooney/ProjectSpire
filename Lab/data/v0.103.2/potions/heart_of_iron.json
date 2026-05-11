@@ -1,0 +1,68 @@
+{
+  "schema_version": "0.1.0",
+  "id": "HEART_OF_IRON",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "HeartOfIron",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/HeartOfIron.cs",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "HEART_OF_IRON.title",
+      "description_key": "HEART_OF_IRON.description"
+    },
+    "vars": {
+      "PlatingPower": 7
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "PlatingPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/heart_of_iron.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Heart of Iron",
+    "description": {
+      "plain": "Gain 7 Plating.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "7",
+          "source_var": "PlatingPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Plating",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

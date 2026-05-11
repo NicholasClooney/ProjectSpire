@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FLEX_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "FlexPotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/FlexPotion.cs",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "FLEX_POTION.title",
+      "description_key": "FLEX_POTION.description"
+    },
+    "vars": {
+      "StrengthPower": 5
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/flex_potion.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Flex Potion",
+    "description": {
+      "plain": "Gain 5 Strength. At the end of your turn, lose 5 Strength.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "5",
+          "source_var": "StrengthPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "style": "gold"
+        },
+        {
+          "text": ". At the end of your turn, lose "
+        },
+        {
+          "text": "5",
+          "source_var": "StrengthPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

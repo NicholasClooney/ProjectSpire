@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "POISON_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PoisonPotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/PoisonPotion.cs",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target_type": "AnyEnemy",
+    "pools": [
+      "silent"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "POISON_POTION.title",
+      "description_key": "POISON_POTION.description"
+    },
+    "vars": {
+      "PoisonPower": 6
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "PoisonPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/poison_potion.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Poison Potion",
+    "description": {
+      "plain": "Apply 6 Poison.",
+      "runs": [
+        {
+          "text": "Apply "
+        },
+        {
+          "text": "6",
+          "source_var": "PoisonPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Poison",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

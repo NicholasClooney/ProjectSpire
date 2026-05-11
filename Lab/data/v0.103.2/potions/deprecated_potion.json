@@ -1,0 +1,31 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DEPRECATED_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DeprecatedPotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/DeprecatedPotion.cs",
+    "rarity": "None",
+    "usage": "CombatOnly",
+    "target_type": "AnyEnemy",
+    "pools": [
+      "deprecated"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "DEPRECATED_POTION.title",
+      "description_key": "DEPRECATED_POTION.description"
+    }
+  },
+  "resolved": {
+    "title": "Deprecated Potion",
+    "description": {
+      "plain": "This potion has been removed from the game.",
+      "runs": [
+        {
+          "text": "This potion has been removed from the game."
+        }
+      ]
+    }
+  }
+}

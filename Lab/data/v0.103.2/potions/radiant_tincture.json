@@ -1,0 +1,64 @@
+{
+  "schema_version": "0.1.0",
+  "id": "RADIANT_TINCTURE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "RadiantTincture",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/RadiantTincture.cs",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "RADIANT_TINCTURE.title",
+      "description_key": "RADIANT_TINCTURE.description"
+    },
+    "vars": {
+      "Energy": 1,
+      "RadiancePower": 3
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_energy",
+        "target": "Energy",
+        "source": "HoverTipFactory.ForEnergy"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/radiant_tincture.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Radiant Tincture",
+    "description": {
+      "plain": "Gain 1. Gain an additional  at the start of your next 3 turns.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "1",
+          "source_var": "Energy"
+        },
+        {
+          "text": ". Gain an additional  at the start of your next "
+        },
+        {
+          "text": "3",
+          "source_var": "RadiancePower",
+          "style": "blue"
+        },
+        {
+          "text": " turns."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FOUL_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "FoulPotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/FoulPotion.cs",
+    "rarity": "Event",
+    "usage": "AnyTime",
+    "target_type": "AllEnemies",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "FOUL_POTION.title",
+      "description_key": "FOUL_POTION.description"
+    },
+    "vars": {
+      "Damage": 12,
+      "Gold": 100
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/foul_potion.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Foul Potion",
+    "description": {
+      "plain": "Deal 12 damage to ALL players and enemies.\nCan be thrown at the Merchant for 100 Gold instead.",
+      "runs": [
+        {
+          "text": "Deal "
+        },
+        {
+          "text": "12",
+          "source_var": "Damage",
+          "style": "blue"
+        },
+        {
+          "text": " damage to ALL players and enemies.\nCan be thrown at the "
+        },
+        {
+          "text": "Merchant",
+          "style": "gold"
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "100",
+          "source_var": "Gold",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Gold",
+          "style": "gold"
+        },
+        {
+          "text": " instead."
+        }
+      ]
+    }
+  }
+}

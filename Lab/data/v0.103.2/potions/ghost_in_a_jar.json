@@ -1,0 +1,62 @@
+{
+  "schema_version": "0.1.0",
+  "id": "GHOST_IN_A_JAR",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "GhostInAJar",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/GhostInAJar.cs",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "silent"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "GHOST_IN_A_JAR.title",
+      "description_key": "GHOST_IN_A_JAR.description"
+    },
+    "vars": {
+      "IntangiblePower": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "IntangiblePower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/ghost_in_a_jar.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Ghost in a Jar",
+    "description": {
+      "plain": "Gain 1 Intangible.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Intangible",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

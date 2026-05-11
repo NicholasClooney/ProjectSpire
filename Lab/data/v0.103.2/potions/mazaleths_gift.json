@@ -1,0 +1,68 @@
+{
+  "schema_version": "0.1.0",
+  "id": "MAZALETHS_GIFT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "MazalethsGift",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/MazalethsGift.cs",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "MAZALETHS_GIFT.title",
+      "description_key": "MAZALETHS_GIFT.description"
+    },
+    "vars": {
+      "RitualPower": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "RitualPower",
+        "source": "HoverTipFactory.FromPower"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/mazaleths_gift.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Mazaleth's Gift",
+    "description": {
+      "plain": "Gain 1 Ritual.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "1",
+          "source_var": "RitualPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Ritual",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SWIFT_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SwiftPotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/SwiftPotion.cs",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "SWIFT_POTION.title",
+      "description_key": "SWIFT_POTION.description"
+    },
+    "vars": {
+      "Cards": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/swift_potion.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Swift Potion",
+    "description": {
+      "plain": "Draw 3 cards.",
+      "runs": [
+        {
+          "text": "Draw "
+        },
+        {
+          "text": "3",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards."
+        }
+      ]
+    }
+  }
+}

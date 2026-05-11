@@ -1,0 +1,60 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DROPLET_OF_PRECOGNITION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DropletOfPrecognition",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/DropletOfPrecognition.cs",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target_type": "Self",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "DROPLET_OF_PRECOGNITION.title",
+      "description_key": "DROPLET_OF_PRECOGNITION.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/droplet_of_precognition.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Droplet of Precognition",
+    "description": {
+      "plain": "Choose a card in your Draw Pile and add it into your Hand.",
+      "runs": [
+        {
+          "text": "Choose a card in your "
+        },
+        {
+          "text": "Draw Pile",
+          "style": "gold"
+        },
+        {
+          "text": " and add it into your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "selection_screen_prompt": {
+      "plain": "Choose a card to put into your Hand.",
+      "runs": [
+        {
+          "text": "Choose a card to put into your Hand."
+        }
+      ]
+    }
+  }
+}

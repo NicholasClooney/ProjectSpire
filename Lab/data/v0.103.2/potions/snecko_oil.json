@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SNECKO_OIL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SneckoOil",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/SneckoOil.cs",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "SNECKO_OIL.title",
+      "description_key": "SNECKO_OIL.description"
+    },
+    "vars": {
+      "Cards": 7
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/snecko_oil.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Snecko Oil",
+    "description": {
+      "plain": "Draw 7 cards. Randomize the cost of cards in your Hand this turn.",
+      "runs": [
+        {
+          "text": "Draw "
+        },
+        {
+          "text": "7",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards. Randomize the cost of cards in your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": " this turn."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "0.1.0",
+  "id": "GLOWWATER_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "GlowwaterPotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/GlowwaterPotion.cs",
+    "rarity": "Event",
+    "usage": "CombatOnly",
+    "target_type": "Self",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "GLOWWATER_POTION.title",
+      "description_key": "GLOWWATER_POTION.description"
+    },
+    "vars": {
+      "Cards": 10
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_keyword",
+        "target": "Exhaust",
+        "source": "HoverTipFactory.FromKeyword"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/glowwater_potion.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Glowwater Potion",
+    "description": {
+      "plain": "Exhaust your Hand. Draw 10 cards.",
+      "runs": [
+        {
+          "text": "Exhaust",
+          "style": "gold"
+        },
+        {
+          "text": " your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": ". Draw "
+        },
+        {
+          "text": "10",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards."
+        }
+      ]
+    }
+  }
+}

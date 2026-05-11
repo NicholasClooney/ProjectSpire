@@ -1,0 +1,49 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FRUIT_JUICE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "FruitJuice",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/FruitJuice.cs",
+    "rarity": "Rare",
+    "usage": "AnyTime",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "FRUIT_JUICE.title",
+      "description_key": "FRUIT_JUICE.description"
+    },
+    "vars": {
+      "MaxHp": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/fruit_juice.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Fruit Juice",
+    "description": {
+      "plain": "Gain 5 Max HP.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "5",
+          "source_var": "MaxHp",
+          "style": "blue"
+        },
+        {
+          "text": " Max HP."
+        }
+      ]
+    }
+  }
+}

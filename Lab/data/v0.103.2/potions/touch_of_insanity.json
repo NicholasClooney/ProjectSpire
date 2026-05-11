@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TOUCH_OF_INSANITY",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TouchOfInsanity",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/TouchOfInsanity.cs",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target_type": "Self",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "TOUCH_OF_INSANITY.title",
+      "description_key": "TOUCH_OF_INSANITY.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/touch_of_insanity.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Touch of Insanity",
+    "description": {
+      "plain": "Choose a card in your Hand. It is free to play this combat.",
+      "runs": [
+        {
+          "text": "Choose a card in your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": ". It is free to play this combat."
+        }
+      ]
+    },
+    "selection_screen_prompt": {
+      "plain": "Choose a card to make free.",
+      "runs": [
+        {
+          "text": "Choose a card to make free."
+        }
+      ]
+    }
+  }
+}

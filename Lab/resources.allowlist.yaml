@@ -31,3 +31,13 @@ entries:
       - ".DS_Store"
       - "**/*.import"
     transform: webp-q85
+
+  - name: potion_images
+    from: images/potions
+    to: images/potions
+    include:
+      - "**/*.png"
+    exclude:
+      - ".DS_Store"
+      - "**/*.import"
+    transform: webp-q85

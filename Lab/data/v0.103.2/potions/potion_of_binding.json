@@ -1,0 +1,84 @@
+{
+  "schema_version": "0.1.0",
+  "id": "POTION_OF_BINDING",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PotionOfBinding",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/PotionOfBinding.cs",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target_type": "AllEnemies",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "POTION_OF_BINDING.title",
+      "description_key": "POTION_OF_BINDING.description"
+    },
+    "vars": {
+      "VulnerablePower": 1,
+      "WeakPower": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "WeakPower",
+        "source": "HoverTipFactory.FromPower"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "VulnerablePower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/potion_of_binding.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Potion of Binding",
+    "description": {
+      "plain": "Apply 1 Weak and 1 Vulnerable to ALL enemies.",
+      "runs": [
+        {
+          "text": "Apply "
+        },
+        {
+          "text": "1",
+          "source_var": "WeakPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Weak",
+          "style": "gold"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "1",
+          "source_var": "VulnerablePower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Vulnerable",
+          "style": "gold"
+        },
+        {
+          "text": " to ALL enemies."
+        }
+      ]
+    }
+  }
+}

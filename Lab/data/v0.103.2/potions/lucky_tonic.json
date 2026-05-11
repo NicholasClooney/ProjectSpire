@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "LUCKY_TONIC",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "LuckyTonic",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/LuckyTonic.cs",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "LUCKY_TONIC.title",
+      "description_key": "LUCKY_TONIC.description"
+    },
+    "vars": {
+      "BufferPower": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "BufferPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/lucky_tonic.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Lucky Tonic",
+    "description": {
+      "plain": "Gain 1 Buffer.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "1",
+          "source_var": "BufferPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Buffer",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

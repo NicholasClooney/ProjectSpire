@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SPEED_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SpeedPotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/SpeedPotion.cs",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "SPEED_POTION.title",
+      "description_key": "SPEED_POTION.description"
+    },
+    "vars": {
+      "DexterityPower": 5
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "DexterityPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/speed_potion.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Speed Potion",
+    "description": {
+      "plain": "Gain 5 Dexterity. At the end of your turn, lose 5 Dexterity.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "5",
+          "source_var": "DexterityPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dexterity",
+          "style": "gold"
+        },
+        {
+          "text": ". At the end of your turn, lose "
+        },
+        {
+          "text": "5",
+          "source_var": "DexterityPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dexterity",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

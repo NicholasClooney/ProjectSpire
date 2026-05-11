@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "id": "POWER_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PowerPotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/PowerPotion.cs",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target_type": "Self",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "POWER_POTION.title",
+      "description_key": "POWER_POTION.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/power_potion.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Power Potion",
+    "description": {
+      "plain": "Choose 1 of 3 random Power cards to add into your Hand. It's free to play this turn.",
+      "runs": [
+        {
+          "text": "Choose "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "3",
+          "style": "blue"
+        },
+        {
+          "text": " random Power cards to add into your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": ". It's free to play this turn."
+        }
+      ]
+    }
+  }
+}

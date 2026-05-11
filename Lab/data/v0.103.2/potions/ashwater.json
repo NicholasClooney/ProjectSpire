@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ASHWATER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Ashwater",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/Ashwater.cs",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target_type": "Self",
+    "pools": [
+      "ironclad"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "ASHWATER.title",
+      "description_key": "ASHWATER.description"
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_keyword",
+        "target": "Exhaust",
+        "source": "HoverTipFactory.FromKeyword"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/ashwater.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Ashwater",
+    "description": {
+      "plain": "Exhaust any number of cards in your Hand.",
+      "runs": [
+        {
+          "text": "Exhaust",
+          "style": "gold"
+        },
+        {
+          "text": " any number of cards in your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "selection_screen_prompt": {
+      "plain": "Choose any number of cards to Exhaust.",
+      "runs": [
+        {
+          "text": "Choose any number of cards to "
+        },
+        {
+          "text": "Exhaust",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

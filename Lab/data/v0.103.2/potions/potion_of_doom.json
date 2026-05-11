@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "POTION_OF_DOOM",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PotionOfDoom",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/PotionOfDoom.cs",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target_type": "AnyEnemy",
+    "pools": [
+      "necrobinder"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "POTION_OF_DOOM.title",
+      "description_key": "POTION_OF_DOOM.description"
+    },
+    "vars": {
+      "DoomPower": 33
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "DoomPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/potion_of_doom.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Potion of Doom",
+    "description": {
+      "plain": "Apply 33 Doom.",
+      "runs": [
+        {
+          "text": "Apply "
+        },
+        {
+          "text": "33",
+          "source_var": "DoomPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Doom",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

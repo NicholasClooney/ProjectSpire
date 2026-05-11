@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1.0",
+  "id": "OROBIC_ACID",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "OrobicAcid",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/OrobicAcid.cs",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target_type": "Self",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "OROBIC_ACID.title",
+      "description_key": "OROBIC_ACID.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/orobic_acid.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Orobic Acid",
+    "description": {
+      "plain": "Add a random Attack, Skill, and Power into your Hand. They're free to play this turn.",
+      "runs": [
+        {
+          "text": "Add a random Attack, Skill, and Power into your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": ". They're free to play this turn."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CLARITY",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Clarity",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/Clarity.cs",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "CLARITY.title",
+      "description_key": "CLARITY.description"
+    },
+    "vars": {
+      "ClarityPower": 3,
+      "Cards": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/clarity.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Clarity Extract",
+    "description": {
+      "plain": "Draw 1 card. At the start of your next 3 turns, draw 1 additional card.",
+      "runs": [
+        {
+          "text": "Draw "
+        },
+        {
+          "text": "1",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " card. At the start of your next "
+        },
+        {
+          "text": "3",
+          "source_var": "ClarityPower",
+          "style": "blue"
+        },
+        {
+          "text": " turns, draw "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " additional card."
+        }
+      ]
+    }
+  }
+}

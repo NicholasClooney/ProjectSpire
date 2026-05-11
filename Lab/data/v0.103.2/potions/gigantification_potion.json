@@ -1,0 +1,41 @@
+{
+  "schema_version": "0.1.0",
+  "id": "GIGANTIFICATION_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "GigantificationPotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/GigantificationPotion.cs",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "GIGANTIFICATION_POTION.title",
+      "description_key": "GIGANTIFICATION_POTION.description"
+    },
+    "vars": {
+      "GigantificationPower": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/gigantification_potion.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Gigantification Potion",
+    "description": {
+      "plain": "The next Attack you play deals triple damage.",
+      "runs": [
+        {
+          "text": "The next Attack you play deals triple damage."
+        }
+      ]
+    }
+  }
+}

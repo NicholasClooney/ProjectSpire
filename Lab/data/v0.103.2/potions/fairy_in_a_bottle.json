@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FAIRY_IN_A_BOTTLE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "FairyInABottle",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/FairyInABottle.cs",
+    "rarity": "Rare",
+    "usage": "Automatic",
+    "target_type": "Self",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "FAIRY_IN_A_BOTTLE.title",
+      "description_key": "FAIRY_IN_A_BOTTLE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/fairy_in_a_bottle.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Fairy in a Bottle",
+    "description": {
+      "plain": "When your HP would be reduced to 0, instead this potion is discarded and you heal to 30% of your Max HP.",
+      "runs": [
+        {
+          "text": "When your HP would be reduced to "
+        },
+        {
+          "text": "0",
+          "style": "blue"
+        },
+        {
+          "text": ", instead this potion is discarded and you heal to "
+        },
+        {
+          "text": "30%",
+          "style": "blue"
+        },
+        {
+          "text": " of your Max HP."
+        }
+      ]
+    }
+  }
+}

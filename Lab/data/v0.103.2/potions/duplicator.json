@@ -1,0 +1,38 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DUPLICATOR",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Duplicator",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/Duplicator.cs",
+    "rarity": "Uncommon",
+    "usage": "CombatOnly",
+    "target_type": "Self",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "DUPLICATOR.title",
+      "description_key": "DUPLICATOR.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/duplicator.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Duplicator",
+    "description": {
+      "plain": "This turn, your next card is played an extra time.",
+      "runs": [
+        {
+          "text": "This turn, your next card is played an extra time."
+        }
+      ]
+    }
+  }
+}

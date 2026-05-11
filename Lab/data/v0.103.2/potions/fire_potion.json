@@ -1,0 +1,49 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FIRE_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "FirePotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/FirePotion.cs",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target_type": "AnyEnemy",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "FIRE_POTION.title",
+      "description_key": "FIRE_POTION.description"
+    },
+    "vars": {
+      "Damage": 20
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/fire_potion.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Fire Potion",
+    "description": {
+      "plain": "Deal 20 damage.",
+      "runs": [
+        {
+          "text": "Deal "
+        },
+        {
+          "text": "20",
+          "source_var": "Damage",
+          "style": "blue"
+        },
+        {
+          "text": " damage."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "0.1.0",
+  "id": "STAR_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "StarPotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/StarPotion.cs",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target_type": "Self",
+    "pools": [
+      "regent"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "STAR_POTION.title",
+      "description_key": "STAR_POTION.description"
+    },
+    "vars": {
+      "Stars": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/star_potion.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Star Potion",
+    "description": {
+      "plain": "Gain 3.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "3",
+          "source_var": "Stars"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

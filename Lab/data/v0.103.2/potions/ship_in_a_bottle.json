@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SHIP_IN_A_BOTTLE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ShipInABottle",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/ShipInABottle.cs",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target_type": "AnyPlayer",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "SHIP_IN_A_BOTTLE.title",
+      "description_key": "SHIP_IN_A_BOTTLE.description"
+    },
+    "vars": {
+      "Block": 10
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/ship_in_a_bottle.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Ship in a Bottle",
+    "description": {
+      "plain": "Gain 10 Block. Next turn, gain 10 Block.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "10",
+          "source_var": "Block",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": ". Next turn, gain "
+        },
+        {
+          "text": "10",
+          "source_var": "Block",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

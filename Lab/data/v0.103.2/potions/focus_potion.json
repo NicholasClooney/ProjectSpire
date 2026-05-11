@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FOCUS_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "FocusPotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/FocusPotion.cs",
+    "rarity": "Common",
+    "usage": "CombatOnly",
+    "target_type": "Self",
+    "pools": [
+      "defect"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "FOCUS_POTION.title",
+      "description_key": "FOCUS_POTION.description"
+    },
+    "vars": {
+      "FocusPower": 2
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "FocusPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/focus_potion.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Focus Potion",
+    "description": {
+      "plain": "Gain 2 Focus.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "2",
+          "source_var": "FocusPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Focus",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

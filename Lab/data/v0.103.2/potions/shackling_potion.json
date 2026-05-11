@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SHACKLING_POTION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ShacklingPotion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Potions/ShacklingPotion.cs",
+    "rarity": "Rare",
+    "usage": "CombatOnly",
+    "target_type": "AllEnemies",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "potions",
+      "title_key": "SHACKLING_POTION.title",
+      "description_key": "SHACKLING_POTION.description"
+    },
+    "vars": {
+      "StrengthPower": 7
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/potions/shackling_potion.webp",
+        "source": "Lab.resources.images.potions"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Shackling Potion",
+    "description": {
+      "plain": "ALL enemies lose 7 Strength this turn.",
+      "runs": [
+        {
+          "text": "ALL enemies lose "
+        },
+        {
+          "text": "7",
+          "source_var": "StrengthPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "style": "gold"
+        },
+        {
+          "text": " this turn."
+        }
+      ]
+    }
+  }
+}
