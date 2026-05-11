@@ -41,7 +41,7 @@ The C# state machine is now parsed to extract per-move effect data. The approach
 
 **Why intents and powers are separate fields.** Intents come from the `MoveState` constructor — they are the UI indicators the game shows above the monster to telegraph what it will do. Powers (block, applied powers, status cards, heal) come from parsing the handler method body — they are the actual mechanical effects. These are structurally distinct sources and have different semantics: intents are the display layer, handler effects are the mechanics layer. Merging them would require inferring which intent corresponds to which effect by position, which can be wrong. For example, a move with `[SingleAttack, Debuff, Buff]` intents and `[WeakPower(1), SteamEruptionPower(3)]` powers has no structural guarantee that `Debuff` maps to `Weak` and `Buff` maps to `SteamEruption` — it's true for that monster, but the C# enforces nothing. Keeping them separate preserves fidelity to the source.
 
-**Images** are sparse. Most monster visuals are Spine animations stored as atlas PNGs, not standalone images. Only 4 monsters have portrait WebP files; 18 have beta portrait files.
+**Images** are sparse. Most monster visuals are Spine animations stored as atlas PNGs, not standalone images. Only 4 monsters have portrait WebP files; 18 have beta portrait files. Extracting usable static images for the remaining monsters would require parsing the Spine `.atlas` text files to locate idle-frame sprite coordinates and cropping from the corresponding atlas PNG using something like Pillow. This work is not yet started; the atlas files live under `Lab/unpacked/animations/monsters/<slug>/`.
 
 **Resources allowlist** gained a `monster_images` entry.
 
