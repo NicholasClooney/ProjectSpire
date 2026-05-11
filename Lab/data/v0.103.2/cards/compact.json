@@ -50,6 +50,11 @@
         "kind": "hover_tip_card",
         "target": "FUEL",
         "source": "HoverTipFactory.FromCard"
+      },
+      {
+        "kind": "hover_tip_energy",
+        "target": "Energy",
+        "source": "HoverTipFactory.ForEnergy"
       }
     ],
     "relations": [
