@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.1.0",
+  "id": "KIFUDA",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Kifuda",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Kifuda.cs",
+    "rarity": "Shop",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "KIFUDA.title",
+      "description_key": "KIFUDA.description"
+    },
+    "vars": {
+      "Cards": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/kifuda.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
+    "has_pickup_effect": true
+  },
+  "resolved": {
+    "title": "Kifuda",
+    "description": {
+      "plain": "Upon pickup, Enchant up to 3 cards with Adroit.",
+      "runs": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Enchant",
+          "style": "gold"
+        },
+        {
+          "text": " up to "
+        },
+        {
+          "text": "3",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards with "
+        },
+        {
+          "text": "Adroit",
+          "style": "purple"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

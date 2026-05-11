@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ORANGE_DOUGH",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "OrangeDough",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/OrangeDough.cs",
+    "rarity": "Rare",
+    "pools": [
+      "regent"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "ORANGE_DOUGH.title",
+      "description_key": "ORANGE_DOUGH.description"
+    },
+    "vars": {
+      "Cards": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/orange_dough.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Orange Dough",
+    "description": {
+      "plain": "At the start of each combat, add 2 random Colorless cards into your Hand.",
+      "runs": [
+        {
+          "text": "At the start of each combat, add "
+        },
+        {
+          "text": "2",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " random Colorless cards into your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

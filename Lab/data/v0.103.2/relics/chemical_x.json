@@ -1,0 +1,62 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CHEMICAL_X",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ChemicalX",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/ChemicalX.cs",
+    "rarity": "Shop",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "CHEMICAL_X.title",
+      "description_key": "CHEMICAL_X.description"
+    },
+    "vars": {
+      "Increase": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/chemical_x.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Chemical X",
+    "description": {
+      "plain": "The effects of your cost X cards are increased by 2.",
+      "runs": [
+        {
+          "text": "The effects of your cost "
+        },
+        {
+          "text": "X",
+          "style": "blue"
+        },
+        {
+          "text": " cards are increased by "
+        },
+        {
+          "text": "2",
+          "source_var": "Increase",
+          "style": "blue"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "WARNING: Do not combine with sugar, spice, and everything nice.",
+      "runs": [
+        {
+          "text": "WARNING: Do not combine with sugar, spice, and everything nice."
+        }
+      ]
+    }
+  }
+}

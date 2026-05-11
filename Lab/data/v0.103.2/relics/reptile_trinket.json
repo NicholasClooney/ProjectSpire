@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "REPTILE_TRINKET",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ReptileTrinket",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/ReptileTrinket.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "REPTILE_TRINKET.title",
+      "description_key": "REPTILE_TRINKET.description"
+    },
+    "vars": {
+      "StrengthPower": 3
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/reptile_trinket.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Reptile Trinket",
+    "description": {
+      "plain": "Whenever you use a potion, gain 3 Strength this turn.",
+      "runs": [
+        {
+          "text": "Whenever you use a potion, gain "
+        },
+        {
+          "text": "3",
+          "source_var": "StrengthPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "style": "gold"
+        },
+        {
+          "text": " this turn."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

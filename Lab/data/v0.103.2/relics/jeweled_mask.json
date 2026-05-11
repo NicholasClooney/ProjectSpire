@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.1.0",
+  "id": "JEWELED_MASK",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "JeweledMask",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/JeweledMask.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "JEWELED_MASK.title",
+      "description_key": "JEWELED_MASK.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/jeweled_mask.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Jeweled Mask",
+    "description": {
+      "plain": "At the start of combat put a random Power from your Draw Pile into your Hand, it's free to play.",
+      "runs": [
+        {
+          "text": "At the start of combat put a random Power from your "
+        },
+        {
+          "text": "Draw Pile",
+          "style": "gold"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": ", it's free to play."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "At the start of combat put a random Power from your Draw Pile into your Hand, it's free to play.",
+      "runs": [
+        {
+          "text": "At the start of combat put a random Power from your "
+        },
+        {
+          "text": "Draw Pile",
+          "style": "gold"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": ", it's free to play."
+        }
+      ]
+    }
+  }
+}

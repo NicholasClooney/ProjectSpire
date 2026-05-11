@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BURNING_STICKS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BurningSticks",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/BurningSticks.cs",
+    "rarity": "Shop",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BURNING_STICKS.title",
+      "description_key": "BURNING_STICKS.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/burning_sticks.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Burning Sticks",
+    "description": {
+      "plain": "The first time each combat you Exhaust a Skill, add a copy of it into your Hand.",
+      "runs": [
+        {
+          "text": "The first time each combat you "
+        },
+        {
+          "text": "Exhaust",
+          "style": "gold"
+        },
+        {
+          "text": " a Skill, add a copy of it into your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

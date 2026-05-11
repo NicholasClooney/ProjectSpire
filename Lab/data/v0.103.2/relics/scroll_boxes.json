@@ -1,0 +1,106 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SCROLL_BOXES",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ScrollBoxes",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/ScrollBoxes.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "SCROLL_BOXES.title",
+      "description_key": "SCROLL_BOXES.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/scroll_boxes.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Scroll Boxes",
+    "description": {
+      "plain": "Upon pickup, lose all Gold and choose 1 of 2 packs of cards to add to your Deck.",
+      "runs": [
+        {
+          "text": "Upon pickup, lose all "
+        },
+        {
+          "text": "Gold",
+          "style": "gold"
+        },
+        {
+          "text": " and choose "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "2",
+          "style": "blue"
+        },
+        {
+          "text": " packs of cards to add to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Lose all Gold. Choose 1 of 2 packs of cards to add to your Deck.",
+      "runs": [
+        {
+          "text": "Lose",
+          "style": "red"
+        },
+        {
+          "text": " all Gold. Choose "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "2",
+          "style": "blue"
+        },
+        {
+          "text": " packs of cards to add to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

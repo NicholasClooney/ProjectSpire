@@ -1,0 +1,55 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DIVINE_RIGHT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DivineRight",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/DivineRight.cs",
+    "rarity": "Starter",
+    "pools": [
+      "regent"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "DIVINE_RIGHT.title",
+      "description_key": "DIVINE_RIGHT.description"
+    },
+    "vars": {
+      "Stars": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/divine_right.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Divine Right",
+    "description": {
+      "plain": "At the start of each combat, gain 3.",
+      "runs": [
+        {
+          "text": "At the start of each combat, gain "
+        },
+        {
+          "text": "3",
+          "source_var": "Stars"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

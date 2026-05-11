@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BELT_BUCKLE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BeltBuckle",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/BeltBuckle.cs",
+    "rarity": "Shop",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BELT_BUCKLE.title",
+      "description_key": "BELT_BUCKLE.description"
+    },
+    "vars": {
+      "DexterityPower": 2
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "DexterityPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/belt_buckle.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/belt_buckle.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Belt Buckle",
+    "description": {
+      "plain": "While you have no potions, you have 2 additional Dexterity.",
+      "runs": [
+        {
+          "text": "While you have no potions, you have "
+        },
+        {
+          "text": "2",
+          "source_var": "DexterityPower",
+          "style": "blue"
+        },
+        {
+          "text": " additional "
+        },
+        {
+          "text": "Dexterity",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

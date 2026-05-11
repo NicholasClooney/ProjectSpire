@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PAELS_LEGION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PaelsLegion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/PaelsLegion.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "PAELS_LEGION.title",
+      "description_key": "PAELS_LEGION.description"
+    },
+    "vars": {
+      "Turns": 2
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/paels_legion.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Pael's Legion",
+    "description": {
+      "plain": "Doubles Block gained from a card, then goes to sleep for 2 turns.",
+      "runs": [
+        {
+          "text": "Doubles "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": " gained from a card, then goes to sleep for "
+        },
+        {
+          "text": "2",
+          "source_var": "Turns",
+          "style": "blue"
+        },
+        {
+          "text": " turns."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

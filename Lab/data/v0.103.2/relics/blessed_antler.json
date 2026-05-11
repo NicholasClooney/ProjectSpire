@@ -1,0 +1,90 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BLESSED_ANTLER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BlessedAntler",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/BlessedAntler.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BLESSED_ANTLER.title",
+      "description_key": "BLESSED_ANTLER.description"
+    },
+    "vars": {
+      "Energy": 1,
+      "Cards": 3
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "DAZED",
+        "source": "HoverTipFactory.FromCard"
+      },
+      {
+        "kind": "hover_tip_energy",
+        "target": "Energy",
+        "source": "HoverTipFactory.ForEnergy"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/blessed_antler.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Blessed Antler",
+    "description": {
+      "plain": "Gain 1 at the start of each turn. At the start of each combat, shuffle 3 Dazed into your Draw Pile.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "1",
+          "source_var": "Energy"
+        },
+        {
+          "text": " at the start of each turn. At the start of each combat, shuffle "
+        },
+        {
+          "text": "3",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dazed",
+          "style": "gold"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Draw Pile",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

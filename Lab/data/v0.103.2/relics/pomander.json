@@ -1,0 +1,67 @@
+{
+  "schema_version": "0.1.0",
+  "id": "POMANDER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Pomander",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Pomander.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "POMANDER.title",
+      "description_key": "POMANDER.description"
+    },
+    "vars": {
+      "Cards": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/pomander.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Pomander",
+    "description": {
+      "plain": "Upon pickup, Upgrade a card.",
+      "runs": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Upgrade",
+          "style": "gold"
+        },
+        {
+          "text": " a card."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Upgrade a card.",
+      "runs": [
+        {
+          "text": "Upgrade",
+          "style": "gold"
+        },
+        {
+          "text": " a card."
+        }
+      ]
+    }
+  }
+}

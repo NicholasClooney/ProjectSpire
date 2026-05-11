@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BOOKMARK",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Bookmark",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Bookmark.cs",
+    "rarity": "Rare",
+    "pools": [
+      "necrobinder"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BOOKMARK.title",
+      "description_key": "BOOKMARK.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/bookmark.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Bookmark",
+    "description": {
+      "plain": "At the end of each turn, lower the cost of a random Retained card by 1 until played.",
+      "runs": [
+        {
+          "text": "At the end of each turn, lower the cost of a random "
+        },
+        {
+          "text": "Retained",
+          "style": "gold"
+        },
+        {
+          "text": " card by "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " until played."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

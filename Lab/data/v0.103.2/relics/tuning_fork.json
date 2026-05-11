@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TUNING_FORK",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TuningFork",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/TuningFork.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "TUNING_FORK.title",
+      "description_key": "TUNING_FORK.description"
+    },
+    "vars": {
+      "Cards": 10,
+      "Block": 7
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/tuning_fork.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Tuning Fork",
+    "description": {
+      "plain": "Every time you play 10 Skills, gain 7 Block.",
+      "runs": [
+        {
+          "text": "Every time you play "
+        },
+        {
+          "text": "10",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " Skills, gain "
+        },
+        {
+          "text": "7",
+          "source_var": "Block",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

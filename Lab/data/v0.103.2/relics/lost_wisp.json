@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "LOST_WISP",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "LostWisp",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/LostWisp.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "LOST_WISP.title",
+      "description_key": "LOST_WISP.description"
+    },
+    "vars": {
+      "Damage": 8
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/lost_wisp.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Lost Wisp",
+    "description": {
+      "plain": "Whenever you play a Power, deal 8 damage to ALL enemies.",
+      "runs": [
+        {
+          "text": "Whenever you play a "
+        },
+        {
+          "text": "Power",
+          "style": "gold"
+        },
+        {
+          "text": ", deal "
+        },
+        {
+          "text": "8",
+          "source_var": "Damage",
+          "style": "blue"
+        },
+        {
+          "text": " damage to ALL enemies."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

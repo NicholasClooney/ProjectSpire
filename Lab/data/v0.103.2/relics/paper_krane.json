@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PAPER_KRANE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PaperKrane",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/PaperKrane.cs",
+    "rarity": "Rare",
+    "pools": [
+      "silent"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "PAPER_KRANE.title",
+      "description_key": "PAPER_KRANE.description"
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "WeakPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/paper_krane.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Paper Krane",
+    "description": {
+      "plain": "Enemies with Weak deal 40% less damage to you rather than 25%.",
+      "runs": [
+        {
+          "text": "Enemies with "
+        },
+        {
+          "text": "Weak",
+          "style": "gold"
+        },
+        {
+          "text": " deal "
+        },
+        {
+          "text": "40%",
+          "style": "blue"
+        },
+        {
+          "text": " less damage to you rather than "
+        },
+        {
+          "text": "25%",
+          "style": "blue"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FAKE_SNECKO_EYE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "FakeSneckoEye",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/FakeSneckoEye.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "FAKE_SNECKO_EYE.title",
+      "description_key": "FAKE_SNECKO_EYE.description"
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "ConfusedPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/fake_snecko_eye.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Snecko Eye???",
+    "description": {
+      "plain": "Start each combat Confused.",
+      "runs": [
+        {
+          "text": "Start each combat "
+        },
+        {
+          "text": "Confused",
+          "style": "red"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

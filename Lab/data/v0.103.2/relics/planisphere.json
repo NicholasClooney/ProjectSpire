@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PLANISPHERE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Planisphere",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Planisphere.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "PLANISPHERE.title",
+      "description_key": "PLANISPHERE.description"
+    },
+    "vars": {
+      "Heal": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/planisphere.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Planisphere",
+    "description": {
+      "plain": "Whenever you enter a ? room, heal 5 HP.",
+      "runs": [
+        {
+          "text": "Whenever you enter a "
+        },
+        {
+          "text": "?",
+          "style": "gold"
+        },
+        {
+          "text": " room, heal "
+        },
+        {
+          "text": "5",
+          "source_var": "Heal",
+          "style": "green"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

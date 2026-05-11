@@ -1,0 +1,84 @@
+{
+  "schema_version": "0.1.0",
+  "id": "METRONOME",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Metronome",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Metronome.cs",
+    "rarity": "Rare",
+    "pools": [
+      "defect"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "METRONOME.title",
+      "description_key": "METRONOME.description"
+    },
+    "vars": {
+      "Damage": 30,
+      "OrbCount": 7
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/metronome.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/metronome.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Metronome",
+    "description": {
+      "plain": "The first time you Channel 7 Orbs each combat, deal 30 damage to ALL enemies.",
+      "runs": [
+        {
+          "text": "The first time you "
+        },
+        {
+          "text": "Channel",
+          "style": "gold"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "7",
+          "source_var": "OrbCount",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Orbs",
+          "style": "gold"
+        },
+        {
+          "text": " each combat, deal "
+        },
+        {
+          "text": "30",
+          "source_var": "Damage",
+          "style": "blue"
+        },
+        {
+          "text": " damage to ALL enemies."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

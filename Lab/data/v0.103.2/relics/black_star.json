@@ -1,0 +1,49 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BLACK_STAR",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BlackStar",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/BlackStar.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BLACK_STAR.title",
+      "description_key": "BLACK_STAR.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/black_star.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Black Star",
+    "description": {
+      "plain": "Elites drop an additional Relic when defeated.",
+      "runs": [
+        {
+          "text": "Elites",
+          "style": "gold"
+        },
+        {
+          "text": " drop an additional Relic when defeated."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

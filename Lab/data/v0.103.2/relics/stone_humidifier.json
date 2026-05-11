@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "STONE_HUMIDIFIER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "StoneHumidifier",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/StoneHumidifier.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "STONE_HUMIDIFIER.title",
+      "description_key": "STONE_HUMIDIFIER.description"
+    },
+    "vars": {
+      "MaxHp": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/stone_humidifier.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Stone Humidifier",
+    "description": {
+      "plain": "Whenever you Rest at a Rest Site, raise your Max HP by 5.",
+      "runs": [
+        {
+          "text": "Whenever you "
+        },
+        {
+          "text": "Rest",
+          "style": "gold"
+        },
+        {
+          "text": " at a "
+        },
+        {
+          "text": "Rest Site",
+          "style": "gold"
+        },
+        {
+          "text": ", raise your Max HP by "
+        },
+        {
+          "text": "5",
+          "source_var": "MaxHp",
+          "style": "blue"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

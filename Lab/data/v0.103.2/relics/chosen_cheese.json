@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CHOSEN_CHEESE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ChosenCheese",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/ChosenCheese.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "CHOSEN_CHEESE.title",
+      "description_key": "CHOSEN_CHEESE.description"
+    },
+    "vars": {
+      "MaxHp": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/chosen_cheese.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "The Chosen Cheese",
+    "description": {
+      "plain": "At the end of combat, gain 1 Max HP.",
+      "runs": [
+        {
+          "text": "At the end of combat, gain "
+        },
+        {
+          "text": "1",
+          "source_var": "MaxHp",
+          "style": "blue"
+        },
+        {
+          "text": " Max HP."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

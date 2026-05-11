@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "id": "HORN_CLEAT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "HornCleat",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/HornCleat.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "HORN_CLEAT.title",
+      "description_key": "HORN_CLEAT.description"
+    },
+    "vars": {
+      "Block": 14
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/horn_cleat.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Horn Cleat",
+    "description": {
+      "plain": "At the start of your 2nd turn, gain 14 Block.",
+      "runs": [
+        {
+          "text": "At the start of your "
+        },
+        {
+          "text": "2nd",
+          "style": "blue"
+        },
+        {
+          "text": " turn, gain "
+        },
+        {
+          "text": "14",
+          "source_var": "Block",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

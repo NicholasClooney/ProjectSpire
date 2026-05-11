@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CLOAK_CLASP",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "CloakClasp",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/CloakClasp.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "CLOAK_CLASP.title",
+      "description_key": "CLOAK_CLASP.description"
+    },
+    "vars": {
+      "Block": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/cloak_clasp.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/cloak_clasp.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Cloak Clasp",
+    "description": {
+      "plain": "At the end of your turn, gain 1 Block for each card in your Hand.",
+      "runs": [
+        {
+          "text": "At the end of your turn, gain "
+        },
+        {
+          "text": "1",
+          "source_var": "Block",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": " for each card in your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

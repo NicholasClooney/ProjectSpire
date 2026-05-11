@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SCREAMING_FLAGON",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ScreamingFlagon",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/ScreamingFlagon.cs",
+    "rarity": "Shop",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "SCREAMING_FLAGON.title",
+      "description_key": "SCREAMING_FLAGON.description"
+    },
+    "vars": {
+      "Damage": 20
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/screaming_flagon.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Screaming Flagon",
+    "description": {
+      "plain": "If you end your turn with no cards in your Hand, deal 20 damage to ALL enemies.",
+      "runs": [
+        {
+          "text": "If you end your turn with no cards in your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": ", deal "
+        },
+        {
+          "text": "20",
+          "source_var": "Damage",
+          "style": "blue"
+        },
+        {
+          "text": " damage to ALL enemies."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

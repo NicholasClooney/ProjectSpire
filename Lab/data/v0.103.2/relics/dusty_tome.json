@@ -1,0 +1,58 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DUSTY_TOME",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DustyTome",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/DustyTome.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "DUSTY_TOME.title",
+      "description_key": "DUSTY_TOME.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/dusty_tome.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/dusty_tome.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Dusty Tome",
+    "description": {
+      "plain": "Upon pickup, obtain {AncientCard.StringValue:cond:[gold]{}[/gold]|an [gold]Ancient Card[/gold]}.",
+      "runs": [
+        {
+          "text": "Upon pickup, obtain {AncientCard.StringValue:cond:[gold]{}[/gold]|an [gold]Ancient Card[/gold]}."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Obtain {AncientCard.StringValue:cond:[gold]{}+[/gold]|an [gold]Ancient Card[/gold]}.",
+      "runs": [
+        {
+          "text": "Obtain {AncientCard.StringValue:cond:[gold]{}+[/gold]|an [gold]Ancient Card[/gold]}."
+        }
+      ]
+    }
+  }
+}

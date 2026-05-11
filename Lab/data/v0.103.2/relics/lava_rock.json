@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "LAVA_ROCK",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "LavaRock",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/LavaRock.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "LAVA_ROCK.title",
+      "description_key": "LAVA_ROCK.description"
+    },
+    "vars": {
+      "Relics": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/lava_rock.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Lava Rock",
+    "description": {
+      "plain": "The Act 1 Boss drops 2 Relics.",
+      "runs": [
+        {
+          "text": "The Act 1 Boss drops "
+        },
+        {
+          "text": "2",
+          "source_var": "Relics",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Relics",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

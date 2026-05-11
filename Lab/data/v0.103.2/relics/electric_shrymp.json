@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ELECTRIC_SHRYMP",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ElectricShrymp",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/ElectricShrymp.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "ELECTRIC_SHRYMP.title",
+      "description_key": "ELECTRIC_SHRYMP.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/electric_shrymp.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
+    "has_pickup_effect": true
+  },
+  "resolved": {
+    "title": "Electric Shrymp",
+    "description": {
+      "plain": "Upon pickup, Enchant a Skill with Imbued.",
+      "runs": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Enchant",
+          "style": "gold"
+        },
+        {
+          "text": " a Skill with "
+        },
+        {
+          "text": "Imbued",
+          "style": "purple"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Enchant a Skill with Imbued.",
+      "runs": [
+        {
+          "text": "Enchant",
+          "style": "gold"
+        },
+        {
+          "text": " a Skill with "
+        },
+        {
+          "text": "Imbued",
+          "style": "purple"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

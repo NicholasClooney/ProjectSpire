@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ROYAL_POISON",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "RoyalPoison",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/RoyalPoison.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "ROYAL_POISON.title",
+      "description_key": "ROYAL_POISON.description"
+    },
+    "vars": {
+      "Damage": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/royal_poison.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Royal Poison",
+    "description": {
+      "plain": "At the start of each combat, lose 4 HP.",
+      "runs": [
+        {
+          "text": "At the start of each combat, lose "
+        },
+        {
+          "text": "4",
+          "source_var": "Damage",
+          "style": "blue"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

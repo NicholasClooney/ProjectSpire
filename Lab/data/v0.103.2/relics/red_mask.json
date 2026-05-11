@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.1.0",
+  "id": "RED_MASK",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "RedMask",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/RedMask.cs",
+    "rarity": "Common",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "RED_MASK.title",
+      "description_key": "RED_MASK.description"
+    },
+    "vars": {
+      "WeakPower": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "WeakPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/red_mask.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/red_mask.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Red Mask",
+    "description": {
+      "plain": "At the start of each combat, apply 1 Weak to ALL enemies.",
+      "runs": [
+        {
+          "text": "At the start of each combat, apply "
+        },
+        {
+          "text": "1",
+          "source_var": "WeakPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Weak",
+          "style": "gold"
+        },
+        {
+          "text": " to ALL enemies."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

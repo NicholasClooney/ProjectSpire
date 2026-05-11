@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1.0",
+  "id": "LORDS_PARASOL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "LordsParasol",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/LordsParasol.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "LORDS_PARASOL.title",
+      "description_key": "LORDS_PARASOL.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/lords_parasol.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Lord's Parasol",
+    "description": {
+      "plain": "When you encounter the Merchant, immediately obtain EVERYTHING he sells.",
+      "runs": [
+        {
+          "text": "When you encounter the "
+        },
+        {
+          "text": "Merchant",
+          "style": "gold"
+        },
+        {
+          "text": ", immediately obtain EVERYTHING he sells."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

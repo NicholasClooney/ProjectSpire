@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.1.0",
+  "id": "RED_SKULL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "RedSkull",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/RedSkull.cs",
+    "rarity": "Common",
+    "pools": [
+      "ironclad"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "RED_SKULL.title",
+      "description_key": "RED_SKULL.description"
+    },
+    "vars": {
+      "HpThreshold": 50,
+      "StrengthPower": 3
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/red_skull.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Red Skull",
+    "description": {
+      "plain": "While your HP is at or below 50%, you have 3 additional Strength.",
+      "runs": [
+        {
+          "text": "While your HP is at or below "
+        },
+        {
+          "text": "50",
+          "source_var": "HpThreshold",
+          "style": "blue"
+        },
+        {
+          "text": "%",
+          "style": "blue"
+        },
+        {
+          "text": ", you have "
+        },
+        {
+          "text": "3",
+          "source_var": "StrengthPower",
+          "style": "blue"
+        },
+        {
+          "text": " additional "
+        },
+        {
+          "text": "Strength",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

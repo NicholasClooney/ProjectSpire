@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.1.0",
+  "id": "NUNCHAKU",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Nunchaku",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Nunchaku.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "NUNCHAKU.title",
+      "description_key": "NUNCHAKU.description"
+    },
+    "vars": {
+      "Cards": 10,
+      "Energy": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_energy",
+        "target": "Energy",
+        "source": "HoverTipFactory.ForEnergy"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/nunchaku.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Nunchaku",
+    "description": {
+      "plain": "Every time you play 10 Attacks, gain 1.",
+      "runs": [
+        {
+          "text": "Every time you play "
+        },
+        {
+          "text": "10",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " Attacks, gain "
+        },
+        {
+          "text": "1",
+          "source_var": "Energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FESTIVE_POPPER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "FestivePopper",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/FestivePopper.cs",
+    "rarity": "Common",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "FESTIVE_POPPER.title",
+      "description_key": "FESTIVE_POPPER.description"
+    },
+    "vars": {
+      "Damage": 9
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/festive_popper.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Festive Popper",
+    "description": {
+      "plain": "At the start of each combat, deal 9 damage to ALL enemies.",
+      "runs": [
+        {
+          "text": "At the start of each combat, deal "
+        },
+        {
+          "text": "9",
+          "source_var": "Damage",
+          "style": "blue"
+        },
+        {
+          "text": " damage to ALL enemies."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

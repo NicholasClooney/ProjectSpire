@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SILVER_CRUCIBLE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SilverCrucible",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/SilverCrucible.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "SILVER_CRUCIBLE.title",
+      "description_key": "SILVER_CRUCIBLE.description"
+    },
+    "vars": {
+      "Cards": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/silver_crucible.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Silver Crucible",
+    "description": {
+      "plain": "The first 3 card rewards you see are Upgraded. The first Treasure Chest you open is empty.",
+      "runs": [
+        {
+          "text": "The first "
+        },
+        {
+          "text": "3",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " card rewards you see are "
+        },
+        {
+          "text": "Upgraded",
+          "style": "gold"
+        },
+        {
+          "text": ". The first Treasure Chest you open is "
+        },
+        {
+          "text": "empty",
+          "style": "red"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

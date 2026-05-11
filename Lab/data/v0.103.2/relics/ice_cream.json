@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ICE_CREAM",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "IceCream",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/IceCream.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "ICE_CREAM.title",
+      "description_key": "ICE_CREAM.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/ice_cream.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Ice Cream",
+    "description": {
+      "plain": "Energy is now conserved between turns.",
+      "runs": [
+        {
+          "text": "Energy is now conserved between turns."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

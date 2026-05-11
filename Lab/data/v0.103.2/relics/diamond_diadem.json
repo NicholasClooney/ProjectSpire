@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DIAMOND_DIADEM",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DiamondDiadem",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/DiamondDiadem.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "DIAMOND_DIADEM.title",
+      "description_key": "DIAMOND_DIADEM.description"
+    },
+    "vars": {
+      "CardThreshold": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/diamond_diadem.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Diamond Diadem",
+    "description": {
+      "plain": "Whenever you play 2 or fewer cards in a turn, take half damage from enemies.",
+      "runs": [
+        {
+          "text": "Whenever you play "
+        },
+        {
+          "text": "2",
+          "source_var": "CardThreshold",
+          "style": "blue"
+        },
+        {
+          "text": " or fewer cards in a turn, take half damage from enemies."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TEA_OF_DISCOURTESY",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TeaOfDiscourtesy",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/TeaOfDiscourtesy.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "TEA_OF_DISCOURTESY.title",
+      "description_key": "TEA_OF_DISCOURTESY.description"
+    },
+    "vars": {
+      "Heal": 1,
+      "DazedCount": 2
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "DAZED",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/tea_of_discourtesy.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Tea of Discourtesy",
+    "description": {
+      "plain": "At the start of the next combat, shuffle 2 Dazed into your Draw Pile.",
+      "runs": [
+        {
+          "text": "At the start of the next combat, shuffle "
+        },
+        {
+          "text": "2",
+          "source_var": "DazedCount",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dazed",
+          "style": "gold"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Draw Pile",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

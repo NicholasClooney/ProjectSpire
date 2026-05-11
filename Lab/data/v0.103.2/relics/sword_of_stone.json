@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SWORD_OF_STONE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SwordOfStone",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/SwordOfStone.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "SWORD_OF_STONE.title",
+      "description_key": "SWORD_OF_STONE.description"
+    },
+    "vars": {
+      "Elites": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/sword_of_stone.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Sword of Stone",
+    "description": {
+      "plain": "Transforms into a powerful Relic after defeating 5 Elites.",
+      "runs": [
+        {
+          "text": "Transforms into a powerful "
+        },
+        {
+          "text": "Relic",
+          "style": "gold"
+        },
+        {
+          "text": " after defeating "
+        },
+        {
+          "text": "5",
+          "source_var": "Elites",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Elites",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

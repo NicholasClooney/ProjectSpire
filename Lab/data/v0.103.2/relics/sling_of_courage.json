@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SLING_OF_COURAGE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SlingOfCourage",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/SlingOfCourage.cs",
+    "rarity": "Shop",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "SLING_OF_COURAGE.title",
+      "description_key": "SLING_OF_COURAGE.description"
+    },
+    "vars": {
+      "StrengthPower": 2
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/sling_of_courage.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Sling of Courage",
+    "description": {
+      "plain": "Start each Elite combat with 2 Strength.",
+      "runs": [
+        {
+          "text": "Start each "
+        },
+        {
+          "text": "Elite",
+          "style": "gold"
+        },
+        {
+          "text": " combat with "
+        },
+        {
+          "text": "2",
+          "source_var": "StrengthPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

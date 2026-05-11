@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.1.0",
+  "id": "HAPPY_FLOWER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "HappyFlower",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/HappyFlower.cs",
+    "rarity": "Common",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "HAPPY_FLOWER.title",
+      "description_key": "HAPPY_FLOWER.description"
+    },
+    "vars": {
+      "Energy": 1,
+      "Turns": 3
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_energy",
+        "target": "Energy",
+        "source": "HoverTipFactory.ForEnergy"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/happy_flower.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Happy Flower",
+    "description": {
+      "plain": "Every 3 turns, gain 1.",
+      "runs": [
+        {
+          "text": "Every "
+        },
+        {
+          "text": "3",
+          "source_var": "Turns",
+          "style": "blue"
+        },
+        {
+          "text": " turns, gain "
+        },
+        {
+          "text": "1",
+          "source_var": "Energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

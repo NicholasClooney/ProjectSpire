@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TINY_MAILBOX",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TinyMailbox",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/TinyMailbox.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "TINY_MAILBOX.title",
+      "description_key": "TINY_MAILBOX.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/tiny_mailbox.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Tiny Mailbox",
+    "description": {
+      "plain": "Whenever you Rest, procure 2 random potions.",
+      "runs": [
+        {
+          "text": "Whenever you "
+        },
+        {
+          "text": "Rest",
+          "style": "gold"
+        },
+        {
+          "text": ", procure "
+        },
+        {
+          "text": "2",
+          "style": "blue"
+        },
+        {
+          "text": " random potions."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

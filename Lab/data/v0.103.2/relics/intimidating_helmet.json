@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1.0",
+  "id": "INTIMIDATING_HELMET",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "IntimidatingHelmet",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/IntimidatingHelmet.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "INTIMIDATING_HELMET.title",
+      "description_key": "INTIMIDATING_HELMET.description"
+    },
+    "vars": {
+      "Block": 4,
+      "Energy": 2
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/intimidating_helmet.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Intimidating Helmet",
+    "description": {
+      "plain": "Whenever you play a card that costs 2 or more, gain 4 Block.",
+      "runs": [
+        {
+          "text": "Whenever you play a card that costs "
+        },
+        {
+          "text": "2",
+          "source_var": "Energy"
+        },
+        {
+          "text": " or more, gain "
+        },
+        {
+          "text": "4",
+          "source_var": "Block",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

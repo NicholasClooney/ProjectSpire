@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CENTENNIAL_PUZZLE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "CentennialPuzzle",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/CentennialPuzzle.cs",
+    "rarity": "Common",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "CENTENNIAL_PUZZLE.title",
+      "description_key": "CENTENNIAL_PUZZLE.description"
+    },
+    "vars": {
+      "Cards": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/centennial_puzzle.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Centennial Puzzle",
+    "description": {
+      "plain": "The first time you lose HP each combat, draw 3 cards.",
+      "runs": [
+        {
+          "text": "The first time you lose HP each combat, draw "
+        },
+        {
+          "text": "3",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

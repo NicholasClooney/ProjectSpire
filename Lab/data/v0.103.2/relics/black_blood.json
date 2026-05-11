@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BLACK_BLOOD",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BlackBlood",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/BlackBlood.cs",
+    "rarity": "Starter",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BLACK_BLOOD.title",
+      "description_key": "BLACK_BLOOD.description"
+    },
+    "vars": {
+      "Heal": 12
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/black_blood.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Black Blood",
+    "description": {
+      "plain": "At the end of combat, heal 12 HP.",
+      "runs": [
+        {
+          "text": "At the end of combat, heal "
+        },
+        {
+          "text": "12",
+          "source_var": "Heal",
+          "style": "green"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

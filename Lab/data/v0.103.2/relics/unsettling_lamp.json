@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1.0",
+  "id": "UNSETTLING_LAMP",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "UnsettlingLamp",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/UnsettlingLamp.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "UNSETTLING_LAMP.title",
+      "description_key": "UNSETTLING_LAMP.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/unsettling_lamp.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Unsettling Lamp",
+    "description": {
+      "plain": "Each combat, the first time you play a card that Debuffs an enemy, double its effect.",
+      "runs": [
+        {
+          "text": "Each combat, the first time you play a card that "
+        },
+        {
+          "text": "Debuffs",
+          "style": "gold"
+        },
+        {
+          "text": " an enemy, double its effect."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

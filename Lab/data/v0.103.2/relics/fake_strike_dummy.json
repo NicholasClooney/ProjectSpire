@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FAKE_STRIKE_DUMMY",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "FakeStrikeDummy",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/FakeStrikeDummy.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "FAKE_STRIKE_DUMMY.title",
+      "description_key": "FAKE_STRIKE_DUMMY.description"
+    },
+    "vars": {
+      "ExtraDamage": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/fake_strike_dummy.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Strike Dummy???",
+    "description": {
+      "plain": "Cards containing \u201cStrike\u201d deal 1 additional damage.",
+      "runs": [
+        {
+          "text": "Cards containing \u201cStrike\u201d deal "
+        },
+        {
+          "text": "1",
+          "source_var": "ExtraDamage",
+          "style": "blue"
+        },
+        {
+          "text": " additional damage."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

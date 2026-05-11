@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PARRYING_SHIELD",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ParryingShield",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/ParryingShield.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "PARRYING_SHIELD.title",
+      "description_key": "PARRYING_SHIELD.description"
+    },
+    "vars": {
+      "Block": 10,
+      "Damage": 6
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/parrying_shield.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Parrying Shield",
+    "description": {
+      "plain": "If you end a turn with at least 10 Block, deal 6 damage to a random enemy.",
+      "runs": [
+        {
+          "text": "If you end a turn with at least "
+        },
+        {
+          "text": "10",
+          "source_var": "Block",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": ", deal "
+        },
+        {
+          "text": "6",
+          "source_var": "Damage",
+          "style": "blue"
+        },
+        {
+          "text": " damage to a random enemy."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

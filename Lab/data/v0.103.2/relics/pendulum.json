@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PENDULUM",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Pendulum",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Pendulum.cs",
+    "rarity": "Common",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "PENDULUM.title",
+      "description_key": "PENDULUM.description"
+    },
+    "vars": {
+      "Cards": 1,
+      "Turns": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/pendulum.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/pendulum.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Pendulum",
+    "description": {
+      "plain": "Every 3 turns, draw 1 card.",
+      "runs": [
+        {
+          "text": "Every "
+        },
+        {
+          "text": "3",
+          "source_var": "Turns",
+          "style": "blue"
+        },
+        {
+          "text": " turns, draw "
+        },
+        {
+          "text": "1",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " card."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

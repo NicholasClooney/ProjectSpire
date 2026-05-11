@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.1.0",
+  "id": "WONGOS_MYSTERY_TICKET",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "WongosMysteryTicket",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/WongosMysteryTicket.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "WONGOS_MYSTERY_TICKET.title",
+      "description_key": "WONGOS_MYSTERY_TICKET.description"
+    },
+    "vars": {
+      "Repeat": 3,
+      "RemainingCombats": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/wongos_mystery_ticket.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Wongo's Mystery Ticket",
+    "description": {
+      "plain": "Receive 3 random Relics after 5 combats.",
+      "runs": [
+        {
+          "text": "Receive "
+        },
+        {
+          "text": "3",
+          "source_var": "Repeat",
+          "style": "blue"
+        },
+        {
+          "text": " random "
+        },
+        {
+          "text": "Relics",
+          "style": "gold"
+        },
+        {
+          "text": " after "
+        },
+        {
+          "text": "5",
+          "source_var": "RemainingCombats",
+          "style": "blue"
+        },
+        {
+          "text": " combats."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

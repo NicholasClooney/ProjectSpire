@@ -1,0 +1,69 @@
+{
+  "schema_version": "0.1.0",
+  "id": "VENERABLE_TEA_SET",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "VenerableTeaSet",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/VenerableTeaSet.cs",
+    "rarity": "Common",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "VENERABLE_TEA_SET.title",
+      "description_key": "VENERABLE_TEA_SET.description"
+    },
+    "vars": {
+      "Energy": 2
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_energy",
+        "target": "Energy",
+        "source": "HoverTipFactory.ForEnergy"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/venerable_tea_set.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Venerable Tea Set",
+    "description": {
+      "plain": "Whenever you enter a Rest Site, start the next combat with an additional 2.",
+      "runs": [
+        {
+          "text": "Whenever you enter a "
+        },
+        {
+          "text": "Rest Site",
+          "style": "gold"
+        },
+        {
+          "text": ", start the next combat with an additional "
+        },
+        {
+          "text": "2",
+          "source_var": "Energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

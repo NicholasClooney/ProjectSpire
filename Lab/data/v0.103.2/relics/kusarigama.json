@@ -1,0 +1,65 @@
+{
+  "schema_version": "0.1.0",
+  "id": "KUSARIGAMA",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Kusarigama",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Kusarigama.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "KUSARIGAMA.title",
+      "description_key": "KUSARIGAMA.description"
+    },
+    "vars": {
+      "Cards": 3,
+      "Damage": 6
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/kusarigama.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Kusarigama",
+    "description": {
+      "plain": "Every time you play 3 Attacks in a single turn, deal 6 damage to a random enemy.",
+      "runs": [
+        {
+          "text": "Every time you play "
+        },
+        {
+          "text": "3",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " Attacks in a single turn, deal "
+        },
+        {
+          "text": "6",
+          "source_var": "Damage",
+          "style": "blue"
+        },
+        {
+          "text": " damage to a random enemy."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

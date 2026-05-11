@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "RING_OF_THE_SNAKE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "RingOfTheSnake",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/RingOfTheSnake.cs",
+    "rarity": "Starter",
+    "pools": [
+      "silent"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "RING_OF_THE_SNAKE.title",
+      "description_key": "RING_OF_THE_SNAKE.description"
+    },
+    "vars": {
+      "Cards": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/ring_of_the_snake.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Ring of the Snake",
+    "description": {
+      "plain": "At the start of each combat, draw 2 additional cards.",
+      "runs": [
+        {
+          "text": "At the start of each combat, draw "
+        },
+        {
+          "text": "2",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " additional cards."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

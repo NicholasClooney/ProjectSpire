@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1.0",
+  "id": "LAVA_LAMP",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "LavaLamp",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/LavaLamp.cs",
+    "rarity": "Shop",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "LAVA_LAMP.title",
+      "description_key": "LAVA_LAMP.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/lava_lamp.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Lava Lamp",
+    "description": {
+      "plain": "At the end of combat, Upgrade all card rewards if you took no damage.",
+      "runs": [
+        {
+          "text": "At the end of combat, "
+        },
+        {
+          "text": "Upgrade",
+          "style": "gold"
+        },
+        {
+          "text": " all card rewards if you took no damage."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TOOLBOX",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Toolbox",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Toolbox.cs",
+    "rarity": "Shop",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "TOOLBOX.title",
+      "description_key": "TOOLBOX.description"
+    },
+    "vars": {
+      "Cards": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/toolbox.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Toolbox",
+    "description": {
+      "plain": "At the start of each combat, choose 1 of 3 random Colorless cards and add the chosen card into your Hand.",
+      "runs": [
+        {
+          "text": "At the start of each combat, choose "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "3",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " random Colorless cards and add the chosen card into your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

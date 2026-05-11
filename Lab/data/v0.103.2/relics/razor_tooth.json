@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.1.0",
+  "id": "RAZOR_TOOTH",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "RazorTooth",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/RazorTooth.cs",
+    "rarity": "Rare",
+    "pools": [
+      "event",
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "RAZOR_TOOTH.title",
+      "description_key": "RAZOR_TOOTH.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/razor_tooth.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Razor Tooth",
+    "description": {
+      "plain": "Every time you play an Attack or Skill, Upgrade it for the remainder of combat.",
+      "runs": [
+        {
+          "text": "Every time you play an Attack or Skill, "
+        },
+        {
+          "text": "Upgrade",
+          "style": "gold"
+        },
+        {
+          "text": " it for the remainder of combat."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

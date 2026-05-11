@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DELICATE_FROND",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DelicateFrond",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/DelicateFrond.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "DELICATE_FROND.title",
+      "description_key": "DELICATE_FROND.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/delicate_frond.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Delicate Frond",
+    "description": {
+      "plain": "At the start of each combat, fill all empty potion slots with random potions.",
+      "runs": [
+        {
+          "text": "At the start of each combat, fill all empty potion slots with random potions."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

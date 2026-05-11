@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "WING_CHARM",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "WingCharm",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/WingCharm.cs",
+    "rarity": "Shop",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "WING_CHARM.title",
+      "description_key": "WING_CHARM.description"
+    },
+    "vars": {
+      "SwiftAmount": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/wing_charm.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Wing Charm",
+    "description": {
+      "plain": "A random card in each card reward is Enchanted with Swift 1.",
+      "runs": [
+        {
+          "text": "A random card in each card reward is "
+        },
+        {
+          "text": "Enchanted",
+          "style": "gold"
+        },
+        {
+          "text": " with "
+        },
+        {
+          "text": "Swift",
+          "style": "purple"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "1",
+          "source_var": "SwiftAmount",
+          "style": "blue"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1.0",
+  "id": "RUNIC_PYRAMID",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "RunicPyramid",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/RunicPyramid.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "RUNIC_PYRAMID.title",
+      "description_key": "RUNIC_PYRAMID.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/runic_pyramid.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Runic Pyramid",
+    "description": {
+      "plain": "At the end of your turn, you no longer discard your Hand.",
+      "runs": [
+        {
+          "text": "At the end of your turn, you no longer discard your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

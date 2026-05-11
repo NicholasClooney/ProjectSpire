@@ -1,0 +1,87 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SYMBIOTIC_VIRUS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SymbioticVirus",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/SymbioticVirus.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "defect"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "SYMBIOTIC_VIRUS.title",
+      "description_key": "SYMBIOTIC_VIRUS.description"
+    },
+    "vars": {
+      "Dark": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Channeling",
+        "source": "HoverTipFactory.Static"
+      },
+      {
+        "kind": "hover_tip_orb",
+        "target": "DarkOrb",
+        "source": "HoverTipFactory.FromOrb"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/symbiotic_virus.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/symbiotic_virus.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Symbiotic Virus",
+    "description": {
+      "plain": "At the start of each combat, Channel 1 Dark.",
+      "runs": [
+        {
+          "text": "At the start of each combat, "
+        },
+        {
+          "text": "Channel",
+          "style": "gold"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "1",
+          "source_var": "Dark",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dark",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

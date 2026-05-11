@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "MEAL_TICKET",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "MealTicket",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/MealTicket.cs",
+    "rarity": "Common",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "MEAL_TICKET.title",
+      "description_key": "MEAL_TICKET.description"
+    },
+    "vars": {
+      "Heal": 15
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/meal_ticket.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Meal Ticket",
+    "description": {
+      "plain": "Whenever you enter a shop room, heal 15 HP.",
+      "runs": [
+        {
+          "text": "Whenever you enter a shop room, heal "
+        },
+        {
+          "text": "15",
+          "source_var": "Heal",
+          "style": "green"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

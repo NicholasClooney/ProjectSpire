@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.1.0",
+  "id": "JOSS_PAPER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "JossPaper",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/JossPaper.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "JOSS_PAPER.title",
+      "description_key": "JOSS_PAPER.description"
+    },
+    "vars": {
+      "ExhaustAmount": 5,
+      "Cards": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/joss_paper.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Joss Paper",
+    "description": {
+      "plain": "Every 5 times you Exhaust a card, draw 1 card.",
+      "runs": [
+        {
+          "text": "Every "
+        },
+        {
+          "text": "5",
+          "source_var": "ExhaustAmount",
+          "style": "blue"
+        },
+        {
+          "text": " times you "
+        },
+        {
+          "text": "Exhaust",
+          "style": "gold"
+        },
+        {
+          "text": " a card, draw "
+        },
+        {
+          "text": "1",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " card."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

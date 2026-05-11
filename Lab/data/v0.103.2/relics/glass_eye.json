@@ -1,0 +1,87 @@
+{
+  "schema_version": "0.1.0",
+  "id": "GLASS_EYE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "GlassEye",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/GlassEye.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "GLASS_EYE.title",
+      "description_key": "GLASS_EYE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/glass_eye.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Glass Eye",
+    "description": {
+      "plain": "Upon pickup, obtain 2 Common cards, 2 Uncommon cards, and 1 Rare card.",
+      "runs": [
+        {
+          "text": "Upon pickup, obtain "
+        },
+        {
+          "text": "2",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Common",
+          "style": "gold"
+        },
+        {
+          "text": " cards, "
+        },
+        {
+          "text": "2",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Uncommon",
+          "style": "gold"
+        },
+        {
+          "text": " cards, and "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Rare",
+          "style": "gold"
+        },
+        {
+          "text": " card."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

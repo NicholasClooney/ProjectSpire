@@ -1,0 +1,55 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DIVINE_DESTINY",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DivineDestiny",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/DivineDestiny.cs",
+    "rarity": "Starter",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "DIVINE_DESTINY.title",
+      "description_key": "DIVINE_DESTINY.description"
+    },
+    "vars": {
+      "Stars": 6
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/divine_destiny.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Divine Destiny",
+    "description": {
+      "plain": "At the start of each combat, gain 6.",
+      "runs": [
+        {
+          "text": "At the start of each combat, gain "
+        },
+        {
+          "text": "6",
+          "source_var": "Stars"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

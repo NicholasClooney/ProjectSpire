@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DARKSTONE_PERIAPT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DarkstonePeriapt",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/DarkstonePeriapt.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "DARKSTONE_PERIAPT.title",
+      "description_key": "DARKSTONE_PERIAPT.description"
+    },
+    "vars": {
+      "MaxHp": 6
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/darkstone_periapt.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Darkstone Periapt",
+    "description": {
+      "plain": "Whenever you obtain a Curse, raise your Max HP by 6.",
+      "runs": [
+        {
+          "text": "Whenever you obtain a "
+        },
+        {
+          "text": "Curse",
+          "style": "red"
+        },
+        {
+          "text": ", raise your Max HP by "
+        },
+        {
+          "text": "6",
+          "source_var": "MaxHp",
+          "style": "blue"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

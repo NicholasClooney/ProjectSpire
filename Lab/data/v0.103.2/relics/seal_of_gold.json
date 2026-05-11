@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SEAL_OF_GOLD",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SealOfGold",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/SealOfGold.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "SEAL_OF_GOLD.title",
+      "description_key": "SEAL_OF_GOLD.description"
+    },
+    "vars": {
+      "Energy": 1,
+      "Gold": 5
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_energy",
+        "target": "Energy",
+        "source": "HoverTipFactory.ForEnergy"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/seal_of_gold.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Seal of Gold",
+    "description": {
+      "plain": "At the start of your turn, spend 5 Gold to gain 1.",
+      "runs": [
+        {
+          "text": "At the start of your turn, spend "
+        },
+        {
+          "text": "5",
+          "source_var": "Gold",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Gold",
+          "style": "gold"
+        },
+        {
+          "text": " to gain "
+        },
+        {
+          "text": "1",
+          "source_var": "Energy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

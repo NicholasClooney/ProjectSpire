@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "POLLINOUS_CORE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PollinousCore",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/PollinousCore.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "POLLINOUS_CORE.title",
+      "description_key": "POLLINOUS_CORE.description"
+    },
+    "vars": {
+      "Cards": 2,
+      "Turns": 4
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/pollinous_core.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/pollinous_core.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Pollinous Core",
+    "description": {
+      "plain": "Every 4 turns, draw 2 additional cards.",
+      "runs": [
+        {
+          "text": "Every "
+        },
+        {
+          "text": "4",
+          "source_var": "Turns",
+          "style": "blue"
+        },
+        {
+          "text": " turns, draw "
+        },
+        {
+          "text": "2",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " additional cards."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

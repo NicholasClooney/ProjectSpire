@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FAKE_ANCHOR",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "FakeAnchor",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/FakeAnchor.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "FAKE_ANCHOR.title",
+      "description_key": "FAKE_ANCHOR.description"
+    },
+    "vars": {
+      "Block": 4
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/fake_anchor.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Anchor???",
+    "description": {
+      "plain": "Start each combat with 4 Block.",
+      "runs": [
+        {
+          "text": "Start each combat with "
+        },
+        {
+          "text": "4",
+          "source_var": "Block",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

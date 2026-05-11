@@ -1,0 +1,155 @@
+{
+  "schema_version": "0.1.0",
+  "id": "HEFTY_TABLET",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "HeftyTablet",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/HeftyTablet.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "HEFTY_TABLET.title",
+      "description_key": "HEFTY_TABLET.description"
+    },
+    "vars": {
+      "Cards": 3
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "INJURY",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/hefty_tablet.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/hefty_tablet.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
+    "has_pickup_effect": true
+  },
+  "resolved": {
+    "title": "Hefty Tablet",
+    "description": {
+      "plain": "Upon pickup, choose 1 of 3 Rare cards to add to your Deck, and add 1 Injury to your Deck.",
+      "runs": [
+        {
+          "text": "Upon pickup, choose "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "3",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " Rare cards to add to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": ", and add "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Injury",
+          "style": "red"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Choose 1 of 3 Rare cards to add to your Deck. Add 1 Injury to your Deck.",
+      "runs": [
+        {
+          "text": "Choose "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "3",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " Rare cards to add to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": ". Add "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Injury",
+          "style": "red"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

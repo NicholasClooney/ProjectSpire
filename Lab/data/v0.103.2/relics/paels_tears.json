@@ -1,0 +1,67 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PAELS_TEARS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PaelsTears",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/PaelsTears.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "PAELS_TEARS.title",
+      "description_key": "PAELS_TEARS.description"
+    },
+    "vars": {
+      "Energy": 2
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_energy",
+        "target": "Energy",
+        "source": "HoverTipFactory.ForEnergy"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/paels_tears.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/paels_tears.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Pael's Tears",
+    "description": {
+      "plain": "If you end your turn with unspent , gain an additional 2 next turn.",
+      "runs": [
+        {
+          "text": "If you end your turn with unspent , gain an additional "
+        },
+        {
+          "text": "2",
+          "source_var": "Energy"
+        },
+        {
+          "text": " next turn."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

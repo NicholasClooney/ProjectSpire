@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TUNGSTEN_ROD",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TungstenRod",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/TungstenRod.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "TUNGSTEN_ROD.title",
+      "description_key": "TUNGSTEN_ROD.description"
+    },
+    "vars": {
+      "HpLossReduction": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/tungsten_rod.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Tungsten Rod",
+    "description": {
+      "plain": "Whenever you would lose HP, lose 1 less.",
+      "runs": [
+        {
+          "text": "Whenever you would lose HP, lose "
+        },
+        {
+          "text": "1",
+          "source_var": "HpLossReduction",
+          "style": "blue"
+        },
+        {
+          "text": " less."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

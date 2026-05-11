@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ORICHALCUM",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Orichalcum",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Orichalcum.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "ORICHALCUM.title",
+      "description_key": "ORICHALCUM.description"
+    },
+    "vars": {
+      "Block": 6
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/orichalcum.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Orichalcum",
+    "description": {
+      "plain": "If you end your turn without Block, gain 6 Block.",
+      "runs": [
+        {
+          "text": "If you end your turn without "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": ", gain "
+        },
+        {
+          "text": "6",
+          "source_var": "Block",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

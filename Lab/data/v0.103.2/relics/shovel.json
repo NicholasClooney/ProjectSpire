@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SHOVEL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Shovel",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Shovel.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "SHOVEL.title",
+      "description_key": "SHOVEL.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/shovel.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Shovel",
+    "description": {
+      "plain": "You can now dig at Rest Sites to obtain a random Relic.",
+      "runs": [
+        {
+          "text": "You can now dig at "
+        },
+        {
+          "text": "Rest Sites",
+          "style": "gold"
+        },
+        {
+          "text": " to obtain a random "
+        },
+        {
+          "text": "Relic",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ODDLY_SMOOTH_STONE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "OddlySmoothStone",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/OddlySmoothStone.cs",
+    "rarity": "Common",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "ODDLY_SMOOTH_STONE.title",
+      "description_key": "ODDLY_SMOOTH_STONE.description"
+    },
+    "vars": {
+      "DexterityPower": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "DexterityPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/oddly_smooth_stone.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Oddly Smooth Stone",
+    "description": {
+      "plain": "Start each combat with 1 Dexterity.",
+      "runs": [
+        {
+          "text": "Start each combat with "
+        },
+        {
+          "text": "1",
+          "source_var": "DexterityPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dexterity",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

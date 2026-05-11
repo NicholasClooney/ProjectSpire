@@ -1,0 +1,91 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PHYLACTERY_UNBOUND",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PhylacteryUnbound",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/PhylacteryUnbound.cs",
+    "rarity": "Starter",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "PHYLACTERY_UNBOUND.title",
+      "description_key": "PHYLACTERY_UNBOUND.description"
+    },
+    "vars": {
+      "StartOfCombat": 5,
+      "StartOfTurn": 2
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "SummonStatic",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/phylactery_unbound.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/phylactery_unbound.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Phylactery Unbound",
+    "description": {
+      "plain": "At the start of each combat, Summon 5. At the start of your turn, Summon 2.",
+      "runs": [
+        {
+          "text": "At the start of each combat, "
+        },
+        {
+          "text": "Summon",
+          "style": "gold"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "5",
+          "source_var": "StartOfCombat",
+          "style": "blue"
+        },
+        {
+          "text": ". At the start of your turn, "
+        },
+        {
+          "text": "Summon",
+          "style": "gold"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "2",
+          "source_var": "StartOfTurn",
+          "style": "blue"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

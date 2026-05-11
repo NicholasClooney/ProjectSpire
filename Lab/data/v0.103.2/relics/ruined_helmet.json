@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "id": "RUINED_HELMET",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "RuinedHelmet",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/RuinedHelmet.cs",
+    "rarity": "Rare",
+    "pools": [
+      "ironclad"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "RUINED_HELMET.title",
+      "description_key": "RUINED_HELMET.description"
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/ruined_helmet.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Ruined Helmet",
+    "description": {
+      "plain": "The first time you gain Strength each combat, double the amount gained.",
+      "runs": [
+        {
+          "text": "The first time you gain "
+        },
+        {
+          "text": "Strength",
+          "style": "gold"
+        },
+        {
+          "text": " each combat, double the amount gained."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

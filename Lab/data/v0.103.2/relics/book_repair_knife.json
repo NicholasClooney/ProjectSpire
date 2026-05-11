@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BOOK_REPAIR_KNIFE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BookRepairKnife",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/BookRepairKnife.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "necrobinder"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BOOK_REPAIR_KNIFE.title",
+      "description_key": "BOOK_REPAIR_KNIFE.description"
+    },
+    "vars": {
+      "Heal": 3
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "DoomPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/book_repair_knife.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Book Repair Knife",
+    "description": {
+      "plain": "Whenever a non-Minion enemy dies to Doom, heal 3 HP.",
+      "runs": [
+        {
+          "text": "Whenever a non-Minion enemy dies to "
+        },
+        {
+          "text": "Doom",
+          "style": "gold"
+        },
+        {
+          "text": ", heal "
+        },
+        {
+          "text": "3",
+          "source_var": "Heal",
+          "style": "green"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

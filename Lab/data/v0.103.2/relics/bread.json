@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BREAD",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Bread",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Bread.cs",
+    "rarity": "Shop",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BREAD.title",
+      "description_key": "BREAD.description"
+    },
+    "vars": {
+      "GainEnergy": 1,
+      "LoseEnergy": 2
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_energy",
+        "target": "Energy",
+        "source": "HoverTipFactory.ForEnergy"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/bread.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Bread",
+    "description": {
+      "plain": "At the start of your first turn, lose 2. At the start of all other turns, gain 1.",
+      "runs": [
+        {
+          "text": "At the start of your first turn, lose "
+        },
+        {
+          "text": "2",
+          "source_var": "LoseEnergy"
+        },
+        {
+          "text": ". At the start of all other turns, gain "
+        },
+        {
+          "text": "1",
+          "source_var": "GainEnergy"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

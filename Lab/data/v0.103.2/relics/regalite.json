@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "REGALITE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Regalite",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Regalite.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "regent"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "REGALITE.title",
+      "description_key": "REGALITE.description"
+    },
+    "vars": {
+      "Block": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/regalite.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Regalite",
+    "description": {
+      "plain": "Whenever you create a card, gain 2 Block.",
+      "runs": [
+        {
+          "text": "Whenever you create a card, gain "
+        },
+        {
+          "text": "2",
+          "source_var": "Block",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ARCANE_SCROLL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ArcaneScroll",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/ArcaneScroll.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "ARCANE_SCROLL.title",
+      "description_key": "ARCANE_SCROLL.description"
+    },
+    "vars": {
+      "Cards": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/arcane_scroll.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Arcane Scroll",
+    "description": {
+      "plain": "Upon pickup, obtain a random Rare Card to add to your Deck.",
+      "runs": [
+        {
+          "text": "Upon pickup, obtain a random "
+        },
+        {
+          "text": "Rare Card",
+          "style": "gold"
+        },
+        {
+          "text": " to add to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Obtain a random Rare Card.",
+      "runs": [
+        {
+          "text": "Obtain a random "
+        },
+        {
+          "text": "Rare Card",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

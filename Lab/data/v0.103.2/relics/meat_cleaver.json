@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "id": "MEAT_CLEAVER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "MeatCleaver",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/MeatCleaver.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "MEAT_CLEAVER.title",
+      "description_key": "MEAT_CLEAVER.description"
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Cook",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/meat_cleaver.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Meat Cleaver",
+    "description": {
+      "plain": "You may Cook at Rest Sites.",
+      "runs": [
+        {
+          "text": "You may "
+        },
+        {
+          "text": "Cook",
+          "style": "gold"
+        },
+        {
+          "text": " at Rest Sites."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

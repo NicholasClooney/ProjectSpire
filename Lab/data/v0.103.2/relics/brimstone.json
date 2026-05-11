@@ -1,0 +1,86 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BRIMSTONE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Brimstone",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Brimstone.cs",
+    "rarity": "Shop",
+    "pools": [
+      "ironclad"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BRIMSTONE.title",
+      "description_key": "BRIMSTONE.description"
+    },
+    "vars": {
+      "SelfStrength": 2,
+      "EnemyStrength": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/brimstone.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Brimstone",
+    "description": {
+      "plain": "At the start of your turn, gain 2 Strength and ALL enemies gain 1 Strength.",
+      "runs": [
+        {
+          "text": "At the start of your turn, gain "
+        },
+        {
+          "text": "2",
+          "source_var": "SelfStrength",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "style": "gold"
+        },
+        {
+          "text": " and ALL enemies gain "
+        },
+        {
+          "text": "1",
+          "source_var": "EnemyStrength",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

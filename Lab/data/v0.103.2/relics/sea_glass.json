@@ -1,0 +1,64 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SEA_GLASS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SeaGlass",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/SeaGlass.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "SEA_GLASS.title",
+      "description_key": "SEA_GLASS.description"
+    },
+    "vars": {
+      "Cards": 15
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/sea_glass.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
+    "has_pickup_effect": true
+  },
+  "resolved": {
+    "title": "Sea Glass",
+    "description": {
+      "plain": "See 15 cards from {Character.StringValue:cond:[gold]{}[/gold]|another character}. Choose any number of them to add to your Deck.",
+      "runs": [
+        {
+          "text": "See "
+        },
+        {
+          "text": "15",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards from {Character.StringValue:cond:[gold]{}[/gold]|another character}. Choose any number of them to add to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

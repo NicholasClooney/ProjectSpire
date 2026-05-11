@@ -1,0 +1,100 @@
+{
+  "schema_version": "0.1.0",
+  "id": "LEAD_PAPERWEIGHT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "LeadPaperweight",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/LeadPaperweight.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "LEAD_PAPERWEIGHT.title",
+      "description_key": "LEAD_PAPERWEIGHT.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/lead_paperweight.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/lead_paperweight.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Lead Paperweight",
+    "description": {
+      "plain": "Upon pickup, choose 1 of 2 Colorless cards to add to your Deck.",
+      "runs": [
+        {
+          "text": "Upon pickup, choose "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "2",
+          "style": "blue"
+        },
+        {
+          "text": " Colorless cards to add to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Choose 1 of 2 Colorless cards to add to your Deck.",
+      "runs": [
+        {
+          "text": "Choose "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "2",
+          "style": "blue"
+        },
+        {
+          "text": " Colorless cards to add to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "id": "RADIANT_PEARL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "RadiantPearl",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/RadiantPearl.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "RADIANT_PEARL.title",
+      "description_key": "RADIANT_PEARL.description"
+    },
+    "vars": {
+      "Cards": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "LUMINESCE",
+        "source": "HoverTipFactory.FromCard"
+      },
+      {
+        "kind": "hover_tip_energy",
+        "target": "Energy",
+        "source": "HoverTipFactory.ForEnergy"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/radiant_pearl.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Radiant Pearl",
+    "description": {
+      "plain": "At the start of each combat, add 1 Luminesce into your Hand.",
+      "runs": [
+        {
+          "text": "At the start of each combat, add "
+        },
+        {
+          "text": "1",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Luminesce",
+          "style": "gold"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

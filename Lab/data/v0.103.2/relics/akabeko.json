@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "AKABEKO",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Akabeko",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Akabeko.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "AKABEKO.title",
+      "description_key": "AKABEKO.description"
+    },
+    "vars": {
+      "VigorPower": 8
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "VigorPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/akabeko.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Akabeko",
+    "description": {
+      "plain": "At the start of each combat, gain 8 Vigor.",
+      "runs": [
+        {
+          "text": "At the start of each combat, gain "
+        },
+        {
+          "text": "8",
+          "source_var": "VigorPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Vigor",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

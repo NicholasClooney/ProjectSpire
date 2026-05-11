@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PANTOGRAPH",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Pantograph",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Pantograph.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "PANTOGRAPH.title",
+      "description_key": "PANTOGRAPH.description"
+    },
+    "vars": {
+      "Heal": 25
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/pantograph.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Pantograph",
+    "description": {
+      "plain": "At the start of each Boss combat, heal 25 HP.",
+      "runs": [
+        {
+          "text": "At the start of each "
+        },
+        {
+          "text": "Boss",
+          "style": "gold"
+        },
+        {
+          "text": " combat, heal "
+        },
+        {
+          "text": "25",
+          "source_var": "Heal",
+          "style": "green"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

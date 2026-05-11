@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1.0",
+  "id": "WHITE_BEAST_STATUE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "WhiteBeastStatue",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/WhiteBeastStatue.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "WHITE_BEAST_STATUE.title",
+      "description_key": "WHITE_BEAST_STATUE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/white_beast_statue.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "White Beast Statue",
+    "description": {
+      "plain": "Potions always appear in combat rewards.",
+      "runs": [
+        {
+          "text": "Potions always appear in combat rewards."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

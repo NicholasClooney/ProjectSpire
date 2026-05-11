@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TWISTED_FUNNEL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TwistedFunnel",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/TwistedFunnel.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "silent"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "TWISTED_FUNNEL.title",
+      "description_key": "TWISTED_FUNNEL.description"
+    },
+    "vars": {
+      "PoisonPower": 4
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "PoisonPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/twisted_funnel.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/twisted_funnel.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Twisted Funnel",
+    "description": {
+      "plain": "At the start of each combat, apply 4 Poison to ALL enemies.",
+      "runs": [
+        {
+          "text": "At the start of each combat, apply "
+        },
+        {
+          "text": "4",
+          "source_var": "PoisonPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Poison",
+          "style": "gold"
+        },
+        {
+          "text": " to ALL enemies."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "0.1.0",
+  "id": "RUNIC_CAPACITOR",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "RunicCapacitor",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/RunicCapacitor.cs",
+    "rarity": "Shop",
+    "pools": [
+      "defect"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "RUNIC_CAPACITOR.title",
+      "description_key": "RUNIC_CAPACITOR.description"
+    },
+    "vars": {
+      "Repeat": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/runic_capacitor.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/runic_capacitor.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Runic Capacitor",
+    "description": {
+      "plain": "Start each combat with 3 additional Orb Slots.",
+      "runs": [
+        {
+          "text": "Start each combat with "
+        },
+        {
+          "text": "3",
+          "source_var": "Repeat",
+          "style": "blue"
+        },
+        {
+          "text": " additional "
+        },
+        {
+          "text": "Orb Slots",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

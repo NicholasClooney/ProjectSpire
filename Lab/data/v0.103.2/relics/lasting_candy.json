@@ -1,0 +1,46 @@
+{
+  "schema_version": "0.1.0",
+  "id": "LASTING_CANDY",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "LastingCandy",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/LastingCandy.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "event",
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "LASTING_CANDY.title",
+      "description_key": "LASTING_CANDY.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/lasting_candy.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Lasting Candy",
+    "description": {
+      "plain": "Every other combat, your card rewards gain an additional Power.",
+      "runs": [
+        {
+          "text": "Every other combat, your card rewards gain an additional Power."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

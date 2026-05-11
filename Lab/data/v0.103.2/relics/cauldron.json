@@ -1,0 +1,57 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CAULDRON",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Cauldron",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Cauldron.cs",
+    "rarity": "Shop",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "CAULDRON.title",
+      "description_key": "CAULDRON.description"
+    },
+    "vars": {
+      "Potions": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/cauldron.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
+    "has_pickup_effect": true
+  },
+  "resolved": {
+    "title": "Cauldron",
+    "description": {
+      "plain": "Upon pickup, brews 5 random potions.",
+      "runs": [
+        {
+          "text": "Upon pickup, brews "
+        },
+        {
+          "text": "5",
+          "source_var": "Potions",
+          "style": "blue"
+        },
+        {
+          "text": " random potions."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

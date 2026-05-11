@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SNECKO_SKULL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SneckoSkull",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/SneckoSkull.cs",
+    "rarity": "Common",
+    "pools": [
+      "silent"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "SNECKO_SKULL.title",
+      "description_key": "SNECKO_SKULL.description"
+    },
+    "vars": {
+      "PoisonPower": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "PoisonPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/snecko_skull.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/snecko_skull.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Snecko Skull",
+    "description": {
+      "plain": "Whenever you apply Poison, apply an additional 1 Poison.",
+      "runs": [
+        {
+          "text": "Whenever you apply "
+        },
+        {
+          "text": "Poison",
+          "style": "gold"
+        },
+        {
+          "text": ", apply an additional "
+        },
+        {
+          "text": "1",
+          "source_var": "PoisonPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Poison",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "VAJRA",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Vajra",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Vajra.cs",
+    "rarity": "Common",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "VAJRA.title",
+      "description_key": "VAJRA.description"
+    },
+    "vars": {
+      "StrengthPower": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/vajra.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Vajra",
+    "description": {
+      "plain": "Start each combat with 1 Strength.",
+      "runs": [
+        {
+          "text": "Start each combat with "
+        },
+        {
+          "text": "1",
+          "source_var": "StrengthPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

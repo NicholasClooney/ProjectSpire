@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ORNAMENTAL_FAN",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "OrnamentalFan",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/OrnamentalFan.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "ORNAMENTAL_FAN.title",
+      "description_key": "ORNAMENTAL_FAN.description"
+    },
+    "vars": {
+      "Cards": 3,
+      "Block": 4
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/ornamental_fan.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Ornamental Fan",
+    "description": {
+      "plain": "Every time you play 3 Attacks in a single turn, gain 4 Block.",
+      "runs": [
+        {
+          "text": "Every time you play "
+        },
+        {
+          "text": "3",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " Attacks in a single turn, gain "
+        },
+        {
+          "text": "4",
+          "source_var": "Block",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

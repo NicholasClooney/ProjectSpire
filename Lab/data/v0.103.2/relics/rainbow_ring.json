@@ -1,0 +1,91 @@
+{
+  "schema_version": "0.1.0",
+  "id": "RAINBOW_RING",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "RainbowRing",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/RainbowRing.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "RAINBOW_RING.title",
+      "description_key": "RAINBOW_RING.description"
+    },
+    "vars": {
+      "StrengthPower": 1,
+      "DexterityPower": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "DexterityPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/rainbow_ring.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Rainbow Ring",
+    "description": {
+      "plain": "The first time you play an Attack, Skill, and Power each turn, gain 1 Strength and 1 Dexterity.",
+      "runs": [
+        {
+          "text": "The first time you play an Attack, Skill, and Power each turn, gain "
+        },
+        {
+          "text": "1",
+          "source_var": "StrengthPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "style": "gold"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "1",
+          "source_var": "DexterityPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dexterity",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

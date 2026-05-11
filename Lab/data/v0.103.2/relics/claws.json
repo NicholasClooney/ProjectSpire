@@ -1,0 +1,104 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CLAWS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Claws",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Claws.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "CLAWS.title",
+      "description_key": "CLAWS.description"
+    },
+    "vars": {
+      "Cards": 6
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "MAUL",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/claws.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Claws",
+    "description": {
+      "plain": "Upon pickup, Transform up to 6 cards into Maul.",
+      "runs": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Transform",
+          "style": "gold"
+        },
+        {
+          "text": " up to "
+        },
+        {
+          "text": "6",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards into "
+        },
+        {
+          "text": "Maul",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Transform up to 6 cards into Maul.",
+      "runs": [
+        {
+          "text": "Transform",
+          "style": "gold"
+        },
+        {
+          "text": " up to "
+        },
+        {
+          "text": "6",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards into "
+        },
+        {
+          "text": "Maul",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

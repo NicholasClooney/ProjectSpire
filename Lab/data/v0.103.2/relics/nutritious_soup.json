@@ -1,0 +1,106 @@
+{
+  "schema_version": "0.1.0",
+  "id": "NUTRITIOUS_SOUP",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "NutritiousSoup",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/NutritiousSoup.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "NUTRITIOUS_SOUP.title",
+      "description_key": "NUTRITIOUS_SOUP.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/nutritious_soup.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Nutritious Soup",
+    "description": {
+      "plain": "Upon pickup, Enchant all Strikes in your Deck with Tezcatara's Ember.",
+      "runs": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Enchant",
+          "style": "gold"
+        },
+        {
+          "text": " all "
+        },
+        {
+          "text": "Strikes",
+          "style": "gold"
+        },
+        {
+          "text": " in your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": " with "
+        },
+        {
+          "text": "Tezcatara's Ember",
+          "style": "purple"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Enchant all Strikes in your Deck with Tezcatara's Ember.",
+      "runs": [
+        {
+          "text": "Enchant",
+          "style": "gold"
+        },
+        {
+          "text": " all "
+        },
+        {
+          "text": "Strikes",
+          "style": "gold"
+        },
+        {
+          "text": " in your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": " with "
+        },
+        {
+          "text": "Tezcatara's Ember",
+          "style": "purple"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

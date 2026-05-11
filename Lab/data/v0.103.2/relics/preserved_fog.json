@@ -1,0 +1,114 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PRESERVED_FOG",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PreservedFog",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/PreservedFog.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "PRESERVED_FOG.title",
+      "description_key": "PRESERVED_FOG.description"
+    },
+    "vars": {
+      "Cards": 3
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "FOLLY",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/preserved_fog.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Preserved Fog",
+    "description": {
+      "plain": "Upon pickup, remove 3 cards from your Deck. Add Folly to your Deck.",
+      "runs": [
+        {
+          "text": "Upon pickup, remove "
+        },
+        {
+          "text": "3",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards from your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": ". Add "
+        },
+        {
+          "text": "Folly",
+          "style": "red"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Remove 3 cards from your Deck. Add Folly to your Deck.",
+      "runs": [
+        {
+          "text": "Remove "
+        },
+        {
+          "text": "3",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards from your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": ". Add "
+        },
+        {
+          "text": "Folly",
+          "style": "red"
+        },
+        {
+          "text": " to your Deck."
+        }
+      ]
+    }
+  }
+}

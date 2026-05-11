@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SWORD_OF_JADE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SwordOfJade",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/SwordOfJade.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "SWORD_OF_JADE.title",
+      "description_key": "SWORD_OF_JADE.description"
+    },
+    "vars": {
+      "StrengthPower": 3
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/sword_of_jade.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Sword of Jade",
+    "description": {
+      "plain": "Start each combat with 3 Strength.",
+      "runs": [
+        {
+          "text": "Start each combat with "
+        },
+        {
+          "text": "3",
+          "source_var": "StrengthPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

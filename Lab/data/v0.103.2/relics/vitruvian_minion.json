@@ -1,0 +1,64 @@
+{
+  "schema_version": "0.1.0",
+  "id": "VITRUVIAN_MINION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "VitruvianMinion",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/VitruvianMinion.cs",
+    "rarity": "Shop",
+    "pools": [
+      "regent"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "VITRUVIAN_MINION.title",
+      "description_key": "VITRUVIAN_MINION.description"
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/vitruvian_minion.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/vitruvian_minion.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Vitruvian Minion",
+    "description": {
+      "plain": "Cards containing \u201cMinion\u201d deal double damage and gain double Block.",
+      "runs": [
+        {
+          "text": "Cards containing \u201cMinion\u201d deal double damage and gain double "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

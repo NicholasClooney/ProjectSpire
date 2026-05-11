@@ -1,0 +1,128 @@
+{
+  "schema_version": "0.1.0",
+  "id": "LARGE_CAPSULE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "LargeCapsule",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/LargeCapsule.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "LARGE_CAPSULE.title",
+      "description_key": "LARGE_CAPSULE.description"
+    },
+    "vars": {
+      "Relics": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/large_capsule.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Large Capsule",
+    "description": {
+      "plain": "Upon pickup, obtain 2 random Relics. Add an additional Strike and Defend to your Deck.",
+      "runs": [
+        {
+          "text": "Upon pickup, obtain "
+        },
+        {
+          "text": "2",
+          "source_var": "Relics",
+          "style": "blue"
+        },
+        {
+          "text": " random "
+        },
+        {
+          "text": "Relics",
+          "style": "gold"
+        },
+        {
+          "text": ". Add an additional "
+        },
+        {
+          "text": "Strike",
+          "style": "gold"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "Defend",
+          "style": "gold"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Obtain 2 random Relics. Add an additional Strike and Defend to your Deck.",
+      "runs": [
+        {
+          "text": "Obtain "
+        },
+        {
+          "text": "2",
+          "source_var": "Relics",
+          "style": "blue"
+        },
+        {
+          "text": " random "
+        },
+        {
+          "text": "Relics",
+          "style": "gold"
+        },
+        {
+          "text": ". Add an additional "
+        },
+        {
+          "text": "Strike",
+          "style": "gold"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "Defend",
+          "style": "gold"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

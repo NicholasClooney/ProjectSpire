@@ -1,0 +1,104 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PRECARIOUS_SHEARS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PrecariousShears",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/PrecariousShears.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "PRECARIOUS_SHEARS.title",
+      "description_key": "PRECARIOUS_SHEARS.description"
+    },
+    "vars": {
+      "Cards": 2,
+      "Damage": 16
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/precarious_shears.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
+    "has_pickup_effect": true
+  },
+  "resolved": {
+    "title": "Precarious Shears",
+    "description": {
+      "plain": "Upon pickup, remove 2 cards from your Deck and lose 16 HP.",
+      "runs": [
+        {
+          "text": "Upon pickup, remove "
+        },
+        {
+          "text": "2",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards from your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": " and lose "
+        },
+        {
+          "text": "16",
+          "source_var": "Damage",
+          "style": "blue"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Remove 2 cards from your Deck. Lose 16 HP.",
+      "runs": [
+        {
+          "text": "Remove "
+        },
+        {
+          "text": "2",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards from your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": ". Lose "
+        },
+        {
+          "text": "16",
+          "source_var": "Damage",
+          "style": "red"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    }
+  }
+}

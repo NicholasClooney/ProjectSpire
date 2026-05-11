@@ -1,0 +1,99 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SPARKLING_ROUGE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SparklingRouge",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/SparklingRouge.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "event",
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "SPARKLING_ROUGE.title",
+      "description_key": "SPARKLING_ROUGE.description"
+    },
+    "vars": {
+      "StrengthPower": 1,
+      "DexterityPower": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "DexterityPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/sparkling_rouge.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Sparkling Rouge",
+    "description": {
+      "plain": "At the start of your 3rd turn, gain 1 Strength and 1 Dexterity.",
+      "runs": [
+        {
+          "text": "At the start of your "
+        },
+        {
+          "text": "3rd",
+          "style": "blue"
+        },
+        {
+          "text": " turn, gain "
+        },
+        {
+          "text": "1",
+          "source_var": "StrengthPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "style": "gold"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "1",
+          "source_var": "DexterityPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dexterity",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "VERY_HOT_COCOA",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "VeryHotCocoa",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/VeryHotCocoa.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "VERY_HOT_COCOA.title",
+      "description_key": "VERY_HOT_COCOA.description"
+    },
+    "vars": {
+      "Energy": 4
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_energy",
+        "target": "Energy",
+        "source": "HoverTipFactory.ForEnergy"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/very_hot_cocoa.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Very Hot Cocoa",
+    "description": {
+      "plain": "Start each combat with an additional 4.",
+      "runs": [
+        {
+          "text": "Start each combat with an additional "
+        },
+        {
+          "text": "4",
+          "source_var": "Energy",
+          "style": "blue"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DAUGHTER_OF_THE_WIND",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DaughterOfTheWind",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/DaughterOfTheWind.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "DAUGHTER_OF_THE_WIND.title",
+      "description_key": "DAUGHTER_OF_THE_WIND.description"
+    },
+    "vars": {
+      "Block": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/daughter_of_the_wind.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Daughter of the Wind",
+    "description": {
+      "plain": "Whenever you play an Attack, gain 1 Block.",
+      "runs": [
+        {
+          "text": "Whenever you play an Attack, gain "
+        },
+        {
+          "text": "1",
+          "source_var": "Block",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

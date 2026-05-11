@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "GAME_PIECE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "GamePiece",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/GamePiece.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "GAME_PIECE.title",
+      "description_key": "GAME_PIECE.description"
+    },
+    "vars": {
+      "Cards": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/game_piece.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Game Piece",
+    "description": {
+      "plain": "Whenever you play a Power, draw 1 card.",
+      "runs": [
+        {
+          "text": "Whenever you play a Power, draw "
+        },
+        {
+          "text": "1",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " card."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BLOOD_SOAKED_ROSE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BloodSoakedRose",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/BloodSoakedRose.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BLOOD_SOAKED_ROSE.title",
+      "description_key": "BLOOD_SOAKED_ROSE.description"
+    },
+    "vars": {
+      "Energy": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "ENTHRALLED",
+        "source": "HoverTipFactory.FromCard"
+      },
+      {
+        "kind": "hover_tip_energy",
+        "target": "Energy",
+        "source": "HoverTipFactory.ForEnergy"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/blood_soaked_rose.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
+    "has_pickup_effect": true
+  },
+  "resolved": {
+    "title": "Blood-Soaked Rose",
+    "description": {
+      "plain": "Upon pickup, add 1 Enthralled to your Deck. Gain 1 at the start of each turn.",
+      "runs": [
+        {
+          "text": "Upon pickup, add "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Enthralled",
+          "style": "red"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": ". Gain "
+        },
+        {
+          "text": "1",
+          "source_var": "Energy"
+        },
+        {
+          "text": " at the start of each turn."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Add 1 Enthralled to your Deck. Gain 1 at the start of each turn.",
+      "runs": [
+        {
+          "text": "Add "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Enthralled",
+          "style": "red"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": ". Gain "
+        },
+        {
+          "text": "1",
+          "source_var": "Energy"
+        },
+        {
+          "text": " at the start of each turn."
+        }
+      ]
+    }
+  }
+}

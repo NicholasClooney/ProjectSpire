@@ -1,0 +1,91 @@
+{
+  "schema_version": "0.1.0",
+  "id": "NEW_LEAF",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "NewLeaf",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/NewLeaf.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "NEW_LEAF.title",
+      "description_key": "NEW_LEAF.description"
+    },
+    "vars": {
+      "Cards": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Transform",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/new_leaf.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
+    "has_pickup_effect": true
+  },
+  "resolved": {
+    "title": "New Leaf",
+    "description": {
+      "plain": "Upon pickup, Transform 1 card.",
+      "runs": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Transform",
+          "style": "gold"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "1",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " card."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Transform 1 card.",
+      "runs": [
+        {
+          "text": "Transform",
+          "style": "gold"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "1",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " card."
+        }
+      ]
+    }
+  }
+}

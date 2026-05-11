@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CROSSBOW",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Crossbow",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Crossbow.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "CROSSBOW.title",
+      "description_key": "CROSSBOW.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/crossbow.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Crossbow",
+    "description": {
+      "plain": "At the start of your turn, add a random Attack into your Hand. It's free to play this turn.",
+      "runs": [
+        {
+          "text": "At the start of your turn, add a random "
+        },
+        {
+          "text": "Attack",
+          "style": "gold"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": ". It's free to play this turn."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

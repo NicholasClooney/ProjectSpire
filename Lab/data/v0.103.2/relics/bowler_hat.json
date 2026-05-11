@@ -1,0 +1,62 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BOWLER_HAT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BowlerHat",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/BowlerHat.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BOWLER_HAT.title",
+      "description_key": "BOWLER_HAT.description"
+    },
+    "vars": {
+      "GoldIncrease": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/bowler_hat.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Bowler Hat",
+    "description": {
+      "plain": "Gain {GoldIncrease:percentMore()}% additional Gold.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "{GoldIncrease:percentMore()}%",
+          "style": "blue"
+        },
+        {
+          "text": " additional "
+        },
+        {
+          "text": "Gold",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

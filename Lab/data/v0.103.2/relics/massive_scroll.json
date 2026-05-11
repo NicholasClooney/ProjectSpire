@@ -1,0 +1,109 @@
+{
+  "schema_version": "0.1.0",
+  "id": "MASSIVE_SCROLL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "MassiveScroll",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/MassiveScroll.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "MASSIVE_SCROLL.title",
+      "description_key": "MASSIVE_SCROLL.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/massive_scroll.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Massive Scroll",
+    "description": {
+      "plain": "Upon pickup, choose 1 of 3 Multiplayer Cards to add to your Deck.",
+      "runs": [
+        {
+          "text": "Upon pickup, choose "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "3",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Multiplayer Cards",
+          "style": "gold"
+        },
+        {
+          "text": " to add to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Choose 1 of 3 Multiplayer Cards to add to your Deck.",
+      "runs": [
+        {
+          "text": "Choose "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "3",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Multiplayer Cards",
+          "style": "gold"
+        },
+        {
+          "text": " to add to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

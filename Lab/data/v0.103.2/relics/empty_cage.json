@@ -1,0 +1,87 @@
+{
+  "schema_version": "0.1.0",
+  "id": "EMPTY_CAGE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "EmptyCage",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/EmptyCage.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "EMPTY_CAGE.title",
+      "description_key": "EMPTY_CAGE.description"
+    },
+    "vars": {
+      "Cards": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/empty_cage.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
+    "has_pickup_effect": true
+  },
+  "resolved": {
+    "title": "Empty Cage",
+    "description": {
+      "plain": "Upon pickup, remove 2 cards from your Deck.",
+      "runs": [
+        {
+          "text": "Upon pickup, remove "
+        },
+        {
+          "text": "2",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards from your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Remove 2 cards from your Deck.",
+      "runs": [
+        {
+          "text": "Remove "
+        },
+        {
+          "text": "2",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards from your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

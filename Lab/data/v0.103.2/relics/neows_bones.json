@@ -1,0 +1,131 @@
+{
+  "schema_version": "0.1.0",
+  "id": "NEOWS_BONES",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "NeowsBones",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/NeowsBones.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "NEOWS_BONES.title",
+      "description_key": "NEOWS_BONES.description"
+    },
+    "vars": {
+      "Relics": 2,
+      "Curses": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/neows_bones.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Neow's Bones",
+    "description": {
+      "plain": "Upon pickup, gain 2 random Neow Relics. Add 1 random Curse to your Deck.",
+      "runs": [
+        {
+          "text": "Upon pickup, gain "
+        },
+        {
+          "text": "2",
+          "source_var": "Relics",
+          "style": "blue"
+        },
+        {
+          "text": " random "
+        },
+        {
+          "text": "Neow Relics",
+          "style": "gold"
+        },
+        {
+          "text": ". Add "
+        },
+        {
+          "text": "1",
+          "source_var": "Curses",
+          "style": "blue"
+        },
+        {
+          "text": " random "
+        },
+        {
+          "text": "Curse",
+          "style": "red"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Gain 2 random Neow Relics. Add 1 random Curse to your Deck.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "2",
+          "source_var": "Relics",
+          "style": "blue"
+        },
+        {
+          "text": " random "
+        },
+        {
+          "text": "Neow Relics",
+          "style": "gold"
+        },
+        {
+          "text": ". Add "
+        },
+        {
+          "text": "1",
+          "source_var": "Curses",
+          "style": "blue"
+        },
+        {
+          "text": " random "
+        },
+        {
+          "text": "Curse",
+          "style": "red"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

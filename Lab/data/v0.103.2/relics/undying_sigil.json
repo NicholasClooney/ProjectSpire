@@ -1,0 +1,69 @@
+{
+  "schema_version": "0.1.0",
+  "id": "UNDYING_SIGIL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "UndyingSigil",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/UndyingSigil.cs",
+    "rarity": "Shop",
+    "pools": [
+      "necrobinder"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "UNDYING_SIGIL.title",
+      "description_key": "UNDYING_SIGIL.description"
+    },
+    "vars": {
+      "DamageDecrease": 0
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "DoomPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/undying_sigil.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Undying Sigil",
+    "description": {
+      "plain": "Enemies with at least as much Doom as HP deal 50% less damage.",
+      "runs": [
+        {
+          "text": "Enemies with at least as much "
+        },
+        {
+          "text": "Doom",
+          "style": "gold"
+        },
+        {
+          "text": " as HP deal "
+        },
+        {
+          "text": "50%",
+          "style": "blue"
+        },
+        {
+          "text": " less damage."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

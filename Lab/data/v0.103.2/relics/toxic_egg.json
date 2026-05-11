@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TOXIC_EGG",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ToxicEgg",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/ToxicEgg.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "TOXIC_EGG.title",
+      "description_key": "TOXIC_EGG.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/toxic_egg.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Toxic Egg",
+    "description": {
+      "plain": "Whenever you add a Skill into your Deck, Upgrade it.",
+      "runs": [
+        {
+          "text": "Whenever you add a Skill into your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "Upgrade",
+          "style": "gold"
+        },
+        {
+          "text": " it."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

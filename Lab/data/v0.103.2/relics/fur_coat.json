@@ -1,0 +1,91 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FUR_COAT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "FurCoat",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/FurCoat.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "FUR_COAT.title",
+      "description_key": "FUR_COAT.description"
+    },
+    "vars": {
+      "Combats": 7
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/fur_coat.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/fur_coat.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Fur Coat",
+    "description": {
+      "plain": "Upon pickup, mark 7 random combats. Enemies in those rooms have 1 HP.",
+      "runs": [
+        {
+          "text": "Upon pickup, mark "
+        },
+        {
+          "text": "7",
+          "source_var": "Combats",
+          "style": "blue"
+        },
+        {
+          "text": " random combats. Enemies in those rooms have "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Mark 7 random combats. Enemies in those rooms have 1 HP.",
+      "runs": [
+        {
+          "text": "Mark "
+        },
+        {
+          "text": "7",
+          "source_var": "Combats",
+          "style": "blue"
+        },
+        {
+          "text": " random combats. Enemies in those rooms have "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    }
+  }
+}

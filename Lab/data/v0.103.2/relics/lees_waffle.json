@@ -1,0 +1,57 @@
+{
+  "schema_version": "0.1.0",
+  "id": "LEES_WAFFLE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "LeesWaffle",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/LeesWaffle.cs",
+    "rarity": "Shop",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "LEES_WAFFLE.title",
+      "description_key": "LEES_WAFFLE.description"
+    },
+    "vars": {
+      "MaxHp": 7
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/lees_waffle.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
+    "has_pickup_effect": true
+  },
+  "resolved": {
+    "title": "Lee's Waffle",
+    "description": {
+      "plain": "Upon pickup, raise your Max HP by 7 and heal all of your HP.",
+      "runs": [
+        {
+          "text": "Upon pickup, raise your Max HP by "
+        },
+        {
+          "text": "7",
+          "source_var": "MaxHp",
+          "style": "blue"
+        },
+        {
+          "text": " and heal all of your HP."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

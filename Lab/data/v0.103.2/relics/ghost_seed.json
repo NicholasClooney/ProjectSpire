@@ -1,0 +1,68 @@
+{
+  "schema_version": "0.1.0",
+  "id": "GHOST_SEED",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "GhostSeed",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/GhostSeed.cs",
+    "rarity": "Shop",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "GHOST_SEED.title",
+      "description_key": "GHOST_SEED.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/ghost_seed.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/ghost_seed.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Ghost Seed",
+    "description": {
+      "plain": "Strikes and Defends gain Ethereal.",
+      "runs": [
+        {
+          "text": "Strikes",
+          "style": "gold"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "Defends",
+          "style": "gold"
+        },
+        {
+          "text": " gain "
+        },
+        {
+          "text": "Ethereal",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

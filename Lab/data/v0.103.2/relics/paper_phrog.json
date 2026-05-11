@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PAPER_PHROG",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PaperPhrog",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/PaperPhrog.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "ironclad"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "PAPER_PHROG.title",
+      "description_key": "PAPER_PHROG.description"
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "VulnerablePower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/paper_phrog.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Paper Phrog",
+    "description": {
+      "plain": "Enemies with Vulnerable take 75% more damage rather than 50%.",
+      "runs": [
+        {
+          "text": "Enemies with "
+        },
+        {
+          "text": "Vulnerable",
+          "style": "gold"
+        },
+        {
+          "text": " take "
+        },
+        {
+          "text": "75%",
+          "style": "blue"
+        },
+        {
+          "text": " more damage rather than "
+        },
+        {
+          "text": "50%",
+          "style": "blue"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CAPTAINS_WHEEL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "CaptainsWheel",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/CaptainsWheel.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "CAPTAINS_WHEEL.title",
+      "description_key": "CAPTAINS_WHEEL.description"
+    },
+    "vars": {
+      "Block": 18
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/captains_wheel.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Captain's Wheel",
+    "description": {
+      "plain": "At the start of your 3rd turn, gain 18 Block.",
+      "runs": [
+        {
+          "text": "At the start of your "
+        },
+        {
+          "text": "3rd",
+          "style": "blue"
+        },
+        {
+          "text": " turn, gain "
+        },
+        {
+          "text": "18",
+          "source_var": "Block",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

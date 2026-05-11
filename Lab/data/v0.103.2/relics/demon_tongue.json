@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DEMON_TONGUE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DemonTongue",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/DemonTongue.cs",
+    "rarity": "Rare",
+    "pools": [
+      "ironclad"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "DEMON_TONGUE.title",
+      "description_key": "DEMON_TONGUE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/demon_tongue.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Demon Tongue",
+    "description": {
+      "plain": "The first time you lose HP on your turn, heal HP equal to the amount lost.",
+      "runs": [
+        {
+          "text": "The first time you lose HP on your turn, heal HP equal to the amount lost."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

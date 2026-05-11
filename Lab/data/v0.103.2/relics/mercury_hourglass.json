@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "MERCURY_HOURGLASS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "MercuryHourglass",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/MercuryHourglass.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "MERCURY_HOURGLASS.title",
+      "description_key": "MERCURY_HOURGLASS.description"
+    },
+    "vars": {
+      "Damage": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/mercury_hourglass.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Mercury Hourglass",
+    "description": {
+      "plain": "At the start of your turn, deal 3 damage to ALL enemies.",
+      "runs": [
+        {
+          "text": "At the start of your turn, deal "
+        },
+        {
+          "text": "3",
+          "source_var": "Damage",
+          "style": "blue"
+        },
+        {
+          "text": " damage to ALL enemies."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

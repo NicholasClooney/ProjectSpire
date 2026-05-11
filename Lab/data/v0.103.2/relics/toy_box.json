@@ -1,0 +1,118 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TOY_BOX",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ToyBox",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/ToyBox.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "TOY_BOX.title",
+      "description_key": "TOY_BOX.description"
+    },
+    "vars": {
+      "Relics": 4,
+      "Combats": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/toy_box.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
+    "has_pickup_effect": true
+  },
+  "resolved": {
+    "title": "Toy Box",
+    "description": {
+      "plain": "Upon pickup, obtain 4 Wax Relics. Every 3 combats, your left-most Wax Relic will melt away.",
+      "runs": [
+        {
+          "text": "Upon pickup, obtain "
+        },
+        {
+          "text": "4",
+          "source_var": "Relics",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Wax Relics",
+          "style": "gold"
+        },
+        {
+          "text": ". Every "
+        },
+        {
+          "text": "3",
+          "source_var": "Combats",
+          "style": "blue"
+        },
+        {
+          "text": " combats, your left-most "
+        },
+        {
+          "text": "Wax Relic",
+          "style": "gold"
+        },
+        {
+          "text": " will melt away."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Obtain 4 Wax Relics. Every 3 combats, your left-most Wax Relic will melt away.",
+      "runs": [
+        {
+          "text": "Obtain "
+        },
+        {
+          "text": "4",
+          "source_var": "Relics",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Wax Relics",
+          "style": "gold"
+        },
+        {
+          "text": ". Every "
+        },
+        {
+          "text": "3",
+          "source_var": "Combats",
+          "style": "blue"
+        },
+        {
+          "text": " combats, your left-most "
+        },
+        {
+          "text": "Wax Relic",
+          "style": "gold"
+        },
+        {
+          "text": " will melt away."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "id": "VAMBRACE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Vambrace",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Vambrace.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "VAMBRACE.title",
+      "description_key": "VAMBRACE.description"
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/vambrace.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Vambrace",
+    "description": {
+      "plain": "The first time you gain Block from a card each combat, double the amount gained.",
+      "runs": [
+        {
+          "text": "The first time you gain "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": " from a card each combat, double the amount gained."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

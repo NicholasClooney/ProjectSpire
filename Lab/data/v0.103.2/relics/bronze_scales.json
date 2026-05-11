@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BRONZE_SCALES",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BronzeScales",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/BronzeScales.cs",
+    "rarity": "Common",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BRONZE_SCALES.title",
+      "description_key": "BRONZE_SCALES.description"
+    },
+    "vars": {
+      "ThornsPower": 3
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "ThornsPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/bronze_scales.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/bronze_scales.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Bronze Scales",
+    "description": {
+      "plain": "Start each combat with 3 Thorns.",
+      "runs": [
+        {
+          "text": "Start each combat with "
+        },
+        {
+          "text": "3",
+          "source_var": "ThornsPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Thorns",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

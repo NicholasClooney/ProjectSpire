@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.1.0",
+  "id": "EMBER_TEA",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "EmberTea",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/EmberTea.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "EMBER_TEA.title",
+      "description_key": "EMBER_TEA.description"
+    },
+    "vars": {
+      "Combats": 5,
+      "StrengthPower": 2
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/ember_tea.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Ember Tea",
+    "description": {
+      "plain": "At the start of the next 5 combats, gain 2 Strength.",
+      "runs": [
+        {
+          "text": "At the start of the next "
+        },
+        {
+          "text": "5",
+          "source_var": "Combats",
+          "style": "blue"
+        },
+        {
+          "text": " combats, gain "
+        },
+        {
+          "text": "2",
+          "source_var": "StrengthPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

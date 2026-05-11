@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.1.0",
+  "id": "GNARLED_HAMMER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "GnarledHammer",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/GnarledHammer.cs",
+    "rarity": "Shop",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "GNARLED_HAMMER.title",
+      "description_key": "GNARLED_HAMMER.description"
+    },
+    "vars": {
+      "Cards": 3,
+      "SharpAmount": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/gnarled_hammer.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Gnarled Hammer",
+    "description": {
+      "plain": "Upon pickup, Enchant up to 3 Attacks with Sharp 3.",
+      "runs": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Enchant",
+          "style": "gold"
+        },
+        {
+          "text": " up to "
+        },
+        {
+          "text": "3",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " Attacks with "
+        },
+        {
+          "text": "Sharp",
+          "style": "purple"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "3",
+          "source_var": "SharpAmount",
+          "style": "blue"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

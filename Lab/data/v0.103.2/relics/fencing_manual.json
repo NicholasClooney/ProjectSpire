@@ -1,0 +1,68 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FENCING_MANUAL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "FencingManual",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/FencingManual.cs",
+    "rarity": "Common",
+    "pools": [
+      "regent"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "FENCING_MANUAL.title",
+      "description_key": "FENCING_MANUAL.description"
+    },
+    "vars": {
+      "Forge": 10
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/fencing_manual.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/fencing_manual.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Fencing Manual",
+    "description": {
+      "plain": "At the start of each combat, Forge 10.",
+      "runs": [
+        {
+          "text": "At the start of each combat, "
+        },
+        {
+          "text": "Forge",
+          "style": "gold"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "10",
+          "source_var": "Forge",
+          "style": "blue"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FAKE_MERCHANTS_RUG",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "FakeMerchantsRug",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/FakeMerchantsRug.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "FAKE_MERCHANTS_RUG.title",
+      "description_key": "FAKE_MERCHANTS_RUG.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/fake_merchants_rug.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "The Merchant's Rug???",
+    "description": {
+      "plain": "Poor imitation. Does nothing.",
+      "runs": [
+        {
+          "text": "Poor imitation. Does nothing."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

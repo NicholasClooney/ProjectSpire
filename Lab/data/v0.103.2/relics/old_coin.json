@@ -1,0 +1,64 @@
+{
+  "schema_version": "0.1.0",
+  "id": "OLD_COIN",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "OldCoin",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/OldCoin.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "OLD_COIN.title",
+      "description_key": "OLD_COIN.description"
+    },
+    "vars": {
+      "Gold": 300
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/old_coin.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
+    "has_pickup_effect": true
+  },
+  "resolved": {
+    "title": "Old Coin",
+    "description": {
+      "plain": "Upon pickup, gain 300 Gold.",
+      "runs": [
+        {
+          "text": "Upon pickup, gain "
+        },
+        {
+          "text": "300",
+          "source_var": "Gold",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Gold",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

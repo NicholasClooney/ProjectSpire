@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DATA_DISK",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DataDisk",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/DataDisk.cs",
+    "rarity": "Common",
+    "pools": [
+      "defect"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "DATA_DISK.title",
+      "description_key": "DATA_DISK.description"
+    },
+    "vars": {
+      "FocusPower": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "FocusPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/data_disk.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/data_disk.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Data Disk",
+    "description": {
+      "plain": "Start each combat with 1 Focus.",
+      "runs": [
+        {
+          "text": "Start each combat with "
+        },
+        {
+          "text": "1",
+          "source_var": "FocusPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Focus",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

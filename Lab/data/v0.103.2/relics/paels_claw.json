@@ -1,0 +1,95 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PAELS_CLAW",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PaelsClaw",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/PaelsClaw.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "PAELS_CLAW.title",
+      "description_key": "PAELS_CLAW.description"
+    },
+    "vars": {
+      "Cards": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/paels_claw.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Pael's Claw",
+    "description": {
+      "plain": "Upon pickup, Enchant all Defends with {EnchantmentName}.",
+      "runs": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Enchant",
+          "style": "gold"
+        },
+        {
+          "text": " all "
+        },
+        {
+          "text": "Defends",
+          "style": "gold"
+        },
+        {
+          "text": " with "
+        },
+        {
+          "text": "{EnchantmentName}",
+          "style": "purple"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Enchant all Defends with {EnchantmentName}.",
+      "runs": [
+        {
+          "text": "Enchant",
+          "style": "gold"
+        },
+        {
+          "text": " all "
+        },
+        {
+          "text": "Defends",
+          "style": "gold"
+        },
+        {
+          "text": " with "
+        },
+        {
+          "text": "{EnchantmentName}",
+          "style": "purple"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

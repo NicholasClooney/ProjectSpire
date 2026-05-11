@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "GLITTER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Glitter",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Glitter.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "GLITTER.title",
+      "description_key": "GLITTER.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/glitter.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Glitter",
+    "description": {
+      "plain": "Enchant all card rewards with Glam.",
+      "runs": [
+        {
+          "text": "Enchant",
+          "style": "gold"
+        },
+        {
+          "text": " all card rewards with "
+        },
+        {
+          "text": "Glam",
+          "style": "purple"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

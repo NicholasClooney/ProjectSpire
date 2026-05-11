@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1.0",
+  "id": "UNCEASING_TOP",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "UnceasingTop",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/UnceasingTop.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "UNCEASING_TOP.title",
+      "description_key": "UNCEASING_TOP.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/unceasing_top.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Unceasing Top",
+    "description": {
+      "plain": "Whenever you have no cards in Hand during your turn, draw a card.",
+      "runs": [
+        {
+          "text": "Whenever you have no cards in "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": " during your turn, draw a card."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

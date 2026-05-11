@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FORGOTTEN_SOUL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ForgottenSoul",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/ForgottenSoul.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "FORGOTTEN_SOUL.title",
+      "description_key": "FORGOTTEN_SOUL.description"
+    },
+    "vars": {
+      "Damage": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/forgotten_soul.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Forgotten Soul",
+    "description": {
+      "plain": "Whenever you Exhaust a card, deal 1 damage to a random enemy.",
+      "runs": [
+        {
+          "text": "Whenever you "
+        },
+        {
+          "text": "Exhaust",
+          "style": "gold"
+        },
+        {
+          "text": " a card, deal "
+        },
+        {
+          "text": "1",
+          "source_var": "Damage",
+          "style": "blue"
+        },
+        {
+          "text": " damage to a random enemy."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

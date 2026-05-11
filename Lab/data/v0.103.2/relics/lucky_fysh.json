@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "LUCKY_FYSH",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "LuckyFysh",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/LuckyFysh.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "LUCKY_FYSH.title",
+      "description_key": "LUCKY_FYSH.description"
+    },
+    "vars": {
+      "Gold": 15
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/lucky_fysh.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Lucky Fysh",
+    "description": {
+      "plain": "Whenever you add a card to your Deck, gain 15 Gold.",
+      "runs": [
+        {
+          "text": "Whenever you add a card to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": ", gain "
+        },
+        {
+          "text": "15",
+          "source_var": "Gold",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Gold",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

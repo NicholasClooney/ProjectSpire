@@ -1,0 +1,84 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TOASTY_MITTENS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ToastyMittens",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/ToastyMittens.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "TOASTY_MITTENS.title",
+      "description_key": "TOASTY_MITTENS.description"
+    },
+    "vars": {
+      "StrengthPower": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/toasty_mittens.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Toasty Mittens",
+    "description": {
+      "plain": "At the start of your turn, Exhaust the top card of your Draw Pile and gain 1 Strength.",
+      "runs": [
+        {
+          "text": "At the start of your turn, "
+        },
+        {
+          "text": "Exhaust",
+          "style": "gold"
+        },
+        {
+          "text": " the top card of your "
+        },
+        {
+          "text": "Draw Pile",
+          "style": "gold"
+        },
+        {
+          "text": " and gain "
+        },
+        {
+          "text": "1",
+          "source_var": "StrengthPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

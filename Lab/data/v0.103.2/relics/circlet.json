@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CIRCLET",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Circlet",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Circlet.cs",
+    "rarity": "None",
+    "pools": [
+      "fallback"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "CIRCLET.title",
+      "description_key": "CIRCLET.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/circlet.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Circlet",
+    "description": {
+      "plain": "It's a circlet.",
+      "runs": [
+        {
+          "text": "It's a circlet."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "A curious relic which appears when there's a problem within the Spire or there are no more relics to discover.",
+      "runs": [
+        {
+          "text": "A curious relic which appears when there's a problem within the "
+        },
+        {
+          "text": "Spire",
+          "style": "gold"
+        },
+        {
+          "text": " or there are no more relics to discover."
+        }
+      ]
+    }
+  }
+}

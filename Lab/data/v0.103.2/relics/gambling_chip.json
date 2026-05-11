@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1.0",
+  "id": "GAMBLING_CHIP",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "GamblingChip",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/GamblingChip.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "GAMBLING_CHIP.title",
+      "description_key": "GAMBLING_CHIP.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/gambling_chip.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Gambling Chip",
+    "description": {
+      "plain": "At the start of each combat, discard any number of cards then draw that many.",
+      "runs": [
+        {
+          "text": "At the start of each combat, discard any number of cards then draw that many."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

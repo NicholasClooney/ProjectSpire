@@ -1,0 +1,132 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BEAUTIFUL_BRACELET",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BeautifulBracelet",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/BeautifulBracelet.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BEAUTIFUL_BRACELET.title",
+      "description_key": "BEAUTIFUL_BRACELET.description"
+    },
+    "vars": {
+      "Cards": 3,
+      "Swift": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/beautiful_bracelet.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/beautiful_bracelet.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Beautiful Bracelet",
+    "description": {
+      "plain": "Upon pickup, choose 3 cards in your Deck. Enchant them with Swift 3.",
+      "runs": [
+        {
+          "text": "Upon pickup, choose "
+        },
+        {
+          "text": "3",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards in your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": ". "
+        },
+        {
+          "text": "Enchant",
+          "style": "gold"
+        },
+        {
+          "text": " them with "
+        },
+        {
+          "text": "Swift",
+          "style": "purple"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "3",
+          "style": "blue"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Choose 3 cards in your Deck. Enchant them with Swift 3.",
+      "runs": [
+        {
+          "text": "Choose "
+        },
+        {
+          "text": "3",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards in your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": ". "
+        },
+        {
+          "text": "Enchant",
+          "style": "gold"
+        },
+        {
+          "text": " them with "
+        },
+        {
+          "text": "Swift ",
+          "style": "purple"
+        },
+        {
+          "text": "3",
+          "source_var": "Swift",
+          "style": "purple"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

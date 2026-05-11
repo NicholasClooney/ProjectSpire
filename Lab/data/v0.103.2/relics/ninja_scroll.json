@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "id": "NINJA_SCROLL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "NinjaScroll",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/NinjaScroll.cs",
+    "rarity": "Shop",
+    "pools": [
+      "silent"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "NINJA_SCROLL.title",
+      "description_key": "NINJA_SCROLL.description"
+    },
+    "vars": {
+      "Shivs": 3
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "SHIV",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/ninja_scroll.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/ninja_scroll.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Ninja Scroll",
+    "description": {
+      "plain": "At the start of each combat, add 3 Shivs into your Hand.",
+      "runs": [
+        {
+          "text": "At the start of each combat, add "
+        },
+        {
+          "text": "3",
+          "source_var": "Shivs",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Shivs",
+          "style": "gold"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

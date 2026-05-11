@@ -1,0 +1,107 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CURSED_PEARL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "CursedPearl",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/CursedPearl.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "CURSED_PEARL.title",
+      "description_key": "CURSED_PEARL.description"
+    },
+    "vars": {
+      "Gold": 333
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "GREED",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/cursed_pearl.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Cursed Pearl",
+    "description": {
+      "plain": "Upon pickup, receive Greed. Gain 333 Gold.",
+      "runs": [
+        {
+          "text": "Upon pickup, receive "
+        },
+        {
+          "text": "Greed",
+          "style": "red"
+        },
+        {
+          "text": ". Gain "
+        },
+        {
+          "text": "333",
+          "source_var": "Gold",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Gold",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Receive Greed. Gain 333 Gold.",
+      "runs": [
+        {
+          "text": "Receive "
+        },
+        {
+          "text": "Greed",
+          "style": "red"
+        },
+        {
+          "text": ". Gain "
+        },
+        {
+          "text": "333",
+          "source_var": "Gold",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Gold",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

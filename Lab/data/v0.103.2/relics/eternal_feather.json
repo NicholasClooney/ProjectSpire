@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ETERNAL_FEATHER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "EternalFeather",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/EternalFeather.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "ETERNAL_FEATHER.title",
+      "description_key": "ETERNAL_FEATHER.description"
+    },
+    "vars": {
+      "Cards": 5,
+      "Heal": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/eternal_feather.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Eternal Feather",
+    "description": {
+      "plain": "For every 5 cards in your Deck, heal 3 HP whenever you enter a Rest Site.",
+      "runs": [
+        {
+          "text": "For every "
+        },
+        {
+          "text": "5",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards in your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": ", heal "
+        },
+        {
+          "text": "3",
+          "source_var": "Heal",
+          "style": "green"
+        },
+        {
+          "text": " HP whenever you enter a "
+        },
+        {
+          "text": "Rest Site",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PHILOSOPHERS_STONE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PhilosophersStone",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/PhilosophersStone.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "PHILOSOPHERS_STONE.title",
+      "description_key": "PHILOSOPHERS_STONE.description"
+    },
+    "vars": {
+      "StrengthPower": 1,
+      "Energy": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "StrengthPower",
+        "source": "HoverTipFactory.FromPower"
+      },
+      {
+        "kind": "hover_tip_energy",
+        "target": "Energy",
+        "source": "HoverTipFactory.ForEnergy"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/philosophers_stone.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/philosophers_stone.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Philosopher's Stone",
+    "description": {
+      "plain": "Gain 1 at the start of each turn. ALL enemies start combat with 1 Strength.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "1",
+          "source_var": "Energy"
+        },
+        {
+          "text": " at the start of each turn. ALL enemies start combat with "
+        },
+        {
+          "text": "1",
+          "source_var": "StrengthPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Strength",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

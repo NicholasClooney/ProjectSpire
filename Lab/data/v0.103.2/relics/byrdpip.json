@@ -1,0 +1,67 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BYRDPIP",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Byrdpip",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Byrdpip.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BYRDPIP.title",
+      "description_key": "BYRDPIP.description"
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "BYRD_SWOOP",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/byrdpip.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
+    "has_pickup_effect": true
+  },
+  "resolved": {
+    "title": "Byrdpip",
+    "description": {
+      "plain": "Upon pickup, gain the card Byrd Swoop. A Byrdpip will accompany you in battles.",
+      "runs": [
+        {
+          "text": "Upon pickup, gain the card "
+        },
+        {
+          "text": "Byrd Swoop",
+          "style": "gold"
+        },
+        {
+          "text": ". A "
+        },
+        {
+          "text": "Byrdpip",
+          "style": "gold"
+        },
+        {
+          "text": " will accompany you in battles."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SAI",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Sai",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Sai.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "SAI.title",
+      "description_key": "SAI.description"
+    },
+    "vars": {
+      "Block": 7
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/sai.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Sai",
+    "description": {
+      "plain": "At the start of your turn, gain 7 Block.",
+      "runs": [
+        {
+          "text": "At the start of your turn, gain "
+        },
+        {
+          "text": "7",
+          "source_var": "Block",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SIGNET_RING",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SignetRing",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/SignetRing.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "SIGNET_RING.title",
+      "description_key": "SIGNET_RING.description"
+    },
+    "vars": {
+      "Gold": 999
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/signet_ring.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Signet Ring",
+    "description": {
+      "plain": "Upon pickup, gain 999 Gold.",
+      "runs": [
+        {
+          "text": "Upon pickup, gain "
+        },
+        {
+          "text": "999",
+          "source_var": "Gold",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Gold",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

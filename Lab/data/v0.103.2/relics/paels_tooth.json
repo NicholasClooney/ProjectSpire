@@ -1,0 +1,115 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PAELS_TOOTH",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PaelsTooth",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/PaelsTooth.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "PAELS_TOOTH.title",
+      "description_key": "PAELS_TOOTH.description"
+    },
+    "vars": {
+      "Cards": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/paels_tooth.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
+    "has_pickup_effect": true
+  },
+  "resolved": {
+    "title": "Pael's Tooth",
+    "description": {
+      "plain": "Upon pickup, remove 5 cards from your Deck. After each combat, randomly add 1 back Upgraded.{CardTitles.StringValue:cond:\n\nCards devoured:\n{}|}",
+      "runs": [
+        {
+          "text": "Upon pickup, remove "
+        },
+        {
+          "text": "5",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards from your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": ". After each combat, randomly add "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " back "
+        },
+        {
+          "text": "Upgraded",
+          "style": "gold"
+        },
+        {
+          "text": ".{CardTitles.StringValue:cond:\n\nCards devoured:\n{}|}"
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Remove 5 cards from your Deck. After each combat, randomly add 1 back Upgraded.{CardTitles.StringValue:cond:\n\nCards devoured:\n{}|}",
+      "runs": [
+        {
+          "text": "Remove "
+        },
+        {
+          "text": "5",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards from your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": ". After each combat, randomly add "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " back "
+        },
+        {
+          "text": "Upgraded",
+          "style": "gold"
+        },
+        {
+          "text": ".{CardTitles.StringValue:cond:\n\nCards devoured:\n{}|}"
+        }
+      ]
+    }
+  }
+}

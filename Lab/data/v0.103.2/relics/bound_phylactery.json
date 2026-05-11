@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BOUND_PHYLACTERY",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BoundPhylactery",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/BoundPhylactery.cs",
+    "rarity": "Starter",
+    "pools": [
+      "necrobinder"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BOUND_PHYLACTERY.title",
+      "description_key": "BOUND_PHYLACTERY.description"
+    },
+    "vars": {
+      "Summon": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/bound_phylactery.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Bound Phylactery",
+    "description": {
+      "plain": "At the start of your turn, Summon 1.",
+      "runs": [
+        {
+          "text": "At the start of your turn, "
+        },
+        {
+          "text": "Summon",
+          "style": "gold"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "1",
+          "source_var": "Summon",
+          "style": "blue"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

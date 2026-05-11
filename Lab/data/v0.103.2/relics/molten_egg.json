@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "id": "MOLTEN_EGG",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "MoltenEgg",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/MoltenEgg.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "MOLTEN_EGG.title",
+      "description_key": "MOLTEN_EGG.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/molten_egg.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Molten Egg",
+    "description": {
+      "plain": "Whenever you add an Attack card to your Deck, Upgrade it.",
+      "runs": [
+        {
+          "text": "Whenever you add an Attack card to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "Upgrade",
+          "style": "gold"
+        },
+        {
+          "text": " it."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

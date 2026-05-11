@@ -1,0 +1,60 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BRILLIANT_SCARF",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BrilliantScarf",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/BrilliantScarf.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BRILLIANT_SCARF.title",
+      "description_key": "BRILLIANT_SCARF.description"
+    },
+    "vars": {
+      "Cards": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/brilliant_scarf.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/brilliant_scarf.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Brilliant Scarf",
+    "description": {
+      "plain": "The 5th card you play each turn is free.",
+      "runs": [
+        {
+          "text": "The "
+        },
+        {
+          "text": "5th",
+          "style": "blue"
+        },
+        {
+          "text": " card you play each turn is free."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

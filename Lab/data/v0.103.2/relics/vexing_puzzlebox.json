@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1.0",
+  "id": "VEXING_PUZZLEBOX",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "VexingPuzzlebox",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/VexingPuzzlebox.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "VEXING_PUZZLEBOX.title",
+      "description_key": "VEXING_PUZZLEBOX.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/vexing_puzzlebox.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Vexing Puzzlebox",
+    "description": {
+      "plain": "At the start of each combat, add a random card into your Hand. It's free to play this turn.",
+      "runs": [
+        {
+          "text": "At the start of each combat, add a random card into your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": ". It's free to play this turn."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

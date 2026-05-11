@@ -1,0 +1,64 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ARCHAIC_TOOTH",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ArchaicTooth",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/ArchaicTooth.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "ARCHAIC_TOOTH.title",
+      "description_key": "ARCHAIC_TOOTH.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/archaic_tooth.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Archaic Tooth",
+    "description": {
+      "plain": "Upon pickup, Transform {StarterCard.StringValue:cond:[gold]{StarterCard}[/gold] into [gold]{AncientCard}[/gold]|a starter card into an ancient version}.",
+      "runs": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Transform",
+          "style": "gold"
+        },
+        {
+          "text": " {StarterCard.StringValue:cond:[gold]{StarterCard}[/gold] into [gold]{AncientCard}[/gold]|a starter card into an ancient version}."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Transform {StarterCard.StringValue:cond:[gold]{StarterCard}[/gold] into [gold]{AncientCard}[/gold]|a starter card into an ancient version}.",
+      "runs": [
+        {
+          "text": "Transform",
+          "style": "gold"
+        },
+        {
+          "text": " {StarterCard.StringValue:cond:[gold]{StarterCard}[/gold] into [gold]{AncientCard}[/gold]|a starter card into an ancient version}."
+        }
+      ]
+    }
+  }
+}

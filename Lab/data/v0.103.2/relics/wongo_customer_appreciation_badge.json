@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1.0",
+  "id": "WONGO_CUSTOMER_APPRECIATION_BADGE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "WongoCustomerAppreciationBadge",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/WongoCustomerAppreciationBadge.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "WONGO_CUSTOMER_APPRECIATION_BADGE.title",
+      "description_key": "WONGO_CUSTOMER_APPRECIATION_BADGE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/wongo_customer_appreciation_badge.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Wongo Customer Appreciation Badge",
+    "description": {
+      "plain": "Does nothing.",
+      "runs": [
+        {
+          "text": "Does nothing."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.1.0",
+  "id": "GALACTIC_DUST",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "GalacticDust",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/GalacticDust.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "regent"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "GALACTIC_DUST.title",
+      "description_key": "GALACTIC_DUST.description"
+    },
+    "vars": {
+      "Stars": 10,
+      "Block": 10
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/galactic_dust.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Galactic Dust",
+    "description": {
+      "plain": "For every 10 * spent, gain 10 Block.",
+      "runs": [
+        {
+          "text": "For every "
+        },
+        {
+          "text": "10",
+          "source_var": "Stars",
+          "style": "blue"
+        },
+        {
+          "text": " * spent, gain "
+        },
+        {
+          "text": "10",
+          "source_var": "Block",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

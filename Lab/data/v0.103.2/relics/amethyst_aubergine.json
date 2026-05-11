@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "AMETHYST_AUBERGINE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "AmethystAubergine",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/AmethystAubergine.cs",
+    "rarity": "Common",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "AMETHYST_AUBERGINE.title",
+      "description_key": "AMETHYST_AUBERGINE.description"
+    },
+    "vars": {
+      "Gold": 15
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/amethyst_aubergine.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Amethyst Aubergine",
+    "description": {
+      "plain": "Enemies drop 15 additional Gold.",
+      "runs": [
+        {
+          "text": "Enemies drop "
+        },
+        {
+          "text": "15",
+          "source_var": "Gold",
+          "style": "blue"
+        },
+        {
+          "text": " additional "
+        },
+        {
+          "text": "Gold",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

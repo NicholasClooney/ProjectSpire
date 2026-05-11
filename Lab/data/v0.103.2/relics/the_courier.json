@@ -1,0 +1,60 @@
+{
+  "schema_version": "0.1.0",
+  "id": "THE_COURIER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TheCourier",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/TheCourier.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "THE_COURIER.title",
+      "description_key": "THE_COURIER.description"
+    },
+    "vars": {
+      "Discount": 20
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/the_courier.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "The Courier",
+    "description": {
+      "plain": "The merchant no longer runs out of cards, relics, or potions and his prices are reduced by 20%.",
+      "runs": [
+        {
+          "text": "The merchant no longer runs out of cards, relics, or potions and his prices are reduced by "
+        },
+        {
+          "text": "20",
+          "source_var": "Discount",
+          "style": "blue"
+        },
+        {
+          "text": "%",
+          "style": "blue"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

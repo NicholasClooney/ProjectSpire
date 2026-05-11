@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PAELS_GROWTH",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PaelsGrowth",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/PaelsGrowth.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "PAELS_GROWTH.title",
+      "description_key": "PAELS_GROWTH.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/paels_growth.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Pael's Growth",
+    "description": {
+      "plain": "Upon pickup, Enchant a card with {EnchantmentName}.",
+      "runs": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Enchant",
+          "style": "gold"
+        },
+        {
+          "text": " a card with "
+        },
+        {
+          "text": "{EnchantmentName}",
+          "style": "purple"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Enchant a card with {EnchantmentName}.",
+      "runs": [
+        {
+          "text": "Enchant",
+          "style": "gold"
+        },
+        {
+          "text": " a card with "
+        },
+        {
+          "text": "{EnchantmentName}",
+          "style": "purple"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

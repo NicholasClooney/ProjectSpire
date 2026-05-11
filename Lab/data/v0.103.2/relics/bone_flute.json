@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BONE_FLUTE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BoneFlute",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/BoneFlute.cs",
+    "rarity": "Common",
+    "pools": [
+      "necrobinder"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BONE_FLUTE.title",
+      "description_key": "BONE_FLUTE.description"
+    },
+    "vars": {
+      "Block": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/bone_flute.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Bone Flute",
+    "description": {
+      "plain": "Whenever Osty attacks, gain 2 Block.",
+      "runs": [
+        {
+          "text": "Whenever "
+        },
+        {
+          "text": "Osty",
+          "style": "gold"
+        },
+        {
+          "text": " attacks, gain "
+        },
+        {
+          "text": "2",
+          "source_var": "Block",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

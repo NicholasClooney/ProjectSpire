@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DINGY_RUG",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DingyRug",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/DingyRug.cs",
+    "rarity": "Shop",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "DINGY_RUG.title",
+      "description_key": "DINGY_RUG.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/dingy_rug.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Dingy Rug",
+    "description": {
+      "plain": "Card rewards can now contain Colorless cards.",
+      "runs": [
+        {
+          "text": "Card rewards can now contain Colorless cards."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

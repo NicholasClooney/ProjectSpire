@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "id": "GOLDEN_COMPASS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "GoldenCompass",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/GoldenCompass.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "GOLDEN_COMPASS.title",
+      "description_key": "GOLDEN_COMPASS.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/golden_compass.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
+    "has_pickup_effect": true
+  },
+  "resolved": {
+    "title": "Golden Compass",
+    "description": {
+      "plain": "Upon pickup, replace the Act 2 Map with a single special path.",
+      "runs": [
+        {
+          "text": "Upon pickup, replace the "
+        },
+        {
+          "text": "Act",
+          "style": "gold"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "2",
+          "style": "blue"
+        },
+        {
+          "text": " Map with a single special path."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Replace the Act 2 Map with a single special path.",
+      "runs": [
+        {
+          "text": "Replace the "
+        },
+        {
+          "text": "Act",
+          "style": "gold"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "2",
+          "style": "blue"
+        },
+        {
+          "text": " Map with a single special path."
+        }
+      ]
+    }
+  }
+}

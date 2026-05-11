@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PERMAFROST",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Permafrost",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Permafrost.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "PERMAFROST.title",
+      "description_key": "PERMAFROST.description"
+    },
+    "vars": {
+      "Block": 7
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/permafrost.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Permafrost",
+    "description": {
+      "plain": "The first time you play a Power each combat, gain 7 Block.",
+      "runs": [
+        {
+          "text": "The first time you play a Power each combat, gain "
+        },
+        {
+          "text": "7",
+          "source_var": "Block",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

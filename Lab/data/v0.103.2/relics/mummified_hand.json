@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1.0",
+  "id": "MUMMIFIED_HAND",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "MummifiedHand",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/MummifiedHand.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "MUMMIFIED_HAND.title",
+      "description_key": "MUMMIFIED_HAND.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/mummified_hand.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Mummified Hand",
+    "description": {
+      "plain": "Whenever you play a Power, a random card in your Hand is free to play that turn.",
+      "runs": [
+        {
+          "text": "Whenever you play a Power, a random card in your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": " is free to play that turn."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

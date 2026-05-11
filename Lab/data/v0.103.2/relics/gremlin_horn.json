@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.1.0",
+  "id": "GREMLIN_HORN",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "GremlinHorn",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/GremlinHorn.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "GREMLIN_HORN.title",
+      "description_key": "GREMLIN_HORN.description"
+    },
+    "vars": {
+      "Energy": 1,
+      "Cards": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_energy",
+        "target": "Energy",
+        "source": "HoverTipFactory.ForEnergy"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/gremlin_horn.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Gremlin Horn",
+    "description": {
+      "plain": "Whenever an enemy dies, gain 1 and draw 1 card.",
+      "runs": [
+        {
+          "text": "Whenever an enemy dies, gain "
+        },
+        {
+          "text": "1",
+          "source_var": "Energy"
+        },
+        {
+          "text": " and draw "
+        },
+        {
+          "text": "1",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " card."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

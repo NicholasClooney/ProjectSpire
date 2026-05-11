@@ -1,0 +1,104 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FRAGRANT_MUSHROOM",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "FragrantMushroom",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/FragrantMushroom.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "FRAGRANT_MUSHROOM.title",
+      "description_key": "FRAGRANT_MUSHROOM.description"
+    },
+    "vars": {
+      "HpLoss": 15,
+      "Cards": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/fragrant_mushroom.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
+    "has_pickup_effect": true
+  },
+  "resolved": {
+    "title": "Fragrant Mushroom",
+    "description": {
+      "plain": "Upon pickup, lose 15 HP and Upgrade 2 random cards.",
+      "runs": [
+        {
+          "text": "Upon pickup, lose "
+        },
+        {
+          "text": "15",
+          "source_var": "HpLoss",
+          "style": "blue"
+        },
+        {
+          "text": " HP and "
+        },
+        {
+          "text": "Upgrade",
+          "style": "gold"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "2",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " random cards."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Lose 15 HP. Upgrade 2 random cards.",
+      "runs": [
+        {
+          "text": "Lose "
+        },
+        {
+          "text": "15",
+          "source_var": "HpLoss",
+          "style": "red"
+        },
+        {
+          "text": " HP. "
+        },
+        {
+          "text": "Upgrade",
+          "style": "gold"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "2",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " random cards."
+        }
+      ]
+    }
+  }
+}

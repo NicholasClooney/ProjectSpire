@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PRAYER_WHEEL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PrayerWheel",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/PrayerWheel.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "PRAYER_WHEEL.title",
+      "description_key": "PRAYER_WHEEL.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/prayer_wheel.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Prayer Wheel",
+    "description": {
+      "plain": "Normal enemies drop an additional card reward.",
+      "runs": [
+        {
+          "text": "Normal enemies drop an additional card reward."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

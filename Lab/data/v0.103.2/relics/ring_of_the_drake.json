@@ -1,0 +1,65 @@
+{
+  "schema_version": "0.1.0",
+  "id": "RING_OF_THE_DRAKE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "RingOfTheDrake",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/RingOfTheDrake.cs",
+    "rarity": "Starter",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "RING_OF_THE_DRAKE.title",
+      "description_key": "RING_OF_THE_DRAKE.description"
+    },
+    "vars": {
+      "Cards": 2,
+      "Turns": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/ring_of_the_drake.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Ring of the Drake",
+    "description": {
+      "plain": "At the start of your first 3 turns, draw 2 additional cards.",
+      "runs": [
+        {
+          "text": "At the start of your first "
+        },
+        {
+          "text": "3",
+          "source_var": "Turns",
+          "style": "blue"
+        },
+        {
+          "text": " turns, draw "
+        },
+        {
+          "text": "2",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " additional cards."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

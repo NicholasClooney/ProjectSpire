@@ -1,0 +1,103 @@
+{
+  "schema_version": "0.1.0",
+  "id": "JEWELRY_BOX",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "JewelryBox",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/JewelryBox.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "JEWELRY_BOX.title",
+      "description_key": "JEWELRY_BOX.description"
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "APOTHEOSIS",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/jewelry_box.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
+    "has_pickup_effect": true
+  },
+  "resolved": {
+    "title": "Jewelry Box",
+    "description": {
+      "plain": "Upon pickup, add 1 Apotheosis to your Deck.",
+      "runs": [
+        {
+          "text": "Upon pickup, add "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Apotheosis",
+          "style": "gold"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Add 1 Apotheosis to your Deck.",
+      "runs": [
+        {
+          "text": "Add "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Apotheosis",
+          "style": "gold"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

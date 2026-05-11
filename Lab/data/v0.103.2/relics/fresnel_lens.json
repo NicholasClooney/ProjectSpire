@@ -1,0 +1,84 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FRESNEL_LENS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "FresnelLens",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/FresnelLens.cs",
+    "rarity": "Event",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "FRESNEL_LENS.title",
+      "description_key": "FRESNEL_LENS.description"
+    },
+    "vars": {
+      "NimbleAmount": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/fresnel_lens.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Fresnel Lens",
+    "description": {
+      "plain": "Whenever you add a card that gains Block to your Deck, Enchant it with Nimble 2.",
+      "runs": [
+        {
+          "text": "Whenever you add a card that gains "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "Enchant",
+          "style": "gold"
+        },
+        {
+          "text": " it with "
+        },
+        {
+          "text": "Nimble",
+          "style": "purple"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "2",
+          "source_var": "NimbleAmount",
+          "style": "blue"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FUNERARY_MASK",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "FuneraryMask",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/FuneraryMask.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "necrobinder"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "FUNERARY_MASK.title",
+      "description_key": "FUNERARY_MASK.description"
+    },
+    "vars": {
+      "Cards": 3
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "SOUL",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/funerary_mask.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Funerary Mask",
+    "description": {
+      "plain": "At the start of each combat, add 3 Souls into your Draw Pile.",
+      "runs": [
+        {
+          "text": "At the start of each combat, add "
+        },
+        {
+          "text": "3",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Souls",
+          "style": "gold"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Draw Pile",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "STONE_CRACKER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "StoneCracker",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/StoneCracker.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "STONE_CRACKER.title",
+      "description_key": "STONE_CRACKER.description"
+    },
+    "vars": {
+      "Cards": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/stone_cracker.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Stone Cracker",
+    "description": {
+      "plain": "At the start of each combat, Upgrade 2 random cards in your Draw Pile for the rest of combat.",
+      "runs": [
+        {
+          "text": "At the start of each combat, "
+        },
+        {
+          "text": "Upgrade",
+          "style": "gold"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "2",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " random cards in your "
+        },
+        {
+          "text": "Draw Pile",
+          "style": "gold"
+        },
+        {
+          "text": " for the rest of combat."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

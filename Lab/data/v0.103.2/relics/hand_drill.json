@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "id": "HAND_DRILL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "HandDrill",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/HandDrill.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "HAND_DRILL.title",
+      "description_key": "HAND_DRILL.description"
+    },
+    "vars": {
+      "VulnerablePower": 2
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "VulnerablePower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/hand_drill.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Hand Drill",
+    "description": {
+      "plain": "Whenever you break an enemy's Block, apply 2 Vulnerable.",
+      "runs": [
+        {
+          "text": "Whenever you break an enemy's "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": ", apply "
+        },
+        {
+          "text": "2",
+          "source_var": "VulnerablePower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Vulnerable",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

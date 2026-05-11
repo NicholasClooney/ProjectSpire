@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BAG_OF_PREPARATION",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BagOfPreparation",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/BagOfPreparation.cs",
+    "rarity": "Common",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BAG_OF_PREPARATION.title",
+      "description_key": "BAG_OF_PREPARATION.description"
+    },
+    "vars": {
+      "Cards": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/bag_of_preparation.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Bag of Preparation",
+    "description": {
+      "plain": "At the start of each combat, draw 2 additional cards.",
+      "runs": [
+        {
+          "text": "At the start of each combat, draw "
+        },
+        {
+          "text": "2",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " additional cards."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

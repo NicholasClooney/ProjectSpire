@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SELF_FORMING_CLAY",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SelfFormingClay",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/SelfFormingClay.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "ironclad"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "SELF_FORMING_CLAY.title",
+      "description_key": "SELF_FORMING_CLAY.description"
+    },
+    "vars": {
+      "BlockNextTurn": 3
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/self_forming_clay.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Self-Forming Clay",
+    "description": {
+      "plain": "Whenever you lose HP in combat, gain 3 Block next turn.",
+      "runs": [
+        {
+          "text": "Whenever you lose HP in combat, gain "
+        },
+        {
+          "text": "3",
+          "source_var": "BlockNextTurn",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": " next turn."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

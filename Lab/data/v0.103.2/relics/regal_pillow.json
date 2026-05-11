@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "REGAL_PILLOW",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "RegalPillow",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/RegalPillow.cs",
+    "rarity": "Common",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "REGAL_PILLOW.title",
+      "description_key": "REGAL_PILLOW.description"
+    },
+    "vars": {
+      "Heal": 15
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/regal_pillow.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Regal Pillow",
+    "description": {
+      "plain": "Whenever you Rest, heal an additional 15 HP.",
+      "runs": [
+        {
+          "text": "Whenever you "
+        },
+        {
+          "text": "Rest",
+          "style": "gold"
+        },
+        {
+          "text": ", heal an additional "
+        },
+        {
+          "text": "15",
+          "source_var": "Heal",
+          "style": "blue"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

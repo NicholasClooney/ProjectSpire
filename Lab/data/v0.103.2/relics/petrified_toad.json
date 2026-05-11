@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PETRIFIED_TOAD",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PetrifiedToad",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/PetrifiedToad.cs",
+    "rarity": "Uncommon",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "PETRIFIED_TOAD.title",
+      "description_key": "PETRIFIED_TOAD.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/petrified_toad.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Petrified Toad",
+    "description": {
+      "plain": "At the start of each combat, procure a Potion-Shaped Rock.",
+      "runs": [
+        {
+          "text": "At the start of each combat, procure a "
+        },
+        {
+          "text": "Potion-Shaped Rock",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

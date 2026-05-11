@@ -1,0 +1,67 @@
+{
+  "schema_version": "0.1.0",
+  "id": "LIZARD_TAIL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "LizardTail",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/LizardTail.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "LIZARD_TAIL.title",
+      "description_key": "LIZARD_TAIL.description"
+    },
+    "vars": {
+      "Heal": 50
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/lizard_tail.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Lizard Tail",
+    "description": {
+      "plain": "When your HP would be reduced to 0, heal to 50% of your Max HP instead (works once).",
+      "runs": [
+        {
+          "text": "When your HP would be reduced to "
+        },
+        {
+          "text": "0",
+          "style": "blue"
+        },
+        {
+          "text": ", heal to "
+        },
+        {
+          "text": "50",
+          "source_var": "Heal",
+          "style": "green"
+        },
+        {
+          "text": "%",
+          "style": "green"
+        },
+        {
+          "text": " of your Max HP instead (works once)."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

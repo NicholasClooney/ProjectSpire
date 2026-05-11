@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.1.0",
+  "id": "EMOTION_CHIP",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "EmotionChip",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/EmotionChip.cs",
+    "rarity": "Rare",
+    "pools": [
+      "defect"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "EMOTION_CHIP.title",
+      "description_key": "EMOTION_CHIP.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/emotion_chip.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/emotion_chip.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Emotion Chip",
+    "description": {
+      "plain": "If you lost HP during the previous turn, trigger the passive ability of all Orbs at the start of your turn.",
+      "runs": [
+        {
+          "text": "If you lost HP during the previous turn, trigger the passive ability of all Orbs at the start of your turn."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

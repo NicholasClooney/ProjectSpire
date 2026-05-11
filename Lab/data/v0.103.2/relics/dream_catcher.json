@@ -1,0 +1,64 @@
+{
+  "schema_version": "0.1.0",
+  "id": "DREAM_CATCHER",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "DreamCatcher",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/DreamCatcher.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "DREAM_CATCHER.title",
+      "description_key": "DREAM_CATCHER.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/dream_catcher.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/dream_catcher.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Dream Catcher",
+    "description": {
+      "plain": "Whenever you Rest, you may add a card to your Deck.",
+      "runs": [
+        {
+          "text": "Whenever you "
+        },
+        {
+          "text": "Rest",
+          "style": "gold"
+        },
+        {
+          "text": ", you may add a card to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

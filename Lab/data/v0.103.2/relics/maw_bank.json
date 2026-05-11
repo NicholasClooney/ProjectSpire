@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "MAW_BANK",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "MawBank",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/MawBank.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "MAW_BANK.title",
+      "description_key": "MAW_BANK.description"
+    },
+    "vars": {
+      "Gold": 12
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/maw_bank.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Maw Bank",
+    "description": {
+      "plain": "Whenever you climb a floor, gain 12 Gold. No longer works when you spend any Gold at the shop.",
+      "runs": [
+        {
+          "text": "Whenever you climb a floor, gain "
+        },
+        {
+          "text": "12",
+          "source_var": "Gold",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Gold",
+          "style": "gold"
+        },
+        {
+          "text": ". No longer works when you spend any "
+        },
+        {
+          "text": "Gold",
+          "style": "gold"
+        },
+        {
+          "text": " at the shop."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

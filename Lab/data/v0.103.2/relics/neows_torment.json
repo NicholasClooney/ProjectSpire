@@ -1,0 +1,103 @@
+{
+  "schema_version": "0.1.0",
+  "id": "NEOWS_TORMENT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "NeowsTorment",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/NeowsTorment.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "NEOWS_TORMENT.title",
+      "description_key": "NEOWS_TORMENT.description"
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "NEOWS_FURY",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/neows_torment.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
+    "has_pickup_effect": true
+  },
+  "resolved": {
+    "title": "Neow's Torment",
+    "description": {
+      "plain": "Upon pickup, add 1 Neow's Fury to your Deck.",
+      "runs": [
+        {
+          "text": "Upon pickup, add "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Neow's Fury",
+          "style": "gold"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Add 1 Neow's Fury to your Deck.",
+      "runs": [
+        {
+          "text": "Add "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Neow's Fury",
+          "style": "gold"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

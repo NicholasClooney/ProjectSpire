@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BOOMING_CONCH",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BoomingConch",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/BoomingConch.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BOOMING_CONCH.title",
+      "description_key": "BOOMING_CONCH.description"
+    },
+    "vars": {
+      "Cards": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/booming_conch.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Booming Conch",
+    "description": {
+      "plain": "At the start of Elite combats, draw 2 additional cards.",
+      "runs": [
+        {
+          "text": "At the start of "
+        },
+        {
+          "text": "Elite",
+          "style": "gold"
+        },
+        {
+          "text": " combats, draw "
+        },
+        {
+          "text": "2",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " additional cards."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

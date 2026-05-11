@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1.0",
+  "id": "SNECKO_EYE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "SneckoEye",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/SneckoEye.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "SNECKO_EYE.title",
+      "description_key": "SNECKO_EYE.description"
+    },
+    "vars": {
+      "Cards": 2
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_power",
+        "target": "ConfusedPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/snecko_eye.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Snecko Eye",
+    "description": {
+      "plain": "At the start of your turn, draw 2 additional cards. Start each combat Confused.",
+      "runs": [
+        {
+          "text": "At the start of your turn, draw "
+        },
+        {
+          "text": "2",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " additional cards. Start each combat "
+        },
+        {
+          "text": "Confused",
+          "style": "red"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

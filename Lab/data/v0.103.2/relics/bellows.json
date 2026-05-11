@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BELLOWS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Bellows",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Bellows.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BELLOWS.title",
+      "description_key": "BELLOWS.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/bellows.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Bellows",
+    "description": {
+      "plain": "The first Hand you draw each combat is Upgraded.",
+      "runs": [
+        {
+          "text": "The first "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": " you draw each combat is "
+        },
+        {
+          "text": "Upgraded",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BOOK_OF_FIVE_RINGS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BookOfFiveRings",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/BookOfFiveRings.cs",
+    "rarity": "Common",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BOOK_OF_FIVE_RINGS.title",
+      "description_key": "BOOK_OF_FIVE_RINGS.description"
+    },
+    "vars": {
+      "Cards": 5,
+      "Heal": 20
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/book_of_five_rings.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Book of Five Rings",
+    "description": {
+      "plain": "Every 5 cards you add to your Deck, heal 20 HP.",
+      "runs": [
+        {
+          "text": "Every "
+        },
+        {
+          "text": "5",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards you add to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": ", heal "
+        },
+        {
+          "text": "20",
+          "source_var": "Heal",
+          "style": "green"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "STRIKE_DUMMY",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "StrikeDummy",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/StrikeDummy.cs",
+    "rarity": "Common",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "STRIKE_DUMMY.title",
+      "description_key": "STRIKE_DUMMY.description"
+    },
+    "vars": {
+      "ExtraDamage": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/strike_dummy.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Strike Dummy",
+    "description": {
+      "plain": "Cards containing \u201cStrike\u201d deal 3 additional damage.",
+      "runs": [
+        {
+          "text": "Cards containing \u201cStrike\u201d deal "
+        },
+        {
+          "text": "3",
+          "source_var": "ExtraDamage",
+          "style": "blue"
+        },
+        {
+          "text": " additional damage."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

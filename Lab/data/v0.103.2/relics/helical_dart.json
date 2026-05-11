@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "id": "HELICAL_DART",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "HelicalDart",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/HelicalDart.cs",
+    "rarity": "Rare",
+    "pools": [
+      "silent"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "HELICAL_DART.title",
+      "description_key": "HELICAL_DART.description"
+    },
+    "vars": {
+      "DexterityPower": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "SHIV",
+        "source": "HoverTipFactory.FromCard"
+      },
+      {
+        "kind": "hover_tip_power",
+        "target": "DexterityPower",
+        "source": "HoverTipFactory.FromPower"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/helical_dart.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Helical Dart",
+    "description": {
+      "plain": "Whenever you play a Shiv, gain 1 Dexterity this turn.",
+      "runs": [
+        {
+          "text": "Whenever you play a "
+        },
+        {
+          "text": "Shiv",
+          "style": "gold"
+        },
+        {
+          "text": ", gain "
+        },
+        {
+          "text": "1",
+          "source_var": "DexterityPower",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dexterity",
+          "style": "gold"
+        },
+        {
+          "text": " this turn."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

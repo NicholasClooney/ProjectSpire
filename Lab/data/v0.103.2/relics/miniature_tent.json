@@ -1,0 +1,57 @@
+{
+  "schema_version": "0.1.0",
+  "id": "MINIATURE_TENT",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "MiniatureTent",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/MiniatureTent.cs",
+    "rarity": "Shop",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "MINIATURE_TENT.title",
+      "description_key": "MINIATURE_TENT.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/miniature_tent.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/miniature_tent.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Miniature Tent",
+    "description": {
+      "plain": "You may choose any number of options at Rest Sites.",
+      "runs": [
+        {
+          "text": "You may choose any number of options at "
+        },
+        {
+          "text": "Rest Sites",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BONE_TEA",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BoneTea",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/BoneTea.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BONE_TEA.title",
+      "description_key": "BONE_TEA.description"
+    },
+    "vars": {
+      "Combats": 1
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/bone_tea.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Bone Tea",
+    "description": {
+      "plain": "At the start of the next combat, Upgrade your starting hand.",
+      "runs": [
+        {
+          "text": "At the start of the next combat, "
+        },
+        {
+          "text": "Upgrade",
+          "style": "gold"
+        },
+        {
+          "text": " your starting hand."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

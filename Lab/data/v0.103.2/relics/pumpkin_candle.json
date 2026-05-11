@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "id": "PUMPKIN_CANDLE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "PumpkinCandle",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/PumpkinCandle.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "PUMPKIN_CANDLE.title",
+      "description_key": "PUMPKIN_CANDLE.description"
+    },
+    "vars": {
+      "Energy": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_energy",
+        "target": "Energy",
+        "source": "HoverTipFactory.ForEnergy"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/pumpkin_candle.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
+    "has_pickup_effect": true
+  },
+  "resolved": {
+    "title": "Pumpkin Candle",
+    "description": {
+      "plain": "Gain 1 at the start of each turn. Extinguishes at the start of Act 3.",
+      "runs": [
+        {
+          "text": "Gain "
+        },
+        {
+          "text": "1",
+          "source_var": "Energy"
+        },
+        {
+          "text": " at the start of each turn. Extinguishes at the start of "
+        },
+        {
+          "text": "Act",
+          "style": "gold"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "3",
+          "style": "blue"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

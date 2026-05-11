@@ -1,0 +1,69 @@
+{
+  "schema_version": "0.1.0",
+  "id": "MEAT_ON_THE_BONE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "MeatOnTheBone",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/MeatOnTheBone.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "MEAT_ON_THE_BONE.title",
+      "description_key": "MEAT_ON_THE_BONE.description"
+    },
+    "vars": {
+      "HpThreshold": 50,
+      "Heal": 12
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/meat_on_the_bone.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Meat on the Bone",
+    "description": {
+      "plain": "If your HP is at or below 50% at the end of combat, heal 12 HP.",
+      "runs": [
+        {
+          "text": "If your HP is at or below "
+        },
+        {
+          "text": "50",
+          "source_var": "HpThreshold",
+          "style": "blue"
+        },
+        {
+          "text": "%",
+          "style": "blue"
+        },
+        {
+          "text": " at the end of combat, heal "
+        },
+        {
+          "text": "12",
+          "source_var": "Heal",
+          "style": "green"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

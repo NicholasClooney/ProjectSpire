@@ -1,0 +1,102 @@
+{
+  "schema_version": "0.1.0",
+  "id": "STORYBOOK",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "Storybook",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/Storybook.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "STORYBOOK.title",
+      "description_key": "STORYBOOK.description"
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "BRIGHTEST_FLAME",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/storybook.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Storybook",
+    "description": {
+      "plain": "Upon pickup, add 1 Brightest Flame to your Deck.",
+      "runs": [
+        {
+          "text": "Upon pickup, add "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Brightest Flame",
+          "style": "gold"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Add 1 Brightest Flame to your Deck.",
+      "runs": [
+        {
+          "text": "Add "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Brightest Flame",
+          "style": "gold"
+        },
+        {
+          "text": " to your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

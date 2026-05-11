@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "id": "THE_ABACUS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TheAbacus",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/TheAbacus.cs",
+    "rarity": "Shop",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "THE_ABACUS.title",
+      "description_key": "THE_ABACUS.description"
+    },
+    "vars": {
+      "Block": 6
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Block",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/the_abacus.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "The Abacus",
+    "description": {
+      "plain": "Whenever you shuffle your Draw Pile, gain 6 Block.",
+      "runs": [
+        {
+          "text": "Whenever you shuffle your "
+        },
+        {
+          "text": "Draw Pile",
+          "style": "gold"
+        },
+        {
+          "text": ", gain "
+        },
+        {
+          "text": "6",
+          "source_var": "Block",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Block",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

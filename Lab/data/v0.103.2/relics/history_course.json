@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.1.0",
+  "id": "HISTORY_COURSE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "HistoryCourse",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/HistoryCourse.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "HISTORY_COURSE.title",
+      "description_key": "HISTORY_COURSE.description"
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/history_course.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "beta_portrait",
+        "path": "Lab/resources/images/relics/beta/history_course.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "History Course",
+    "description": {
+      "plain": "At the start of your turn, play a copy of your last played Attack or Skill.",
+      "runs": [
+        {
+          "text": "At the start of your turn, play a copy of your last played Attack or Skill."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

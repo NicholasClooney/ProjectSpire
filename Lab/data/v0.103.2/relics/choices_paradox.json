@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CHOICES_PARADOX",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "ChoicesParadox",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/ChoicesParadox.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "CHOICES_PARADOX.title",
+      "description_key": "CHOICES_PARADOX.description"
+    },
+    "vars": {
+      "Cards": 5
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/choices_paradox.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Choices Paradox",
+    "description": {
+      "plain": "At the start of each combat, add 1 of 5 random cards into your Hand. Add Retain to the chosen card.",
+      "runs": [
+        {
+          "text": "At the start of each combat, add "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "5",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " random cards into your "
+        },
+        {
+          "text": "Hand",
+          "style": "gold"
+        },
+        {
+          "text": ". Add "
+        },
+        {
+          "text": "Retain",
+          "style": "gold"
+        },
+        {
+          "text": " to the chosen card."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

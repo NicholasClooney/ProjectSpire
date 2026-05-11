@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BLOOD_VIAL",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BloodVial",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/BloodVial.cs",
+    "rarity": "Common",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BLOOD_VIAL.title",
+      "description_key": "BLOOD_VIAL.description"
+    },
+    "vars": {
+      "Heal": 2
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/blood_vial.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Blood Vial",
+    "description": {
+      "plain": "At the start of each combat, heal 2 HP.",
+      "runs": [
+        {
+          "text": "At the start of each combat, heal "
+        },
+        {
+          "text": "2",
+          "source_var": "Heal",
+          "style": "green"
+        },
+        {
+          "text": " HP."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

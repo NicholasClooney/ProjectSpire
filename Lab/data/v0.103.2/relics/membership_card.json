@@ -1,0 +1,57 @@
+{
+  "schema_version": "0.1.0",
+  "id": "MEMBERSHIP_CARD",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "MembershipCard",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/MembershipCard.cs",
+    "rarity": "Shop",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "MEMBERSHIP_CARD.title",
+      "description_key": "MEMBERSHIP_CARD.description"
+    },
+    "vars": {
+      "Discount": 50
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/membership_card.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Membership Card",
+    "description": {
+      "plain": "50% discount on all products!",
+      "runs": [
+        {
+          "text": "50",
+          "source_var": "Discount",
+          "style": "blue"
+        },
+        {
+          "text": "%",
+          "style": "blue"
+        },
+        {
+          "text": " discount on all products!"
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "id": "CRACKED_CORE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "CrackedCore",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/CrackedCore.cs",
+    "rarity": "Starter",
+    "pools": [
+      "defect"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "CRACKED_CORE.title",
+      "description_key": "CRACKED_CORE.description"
+    },
+    "vars": {
+      "Lightning": 1
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Channeling",
+        "source": "HoverTipFactory.Static"
+      },
+      {
+        "kind": "hover_tip_orb",
+        "target": "LightningOrb",
+        "source": "HoverTipFactory.FromOrb"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/cracked_core.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Cracked Core",
+    "description": {
+      "plain": "At the start of each combat, Channel 1 Lightning.",
+      "runs": [
+        {
+          "text": "At the start of each combat, "
+        },
+        {
+          "text": "Channel",
+          "style": "gold"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "1",
+          "source_var": "Lightning",
+          "style": "blue"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Lightning",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

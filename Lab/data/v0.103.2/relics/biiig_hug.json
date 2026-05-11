@@ -1,0 +1,135 @@
+{
+  "schema_version": "0.1.0",
+  "id": "BIIIG_HUG",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "BiiigHug",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/BiiigHug.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "BIIIG_HUG.title",
+      "description_key": "BIIIG_HUG.description"
+    },
+    "vars": {
+      "Cards": 4
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_card",
+        "target": "SOOT",
+        "source": "HoverTipFactory.FromCard"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/biiig_hug.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Biiig Hug",
+    "description": {
+      "plain": "Upon pickup, remove 4 cards from your Deck. Whenever you shuffle your Draw Pile, add a Soot into your Draw Pile.",
+      "runs": [
+        {
+          "text": "Upon pickup, remove "
+        },
+        {
+          "text": "4",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards from your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": ". Whenever you shuffle your "
+        },
+        {
+          "text": "Draw Pile",
+          "style": "gold"
+        },
+        {
+          "text": ", add a "
+        },
+        {
+          "text": "Soot",
+          "style": "gold"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Draw Pile",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Remove 4 cards from your Deck. Whenever you shuffle your Draw Pile, add a Soot into your Draw Pile.",
+      "runs": [
+        {
+          "text": "Remove "
+        },
+        {
+          "text": "4",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " cards from your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": ". Whenever you shuffle your "
+        },
+        {
+          "text": "Draw Pile",
+          "style": "gold"
+        },
+        {
+          "text": ", add a "
+        },
+        {
+          "text": "Soot",
+          "style": "gold"
+        },
+        {
+          "text": " into your "
+        },
+        {
+          "text": "Draw Pile",
+          "style": "gold"
+        },
+        {
+          "text": "."
+        }
+      ]
+    }
+  }
+}

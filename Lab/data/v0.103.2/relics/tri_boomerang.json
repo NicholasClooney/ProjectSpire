@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "id": "TRI_BOOMERANG",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "TriBoomerang",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/TriBoomerang.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "TRI_BOOMERANG.title",
+      "description_key": "TRI_BOOMERANG.description"
+    },
+    "vars": {
+      "Cards": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/tri_boomerang.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Tri-Boomerang",
+    "description": {
+      "plain": "Choose 3 Attacks in your Deck. Enchant them with Instinct.",
+      "runs": [
+        {
+          "text": "Choose "
+        },
+        {
+          "text": "3",
+          "source_var": "Cards",
+          "style": "blue"
+        },
+        {
+          "text": " Attacks in your "
+        },
+        {
+          "text": "Deck",
+          "style": "gold"
+        },
+        {
+          "text": ". "
+        },
+        {
+          "text": "Enchant",
+          "style": "gold"
+        },
+        {
+          "text": " them with "
+        },
+        {
+          "text": "Instinct",
+          "style": "purple"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

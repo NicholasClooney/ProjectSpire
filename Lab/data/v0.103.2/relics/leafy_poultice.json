@@ -1,0 +1,146 @@
+{
+  "schema_version": "0.1.0",
+  "id": "LEAFY_POULTICE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "LeafyPoultice",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/LeafyPoultice.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "LEAFY_POULTICE.title",
+      "description_key": "LEAFY_POULTICE.description"
+    },
+    "vars": {
+      "MaxHp": 12
+    },
+    "tips": [
+      {
+        "kind": "hover_tip_static",
+        "target": "Transform",
+        "source": "HoverTipFactory.Static"
+      }
+    ],
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/leafy_poultice.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Leafy Poultice",
+    "description": {
+      "plain": "Upon pickup, Transform 1 of your Strikes and 1 of your Defends and lose 12 Max HP.",
+      "runs": [
+        {
+          "text": "Upon pickup, "
+        },
+        {
+          "text": "Transform",
+          "style": "gold"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " of your "
+        },
+        {
+          "text": "Strikes",
+          "style": "gold"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " of your "
+        },
+        {
+          "text": "Defends",
+          "style": "gold"
+        },
+        {
+          "text": " and lose "
+        },
+        {
+          "text": "12",
+          "source_var": "MaxHp",
+          "style": "blue"
+        },
+        {
+          "text": " Max HP."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    },
+    "event_description": {
+      "plain": "Transform 1 of your Strikes and 1 of your Defends. Lose 12 Max HP.",
+      "runs": [
+        {
+          "text": "Transform",
+          "style": "gold"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " of your "
+        },
+        {
+          "text": "Strikes",
+          "style": "gold"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "1",
+          "style": "blue"
+        },
+        {
+          "text": " of your "
+        },
+        {
+          "text": "Defends",
+          "style": "gold"
+        },
+        {
+          "text": ". Lose "
+        },
+        {
+          "text": "12",
+          "source_var": "MaxHp",
+          "style": "red"
+        },
+        {
+          "text": " Max HP."
+        }
+      ]
+    }
+  }
+}

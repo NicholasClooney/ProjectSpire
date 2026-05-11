@@ -1,0 +1,65 @@
+{
+  "schema_version": "0.1.0",
+  "id": "STONE_CALENDAR",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "StoneCalendar",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/StoneCalendar.cs",
+    "rarity": "Rare",
+    "pools": [
+      "shared"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "STONE_CALENDAR.title",
+      "description_key": "STONE_CALENDAR.description"
+    },
+    "vars": {
+      "Damage": 52,
+      "DamageTurn": 7
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/stone_calendar.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Stone Calendar",
+    "description": {
+      "plain": "At the end of turn 7, deal 52 damage to ALL enemies.",
+      "runs": [
+        {
+          "text": "At the end of turn "
+        },
+        {
+          "text": "7",
+          "source_var": "DamageTurn",
+          "style": "blue"
+        },
+        {
+          "text": ", deal "
+        },
+        {
+          "text": "52",
+          "source_var": "Damage",
+          "style": "blue"
+        },
+        {
+          "text": " damage to ALL enemies."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

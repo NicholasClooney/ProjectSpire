@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "id": "WINGED_BOOTS",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "WingedBoots",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/WingedBoots.cs",
+    "rarity": "Ancient",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "WINGED_BOOTS.title",
+      "description_key": "WINGED_BOOTS.description"
+    },
+    "vars": {
+      "Rooms": 3
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/winged_boots.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ]
+  },
+  "resolved": {
+    "title": "Winged Boots",
+    "description": {
+      "plain": "You may ignore paths when choosing the next rooms to travel to 3 times.",
+      "runs": [
+        {
+          "text": "You may ignore paths when choosing the next rooms to travel to "
+        },
+        {
+          "text": "3",
+          "source_var": "Rooms",
+          "style": "blue"
+        },
+        {
+          "text": " times."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}

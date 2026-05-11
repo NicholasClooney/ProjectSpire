@@ -1,0 +1,61 @@
+{
+  "schema_version": "0.1.0",
+  "id": "FAKE_LEES_WAFFLE",
+  "raw": {
+    "parser_version": "0.1.0",
+    "class_name": "FakeLeesWaffle",
+    "file": "Lab/decompiled/v0.103.2/MegaCrit.Sts2.Core.Models.Relics/FakeLeesWaffle.cs",
+    "rarity": "Event",
+    "pools": [
+      "event"
+    ],
+    "localization": {
+      "table": "relics",
+      "title_key": "FAKE_LEES_WAFFLE.title",
+      "description_key": "FAKE_LEES_WAFFLE.description"
+    },
+    "vars": {
+      "Heal": 10
+    },
+    "assets": [
+      {
+        "kind": "portrait",
+        "path": "Lab/resources/images/relics/fake_lees_waffle.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
+    "has_pickup_effect": true
+  },
+  "resolved": {
+    "title": "Lee's Waffle???",
+    "description": {
+      "plain": "Upon pickup, heal 10% of your HP.",
+      "runs": [
+        {
+          "text": "Upon pickup, heal "
+        },
+        {
+          "text": "10",
+          "source_var": "Heal",
+          "style": "green"
+        },
+        {
+          "text": "%",
+          "style": "green"
+        },
+        {
+          "text": " of your HP."
+        }
+      ]
+    },
+    "flavor": {
+      "plain": "Details for this relic will be revealed in the future...",
+      "runs": [
+        {
+          "text": "Details for this relic will be revealed in the future...",
+          "style": "red"
+        }
+      ]
+    }
+  }
+}
