@@ -2,7 +2,7 @@
   "version": 1,
   "source_root": "/Users/nicholasclooney/Source/Projects/ProjectSpire/Lab/unpacked",
   "output_root": "/Users/nicholasclooney/Source/Projects/ProjectSpire/Lab/resources",
-  "generated_at": "2026-05-01T17:14:50.793614+00:00",
+  "generated_at": "2026-05-11T12:18:45.316375+00:00",
   "entries": [
     {
       "entry": "localization",
@@ -13984,6 +13984,3716 @@
       "output_bytes": 42628,
       "quality": 85,
       "ratio": 0.1674
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/akabeko.png",
+      "output": "images/relics/akabeko.webp",
+      "source_bytes": 41402,
+      "output_bytes": 8988,
+      "quality": 85,
+      "ratio": 0.2171
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/alchemical_coffer.png",
+      "output": "images/relics/alchemical_coffer.webp",
+      "source_bytes": 59442,
+      "output_bytes": 11664,
+      "quality": 85,
+      "ratio": 0.1962
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/amethyst_aubergine.png",
+      "output": "images/relics/amethyst_aubergine.webp",
+      "source_bytes": 43762,
+      "output_bytes": 8468,
+      "quality": 85,
+      "ratio": 0.1935
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/amphorae.png",
+      "output": "images/relics/amphorae.webp",
+      "source_bytes": 64672,
+      "output_bytes": 10140,
+      "quality": 85,
+      "ratio": 0.1568
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/anchor.png",
+      "output": "images/relics/anchor.webp",
+      "source_bytes": 40668,
+      "output_bytes": 12566,
+      "quality": 85,
+      "ratio": 0.309
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/arcane_scroll.png",
+      "output": "images/relics/arcane_scroll.webp",
+      "source_bytes": 42373,
+      "output_bytes": 7488,
+      "quality": 85,
+      "ratio": 0.1767
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/archaic_tooth.png",
+      "output": "images/relics/archaic_tooth.webp",
+      "source_bytes": 54465,
+      "output_bytes": 10430,
+      "quality": 85,
+      "ratio": 0.1915
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/art_of_war.png",
+      "output": "images/relics/art_of_war.webp",
+      "source_bytes": 47725,
+      "output_bytes": 9440,
+      "quality": 85,
+      "ratio": 0.1978
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/astrolabe.png",
+      "output": "images/relics/astrolabe.webp",
+      "source_bytes": 42345,
+      "output_bytes": 16546,
+      "quality": 85,
+      "ratio": 0.3907
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/bag_of_marbles.png",
+      "output": "images/relics/bag_of_marbles.webp",
+      "source_bytes": 36444,
+      "output_bytes": 10234,
+      "quality": 85,
+      "ratio": 0.2808
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/bag_of_preparation.png",
+      "output": "images/relics/bag_of_preparation.webp",
+      "source_bytes": 53169,
+      "output_bytes": 12010,
+      "quality": 85,
+      "ratio": 0.2259
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beating_remnant.png",
+      "output": "images/relics/beating_remnant.webp",
+      "source_bytes": 53880,
+      "output_bytes": 11902,
+      "quality": 85,
+      "ratio": 0.2209
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beautiful_bracelet.png",
+      "output": "images/relics/beautiful_bracelet.webp",
+      "source_bytes": 47482,
+      "output_bytes": 17778,
+      "quality": 85,
+      "ratio": 0.3744
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/bellows.png",
+      "output": "images/relics/bellows.webp",
+      "source_bytes": 44709,
+      "output_bytes": 8152,
+      "quality": 85,
+      "ratio": 0.1823
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/belt_buckle.png",
+      "output": "images/relics/belt_buckle.webp",
+      "source_bytes": 46606,
+      "output_bytes": 7430,
+      "quality": 85,
+      "ratio": 0.1594
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/beautiful_bracelet.png",
+      "output": "images/relics/beta/beautiful_bracelet.webp",
+      "source_bytes": 19353,
+      "output_bytes": 9338,
+      "quality": 85,
+      "ratio": 0.4825
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/belt_buckle.png",
+      "output": "images/relics/beta/belt_buckle.webp",
+      "source_bytes": 42613,
+      "output_bytes": 8940,
+      "quality": 85,
+      "ratio": 0.2098
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/brilliant_scarf.png",
+      "output": "images/relics/beta/brilliant_scarf.webp",
+      "source_bytes": 8973,
+      "output_bytes": 4810,
+      "quality": 85,
+      "ratio": 0.5361
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/broken_chain.png",
+      "output": "images/relics/beta/broken_chain.webp",
+      "source_bytes": 9280,
+      "output_bytes": 4466,
+      "quality": 85,
+      "ratio": 0.4813
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/bronze_scales.png",
+      "output": "images/relics/beta/bronze_scales.webp",
+      "source_bytes": 37337,
+      "output_bytes": 9190,
+      "quality": 85,
+      "ratio": 0.2461
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/clipped_wing.png",
+      "output": "images/relics/beta/clipped_wing.webp",
+      "source_bytes": 16391,
+      "output_bytes": 9944,
+      "quality": 85,
+      "ratio": 0.6067
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/cloak_clasp.png",
+      "output": "images/relics/beta/cloak_clasp.webp",
+      "source_bytes": 18389,
+      "output_bytes": 9796,
+      "quality": 85,
+      "ratio": 0.5327
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/data_disk.png",
+      "output": "images/relics/beta/data_disk.webp",
+      "source_bytes": 33742,
+      "output_bytes": 7152,
+      "quality": 85,
+      "ratio": 0.212
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/dream_catcher.png",
+      "output": "images/relics/beta/dream_catcher.webp",
+      "source_bytes": 48323,
+      "output_bytes": 19700,
+      "quality": 85,
+      "ratio": 0.4077
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/dusty_tome.png",
+      "output": "images/relics/beta/dusty_tome.webp",
+      "source_bytes": 15057,
+      "output_bytes": 5424,
+      "quality": 85,
+      "ratio": 0.3602
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/dybbuk_cube.png",
+      "output": "images/relics/beta/dybbuk_cube.webp",
+      "source_bytes": 52556,
+      "output_bytes": 10646,
+      "quality": 85,
+      "ratio": 0.2026
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/ectoplasm.png",
+      "output": "images/relics/beta/ectoplasm.webp",
+      "source_bytes": 50708,
+      "output_bytes": 10536,
+      "quality": 85,
+      "ratio": 0.2078
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/emotion_chip.png",
+      "output": "images/relics/beta/emotion_chip.webp",
+      "source_bytes": 38760,
+      "output_bytes": 11166,
+      "quality": 85,
+      "ratio": 0.2881
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/enormous_ring.png",
+      "output": "images/relics/beta/enormous_ring.webp",
+      "source_bytes": 8222,
+      "output_bytes": 4046,
+      "quality": 85,
+      "ratio": 0.4921
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/fencing_manual.png",
+      "output": "images/relics/beta/fencing_manual.webp",
+      "source_bytes": 7108,
+      "output_bytes": 3370,
+      "quality": 85,
+      "ratio": 0.4741
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/flashlight.png",
+      "output": "images/relics/beta/flashlight.webp",
+      "source_bytes": 17694,
+      "output_bytes": 8344,
+      "quality": 85,
+      "ratio": 0.4716
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/fur_coat.png",
+      "output": "images/relics/beta/fur_coat.webp",
+      "source_bytes": 11680,
+      "output_bytes": 5032,
+      "quality": 85,
+      "ratio": 0.4308
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/ghost_seed.png",
+      "output": "images/relics/beta/ghost_seed.webp",
+      "source_bytes": 5788,
+      "output_bytes": 6796,
+      "quality": 85,
+      "ratio": 1.1742
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/gold_plated_cables.png",
+      "output": "images/relics/beta/gold_plated_cables.webp",
+      "source_bytes": 34189,
+      "output_bytes": 12676,
+      "quality": 85,
+      "ratio": 0.3708
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/hefty_tablet.png",
+      "output": "images/relics/beta/hefty_tablet.webp",
+      "source_bytes": 36486,
+      "output_bytes": 11568,
+      "quality": 85,
+      "ratio": 0.3171
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/history_course.png",
+      "output": "images/relics/beta/history_course.webp",
+      "source_bytes": 3884,
+      "output_bytes": 3690,
+      "quality": 85,
+      "ratio": 0.9501
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/infused_core.png",
+      "output": "images/relics/beta/infused_core.webp",
+      "source_bytes": 12760,
+      "output_bytes": 4676,
+      "quality": 85,
+      "ratio": 0.3665
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/laughing_stone.png",
+      "output": "images/relics/beta/laughing_stone.webp",
+      "source_bytes": 13542,
+      "output_bytes": 6924,
+      "quality": 85,
+      "ratio": 0.5113
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/lead_paperweight.png",
+      "output": "images/relics/beta/lead_paperweight.webp",
+      "source_bytes": 7109,
+      "output_bytes": 2880,
+      "quality": 85,
+      "ratio": 0.4051
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/lidar.png",
+      "output": "images/relics/beta/lidar.webp",
+      "source_bytes": 16859,
+      "output_bytes": 6966,
+      "quality": 85,
+      "ratio": 0.4132
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/little_ghost.png",
+      "output": "images/relics/beta/little_ghost.webp",
+      "source_bytes": 14217,
+      "output_bytes": 6830,
+      "quality": 85,
+      "ratio": 0.4804
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/masters_teachings.png",
+      "output": "images/relics/beta/masters_teachings.webp",
+      "source_bytes": 8784,
+      "output_bytes": 4740,
+      "quality": 85,
+      "ratio": 0.5396
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/merchants_robes.png",
+      "output": "images/relics/beta/merchants_robes.webp",
+      "source_bytes": 14261,
+      "output_bytes": 8050,
+      "quality": 85,
+      "ratio": 0.5645
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/metronome.png",
+      "output": "images/relics/beta/metronome.webp",
+      "source_bytes": 11425,
+      "output_bytes": 5330,
+      "quality": 85,
+      "ratio": 0.4665
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/miniature_tent.png",
+      "output": "images/relics/beta/miniature_tent.webp",
+      "source_bytes": 24060,
+      "output_bytes": 15262,
+      "quality": 85,
+      "ratio": 0.6343
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/my_mantle.png",
+      "output": "images/relics/beta/my_mantle.webp",
+      "source_bytes": 11526,
+      "output_bytes": 5816,
+      "quality": 85,
+      "ratio": 0.5046
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/neows_talisman.png",
+      "output": "images/relics/beta/neows_talisman.webp",
+      "source_bytes": 32340,
+      "output_bytes": 13572,
+      "quality": 85,
+      "ratio": 0.4197
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/ninja_scroll.png",
+      "output": "images/relics/beta/ninja_scroll.webp",
+      "source_bytes": 37064,
+      "output_bytes": 10594,
+      "quality": 85,
+      "ratio": 0.2858
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/paels_flesh.png",
+      "output": "images/relics/beta/paels_flesh.webp",
+      "source_bytes": 6495,
+      "output_bytes": 6678,
+      "quality": 85,
+      "ratio": 1.0282
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/paels_tears.png",
+      "output": "images/relics/beta/paels_tears.webp",
+      "source_bytes": 5107,
+      "output_bytes": 6082,
+      "quality": 85,
+      "ratio": 1.1909
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/pendulum.png",
+      "output": "images/relics/beta/pendulum.webp",
+      "source_bytes": 29799,
+      "output_bytes": 8022,
+      "quality": 85,
+      "ratio": 0.2692
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/philosophers_stone.png",
+      "output": "images/relics/beta/philosophers_stone.webp",
+      "source_bytes": 37652,
+      "output_bytes": 7878,
+      "quality": 85,
+      "ratio": 0.2092
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/phylactery_unbound.png",
+      "output": "images/relics/beta/phylactery_unbound.webp",
+      "source_bytes": 6092,
+      "output_bytes": 6772,
+      "quality": 85,
+      "ratio": 1.1116
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/pollinous_core.png",
+      "output": "images/relics/beta/pollinous_core.webp",
+      "source_bytes": 31504,
+      "output_bytes": 12430,
+      "quality": 85,
+      "ratio": 0.3946
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/red_mask.png",
+      "output": "images/relics/beta/red_mask.webp",
+      "source_bytes": 3967,
+      "output_bytes": 4462,
+      "quality": 85,
+      "ratio": 1.1248
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/ringing_triangle.png",
+      "output": "images/relics/beta/ringing_triangle.webp",
+      "source_bytes": 5433,
+      "output_bytes": 7034,
+      "quality": 85,
+      "ratio": 1.2947
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/runic_capacitor.png",
+      "output": "images/relics/beta/runic_capacitor.webp",
+      "source_bytes": 32047,
+      "output_bytes": 8796,
+      "quality": 85,
+      "ratio": 0.2745
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/seethe.png",
+      "output": "images/relics/beta/seethe.webp",
+      "source_bytes": 20729,
+      "output_bytes": 12698,
+      "quality": 85,
+      "ratio": 0.6126
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/snecko_skull.png",
+      "output": "images/relics/beta/snecko_skull.webp",
+      "source_bytes": 36477,
+      "output_bytes": 14270,
+      "quality": 85,
+      "ratio": 0.3912
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/starter_flare.png",
+      "output": "images/relics/beta/starter_flare.webp",
+      "source_bytes": 4043,
+      "output_bytes": 4714,
+      "quality": 85,
+      "ratio": 1.166
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/symbiotic_virus.png",
+      "output": "images/relics/beta/symbiotic_virus.webp",
+      "source_bytes": 39570,
+      "output_bytes": 15068,
+      "quality": 85,
+      "ratio": 0.3808
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/tanxs_whistle.png",
+      "output": "images/relics/beta/tanxs_whistle.webp",
+      "source_bytes": 9647,
+      "output_bytes": 4088,
+      "quality": 85,
+      "ratio": 0.4238
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/the_boot.png",
+      "output": "images/relics/beta/the_boot.webp",
+      "source_bytes": 29698,
+      "output_bytes": 8406,
+      "quality": 85,
+      "ratio": 0.283
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/top_hat.png",
+      "output": "images/relics/beta/top_hat.webp",
+      "source_bytes": 7801,
+      "output_bytes": 3968,
+      "quality": 85,
+      "ratio": 0.5087
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/twisted_funnel.png",
+      "output": "images/relics/beta/twisted_funnel.webp",
+      "source_bytes": 28758,
+      "output_bytes": 7818,
+      "quality": 85,
+      "ratio": 0.2719
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/velvet_choker.png",
+      "output": "images/relics/beta/velvet_choker.webp",
+      "source_bytes": 20069,
+      "output_bytes": 7114,
+      "quality": 85,
+      "ratio": 0.3545
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/beta/vitruvian_minion.png",
+      "output": "images/relics/beta/vitruvian_minion.webp",
+      "source_bytes": 11371,
+      "output_bytes": 5688,
+      "quality": 85,
+      "ratio": 0.5002
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/big_hat.png",
+      "output": "images/relics/big_hat.webp",
+      "source_bytes": 42513,
+      "output_bytes": 6022,
+      "quality": 85,
+      "ratio": 0.1417
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/big_mushroom.png",
+      "output": "images/relics/big_mushroom.webp",
+      "source_bytes": 48116,
+      "output_bytes": 10698,
+      "quality": 85,
+      "ratio": 0.2223
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/biiig_hug.png",
+      "output": "images/relics/biiig_hug.webp",
+      "source_bytes": 50108,
+      "output_bytes": 10594,
+      "quality": 85,
+      "ratio": 0.2114
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/bing_bong.png",
+      "output": "images/relics/bing_bong.webp",
+      "source_bytes": 52356,
+      "output_bytes": 11946,
+      "quality": 85,
+      "ratio": 0.2282
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/black_blood.png",
+      "output": "images/relics/black_blood.webp",
+      "source_bytes": 41514,
+      "output_bytes": 8678,
+      "quality": 85,
+      "ratio": 0.209
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/black_star.png",
+      "output": "images/relics/black_star.webp",
+      "source_bytes": 33335,
+      "output_bytes": 8226,
+      "quality": 85,
+      "ratio": 0.2468
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/blessed_antler.png",
+      "output": "images/relics/blessed_antler.webp",
+      "source_bytes": 47903,
+      "output_bytes": 12952,
+      "quality": 85,
+      "ratio": 0.2704
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/blood_soaked_rose.png",
+      "output": "images/relics/blood_soaked_rose.webp",
+      "source_bytes": 35381,
+      "output_bytes": 11146,
+      "quality": 85,
+      "ratio": 0.315
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/blood_vial.png",
+      "output": "images/relics/blood_vial.webp",
+      "source_bytes": 47186,
+      "output_bytes": 18628,
+      "quality": 85,
+      "ratio": 0.3948
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/bone_flute.png",
+      "output": "images/relics/bone_flute.webp",
+      "source_bytes": 33021,
+      "output_bytes": 6958,
+      "quality": 85,
+      "ratio": 0.2107
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/bone_tea.png",
+      "output": "images/relics/bone_tea.webp",
+      "source_bytes": 44973,
+      "output_bytes": 10716,
+      "quality": 85,
+      "ratio": 0.2383
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/book_of_five_rings.png",
+      "output": "images/relics/book_of_five_rings.webp",
+      "source_bytes": 51464,
+      "output_bytes": 12326,
+      "quality": 85,
+      "ratio": 0.2395
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/book_repair_knife.png",
+      "output": "images/relics/book_repair_knife.webp",
+      "source_bytes": 34597,
+      "output_bytes": 6054,
+      "quality": 85,
+      "ratio": 0.175
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/bookmark.png",
+      "output": "images/relics/bookmark.webp",
+      "source_bytes": 50572,
+      "output_bytes": 13520,
+      "quality": 85,
+      "ratio": 0.2673
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/booming_conch.png",
+      "output": "images/relics/booming_conch.webp",
+      "source_bytes": 60906,
+      "output_bytes": 12384,
+      "quality": 85,
+      "ratio": 0.2033
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/bound_phylactery.png",
+      "output": "images/relics/bound_phylactery.webp",
+      "source_bytes": 57996,
+      "output_bytes": 14968,
+      "quality": 85,
+      "ratio": 0.2581
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/bowler_hat.png",
+      "output": "images/relics/bowler_hat.webp",
+      "source_bytes": 35467,
+      "output_bytes": 6430,
+      "quality": 85,
+      "ratio": 0.1813
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/bread.png",
+      "output": "images/relics/bread.webp",
+      "source_bytes": 48128,
+      "output_bytes": 7840,
+      "quality": 85,
+      "ratio": 0.1629
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/brilliant_scarf.png",
+      "output": "images/relics/brilliant_scarf.webp",
+      "source_bytes": 44154,
+      "output_bytes": 8860,
+      "quality": 85,
+      "ratio": 0.2007
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/brimstone.png",
+      "output": "images/relics/brimstone.webp",
+      "source_bytes": 38553,
+      "output_bytes": 10530,
+      "quality": 85,
+      "ratio": 0.2731
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/bronze_scales.png",
+      "output": "images/relics/bronze_scales.webp",
+      "source_bytes": 44854,
+      "output_bytes": 8276,
+      "quality": 85,
+      "ratio": 0.1845
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/burning_blood.png",
+      "output": "images/relics/burning_blood.webp",
+      "source_bytes": 41132,
+      "output_bytes": 11522,
+      "quality": 85,
+      "ratio": 0.2801
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/burning_sticks.png",
+      "output": "images/relics/burning_sticks.webp",
+      "source_bytes": 50290,
+      "output_bytes": 9842,
+      "quality": 85,
+      "ratio": 0.1957
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/byrdpip.png",
+      "output": "images/relics/byrdpip.webp",
+      "source_bytes": 45303,
+      "output_bytes": 10456,
+      "quality": 85,
+      "ratio": 0.2308
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/calling_bell.png",
+      "output": "images/relics/calling_bell.webp",
+      "source_bytes": 50776,
+      "output_bytes": 9564,
+      "quality": 85,
+      "ratio": 0.1884
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/candelabra.png",
+      "output": "images/relics/candelabra.webp",
+      "source_bytes": 30013,
+      "output_bytes": 10026,
+      "quality": 85,
+      "ratio": 0.3341
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/captains_wheel.png",
+      "output": "images/relics/captains_wheel.webp",
+      "source_bytes": 49175,
+      "output_bytes": 15482,
+      "quality": 85,
+      "ratio": 0.3148
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/cauldron.png",
+      "output": "images/relics/cauldron.webp",
+      "source_bytes": 40286,
+      "output_bytes": 7844,
+      "quality": 85,
+      "ratio": 0.1947
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/centennial_puzzle.png",
+      "output": "images/relics/centennial_puzzle.webp",
+      "source_bytes": 40098,
+      "output_bytes": 9510,
+      "quality": 85,
+      "ratio": 0.2372
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/chandelier.png",
+      "output": "images/relics/chandelier.webp",
+      "source_bytes": 37778,
+      "output_bytes": 12398,
+      "quality": 85,
+      "ratio": 0.3282
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/charons_ashes.png",
+      "output": "images/relics/charons_ashes.webp",
+      "source_bytes": 54203,
+      "output_bytes": 15318,
+      "quality": 85,
+      "ratio": 0.2826
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/chemical_x.png",
+      "output": "images/relics/chemical_x.webp",
+      "source_bytes": 30744,
+      "output_bytes": 8246,
+      "quality": 85,
+      "ratio": 0.2682
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/choices_paradox.png",
+      "output": "images/relics/choices_paradox.webp",
+      "source_bytes": 61551,
+      "output_bytes": 11286,
+      "quality": 85,
+      "ratio": 0.1834
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/chosen_cheese.png",
+      "output": "images/relics/chosen_cheese.webp",
+      "source_bytes": 37821,
+      "output_bytes": 7570,
+      "quality": 85,
+      "ratio": 0.2002
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/circlet.png",
+      "output": "images/relics/circlet.webp",
+      "source_bytes": 34086,
+      "output_bytes": 12164,
+      "quality": 85,
+      "ratio": 0.3569
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/claws.png",
+      "output": "images/relics/claws.webp",
+      "source_bytes": 33304,
+      "output_bytes": 10220,
+      "quality": 85,
+      "ratio": 0.3069
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/cloak_clasp.png",
+      "output": "images/relics/cloak_clasp.webp",
+      "source_bytes": 32828,
+      "output_bytes": 8444,
+      "quality": 85,
+      "ratio": 0.2572
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/cracked_core.png",
+      "output": "images/relics/cracked_core.webp",
+      "source_bytes": 57728,
+      "output_bytes": 10646,
+      "quality": 85,
+      "ratio": 0.1844
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/crossbow.png",
+      "output": "images/relics/crossbow.webp",
+      "source_bytes": 45020,
+      "output_bytes": 10074,
+      "quality": 85,
+      "ratio": 0.2238
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/cursed_pearl.png",
+      "output": "images/relics/cursed_pearl.webp",
+      "source_bytes": 47444,
+      "output_bytes": 7592,
+      "quality": 85,
+      "ratio": 0.16
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/darkstone_periapt.png",
+      "output": "images/relics/darkstone_periapt.webp",
+      "source_bytes": 56099,
+      "output_bytes": 14490,
+      "quality": 85,
+      "ratio": 0.2583
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/data_disk.png",
+      "output": "images/relics/data_disk.webp",
+      "source_bytes": 51359,
+      "output_bytes": 8590,
+      "quality": 85,
+      "ratio": 0.1673
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/daughter_of_the_wind.png",
+      "output": "images/relics/daughter_of_the_wind.webp",
+      "source_bytes": 57778,
+      "output_bytes": 12788,
+      "quality": 85,
+      "ratio": 0.2213
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/delicate_frond.png",
+      "output": "images/relics/delicate_frond.webp",
+      "source_bytes": 48846,
+      "output_bytes": 17144,
+      "quality": 85,
+      "ratio": 0.351
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/demon_tongue.png",
+      "output": "images/relics/demon_tongue.webp",
+      "source_bytes": 29823,
+      "output_bytes": 7536,
+      "quality": 85,
+      "ratio": 0.2527
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/diamond_diadem.png",
+      "output": "images/relics/diamond_diadem.webp",
+      "source_bytes": 43793,
+      "output_bytes": 12058,
+      "quality": 85,
+      "ratio": 0.2753
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/dingy_rug.png",
+      "output": "images/relics/dingy_rug.webp",
+      "source_bytes": 61664,
+      "output_bytes": 10688,
+      "quality": 85,
+      "ratio": 0.1733
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/distinguished_cape.png",
+      "output": "images/relics/distinguished_cape.webp",
+      "source_bytes": 34008,
+      "output_bytes": 6178,
+      "quality": 85,
+      "ratio": 0.1817
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/divine_destiny.png",
+      "output": "images/relics/divine_destiny.webp",
+      "source_bytes": 47909,
+      "output_bytes": 8664,
+      "quality": 85,
+      "ratio": 0.1808
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/divine_right.png",
+      "output": "images/relics/divine_right.webp",
+      "source_bytes": 50015,
+      "output_bytes": 8722,
+      "quality": 85,
+      "ratio": 0.1744
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/dollys_mirror.png",
+      "output": "images/relics/dollys_mirror.webp",
+      "source_bytes": 45998,
+      "output_bytes": 8978,
+      "quality": 85,
+      "ratio": 0.1952
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/dragon_fruit.png",
+      "output": "images/relics/dragon_fruit.webp",
+      "source_bytes": 60197,
+      "output_bytes": 13518,
+      "quality": 85,
+      "ratio": 0.2246
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/dream_catcher.png",
+      "output": "images/relics/dream_catcher.webp",
+      "source_bytes": 52816,
+      "output_bytes": 19258,
+      "quality": 85,
+      "ratio": 0.3646
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/driftwood.png",
+      "output": "images/relics/driftwood.webp",
+      "source_bytes": 45096,
+      "output_bytes": 7804,
+      "quality": 85,
+      "ratio": 0.1731
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/dusty_tome.png",
+      "output": "images/relics/dusty_tome.webp",
+      "source_bytes": 55363,
+      "output_bytes": 8134,
+      "quality": 85,
+      "ratio": 0.1469
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/ectoplasm.png",
+      "output": "images/relics/ectoplasm.webp",
+      "source_bytes": 38509,
+      "output_bytes": 7012,
+      "quality": 85,
+      "ratio": 0.1821
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/electric_shrymp.png",
+      "output": "images/relics/electric_shrymp.webp",
+      "source_bytes": 57693,
+      "output_bytes": 18384,
+      "quality": 85,
+      "ratio": 0.3187
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/ember_tea.png",
+      "output": "images/relics/ember_tea.webp",
+      "source_bytes": 41318,
+      "output_bytes": 10100,
+      "quality": 85,
+      "ratio": 0.2444
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/emotion_chip.png",
+      "output": "images/relics/emotion_chip.webp",
+      "source_bytes": 34261,
+      "output_bytes": 7634,
+      "quality": 85,
+      "ratio": 0.2228
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/empty_cage.png",
+      "output": "images/relics/empty_cage.webp",
+      "source_bytes": 52789,
+      "output_bytes": 14852,
+      "quality": 85,
+      "ratio": 0.2813
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/eternal_feather.png",
+      "output": "images/relics/eternal_feather.webp",
+      "source_bytes": 47057,
+      "output_bytes": 13922,
+      "quality": 85,
+      "ratio": 0.2959
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/everburning_effigy.png",
+      "output": "images/relics/everburning_effigy.webp",
+      "source_bytes": 30924,
+      "output_bytes": 8274,
+      "quality": 85,
+      "ratio": 0.2676
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/fake_anchor.png",
+      "output": "images/relics/fake_anchor.webp",
+      "source_bytes": 47871,
+      "output_bytes": 12122,
+      "quality": 85,
+      "ratio": 0.2532
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/fake_blood_vial.png",
+      "output": "images/relics/fake_blood_vial.webp",
+      "source_bytes": 47712,
+      "output_bytes": 14932,
+      "quality": 85,
+      "ratio": 0.313
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/fake_happy_flower.png",
+      "output": "images/relics/fake_happy_flower.webp",
+      "source_bytes": 41575,
+      "output_bytes": 10196,
+      "quality": 85,
+      "ratio": 0.2452
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/fake_lees_waffle.png",
+      "output": "images/relics/fake_lees_waffle.webp",
+      "source_bytes": 61506,
+      "output_bytes": 11976,
+      "quality": 85,
+      "ratio": 0.1947
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/fake_mango.png",
+      "output": "images/relics/fake_mango.webp",
+      "source_bytes": 60162,
+      "output_bytes": 10298,
+      "quality": 85,
+      "ratio": 0.1712
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/fake_merchants_rug.png",
+      "output": "images/relics/fake_merchants_rug.webp",
+      "source_bytes": 48632,
+      "output_bytes": 8340,
+      "quality": 85,
+      "ratio": 0.1715
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/fake_orichalcum.png",
+      "output": "images/relics/fake_orichalcum.webp",
+      "source_bytes": 39160,
+      "output_bytes": 6860,
+      "quality": 85,
+      "ratio": 0.1752
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/fake_snecko_eye.png",
+      "output": "images/relics/fake_snecko_eye.webp",
+      "source_bytes": 62940,
+      "output_bytes": 11054,
+      "quality": 85,
+      "ratio": 0.1756
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/fake_strike_dummy.png",
+      "output": "images/relics/fake_strike_dummy.webp",
+      "source_bytes": 59209,
+      "output_bytes": 12160,
+      "quality": 85,
+      "ratio": 0.2054
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/fake_venerable_tea_set.png",
+      "output": "images/relics/fake_venerable_tea_set.webp",
+      "source_bytes": 57546,
+      "output_bytes": 11014,
+      "quality": 85,
+      "ratio": 0.1914
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/fencing_manual.png",
+      "output": "images/relics/fencing_manual.webp",
+      "source_bytes": 46667,
+      "output_bytes": 7500,
+      "quality": 85,
+      "ratio": 0.1607
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/festive_popper.png",
+      "output": "images/relics/festive_popper.webp",
+      "source_bytes": 50142,
+      "output_bytes": 10386,
+      "quality": 85,
+      "ratio": 0.2071
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/festive_popper_open.png",
+      "output": "images/relics/festive_popper_open.webp",
+      "source_bytes": 62883,
+      "output_bytes": 15390,
+      "quality": 85,
+      "ratio": 0.2447
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/fiddle.png",
+      "output": "images/relics/fiddle.webp",
+      "source_bytes": 36172,
+      "output_bytes": 8058,
+      "quality": 85,
+      "ratio": 0.2228
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/forgotten_soul.png",
+      "output": "images/relics/forgotten_soul.webp",
+      "source_bytes": 56333,
+      "output_bytes": 10726,
+      "quality": 85,
+      "ratio": 0.1904
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/fragrant_mushroom.png",
+      "output": "images/relics/fragrant_mushroom.webp",
+      "source_bytes": 36868,
+      "output_bytes": 10604,
+      "quality": 85,
+      "ratio": 0.2876
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/fresnel_lens.png",
+      "output": "images/relics/fresnel_lens.webp",
+      "source_bytes": 75085,
+      "output_bytes": 12762,
+      "quality": 85,
+      "ratio": 0.17
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/frozen_egg.png",
+      "output": "images/relics/frozen_egg.webp",
+      "source_bytes": 33986,
+      "output_bytes": 8386,
+      "quality": 85,
+      "ratio": 0.2467
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/funerary_mask.png",
+      "output": "images/relics/funerary_mask.webp",
+      "source_bytes": 57056,
+      "output_bytes": 10984,
+      "quality": 85,
+      "ratio": 0.1925
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/fur_coat.png",
+      "output": "images/relics/fur_coat.webp",
+      "source_bytes": 66490,
+      "output_bytes": 13706,
+      "quality": 85,
+      "ratio": 0.2061
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/fyshing_float.png",
+      "output": "images/relics/fyshing_float.webp",
+      "source_bytes": 71912,
+      "output_bytes": 13228,
+      "quality": 85,
+      "ratio": 0.1839
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/galactic_dust.png",
+      "output": "images/relics/galactic_dust.webp",
+      "source_bytes": 38755,
+      "output_bytes": 10584,
+      "quality": 85,
+      "ratio": 0.2731
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/gambling_chip.png",
+      "output": "images/relics/gambling_chip.webp",
+      "source_bytes": 49917,
+      "output_bytes": 9954,
+      "quality": 85,
+      "ratio": 0.1994
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/game_piece.png",
+      "output": "images/relics/game_piece.webp",
+      "source_bytes": 36666,
+      "output_bytes": 8688,
+      "quality": 85,
+      "ratio": 0.2369
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/ghost_seed.png",
+      "output": "images/relics/ghost_seed.webp",
+      "source_bytes": 38248,
+      "output_bytes": 6994,
+      "quality": 85,
+      "ratio": 0.1829
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/girya.png",
+      "output": "images/relics/girya.webp",
+      "source_bytes": 43717,
+      "output_bytes": 9914,
+      "quality": 85,
+      "ratio": 0.2268
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/glass_eye.png",
+      "output": "images/relics/glass_eye.webp",
+      "source_bytes": 37191,
+      "output_bytes": 6710,
+      "quality": 85,
+      "ratio": 0.1804
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/glitter.png",
+      "output": "images/relics/glitter.webp",
+      "source_bytes": 60760,
+      "output_bytes": 11800,
+      "quality": 85,
+      "ratio": 0.1942
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/gnarled_hammer.png",
+      "output": "images/relics/gnarled_hammer.webp",
+      "source_bytes": 36798,
+      "output_bytes": 7448,
+      "quality": 85,
+      "ratio": 0.2024
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/gold_plated_cables.png",
+      "output": "images/relics/gold_plated_cables.webp",
+      "source_bytes": 37872,
+      "output_bytes": 9812,
+      "quality": 85,
+      "ratio": 0.2591
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/golden_compass.png",
+      "output": "images/relics/golden_compass.webp",
+      "source_bytes": 51632,
+      "output_bytes": 10434,
+      "quality": 85,
+      "ratio": 0.2021
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/golden_pearl.png",
+      "output": "images/relics/golden_pearl.webp",
+      "source_bytes": 48818,
+      "output_bytes": 7474,
+      "quality": 85,
+      "ratio": 0.1531
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/gorget.png",
+      "output": "images/relics/gorget.webp",
+      "source_bytes": 49354,
+      "output_bytes": 9006,
+      "quality": 85,
+      "ratio": 0.1825
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/gremlin_horn.png",
+      "output": "images/relics/gremlin_horn.webp",
+      "source_bytes": 43681,
+      "output_bytes": 12764,
+      "quality": 85,
+      "ratio": 0.2922
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/hand_drill.png",
+      "output": "images/relics/hand_drill.webp",
+      "source_bytes": 42616,
+      "output_bytes": 10872,
+      "quality": 85,
+      "ratio": 0.2551
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/happy_flower.png",
+      "output": "images/relics/happy_flower.webp",
+      "source_bytes": 44219,
+      "output_bytes": 11742,
+      "quality": 85,
+      "ratio": 0.2655
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/hefty_tablet.png",
+      "output": "images/relics/hefty_tablet.webp",
+      "source_bytes": 58156,
+      "output_bytes": 10290,
+      "quality": 85,
+      "ratio": 0.1769
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/helical_dart.png",
+      "output": "images/relics/helical_dart.webp",
+      "source_bytes": 39051,
+      "output_bytes": 7648,
+      "quality": 85,
+      "ratio": 0.1958
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/history_course.png",
+      "output": "images/relics/history_course.webp",
+      "source_bytes": 53658,
+      "output_bytes": 9596,
+      "quality": 85,
+      "ratio": 0.1788
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/horn_cleat.png",
+      "output": "images/relics/horn_cleat.webp",
+      "source_bytes": 24317,
+      "output_bytes": 7262,
+      "quality": 85,
+      "ratio": 0.2986
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/ice_cream.png",
+      "output": "images/relics/ice_cream.webp",
+      "source_bytes": 45547,
+      "output_bytes": 9948,
+      "quality": 85,
+      "ratio": 0.2184
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/infused_core.png",
+      "output": "images/relics/infused_core.webp",
+      "source_bytes": 59143,
+      "output_bytes": 10046,
+      "quality": 85,
+      "ratio": 0.1699
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/ink_bottle.png",
+      "output": "images/relics/ink_bottle.webp",
+      "source_bytes": 46402,
+      "output_bytes": 11498,
+      "quality": 85,
+      "ratio": 0.2478
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/intimidating_helmet.png",
+      "output": "images/relics/intimidating_helmet.webp",
+      "source_bytes": 55560,
+      "output_bytes": 13272,
+      "quality": 85,
+      "ratio": 0.2389
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/iron_club.png",
+      "output": "images/relics/iron_club.webp",
+      "source_bytes": 30452,
+      "output_bytes": 7838,
+      "quality": 85,
+      "ratio": 0.2574
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/ivory_tile.png",
+      "output": "images/relics/ivory_tile.webp",
+      "source_bytes": 30404,
+      "output_bytes": 6070,
+      "quality": 85,
+      "ratio": 0.1996
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/jeweled_mask.png",
+      "output": "images/relics/jeweled_mask.webp",
+      "source_bytes": 50299,
+      "output_bytes": 11058,
+      "quality": 85,
+      "ratio": 0.2198
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/jewelry_box.png",
+      "output": "images/relics/jewelry_box.webp",
+      "source_bytes": 45862,
+      "output_bytes": 8538,
+      "quality": 85,
+      "ratio": 0.1862
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/joss_paper.png",
+      "output": "images/relics/joss_paper.webp",
+      "source_bytes": 61053,
+      "output_bytes": 13654,
+      "quality": 85,
+      "ratio": 0.2236
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/juzu_bracelet.png",
+      "output": "images/relics/juzu_bracelet.webp",
+      "source_bytes": 60976,
+      "output_bytes": 18270,
+      "quality": 85,
+      "ratio": 0.2996
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/kifuda.png",
+      "output": "images/relics/kifuda.webp",
+      "source_bytes": 47007,
+      "output_bytes": 11898,
+      "quality": 85,
+      "ratio": 0.2531
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/kunai.png",
+      "output": "images/relics/kunai.webp",
+      "source_bytes": 30270,
+      "output_bytes": 8442,
+      "quality": 85,
+      "ratio": 0.2789
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/kusarigama.png",
+      "output": "images/relics/kusarigama.webp",
+      "source_bytes": 47838,
+      "output_bytes": 17650,
+      "quality": 85,
+      "ratio": 0.369
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/lantern.png",
+      "output": "images/relics/lantern.webp",
+      "source_bytes": 38071,
+      "output_bytes": 10854,
+      "quality": 85,
+      "ratio": 0.2851
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/lapis_lazuli.png",
+      "output": "images/relics/lapis_lazuli.webp",
+      "source_bytes": 61547,
+      "output_bytes": 11542,
+      "quality": 85,
+      "ratio": 0.1875
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/large_capsule.png",
+      "output": "images/relics/large_capsule.webp",
+      "source_bytes": 61893,
+      "output_bytes": 15270,
+      "quality": 85,
+      "ratio": 0.2467
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/lasting_candy.png",
+      "output": "images/relics/lasting_candy.webp",
+      "source_bytes": 67028,
+      "output_bytes": 15962,
+      "quality": 85,
+      "ratio": 0.2381
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/lava_lamp.png",
+      "output": "images/relics/lava_lamp.webp",
+      "source_bytes": 30709,
+      "output_bytes": 6514,
+      "quality": 85,
+      "ratio": 0.2121
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/lava_rock.png",
+      "output": "images/relics/lava_rock.webp",
+      "source_bytes": 65208,
+      "output_bytes": 10160,
+      "quality": 85,
+      "ratio": 0.1558
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/lead_paperweight.png",
+      "output": "images/relics/lead_paperweight.webp",
+      "source_bytes": 56167,
+      "output_bytes": 7468,
+      "quality": 85,
+      "ratio": 0.133
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/leafy_poultice.png",
+      "output": "images/relics/leafy_poultice.webp",
+      "source_bytes": 53073,
+      "output_bytes": 10298,
+      "quality": 85,
+      "ratio": 0.194
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/lees_waffle.png",
+      "output": "images/relics/lees_waffle.webp",
+      "source_bytes": 67129,
+      "output_bytes": 12110,
+      "quality": 85,
+      "ratio": 0.1804
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/letter_opener.png",
+      "output": "images/relics/letter_opener.webp",
+      "source_bytes": 37811,
+      "output_bytes": 11928,
+      "quality": 85,
+      "ratio": 0.3155
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/lizard_tail.png",
+      "output": "images/relics/lizard_tail.webp",
+      "source_bytes": 54620,
+      "output_bytes": 14238,
+      "quality": 85,
+      "ratio": 0.2607
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/looming_fruit.png",
+      "output": "images/relics/looming_fruit.webp",
+      "source_bytes": 60400,
+      "output_bytes": 14252,
+      "quality": 85,
+      "ratio": 0.236
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/looming_fruit_2.png",
+      "output": "images/relics/looming_fruit_2.webp",
+      "source_bytes": 51401,
+      "output_bytes": 13548,
+      "quality": 85,
+      "ratio": 0.2636
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/lords_parasol.png",
+      "output": "images/relics/lords_parasol.webp",
+      "source_bytes": 51095,
+      "output_bytes": 13500,
+      "quality": 85,
+      "ratio": 0.2642
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/lost_coffer.png",
+      "output": "images/relics/lost_coffer.webp",
+      "source_bytes": 46564,
+      "output_bytes": 8440,
+      "quality": 85,
+      "ratio": 0.1813
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/lost_wisp.png",
+      "output": "images/relics/lost_wisp.webp",
+      "source_bytes": 51612,
+      "output_bytes": 9362,
+      "quality": 85,
+      "ratio": 0.1814
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/lucky_fysh.png",
+      "output": "images/relics/lucky_fysh.webp",
+      "source_bytes": 63792,
+      "output_bytes": 17014,
+      "quality": 85,
+      "ratio": 0.2667
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/lunar_pastry.png",
+      "output": "images/relics/lunar_pastry.webp",
+      "source_bytes": 56210,
+      "output_bytes": 9440,
+      "quality": 85,
+      "ratio": 0.1679
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/mangled_tiara.png",
+      "output": "images/relics/mangled_tiara.webp",
+      "source_bytes": 58294,
+      "output_bytes": 14368,
+      "quality": 85,
+      "ratio": 0.2465
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/mango.png",
+      "output": "images/relics/mango.webp",
+      "source_bytes": 60248,
+      "output_bytes": 12550,
+      "quality": 85,
+      "ratio": 0.2083
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/massive_scroll.png",
+      "output": "images/relics/massive_scroll.webp",
+      "source_bytes": 47197,
+      "output_bytes": 8232,
+      "quality": 85,
+      "ratio": 0.1744
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/maw_bank.png",
+      "output": "images/relics/maw_bank.webp",
+      "source_bytes": 34225,
+      "output_bytes": 8706,
+      "quality": 85,
+      "ratio": 0.2544
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/meal_ticket.png",
+      "output": "images/relics/meal_ticket.webp",
+      "source_bytes": 56395,
+      "output_bytes": 12222,
+      "quality": 85,
+      "ratio": 0.2167
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/meat_cleaver.png",
+      "output": "images/relics/meat_cleaver.webp",
+      "source_bytes": 25012,
+      "output_bytes": 6476,
+      "quality": 85,
+      "ratio": 0.2589
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/meat_on_the_bone.png",
+      "output": "images/relics/meat_on_the_bone.webp",
+      "source_bytes": 39365,
+      "output_bytes": 9694,
+      "quality": 85,
+      "ratio": 0.2463
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/medical_kit.png",
+      "output": "images/relics/medical_kit.webp",
+      "source_bytes": 42650,
+      "output_bytes": 9934,
+      "quality": 85,
+      "ratio": 0.2329
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/medicinal_pouch.png",
+      "output": "images/relics/medicinal_pouch.webp",
+      "source_bytes": 51267,
+      "output_bytes": 9838,
+      "quality": 85,
+      "ratio": 0.1919
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/membership_card.png",
+      "output": "images/relics/membership_card.webp",
+      "source_bytes": 47332,
+      "output_bytes": 10002,
+      "quality": 85,
+      "ratio": 0.2113
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/mercury_hourglass.png",
+      "output": "images/relics/mercury_hourglass.webp",
+      "source_bytes": 40301,
+      "output_bytes": 9894,
+      "quality": 85,
+      "ratio": 0.2455
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/metronome.png",
+      "output": "images/relics/metronome.webp",
+      "source_bytes": 40441,
+      "output_bytes": 8072,
+      "quality": 85,
+      "ratio": 0.1996
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/mini_regent.png",
+      "output": "images/relics/mini_regent.webp",
+      "source_bytes": 34510,
+      "output_bytes": 8802,
+      "quality": 85,
+      "ratio": 0.2551
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/miniature_cannon.png",
+      "output": "images/relics/miniature_cannon.webp",
+      "source_bytes": 48498,
+      "output_bytes": 9582,
+      "quality": 85,
+      "ratio": 0.1976
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/miniature_tent.png",
+      "output": "images/relics/miniature_tent.webp",
+      "source_bytes": 49525,
+      "output_bytes": 8908,
+      "quality": 85,
+      "ratio": 0.1799
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/molten_egg.png",
+      "output": "images/relics/molten_egg.webp",
+      "source_bytes": 51570,
+      "output_bytes": 10564,
+      "quality": 85,
+      "ratio": 0.2048
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/mr_struggles.png",
+      "output": "images/relics/mr_struggles.webp",
+      "source_bytes": 52315,
+      "output_bytes": 13556,
+      "quality": 85,
+      "ratio": 0.2591
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/mummified_hand.png",
+      "output": "images/relics/mummified_hand.webp",
+      "source_bytes": 48692,
+      "output_bytes": 13650,
+      "quality": 85,
+      "ratio": 0.2803
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/music_box.png",
+      "output": "images/relics/music_box.webp",
+      "source_bytes": 48343,
+      "output_bytes": 9058,
+      "quality": 85,
+      "ratio": 0.1874
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/mysterious_cocoon.png",
+      "output": "images/relics/mysterious_cocoon.webp",
+      "source_bytes": 79835,
+      "output_bytes": 17768,
+      "quality": 85,
+      "ratio": 0.2226
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/mystic_lighter.png",
+      "output": "images/relics/mystic_lighter.webp",
+      "source_bytes": 43812,
+      "output_bytes": 10636,
+      "quality": 85,
+      "ratio": 0.2428
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/neows_bones.png",
+      "output": "images/relics/neows_bones.webp",
+      "source_bytes": 39192,
+      "output_bytes": 9848,
+      "quality": 85,
+      "ratio": 0.2513
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/neows_lament.png",
+      "output": "images/relics/neows_lament.webp",
+      "source_bytes": 73784,
+      "output_bytes": 15910,
+      "quality": 85,
+      "ratio": 0.2156
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/neows_talisman.png",
+      "output": "images/relics/neows_talisman.webp",
+      "source_bytes": 41148,
+      "output_bytes": 11938,
+      "quality": 85,
+      "ratio": 0.2901
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/neows_torment.png",
+      "output": "images/relics/neows_torment.webp",
+      "source_bytes": 63250,
+      "output_bytes": 14744,
+      "quality": 85,
+      "ratio": 0.2331
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/new_leaf.png",
+      "output": "images/relics/new_leaf.webp",
+      "source_bytes": 50478,
+      "output_bytes": 8414,
+      "quality": 85,
+      "ratio": 0.1667
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/ninja_scroll.png",
+      "output": "images/relics/ninja_scroll.webp",
+      "source_bytes": 51897,
+      "output_bytes": 8350,
+      "quality": 85,
+      "ratio": 0.1609
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/nunchaku.png",
+      "output": "images/relics/nunchaku.webp",
+      "source_bytes": 37048,
+      "output_bytes": 13688,
+      "quality": 85,
+      "ratio": 0.3695
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/nutritious_oyster.png",
+      "output": "images/relics/nutritious_oyster.webp",
+      "source_bytes": 54360,
+      "output_bytes": 7354,
+      "quality": 85,
+      "ratio": 0.1353
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/nutritious_soup.png",
+      "output": "images/relics/nutritious_soup.webp",
+      "source_bytes": 56130,
+      "output_bytes": 8532,
+      "quality": 85,
+      "ratio": 0.152
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/oddly_smooth_stone.png",
+      "output": "images/relics/oddly_smooth_stone.webp",
+      "source_bytes": 33411,
+      "output_bytes": 7312,
+      "quality": 85,
+      "ratio": 0.2189
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/old_coin.png",
+      "output": "images/relics/old_coin.webp",
+      "source_bytes": 44206,
+      "output_bytes": 12170,
+      "quality": 85,
+      "ratio": 0.2753
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/orange_dough.png",
+      "output": "images/relics/orange_dough.webp",
+      "source_bytes": 58701,
+      "output_bytes": 9746,
+      "quality": 85,
+      "ratio": 0.166
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/orichalcum.png",
+      "output": "images/relics/orichalcum.webp",
+      "source_bytes": 43343,
+      "output_bytes": 9522,
+      "quality": 85,
+      "ratio": 0.2197
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/ornamental_fan.png",
+      "output": "images/relics/ornamental_fan.webp",
+      "source_bytes": 50103,
+      "output_bytes": 10928,
+      "quality": 85,
+      "ratio": 0.2181
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/orrery.png",
+      "output": "images/relics/orrery.webp",
+      "source_bytes": 48509,
+      "output_bytes": 13802,
+      "quality": 85,
+      "ratio": 0.2845
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/oversized_watch.png",
+      "output": "images/relics/oversized_watch.webp",
+      "source_bytes": 42783,
+      "output_bytes": 11360,
+      "quality": 85,
+      "ratio": 0.2655
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/paels_blood.png",
+      "output": "images/relics/paels_blood.webp",
+      "source_bytes": 46588,
+      "output_bytes": 8226,
+      "quality": 85,
+      "ratio": 0.1766
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/paels_claw.png",
+      "output": "images/relics/paels_claw.webp",
+      "source_bytes": 28121,
+      "output_bytes": 7640,
+      "quality": 85,
+      "ratio": 0.2717
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/paels_eye.png",
+      "output": "images/relics/paels_eye.webp",
+      "source_bytes": 21616,
+      "output_bytes": 5698,
+      "quality": 85,
+      "ratio": 0.2636
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/paels_flesh.png",
+      "output": "images/relics/paels_flesh.webp",
+      "source_bytes": 52024,
+      "output_bytes": 10234,
+      "quality": 85,
+      "ratio": 0.1967
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/paels_growth.png",
+      "output": "images/relics/paels_growth.webp",
+      "source_bytes": 44594,
+      "output_bytes": 9102,
+      "quality": 85,
+      "ratio": 0.2041
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/paels_horn.png",
+      "output": "images/relics/paels_horn.webp",
+      "source_bytes": 30111,
+      "output_bytes": 7292,
+      "quality": 85,
+      "ratio": 0.2422
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/paels_legion.png",
+      "output": "images/relics/paels_legion.webp",
+      "source_bytes": 44414,
+      "output_bytes": 6676,
+      "quality": 85,
+      "ratio": 0.1503
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/paels_tears.png",
+      "output": "images/relics/paels_tears.webp",
+      "source_bytes": 46612,
+      "output_bytes": 9942,
+      "quality": 85,
+      "ratio": 0.2133
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/paels_tooth.png",
+      "output": "images/relics/paels_tooth.webp",
+      "source_bytes": 34194,
+      "output_bytes": 7992,
+      "quality": 85,
+      "ratio": 0.2337
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/paels_wing.png",
+      "output": "images/relics/paels_wing.webp",
+      "source_bytes": 42327,
+      "output_bytes": 9152,
+      "quality": 85,
+      "ratio": 0.2162
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/pandoras_box.png",
+      "output": "images/relics/pandoras_box.webp",
+      "source_bytes": 53897,
+      "output_bytes": 12744,
+      "quality": 85,
+      "ratio": 0.2365
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/pantograph.png",
+      "output": "images/relics/pantograph.webp",
+      "source_bytes": 27838,
+      "output_bytes": 9764,
+      "quality": 85,
+      "ratio": 0.3507
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/paper_krane.png",
+      "output": "images/relics/paper_krane.webp",
+      "source_bytes": 33547,
+      "output_bytes": 8686,
+      "quality": 85,
+      "ratio": 0.2589
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/paper_phrog.png",
+      "output": "images/relics/paper_phrog.webp",
+      "source_bytes": 41325,
+      "output_bytes": 11180,
+      "quality": 85,
+      "ratio": 0.2705
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/parrying_dagger.png",
+      "output": "images/relics/parrying_dagger.webp",
+      "source_bytes": 34034,
+      "output_bytes": 12422,
+      "quality": 85,
+      "ratio": 0.365
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/parrying_shield.png",
+      "output": "images/relics/parrying_shield.webp",
+      "source_bytes": 64456,
+      "output_bytes": 8444,
+      "quality": 85,
+      "ratio": 0.131
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/pear.png",
+      "output": "images/relics/pear.webp",
+      "source_bytes": 32829,
+      "output_bytes": 8506,
+      "quality": 85,
+      "ratio": 0.2591
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/pen_nib.png",
+      "output": "images/relics/pen_nib.webp",
+      "source_bytes": 39880,
+      "output_bytes": 11576,
+      "quality": 85,
+      "ratio": 0.2903
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/pendulum.png",
+      "output": "images/relics/pendulum.webp",
+      "source_bytes": 54822,
+      "output_bytes": 19708,
+      "quality": 85,
+      "ratio": 0.3595
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/permafrost.png",
+      "output": "images/relics/permafrost.webp",
+      "source_bytes": 46178,
+      "output_bytes": 10602,
+      "quality": 85,
+      "ratio": 0.2296
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/petrified_toad.png",
+      "output": "images/relics/petrified_toad.webp",
+      "source_bytes": 52693,
+      "output_bytes": 12614,
+      "quality": 85,
+      "ratio": 0.2394
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/phial_holster.png",
+      "output": "images/relics/phial_holster.webp",
+      "source_bytes": 48737,
+      "output_bytes": 8474,
+      "quality": 85,
+      "ratio": 0.1739
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/philosophers_stone.png",
+      "output": "images/relics/philosophers_stone.webp",
+      "source_bytes": 33178,
+      "output_bytes": 7134,
+      "quality": 85,
+      "ratio": 0.215
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/phylactery_unbound.png",
+      "output": "images/relics/phylactery_unbound.webp",
+      "source_bytes": 55516,
+      "output_bytes": 12540,
+      "quality": 85,
+      "ratio": 0.2259
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/planisphere.png",
+      "output": "images/relics/planisphere.webp",
+      "source_bytes": 50602,
+      "output_bytes": 13988,
+      "quality": 85,
+      "ratio": 0.2764
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/pocketwatch.png",
+      "output": "images/relics/pocketwatch.webp",
+      "source_bytes": 57947,
+      "output_bytes": 17338,
+      "quality": 85,
+      "ratio": 0.2992
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/pollinous_core.png",
+      "output": "images/relics/pollinous_core.webp",
+      "source_bytes": 55233,
+      "output_bytes": 8740,
+      "quality": 85,
+      "ratio": 0.1582
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/pomander.png",
+      "output": "images/relics/pomander.webp",
+      "source_bytes": 39678,
+      "output_bytes": 9324,
+      "quality": 85,
+      "ratio": 0.235
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/potion_belt.png",
+      "output": "images/relics/potion_belt.webp",
+      "source_bytes": 49844,
+      "output_bytes": 15282,
+      "quality": 85,
+      "ratio": 0.3066
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/power_cell.png",
+      "output": "images/relics/power_cell.webp",
+      "source_bytes": 46389,
+      "output_bytes": 8510,
+      "quality": 85,
+      "ratio": 0.1834
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/prayer_wheel.png",
+      "output": "images/relics/prayer_wheel.webp",
+      "source_bytes": 37988,
+      "output_bytes": 10328,
+      "quality": 85,
+      "ratio": 0.2719
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/precarious_shears.png",
+      "output": "images/relics/precarious_shears.webp",
+      "source_bytes": 27468,
+      "output_bytes": 7322,
+      "quality": 85,
+      "ratio": 0.2666
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/precise_scissors.png",
+      "output": "images/relics/precise_scissors.webp",
+      "source_bytes": 40879,
+      "output_bytes": 10574,
+      "quality": 85,
+      "ratio": 0.2587
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/preserved_fog.png",
+      "output": "images/relics/preserved_fog.webp",
+      "source_bytes": 50607,
+      "output_bytes": 11214,
+      "quality": 85,
+      "ratio": 0.2216
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/prismatic_gem.png",
+      "output": "images/relics/prismatic_gem.webp",
+      "source_bytes": 39983,
+      "output_bytes": 9720,
+      "quality": 85,
+      "ratio": 0.2431
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/pumpkin_candle.png",
+      "output": "images/relics/pumpkin_candle.webp",
+      "source_bytes": 44838,
+      "output_bytes": 7904,
+      "quality": 85,
+      "ratio": 0.1763
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/punch_dagger.png",
+      "output": "images/relics/punch_dagger.webp",
+      "source_bytes": 32215,
+      "output_bytes": 6826,
+      "quality": 85,
+      "ratio": 0.2119
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/radiant_pearl.png",
+      "output": "images/relics/radiant_pearl.webp",
+      "source_bytes": 46339,
+      "output_bytes": 6866,
+      "quality": 85,
+      "ratio": 0.1482
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/rainbow_ring.png",
+      "output": "images/relics/rainbow_ring.webp",
+      "source_bytes": 62998,
+      "output_bytes": 13230,
+      "quality": 85,
+      "ratio": 0.21
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/razor_tooth.png",
+      "output": "images/relics/razor_tooth.webp",
+      "source_bytes": 28364,
+      "output_bytes": 9720,
+      "quality": 85,
+      "ratio": 0.3427
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/red_mask.png",
+      "output": "images/relics/red_mask.webp",
+      "source_bytes": 39942,
+      "output_bytes": 7400,
+      "quality": 85,
+      "ratio": 0.1853
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/red_skull.png",
+      "output": "images/relics/red_skull.webp",
+      "source_bytes": 52299,
+      "output_bytes": 11406,
+      "quality": 85,
+      "ratio": 0.2181
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/regal_pillow.png",
+      "output": "images/relics/regal_pillow.webp",
+      "source_bytes": 37189,
+      "output_bytes": 11076,
+      "quality": 85,
+      "ratio": 0.2978
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/regalite.png",
+      "output": "images/relics/regalite.webp",
+      "source_bytes": 54909,
+      "output_bytes": 11734,
+      "quality": 85,
+      "ratio": 0.2137
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/reptile_trinket.png",
+      "output": "images/relics/reptile_trinket.webp",
+      "source_bytes": 36644,
+      "output_bytes": 10436,
+      "quality": 85,
+      "ratio": 0.2848
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/ring_of_the_drake.png",
+      "output": "images/relics/ring_of_the_drake.webp",
+      "source_bytes": 48280,
+      "output_bytes": 13286,
+      "quality": 85,
+      "ratio": 0.2752
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/ring_of_the_snake.png",
+      "output": "images/relics/ring_of_the_snake.webp",
+      "source_bytes": 60986,
+      "output_bytes": 15766,
+      "quality": 85,
+      "ratio": 0.2585
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/ringing_triangle.png",
+      "output": "images/relics/ringing_triangle.webp",
+      "source_bytes": 33571,
+      "output_bytes": 11864,
+      "quality": 85,
+      "ratio": 0.3534
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/ripple_basin.png",
+      "output": "images/relics/ripple_basin.webp",
+      "source_bytes": 42388,
+      "output_bytes": 7486,
+      "quality": 85,
+      "ratio": 0.1766
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/royal_poison.png",
+      "output": "images/relics/royal_poison.webp",
+      "source_bytes": 54195,
+      "output_bytes": 7972,
+      "quality": 85,
+      "ratio": 0.1471
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/royal_scepter.png",
+      "output": "images/relics/royal_scepter.webp",
+      "source_bytes": 27732,
+      "output_bytes": 9322,
+      "quality": 85,
+      "ratio": 0.3361
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/royal_stamp.png",
+      "output": "images/relics/royal_stamp.webp",
+      "source_bytes": 38482,
+      "output_bytes": 8878,
+      "quality": 85,
+      "ratio": 0.2307
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/ruined_helmet.png",
+      "output": "images/relics/ruined_helmet.webp",
+      "source_bytes": 40543,
+      "output_bytes": 8246,
+      "quality": 85,
+      "ratio": 0.2034
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/runic_capacitor.png",
+      "output": "images/relics/runic_capacitor.webp",
+      "source_bytes": 42160,
+      "output_bytes": 7592,
+      "quality": 85,
+      "ratio": 0.1801
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/runic_cube.png",
+      "output": "images/relics/runic_cube.webp",
+      "source_bytes": 55249,
+      "output_bytes": 8630,
+      "quality": 85,
+      "ratio": 0.1562
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/runic_pyramid.png",
+      "output": "images/relics/runic_pyramid.webp",
+      "source_bytes": 51242,
+      "output_bytes": 10116,
+      "quality": 85,
+      "ratio": 0.1974
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/sai.png",
+      "output": "images/relics/sai.webp",
+      "source_bytes": 34758,
+      "output_bytes": 9816,
+      "quality": 85,
+      "ratio": 0.2824
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/sand_castle.png",
+      "output": "images/relics/sand_castle.webp",
+      "source_bytes": 38677,
+      "output_bytes": 7002,
+      "quality": 85,
+      "ratio": 0.181
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/screaming_flagon.png",
+      "output": "images/relics/screaming_flagon.webp",
+      "source_bytes": 49197,
+      "output_bytes": 11680,
+      "quality": 85,
+      "ratio": 0.2374
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/scroll_boxes.png",
+      "output": "images/relics/scroll_boxes.webp",
+      "source_bytes": 57948,
+      "output_bytes": 9950,
+      "quality": 85,
+      "ratio": 0.1717
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/sea_glass.png",
+      "output": "images/relics/sea_glass.webp",
+      "source_bytes": 38305,
+      "output_bytes": 6890,
+      "quality": 85,
+      "ratio": 0.1799
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/seal_of_gold.png",
+      "output": "images/relics/seal_of_gold.webp",
+      "source_bytes": 46399,
+      "output_bytes": 10962,
+      "quality": 85,
+      "ratio": 0.2363
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/self_forming_clay.png",
+      "output": "images/relics/self_forming_clay.webp",
+      "source_bytes": 47221,
+      "output_bytes": 10086,
+      "quality": 85,
+      "ratio": 0.2136
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/sere_talon.png",
+      "output": "images/relics/sere_talon.webp",
+      "source_bytes": 52079,
+      "output_bytes": 11578,
+      "quality": 85,
+      "ratio": 0.2223
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/shovel.png",
+      "output": "images/relics/shovel.webp",
+      "source_bytes": 29892,
+      "output_bytes": 10324,
+      "quality": 85,
+      "ratio": 0.3454
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/shuriken.png",
+      "output": "images/relics/shuriken.webp",
+      "source_bytes": 39675,
+      "output_bytes": 9354,
+      "quality": 85,
+      "ratio": 0.2358
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/signet_ring.png",
+      "output": "images/relics/signet_ring.webp",
+      "source_bytes": 34089,
+      "output_bytes": 9538,
+      "quality": 85,
+      "ratio": 0.2798
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/silver_crucible.png",
+      "output": "images/relics/silver_crucible.webp",
+      "source_bytes": 67148,
+      "output_bytes": 13800,
+      "quality": 85,
+      "ratio": 0.2055
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/singing_bowl.png",
+      "output": "images/relics/singing_bowl.webp",
+      "source_bytes": 48145,
+      "output_bytes": 9692,
+      "quality": 85,
+      "ratio": 0.2013
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/sling_of_courage.png",
+      "output": "images/relics/sling_of_courage.webp",
+      "source_bytes": 42377,
+      "output_bytes": 15106,
+      "quality": 85,
+      "ratio": 0.3565
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/small_capsule.png",
+      "output": "images/relics/small_capsule.webp",
+      "source_bytes": 56004,
+      "output_bytes": 16242,
+      "quality": 85,
+      "ratio": 0.29
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/snecko_eye.png",
+      "output": "images/relics/snecko_eye.webp",
+      "source_bytes": 39888,
+      "output_bytes": 10182,
+      "quality": 85,
+      "ratio": 0.2553
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/snecko_skull.png",
+      "output": "images/relics/snecko_skull.webp",
+      "source_bytes": 39002,
+      "output_bytes": 10622,
+      "quality": 85,
+      "ratio": 0.2723
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/soup_recipe.png",
+      "output": "images/relics/soup_recipe.webp",
+      "source_bytes": 45684,
+      "output_bytes": 8626,
+      "quality": 85,
+      "ratio": 0.1888
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/sozu.png",
+      "output": "images/relics/sozu.webp",
+      "source_bytes": 35315,
+      "output_bytes": 9162,
+      "quality": 85,
+      "ratio": 0.2594
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/sparkling_rouge.png",
+      "output": "images/relics/sparkling_rouge.webp",
+      "source_bytes": 42468,
+      "output_bytes": 8324,
+      "quality": 85,
+      "ratio": 0.196
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/spiked_gauntlets.png",
+      "output": "images/relics/spiked_gauntlets.webp",
+      "source_bytes": 46416,
+      "output_bytes": 9404,
+      "quality": 85,
+      "ratio": 0.2026
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/stone_calendar.png",
+      "output": "images/relics/stone_calendar.webp",
+      "source_bytes": 56753,
+      "output_bytes": 10210,
+      "quality": 85,
+      "ratio": 0.1799
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/stone_cracker.png",
+      "output": "images/relics/stone_cracker.webp",
+      "source_bytes": 42111,
+      "output_bytes": 6920,
+      "quality": 85,
+      "ratio": 0.1643
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/stone_humidifier.png",
+      "output": "images/relics/stone_humidifier.webp",
+      "source_bytes": 60418,
+      "output_bytes": 16670,
+      "quality": 85,
+      "ratio": 0.2759
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/stone_ring.png",
+      "output": "images/relics/stone_ring.webp",
+      "source_bytes": 32945,
+      "output_bytes": 7148,
+      "quality": 85,
+      "ratio": 0.217
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/storybook.png",
+      "output": "images/relics/storybook.webp",
+      "source_bytes": 38895,
+      "output_bytes": 8114,
+      "quality": 85,
+      "ratio": 0.2086
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/strawberry.png",
+      "output": "images/relics/strawberry.webp",
+      "source_bytes": 55899,
+      "output_bytes": 13002,
+      "quality": 85,
+      "ratio": 0.2326
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/strike_dummy.png",
+      "output": "images/relics/strike_dummy.webp",
+      "source_bytes": 55946,
+      "output_bytes": 11748,
+      "quality": 85,
+      "ratio": 0.21
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/sturdy_clamp.png",
+      "output": "images/relics/sturdy_clamp.webp",
+      "source_bytes": 48021,
+      "output_bytes": 8260,
+      "quality": 85,
+      "ratio": 0.172
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/sword_of_jade.png",
+      "output": "images/relics/sword_of_jade.webp",
+      "source_bytes": 43287,
+      "output_bytes": 11912,
+      "quality": 85,
+      "ratio": 0.2752
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/sword_of_stone.png",
+      "output": "images/relics/sword_of_stone.webp",
+      "source_bytes": 39221,
+      "output_bytes": 10784,
+      "quality": 85,
+      "ratio": 0.275
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/symbiotic_virus.png",
+      "output": "images/relics/symbiotic_virus.webp",
+      "source_bytes": 51303,
+      "output_bytes": 12838,
+      "quality": 85,
+      "ratio": 0.2502
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/tanxs_whistle.png",
+      "output": "images/relics/tanxs_whistle.webp",
+      "source_bytes": 40328,
+      "output_bytes": 6836,
+      "quality": 85,
+      "ratio": 0.1695
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/tea_of_discourtesy.png",
+      "output": "images/relics/tea_of_discourtesy.webp",
+      "source_bytes": 44225,
+      "output_bytes": 10518,
+      "quality": 85,
+      "ratio": 0.2378
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/tezcataras_candle.png",
+      "output": "images/relics/tezcataras_candle.webp",
+      "source_bytes": 38432,
+      "output_bytes": 9888,
+      "quality": 85,
+      "ratio": 0.2573
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/the_abacus.png",
+      "output": "images/relics/the_abacus.webp",
+      "source_bytes": 46018,
+      "output_bytes": 16222,
+      "quality": 85,
+      "ratio": 0.3525
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/the_boot.png",
+      "output": "images/relics/the_boot.webp",
+      "source_bytes": 44938,
+      "output_bytes": 7704,
+      "quality": 85,
+      "ratio": 0.1714
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/the_courier.png",
+      "output": "images/relics/the_courier.webp",
+      "source_bytes": 52971,
+      "output_bytes": 14362,
+      "quality": 85,
+      "ratio": 0.2711
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/throwing_axe.png",
+      "output": "images/relics/throwing_axe.webp",
+      "source_bytes": 30858,
+      "output_bytes": 7168,
+      "quality": 85,
+      "ratio": 0.2323
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/tingsha.png",
+      "output": "images/relics/tingsha.webp",
+      "source_bytes": 36373,
+      "output_bytes": 9408,
+      "quality": 85,
+      "ratio": 0.2587
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/tiny_mailbox.png",
+      "output": "images/relics/tiny_mailbox.webp",
+      "source_bytes": 49394,
+      "output_bytes": 7922,
+      "quality": 85,
+      "ratio": 0.1604
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/toasty_mittens.png",
+      "output": "images/relics/toasty_mittens.webp",
+      "source_bytes": 48304,
+      "output_bytes": 10424,
+      "quality": 85,
+      "ratio": 0.2158
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/toolbox.png",
+      "output": "images/relics/toolbox.webp",
+      "source_bytes": 39938,
+      "output_bytes": 9502,
+      "quality": 85,
+      "ratio": 0.2379
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/touch_of_orobas.png",
+      "output": "images/relics/touch_of_orobas.webp",
+      "source_bytes": 43036,
+      "output_bytes": 7626,
+      "quality": 85,
+      "ratio": 0.1772
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/tough_bandages.png",
+      "output": "images/relics/tough_bandages.webp",
+      "source_bytes": 50429,
+      "output_bytes": 8480,
+      "quality": 85,
+      "ratio": 0.1682
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/toxic_egg.png",
+      "output": "images/relics/toxic_egg.webp",
+      "source_bytes": 53538,
+      "output_bytes": 10810,
+      "quality": 85,
+      "ratio": 0.2019
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/toy_box.png",
+      "output": "images/relics/toy_box.webp",
+      "source_bytes": 50183,
+      "output_bytes": 10938,
+      "quality": 85,
+      "ratio": 0.218
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/tri_boomerang.png",
+      "output": "images/relics/tri_boomerang.webp",
+      "source_bytes": 33014,
+      "output_bytes": 8652,
+      "quality": 85,
+      "ratio": 0.2621
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/tungsten_rod.png",
+      "output": "images/relics/tungsten_rod.webp",
+      "source_bytes": 43922,
+      "output_bytes": 9284,
+      "quality": 85,
+      "ratio": 0.2114
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/tuning_fork.png",
+      "output": "images/relics/tuning_fork.webp",
+      "source_bytes": 34737,
+      "output_bytes": 8650,
+      "quality": 85,
+      "ratio": 0.249
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/twisted_funnel.png",
+      "output": "images/relics/twisted_funnel.webp",
+      "source_bytes": 41666,
+      "output_bytes": 8694,
+      "quality": 85,
+      "ratio": 0.2087
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/unceasing_top.png",
+      "output": "images/relics/unceasing_top.webp",
+      "source_bytes": 56835,
+      "output_bytes": 10550,
+      "quality": 85,
+      "ratio": 0.1856
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/undulating_mass.png",
+      "output": "images/relics/undulating_mass.webp",
+      "source_bytes": 73682,
+      "output_bytes": 12706,
+      "quality": 85,
+      "ratio": 0.1724
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/undying_sigil.png",
+      "output": "images/relics/undying_sigil.webp",
+      "source_bytes": 77200,
+      "output_bytes": 10648,
+      "quality": 85,
+      "ratio": 0.1379
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/unsettling_lamp.png",
+      "output": "images/relics/unsettling_lamp.webp",
+      "source_bytes": 43246,
+      "output_bytes": 10800,
+      "quality": 85,
+      "ratio": 0.2497
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/vajra.png",
+      "output": "images/relics/vajra.webp",
+      "source_bytes": 44979,
+      "output_bytes": 16388,
+      "quality": 85,
+      "ratio": 0.3643
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/vakuus_cape.png",
+      "output": "images/relics/vakuus_cape.webp",
+      "source_bytes": 38995,
+      "output_bytes": 11904,
+      "quality": 85,
+      "ratio": 0.3053
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/vambrace.png",
+      "output": "images/relics/vambrace.webp",
+      "source_bytes": 42703,
+      "output_bytes": 8062,
+      "quality": 85,
+      "ratio": 0.1888
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/velvet_choker.png",
+      "output": "images/relics/velvet_choker.webp",
+      "source_bytes": 25477,
+      "output_bytes": 8994,
+      "quality": 85,
+      "ratio": 0.353
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/venerable_tea_set.png",
+      "output": "images/relics/venerable_tea_set.webp",
+      "source_bytes": 52787,
+      "output_bytes": 12168,
+      "quality": 85,
+      "ratio": 0.2305
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/very_hot_cocoa.png",
+      "output": "images/relics/very_hot_cocoa.webp",
+      "source_bytes": 52468,
+      "output_bytes": 9858,
+      "quality": 85,
+      "ratio": 0.1879
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/vexing_puzzlebox.png",
+      "output": "images/relics/vexing_puzzlebox.webp",
+      "source_bytes": 71479,
+      "output_bytes": 11398,
+      "quality": 85,
+      "ratio": 0.1595
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/vitruvian_minion.png",
+      "output": "images/relics/vitruvian_minion.webp",
+      "source_bytes": 52099,
+      "output_bytes": 16574,
+      "quality": 85,
+      "ratio": 0.3181
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/war_hammer.png",
+      "output": "images/relics/war_hammer.webp",
+      "source_bytes": 33433,
+      "output_bytes": 7464,
+      "quality": 85,
+      "ratio": 0.2233
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/war_paint.png",
+      "output": "images/relics/war_paint.webp",
+      "source_bytes": 46119,
+      "output_bytes": 10412,
+      "quality": 85,
+      "ratio": 0.2258
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/whetstone.png",
+      "output": "images/relics/whetstone.webp",
+      "source_bytes": 45322,
+      "output_bytes": 11584,
+      "quality": 85,
+      "ratio": 0.2556
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/whispering_earring.png",
+      "output": "images/relics/whispering_earring.webp",
+      "source_bytes": 44824,
+      "output_bytes": 12436,
+      "quality": 85,
+      "ratio": 0.2774
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/white_beast_statue.png",
+      "output": "images/relics/white_beast_statue.webp",
+      "source_bytes": 51374,
+      "output_bytes": 14348,
+      "quality": 85,
+      "ratio": 0.2793
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/white_star.png",
+      "output": "images/relics/white_star.webp",
+      "source_bytes": 31869,
+      "output_bytes": 6946,
+      "quality": 85,
+      "ratio": 0.218
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/wing_charm.png",
+      "output": "images/relics/wing_charm.webp",
+      "source_bytes": 46228,
+      "output_bytes": 10818,
+      "quality": 85,
+      "ratio": 0.234
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/winged_boots.png",
+      "output": "images/relics/winged_boots.webp",
+      "source_bytes": 38638,
+      "output_bytes": 8840,
+      "quality": 85,
+      "ratio": 0.2288
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/wongo_customer_appreciation_badge.png",
+      "output": "images/relics/wongo_customer_appreciation_badge.webp",
+      "source_bytes": 34553,
+      "output_bytes": 8388,
+      "quality": 85,
+      "ratio": 0.2428
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/wongos_mystery_ticket.png",
+      "output": "images/relics/wongos_mystery_ticket.webp",
+      "source_bytes": 51114,
+      "output_bytes": 10738,
+      "quality": 85,
+      "ratio": 0.2101
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/yummy_cookie_defect.png",
+      "output": "images/relics/yummy_cookie_defect.webp",
+      "source_bytes": 64298,
+      "output_bytes": 10640,
+      "quality": 85,
+      "ratio": 0.1655
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/yummy_cookie_ironclad.png",
+      "output": "images/relics/yummy_cookie_ironclad.webp",
+      "source_bytes": 52508,
+      "output_bytes": 9070,
+      "quality": 85,
+      "ratio": 0.1727
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/yummy_cookie_necro.png",
+      "output": "images/relics/yummy_cookie_necro.webp",
+      "source_bytes": 48020,
+      "output_bytes": 10292,
+      "quality": 85,
+      "ratio": 0.2143
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/yummy_cookie_regent.png",
+      "output": "images/relics/yummy_cookie_regent.webp",
+      "source_bytes": 49024,
+      "output_bytes": 10330,
+      "quality": 85,
+      "ratio": 0.2107
+    },
+    {
+      "entry": "relic_images",
+      "transform": "webp-q85",
+      "source": "images/relics/yummy_cookie_silent.png",
+      "output": "images/relics/yummy_cookie_silent.webp",
+      "source_bytes": 46682,
+      "output_bytes": 10116,
+      "quality": 85,
+      "ratio": 0.2167
     }
   ]
 }
