@@ -17,6 +17,13 @@
     "vars": {
       "Cards": 2
     },
+    "tips": [
+      {
+        "kind": "hover_tip_keyword",
+        "target": "Ethereal",
+        "source": "HoverTipFactory.FromKeyword"
+      }
+    ],
     "assets": [
       {
         "kind": "portrait",

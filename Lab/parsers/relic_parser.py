@@ -175,8 +175,13 @@ def relic_image_path(relic_id: str, is_beta: bool) -> Path:
     return RELIC_IMAGE_DIR / f"{slug}.webp"
 
 
+_CHARACTER_VARIANTS = ("defect", "ironclad", "necro", "regent", "silent")
+
+
 def extract_relic_assets(relic_id: str) -> list[RelicAsset]:
     assets: list[RelicAsset] = []
+    slug = relic_id.lower()
+
     for kind, is_beta in (("portrait", False), ("beta_portrait", True)):
         path = relic_image_path(relic_id, is_beta)
         if path.exists():
@@ -187,6 +192,18 @@ def extract_relic_assets(relic_id: str) -> list[RelicAsset]:
                     source="Lab.resources.images.relics",
                 )
             )
+
+    for character in _CHARACTER_VARIANTS:
+        path = RELIC_IMAGE_DIR / f"{slug}_{character}.webp"
+        if path.exists():
+            assets.append(
+                RelicAsset(
+                    kind=f"portrait_{character}",
+                    path=str(path.relative_to(LAB_DIR.parent)),
+                    source="Lab.resources.images.relics",
+                )
+            )
+
     return assets
 
 

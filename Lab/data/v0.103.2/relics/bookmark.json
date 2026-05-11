@@ -14,6 +14,13 @@
       "title_key": "BOOKMARK.title",
       "description_key": "BOOKMARK.description"
     },
+    "tips": [
+      {
+        "kind": "hover_tip_keyword",
+        "target": "Retain",
+        "source": "HoverTipFactory.FromKeyword"
+      }
+    ],
     "assets": [
       {
         "kind": "portrait",

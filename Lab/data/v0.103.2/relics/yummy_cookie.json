@@ -17,6 +17,33 @@
     "vars": {
       "Cards": 4
     },
+    "assets": [
+      {
+        "kind": "portrait_defect",
+        "path": "Lab/resources/images/relics/yummy_cookie_defect.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "portrait_ironclad",
+        "path": "Lab/resources/images/relics/yummy_cookie_ironclad.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "portrait_necro",
+        "path": "Lab/resources/images/relics/yummy_cookie_necro.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "portrait_regent",
+        "path": "Lab/resources/images/relics/yummy_cookie_regent.webp",
+        "source": "Lab.resources.images.relics"
+      },
+      {
+        "kind": "portrait_silent",
+        "path": "Lab/resources/images/relics/yummy_cookie_silent.webp",
+        "source": "Lab.resources.images.relics"
+      }
+    ],
     "has_pickup_effect": true
   },
   "resolved": {

@@ -14,6 +14,13 @@
       "title_key": "BURNING_STICKS.title",
       "description_key": "BURNING_STICKS.description"
     },
+    "tips": [
+      {
+        "kind": "hover_tip_keyword",
+        "target": "Exhaust",
+        "source": "HoverTipFactory.FromKeyword"
+      }
+    ],
     "assets": [
       {
         "kind": "portrait",

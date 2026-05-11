@@ -14,6 +14,13 @@
       "title_key": "RINGING_TRIANGLE.title",
       "description_key": "RINGING_TRIANGLE.description"
     },
+    "tips": [
+      {
+        "kind": "hover_tip_keyword",
+        "target": "Retain",
+        "source": "HoverTipFactory.FromKeyword"
+      }
+    ],
     "assets": [
       {
         "kind": "portrait",

@@ -14,6 +14,13 @@
       "title_key": "MUSIC_BOX.title",
       "description_key": "MUSIC_BOX.description"
     },
+    "tips": [
+      {
+        "kind": "hover_tip_keyword",
+        "target": "Ethereal",
+        "source": "HoverTipFactory.FromKeyword"
+      }
+    ],
     "assets": [
       {
         "kind": "portrait",

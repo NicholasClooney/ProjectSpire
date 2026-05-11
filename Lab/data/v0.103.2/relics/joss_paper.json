@@ -18,6 +18,13 @@
       "ExhaustAmount": 5,
       "Cards": 1
     },
+    "tips": [
+      {
+        "kind": "hover_tip_keyword",
+        "target": "Exhaust",
+        "source": "HoverTipFactory.FromKeyword"
+      }
+    ],
     "assets": [
       {
         "kind": "portrait",

@@ -22,6 +22,11 @@
         "kind": "hover_tip_power",
         "target": "StrengthPower",
         "source": "HoverTipFactory.FromPower"
+      },
+      {
+        "kind": "hover_tip_keyword",
+        "target": "Exhaust",
+        "source": "HoverTipFactory.FromKeyword"
       }
     ],
     "assets": [

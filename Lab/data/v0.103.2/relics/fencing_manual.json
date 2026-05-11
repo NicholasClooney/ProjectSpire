@@ -17,6 +17,13 @@
     "vars": {
       "Forge": 10
     },
+    "tips": [
+      {
+        "kind": "hover_tip_forge",
+        "target": "Forge",
+        "source": "HoverTipFactory.FromForge"
+      }
+    ],
     "assets": [
       {
         "kind": "portrait",

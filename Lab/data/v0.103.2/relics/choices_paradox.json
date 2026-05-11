@@ -17,6 +17,13 @@
     "vars": {
       "Cards": 5
     },
+    "tips": [
+      {
+        "kind": "hover_tip_keyword",
+        "target": "Retain",
+        "source": "HoverTipFactory.FromKeyword"
+      }
+    ],
     "assets": [
       {
         "kind": "portrait",
