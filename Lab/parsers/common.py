@@ -395,6 +395,12 @@ def extract_tips(content: str) -> list[HoverTip]:
     for _ in re.finditer(r"HoverTipFactory\.ForEnergy\(", content):
         tips.append(HoverTip(kind="hover_tip_energy", target="Energy", source="HoverTipFactory.ForEnergy"))
 
+    for match in re.finditer(r"HoverTipFactory\.FromKeyword\(CardKeyword\.(\w+)\)", content):
+        tips.append(HoverTip(kind="hover_tip_keyword", target=match.group(1), source="HoverTipFactory.FromKeyword"))
+
+    for _ in re.finditer(r"HoverTipFactory\.FromForge\(\)", content):
+        tips.append(HoverTip(kind="hover_tip_forge", target="Forge", source="HoverTipFactory.FromForge"))
+
     return _dedupe_tips(tips)
 
 
