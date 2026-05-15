@@ -28,7 +28,7 @@
   "resolved": {
     "title": "Pael's Claw",
     "description": {
-      "plain": "Upon pickup, Enchant all Defends with {EnchantmentName}.",
+      "plain": "Upon pickup, Enchant all Defends with Goopy.",
       "runs": [
         {
           "text": "Upon pickup, "
@@ -48,7 +48,8 @@
           "text": " with "
         },
         {
-          "text": "{EnchantmentName}",
+          "text": "Goopy",
+          "source_var": "EnchantmentName",
           "style": "purple"
         },
         {
@@ -66,7 +67,7 @@
       ]
     },
     "event_description": {
-      "plain": "Enchant all Defends with {EnchantmentName}.",
+      "plain": "Enchant all Defends with Goopy.",
       "runs": [
         {
           "text": "Enchant",
@@ -83,7 +84,8 @@
           "text": " with "
         },
         {
-          "text": "{EnchantmentName}",
+          "text": "Goopy",
+          "source_var": "EnchantmentName",
           "style": "purple"
         },
         {

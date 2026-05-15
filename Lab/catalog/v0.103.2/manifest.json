@@ -1,7 +1,7 @@
 {
   "schemaVersion": "neows-cafe-catalog-manifest.v1",
   "gameVersion": "v0.103.2",
-  "generatedAt": "2026-05-15T15:24:47.564799+00:00",
+  "generatedAt": "2026-05-15T15:33:33.782740+00:00",
   "cardsIndexPath": "cards.index.json",
   "cardCount": 577,
   "relicsIndexPath": "relics.index.json",
@@ -11,8 +11,8 @@
     "eng"
   ],
   "checksums": {
-    "cards.index.json": "sha256:6a08817135979d5da58a9ddfb7f60315d8c38283759a0459d81fdd237165fd17",
-    "relics.index.json": "sha256:a05045650d3a9da53537c283ad063c9d89f2fa5db076773acf07ac72393e4fd1"
+    "cards.index.json": "sha256:ffe3a1cd7778ab2febea2aafe81ec6ef98030a9ede45c50005bf3deab07f2a57",
+    "relics.index.json": "sha256:af5aa39d9c56bc5b55960b815ce2a147122abe1c66f62878a36b1cdd20fc6e97"
   },
   "sources": {
     "cards": "Lab/data/v0.103.2/cards",

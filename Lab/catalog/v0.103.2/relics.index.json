@@ -1,7 +1,7 @@
 {
   "schemaVersion": "neows-cafe-relic-catalog.v1",
   "gameVersion": "v0.103.2",
-  "generatedAt": "2026-05-15T15:24:47.563098+00:00",
+  "generatedAt": "2026-05-15T15:33:33.781276+00:00",
   "relics": [
     {
       "id": "AKABEKO",
@@ -6640,7 +6640,7 @@
     {
       "id": "PAELS_CLAW",
       "title": "Pael's Claw",
-      "description": "Upon pickup, Enchant all Defends with {EnchantmentName}.",
+      "description": "Upon pickup, Enchant all Defends with Goopy.",
       "descriptionRuns": [
         {
           "text": "Upon pickup, "
@@ -6660,7 +6660,8 @@
           "text": " with "
         },
         {
-          "text": "{EnchantmentName}",
+          "text": "Goopy",
+          "sourceVar": "EnchantmentName",
           "style": "purple"
         },
         {
@@ -6758,7 +6759,7 @@
     {
       "id": "PAELS_GROWTH",
       "title": "Pael's Growth",
-      "description": "Upon pickup, Enchant a card with {EnchantmentName}.",
+      "description": "Upon pickup, Enchant a card with Clone.",
       "descriptionRuns": [
         {
           "text": "Upon pickup, "
@@ -6771,7 +6772,8 @@
           "text": " a card with "
         },
         {
-          "text": "{EnchantmentName}",
+          "text": "Clone",
+          "sourceVar": "EnchantmentName",
           "style": "purple"
         },
         {
@@ -8519,7 +8521,7 @@
     {
       "id": "ROYAL_STAMP",
       "title": "Royal Stamp",
-      "description": "Upon pickup, choose an Attack or Skill in your Deck to Enchant with {Enchantment}.",
+      "description": "Upon pickup, choose an Attack or Skill in your Deck to Enchant with Royally Approved.",
       "descriptionRuns": [
         {
           "text": "Upon pickup, choose an Attack or Skill in your "
@@ -8539,7 +8541,8 @@
           "text": " with "
         },
         {
-          "text": "{Enchantment}",
+          "text": "Royally Approved",
+          "sourceVar": "Enchantment",
           "style": "purple"
         },
         {
