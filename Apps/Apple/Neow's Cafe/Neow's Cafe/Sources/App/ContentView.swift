@@ -129,8 +129,7 @@ public struct ContentView: View {
             .background(NeowSCafeTheme.background)
         case .loaded:
             RelicsView(
-                relics: dependencies.relicCatalogStore.relics,
-                refresh: { await dependencies.relicCatalogStore.load() },
+                dependencies: dependencies.relicsView,
                 searchText: $relicSearchText
             )
         }

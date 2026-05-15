@@ -1,8 +1,21 @@
 import SwiftUI
 
 struct RelicsView: View {
-    let relics: [Relic]
-    var refresh: (() async -> Void)?
+    struct Dependencies {
+        typealias FilterRelics = ([Relic], RelicFilters) -> [Relic]
+        typealias RefreshRelics = () async -> Void
+
+        let relics: [Relic]
+        let filterRelics: FilterRelics
+        let refreshRelics: RefreshRelics
+    }
+
+    struct RelicFilters {
+        let searchText: String
+        let rarity: Relic.Rarity?
+    }
+
+    let dependencies: Dependencies
 
     @Binding var searchText: String
     @State private var selectedRarity: Relic.Rarity?
@@ -29,18 +42,16 @@ struct RelicsView: View {
         }
         .background(NeowSCafeTheme.background)
         .refreshable {
-            await refresh?()
+            await dependencies.refreshRelics()
         }
     }
 
     private var filteredRelics: [Relic] {
-        relics.filter { relic in
-            let matchesRarity = selectedRarity.map { relic.rarity == $0 } ?? true
-            let matchesSearch = searchText.isEmpty
-                || relic.name.localizedCaseInsensitiveContains(searchText)
-                || relic.description.localizedCaseInsensitiveContains(searchText)
-            return matchesRarity && matchesSearch
-        }
+        dependencies.filterRelics(dependencies.relics, relicFilters)
+    }
+
+    private var relicFilters: RelicFilters {
+        RelicFilters(searchText: searchText, rarity: selectedRarity)
     }
 
     private var rarityPicker: some View {
@@ -105,12 +116,14 @@ private struct RelicRow: View {
             Text(relic.name)
                 .font(.neow(.headline, weight: .bold))
                 .foregroundStyle(NeowSCafeTheme.text)
+                .lineLimit(1)
+                .minimumScaleFactor(0.75)
 
-            Text("  ·  ")
-                .font(.neow(.headline))
-                .foregroundStyle(NeowSCafeTheme.separator)
+            HStack(spacing: 0) {
+                Text("  ·  ")
+                    .font(.neow(.headline))
+                    .foregroundStyle(NeowSCafeTheme.separator)
 
-            Group {
                 if let pool = primaryPool {
                     Text(pool + "  ")
                 }
@@ -118,6 +131,9 @@ private struct RelicRow: View {
             }
             .font(.neow(.body))
             .foregroundStyle(NeowSCafeTheme.secondaryText)
+            .lineLimit(1)
+            .minimumScaleFactor(0.75)
+            .layoutPriority(1)
         }
     }
 
@@ -154,8 +170,15 @@ private struct RelicRow: View {
 
 #Preview {
     NavigationStack {
-        RelicsView(relics: MockRelics.relics, searchText: .constant(""))
-            .navigationTitle("Relics")
-            .navigationBarTitleDisplayMode(.inline)
+        RelicsView(
+            dependencies: RelicsView.Dependencies(
+                relics: MockRelics.relics,
+                filterRelics: RelicFilter.apply,
+                refreshRelics: {}
+            ),
+            searchText: .constant("")
+        )
+        .navigationTitle("Relics")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }

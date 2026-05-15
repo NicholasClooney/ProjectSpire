@@ -26,6 +26,15 @@ struct Dependencies {
             await cardCatalogStore.load()
         }
     }
+
+    var relicsView: RelicsView.Dependencies {
+        RelicsView.Dependencies(
+            relics: relicCatalogStore.relics,
+            filterRelics: { relics, filters in RelicFilter.apply(relics: relics, filters: filters) }
+        ) {
+            await relicCatalogStore.load()
+        }
+    }
 }
 
 private extension CardsView.CardFilters {
