@@ -2,8 +2,11 @@ import SwiftUI
 
 private enum AppTab {
     case cards
+    case relics
+    case potions
+    case events
+    case monsters
     case deck
-    case filter
 }
 
 public struct ContentView: View {
@@ -14,6 +17,7 @@ public struct ContentView: View {
     }
 
     @State private var searchText = ""
+    @State private var relicSearchText = ""
     @State private var selected: AppTab = .cards
 
     public var body: some View {
@@ -22,6 +26,31 @@ public struct ContentView: View {
                 tabContent(title: "Cards") {
                     cardCatalogContent
                         .searchable(text: $searchText, prompt: "Search cards, i.e. Ball Lightning, etc.")
+                }
+            }
+
+            Tab("Relics", systemImage: "shield.lefthalf.filled", value: .relics) {
+                tabContent(title: "Relics") {
+                    RelicsView(relics: MockRelics.relics, searchText: $relicSearchText)
+                        .searchable(text: $relicSearchText, prompt: "Search relics...")
+                }
+            }
+
+            Tab("Potions", systemImage: "flask", value: .potions) {
+                tabContent(title: "Potions") {
+                    PotionsView(potions: MockPotions.potions)
+                }
+            }
+
+            Tab("Events", systemImage: "scroll", value: .events) {
+                tabContent(title: "Events") {
+                    EventsView(events: MockEvents.events)
+                }
+            }
+
+            Tab("Monsters", systemImage: "person.fill.questionmark", value: .monsters) {
+                tabContent(title: "Monsters") {
+                    MonstersView(monsters: MockMonsters.monsters)
                 }
             }
 
