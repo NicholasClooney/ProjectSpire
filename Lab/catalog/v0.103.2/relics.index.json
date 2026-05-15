@@ -1,7 +1,7 @@
 {
   "schemaVersion": "neows-cafe-relic-catalog.v1",
   "gameVersion": "v0.103.2",
-  "generatedAt": "2026-05-15T14:51:37.990584+00:00",
+  "generatedAt": "2026-05-15T15:24:47.563098+00:00",
   "relics": [
     {
       "id": "AKABEKO",
@@ -188,7 +188,7 @@
     {
       "id": "ARCHAIC_TOOTH",
       "title": "Archaic Tooth",
-      "description": "Upon pickup, Transform {StarterCard.StringValue:cond:[gold]{StarterCard}[/gold] into [gold]{AncientCard}[/gold]|a starter card into an ancient version}.",
+      "description": "Upon pickup, Transform a starter card into an ancient version.",
       "descriptionRuns": [
         {
           "text": "Upon pickup, "
@@ -198,7 +198,7 @@
           "style": "gold"
         },
         {
-          "text": " {StarterCard.StringValue:cond:[gold]{StarterCard}[/gold] into [gold]{AncientCard}[/gold]|a starter card into an ancient version}."
+          "text": " a starter card into an ancient version."
         }
       ],
       "rarity": "ancient",
@@ -1163,13 +1163,18 @@
     {
       "id": "BOWLER_HAT",
       "title": "Bowler Hat",
-      "description": "Gain {GoldIncrease:percentMore()}% additional Gold.",
+      "description": "Gain 1% additional Gold.",
       "descriptionRuns": [
         {
           "text": "Gain "
         },
         {
-          "text": "{GoldIncrease:percentMore()}%",
+          "text": "1",
+          "sourceVar": "GoldIncrease",
+          "style": "blue"
+        },
+        {
+          "text": "%",
           "style": "blue"
         },
         {
@@ -2570,10 +2575,17 @@
     {
       "id": "DUSTY_TOME",
       "title": "Dusty Tome",
-      "description": "Upon pickup, obtain {AncientCard.StringValue:cond:[gold]{}[/gold]|an [gold]Ancient Card[/gold]}.",
+      "description": "Upon pickup, obtain an Ancient Card.",
       "descriptionRuns": [
         {
-          "text": "Upon pickup, obtain {AncientCard.StringValue:cond:[gold]{}[/gold]|an [gold]Ancient Card[/gold]}."
+          "text": "Upon pickup, obtain an "
+        },
+        {
+          "text": "Ancient Card",
+          "style": "gold"
+        },
+        {
+          "text": "."
         }
       ],
       "rarity": "ancient",
@@ -6895,7 +6907,7 @@
     {
       "id": "PAELS_TOOTH",
       "title": "Pael's Tooth",
-      "description": "Upon pickup, remove 5 cards from your Deck. After each combat, randomly add 1 back Upgraded.{CardTitles.StringValue:cond:\n\nCards devoured:\n{}|}",
+      "description": "Upon pickup, remove 5 cards from your Deck. After each combat, randomly add 1 back Upgraded.",
       "descriptionRuns": [
         {
           "text": "Upon pickup, remove "
@@ -6927,7 +6939,7 @@
           "style": "gold"
         },
         {
-          "text": ".{CardTitles.StringValue:cond:\n\nCards devoured:\n{}|}"
+          "text": "."
         }
       ],
       "rarity": "ancient",
@@ -8814,7 +8826,7 @@
     {
       "id": "SEA_GLASS",
       "title": "Sea Glass",
-      "description": "See 15 cards from {Character.StringValue:cond:[gold]{}[/gold]|another character}. Choose any number of them to add to your Deck.",
+      "description": "See 15 cards from another character. Choose any number of them to add to your Deck.",
       "descriptionRuns": [
         {
           "text": "See "
@@ -8825,7 +8837,7 @@
           "style": "blue"
         },
         {
-          "text": " cards from {Character.StringValue:cond:[gold]{}[/gold]|another character}. Choose any number of them to add to your "
+          "text": " cards from another character. Choose any number of them to add to your "
         },
         {
           "text": "Deck",
@@ -10244,10 +10256,24 @@
     {
       "id": "TOUCH_OF_OROBAS",
       "title": "Touch of Orobas",
-      "description": "Upon pickup, replace {StarterRelic.StringValue:cond:[gold]{StarterRelic}[/gold] with [gold]{UpgradedRelic}[/gold]|your starter [gold]Relic[/gold] with an [gold]Ancient[/gold] version}.",
+      "description": "Upon pickup, replace your starter Relic with an Ancient version.",
       "descriptionRuns": [
         {
-          "text": "Upon pickup, replace {StarterRelic.StringValue:cond:[gold]{StarterRelic}[/gold] with [gold]{UpgradedRelic}[/gold]|your starter [gold]Relic[/gold] with an [gold]Ancient[/gold] version}."
+          "text": "Upon pickup, replace your starter "
+        },
+        {
+          "text": "Relic",
+          "style": "gold"
+        },
+        {
+          "text": " with an "
+        },
+        {
+          "text": "Ancient",
+          "style": "gold"
+        },
+        {
+          "text": " version."
         }
       ],
       "rarity": "ancient",

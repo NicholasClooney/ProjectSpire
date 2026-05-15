@@ -25,7 +25,7 @@
   "resolved": {
     "title": "Archaic Tooth",
     "description": {
-      "plain": "Upon pickup, Transform {StarterCard.StringValue:cond:[gold]{StarterCard}[/gold] into [gold]{AncientCard}[/gold]|a starter card into an ancient version}.",
+      "plain": "Upon pickup, Transform a starter card into an ancient version.",
       "runs": [
         {
           "text": "Upon pickup, "
@@ -35,7 +35,7 @@
           "style": "gold"
         },
         {
-          "text": " {StarterCard.StringValue:cond:[gold]{StarterCard}[/gold] into [gold]{AncientCard}[/gold]|a starter card into an ancient version}."
+          "text": " a starter card into an ancient version."
         }
       ]
     },
@@ -49,14 +49,14 @@
       ]
     },
     "event_description": {
-      "plain": "Transform {StarterCard.StringValue:cond:[gold]{StarterCard}[/gold] into [gold]{AncientCard}[/gold]|a starter card into an ancient version}.",
+      "plain": "Transform a starter card into an ancient version.",
       "runs": [
         {
           "text": "Transform",
           "style": "gold"
         },
         {
-          "text": " {StarterCard.StringValue:cond:[gold]{StarterCard}[/gold] into [gold]{AncientCard}[/gold]|a starter card into an ancient version}."
+          "text": " a starter card into an ancient version."
         }
       ]
     }

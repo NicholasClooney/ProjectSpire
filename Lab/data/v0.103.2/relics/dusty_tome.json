@@ -30,10 +30,17 @@
   "resolved": {
     "title": "Dusty Tome",
     "description": {
-      "plain": "Upon pickup, obtain {AncientCard.StringValue:cond:[gold]{}[/gold]|an [gold]Ancient Card[/gold]}.",
+      "plain": "Upon pickup, obtain an Ancient Card.",
       "runs": [
         {
-          "text": "Upon pickup, obtain {AncientCard.StringValue:cond:[gold]{}[/gold]|an [gold]Ancient Card[/gold]}."
+          "text": "Upon pickup, obtain an "
+        },
+        {
+          "text": "Ancient Card",
+          "style": "gold"
+        },
+        {
+          "text": "."
         }
       ]
     },
@@ -47,10 +54,17 @@
       ]
     },
     "event_description": {
-      "plain": "Obtain {AncientCard.StringValue:cond:[gold]{}+[/gold]|an [gold]Ancient Card[/gold]}.",
+      "plain": "Obtain an Ancient Card.",
       "runs": [
         {
-          "text": "Obtain {AncientCard.StringValue:cond:[gold]{}+[/gold]|an [gold]Ancient Card[/gold]}."
+          "text": "Obtain an "
+        },
+        {
+          "text": "Ancient Card",
+          "style": "gold"
+        },
+        {
+          "text": "."
         }
       ]
     }

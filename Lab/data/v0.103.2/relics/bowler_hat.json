@@ -28,13 +28,18 @@
   "resolved": {
     "title": "Bowler Hat",
     "description": {
-      "plain": "Gain {GoldIncrease:percentMore()}% additional Gold.",
+      "plain": "Gain 1% additional Gold.",
       "runs": [
         {
           "text": "Gain "
         },
         {
-          "text": "{GoldIncrease:percentMore()}%",
+          "text": "1",
+          "source_var": "GoldIncrease",
+          "style": "blue"
+        },
+        {
+          "text": "%",
           "style": "blue"
         },
         {

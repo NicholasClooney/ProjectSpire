@@ -29,7 +29,7 @@
   "resolved": {
     "title": "Pael's Tooth",
     "description": {
-      "plain": "Upon pickup, remove 5 cards from your Deck. After each combat, randomly add 1 back Upgraded.{CardTitles.StringValue:cond:\n\nCards devoured:\n{}|}",
+      "plain": "Upon pickup, remove 5 cards from your Deck. After each combat, randomly add 1 back Upgraded.",
       "runs": [
         {
           "text": "Upon pickup, remove "
@@ -61,7 +61,7 @@
           "style": "gold"
         },
         {
-          "text": ".{CardTitles.StringValue:cond:\n\nCards devoured:\n{}|}"
+          "text": "."
         }
       ]
     },
@@ -75,7 +75,7 @@
       ]
     },
     "event_description": {
-      "plain": "Remove 5 cards from your Deck. After each combat, randomly add 1 back Upgraded.{CardTitles.StringValue:cond:\n\nCards devoured:\n{}|}",
+      "plain": "Remove 5 cards from your Deck. After each combat, randomly add 1 back Upgraded.",
       "runs": [
         {
           "text": "Remove "
@@ -107,7 +107,7 @@
           "style": "gold"
         },
         {
-          "text": ".{CardTitles.StringValue:cond:\n\nCards devoured:\n{}|}"
+          "text": "."
         }
       ]
     }

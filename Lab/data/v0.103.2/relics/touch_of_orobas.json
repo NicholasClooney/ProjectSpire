@@ -25,10 +25,24 @@
   "resolved": {
     "title": "Touch of Orobas",
     "description": {
-      "plain": "Upon pickup, replace {StarterRelic.StringValue:cond:[gold]{StarterRelic}[/gold] with [gold]{UpgradedRelic}[/gold]|your starter [gold]Relic[/gold] with an [gold]Ancient[/gold] version}.",
+      "plain": "Upon pickup, replace your starter Relic with an Ancient version.",
       "runs": [
         {
-          "text": "Upon pickup, replace {StarterRelic.StringValue:cond:[gold]{StarterRelic}[/gold] with [gold]{UpgradedRelic}[/gold]|your starter [gold]Relic[/gold] with an [gold]Ancient[/gold] version}."
+          "text": "Upon pickup, replace your starter "
+        },
+        {
+          "text": "Relic",
+          "style": "gold"
+        },
+        {
+          "text": " with an "
+        },
+        {
+          "text": "Ancient",
+          "style": "gold"
+        },
+        {
+          "text": " version."
         }
       ]
     },
@@ -42,10 +56,24 @@
       ]
     },
     "event_description": {
-      "plain": "Replace {StarterRelic.StringValue:cond:[gold]{StarterRelic}[/gold] with [gold]{UpgradedRelic}[/gold]|your starter [gold]Relic[/gold] with an [gold]Ancient[/gold] version}.",
+      "plain": "Replace your starter Relic with an Ancient version.",
       "runs": [
         {
-          "text": "Replace {StarterRelic.StringValue:cond:[gold]{StarterRelic}[/gold] with [gold]{UpgradedRelic}[/gold]|your starter [gold]Relic[/gold] with an [gold]Ancient[/gold] version}."
+          "text": "Replace your starter "
+        },
+        {
+          "text": "Relic",
+          "style": "gold"
+        },
+        {
+          "text": " with an "
+        },
+        {
+          "text": "Ancient",
+          "style": "gold"
+        },
+        {
+          "text": " version."
         }
       ]
     }
