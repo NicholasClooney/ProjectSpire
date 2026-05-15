@@ -490,7 +490,7 @@ private extension Card {
     }
 }
 
-private extension Card.DescriptionRun.Style {
+private extension DescriptionRun.Style {
     var descriptionTextColor: UIColor {
         switch self {
         case .gold:

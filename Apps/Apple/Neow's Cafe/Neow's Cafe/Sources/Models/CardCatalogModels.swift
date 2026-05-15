@@ -28,7 +28,7 @@ struct CardCatalogCard: Decodable {
             Card.UpgradeSummary(
                 title: $0.title,
                 description: $0.description,
-                descriptionRuns: $0.descriptionRuns?.map(\.cardDescriptionRun) ?? [],
+                descriptionRuns: $0.descriptionRuns?.map(\.descriptionRun) ?? [],
                 keywords: $0.keywords?.map(\.cardKeyword) ?? [],
                 keywordPeriod: $0.keywordPeriod ?? ".",
                 energyCost: $0.energyCost.cardEnergyCost
@@ -38,7 +38,7 @@ struct CardCatalogCard: Decodable {
             id: id,
             title: title,
             description: description,
-            descriptionRuns: descriptionRuns?.map(\.cardDescriptionRun) ?? [],
+            descriptionRuns: descriptionRuns?.map(\.descriptionRun) ?? [],
             keywords: keywords?.map(\.cardKeyword) ?? [],
             keywordPeriod: keywordPeriod ?? ".",
             energyCost: energyCost.cardEnergyCost,
@@ -63,10 +63,10 @@ struct CatalogCardUpgrade: Decodable {
 struct CatalogDescriptionRun: Decodable {
     let text: String
     let sourceVar: String?
-    let style: Card.DescriptionRun.Style?
+    let style: DescriptionRun.Style?
 
-    var cardDescriptionRun: Card.DescriptionRun {
-        Card.DescriptionRun(text: text, sourceVar: sourceVar, style: style)
+    var descriptionRun: DescriptionRun {
+        DescriptionRun(text, sourceVar: sourceVar, style: style)
     }
 }
 
