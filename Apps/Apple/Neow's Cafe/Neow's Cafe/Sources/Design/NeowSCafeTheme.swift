@@ -36,6 +36,31 @@ enum NeowSCafeTheme {
         light: UIColor(red: 0.675, green: 0.549, blue: 0.369, alpha: 1),
         dark: UIColor(red: 0.424, green: 0.333, blue: 0.243, alpha: 1)
     )
+
+    enum RunColors {
+        // Light: darkened for legibility on cream. Dark: StsColors.
+        static let gold   = Color.dynamic(
+            light: UIColor(red: 0.545, green: 0.384, blue: 0.000, alpha: 1),
+            dark:  StsColors.gold
+        )
+        static let blue   = Color.dynamic(
+            light: UIColor(red: 0.102, green: 0.420, blue: 0.624, alpha: 1),
+            dark:  StsColors.blue
+        )
+        static let green  = Color.dynamic(
+            light: UIColor(red: 0.176, green: 0.478, blue: 0.122, alpha: 1),
+            dark:  StsColors.green
+        )
+        static let red    = Color.dynamic(
+            light: UIColor(red: 0.800, green: 0.133, blue: 0.133, alpha: 1),
+            dark:  StsColors.red
+        )
+        static let purple = Color.dynamic(
+            light: UIColor(red: 0.545, green: 0.243, blue: 0.659, alpha: 1),
+            dark:  StsColors.purple
+        )
+    }
+
 }
 
 extension View {
