@@ -26,7 +26,7 @@ Generate a local static catalog for Neow's Cafe from tracked card data and
 resources:
 
 ```sh
-Lab/scripts/create-card-catalog.py --clean
+Lab/scripts/create-catalog.py --clean
 ```
 
 The generated serving view is tracked so the app has a stable local catalog to
@@ -41,7 +41,7 @@ The versioned catalog contains real app-facing `manifest.json` and
 portrait assets. Serve it locally with:
 
 ```sh
-Lab/scripts/serve-card-catalog.py
+Lab/scripts/serve-catalog.py
 ```
 
 By default, the development manifest URL is:

@@ -138,7 +138,7 @@ def main() -> int:
 
     if not version_dir.is_dir():
         print(f"Catalog was not found at: {version_dir}", file=sys.stderr)
-        print("Generate it first with: Lab/scripts/create-card-catalog.py --clean", file=sys.stderr)
+        print("Generate it first with: Lab/scripts/create-catalog.py --clean", file=sys.stderr)
         return 1
 
     print("Serving card catalog:")
