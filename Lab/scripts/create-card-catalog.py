@@ -284,6 +284,15 @@ def relic_summary(path: Path, relic: dict[str, Any], portrait_root: Path) -> dic
     return summary
 
 
+def check_template_remnants(relics: list[dict[str, Any]]) -> list[tuple[str, str]]:
+    issues = []
+    for relic in relics:
+        for text in [relic.get("description", "")] + [r.get("text", "") for r in relic.get("descriptionRuns", [])]:
+            if "{" in text or "[" in text:
+                issues.append((relic["id"], text[:80]))
+    return issues
+
+
 def sha256_file(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as handle:
@@ -381,6 +390,12 @@ def main() -> int:
         },
     }
     write_json(catalog_root / "manifest.json", manifest)
+
+    remnants = check_template_remnants(relics)
+    if remnants:
+        print(f"WARNING: {len(remnants)} relic(s) have unresolved template syntax:", file=sys.stderr)
+        for relic_id, text in remnants:
+            print(f"  {relic_id}: {text}", file=sys.stderr)
 
     print(f"Generated {len(cards)} card summaries")
     print(f"Generated {len(relics)} relic summaries")
