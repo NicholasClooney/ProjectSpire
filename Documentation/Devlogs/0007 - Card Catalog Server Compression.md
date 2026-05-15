@@ -8,7 +8,7 @@ Date: 2026-05-08
 
 ## Changes
 
-`Lab/scripts/serve-card-catalog.py` gained a `do_GET` override on `CardCatalogHandler`. For JSON requests it reads the file, compresses with gzip if the client sent `Accept-Encoding: gzip`, and writes the response with the correct `Content-Length` and `Content-Encoding: gzip` headers. Non-JSON requests fall through to `SimpleHTTPRequestHandler` unchanged. `end_headers` and ETag logic are unaffected.
+`Lab/scripts/serve-catalog.py` gained a `do_GET` override on `CardCatalogHandler`. For JSON requests it reads the file, compresses with gzip if the client sent `Accept-Encoding: gzip`, and writes the response with the correct `Content-Length` and `Content-Encoding: gzip` headers. Non-JSON requests fall through to `SimpleHTTPRequestHandler` unchanged. `end_headers` and ETag logic are unaffected.
 
 Compressed sizes at default gzip level:
 
@@ -23,7 +23,7 @@ Brotli was not added; it requires a third-party package and the gzip reduction (
 ## Verification
 
 ```sh
-python3 -m py_compile Lab/scripts/serve-card-catalog.py
+python3 -m py_compile Lab/scripts/serve-catalog.py
 ```
 
 Compiles clean.

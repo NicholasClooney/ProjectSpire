@@ -8,7 +8,7 @@ Project areas: `Lab/scripts/`, `Apps/Apple/Neow's Cafe`
 
 `CardDetailView` has a "View Upgrades" toggle that currently does nothing. The catalog index (`cards.index.json`) contains no upgrade data. Raw card JSONs have a `resolved.upgraded` section with the full upgraded card state. Add a compact upgrade summary to the catalog index so the toggle is instant with no network fetch.
 
-## 1. Catalog generator (`Lab/scripts/create-card-catalog.py`)
+## 1. Catalog generator (`Lab/scripts/create-catalog.py`)
 
 Refactor `card_keywords()` and `energy_cost()` to accept a section dict rather than a whole card, then add `upgrade_summary()`:
 
@@ -30,7 +30,7 @@ def upgrade_summary(card: dict[str, Any]) -> dict[str, Any] | None:
 
 Add `"upgrade": upgrade_summary(card)` to `card_summary()`. Cards with no upgrade emit `"upgrade": null`.
 
-Regenerate: `python3 Lab/scripts/create-card-catalog.py --clean`
+Regenerate: `python3 Lab/scripts/create-catalog.py --clean`
 
 ## 2. Swift catalog models (`Apps/Apple/Neow's Cafe/Neow's Cafe/Sources/Models/CardCatalogModels.swift`)
 

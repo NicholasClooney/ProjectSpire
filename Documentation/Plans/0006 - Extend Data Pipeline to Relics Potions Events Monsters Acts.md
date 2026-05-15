@@ -11,8 +11,8 @@ The card pipeline is fully operational:
 1. `decompile-sts2.sh` — decompiles the game DLL into one `.cs` file per class under `Lab/decompiled/v<version>/`
 2. `extract-sts2-resources.py` — copies/converts game assets from `Lab/unpacked/` to `Lab/resources/` using the `resources.allowlist.yaml` manifest
 3. `Lab/parsers/card_parser.py` — pattern-matches decompiled C# → structured JSON in `Lab/data/v<version>/cards/`
-4. `create-card-catalog.py` — reads card JSONs + portraits → searchable catalog in `Lab/catalog/v<version>/`
-5. `serve-card-catalog.py` — REST API over the catalog
+4. `create-catalog.py` — reads card JSONs + portraits → searchable catalog in `Lab/catalog/v<version>/`
+5. `serve-catalog.py` — REST API over the catalog
 
 This plan extends the same pattern to **relics, potions, events, monsters, and acts**.
 

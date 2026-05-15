@@ -102,7 +102,7 @@ Targeted spot checks confirmed:
 Catalog/app verification:
 
 ```sh
-python3 -m py_compile Lab/scripts/create-card-catalog.py
+python3 -m py_compile Lab/scripts/create-catalog.py
 xcodebuild -workspace "Neow's Cafe.xcworkspace" \
   -scheme "Neow's Cafe" \
   -destination 'generic/platform=iOS Simulator' \

@@ -21,7 +21,7 @@ Lab/catalog/v0.103.2/
   images/relic_portraits -> ../../../resources/images/relics   ← new symlink
 ```
 
-Extend `Lab/scripts/create-card-catalog.py` (or extract a shared `create-catalog.py`) to also generate `relics.index.json`. Each entry in the flat index contains:
+Extend `Lab/scripts/create-catalog.py` (or extract a shared `create-catalog.py`) to also generate `relics.index.json`. Each entry in the flat index contains:
 
 - `id` — from `id`
 - `title` — from `resolved.title`
@@ -121,7 +121,7 @@ xcodebuild -workspace "Neow's Cafe.xcworkspace" -scheme "Neow's Cafe" \
 
 ## Assumptions
 
-- The catalog generator for cards (`create-card-catalog.py`) is the right place to add relic index generation — one script, one catalog build step.
+- The catalog generator for cards (`create-catalog.py`) is the right place to add relic index generation — one script, one catalog build step.
 - `vars` and `tips` from the relic raw JSON are not needed in the app index yet.
 - Portrait images for relics already exist at `Lab/resources/images/relics/` as WebP files. Relics without a portrait asset render the placeholder.
 - `DescriptionRun` is already a shared top-level type with `Decodable` style conformance. No per-type description run work needed.

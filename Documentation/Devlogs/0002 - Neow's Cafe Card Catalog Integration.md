@@ -33,7 +33,7 @@ The catalog tooling landed across these commits:
 - `ba5b216` - `feat(Lab): serve catalog with Python cache headers`
 - `5360bc4` - `fix(Lab): use beta card portraits in catalog`
 
-`Lab/scripts/serve-card-catalog.py` replaced the original shell wrapper so the development server can remain a dumb static server while adding long-lived cache headers for catalog JSON and image assets.
+`Lab/scripts/serve-catalog.py` replaced the original shell wrapper so the development server can remain a dumb static server while adding long-lived cache headers for catalog JSON and image assets.
 
 ## Beta Portrait Follow-Up
 
@@ -80,8 +80,8 @@ The old app-bundled individual card portraits were removed. Shared renderer asse
 The catalog generator and server were verified with:
 
 ```sh
-python3 -m py_compile Lab/scripts/create-card-catalog.py Lab/scripts/serve-card-catalog.py
-Lab/scripts/create-card-catalog.py --clean
+python3 -m py_compile Lab/scripts/create-catalog.py Lab/scripts/serve-catalog.py
+Lab/scripts/create-catalog.py --clean
 ```
 
 The Python dev server was checked with localhost HEAD requests and confirmed to return:

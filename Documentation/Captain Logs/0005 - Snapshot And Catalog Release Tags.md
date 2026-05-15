@@ -8,7 +8,7 @@ Entries are newest first. This is not a transcript and it is not a replacement f
 
 **Context:** The user wanted durable Git tags for the prior day's final documentation commit and for the completed card catalog work.
 
-**User Direction:** The user asked to create a snapshot tag for commit `2b50e8c` and a release tag for the latest catalog changes, explicitly including both `Lab/scripts/serve-card-catalog.py` and the generated `Lab/catalog` content, with confirmation before tagging.
+**User Direction:** The user asked to create a snapshot tag for commit `2b50e8c` and a release tag for the latest catalog changes, explicitly including both `Lab/scripts/serve-catalog.py` and the generated `Lab/catalog` content, with confirmation before tagging.
 
 **Agent Response:** The agent reviewed the snapshot and release tag workflow docs, checked existing local and remote tags, inspected relevant commits, proposed `snapshot/2026-05-06` at `2b50e8c` and `release/card-catalog/v0.1.0` at `717c87d`, then waited for confirmation.
 

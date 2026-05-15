@@ -2,7 +2,7 @@
 
 Status: Unsolved
 Date: 2026-05-06
-Areas: `Lab/scripts/serve-card-catalog.py`, `Lab/scripts/create-card-catalog.py`, `Apps/Apple/Neow's Cafe`
+Areas: `Lab/scripts/serve-catalog.py`, `Lab/scripts/create-catalog.py`, `Apps/Apple/Neow's Cafe`
 
 ## Symptom
 
@@ -10,7 +10,7 @@ After regenerating `Lab/catalog/v0.103.2/cards.index.json` (commit `5360bc4` add
 
 ## Cause
 
-`Lab/scripts/serve-card-catalog.py` sends `Cache-Control: public, max-age=31536000, immutable` for every cacheable extension, including `.json`. The app's `URLSession`/`AsyncImage` cached the older `cards.index.json` (where `ABRASIVE` had `portraitPath: null`) and will not refetch because the cached response is marked immutable. The catalog version path is treated as immutable, but during dev iteration the index is regenerated in place without bumping the version, which breaks that assumption.
+`Lab/scripts/serve-catalog.py` sends `Cache-Control: public, max-age=31536000, immutable` for every cacheable extension, including `.json`. The app's `URLSession`/`AsyncImage` cached the older `cards.index.json` (where `ABRASIVE` had `portraitPath: null`) and will not refetch because the cached response is marked immutable. The catalog version path is treated as immutable, but during dev iteration the index is regenerated in place without bumping the version, which breaks that assumption.
 
 ## Workarounds
 
@@ -23,14 +23,14 @@ Neither is a real fix. The issue will recur every time a JSON file changes insid
 
 ### Option A - ETag revalidation
 
-Override `SimpleHTTPRequestHandler.send_head` in `serve-card-catalog.py` to compute an md5 ETag for each file and handle `If-None-Match` with `304 Not Modified`. Replace `immutable` with `no-cache` (or `no-cache` only for `.json`, keep `immutable` for images).
+Override `SimpleHTTPRequestHandler.send_head` in `serve-catalog.py` to compute an md5 ETag for each file and handle `If-None-Match` with `304 Not Modified`. Replace `immutable` with `no-cache` (or `no-cache` only for `.json`, keep `immutable` for images).
 
 - Pros: smallest change. No edits to the generator or the app.
 - Cons: every request pays a revalidation roundtrip, even when nothing changed.
 
 ### Option B - Content-hashed URLs via the manifest
 
-Make `create-card-catalog.py` hash `cards.index.json` (and optionally other content) and write the hash into `manifest.json`, for example:
+Make `create-catalog.py` hash `cards.index.json` (and optionally other content) and write the hash into `manifest.json`, for example:
 
 ```json
 { "cardsIndex": "cards.index.json?v=a1b2c3" }

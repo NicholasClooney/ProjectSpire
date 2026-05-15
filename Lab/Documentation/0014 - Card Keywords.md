@@ -342,7 +342,7 @@ The parser also captures direct keyword mutations in `OnUpgrade()`:
 
 Important current downstream gaps:
 
-- `Lab/scripts/create-card-catalog.py` does not include keywords in `cards.index.json`
+- `Lab/scripts/create-catalog.py` does not include keywords in `cards.index.json`
 - Neow's Cafe's Swift `Card` model has `description` but no `keywords`
 - `CardView` renders only `Text(card.description)`, so keyword-only cards show a blank text box
 

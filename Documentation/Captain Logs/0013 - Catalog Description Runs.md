@@ -22,7 +22,7 @@ This conversation records the work to carry structured card description runs thr
 
 **User Direction:** The user asked about the description run style values in `Apps/Apple/Neow's Cafe/Neow's Cafe/Sources/Models/Card.swift`.
 
-**Agent Response:** The agent traced the values through parser-resolved card JSON, `Lab/scripts/create-card-catalog.py`, `Lab/catalog/v0.103.2/cards.index.json`, Swift decoding, and the private `CardView.swift` style-to-color mapping.
+**Agent Response:** The agent traced the values through parser-resolved card JSON, `Lab/scripts/create-catalog.py`, `Lab/catalog/v0.103.2/cards.index.json`, Swift decoding, and the private `CardView.swift` style-to-color mapping.
 
 **User Feedback:** No correction yet.
 

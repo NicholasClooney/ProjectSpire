@@ -35,7 +35,7 @@ images/card_portraits -> ../../../resources/images/packed/card_portraits
 - asset base path
 - checksums
 
-`cards.index.json` is the grid, search, and filter payload. The catalog generator (`Lab/scripts/create-card-catalog.py`) resolves all fields from the raw card JSON and writes them as a flat, app-ready structure. The app decodes this directly - it does not read or parse the raw per-card JSON for the grid. Fields written per card summary:
+`cards.index.json` is the grid, search, and filter payload. The catalog generator (`Lab/scripts/create-catalog.py`) resolves all fields from the raw card JSON and writes them as a flat, app-ready structure. The app decodes this directly - it does not read or parse the raw per-card JSON for the grid. Fields written per card summary:
 
 - `id` - from `card.id`
 - `slug` - filename stem (e.g. `anger`)
