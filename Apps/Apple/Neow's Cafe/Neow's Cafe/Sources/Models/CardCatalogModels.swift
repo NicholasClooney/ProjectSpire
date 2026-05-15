@@ -2,6 +2,7 @@ import Foundation
 
 struct CardCatalogManifest: Decodable {
     let cardsIndexPath: String
+    let relicsIndexPath: String?
 }
 
 struct CardCatalogIndex: Decodable {

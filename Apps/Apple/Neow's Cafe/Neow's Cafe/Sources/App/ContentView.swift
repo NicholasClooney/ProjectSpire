@@ -31,7 +31,7 @@ public struct ContentView: View {
 
             Tab("Relics", systemImage: "shield.lefthalf.filled", value: .relics) {
                 tabContent(title: "Relics") {
-                    RelicsView(relics: MockRelics.relics, searchText: $relicSearchText)
+                    relicCatalogContent
                         .searchable(text: $relicSearchText, prompt: "Search relics...")
                 }
             }
@@ -67,6 +67,7 @@ public struct ContentView: View {
         .neowCafeAppTheme()
         .task {
             await dependencies.cardCatalogStore.load()
+            await dependencies.relicCatalogStore.load()
         }
     }
 
@@ -102,6 +103,38 @@ public struct ContentView: View {
         }
     }
 
+    @ViewBuilder
+    private var relicCatalogContent: some View {
+        switch relicCatalogState {
+        case .loading:
+            ProgressView()
+                .tint(NeowSCafeTheme.accent)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(NeowSCafeTheme.background)
+        case .error(let message):
+            ContentUnavailableView(
+                "Relics Unavailable",
+                systemImage: "exclamationmark.triangle",
+                description: Text(message)
+            )
+            .foregroundStyle(NeowSCafeTheme.text)
+            .background(NeowSCafeTheme.background)
+        case .empty:
+            ContentUnavailableView(
+                "No Relics",
+                systemImage: "shield.lefthalf.filled",
+                description: Text("The relic catalog did not return any relics.")
+            )
+            .foregroundStyle(NeowSCafeTheme.text)
+            .background(NeowSCafeTheme.background)
+        case .loaded:
+            RelicsView(
+                relics: dependencies.relicCatalogStore.relics,
+                searchText: $relicSearchText
+            )
+        }
+    }
+
     private func tabContent<Content: View>(
         title: String,
         @ViewBuilder content: () -> Content
@@ -133,6 +166,29 @@ public struct ContentView: View {
         }
 
         return .loaded
+    }
+
+    private var relicCatalogState: RelicCatalogState {
+        if let errorMessage = dependencies.relicCatalogStore.errorMessage {
+            return .error(errorMessage)
+        }
+
+        if dependencies.relicCatalogStore.isLoading && dependencies.relicCatalogStore.relics.isEmpty {
+            return .loading
+        }
+
+        if dependencies.relicCatalogStore.relics.isEmpty {
+            return .empty
+        }
+
+        return .loaded
+    }
+
+    private enum RelicCatalogState: Equatable {
+        case loading
+        case error(String)
+        case empty
+        case loaded
     }
 
     private enum CardCatalogState: Equatable {

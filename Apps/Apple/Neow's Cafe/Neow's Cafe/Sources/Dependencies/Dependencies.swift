@@ -1,15 +1,17 @@
 @MainActor
 struct Dependencies {
     let cardCatalogStore: CardCatalogStore
+    let relicCatalogStore: RelicCatalogStore
     let filterCards: CardsView.Dependencies.FilterCards
 
     static func live() -> Dependencies {
-        live(cardCatalogStore: CardCatalogStore())
+        live(cardCatalogStore: CardCatalogStore(), relicCatalogStore: RelicCatalogStore())
     }
 
-    static func live(cardCatalogStore: CardCatalogStore) -> Dependencies {
+    static func live(cardCatalogStore: CardCatalogStore, relicCatalogStore: RelicCatalogStore) -> Dependencies {
         Dependencies(
             cardCatalogStore: cardCatalogStore,
+            relicCatalogStore: relicCatalogStore,
             filterCards: { cards, filters in
                 CardFilter.apply(filters: filters.asCriteria, to: cards)
             }

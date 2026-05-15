@@ -35,7 +35,7 @@ struct Relic {
 }
 
 extension Relic {
-    enum Rarity: String, CaseIterable {
+    enum Rarity: String, CaseIterable, Decodable {
         case common
         case uncommon
         case rare
