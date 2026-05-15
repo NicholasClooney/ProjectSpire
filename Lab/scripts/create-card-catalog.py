@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create a static serving catalog for Neow's Cafe card data."""
+"""Create a static serving catalog for Neow's Cafe card and relic data."""
 
 from __future__ import annotations
 
@@ -37,6 +37,15 @@ def parse_args() -> argparse.Namespace:
         "--portraits",
         default=str(LAB_ROOT / "resources/images/packed/card_portraits"),
         help="Source card portrait directory.",
+    )
+    parser.add_argument(
+        "--relics",
+        help="Source relic JSON directory. Defaults to Lab/data/<version>/relics.",
+    )
+    parser.add_argument(
+        "--relic-portraits",
+        default=str(LAB_ROOT / "resources/images/relics"),
+        help="Source relic portrait directory.",
     )
     parser.add_argument(
         "--out-root",
@@ -218,6 +227,63 @@ def card_summary(path: Path, card: dict[str, Any], portrait_root: Path) -> dict[
     }
 
 
+def read_relic(path: Path) -> dict[str, Any]:
+    with path.open("r", encoding="utf-8") as handle:
+        loaded = json.load(handle)
+    if not isinstance(loaded, dict):
+        raise ValueError(f"Relic JSON must be an object: {path}")
+    return loaded
+
+
+def first_relic_portrait_path(relic: dict[str, Any], portrait_root: Path) -> str | None:
+    assets = relic.get("raw", {}).get("assets", [])
+    if not isinstance(assets, list):
+        return None
+
+    for asset in assets:
+        if not isinstance(asset, dict):
+            continue
+        if asset.get("kind") != "portrait":
+            continue
+        raw_path = asset.get("path")
+        if not raw_path:
+            continue
+        asset_path = resolve_path(raw_path).resolve()
+        try:
+            relative = asset_path.relative_to(portrait_root)
+        except ValueError:
+            return asset_path.as_posix()
+        return f"images/relic_portraits/{relative.as_posix()}"
+    return None
+
+
+def relic_summary(path: Path, relic: dict[str, Any], portrait_root: Path) -> dict[str, Any]:
+    raw = relic.get("raw", {})
+    resolved = relic.get("resolved", {})
+    description = resolved.get("description", {})
+    flavor = resolved.get("flavor", {})
+    plain_description = description.get("plain") if isinstance(description, dict) else None
+    plain_flavor = flavor.get("plain") if isinstance(flavor, dict) else None
+
+    summary: dict[str, Any] = {
+        "id": relic["id"],
+        "title": resolved.get("title", relic["id"]),
+        "description": plain_description or "",
+        "descriptionRuns": extract_description_runs(description),
+        "rarity": str(raw.get("rarity", "")).lower(),
+        "pools": raw.get("pools", []),
+        "detailPath": f"relics/{path.name}",
+        "portraitPath": first_relic_portrait_path(relic, portrait_root),
+    }
+
+    flavor_runs = extract_description_runs(flavor)
+    if plain_flavor is not None:
+        summary["flavor"] = plain_flavor
+        summary["flavorRuns"] = flavor_runs
+
+    return summary
+
+
 def sha256_file(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as handle:
@@ -235,6 +301,8 @@ def main() -> int:
     version = args.version
     cards_root = resolve_path(args.cards or LAB_ROOT / f"data/{version}/cards").resolve()
     portrait_root = resolve_path(args.portraits).resolve()
+    relics_root = resolve_path(args.relics or LAB_ROOT / f"data/{version}/relics").resolve()
+    relic_portrait_root = resolve_path(args.relic_portraits).resolve()
     out_root = resolve_path(args.out_root).resolve()
     catalog_root = out_root / version
 
@@ -245,6 +313,14 @@ def main() -> int:
     if not portrait_root.is_dir():
         print("Portrait source directory was not found:", file=sys.stderr)
         print(f"  {portrait_root}", file=sys.stderr)
+        return 1
+    if not relics_root.is_dir():
+        print("Relic source directory was not found:", file=sys.stderr)
+        print(f"  {relics_root}", file=sys.stderr)
+        return 1
+    if not relic_portrait_root.is_dir():
+        print("Relic portrait source directory was not found:", file=sys.stderr)
+        print(f"  {relic_portrait_root}", file=sys.stderr)
         return 1
 
     if args.clean:
@@ -261,11 +337,27 @@ def main() -> int:
         "cards": cards,
     }
 
-    index_path = catalog_root / "cards.index.json"
-    write_json(index_path, cards_index)
+    cards_index_path = catalog_root / "cards.index.json"
+    write_json(cards_index_path, cards_index)
 
     replace_symlink(cards_root, catalog_root / "cards")
     replace_symlink(portrait_root, catalog_root / "images/card_portraits")
+
+    relic_paths = sorted(relics_root.glob("*.json"))
+    relics = [relic_summary(path, read_relic(path), relic_portrait_root) for path in relic_paths]
+
+    relics_index = {
+        "schemaVersion": "neows-cafe-relic-catalog.v1",
+        "gameVersion": version,
+        "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "relics": relics,
+    }
+
+    relics_index_path = catalog_root / "relics.index.json"
+    write_json(relics_index_path, relics_index)
+
+    replace_symlink(relics_root, catalog_root / "relics")
+    replace_symlink(relic_portrait_root, catalog_root / "images/relic_portraits")
 
     manifest = {
         "schemaVersion": "neows-cafe-catalog-manifest.v1",
@@ -273,19 +365,25 @@ def main() -> int:
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "cardsIndexPath": "cards.index.json",
         "cardCount": len(cards),
+        "relicsIndexPath": "relics.index.json",
+        "relicCount": len(relics),
         "assetBasePath": "images/",
         "locales": ["eng"],
         "checksums": {
-            "cards.index.json": f"sha256:{sha256_file(index_path)}",
+            "cards.index.json": f"sha256:{sha256_file(cards_index_path)}",
+            "relics.index.json": f"sha256:{sha256_file(relics_index_path)}",
         },
         "sources": {
             "cards": cards_root.relative_to(REPO_ROOT).as_posix(),
             "cardPortraits": portrait_root.relative_to(REPO_ROOT).as_posix(),
+            "relics": relics_root.relative_to(REPO_ROOT).as_posix(),
+            "relicPortraits": relic_portrait_root.relative_to(REPO_ROOT).as_posix(),
         },
     }
     write_json(catalog_root / "manifest.json", manifest)
 
     print(f"Generated {len(cards)} card summaries")
+    print(f"Generated {len(relics)} relic summaries")
     print(f"Catalog: {catalog_root}")
     print(f"Manifest: {catalog_root / 'manifest.json'}")
     return 0
