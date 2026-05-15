@@ -272,11 +272,40 @@ def resolve_placeholder(
     if name == "singleStarIcon":
         return [TextRun(text="*", style=style)]
 
+    # cond can resolve a fallback even when the var isn't a known numeric var —
+    # handle it before the vars_by_name guard so dynamic string vars get the fallback branch.
+    if formatter == "cond":
+        if "?" in formatter_arg:
+            # Format: {var:cond:condition?option1|option2}
+            condition, _, options_markup = formatter_arg.partition("?")
+            options = split_top_level(options_markup)
+            value = vars_by_name.get(name)
+            selected = ""
+            if condition.startswith(">") and isinstance(value, int):
+                threshold = parse_numeric_arg(condition[1:], {})
+                if threshold is not None and value > threshold:
+                    selected = options[0] if options else ""
+                elif len(options) > 1:
+                    selected = options[1]
+        else:
+            # Format: {var:cond:option1|option2} — use option1 if var is known, else fallback
+            options = split_top_level(formatter_arg)
+            value = vars_by_name.get(name)
+            if value is not None and options:
+                selected = options[0]
+            else:
+                selected = options[1] if len(options) > 1 else (options[0] if options else "")
+        return render_text_runs(selected, vars_by_name, changed_vars, upgraded, style_stack, name)
+
     if name not in vars_by_name:
         return [TextRun(text="{" + placeholder + "}", style=style)]
 
     value = vars_by_name[name]
-    if formatter and formatter not in {"plural", "choose", "diff", "inverseDiff", "energyIcons", "starIcons", "cond"}:
+
+    if formatter == "percentMore":
+        return [TextRun(text=format_value(value), source_var=name, style=style)]
+
+    if formatter and formatter not in {"plural", "choose", "diff", "inverseDiff", "energyIcons", "starIcons"}:
         options = split_top_level(formatter)
         if isinstance(value, bool):
             selected = options[0] if value else (options[1] if len(options) > 1 else "")
@@ -296,18 +325,6 @@ def resolve_placeholder(
             selected = options[choice_index] if choice_index < len(options) else ""
         else:
             selected = options[-1] if len(options) > len(choices) else ""
-        return render_text_runs(selected, vars_by_name, changed_vars, upgraded, style_stack, name)
-
-    if formatter == "cond":
-        condition, _, options_markup = formatter_arg.partition("?")
-        options = split_top_level(options_markup)
-        selected = ""
-        if condition.startswith(">") and isinstance(value, int):
-            threshold = parse_numeric_arg(condition[1:], {})
-            if threshold is not None and value > threshold:
-                selected = options[0] if options else ""
-            elif len(options) > 1:
-                selected = options[1]
         return render_text_runs(selected, vars_by_name, changed_vars, upgraded, style_stack, name)
 
     if formatter in (None, "diff", "inverseDiff", "energyIcons", "starIcons"):
