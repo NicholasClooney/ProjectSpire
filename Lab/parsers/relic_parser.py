@@ -46,6 +46,7 @@ PARSER_VERSION = "0.1.0"
 SCHEMA_VERSION = "0.1.0"
 
 RELIC_IMAGE_DIR = IMAGE_DIR / "relics"
+ENCHANTMENTS_LOCALIZATION_FILE = LOCALIZATION_DIR / DEFAULT_LANGUAGE / "enchantments.json"
 
 RELIC_RARITY_NAME = {
     "Ancient": "Ancient",
@@ -163,6 +164,19 @@ def extract_has_pickup_effect(content: str) -> bool | None:
     return True if re.search(r"HasUponPickupEffect\s*=>\s*true", content) else None
 
 
+def extract_string_vars(content: str, enchantment_localization: dict[str, str]) -> dict[str, str]:
+    """Extract StringVar declarations that reference an enchantment title."""
+    string_vars: dict[str, str] = {}
+    for match in re.finditer(r'new StringVar\("(\w+)",\s*ModelDb\.Enchantment<(\w+)>\(\)', content):
+        var_name = match.group(1)
+        class_name = match.group(2)
+        title_key = f"{class_name_to_id(class_name)}.title"
+        title = enchantment_localization.get(title_key)
+        if title:
+            string_vars[var_name] = title
+    return string_vars
+
+
 # ---------------------------------------------------------------------------
 # Assets
 # ---------------------------------------------------------------------------
@@ -215,6 +229,7 @@ def extract_relic_assets(relic_id: str) -> list[RelicAsset]:
 def build_resolved_relic(
     relic_id: str,
     vars_by_name: dict[str, int],
+    string_vars: dict[str, str],
     localization: dict[str, str],
 ) -> ResolvedRelic:
     title_key = f"{relic_id}.title"
@@ -226,7 +241,7 @@ def build_resolved_relic(
     flavor_key = f"{relic_id}.flavor"
     event_description_key = f"{relic_id}.eventDescription"
 
-    display_vars: dict[str, Any] = dict(vars_by_name)
+    display_vars: dict[str, Any] = {**vars_by_name, **string_vars}
 
     flavor: ResolvedText | None = None
     if flavor_key in localization:
@@ -257,6 +272,7 @@ def parse_relic(
     filepath: Path,
     localization: dict[str, str] | None = None,
     relic_pools: dict[str, list[str]] | None = None,
+    enchantment_localization: dict[str, str] | None = None,
 ) -> RelicInfo:
     content = filepath.read_text(encoding="utf-8")
     class_name = filepath.stem
@@ -265,11 +281,13 @@ def parse_relic(
 
     localization = localization or {}
     relic_pools = relic_pools or {}
+    enchantment_localization = enchantment_localization or {}
     version = source_version(filepath)
 
     rarity = extract_rarity(content)
     pools = relic_pools.get(relic_id, [])
     vars_by_name = extract_vars(content, dynamic_var_type_names(version) if version else {})
+    string_vars = extract_string_vars(content, enchantment_localization)
     tips = extract_tips(content)
     assets = extract_relic_assets(relic_id)
     has_pickup_effect = extract_has_pickup_effect(content)
@@ -282,7 +300,7 @@ def parse_relic(
 
     resolved: ResolvedRelic | dict[str, Any] = {}
     if localization and description_key in localization:
-        resolved = build_resolved_relic(relic_id, vars_by_name, localization)
+        resolved = build_resolved_relic(relic_id, vars_by_name, string_vars, localization)
 
     return RelicInfo(
         schema_version=SCHEMA_VERSION,
@@ -312,13 +330,14 @@ def parse_many(
     relic_dir: Path,
     localization: dict[str, str] | None = None,
     relic_pools: dict[str, list[str]] | None = None,
+    enchantment_localization: dict[str, str] | None = None,
 ) -> list[RelicInfo]:
     relics = []
     for path in sorted(relic_dir.glob("*.cs")):
         content = path.read_text(encoding="utf-8")
         if not is_relic_model(content):
             continue
-        relics.append(parse_relic(path, localization, relic_pools))
+        relics.append(parse_relic(path, localization, relic_pools, enchantment_localization))
     return relics
 
 
@@ -399,11 +418,12 @@ def main() -> None:
     version = args.version or inferred_version
     localization_path = args.localization or default_localization_path(args.language)
     localization = {} if args.raw_only else load_localization(localization_path)
+    enchantment_localization = {} if args.raw_only else load_localization(ENCHANTMENTS_LOCALIZATION_FILE)
     relic_pools = load_relic_pool_map(version)
     output_dir = args.output_dir.resolve() if args.output_dir else default_output_dir(version)
 
     if input_path.is_file():
-        relic = parse_relic(input_path, localization, relic_pools)
+        relic = parse_relic(input_path, localization, relic_pools, enchantment_localization)
         if args.stdout:
             print(json.dumps(to_jsonable(relic), indent=2, sort_keys=False))
             return
@@ -411,7 +431,7 @@ def main() -> None:
         print(output_path)
     else:
         started_at = time.perf_counter()
-        relics = parse_many(input_path, localization, relic_pools)
+        relics = parse_many(input_path, localization, relic_pools, enchantment_localization)
         if args.stdout:
             print(json.dumps(to_jsonable(relics), indent=2, sort_keys=False))
             return
