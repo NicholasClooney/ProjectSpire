@@ -130,6 +130,7 @@ public struct ContentView: View {
         case .loaded:
             RelicsView(
                 relics: dependencies.relicCatalogStore.relics,
+                refresh: { await dependencies.relicCatalogStore.load() },
                 searchText: $relicSearchText
             )
         }

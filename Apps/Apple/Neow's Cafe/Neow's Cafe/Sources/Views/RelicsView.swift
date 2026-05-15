@@ -2,6 +2,7 @@ import SwiftUI
 
 struct RelicsView: View {
     let relics: [Relic]
+    var refresh: (() async -> Void)?
 
     @Binding var searchText: String
     @State private var selectedRarity: Relic.Rarity?
@@ -27,6 +28,9 @@ struct RelicsView: View {
             }
         }
         .background(NeowSCafeTheme.background)
+        .refreshable {
+            await refresh?()
+        }
     }
 
     private var filteredRelics: [Relic] {
